@@ -29,6 +29,100 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-25 — denní session: koš A odpracován a ze sedmi položek byly tři
+
+**Hotovo:**
+
+- **Zjištění na začátku:** **DATA-04** je dál blokovaná (dokladová část
+  vyčerpaná od 2. 8., zbylé otázky jsou telefonní) a **DATA-05** taky
+  (beskydská sedmička čeká na re-export DATA-37, jména z koše G na detaily
+  razítek). Vzal jsem tedy první položku z „Příště" z 24. 8., na kterou
+  sandbox stačí: **koš A** krkonošské triáže — sedm kandidátů s OSM typem
+  horské chaty, tedy nejsilnějším signálem.
+- **Nález hned na začátku, a je z něj systémová otázka, ne jednorázová
+  oprava.** Ze sedmi položek koše A byly **tři už rozhodnuté** a jedna
+  **dokonce dávno povýšená**: `zaly` má publikovaný profil na TÉMŽ OSM
+  `way/151987319` se shodnými GPS, `chata-eliska` je „POTVRZENO MIMO"
+  (Michal 27. 7. 2026) a `chata-mamut` „VYŘADIT TRVALE" (Michal 20. 7.
+  - triáž tier 4). Koš o tom nevěděl, protože byl postavený nad **OSM tagy**,
+    kdežto rozhodnutí žijí v `interniPoznamky` kandidáta, který v repu zůstává
+    „jako doklad". **Je to táž díra jako včera u `blizke-body`:** rozhodnutí má
+    dvě bydliště a kontroly čtou jen jedno.
+- **Změřeno nad celým repem, bez jediného dotazu do sítě:** z **1 628
+  kandidátů nese 46 v poznámkách marker rozhodnutí** — `ROZHODNUTÍ REDAKCE`
+  32, `K RUČNÍ KONTROLE` 15, `NEZAŘAZOVAT` 9, `SPORNÉ S KLÍČEM` 2, po jednom
+  `POTVRZENO MIMO`, `ZŮSTÁVÁ MIMO`, `VYŘADIT TRVALE` a `ZŮSTÁVÁ ❓`. V koši A
+  to dělalo tři sedminy zbytečné práce.
+- **Zbylé tři otevřené případy odpracovány s prameny** (metoda: WebSearch +
+  otevřené stránky; všechno `verified: false`, doklady zapsané přímo do
+  kandidátů):
+  - **Chata Hubertka** — je ve **Vítkovicích** („Vítkovice 201", vystupuje
+    jako „Resort Hubertka"), ne v Rokytnici, jak jméno svádělo. Vlastní web
+    má stránku „Hospůdka" s rozvrhem „1.7. - 31.8. otevřeno 11:00 - dle QR
+    denně" — rozvrh je signál veřejného provozu, ale větu o přístupu
+    neubytovaných stránka nenese. Táž stránka hlásí **konec běžného provozu**:
+    „Restaurace již nebude v běžném provozu", „Nadále bude k dispozici pro
+    svatby, oslavy, firemní a soukromé akce", a místo ní „samoobslužný
+    obchůdek 24 hodin denně, 7 dní v týdnu". Katalog regiontourist.cz: „Součástí
+    chaty je restaurace s barem a letní terasou", 29 hostů v 7 pokojích.
+    → **ODLOŽENO** se dvěma otázkami (níž).
+  - **Lokomotiva** — Firmy.cz: kategorie „Horské chaty a chalupy", popis
+    doslova „Provoz horské chaty s nabídkou ubytování.", a rovnou „Tato firma
+    nebo pobočka již není aktivní." O občerstvení mlčí — což **není** doklad,
+    že ho nemá, takže se nevyřazuje. Zato dva signály turistické role: Archa
+    Krkonoš eviduje „Pec čp. 17 Lokomotiva" a bergfex vede trasu „Pec pod
+    Sněžkou - Lokomotiva - Konopindova chata - Jindřichův dům". **Archu ze
+    sandboxu nepřečtu — robots.txt ji zakazuje**, a přitom právě ona rozhodne.
+    → **ODLOŽENO**.
+  - **Javorka** — re-check přinesl **nulu**: javorka.eu ze sandboxu dál
+    nedostupná, Archa Krkonoš blokovaná robots.txt, hledání na jméno vrací jen
+    jiné objekty (Javořinka, Javoří mlýn, Javorka v Jeseníkách — jmenná
+    podobnost se neztotožňuje). Stav z 20. 7. trvá beze změny. → **ODLOŽENO,
+    bezobslužně už nezkoušet potřetí.**
+- **Sasanka** zůstává tam, kde byla: klíč občerstvení má doklad (Firmy.cz,
+  „Restaurace v provozu po celý den"), visí jen na **klíči střediska** — a to
+  je Michalovo rozhodnutí, ne moje.
+- **Do `data/chaty/` se nesáhlo, nic se nepovýšilo ani nevyřadilo.** Změněny
+  jen `interniPoznamky` tří kandidátů (nové doklady s datem a citací)
+  a `docs/KRKONOSE-TRIAZ-KOSE.md` (nový oddíl „KOŠ A ODPRACOVÁN"). `npm run
+kontrola` celé zelené.
+- **Poznámka k metodě:** `WebFetch` v bezobslužném běhu padá na
+  `PROVENANCE_REQUIRED`, dokud URL neprojde `WebSearch` — přes vyhledávání
+  pak stránka jde načíst. Je to použitelný postup, ne slepá ulička; stojí za
+  to ho znát pro další triáže.
+
+**Příště:** koš **B** (42 kandidátů s doloženým veřejným občerstvením) —
+a nejdřív z něj vyřadit ty, které už rozhodnutí mají, ať se práce nedělá
+dvakrát. Dál trvá: devět padajících testů z 22. 8., blokované DATA-04 /
+DATA-05 a 4 páry blízkých bodů čekající na Michala.
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu
+spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`;
+`npm ci` je v čerstvém sandboxu potřeba pustit před `npm run kontrola`.
+
+**Otázky pro Michala:**
+
+- **Samoobslužný obchůdek 24/7 — je to „občerstvení pro veřejnost"?**
+  U Hubertky nahrazuje restauraci, která končí v běžném provozu. Odpověď
+  nerozhodne jednu chatu, ale **celou třídu objektů** (a tenhle model se
+  po horách šíří).
+- **Chata Hubertka ve Vítkovicích** — soused Chata Eliška je z důvodu
+  „penzion ve středisku" POTVRZENO MIMO. Platí to i tady, nebo letní hospůdka
+  s rozvrhem klíč otočí?
+- **Má `scripts/triaz-kandidatu.ts` dostat koš „ROZHODNUTO"?** Rozhodnutí
+  redakce žije ve dvou místech a triáž čte jen jedno; 46 kandidátů v repu má
+  v poznámkách marker, který žádný nástroj nevidí. Udělal bych to jako čtecí
+  koš, nic by to nepřepisovalo.
+- **Archa Krkonoš zakazuje čtení robotům.** Rozhodne Lokomotivu i Javorku
+  (a dost možná i další domy s čp.). Přečteš ji ručně, nebo to necháme ležet?
+- Trvá z 24. 8.: **krkonošská trojice** (Dom Śląski, Szrenica, Labská bouda) —
+  jeden objekt, nebo dva?; **rozhledna × hostinec na témž vrcholu** — jeden
+  profil, nebo dva?; **tour.Chata × Hotel Bouřňák**; **smazat
+  `krkonose/horska-chata-portasky`?**; **opřít idempotenci DATA-01 o OSM id?**;
+  **zařadit `test:int` do CI**; **Bouda Svornost** — zakládat ručně?;
+  **uvolnit kotvu ve jmenné dohledávce**; **čtyři založené, ale nespuštěné
+  oblasti**; a starší fronta z 20. 8.
+
 ## 2026-08-24 — denní session: 11 párů blízkých bodů rozhodnuto a zapsáno (a jeden byl falešný poplach)
 
 **Hotovo:**

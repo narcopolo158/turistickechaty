@@ -55,9 +55,61 @@ slepou skvrnou celého korpusu.
 otvíračka 9–21) a `hribeci-bouda`. **Bouda Svornost dál chybí** — v exportech
 není pod žádným jménem a příčina zůstává otevřená.
 
+## KOŠ A ODPRACOVÁN (25. 8. 2026) — a sedm položek je ve skutečnosti tři
+
+Koš A byl postavený nad OSM tagy, a proto nevěděl nic o **rozhodnutích, která
+už padla a žijí v `interniPoznamky` samotných kandidátů**. Po přečtení všech
+sedmi souborů vypadá bilance takhle:
+
+| kandidát         | stav ke 25. 8. 2026                                                                                                                     |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `zaly`           | **UŽ POVÝŠEN** — `data/chaty/krkonose/zaly.yaml`, týž OSM `way/151987319`, shodné GPS. Do koše neměl vůbec spadnout.                    |
+| `chata-eliska`   | **ROZHODNUTO MIMO** (Michal 27. 7. 2026, otázka č. 13) — penzion u vleků ve Vítkovicích, bufet Stodola je samostatný podnik 30 m vedle. |
+| `chata-mamut`    | **ROZHODNUTO VYŘADIT TRVALE** (Michal 20. 7. 2026 + triáž tier 4 26. 7.) — pronájmová roubenka, sdílená kuchyně, bez občerstvení.       |
+| `sasanka`        | **KLÍČ SPLNĚN, ČEKÁ NA MICHALA** — Firmy.cz doslova „Restaurace v provozu po celý den"; visí jen na klíči střediska (Pec).              |
+| `chata-hubertka` | **ODLOŽENO** — nově doloženo 25. 8. (viz níž), otázka pro Michala.                                                                      |
+| `lokomotiva`     | **ODLOŽENO** — nově doloženo 25. 8. (viz níž), rozhodne Archa Krkonoš.                                                                  |
+| `javorka`        | **ODLOŽENO** — re-check 25. 8. nepřinesl nic nového, stav z 20. 7. trvá.                                                                |
+
+**Systémový nález, a je to táž díra jako včera u `blizke-body`:** rozhodnutí
+redakce žije na **dvou místech** — v `data/kandidati/_vyrazeno.yaml` (odkud ho
+kontroly čtou) a v `interniPoznamky` kandidáta, který v repu zůstává „jako
+doklad" (odkud ho nečte nikdo). Změřeno nad celým repem 25. 8. 2026: z **1 628
+kandidátů nese 46 v poznámkách marker rozhodnutí** (`ROZHODNUTÍ REDAKCE` 32,
+`K RUČNÍ KONTROLE` 15, `NEZAŘAZOVAT` 9, `SPORNÉ S KLÍČEM` 2, po jednom
+`POTVRZENO MIMO`, `ZŮSTÁVÁ MIMO`, `VYŘADIT TRVALE`, `ZŮSTÁVÁ ❓`). V koši A to
+dělalo **tři sedminy zbytečné práce**; nad koši B–E to bude podobný podíl.
+**Návrh:** `scripts/triaz-kandidatu.ts` má dostat koš **ROZHODNUTO** — ne aby
+rozhodnutí přepisoval, ale aby už rozhodnuté kandidáty do front k práci
+nedával. (Nezahrnuto do dnešní session, aby zůstala dokončená; otázka je
+v deníku 25. 8.)
+
+### Co k odloženým třem přibylo 25. 8. 2026
+
+- **Chata Hubertka** — je ve **Vítkovicích** („Vítkovice 201", vystupuje jako
+  „Resort Hubertka"), ne v Rokytnici. Vlastní web má stránku „Hospůdka"
+  s rozvrhem „1.7. - 31.8. otevřeno 11:00 - dle QR denně", ale větu o přístupu
+  neubytovaných nenese. Zároveň hlásí konec běžného provozu: „Restaurace již
+  nebude v běžném provozu", „Nadále bude k dispozici pro svatby, oslavy,
+  firemní a soukromé akce" — a místo ní „samoobslužný obchůdek 24 hodin denně,
+  7 dní v týdnu". **Dvě otázky pro Michala:** je letní hospůdka i pro
+  neubytované, a plní samoobslužný obchůdek 24/7 klíč občerstvení? Druhá
+  odpověď založí pravidlo pro celou třídu objektů.
+- **Lokomotiva** — Firmy.cz ji vede v kategorii „Horské chaty a chalupy"
+  s popisem „Provoz horské chaty s nabídkou ubytování." a rovnou dodává „Tato
+  firma nebo pobočka již není aktivní." O občerstvení mlčí (což není doklad, že
+  ho nemá). Zato jsou tu **dva signály turistické role**: Archa Krkonoš eviduje
+  „Pec čp. 17 Lokomotiva" a bergfex vede trasu „Pec pod Sněžkou - Lokomotiva -
+  Konopindova chata - Jindřichův dům". Archa je ze sandboxu **nedostupná
+  (robots.txt)** — a právě ona rozhodne.
+- **Javorka** — nula nových dokladů: javorka.eu ze sandboxu nedostupná, Archa
+  Krkonoš blokovaná robots.txt, vyhledávání vrací jen jiné objekty (Javořinka,
+  Javoří mlýn, Javorka v Jeseníkách; jmenná podobnost se neztotožňuje).
+  **Bezobslužně to potřetí nezkoušet.**
+
 ## Koše podle OSM tagů
 
-### A · OSM typ horské chaty (`alpine_hut` / `wilderness_hut`) — brát první — 7
+### A · OSM typ horské chaty (`alpine_hut` / `wilderness_hut`) — brát první — 7 _(odpracován 25. 8. 2026, viz oddíl výš)_
 
 | kandidát                          | nový 22. 8. | rozhodující OSM tagy                                                                                                                                                                                                                         | web z OSM                |
 | --------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
