@@ -29,6 +29,104 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-26 — denní session: koš B otevřen, šest kandidátů rozhodnuto a jeden tag se rozpadl třikrát
+
+**Hotovo:**
+
+- **Zjištění na začátku:** **DATA-04** i **DATA-05** jsou dál blokované
+  (u DATA-04 je dokladová část vyčerpaná od 2. 8. a zbytek jsou telefonáty,
+  u DATA-05 čeká beskydská sedmička na re-export DATA-37). Vzal jsem tedy první
+  položku z „Příště" z 25. 8.: **koš B** krkonošské triáže — 42 kandidátů,
+  u kterých OSM dokládá veřejné občerstvení.
+- **Nejdřív měření, ať se práce nedělá dvakrát** (poučení z koše A). Průchod
+  všech 42 proti markerům rozhodnutí v `interniPoznamky`, proti `_vyrazeno.yaml`,
+  `_odlozeno.yaml`, `_jmenovci.yaml` i proti publikovaným profilům (shoda OSM
+  URL a vzdálenost do 60 m). **Výsledek je tentokrát dobrá zpráva: koš B je od
+  rozhodnutí skoro čistý — 1 ze 42**, kdežto v koši A to byly tři sedminy.
+  Parkují čtyři známé případy: `horska-chata-portasky` (**shodné OSM URL i GPS
+  s publikovaným profilem `portasky` — duplicita**), a krkonošská trojice
+  `restaurace-labska-bouda`, `schronisko-gorskie-dom-slaski`,
+  `schronisko-szrenica-1362-m-n-p-m` (v registru jmenovců od 24. 8.).
+  `swojska-chata` je v registru jen kvůli jesenickému jmenovci, kandidát
+  zůstává otevřený.
+- **Změřeno i to, co koš B umí rozhodnout offline: skoro nic.** Plné OSM tagy
+  z exportů v repu nesou adresu u 13 ze 42, web u 14, `ele` u **jediného**
+  (Wysoki Kamień). Na „roli na trase" tagy neodpovídají — koš B se musí číst po
+  jednom s prameny.
+- **Šest kandidátů odpracováno s doklady** (WebSearch + otevřené stránky, vše
+  `verified: false`, citace s URL zapsané přímo do `interniPoznamky`):
+  - **Chata Borůvka (Velká Úpa 16)** — jediný jasný případ a je jasný **pro**:
+    Firmy.cz vede AKTIVNÍ záznam, obor „Bistra…", otvírací doba „11:00–17:00
+    (víkendy do 21:00)" a „sezonním foodtruckem, kde Vám nabídneme slané
+    i sladké knedlík, polévky, piva a limonády"; kudyznudy.cz „Kolem chaty vede
+    Kubátova cesta" (na Sněžku), 860 m v KRNAP. Obě půlky klíče doložené →
+    **NÁVRH POVÝŠIT**. Navíc razitkuj.cz eviduje její **turistické razítko** —
+    podklad rovnou pro DATA-05.
+  - **Karczma Hutnika (Szklarska Poręba)** — občerstvení míří přímo na
+    kolemjdoucí („gdy podczas wędrówki po Karkonoszach zawitasz…"), poloha
+    „przy głównym szlaku na wodospad »Szklarki«" a nezávisle doloženo, že
+    zelená značka „doprowadza do ulicy Kołłątaja". Ale otevřeno **25. 8. 2012**
+    jako nový podnik → K RUČNÍ KONTROLE.
+  - **Johannova bouda (Hořejší Vrchlabí)** — samoobslužný bufet s vlastní
+    otvírací dobou, ale „na okraji města Vrchlabí", 550 m, u nástupu lanovky
+    skiareálu Herlíkovice; historie je rodinný dům z r. 1926 a novostavba
+    z r. 2010 → **SPORNÉ S KLÍČEM**, týž vzor jako Sasanka a Chata Eliška.
+  - **Chata Ducha Gór** — restaurace na pěší zóně 1 Maja, provozovatel sám
+    píše „w samym sercu Szklarskiej Poręby", turistická minulost nedoložena →
+    NEZAŘAZOVAT.
+  - **Bouda Míla (Velká Úpa 47)** — restaurace v objektu doložena, ale
+    **přístup veřejnosti nikde**; k tomu Firmy.cz „již není aktivní", rejstřík
+    vede „Bouda Míla s.r.o. **v likvidaci**" → NEZAŘAZOVAT.
+  - **Horská chata Poutník (Horní Lysečiny 39)** — **provoz doloženě ukončen**
+    (tři nezávislé prameny) a občerstvení pramen připisuje **sousední**
+    Lysečinské boudě (čp. 51, jiný objekt než čp. 39) → NEZAŘAZOVAT.
+- **A z toho plyne mez celého koše B, kterou je dobré znát dopředu: ze šesti
+  čtených se tag `amenity` rozpadl třikrát.** `chata-ducha-gor` nese
+  `cuisine=kebab` a je to restaurace s polskou kuchyní; `horska-chata-poutnik`
+  a `bouda-mila` nesou `amenity=restaurant`, a prameny u obou mluví jen
+  o stravování pro ubytované — oba navíc mimo provoz. **`amenity` je signál
+  k přečtení, ne doklad veřejného občerstvení.** Koš B tedy není fronta
+  povyšování, je to fronta čtení — stejně jako koš C.
+- **Do `data/chaty/` se nesáhlo, nic se nepovýšilo ani nevyřadilo.** Změněny
+  jen `interniPoznamky` šesti kandidátů a `docs/KRKONOSE-TRIAZ-KOSE.md` (nový
+  oddíl „KOŠ B — první čtení"). `npm run kontrola` celé zelené, `tsc --noEmit`
+  čistý.
+
+**Příště:** pokračovat v koši B — zbývá **32 nepřečtených** (4 parkují, 6
+hotovo). Nejdřív ty s vlastním webem v OSM (`bouda-mala-upa`, `chata-hradecanka`,
+`chata-misecky`, `chata-stopa`, `horska-chata-dimrovka`, `jestrebi-bouda`,
+`pension-jilemnicka-bouda`, `restaurace-havlova-bouda`, `schronisko-wysoki-kamien`,
+`sokoli-boudy`, `velke-pardubicke-boudy`) — u nich je doklad nejlevnější. Dál
+trvá: devět padajících testů z 22. 8. a blokované DATA-04 / DATA-05.
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu
+spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`;
+`npm ci` je v čerstvém sandboxu potřeba pustit před `npm run kontrola`.
+A z 25. 8. platí i to, že `WebFetch` funguje až poté, co URL projde `WebSearch`.
+
+**Otázky pro Michala:**
+
+- **Chatu Borůvku povýšit?** Je to první kandidát koše B, u kterého jsou obě
+  půlky klíče doložené a provoz je aktivní. Stačí „ano" a příští session ji
+  založí do `data/chaty/krkonose/` (vše `verified: false`, dokud to
+  nezkontroluješ).
+- **Karczma Hutnika — platí klíč i pro podnik z roku 2012?** Stojí u značené
+  cesty k vodopádu Szklarki, zve turisty, ale žádnou turistickou minulost nemá
+  a adresu má městskou. Odpověď rozhodne i další polské karczmy.
+- **232 kandidátů v deseti oblastech tvrdí „Typ odvozen z OSM tagu
+  tourism=undefined".** Objekt, který ten tag nemá, dostal do dat větu
+  o odvození z neexistujícího tagu. Mám to opravit — u generátoru DATA-01
+  i zpětně v souborech (řádek prostě vypustit, když tag chybí)? Je to `fix:`
+  na jeden běh skriptu, ale sáhne do 232 souborů, tak se radši ptám.
+- Trvá z 25. 8.: **samoobslužný obchůdek 24/7 = občerstvení pro veřejnost?**;
+  **Chata Hubertka ve Vítkovicích**; **koš „ROZHODNUTO" do
+  `scripts/triaz-kandidatu.ts`?**; **Archa Krkonoš (robots.txt) — přečteš
+  ručně?**; a starší fronta: **krkonošská trojice**, **rozhledna × hostinec na
+  témž vrcholu**, **tour.Chata × Hotel Bouřňák**, **smazat
+  `krkonose/horska-chata-portasky`?**, **opřít idempotenci DATA-01 o OSM id?**,
+  **zařadit `test:int` do CI**, **Bouda Svornost**, **uvolnit kotvu ve jmenné
+  dohledávce**, **čtyři založené, ale nespuštěné oblasti**.
+
 ## 2026-08-25 — denní session: koš A odpracován a ze sedmi položek byly tři
 
 **Hotovo:**

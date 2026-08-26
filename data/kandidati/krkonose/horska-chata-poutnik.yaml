@@ -21,3 +21,39 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  TRIÁŽ KOŠ B — křížové ověření (checked 2026-08-26, WebSearch + otevřené
+  stránky, vše verified: false):
+
+  PROVOZ UKONČEN — doloženo třemi nezávislými prameny:
+  ubytovani-pecpodsnezkou.cz „PROVOZ CHATA UKONČEN"; region-krkonose.cz „Provoz
+  chaty ukončen"; ceskehory.cz „Objekt v archivu - prezentace není aktivní."
+  Oba záznamy na Firmy.cz nesou „Tato firma nebo pobočka již není aktivní".
+  Rok ukončení ani dnešní stav objektu doložen NENÍ.
+
+  Občerstvení pro veřejnost NEDOLOŽENO, a nepřímo vyvráceno: hkregion.cz u
+  Poutníka píše „Pod chatou se nachází restaurace Lysečinská bouda poskytující
+  občerstvení a nápoje." — občerstvení tedy pramen připisuje SOUSEDNÍMU objektu.
+  Samotný Poutník je popisován ubytovacími kategoriemi (Firmy.cz obor „Horské
+  chaty a chalupy", služby „možnost polopenze, společenská místnost";
+  region-krkonose.cz „jídelna s krbem a TV"). Nabídka z r. 2011 (bihk.cz) míří na
+  skupiny: „rodinné akce, firemní akce, sportovní soustředění, lyžařské kurzy,
+  školy v přírodě", 45 lůžek.
+
+  Poloha svědčí pro trasu: „Horní Maršov - Horní Lysečiny 39", udávaných 980 m
+  (hkregion.cz) až 1000 m (ceskehory.cz, bihk.cz — prameny se rozcházejí), zimní
+  přístup „pouze pěšky nebo na lyžích od hotelu Vápenka". Značenou trasu přímo u
+  objektu žádný pramen neuvádí; rozcestí „Lysečinské Boudy" (červená na Sněžku
+  i na Trutnov, modrá do Horního Maršova) leží dle turistika.cz na souřadnicích
+  prakticky totožných — to je ale porovnání čísel, ne tvrzení pramene.
+
+  POZOR NA ZÁMĚNU: Lysečinská bouda je čp. 51 (archakrkonos.cz), Poutník čp. 39 —
+  jiný objekt. Ověřované občerstvení patří té první.
+
+  ROZPOR S OSM: tag „amenity=restaurant" se nepotvrdil; prameny mluví jen o
+  stravování pro ubytované a o ukončeném provozu.
+
+  NÁVRH REDAKCI: NEZAŘAZOVAT — jediná půlka klíče (občerstvení) je nedoložená a
+  provoz je doloženě ukončený; turistická minulost taky nedoložená. Kdyby se
+  někdy doložilo, že objekt býval veřejnou boudou, patří sem zpět. (Vyřazení do
+  _vyrazeno.yaml až s potvrzením Michala.)

@@ -22,3 +22,29 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  TRIÁŽ KOŠ B — křížové ověření (checked 2026-08-26, WebSearch + otevřené
+  stránky, vše verified: false):
+
+  Občerstvení pro veřejnost DOLOŽENO. Vlastní web chataduchagor.pl: „Chata Ducha
+  Gór - Wyjątkowa restauracja w Szklarskiej Porębie", adresa „1 Maja 20B, 58-580
+  Szklarska Poręba", otevřeno denně 12:00–22:00. Městský katalog
+  szklarskaporeba.com.pl vede podnik v kategorii „Restauracje Szklarska Poręba".
+
+  Poloha SVĚDČÍ PRO MĚSTO. Provozovatel sám (text u záznamu na TripAdvisoru)
+  píše „w samym sercu Szklarskiej Poręby". fotopolska.eu řadí objekt do dzielnice
+  „Szklarska Poręba Górna", ulice 1 Maja; tisk popisuje 1 Maja jako městský
+  deptak („Zamiast spacerów po deptaku przy ulicy 1 Maja…",
+  dolnoslaskie.naszemiasto.pl). Nejbližší okolní objekt dle fotopolska.eu je
+  „Pawilon gastronomiczny" 19 m.
+
+  Turistická minulost NEDOLOŽENA — k adrese ani k budově se nenašel žádný
+  historický pramen; fotoarchiv drží jen dvě fotografie restaurace (2014, 2019).
+
+  ROZPOR S OSM: tag „amenity=fast_food" + „cuisine=kebab" se NEPOTVRDIL v žádném
+  prameni — vlastní web, TripAdvisor i městský katalog popisují restauraci s
+  polskou/góralskou kuchyní. Kebab na této adrese se nenašel.
+
+  NÁVRH REDAKCI: NEZAŘAZOVAT — městská restaurace na pěší zóně bez doložené
+  turistické minulosti a bez role na trase. Samotné občerstvení klíč nesplňuje,
+  tady chybí druhá půlka. (Vyřazení do _vyrazeno.yaml až s potvrzením Michala.)

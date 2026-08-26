@@ -107,6 +107,57 @@ v deníku 25. 8.)
   Javoří mlýn, Javorka v Jeseníkách; jmenná podobnost se neztotožňuje).
   **Bezobslužně to potřetí nezkoušet.**
 
+## KOŠ B — první čtení (26. 8. 2026): 42 položek, 4 už parkují, 6 odpracováno
+
+**Nejdřív měření, ať se nedělá práce dvakrát** — táž otázka jako u koše A.
+Průchod všech 42 kandidátů proti markerům rozhodnutí v `interniPoznamky`,
+proti `_vyrazeno.yaml`, `_odlozeno.yaml`, `_jmenovci.yaml` a proti
+publikovaným profilům (shoda OSM URL i vzdálenost do 60 m):
+
+- **`horska-chata-portasky`** — SHODNÉ OSM URL i GPS (0 m) s publikovaným
+  profilem `portasky`. Duplicita, ne kandidát; smazání čeká na Michala
+  (otázka běží od 23. 8.).
+- **`restaurace-labska-bouda` (19,5 m), `schronisko-gorskie-dom-slaski`
+  (4,2 m), `schronisko-szrenica-1362-m-n-p-m` (5,7 m)** — krkonošská trojice
+  gastro POI uvnitř publikovaných domů, zapsaná v `_jmenovci.yaml` 24. 8.,
+  čeká na Michalovo „jeden objekt, nebo dva".
+- **`swojska-chata`** je v registru jmenovců kvůli jesenickému jmenovci; to
+  ale není rozhodnutí o zařazení, kandidát zůstává otevřený.
+- **Zbytek koše B je od rozhodnutí čistý.** Na rozdíl od koše A (tři sedminy
+  zbytečné práce) tu díra „rozhodnutí má dvě bydliště" skoro nebolí — 1 ze 42.
+
+**Co koš B umí rozhodnout offline a co ne.** Plné OSM tagy z exportů v repu:
+adresu nese 13 ze 42, web 14, `ele` **jediný** (Wysoki Kamień), `wikidata`
+dva. Na otázku „role na trase" tedy tagy ve většině případů neodpovídají —
+koš B se musí číst po jednom s prameny, stejně jako koš A.
+
+**Odpracováno 6 kandidátů** (WebSearch + otevřené stránky, doklady s citacemi
+zapsané přímo do `interniPoznamky`; do `data/chaty/` se nesáhlo):
+
+| kandidát               | občerstvení pro veřejnost                                   | role na trase                                             | návrh redakci    |
+| ---------------------- | ----------------------------------------------------------- | ---------------------------------------------------------- | ---------------- |
+| `chata-boruvka`        | **doloženo** (11–17, foodtruck, terasa)                      | **doložena** (Kubátova cesta na Sněžku, 860 m)              | **POVÝŠIT**      |
+| `karczma-hutnika`      | doloženo (a míří na kolemjdoucí)                             | doložena („przy głównym szlaku na wodospad Szklarki")       | K RUČNÍ KONTROLE |
+| `johannova-bouda`      | doloženo (samoobslužný bufet)                                | ne — okraj Vrchlabí, ve skiareálu, 550 m                    | SPORNÉ S KLÍČEM  |
+| `chata-ducha-gor`      | doloženo (restaurace 12–22)                                  | ne — pěší zóna 1 Maja, „w samym sercu Szklarskiej Poręby"   | NEZAŘAZOVAT      |
+| `bouda-mila`           | **nedoloženo** (jen pro ubytované)                           | nedoložena; firma „v likvidaci"                             | NEZAŘAZOVAT      |
+| `horska-chata-poutnik` | **nedoloženo** (pramen posílá do sousední Lysečinské boudy)  | poloha ano, trasa nedoložena; **provoz ukončen**            | NEZAŘAZOVAT      |
+
+**Tři rozpory s OSM ze šesti čtených, všechny stejného druhu — tag tvrdí
+občerstvení, prameny ne.** `chata-ducha-gor` nese `amenity=fast_food;
+cuisine=kebab`, ale vlastní web i katalogy popisují restauraci s polskou
+kuchyní (kebab na té adrese nikdo nezná). `horska-chata-poutnik` a
+`bouda-mila` nesou `amenity=restaurant`, prameny u obou mluví jen o stravování
+pro ubytované — a oba objekty jsou doloženě mimo provoz. **Je to mez celého
+koše B:** tag `amenity` je signál k přečtení, ne doklad veřejného občerstvení.
+
+**Vedlejší nález, systémový:** kandidáti bez OSM tagu `tourism` mají
+v `interniPoznamky` větu „Typ odvozen z OSM tagu tourism=undefined" —
+odvození z tagu, který neexistuje. **Nese ji 232 souborů v deseti oblastech**
+(Šumava 62, Krušné hory 46, Beskydy 38, Krkonoše 35, …). Datový soubor tím
+tvrdí nesmysl; opravit se to má u generátoru DATA-01 i zpětně v souborech.
+Návrh je v deníku 26. 8. 2026, čeká na Michala.
+
 ## Koše podle OSM tagů
 
 ### A · OSM typ horské chaty (`alpine_hut` / `wilderness_hut`) — brát první — 7 _(odpracován 25. 8. 2026, viz oddíl výš)_

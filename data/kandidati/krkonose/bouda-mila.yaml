@@ -21,3 +21,30 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  TRIÁŽ KOŠ B — křížové ověření (checked 2026-08-26, WebSearch + otevřené
+  stránky, vše verified: false):
+
+  Občerstvení pro veřejnost NEDOLOŽENO. Restaurace v objektu doložena je
+  (ceskehory.cz „stylovou horskou restaurací"; Firmy.cz „Disponuje restaurací,
+  stravováním a společenskou místností"), ale ŽÁDNÝ pramen neříká, že obslouží
+  i neubytované — naopak se mluví o polopenzi „s možností obědů za dodatečný
+  poplatek 50 Kč". Firmy.cz vede obor jako „Horské penziony, Horské ubytování",
+  ne restaurace.
+
+  SILNÉ INDICIE UKONČENÉHO PROVOZU: Firmy.cz „Tato firma nebo pobočka již není
+  aktivní"; ceskehory.cz „Objekt v archivu - prezentace není aktivní."; obchodní
+  rejstřík vede firmu jako „Bouda Míla s.r.o. v likvidaci, IČO: 27547299"
+  (doloženo jen názvem záznamu ve výsledcích, samotné rejstříkové stránky vracely
+  403/404 — datum likvidace tedy ověřené není). Nejmladší doložená aktivita je
+  z roku 2011.
+
+  Poloha: „Velká Úpa 47, 542 21 Pec pod Sněžkou", ceskehory.cz udává 953 m a
+  polohu „v poklidné oblasti Pěnkavčího vrchu" (slevový portál uvádí odchylně
+  1000 m). Značenou trasu u boudy nedokládá nic; přehled Pěnkavčího vrchu na
+  turistika.cz jmenuje Boudu Jana i Portášovy boudy, Boudu Míla NE.
+
+  NÁVRH REDAKCI: NEZAŘAZOVAT — z klíče není doložená ani jedna půlka
+  (občerstvení pro veřejnost ani role na trase) a provoz je nejspíš ukončený.
+  Kdyby se doložilo veřejné občerstvení nebo turistická minulost, patří sem zpět.
+  (Vyřazení do _vyrazeno.yaml až s potvrzením Michala.)

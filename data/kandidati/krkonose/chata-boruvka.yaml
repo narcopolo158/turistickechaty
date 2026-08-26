@@ -21,3 +21,36 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  TRIÁŽ KOŠ B — křížové ověření (checked 2026-08-26, WebSearch + otevřené
+  stránky, vše verified: false):
+
+  Občerstvení pro veřejnost DOLOŽENO včetně otvírací doby. Firmy.cz vede AKTIVNÍ
+  záznam v oboru „Bistra a Rekreační chaty a chalupy", otevřeno „Pondělí–neděle
+  11:00–17:00 (víkendy do 21:00)", a popisuje „sezonním foodtruckem, kde Vám
+  nabídneme slané i sladké knedlík, polévky, piva a limonády". Restauraci
+  dokládají nezávisle i další: ceskehory.cz „V objektu je restaurace.",
+  kudyznudy.cz „pochutiny zaměřené na tradiční českou kuchyni a krkonošské
+  speciality", hkregion.cz „terasa, letní posezení, denní i noční bar".
+  Nesrovnalost: hkregion/kudyznudy popisují plnou restauraci, Firmy.cz sezónní
+  foodtruck — prameny mohou pocházet z různých období.
+
+  Role na trase DOLOŽENA. kudyznudy.cz: „Kolem chaty vede Kubátova cesta" (vede
+  až na Sněžku), totéž razitkuj.cz. Poloha „na jižní straně Červeného vrchu
+  (Přední výsluní) v 860 m.n.m. … v Krkonošském národním parku ve Velké Úpě"
+  (razitkuj.cz), výšku 860 m shodně uvádějí tři prameny. Sezónní dostupnost:
+  „V zimě není přístupná automobilem; v létě ano" (kudyznudy.cz). Zda je Kubátova
+  cesta značená a jakou barvou, žádný pramen neuvádí.
+
+  RAZÍTKO: razitkuj.cz eviduje turistické razítko chaty (50 × 20 mm, „Razítko
+  získáno u chataře", srpen 2015) — podklad pro DATA-05, katalog razítek.
+
+  Identita ověřena adresou i GPS („Velká Úpa 16", 50.6840 N / 15.7906 E dle
+  razitkuj.cz i hkregion.cz) — není to Bouda Míla (50.691 N) ani jiná „Borůvka".
+
+  Turistická minulost NEDOLOŽENA (žádný pramen historii objektu neuvádí).
+
+  NÁVRH REDAKCI: POVÝŠIT do data/chaty/krkonose/ — obě půlky klíče jsou doložené
+  (veřejné občerstvení s otvírací dobou i role na trase na Kubátově cestě na
+  Sněžku), provoz je doloženě aktivní. Ze všech dosud čtených kandidátů koše B je
+  tenhle nejjasnější. Povýšení provede příští session; razítko rovnou do DATA-05.
