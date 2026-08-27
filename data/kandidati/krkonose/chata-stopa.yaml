@@ -28,3 +28,33 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  TRIÁŽ KOŠ B — křížové ověření (checked 2026-08-27, WebSearch + otevřené
+  stránky, vše verified: false):
+
+  Občerstvení pro veřejnost DOLOŽENO a míří výslovně na kolemjdoucí. Vlastní
+  web (stopamisecky.com): „Náš bufet/restaurace nabízí českou, domácí kuchyni,
+  krásný výhled do přírody a venkovní terasu.", otvírací doba „Úterý - Neděle
+  9:00 - 18:00 hodin". Denní režim 9–18 je gastronomicky výmluvný — je to
+  bufet pro turisty, ne večerní restaurace pro ubytované.
+
+  Role na trase DOLOŽENA, pramenem je provozovatel. Vlastní web ji označuje za
+  „ideální zastávku všech výletníků na Horních Mísečkách" a popisuje
+  dostupnost pěšky, na kole, na běžkách i na sjezdovkách podle sezóny. Značená
+  cesta ani nadmořská výška v prameni nejsou.
+
+  ALE POZOR, NEUZAVŘENÁ OTÁZKA IDENTITY: doména stopamisecky.com nese v
+  titulku stránky „Rerstaurace | Chata Mísečky | Vítkovice" — tedy jméno
+  JINÉHO kandidáta koše B (`chata-misecky`, vlastní web chatamisecky.cz,
+  Vítkovice 143). OSM body jsou od sebe ~465 m (50.7325555/15.5722222 vs
+  50.7343891/15.5662855), jde tedy o dvě různá místa, ale weby na sebe
+  ukazují. Možnosti: (a) jeden provozovatel, dva objekty; (b) bufet Stopa
+  patří k Chatě Mísečky; (c) překlep v titulku cizí šablony. Doložit se to
+  bezobslužně nepodařilo — chatamisecky.cz zakazuje čtení robotům (robots.txt)
+  a kontaktní podstránka Stopy se nenačetla. Než se to rozhodne, kandidát se
+  NEPOVYŠUJE — jinak hrozí duplicita jako u Portášek.
+
+  NÁVRH REDAKCI: obě půlky klíče doložené, ale POVÝŠIT AŽ PO ROZHODNUTÍ o
+  vztahu ke Chatě Mísečky a po odpovědi na klíč střediska (Horní Mísečky).
+  Ověření identity chce ruční pohled do rejstříku nebo na kontakt
+  provozovatele — to sandbox nezvládne.

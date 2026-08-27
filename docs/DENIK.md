@@ -28,6 +28,101 @@ Formát zápisu (nejnovější nahoře):
 > ručního spuštění úlohy — server-side routina bez ovládání v aplikaci;
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
+## 2026-08-27 — denní session: koš B podruhé, pět kandidátů s webem a jedna hrozící duplicita
+
+**Hotovo:**
+
+- **Zjištění na začátku:** **DATA-04** je dál blokovaná (dokladová část
+  vyčerpaná od 2. 8. 2026, zbylé otázky — KRNAP, PTTK Jelenia Góra, Luční
+  bouda, Petrova bouda — jsou telefonní a bezobslužný běh je nemá jak položit)
+  a **DATA-05** taky (beskydská sedmička čeká na re-export DATA-37). Vzal jsem
+  tedy první položku z „Příště" z 26. 8.: **koš B, kandidáti s vlastním webem
+  v OSM** — u nich je doklad nejlevnější.
+- **Přečteno pět kandidátů s prameny** (WebSearch → otevřené stránky, vše
+  `verified: false`, citace s URL přímo do `interniPoznamky`):
+  - **Bouda Malá Úpa (Horní Malá Úpa 136, 1040 m)** — nejjasnější případ dne
+    a je jasný **pro**. Vlastní web rozlišuje dvojí režim restaurace a přístup
+    neubytovaných píše doslova: „summer 11:00-17:00, winter: 12:00-15:00" pro
+    neubytované, „summer: 11:00-22:00" pro ubytované, 60 míst. Role na trase
+    rovněž z vlastního webu: „přímo na trase k Sněžce", „nejvyšší česká
+    vesnice". → **NÁVRH POVÝŠIT** (s poznámkou, že se objekt dnes prezentuje
+    jako „Wellness Resort" a sjezdovku má 50 m — klíč ale o typu stavby
+    nerozhoduje).
+  - **Chata Stopa (Horní Mísečky)** — občerstvení míří výslovně na
+    kolemjdoucí: „Náš bufet/restaurace…", „Úterý - Neděle 9:00 - 18:00",
+    „ideální zastávka všech výletníků na Horních Mísečkách". Obě půlky klíče
+    doložené, ale **nepovyšuje se** — viz nález níž.
+  - **Chata Mísečky (Vítkovice 143, 1000 m, bývalá Selekta)** — Firmy.cz vede
+    aktivní samostatný záznam „Restaurace - Chata Mísečky", 11:00–22:00 denně,
+    hodnocení ze srpna 2026; ceskehory.cz počítá s hosty zvenčí („4 samostatná
+    WC … pro ubytované a hosty restaurace"). Role na trase ale jen středisko
+    a sjezdovky. → **SPORNÉ, klíč střediska.**
+  - **Chata Hradečanka (Horní Malá Úpa 41)** — restaurace doložená třemi
+    prameny (Firmy.cz samostatný záznam „…- restaurace", Kudy z nudy, web
+    obce: „Italská restaurace s michelinským kuchařem přímo z Parmy"), poloha
+    ale „hned u stejnojmenného svahu" a obec ji vede v seznamu restaurací.
+    → **SPORNÉ S KLÍČEM**, týž vzor jako Johannova bouda. Vedlejší rozpor:
+    telefon obce (+420 720 213 513) ≠ telefon v OSM (+420 737 282 668).
+  - **horská chata Dimrovka (Pec pod Sněžkou, 1000 m)** — restaurace
+    v objektu doložená (vlastní web i Firmy.cz), ale **přístup veřejnosti
+    nikde** a role na trase jen sjezdovky a cyklostezky („přímo u sjezdové
+    tratě Klondike"). → **NEZAŘAZOVAT**, formulováno tak, aby netvrdilo, že
+    restaurace veřejnosti zavřená je — jen že to žádný pramen neříká.
+- **Nález dne je riziko duplicity, ne drobnost.** Doména `stopamisecky.com`
+  kandidáta `chata-stopa` nese v titulku **„Rerstaurace | Chata Mísečky |
+  Vítkovice"** — jméno jiného kandidáta téhož koše. OSM body jsou od sebe
+  **~465 m**, jde tedy o dvě různá místa, ale weby na sebe ukazují. Doložit to
+  bezobslužně nejde: `chatamisecky.cz` zakazuje čtení robotům, kontaktní
+  podstránka Stopy se nenačetla. **Do rozhodnutí se `chata-stopa`
+  nepovyšuje** — jinak vzniká táž duplicita jako u Portášek.
+- **Metodické potvrzení: pořadí „nejdřív ti s webem" se vyplatilo.** Čtyři
+  z pěti měly veřejné občerstvení doložené (proti třem ze šesti včera) a dva
+  rovnou s otvírací dobou rozlišující ubytované od neubytovaných. Zároveň
+  přibyl **čtvrtý rozpad tagu `amenity`** — u Dimrovky týmž způsobem jako
+  u Boudy Míla. `amenity` je dál signál k přečtení, ne doklad.
+- **Klíč střediska se koncentruje na Horních Mísečkách.** `chata-misecky`
+  i `chata-stopa` na něm visí obě a ve stejném koši čekají
+  `pension-jilemnicka-bouda` a `restaurace-havlova-bouda`. Jedna odpověď
+  rozhodne celý shluk.
+- **Do `data/chaty/` se nesáhlo, nic se nepovýšilo ani nevyřadilo.** Změněny
+  jen `interniPoznamky` pěti kandidátů a `docs/KRKONOSE-TRIAZ-KOSE.md` (nový
+  oddíl „KOŠ B — druhé čtení"). `npm run kontrola` celé zelené.
+
+**Příště:** pokračovat v koši B — **27 nepřečtených** (4 parkují, 11 hotovo).
+Nejdřív zbytek těch s webem v OSM: `jestrebi-bouda`,
+`pension-jilemnicka-bouda`, `restaurace-havlova-bouda`,
+`schronisko-wysoki-kamien`, `sokoli-boudy`, `velke-pardubicke-boudy`,
+`bouda-pod-snezkou`, `chata-karkonoska`. Dál trvá: devět padajících testů
+z 22. 8. a blokované DATA-04 / DATA-05.
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu
+spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`;
+`npm ci` je v čerstvém sandboxu potřeba pustit před `npm run kontrola`;
+`WebFetch` funguje až poté, co URL projde `WebSearch`. Nově: **`chatamisecky.cz`
+zakazuje čtení robotům** (přidat k Arše Krkonoš a javorka.eu do seznamu domén,
+na které sandbox nedosáhne).
+
+**Otázky pro Michala:**
+
+- **`chata-stopa` a `chata-misecky` — jeden provoz, nebo dva?** Weby na sebe
+  ukazují, body jsou 465 m od sebe. Než se to rozhodne, ani jednu nepovyšuju.
+  Stačí pohled do rejstříku nebo telefonát provozovateli.
+- **Klíč střediska na Horních Mísečkách** — je horská osada v 1000 m na
+  hřebenovém nástupu „středisko" ve stejném smyslu jako Vítkovice a Rokytnice
+  (kde platí POTVRZENO MIMO)? Odpověď rozhodne rovnou čtyři kandidáty.
+- **Boudu Malá Úpa povýšit?** Obě půlky klíče doložené, přístup neubytovaných
+  doslova citovaný. Jediné, co proti stojí, je dnešní prezentace „Wellness
+  Resort" — klíč ale o typu stavby nerozhoduje.
+- Trvá z 26. 8.: **Chatu Borůvku povýšit?**; **Karczma Hutnika — platí klíč
+  i pro podnik z roku 2012?**; **232 kandidátů tvrdí „tourism=undefined" —
+  opravit?**; a starší fronta: **samoobslužný obchůdek 24/7 = občerstvení pro
+  veřejnost?**, **Chata Hubertka**, **koš „ROZHODNUTO" do
+  `scripts/triaz-kandidatu.ts`?**, **Archa Krkonoš (robots.txt) — přečteš
+  ručně?**, **krkonošská trojice**, **rozhledna × hostinec na témž vrcholu**,
+  **tour.Chata × Hotel Bouřňák**, **smazat `krkonose/horska-chata-portasky`?**,
+  **opřít idempotenci DATA-01 o OSM id?**, **zařadit `test:int` do CI**,
+  **Bouda Svornost**, **uvolnit kotvu ve jmenné dohledávce**, **čtyři založené,
+  ale nespuštěné oblasti**.
 
 ## 2026-08-26 — denní session: koš B otevřen, šest kandidátů rozhodnuto a jeden tag se rozpadl třikrát
 

@@ -158,6 +158,47 @@ odvození z tagu, který neexistuje. **Nese ji 232 souborů v deseti oblastech**
 tvrdí nesmysl; opravit se to má u generátoru DATA-01 i zpětně v souborech.
 Návrh je v deníku 26. 8. 2026, čeká na Michala.
 
+## KOŠ B — druhé čtení (27. 8. 2026): pět kandidátů s vlastním webem v OSM
+
+Postup podle „Příště" z 26. 8.: brát nejdřív ty, u kterých OSM nese vlastní
+web — doklad je u nich nejlevnější. Přečteno pět, metoda beze změny (WebSearch,
+pak otevřené stránky; vše `verified: false`, citace s URL zapsané přímo do
+`interniPoznamky` kandidáta; do `data/chaty/` se nesáhlo).
+
+| kandidát                | občerstvení pro veřejnost                                     | role na trase                                                | návrh redakci               |
+| ----------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | --------------------------- |
+| `bouda-mala-upa`        | **doloženo pro NEUBYTOVANÉ** (léto 11–17, zima 12–15)          | doložena (vlastní web: „přímo na trase k Sněžce", 1040 m)      | **POVÝŠIT**                 |
+| `chata-stopa`           | **doloženo** (bufet Út–Ne 9–18, „zastávka všech výletníků")    | doložena (vlastní web)                                         | POVÝŠIT AŽ PO IDENTITĚ      |
+| `chata-misecky`         | doloženo (Firmy.cz aktivní, 11–22; „hosté restaurace")         | ne — středisko Horní Mísečky, sjezdovky                        | SPORNÉ (klíč střediska)     |
+| `chata-hradecanka`      | doloženo (Firmy.cz samostatný záznam „restaurace")             | ne — „hned u stejnojmenného svahu", obec ji vede mezi restauracemi | SPORNÉ S KLÍČEM         |
+| `horska-chata-dimrovka` | **nedoloženo** (restaurace v penzionu, přístup zvenčí nikde)   | ne — „přímo u sjezdové tratě Klondike", cyklostezky            | NEZAŘAZOVAT                 |
+
+**Nález dne, a je to riziko duplicity, ne drobnost.** Doména `stopamisecky.com`
+kandidáta `chata-stopa` nese v titulku stránky **„Rerstaurace | Chata Mísečky |
+Vítkovice"** — tedy jméno jiného kandidáta téhož koše (`chata-misecky`, vlastní
+web `chatamisecky.cz`, Vítkovice 143). OSM body jsou od sebe **~465 m**, jsou to
+tedy dvě různá místa, ale weby na sebe ukazují. Tři možnosti: jeden provozovatel
+a dva objekty; bufet Stopa jako provozovna Chaty Mísečky; překlep v titulku cizí
+šablony. **Bezobslužně to doložit nejde** — `chatamisecky.cz` zakazuje čtení
+robotům, kontaktní podstránka Stopy se nenačetla. Do rozhodnutí se `chata-stopa`
+nepovyšuje; jinak by vznikla táž duplicita jako u Portášek.
+
+**Vzor z 26. 8. platí dál a přibyl mu protipól.** Včera se tag `amenity`
+rozpadl třikrát ze šesti (tvrdil občerstvení, prameny ne) — dnes se u Dimrovky
+rozpadl počtvrté, a to týmž způsobem jako u Boudy Míla: restaurace v objektu je,
+přístup veřejnosti nikde. **Zato u kandidátů s vlastním webem v OSM je doklad
+opravdu levnější:** čtyři z pěti měly veřejné občerstvení doložené a dva z nich
+rovnou i s otvírací dobou rozlišující ubytované od neubytovaných. Pořadí „nejdřív
+ti s webem" se osvědčilo, dá se v něm pokračovat.
+
+**Klíč střediska se koncentruje na Horních Mísečkách.** `chata-misecky` a
+`chata-stopa` stojí obě tam a obě na tuhle otázku visí; ve stejném koši čeká
+`pension-jilemnicka-bouda` a `restaurace-havlova-bouda`. Jedna Michalova odpověď
+rozhodne rovnou celý shluk. Rozdíl proti Vítkovicím a Rokytnici (Sasanka, Chata
+Eliška, Hubertka) je, že **Horní Mísečky nejsou obec, ale horská osada v 1000 m**.
+
+**Stav koše B po dvou čteních: 42 položek — 4 parkují, 11 přečteno, 27 zbývá.**
+
 ## Koše podle OSM tagů
 
 ### A · OSM typ horské chaty (`alpine_hut` / `wilderness_hut`) — brát první — 7 _(odpracován 25. 8. 2026, viz oddíl výš)_
