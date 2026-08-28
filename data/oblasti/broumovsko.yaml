@@ -26,8 +26,21 @@ overeniCharakteristika:
 topCile: []
 interniPoznamky: 'Založeno 10. 8. 2026 na pokyn Michala (Hvězda jmenována výslovně). ÚROVEŇ
   turisticka-oblast — vzor cesky-raj: skalní oblasti bez horského hřebene, kam se chodí za
-  vyhlídkami a kde chaty stojí. Vyhledávací okno pro DATA-01 zatím NENÍ — první profil
-  (Chata Hvězda) vznikl ruční rešerší; okno se doplní, až bude důvod oblast prohledat celou
-  (Adršpach, Ostaš, Slavný…). Nejvyšší hora se záměrně neuvádí (vzor cesky-raj); nejvyšší
+  vyhlídkami a kde chaty stojí. VYHLEDÁVACÍ OKNO PRO DATA-01 DOPLNĚNO 28. 8. 2026 na pokyn
+  Michala (doslova: „jestrebi bouda - zalozit broumovsko - bude tam i chata hvezda") —
+  konfigurace ve scripts/oblasti.ts, okno 50,44–50,72 / 15,95–16,45, země CZ. Důvodem
+  byl kandidát Jestřebí bouda z krkonošské triáže: splňuje klíč (bufet a turistická
+  ubytovna KČT Úpice na hřebeni Jestřebích hor), ale leží 25–30 km od krkonošského
+  hřebene — první doložený případ, kdy okno jedné oblasti chytlo cizí pohoří. Kandidát
+  je přesunutý v data/kandidati/broumovsko/. OBLAST ČEKÁ NA KLIK (běh DATA-01 v Actions).
+  DVĚ VĚCI JSOU U OKNA OTEVŘENÉ, obě zapsané v komentáři konfigurace: (1) okno není
+  ukotvené měřenými souřadnicemi, protože bezobslužná session na Overpass nedosáhne
+  (403) — před ostrým během je na místě je doměřit; (2) polská strana (Góry Stołowe,
+  Góry Kamienne) je zatím venku a čeká na rozhodnutí — externí katalog tam vede tři
+  objekty hned za hranicí: Andrzejówka (HUT-0238), Pasterka (HUT-0239) a Na Szczelińcu
+  (HUT-0240).
+  ROZSAH OBLASTI zahrnuje i JESTŘEBÍ HORY: do Broumovské vrchoviny geomorficky patří,
+  do CHKO Broumovsko ale ne. Průvodce oblast vede jako turistickou, ne jako CHKO —
+  tenhle rozdíl je proto v pořádku a je lepší ho mít napsaný než zamlčený. Nejvyšší hora se záměrně neuvádí (vzor cesky-raj); nejvyšší
   bod Broumovských stěn je Božanovský Špičák (773 m), do turistické oblasti ale patří víc
   jednotek.'

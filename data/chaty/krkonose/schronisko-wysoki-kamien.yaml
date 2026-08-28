@@ -1,0 +1,279 @@
+# Schronisko Wysoki Kamień — profil povýšen z kandidáta DATA-01 (koš B triáže
+# 22. 8. 2026) na přímý pokyn Michala z 28. 8. 2026 („wysoki kamien povysit").
+# Původní polský název jako primární (rozhodnutí Michala). Konvence B: každý
+# údaj má source, verified zůstává false, dokud ho neověří redakce vlastním
+# dotazem nebo návštěvou.
+#
+# POZOR NA DVĚ VĚCI, které profil nese vědomě:
+#  (1) Objekt leží v Górach Izerskich, ne v Karkonoszích — do oblasti krkonose
+#      spadá proto, že tam sahá naše vyhledávací okno (rozhodnutí Michala
+#      28. 7. 2026 o polském podhůří nad Szklarskou Porębou).
+#  (2) Dnešní provoz je bufet a obchůdek, ne schronisko s noclehem — nová
+#      budova se teprve staví. Pole nocleh proto vyplněné NENÍ.
+#
+# Vlastní web wysokikamien.com.pl se nepodařilo otevřít: server posílá nekonečný
+# redirect https → http. Všechna fakta níž jsou proto z třetích pramenů.
+
+nazev: Schronisko Wysoki Kamień
+slug: schronisko-wysoki-kamien
+zeme: pl
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+aliasy:
+  - nazev: Hochsteinbaude
+    poznamka: německé jméno předválečné boudy na témž vrcholu
+  - nazev: Wysoki Kamień
+    poznamka: jméno vrcholu, běžně se jím označuje i objekt
+
+# ── Doplňková fakta ───────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Katalog dolnoslezských značených tras uvádí, že první boudu tu nechali
+      Schaffgotschové postavit v roce 1837 jako jednu z prvních v Sudetech.
+    kategorie: stari
+    zdroj: https://dolnoslaskie.szlaki.pttk.pl/2033-dolnoslaskie-wysoki-kamien-schronisko
+  - text: >-
+      Regionální turistický web mluví o jedné z nejkrásnějších panorám
+      v Sudetech — z vrcholových skal je vidět na Karkonosze, oba hřebeny Gór
+      Izerskich a Kotlinu Jeleniogórskou.
+    kategorie: jine
+    zdroj: https://www.szklarskaporeba.info.pl/wysokikamien.php
+
+kontakty:
+  # E-mail nese OSM tag (way/518439272, stav dat 22. 8. 2026) — příjmení
+  # v adrese sedí s hospodáři, které nezávisle jmenují dva regionální weby
+  # („rodzina Gołbów"). Neověřeno, neposláno.
+  email: golbam@wp.pl
+  web: http://www.wysokikamien.com.pl
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.8456719
+lng: 15.4917689
+vyska: 1056
+obec: Szklarska Poręba
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/518439272 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright).
+    VÝŠKA — ROZPOR, který profil nese nahoře: katalog dolnoslezských
+    značených tras (https://dolnoslaskie.szlaki.pttk.pl/2033-dolnoslaskie-wysoki-kamien-schronisko,
+    čteno 28. 8. 2026) uvádí v záhlaví u schroniska 1056 m a v textu u vrcholu
+    1058 m; 1058 m nese i OSM tag ele a shodně i regionální turistický web
+    (https://www.szklarskaporeba.info.pl/wysokikamien.php) a městský turistický
+    portál (https://turystyczna.szklarskaporeba.pl/29-szklarskaporeba-wysoki-kamien),
+    oba ovšem o VRCHOLU. Zapsáno nižší číslo 1056 m jako výška objektu podle
+    konvence z 27. 7. 2026; 1058 m je patrně kóta vrcholu, ne boudy —
+    doložené to ale nemáme. POLOHA: Wysoki Grzbiet Gór Izerskich, západně nad
+    Szklarskou Porębou (tentýž regionální web). V terénu neověřeno.
+  verified: false
+  checked: '2026-08-28'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+# Pole nocleh se vědomě NEVYPLŇUJE: prameny shodně píšou, že dnes na místě
+# funguje jen obchůdek a bufet a že se nová budova schroniska teprve staví.
+# Jestli se dá už teď přespat, neříká žádný z nich — a nedomýšlíme to.
+overeniNocleh:
+  source: >-
+    NEDOLOŽENO. Regionální turistický web
+    (https://www.szklarskaporeba.info.pl/wysokikamien.php, čteno 28. 8. 2026)
+    i městský turistický portál
+    (https://turystyczna.szklarskaporeba.pl/29-szklarskaporeba-wysoki-kamien)
+    popisují dnešní provoz jako „mały sklepik i bufet" a shodně uvádějí, že
+    „trwa budowa nowego schroniska"; katalog značených tras
+    (https://dolnoslaskie.szlaki.pttk.pl/2033-dolnoslaskie-wysoki-kamien-schronisko)
+    mluví o „skromnym bufecie". Lůžka, kapacitu ani rezervace neuvádí ani
+    jeden. Doplnit v DATA-04 přímým dotazem.
+  verified: false
+  checked: '2026-08-28'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: bufet
+overeniObcerstveni:
+  source: >-
+    https://dolnoslaskie.szlaki.pttk.pl/2033-dolnoslaskie-wysoki-kamien-schronisko
+    (čteno 28. 8. 2026): objekt „obecnie funkcjonuje jako skromny bufet".
+    Nezávisle https://www.szklarskaporeba.info.pl/wysokikamien.php a
+    https://turystyczna.szklarskaporeba.pl/29-szklarskaporeba-wysoki-kamien:
+    „na szczycie funkcjonuje mały sklepik oraz bufet". Otvírací doba dle OSM
+    tagu opening_hours (https://www.openstreetmap.org/way/518439272, stav dat
+    22. 8. 2026, surový formát, neověřeno): Apr-Sep Mo-Su 10:00-18:00; Oct-Mar
+    Mo-Su 10:00-16:00. OSM vede objekt jako amenity=cafe.
+  verified: false
+  checked: '2026-08-28'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+overeniProvoz:
+  source: >-
+    https://www.szklarskaporeba.info.pl/wysokikamien.php a
+    https://turystyczna.szklarskaporeba.pl/29-szklarskaporeba-wysoki-kamien
+    (obojí čteno 28. 8. 2026): „Gospodarzami Wysokiego Kamienia jest rodzina
+    Gołbów ze Szklarskiej Poręby" — provoz je tedy soukromý, ne PTTK. Katalog
+    značených tras
+    (https://dolnoslaskie.szlaki.pttk.pl/2033-dolnoslaskie-wysoki-kamien-schronisko)
+    to potvrzuje jinými slovy: „od 1996 roku powstaje prywatne schronisko
+    Wysoki Kamień". Telefon jsme nedohledali; e-mail golbam@wp.pl nese OSM tag (way/518439272) a příjmení v něm sedí s hospodáři, které jmenují oba regionální weby — ověřený ale není. Vlastní web
+    wysokikamien.com.pl se nepodařilo otevřít (nekonečný redirect https → http).
+    Doplnit v DATA-04.
+  verified: false
+  checked: '2026-08-28'
+
+# ── Přístup ───────────────────────────────────────────────────────────────
+autem: >-
+  Objekt stojí na hřebeni a prameny k němu popisují jen pěší přístup po
+  značených cestách ze Szklarské Poręby. Jestli se dá dojet blíž a kam,
+  doložené nemáme.
+overeniPristup:
+  source: >-
+    https://turystyczna.szklarskaporeba.pl/29-szklarskaporeba-wysoki-kamien
+    (čteno 28. 8. 2026): vede sem červená značka — Główny Szlak Sudecki ze
+    Szklarské Poręby na Świeradów-Zdrój — a žlutá značka ze Szklarské Poręby
+    Dolní přes „Zakręt Śmierci". Katalog značených tras
+    (https://dolnoslaskie.szlaki.pttk.pl/2033-dolnoslaskie-wysoki-kamien-schronisko)
+    vede objekt na Głównym Szlaku Sudeckim (78,7 km, 32:30 h) a na trase
+    Wysoki Kamień – Borowice (22,1 km, 8:45 h). Časy a délky jsou celotrasové,
+    ne k objektu — přístupové časy z výchozích bodů doložené nemáme.
+    O příjezdu autem nepíše ani jeden pramen.
+  verified: false
+  checked: '2026-08-28'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1837 # první bouda na vrcholu; dnešní provoz je až od roku 1996
+milniky:
+  - rok: 1837
+    udalost: >-
+      Schaffgotschové nechali na vrcholu postavit boudu Hochsteinbaude — podle
+      pramene jednu z prvních v Sudetech
+  - rok: 1882
+    udalost: Na místě stojí novější budova
+  - rok: 1963
+    udalost: >-
+      Budova z roku 1882 zbourána; do toho roku na vrcholu fungovalo turistické
+      schronisko
+  - rok: 1996
+    udalost: Na místě začíná vznikat soukromé schronisko Wysoki Kamień
+  - rok: 2015
+    udalost: Vedle schroniska se začíná stavět rozhledna
+overeniHistorie:
+  source: >-
+    https://dolnoslaskie.szlaki.pttk.pl/2033-dolnoslaskie-wysoki-kamien-schronisko
+    (čteno 28. 8. 2026): schronisko Hochsteinbaude postavené Schaffgotschy
+    v roce 1837 jako jedno z prvních v Sudetech; budova z roku 1882 zbourána
+    v roce 1963; od roku 1996 vzniká soukromé schronisko Wysoki Kamień; od roku
+    2015 vedle roste rozhledna, která měla být hotova v roce 2023.
+    Nezávisle https://turystyczna.szklarskaporeba.pl/29-szklarskaporeba-wysoki-kamien:
+    „do 1963 roku na szczycie funkcjonowało schronisko turystyczne".
+    ROK 1882 nese pramen bez bližšího určení, co se tehdy stalo (stavba,
+    přestavba, rozšíření) — zapsán proto opatrně. ZDA JE ROZHLEDNA HOTOVÁ,
+    nevíme: katalog mluví o termínu 2023 v budoucím čase, městský portál
+    o probíhající stavbě. Ověřit v DATA-04.
+  verified: false
+  checked: '2026-08-28'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Bufet a obchůdek na vrcholu Wysokého Kamienia (1056 m) nad Szklarskou
+  Porębou, na Głównym Szlaku Sudeckim. Turistická bouda tu stála od roku 1837
+  a patřila k prvním v Sudetech; dnešní objekt vzniká jako soukromé schronisko
+  od roku 1996 a nová budova se teprve staví.
+text:
+  - >-
+    Wysoki Kamień je vrchol ve Wysokim Grzbietu Gór Izerskich, který se zvedá
+    západně nad Szklarskou Porębou. Do našeho průvodce patří proto, že přes něj
+    vede Główny Szlak Sudecki a že na něm turisté najdou otevřené občerstvení —
+    ne proto, že by to byly Krkonoše. Ty odsud jsou vidět, ale hřeben je
+    izerský.
+  - >-
+    Výška se v pramenech rozchází a rozřešenou ji nemáme. Katalog dolnoslezských
+    značených tras uvádí u schroniska 1056 metrů a hned v textu u vrcholu 1058;
+    hodnotu 1058 nese shodně i mapová databáze a dva regionální turistické weby,
+    ty ale mluví o kótě vrcholu. Zůstáváme u nižšího čísla a rozdíl přiznáváme —
+    nejspíš jde o rozdíl mezi vrcholem a budovou pod ním, doložené to ale není.
+  - >-
+    Historie místa sahá hluboko do devatenáctého století. Boudu Hochsteinbaude
+    tu nechali Schaffgotschové postavit v roce 1837 a podle pramene byla jednou
+    z prvních v Sudetech; v roce 1882 na místě stojí novější budova, o níž ale
+    nevíme, jestli šlo o stavbu novou, přestavbu, nebo rozšíření — pramen to
+    neříká. Ta budova byla v roce 1963 zbourána a do téhož roku tu turistické
+    schronisko fungovalo. Pak přišla víc než třicetiletá pauza.
+  - >-
+    Od roku 1996 na vrcholu vzniká soukromé schronisko Wysoki Kamień a hospodaří
+    tu rodina Gołbů ze Szklarské Poręby. Slovo „vzniká" je tu přesnější než
+    „stojí": prameny se shodují, že se nová budova schroniska pořád staví
+    a že dnes na místě funguje obchůdek a skromný bufet. Kolik je uvnitř lůžek
+    a jestli se dá přespat, neuvádí ani jeden — proto to netvrdíme. Vedle
+    schroniska od roku 2015 roste rozhledna; jestli je hotová, doložené nemáme.
+  - >-
+    Cesta sem vede pěšky. Ze Szklarské Poręby stoupá červená značka Głównego
+    Szlaku Sudeckiego, která pokračuje na Świeradów-Zdrój, a ze Szklarské
+    Poręby Dolní žlutá přes Zakręt Śmierci. Katalog značených tras vede vrchol
+    ještě na trase do Borowic, dlouhé dvaadvacet kilometrů. Délky a časy, které
+    prameny uvádějí, patří celým trasám, ne výstupu k boudě, takže je jako
+    přístupové časy nepřebíráme. O příjezdu autem nepíše žádný pramen.
+  - >-
+    Otvírací dobu — v létě od deseti do šesti, v zimě do čtyř — nese jen mapová
+    databáze v surovém strojovém formátu a je z ní vidět, že objekt funguje
+    celoročně. Vlastní stránky boudy se nám otevřít nepodařilo, takže všechno
+    výše pochází z třetích pramenů a redakce zatím nic z toho neověřila vlastním
+    dotazem ani návštěvou. Před cestou proto doporučujeme ověřit si přímo
+    u provozovatele, zda je otevřeno a v jakém režimu.
+
+zdroje:
+  - popis: >-
+      Katalog dolnoslezských značených tras (PTTK) — historie po letech,
+      dnešní provoz jako bufet, výška 1056/1058 m, zařazení na Główny Szlak
+      Sudecki a na trasu do Borowic, rozhledna od roku 2015
+    url: https://dolnoslaskie.szlaki.pttk.pl/2033-dolnoslaskie-wysoki-kamien-schronisko
+  - popis: >-
+      Oficiální turistický portál Szklarské Poręby — dnešní provoz (sklepik
+      a bufet), hospodáři, červená a žlutá značka, konec schroniska v roce 1963
+    url: https://turystyczna.szklarskaporeba.pl/29-szklarskaporeba-wysoki-kamien
+  - popis: >-
+      Regionální turistický web Szklarské Poręby — poloha ve Wysokim Grzbietu
+      Gór Izerskich, výška vrcholu, panorama, hospodáři, probíhající stavba
+      schroniska
+    url: https://www.szklarskaporeba.info.pl/wysokikamien.php
+  - popis: OpenStreetMap (poloha objektu, otvírací doba, kóta vrcholu, ODbL)
+    url: https://www.openstreetmap.org/way/518439272
+
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/schronisko-wysoki-kamien.yaml (DATA-01,
+  koš B triáže) na přímý pokyn Michala z 28. 8. 2026 („wysoki kamien povysit"),
+  po čtení pramenů v denní session téhož dne. Vše verified: false dle konvence
+  B — ověří teprve Michal vlastním dotazem nebo návštěvou.
+
+  ZAŘAZENÍ DO OBLASTI: objekt leží ve Wysokim Grzbietu GÓR IZERSKICH, ne
+  v Karkonoszích. Do oblasti krkonose spadá proto, že tam sahá naše
+  vyhledávací okno — severní hranu na 50,84 posunul Michal 28. 7. 2026 kvůli
+  Kochanówce a polské podhůří nad Szklarskou Porębou tím do okna patří.
+  Wysoki Kamień je 50,8457, tedy těsně nad tou hranou. Próza to říká nahlas
+  hned v prvním odstavci, aby profil nepředstíral, že je to krkonošská bouda.
+  Pokud jednou vznikne oblast „Góry Izerskie", tenhle profil je první kandidát
+  na přesun.
+
+  CO PROFIL VĚDOMĚ NEVYPLŇUJE:
+  — nocleh: žádný pramen neuvádí lůžka ani kapacitu a všechny tři shodně
+    píšou, že se nová budova schroniska teprve staví. Vyplnit „ne" by bylo
+    stejné domýšlení jako vyplnit „ano".
+  — telefon a e-mail: nedohledány.
+  — přístupové časy: prameny nesou jen celotrasové délky (GSS 78,7 km /
+    32:30 h, Borowice 22,1 km / 8:45 h), což o výstupu k boudě neříká nic.
+
+  ROZPOR VÝŠKY 1056 × 1058 je v profilu přiznaný v overeniLokace i v próze.
+  Zapsáno nižší číslo dle konvence z 27. 7. 2026. Hypotéza (NEDOLOŽENÁ, proto
+  není v próze jako fakt): 1058 je kóta vrcholu a 1056 patří budově pod ním.
+
+  VLASTNÍ WEB SE NEPODAŘILO OTEVŘÍT: wysokikamien.com.pl posílá nekonečný
+  redirect https → http (302 na tutéž adresu, WebFetch upgraduje zpět na
+  https). Je to nový vzor nedostupnosti — dosud jsme v projektu potkali jen
+  robots.txt (Archa Krkonoš, javorka.eu, chatamisecky.cz, sokoliboudy.cz,
+  havlovabouda.cz). Až se web přečte, doplnit kontakty, kapacitu, sezónu
+  a stav rozhledny.
+
+  DO DATA-04 DOTÁHNOUT: telefon (e-mail z OSM ověřit), je-li nocleh a kolik lůžek, jestli
+  je rozhledna z roku 2015 dokončená (termín 2023 nese pramen v budoucím čase),
+  rozpor výšky 1056/1058 a co se přesně stalo v roce 1882.
+
+  FOTKA ZATÍM ŽÁDNÁ — licenční síto DATA-02 nad tímhle objektem neběželo.

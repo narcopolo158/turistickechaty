@@ -1,4 +1,9 @@
 # Jestřebí bouda — KANDIDÁT z OpenStreetMap (DATA-01, stav OSM dat 2026-08-22)
+# PŘESUNUT z data/kandidati/krkonose/ do broumovsko 28. 8. 2026 na pokyn
+# Michala („jestrebi bouda - zalozit broumovsko"). Do krkonošského exportu
+# se dostal jen proto, že leží v jihovýchodním rohu krkonošského okna;
+# ve skutečnosti stojí na hřebeni Jestřebích hor u Radvanic, 25–30 km od
+# krkonošského hřebene. Pole `oblast` přepsáno na broumovsko.
 # Zdroj: https://www.openstreetmap.org/node/2402261246 · data © přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright)
 # Vše verified: false — údaje převzaty z OSM tagů, redakčně neověřeno. Na web
 # (data/chaty/krkonose/) povyšovat až po křížovém ověření (DATA-03). Stav
@@ -7,7 +12,7 @@
 nazev: Jestřebí bouda
 slug: jestrebi-bouda
 zeme: cz
-oblast: krkonose
+oblast: broumovsko
 lat: 50.5612236
 lng: 16.0361169
 overeniLokace:
@@ -51,6 +56,15 @@ interniPoznamky: >-
   krkonošského hřebene. Prameny to potvrzují nezávisle: Firmy.cz vede záznam
   „Jestřebí bouda (Radvanice)", obec Radvanice ji vede mezi ubytováním a
   stravováním. Vlastní web sám píše „Krkonošské podhůří", ne Krkonoše.
+
+  ROZHODNUTO 28. 8. 2026 (Michal, doslova „jestrebi bouda - zalozit
+  broumovsko - bude tam i chata hvezda"): kandidát PATŘÍ DO OBLASTI
+  BROUMOVSKO, která tím dostala vyhledávací okno pro DATA-01
+  (scripts/oblasti.ts). Soubor přesunut z data/kandidati/krkonose/.
+  K povýšení do data/chaty/broumovsko/ zbývá dobrat, co prameny zatím
+  nenesou: nadmořskou výšku z druhého pramene (vlastní web uvádí 700 m),
+  kapacitu ubytovny, kontakt a značené trasy kolem. Původní návrh z téhož
+  dne, ještě před Michalovým rozhodnutím, zněl takto:
 
   NÁVRH REDAKCI: NEPOVYŠOVAT DO krkonose — ale ani nevyřazovat. Klíč objekt
   splňuje (bufet pro kolemjdoucí + hřebenová poloha + provoz KČT), jen patří

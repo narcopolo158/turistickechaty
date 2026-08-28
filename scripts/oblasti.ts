@@ -757,6 +757,76 @@ export const OBLASTI: OblastKonfig[] = [
       'osmnáctá oblast (pokyn Michala 8. 8. 2026) — nejvýchodnější oblast korpusu; polská i slovenská strana (Bukovské vrchy) vcelku',
     katalogPohori: ['Bieszczady', 'Bukovské vrchy'],
   },
+  {
+    slug: 'broumovsko',
+    nazev: 'Broumovsko',
+    /**
+     * Devatenáctá oblast s vyhledávacím oknem — a PRVNÍ TURISTICKÁ OBLAST,
+     * která ho dostává. Publikační oblast `broumovsko` existuje od
+     * 10. 8. 2026 (úroveň `turisticka-oblast`, vzor cesky-raj) a nese jeden
+     * ruční profil, Chatu Hvězda; okno pro DATA-01 jí ale schválně chybělo,
+     * dokud nebyl důvod prohledat oblast celou. Ten důvod přišel
+     * 28. 8. 2026 od Michala: „jestrebi bouda - zalozit broumovsko - bude
+     * tam i chata hvezda."
+     *
+     * PROČ TEĎ: triáž koše B v Krkonoších našla kandidáta `jestrebi-bouda`,
+     * který klíč zařazení splňuje čistě (víkendový bufet a celoroční
+     * turistická ubytovna KČT Úpice na hřebeni Jestřebích hor), jenže leží
+     * 25–30 km od krkonošského hřebene — jen uvnitř krkonošského okna. Byl
+     * to první doložený případ, kdy okno jedné oblasti chytlo cizí pohoří.
+     * Michal ho poslal sem.
+     *
+     * ROZSAH: Jestřebí hory, Adršpašsko-teplické skály, Ostaš, Broumovské
+     * stěny a Javoří hory. Geomorfologicky je to Broumovská vrchovina —
+     * pod tím jménem vede externí katalog i Chatu Hvězda (HUT-0123).
+     * Jestřebí hory do Broumovské vrchoviny patří, do CHKO Broumovsko ale
+     * ne; oblast je proto vedená jako TURISTICKÁ, ne jako CHKO ani jako
+     * pohoří, a `data/oblasti/broumovsko.yaml` to říká nahlas.
+     */
+    zeme: ['CZ'],
+    /**
+     * POZOR — TOHLE OKNO NENÍ UKOTVENÉ MĚŘENÝMI SOUŘADNICEMI, na rozdíl od
+     * všech osmnácti výš. Bezobslužná session na Overpass nedosáhne
+     * (overpass-api.de vrací ze sandboxu 403), takže se kotvicí body obcí
+     * a vrcholů nedaly změřit tak, jak to dělají ostatní záznamy. Okno je
+     * proto ZÁMĚRNĚ ŠIROKÉ: u vyhledávacího okna je levnější přebrat pár
+     * kandidátů navíc v triáži než tiše minout objekt. Doložené kotvy máme
+     * jen dvě, obě z vlastních dat:
+     *   Chata Hvězda   50.5668 / 16.2665 (data/chaty/broumovsko/chata-hvezda.yaml)
+     *   Jestřebí bouda 50.5612 / 16.0361 (OSM way, kandidát)
+     * Zbytek hran je odhad rozsahu oblasti s rezervou, ne měření. PŘED
+     * PRVNÍM OSTRÝM BĚHEM DATA-01 by okno mělo projít ukotvením proti
+     * měřeným bodům (Radvanice, Adršpach, Police nad Metují, Broumov,
+     * Ruprechtický Špičák, Božanovský Špičák) — v Actions, kde Overpass
+     * dostupný je.
+     *
+     * DVA PŘEKRYVY JSOU VĚDOMÉ:
+     *   s KRKONOŠEMI  50.55–50.72 / 15.95–16.05 — přesně pruh Jestřebích
+     *     hor, kvůli kterému oblast vzniká. Dvojímu založení téhož objektu
+     *     brání DATA-36 a DATA-38.
+     *   s ORLICKÝMI HORAMI 50.44–50.45 / 16.25–16.45 — tenký proužek na
+     *     jižní hraně; ostrý řez naslepo by vyřízl objekty mezi oběma
+     *     celky.
+     *
+     * POLSKÁ STRANA JE VĚDOMĚ VENKU A JE TO OTÁZKA PRO MICHALA, ne opomenutí.
+     * Externí katalog vede hned za hranicí tři objekty, které by do okna
+     * padly, kdyby `zeme` obsahovalo PL: Andrzejówka (HUT-0238, Góry
+     * Kamienne, Mieroszów, 805 m), Pasterka (HUT-0239, Góry Stołowe, Radków,
+     * 700 m) a Na Szczelińcu (HUT-0240, Góry Stołowe, Karłów, 919 m). Góry
+     * Stołowe jsou přímým pokračováním téže pískovcové plošiny jako
+     * Broumovské stěny a Adršpach, takže princip „přeshraniční celek vcelku"
+     * (rozhodnutí Michala 20. 7. 2026) pro spojení mluví. Proti mluví, že
+     * katalog je vede pod VLASTNÍMI jmény, ne pod Broumovskou vrchovinou —
+     * a spojit dvě pojmenované jednotky do jedné oblasti je přesně typ
+     * rozhodnutí, který si Michal vzal sám u Javorníků a Vsetínských vrchů
+     * i u Orlických hor a Gór Bystrzyckich. Proto se tu nepředjímá.
+     */
+    bbox: { latMin: 50.44, lngMin: 15.95, latMax: 50.72, lngMax: 16.45 },
+    bbox3d: { latMin: 50.48, lngMin: 15.98, latMax: 50.68, lngMax: 16.42 },
+    poznamka:
+      'devatenáctá oblast s oknem (pokyn Michala 28. 8. 2026) — první turistická oblast, která okno dostává; okno zatím NEUKOTVENÉ měřenými body a polská strana čeká na rozhodnutí, viz komentář',
+    katalogPohori: ['Broumovská vrchovina'],
+  },
 ]
 
 export const oblastDleSlugu = (slug: string): OblastKonfig => {

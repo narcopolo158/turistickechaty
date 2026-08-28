@@ -28,6 +28,99 @@ Formát zápisu (nejnovější nahoře):
 > ručního spuštění úlohy — server-side routina bez ovládání v aplikaci;
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
+## 2026-08-28 (druhý blok, Michal online) — Wysoki Kamień povýšen a Broumovsko dostalo okno
+
+Michal odpověděl na obě otázky z dopolední session jednou větou: *„wysoku kamien
+povysit, jestrebi bouda - zalozit broumovsko - bude tam i chata hvězda."* Obojí
+odpracováno.
+
+**Hotovo:**
+
+- **Schronisko Wysoki Kamień POVÝŠENO** do `data/chaty/krkonose/` — sedmasedmdesátý
+  profil krkonošského korpusu. Vše `verified: false` dle konvence B. Profil nese
+  dvě věci nahlas, protože by se jinak četl nepravdivě:
+  - **Objekt leží v Górach Izerskich, ne v Karkonoszích.** Do oblasti `krkonose`
+    patří proto, že tam sahá naše okno (Michalovo rozhodnutí z 28. 7. o polském
+    podhůří nad Szklarskou Porębou). Próza to říká v prvním odstavci. Pokud
+    jednou vznikne oblast „Góry Izerskie", tenhle profil je první kandidát na
+    přesun.
+  - **Dnešní provoz je bufet a obchůdek, ne schronisko s noclehem** — nová budova
+    se teprve staví. **Pole `nocleh` proto vyplněné NENÍ.** Vyplnit „ne" by bylo
+    stejné domýšlení jako „ano": žádný ze tří pramenů lůžka ani kapacitu neuvádí,
+    všechny tři shodně píšou „trwa budowa nowego schroniska".
+  - Doložená historie: Hochsteinbaude postavena Schaffgotschy **1837** jako jedna
+    z prvních v Sudetech, budova z 1882 zbourána **1963**, od **1996** vzniká
+    soukromé schronisko, od **2015** roste rozhledna (termín 2023 nese pramen
+    v budoucím čase — jestli stojí, nevíme). Hospodaří rodina Gołbů ze Szklarské
+    Poręby, což nezávisle potvrzuje e-mail v OSM tagu (`golbam@wp.pl`).
+  - **Rozpor výšky 1056 × 1058 m** přiznán v `overeniLokace` i v próze; zapsáno
+    nižší číslo dle konvence z 27. 7. Hypotéza (nedoložená, proto není v próze):
+    1058 je kóta vrcholu, 1056 budova pod ním.
+  - **Chyba, kterou jsem si sám chytil při psaní:** do profilu jsem nejdřív
+    napsal OSM odkaz `node/4527713817` — číslo, které jsem si vymyslel. Skutečný
+    je `way/518439272` z kandidáta. Opraveno na všech čtyřech místech ještě před
+    commitem. Poznámka pro příští běhy: **identifikátory se opisují z kandidáta,
+    nikdy nepíšou zpaměti.**
+- **Oblast `broumovsko` dostala vyhledávací okno pro DATA-01** — a je to **první
+  turistická oblast, která ho má**. Publikační oblast existovala od 10. 8. 2026
+  a nesla ruční profil Chaty Hvězda; okno jí schválně chybělo, dokud nebude důvod
+  prohledat ji celou. Ten důvod přinesla dopolední triáž.
+  - Konfigurace ve `scripts/oblasti.ts`: okno **50,44–50,72 / 15,95–16,45**, země
+    **CZ**. Rozsah: Jestřebí hory, Adršpašsko-teplické skály, Ostaš, Broumovské
+    stěny, Javoří hory.
+  - **Kandidát `jestrebi-bouda` přesunut** z `data/kandidati/krkonose/` do
+    `data/kandidati/broumovsko/`, pole `oblast` přepsáno.
+  - **KONTROLA-08 si vynutila deset úprav sama** — políčko `oblast` ve formuláři
+    „Run workflow" je volný text, takže kontrola hlídá, že nová oblast je
+    v popisu vypsaná. Deset workflow souborů doplněno. Přesně na tohle byla ta
+    kontrola 8. 8. napsaná a poprvé se to projevilo takhle nahlas.
+  - **OBLAST ČEKÁ NA KLIK** (běh DATA-01 v Actions). Nespuštěných oblastí je tím
+    pět.
+- **Dvě věci u toho okna zůstávají vědomě otevřené** a jsou zapsané v komentáři
+  konfigurace i v `data/oblasti/broumovsko.yaml`:
+  1. **Okno není ukotvené měřenými souřadnicemi**, na rozdíl od všech osmnácti
+     ostatních. Bezobslužná session na Overpass nedosáhne — `overpass-api.de`
+     vrací ze sandboxu **403**. Doložené kotvy máme jen dvě, obě z vlastních dat
+     (Chata Hvězda 50,5668 / 16,2665; Jestřebí bouda 50,5612 / 16,0361), zbytek
+     hran je odhad rozsahu s rezervou. Okno je proto **záměrně široké**: přebrat
+     pár kandidátů navíc v triáži je levnější než tiše minout objekt. Před ostrým
+     během by mělo projít doměřením v Actions.
+  2. **Polská strana je venku a je to otázka, ne opomenutí** — viz níž.
+- **Měřený podklad k té polské otázce** (proto ji kladu s čísly, ne od oka):
+  externí katalog vede hned za hranicí tři objekty, které by do okna spadly,
+  kdyby `zeme` obsahovalo PL — **Andrzejówka** (HUT-0238, Góry Kamienne,
+  Mieroszów, 805 m), **Pasterka** (HUT-0239, Góry Stołowe, Radków, 700 m)
+  a **Na Szczelińcu** (HUT-0240, Góry Stołowe, Karłów, 919 m).
+- **Rozsah oblasti zahrnuje i Jestřebí hory, a ten rozdíl je lepší mít napsaný
+  než zamlčený:** do Broumovské vrchoviny geomorfologicky patří, do CHKO
+  Broumovsko ale ne. Průvodce oblast vede jako **turistickou**, ne jako CHKO ani
+  jako pohoří — tím je to v pořádku.
+- `npm run kontrola` celé zelené, `tsc --noEmit` čistý.
+
+**Příště:** vrátit se do koše B — **20 nepřečtených**, první na řadě
+`chata-karkonoska`. Vedle toho jsou nově otevřené dvě věci kolem Broumovska:
+doměřit okno a rozhodnout polskou stranu. Dál trvá: devět padajících testů
+z 22. 8. a blokované DATA-04 / DATA-05.
+
+**Otázky pro Michala:**
+
+- **Broumovsko: brát i polskou stranu?** Góry Stołowe jsou přímé pokračování téže
+  pískovcové plošiny jako Broumovské stěny a Adršpach, takže princip
+  „přeshraniční celek vcelku" pro spojení mluví; proti mluví, že je katalog vede
+  pod vlastními jmény. Je to týž typ rozhodnutí, jaký sis vzal u Javorníků
+  a Vsetínských vrchů a u Orlických hor s Górami Bystrzyckimi — proto to
+  nepředjímám. Odpověď rozhodne tři konkrétní objekty (Andrzejówka, Pasterka,
+  Na Szczelińcu).
+- **Mám na Broumovsko pustit DATA-01 s neukotveným oknem, nebo ho nejdřív
+  doměřit?** Doměření je jeden běh v Actions navíc, ale ušetří případný druhý
+  export.
+- Trvá z dopoledne: **klíč střediska** pro Horní Mísečky a zvlášť pro Pec pod
+  Sněžkou; **Bouda pod Sněžkou — najedí se u ní kolemjdoucí?**; **`chata-stopa`
+  × `chata-misecky` — jeden provoz, nebo dva?**; **Boudu Malá Úpa povýšit?**;
+  **Chatu Borůvku povýšit?**; **Karczma Hutnika — platí klíč i pro podnik z roku
+  2012?**; **232 kandidátů tvrdí „tourism=undefined" — opravit?**; a starší
+  fronta beze změny.
+
 ## 2026-08-28 — denní session: koš B potřetí, sedm kandidátů — a jeden z nich není z Krkonoš
 
 **Hotovo:**
