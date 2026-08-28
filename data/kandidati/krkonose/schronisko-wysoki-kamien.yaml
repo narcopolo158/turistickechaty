@@ -33,3 +33,40 @@ interniPoznamky: >-
 
   Otvírací doba dle OSM (surový formát, neověřeno): Apr-Sep Mo-Su 10:00-18:00;
   Oct-Mar Mo-Su 10:00-16:00
+
+  TRIÁŽ KOŠ B — křížové ověření (checked 2026-08-28, WebSearch + otevřené
+  stránky, vše verified: false):
+
+  NEJJASNĚJŠÍ PŘÍPAD DNE A JE JASNÝ PRO. Obě půlky klíče doložené, a k tomu
+  doložená turistická minulost.
+
+  Role na trase DOLOŽENA a je to hlavní hřebenovka: dle katalogu szlaků PTTK
+  (dolnoslaskie.szlaki.pttk.pl, položka „Wysoki Kamień – schronisko") stojí
+  objekt na GŁÓWNYM SZLAKU SUDECKIM a na trase Wysoki Kamień – Borowice
+  (22,1 km, 8:45 h). Nadmořská výška 1056 m (vrchol Wysoki Kamień 1058 m) —
+  sedí s OSM tagem ele=1058, který je u tohoto kandidáta jediný v celém koši
+  B.
+
+  Občerstvení pro veřejnost DOLOŽENO — týž pramen píše, že objekt „v
+  současnosti funguje jako skromný bufet". Sedí to s OSM tagy amenity=cafe a
+  opening_hours=Apr-Sep Mo-Su 10:00-18:00; Oct-Mar Mo-Su 10:00-16:00.
+
+  Turistická minulost DOLOŽENA a je mimořádná: původní Hochsteinbaude
+  nechali postavit Schaffgotschové v roce 1837 jako JEDNO Z PRVNÍCH
+  SCHRONISK V SUDETECH; budova z roku 1882 byla zbourána v roce 1963; od
+  roku 1996 vzniká na místě soukromé schronisko Wysoki Kamień. Od roku 2015
+  se staví rozhledna. (Rok 1837, „jedno z prvních v Sudetech" a rozhledna
+  jsou kandidáti na zajimavosti — se zdrojem, jako claim pramene.)
+
+  Vlastní web wysokikamien.com.pl SE BEZOBSLUŽNĚ NEPŘEČETL: server posílá
+  nekonečný redirect https → http (302 na tutéž adresu v http), takže se
+  stránka nedá načíst. Přidat k doménám, na které sandbox nedosáhne (vedle
+  Archy Krkonoš, javorka.eu a chatamisecky.cz). Doklady výše jsou proto z
+  PTTK, ne od provozovatele — což je u faktů spíš výhoda.
+
+  NÁVRH REDAKCI: POVÝŠIT do data/chaty/krkonose/ (vše verified: false). Je
+  to obsluhované schronisko na Głównym Szlaku Sudeckim s doloženou historií
+  od roku 1837 — typový střed průvodce, ne hraniční případ. Jediná výhrada:
+  leží v GÓRACH IZERSKICH, ne v Karkonoszích; v našem modelu je krkonošské
+  okno vede a Michal už 28. 7. rozhodl, že polské podhůří nad Szklarskou
+  Porębou do okna patří — ale stojí za jednu větu potvrzení.

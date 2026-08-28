@@ -199,6 +199,73 @@ Eliška, Hubertka) je, že **Horní Mísečky nejsou obec, ale horská osada v 1
 
 **Stav koše B po dvou čteních: 42 položek — 4 parkují, 11 přečteno, 27 zbývá.**
 
+## KOŠ B — třetí čtení (28. 8. 2026): sedm kandidátů s webem v OSM, a jeden z nich není z Krkonoš
+
+Pokračování podle „Příště" z 27. 8.: dojet kandidáty, u kterých OSM nese vlastní
+web. Přečteno sedm, metoda beze změny (WebSearch, pak otevřené stránky; vše
+`verified: false`, citace s URL zapsané přímo do `interniPoznamky` kandidáta; do
+`data/chaty/` se nesáhlo). Osmý, `chata-karkonoska`, zůstal nepřečtený — došel
+čas.
+
+| kandidát                   | občerstvení pro veřejnost                                       | role na trase                                                     | návrh redakci                   |
+| -------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------- |
+| `schronisko-wysoki-kamien` | **doloženo** (PTTK: „funguje jako skromný bufet")                | **doloženo** — Główny Szlak Sudecki, 1056 m                         | **POVÝŠIT**                     |
+| `jestrebi-bouda`           | **doloženo** (bufet Po–Pá 11–16, So 10–22, Ne 10–15; KČT Úpice)  | **doloženo** — hřeben Jestřebích hor, 700 m                         | **JINÁ OBLAST** (viz níž)       |
+| `velke-pardubicke-boudy`   | doloženo (výletní portál: „další možnost občerstvení")           | doloženo — po zelené k rozcestí Nad Modrými kameny                  | k ruční kontrole, sklon POVÝŠIT |
+| `bouda-pod-snezkou`        | **nedoloženo** (OSM tvrdí restauraci, web mluví o ubytovaných)   | **doloženo nejlíp ze všech** — samota na konci Obřího dolu, modrá   | k ruční kontrole                |
+| `sokoli-boudy`             | doloženo (obecní web vede mezi restauracemi obce, Po–Ne 11–23)   | nedoloženo — Dolní Malá Úpa                                         | k ruční kontrole                |
+| `pension-jilemnicka-bouda` | doloženo (Firmy.cz aktivní samostatný záznam, 70 míst)           | ne — středisko Horní Mísečky                                        | SPORNÉ (klíč střediska)         |
+| `restaurace-havlova-bouda` | doloženo (Firmy.cz aktivní: „restauraci v horské chatě")         | ne — Pec pod Sněžkou 8, středisko                                   | SPORNÉ (klíč střediska)         |
+
+**Nález dne: `jestrebi-bouda` splňuje klíč, ale není z Krkonoš.** Souřadnice
+50,5612 / 16,0361 leží v jihovýchodním rohu krkonošského okna (`bbox` je
+50,55–50,87 / 15,3–16,05 v `scripts/oblasti.ts`) — je to **hřeben Jestřebích hor
+u Radvanic**, vzdušnou čarou 25–30 km od krkonošského hřebene. Přitom je to
+z celého dnešního čtení druhý nejčistší případ podle klíče: **víkendový bufet
+a celoroční turistická ubytovna, provozovatel KČT Úpice**, otvírací doba na
+vlastním webu se shoduje s OSM tagem. Nepovyšovat do `krkonose` a nevyřazovat —
+podržet pro **DATA-29** (přesahové oblasti) a **DATA-41**, kde Michal sám
+jmenoval Broumovsko. Ukazuje to i mez okna: rezerva „až po Rýchory" sahá o jedno
+pohoří dál, než se čekalo.
+
+**Oprava zápisu z 27. 8.:** včerejší oddíl i deník řadí `restaurace-havlova-bouda`
+do shluku klíče střediska na **Horních Mísečkách**. To je omyl — Havlova bouda je
+podle souřadnic (50,6866 / 15,7335) i podle adresy „Pec pod Sněžkou 8"
+v **Peci pod Sněžkou**, přes celé pohoří od Mísečet. Mísečkový shluk má tedy tři
+členy (`chata-misecky`, `chata-stopa`, `pension-jilemnicka-bouda`), ne čtyři;
+u Havlovy boudy platí otázka klíče střediska pro Pec.
+
+**Jmenný koš se u jednoho kandidáta prokazatelně mýlil.**
+`pension-jilemnicka-bouda` je v koši „MIMO KLÍČ dle jména" se signálem
+„ubytování bez veřejné služby — »Pension«". Doklad ukazuje opak: Firmy.cz vede
+aktivní **samostatný záznam na restauraci** se 70 místy a vlastní web se tituluje
+prostě „Jilemnická Bouda". Předtřídění podle jména je tedy pořadí čtení, ne
+rozhodnutí — a stojí za to to mít v hlavě u zbylých 46 položek toho koše.
+
+**Vzor „samostatný záznam restaurace na Firmy.cz" se potvrdil potřetí.** Po
+Chatě Hradečance a Chatě Mísečce ho dnes mají `sokoli-boudy`,
+`pension-jilemnicka-bouda` i `restaurace-havlova-bouda`. Je to zatím nejlevnější
+doklad veřejného občerstvení, který se dá získat bezobslužně — a na rozdíl od
+tagu `amenity` se zatím ani jednou nerozpadl.
+
+**Zato `amenity` se rozpadl popáté** — u `bouda-pod-snezkou`: tag tvrdí
+`restaurant`, vlastní web mluví o stravování ubytovaných a přístup kolemjdoucích
+neuvádí. Zároveň má tenhle kandidát **nejlépe doloženou roli na trase z celého
+koše** (samota na konci Obřího dolu, modrá značka, „na vrchol nejblíž").
+Doložené půlky klíče se tedy dnes prohodily.
+
+**Dvakrát rozpor v telefonu proti OSM:** `sokoli-boudy` (OSM +420 775 252 267 ×
+web +420 731 186 000) a `bouda-pod-snezkou` (OSM +420 491 617 077, předvolba
+Náchodska, × web +420 734 151 546). Při povyšování brát číslo z vlastního webu.
+
+**Tři domény, na které sandbox nedosáhl:** `sokoliboudy.cz` a `havlovabouda.cz`
+(robots.txt fetch timeout) a `wysokikamien.com.pl` (**nekonečný redirect
+https → http**, 302 na tutéž adresu — nový vzor, dosud jsme viděli jen
+robots.txt). `pardubickeboudy.cz` se nepřečetl z jiného důvodu: doména neprošla
+přes WebSearch, takže ji WebFetch odmítl otevřít.
+
+**Stav koše B po třech čteních: 42 položek — 4 parkují, 18 přečteno, 20 zbývá.**
+
 ## Koše podle OSM tagů
 
 ### A · OSM typ horské chaty (`alpine_hut` / `wilderness_hut`) — brát první — 7 _(odpracován 25. 8. 2026, viz oddíl výš)_

@@ -28,3 +28,34 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  TRIÁŽ KOŠ B — křížové ověření (checked 2026-08-28, WebSearch + otevřené
+  stránky, vše verified: false):
+
+  Občerstvení pro veřejnost DOLOŽENO. Firmy.cz vede AKTIVNÍ samostatný
+  záznam „Havlova bouda - Restaurace", obor „Restaurace a Catering", adresa
+  „Pec pod Sněžkou 8, 542 21", telefon +420 602 396 109, IČO 26730901, a
+  popis podniku zní doslova: „Provozujeme restauraci v horské chatě.
+  Nabízíme denní menu, bezmasá jídla, steaky, burgery, studenou kuchyni,
+  alkoholické i nealkoholické nápoje." Provozovatel se tedy sám označuje za
+  horskou chatu. Vedle toho existuje druhý, starší záznam „Havlova bouda
+  (Pec pod Sněžkou)" — dva oddělené záznamy jako u Sokolích boud.
+
+  Role na trase NEDOLOŽENA — adresa je Pec pod Sněžkou 8, tedy středisko;
+  žádný pramen neuvádí značenou trasu.
+
+  OPRAVA ZÁPISU Z 27. 8. 2026: v deníku i v oddílu „KOŠ B — druhé čtení"
+  stojí, že tento kandidát visí na otázce klíče střediska na HORNÍCH
+  MÍSEČKÁCH, spolu s chata-misecky, chata-stopa a pension-jilemnicka-bouda.
+  To je omyl — Havlova bouda leží podle souřadnic (50,6866 / 15,7335) i
+  podle adresy v PECI POD SNĚŽKOU, přes celé pohoří od Mísečet. Na Horních
+  Mísečkách z toho shluku stojí jen chata-misecky, chata-stopa a
+  pension-jilemnicka-bouda. Otázka klíče střediska u Havlovy boudy platí
+  dál, ale je to otázka o Peci, ne o Mísečkách.
+
+  Vlastní web havlovabouda.cz se bezobslužně nepřečetl (robots.txt fetch
+  timeout).
+
+  NÁVRH REDAKCI: SPORNÉ S KLÍČEM (středisko Pec pod Sněžkou) — týž vzor jako
+  Johannova bouda a Chata Hradečanka: občerstvení doložené, role na trase
+  ne.

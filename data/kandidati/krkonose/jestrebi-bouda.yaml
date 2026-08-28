@@ -31,3 +31,30 @@ interniPoznamky: >-
 
   Otvírací doba dle OSM (surový formát, neověřeno): Jul-Aug Mo-Th 11:00-16:00;
   Jul-Aug Fr 11:00-22:00; Sa 10:00-22:00; Su 10:00-15:00; PH open
+
+  TRIÁŽ KOŠ B — křížové ověření (checked 2026-08-28, WebSearch + otevřené
+  stránky, vše verified: false):
+
+  Občerstvení pro veřejnost DOLOŽENO a role na trase DOLOŽENA — obě půlky
+  klíče tedy sedí. Vlastní web (jestrebibouda.lastsummer.cz) popisuje objekt
+  jako „víkendový bufet a celoroční ubytovnu na hřebenu Jestřebích hor",
+  uvádí 700 m n. m. a otvírací dobu bufetu Po–Pá 11:00–16:00, So
+  10:00–22:00, Ne 10:00–15:00 — což se shoduje s OSM tagem opening_hours
+  (Jul-Aug Mo-Th 11:00-16:00; Jul-Aug Fr 11:00-22:00; Sa 10:00-22:00; Su
+  10:00-15:00). Provozovatelem je dle vlastního webu KČT Úpice, tedy odbor
+  Klubu českých turistů; objekt cílí na turisty a členy KČT.
+
+  ALE OBLAST NESEDÍ, a to je hlavní nález u tohoto kandidáta. Souřadnice
+  50,5612 / 16,0361 leží v JIHOVÝCHODNÍM ROHU krkonošského okna (bbox
+  krkonose je 50,55–50,87 / 15,3–16,05, viz scripts/oblasti.ts) — je to
+  hřeben JESTŘEBÍCH HOR u Radvanic, vzdušnou čarou zhruba 25–30 km od
+  krkonošského hřebene. Prameny to potvrzují nezávisle: Firmy.cz vede záznam
+  „Jestřebí bouda (Radvanice)", obec Radvanice ji vede mezi ubytováním a
+  stravováním. Vlastní web sám píše „Krkonošské podhůří", ne Krkonoše.
+
+  NÁVRH REDAKCI: NEPOVYŠOVAT DO krkonose — ale ani nevyřazovat. Klíč objekt
+  splňuje (bufet pro kolemjdoucí + hřebenová poloha + provoz KČT), jen patří
+  do jiné oblasti. Je to přesně případ pro DATA-29 (přesahové oblasti) a
+  zároveň kandidát pro DATA-41 (plošný průzkum ČR mimo hlavní pohoří —
+  Michal tam sám jmenoval Broumovsko). Doporučení: podržet do rozhodnutí o
+  oblasti „Jestřebí hory / Broumovsko".

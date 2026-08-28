@@ -30,3 +30,28 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  TRIÁŽ KOŠ B — křížové ověření (checked 2026-08-28, WebSearch + otevřené
+  stránky, vše verified: false):
+
+  Role na trase DOLOŽENA a občerstvení pro kolemjdoucí DOLOŽENO — obojí
+  ovšem jedním pramenem, výletním portálem venkazdyden.cz (trasa „Janské
+  Lázně – Černá hora – Velké pardubické boudy – Modré kameny a zpět"). Ten
+  popisuje boudy jako bod NA ZNAČENÉ TRASE: přichází se k nim „kolem
+  rašeliniště", dál se „pokračuje po zelené až sejdeme k rozcestí Nad
+  Modrými kameny", a boudy jsou podle textu „další možnost občerstvení a
+  hlavně krásných výhledů". Formulace „možnost občerstvení" v popisu výletu
+  míří na kolemjdoucí, ne na ubytované. Sedí to s OSM tagy
+  amenity=restaurant a cuisine=regional a se souřadnicemi 50,6570 / 15,7558
+  (hřeben Černé hory nad Janskými Lázněmi).
+
+  Slabina dokladu, a je poctivé ji napsat: JE TO JEDEN PRAMEN A NENÍ TO
+  PROVOZOVATEL. Vlastní web pardubickeboudy.cz z OSM se bezobslužně
+  nepřečetl — doména neprošla přes WebSearch, takže ji WebFetch odmítl
+  otevřít (známé omezení sandboxu z 25. 8.). Otvírací dobu, kapacitu ani
+  historii proto nemáme z první ruky a nedomýšlíme je.
+
+  NÁVRH REDAKCI: K RUČNÍ KONTROLE, se sklonem k POVÝŠIT. Obě půlky klíče
+  jsou doložené a poloha na zelené značce na hřebeni Černé hory je pro
+  průvodce typová; chybí jen potvrzení od provozovatele. Až doména projde
+  vyhledáváním, dá se web přečíst a rozhodnout naráz.

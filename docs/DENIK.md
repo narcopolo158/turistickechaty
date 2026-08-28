@@ -28,6 +28,122 @@ Formát zápisu (nejnovější nahoře):
 > ručního spuštění úlohy — server-side routina bez ovládání v aplikaci;
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
+## 2026-08-28 — denní session: koš B potřetí, sedm kandidátů — a jeden z nich není z Krkonoš
+
+**Hotovo:**
+
+- **Zjištění na začátku:** **DATA-04** i **DATA-05** jsou dál blokované ze
+  stejných důvodů jako včera (u DATA-04 je dokladová část vyčerpaná od 2. 8.
+  a zbytek jsou telefonáty, které bezobslužný běh nemá jak vyřídit; DATA-05
+  čeká na re-export DATA-37). Vzal jsem tedy první položku z „Příště" z 27. 8.:
+  **dojet kandidáty koše B, kteří mají v OSM vlastní web.**
+- **Přečteno sedm kandidátů s prameny** (WebSearch → otevřené stránky, vše
+  `verified: false`, citace s URL přímo do `interniPoznamky`). Osmý,
+  `chata-karkonoska`, zůstal nepřečtený — došel čas.
+  - **Schronisko Wysoki Kamień (1056 m)** — nejjasnější případ dne a je jasný
+    **pro**, dokonce s doloženou historií. Katalog szlaků PTTK ho vede na
+    **Głównym Szlaku Sudeckim** a na trase Wysoki Kamień – Borowice (22,1 km,
+    8:45 h), píše, že „v současnosti funguje jako skromný bufet", a historii
+    vede od roku **1837**, kdy Schaffgotschové postavili Hochsteinbaude jako
+    **jedno z prvních schronisk v Sudetech** (budova z r. 1882 zbourána 1963,
+    od 1996 soukromé schronisko, od 2015 se staví rozhledna).
+    → **NÁVRH POVÝŠIT.** Jediná výhrada: leží v Górach Izerskich, ne
+    v Karkonoszích — ale to okno pokrývá záměrně.
+  - **Jestřebí bouda** — a tohle je **nález dne**. Podle klíče je to druhý
+    nejčistší případ: vlastní web ji popisuje jako „**víkendový bufet
+    a celoroční ubytovnu na hřebenu Jestřebích hor**", 700 m, provozovatel
+    **KČT Úpice**, a otvírací doba na webu (Po–Pá 11–16, So 10–22, Ne 10–15)
+    se shoduje s OSM tagem. **Jenže není z Krkonoš.** Souřadnice 50,5612 /
+    16,0361 leží v jihovýchodním rohu krkonošského okna — je to hřeben
+    Jestřebích hor u Radvanic, 25–30 km od krkonošského hřebene.
+    → **NEPOVYŠOVAT do `krkonose`, ale ani nevyřazovat**: podržet pro
+    **DATA-29** (přesahové oblasti) a **DATA-41**, kde Michal sám jmenoval
+    Broumovsko.
+  - **Velké pardubické boudy** — obě půlky klíče doložené, ale jedním pramenem
+    a není to provozovatel: výletní portál je vede jako bod na **zelené značce**
+    cestou k rozcestí Nad Modrými kameny a jako „další možnost občerstvení".
+    → k ruční kontrole, sklon **povýšit**.
+  - **Bouda pod Sněžkou** — půlky klíče se dnes prohodily. **Role na trase je
+    doložená nejlíp z celého koše** (vlastní web: „na samotě na konci Obřího
+    dolu", „modrá turistická značka Obřím dolem", „od nás to máte na vrchol
+    nejblíž"), zato **občerstvení pro veřejnost nikde** — web mluví o stravování
+    ubytovaných. → k ruční kontrole; jeden telefonát to zavře.
+  - **Sokolí boudy** — občerstvení doložené dobře (**turistický web obce Malá
+    Úpa je vede přímo v sekci restaurací**, Po–Ne 11:00–23:00; Firmy.cz má
+    samostatný záznam „Restaurace Sokolí boudy"), role na trase nedoložená.
+    → k ruční kontrole.
+  - **Pension Jilemnická bouda** (Vítkovice 140, Horní Mísečky) a **Restaurace
+    Havlova bouda** (Pec pod Sněžkou 8) — u obou Firmy.cz vede **aktivní
+    samostatný záznam na restauraci** (Jilemnická 70 míst; Havlova doslova
+    „Provozujeme restauraci v horské chatě"), u obou ale role na trase chybí
+    a adresa je středisková. → **SPORNÉ, klíč střediska.**
+- **Oprava mého vlastního zápisu z 27. 8.:** včera jsem `restaurace-havlova-bouda`
+  zařadil do mísečkového shluku. To je omyl — Havlova bouda je podle souřadnic
+  i adresy v **Peci pod Sněžkou**, přes celé pohoří od Mísečet. Mísečkový shluk
+  má tedy **tři** členy (`chata-misecky`, `chata-stopa`,
+  `pension-jilemnicka-bouda`), ne čtyři. Opraveno v triážním dokumentu.
+- **Jmenný koš se u jednoho kandidáta prokazatelně mýlil.**
+  `pension-jilemnicka-bouda` sedí v koši „MIMO KLÍČ dle jména" se signálem
+  „ubytování bez veřejné služby — »Pension«" — a doklad ukazuje opak: aktivní
+  samostatný záznam restaurace se 70 místy. **Předtřídění podle jména je pořadí
+  čtení, ne rozhodnutí.** U zbylých 46 položek toho koše je to dobré vědět.
+- **Metodicky: „samostatný záznam restaurace na Firmy.cz" je zatím nejspolehlivější
+  bezobslužný doklad.** Potvrdil se dnes potřetí (Sokolí boudy, Jilemnická,
+  Havlova) a na rozdíl od tagu `amenity` se ani jednou nerozpadl. **Tag
+  `amenity` se přitom dnes rozpadl popáté** — u Boudy pod Sněžkou.
+- **Dvakrát rozpor v telefonu proti OSM:** Sokolí boudy (OSM +420 775 252 267 ×
+  web +420 731 186 000) a Bouda pod Sněžkou (OSM +420 491 617 077, což je
+  předvolba Náchodska, × web +420 734 151 546). Při povyšování brát číslo
+  z vlastního webu.
+- **Do `data/chaty/` se nesáhlo, nic se nepovýšilo ani nevyřadilo.** Změněny jen
+  `interniPoznamky` sedmi kandidátů a `docs/KRKONOSE-TRIAZ-KOSE.md` (nový oddíl
+  „KOŠ B — třetí čtení"). `npm run kontrola` celé zelené.
+
+**Příště:** pokračovat v koši B — **20 nepřečtených** (4 parkují, 18 hotovo).
+Nejdřív `chata-karkonoska` (jediná dnes nedočtená z těch s webem), pak koš bez
+webu, kde je doklad dražší: `bar-zielona-chatka`, `chata-skrzata`,
+`chata-tyrolska`, `chata-u-sportu`, `dvorakova-bouda`, `hoffmanovy-boudy`,
+`hladik-ziza-janska-bouda`, `mumlavska-bouda`. Dál trvá: devět padajících testů
+z 22. 8. a blokované DATA-04 / DATA-05.
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu spadne
+na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`;
+`npm ci` je v čerstvém sandboxu potřeba pustit před `npm run kontrola`;
+`WebFetch` funguje až poté, co URL projde `WebSearch` (dnes na to doplatil
+`pardubickeboudy.cz`). Nově do seznamu nedosažitelných domén: `sokoliboudy.cz`
+a `havlovabouda.cz` (robots.txt fetch timeout, jako Archa Krkonoš, javorka.eu
+a chatamisecky.cz) a **`wysokikamien.com.pl` s novým vzorem — nekonečný redirect
+https → http** (302 na tutéž adresu, WebFetch upgraduje zpět na https).
+
+**Otázky pro Michala:**
+
+- **Schronisko Wysoki Kamień povýšit?** Obsluhované schronisko na Głównym
+  Szlaku Sudeckim s historií od roku 1837 — typový střed průvodce, ne hraniční
+  případ. Stačí „ano" a příští session ho založí (vše `verified: false`).
+- **Jestřebí bouda — kam s ní?** Splňuje klíč (bufet KČT pro kolemjdoucí na
+  hřebeni), ale leží v Jestřebích horách, ne v Krkonoších. Je to první doložený
+  případ, kdy krkonošské okno chytlo cizí pohoří. Založit „Jestřebí hory /
+  Broumovsko" jako oblast v rámci DATA-41, nebo ji zatím jen podržet?
+- **Klíč střediska** — otázka z 27. 8. platí, jen s opravenými adresáty:
+  **Horní Mísečky** (rozhodne `chata-misecky`, `chata-stopa`,
+  `pension-jilemnicka-bouda`) a zvlášť **Pec pod Sněžkou** (rozhodne
+  `restaurace-havlova-bouda` a nejspíš i další). Horní Mísečky přitom nejsou
+  obec, ale horská osada v 1000 m na hřebenovém nástupu.
+- **Bouda pod Sněžkou — najedí se u ní kolemjdoucí?** Poloha je učebnicová
+  (samota na konci Obřího dolu na modré k Sněžce), chybí jediná věta o přístupu
+  neubytovaných. Jeden telefonát ji buď povýší, nebo vyřadí.
+- Trvá z 27. 8.: **`chata-stopa` × `chata-misecky` — jeden provoz, nebo dva?**;
+  **Boudu Malá Úpa povýšit?**; **Chatu Borůvku povýšit?**; **Karczma Hutnika —
+  platí klíč i pro podnik z roku 2012?**; **232 kandidátů tvrdí
+  „tourism=undefined" — opravit?**; a starší fronta: **samoobslužný obchůdek
+  24/7 = občerstvení pro veřejnost?**, **Chata Hubertka**, **koš „ROZHODNUTO" do
+  `scripts/triaz-kandidatu.ts`?**, **Archa Krkonoš (robots.txt) — přečteš
+  ručně?**, **krkonošská trojice**, **rozhledna × hostinec na témž vrcholu**,
+  **tour.Chata × Hotel Bouřňák**, **smazat `krkonose/horska-chata-portasky`?**,
+  **opřít idempotenci DATA-01 o OSM id?**, **zařadit `test:int` do CI**,
+  **Bouda Svornost**, **uvolnit kotvu ve jmenné dohledávce**, **čtyři založené,
+  ale nespuštěné oblasti**.
+
 ## 2026-08-27 — denní session: koš B podruhé, pět kandidátů s webem a jedna hrozící duplicita
 
 **Hotovo:**
