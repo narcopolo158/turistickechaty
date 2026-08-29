@@ -28,6 +28,108 @@ Formát zápisu (nejnovější nahoře):
 > ručního spuštění úlohy — server-side routina bez ovládání v aplikaci;
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
+## 2026-08-29 — denní session: koš B počtvrté, devět kandidátů — dva k povýšení, tři beze stopy
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04** i **DATA-05** jsou dál blokované ze
+  stejných důvodů (DATA-04 má dokladovou část vyčerpanou od 2. 8., zbytek jsou
+  telefonáty, které bezobslužný běh nevyřídí; DATA-05 čeká na re-export
+  DATA-37). Vzal jsem tedy „Příště" z 28. 8.: **dočíst koš B.**
+- **Přečteno devět kandidátů** — `chata-karkonoska`, která zůstala nedočtená
+  z minula, a k ní **osm kandidátů bez webu v OSM**, tedy poprvé skupina, kde je
+  doklad znatelně dražší. Vše `verified: false`, citace s URL zapsané přímo do
+  `interniPoznamky`. Do `data/chaty/` se nesáhlo, nic se nepovýšilo ani
+  nevyřadilo.
+  - **Dvořákova bouda — nejlepší nález dne.** Kudy z nudy o ní píše doslova
+    „**V restauraci, přístupné všem příchozím hostům**, na vás čeká spousta
+    dobrot nejen z masa". To je **poprvé, co je přístup veřejnosti doložený
+    větou, a ne odvozením** — přesně ta věta, která nám u Boudy pod Sněžkou
+    chyběla a kvůli které tam klíč nespadl. K tomu 1 235 m n. m. v Sedmidolí pod
+    Petrovou boudou, otevřeno denně 11–23, provoz celoroční. → **NÁVRH POVÝŠIT.**
+  - **Mumlavská bouda — druhý k povýšení, a s doloženou historií.** Leží
+    u Mumlavského vodopádu, „nejvodnatějšího v celých Krkonoších"; provoz je
+    restaurace zavírající k 17:00, což se **nezávisle shoduje s OSM tagem**
+    Mo-Su 10:00-17:00. Historie z jediného pramene: založil ji **hrabě Harrach
+    roku 1879** pro exkurzi českého lesnického spolku, Jaroslav Durych ji roku
+    1899 popisuje jako letní místo setkávání pražské společnosti, 1909 vyhořela.
+    → **NÁVRH POVÝŠIT** (historii přebírat s výhradou jediného pramene). Pole
+    `nocleh` **nevyplňovat** — pramen píše, že ubytování dnes patrně není, ale
+    nedokládá to; stejný postup jako u Wysokiego Kamienia.
+  - **Hoffmanovy boudy** — role na trase doložená učebnicově („Je zde rozcestník
+    běžeckých i pěších tras a cyklotras", 794 m), občerstvení hůř („restaurace
+    s pensionem" neříká, zda obslouží kolemjdoucího). Navíc je pramen
+    uživatelský. → k ruční kontrole, sklon povýšit.
+  - **Janská bouda (Hladík & Žíža)** — občerstvení doložené nejlíp z celého dne:
+    Firmy.cz vede **aktivní záznam rovnou ve dvou kategoriích** (rychlé
+    občerstvení i restaurace), otevřeno Čt–So 10–21, Ne 11–21, popis mluví
+    o „občerstvení bez davu turistů". Role na trase nedoložená — adresa je
+    v Janských Lázních. → k ruční kontrole.
+  - **Chata Tyrolska** a **Chata Karkonoska** — obě jsou služba střediska, ne
+    chata na trase. Tyrolska je dle městského portálu „mała gastronomia" u dolní
+    stanice lanovky na Szrenicu; Karkonoska je celoroční restaurace se zázemím
+    tříhvězdičkového hotelu na adrese Wolna 4 v Karpaczi, kapacita 200 osob,
+    svatby a firemní akce. → nepovyšovat bez rozhodnutí o klíči střediska.
+- **Tři kandidáti nemají na webu žádnou stopu — a je to samostatné zjištění, ne
+  neúspěch.** `bar-zielona-chatka`, `chata-skrzata` a `chata-u-sportu` nevrátily
+  ani jeden použitelný výsledek. U každého je zapsané **co se hledalo**, aby to
+  příští běh neopakoval. **Nevyřazuji je: absence dokladu není doklad absence.**
+  U `chata-u-sportu` je vysoké OSM ID (node/13970697329), tedy nedávno vložený
+  bod — může jít o čerstvý podnik bez webové stopy. U `chata-skrzata` je past ve
+  jméně: vyhledávače nabízejí stejnojmenný objekt v Mikołajkách na Mazurech,
+  600 km odsud.
+- **Vzor „samostatný záznam restaurace na Firmy.cz" se poprvé rozpadl — a stojí
+  za to vědět jak.** U Mumlavské boudy ten samostatný záznam existuje, ale je
+  **neaktivní** („This business or branch is no longer active"), zatímco na téže
+  adrese běží aktivní záznam pod jménem bez slova „Restaurace". Po třech čteních,
+  kdy vzor držel, ho tedy upřesňuji: **existence záznamu nestačí, musí se číst
+  i jeho stav.** Kdyby se to přehlédlo, vyšel by u dobrého kandidáta opačný závěr.
+- **Nová levná metoda: shoda e-mailu jako potvrzení totožnosti.** U Janské boudy
+  sedí e-mail ve Firmy.cz (`richv@seznam.cz`) na e-mail v OSM tagu — je to tedy
+  týž objekt, ne shoda jmen. Vedle telefonu druhý použitelný identifikátor.
+- `npm run kontrola` celé zelené, `tsc --noEmit` čistý.
+
+**Příště:** koš B má po čtyřech čteních **11 nepřečtených**. Vedle toho leží
+z 28. 8. Broumovsko (doměřit okno, rozhodnout polskou stranu), dál trvá devět
+padajících testů z 22. 8. a blokované DATA-04 / DATA-05.
+
+**Otázky pro Michala:**
+
+- **Klíč střediska už není jednotlivost, ale kategorie — a drží pět kandidátů.**
+  Dnes k mísečkovému shluku a Havlově boudě přibyly `chata-karkonoska` (Karpacz)
+  a `chata-tyrolska` (Szklarska Poręba), okrajově i Janská bouda (Janské Lázně).
+  Jsou to tři střediska na obou stranách hranice a otázka je u všech táž:
+  **počítá se veřejné občerstvení uvnitř střediska, když k němu nevede značka?**
+  Zkusím to zúžit na tvoje rozhodnutí ano/ne ve dvou krocích: (a) hotelová
+  restaurace v zástavbě (Chata Karkonoska) — podle mě **ne**, je to hotelový
+  podnik, ne bouda; (b) samostatný podnik u nástupu do hor (Chata Tyrolska
+  u lanovky, Janská bouda nad lázněmi) — tady si netroufám, protože nástupní bod
+  *je* role na trase.
+- **Dvořákovu a Mumlavskou boudu povýšit?** U obou jsou obě půlky klíče doložené
+  a nic proti nim nemám. U Mumlavské bych do profilu vzal i historii od roku
+  1879, ale nese ji **jediný pramen** (blog krkonosskeboudy.cz) — chceš ji tam
+  s poctivostní větou o jediném prameni, nebo raději vynechat, dokud nebude druhý?
+- **Dvořákova bouda se na vlastní doméně tituluje „s tradicí od 1876".** Stránku
+  provozovatele jsme neotevřeli, takže letopočet zatím doložený není a do profilu
+  jsem ho nedal. Máš k té chatě přímou znalost, nebo ji mám při povyšování
+  dohledat z vlastního webu?
+- Trvá z 28. 8.: **Broumovsko — brát i polskou stranu?** (rozhodne Andrzejówku,
+  Pasterku a Na Szczelińcu); **pustit DATA-01 na Broumovsko s neukotveným
+  oknem, nebo ho nejdřív doměřit?**; **Bouda pod Sněžkou — najedí se u ní
+  kolemjdoucí?**; **`chata-stopa` × `chata-misecky` — jeden provoz, nebo dva?**;
+  **Boudu Malá Úpa a Chatu Borůvku povýšit?**; **Karczma Hutnika — platí klíč
+  i pro podnik z roku 2012?**; **232 kandidátů tvrdí „tourism=undefined" —
+  opravit?**
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu spadne
+na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`;
+`npm ci` je v čerstvém sandboxu potřeba pustit před `npm run kontrola`;
+`WebFetch` funguje až poté, co URL projde `WebSearch`. Nově do seznamu
+nedosažitelných domén: **`krkonose.eu`** a **`vrcholovka.cz`** (obojí robots.txt
+fetch timeout). U krkonose.eu to mrzí dvakrát — vede výletní trasu „Z Janských
+Lázní přes Rudolfovo údolí na Hoffmanovy boudy", což je přesně ten druhý pramen,
+který by u Hoffmanových bud doplnil slabší půlku klíče.
+
 ## 2026-08-28 (druhý blok, Michal online) — Wysoki Kamień povýšen a Broumovsko dostalo okno
 
 Michal odpověděl na obě otázky z dopolední session jednou větou: *„wysoku kamien

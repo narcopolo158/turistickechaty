@@ -266,6 +266,68 @@ přes WebSearch, takže ji WebFetch odmítl otevřít.
 
 **Stav koše B po třech čteních: 42 položek — 4 parkují, 18 přečteno, 20 zbývá.**
 
+## KOŠ B — čtvrté čtení (29. 8. 2026): devět kandidátů, dva k povýšení a tři beze stopy
+
+Dočtena `chata-karkonoska` z minula a k ní osm kandidátů **bez webu v OSM** —
+tedy poprvé skupina, kde je doklad znatelně dražší. Metoda beze změny (WebSearch,
+pak otevřené stránky; vše `verified: false`, citace s URL zapsané přímo do
+`interniPoznamky` kandidáta; do `data/chaty/` se nesáhlo).
+
+| kandidát                   | občerstvení pro veřejnost                                            | role na trase                                                   | návrh redakci                     |
+| -------------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------- | --------------------------------- |
+| `dvorakova-bouda`          | **doloženo doslova** („restaurace, přístupné všem příchozím hostům")  | doloženo — 1 235 m, Sedmidolí pod Petrovou boudou                 | **POVÝŠIT**                       |
+| `mumlavska-bouda`          | **doloženo** (restaurace, zavírá k 17:00 = shoda s OSM tagem)         | **doloženo** — u Mumlavského vodopádu                             | **POVÝŠIT**                       |
+| `hoffmanovy-boudy`         | slabě (uživatelský pramen: „restaurace s pensionem")                  | **doloženo** — rozcestník pěších, běžeckých i cyklotras, 794 m    | k ruční kontrole, sklon POVÝŠIT   |
+| `hladik-ziza-janska-bouda` | **doloženo výborně** (Firmy.cz aktivní, dvě kategorie, Čt–Ne)         | nedoloženo — Janské Lázně, středisko                              | k ruční kontrole (klíč střediska) |
+| `chata-tyrolska`           | doloženo (městský portál: „mała gastronomia")                         | sporná — u dolní stanice lanovky na Szrenicu                      | SPORNÉ, sklon NE (je to stánek)   |
+| `chata-karkonoska`         | doloženo (celoroční restaurace, 200 míst, svatby)                     | ne — Wolna 4, zástavba Karpacze, zázemí tříhvězdičkového hotelu   | NEPOVYŠOVAT (klíč střediska)      |
+| `bar-zielona-chatka`       | nedoloženo                                                            | nedoloženo                                                        | NEROZHODNUTO — nic nenalezeno     |
+| `chata-skrzata`            | nedoloženo                                                            | nedoloženo                                                        | NEROZHODNUTO — nic nenalezeno     |
+| `chata-u-sportu`           | nedoloženo                                                            | nedoloženo                                                        | NEROZHODNUTO — nic nenalezeno     |
+
+**Nález dne: poprvé máme přístup veřejnosti doložený doslovnou větou, ne
+odvozením.** Kudy z nudy píše u Dvořákovy boudy „V restauraci, **přístupné všem
+příchozím hostům**, na vás čeká spousta dobrot nejen z masa". Přesně tahle věta
+nám u `bouda-pod-snezkou` chyběla a kvůli jejímu chybění tam klíč nespadl. Stojí
+za to si to zapamatovat jako **nejsilnější možný doklad druhé půlky klíče** —
+a hledat ho cíleně, protože ho očividně některé portály uvádějí.
+
+**Vzor „samostatný záznam restaurace na Firmy.cz" se poprvé rozpadl — a je
+důležité, jak.** U `mumlavska-bouda` samostatný záznam „Restaurace Mumlavská
+Bouda" existuje, ale je **neaktivní** („This business or branch is no longer
+active"), zatímco na téže adrese Harrachov 270 běží aktivní záznam pod jménem
+bez slova „Restaurace". Po třech čteních, kdy vzor držel, je tedy nutné ho
+upřesnit: **existence samostatného záznamu nestačí, musí se číst i jeho stav.**
+Kdyby se tohle přehlédlo, dostali bychom u jinak dobrého kandidáta přesně
+opačný závěr, než jaký je správný.
+
+**Nezávislé potvrzení totožnosti přes e-mail.** U `hladik-ziza-janska-bouda` se
+e-mail ve Firmy.cz (`richv@seznam.cz`) shoduje s e-mailem v OSM tagu. Je to
+levný způsob, jak vyloučit shodu jmen — vedle telefonu druhý použitelný
+identifikátor. Připsáno k metodám.
+
+**Tři kandidáti nemají na webu žádnou stopu, a je to samostatné zjištění.**
+`bar-zielona-chatka`, `chata-skrzata` i `chata-u-sportu` nevrátily ani jeden
+použitelný výsledek. Zapsáno je to u nich i s tím, **co se hledalo** — aby to
+příští běh neopakoval. **Absence dokladu není doklad absence:** žádný z nich se
+nevyřazuje. U `chata-u-sportu` stojí za zmínku vysoké OSM ID (node/13970697329),
+tedy nedávno vložený bod — může jít o čerstvý podnik. U `chata-skrzata` je past
+ve jméně: vyhledávače nabízejí stejnojmenný objekt v Mikołajkách na Mazurech.
+
+**Klíč střediska si dnes vyžádal třetí a čtvrtou položku.** K mísečkovému shluku
+a Havlově boudě přibyly `chata-karkonoska` (Karpacz) a `chata-tyrolska`
+(Szklarska Poręba), okrajově i `hladik-ziza-janska-bouda` (Janské Lázně).
+**Nerozhodnutá otázka pro Michala tím drží už pět kandidátů ve třech střediscích
+na obou stranách hranice** — z jednotlivosti se stala kategorie.
+
+**Nedosažitelné domény, nově:** `krkonose.eu` (robots.txt fetch timeout) — mrzí
+to dvakrát, protože oficiální portál vede výletní trasu „Z Janských Lázní přes
+Rudolfovo údolí na Hoffmanovy boudy", což je přesně ten druhý pramen, který by
+u `hoffmanovy-boudy` doplnil slabší půlku klíče. Dál `vrcholovka.cz` (týž
+důvod). Obojí zkusit z jiné sítě.
+
+**Stav koše B po čtyřech čteních: 42 položek — 4 parkují, 27 přečteno, 11 zbývá.**
+
 ## Koše podle OSM tagů
 
 ### A · OSM typ horské chaty (`alpine_hut` / `wilderness_hut`) — brát první — 7 _(odpracován 25. 8. 2026, viz oddíl výš)_
