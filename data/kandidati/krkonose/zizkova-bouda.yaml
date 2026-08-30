@@ -21,3 +21,25 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  TRIÁŽ 30. 8. 2026 (koš B, páté čtení) — OBĚ PŮLKY KLÍČE DOLOŽENÉ.
+  ROLE NA TRASE: ceskehory.cz
+  (https://www.ceskehory.cz/ubytovani/horsky-hotel-zizkova-bouda-pec-pod-snezkou.html)
+  uvádí doslova „Hotel leží při hlavní turistické trase" a řadí objekt do
+  rubriky „Boudy na hřebenech"; nadmořská výška 1003 m (v téže stránce
+  i zaokrouhleně „v nadmořské výšce 1000 m nad turistickým centrem Pec pod
+  Sněžkou"). Pozn.: OSM `ele` u kandidáta není, výška je tedy zatím z jediného
+  katalogového pramene — při povýšení dohledat druhý.
+  OBČERSTVENÍ: platí vzor „samostatný záznam restaurace na Firmy.cz", tentokrát
+  s AKTIVNÍM záznamem — „Restaurace Žižkova bouda"
+  (https://en.firmy.cz/company/13211890-restaurace-zizkova-bouda-pec-pod-snezkou.html),
+  kategorie „Czech and traditional Czech restaurants", otevřeno denně 10:00–2:00,
+  adresa Pec pod Sněžkou 22, telefon +420 724 000 033, web zizkovabouda.cz.
+  Stav záznamu čten dle upřesnění vzoru z 29. 8. (u Mumlavské boudy se ukázalo,
+  že existence záznamu nestačí) — tento je aktivní.
+  POZOR: vlastní web zizkovabouda.cz se ze sandboxu NENAČETL (přesměrovací
+  smyčka, „too many redirects", zkoušeno /cs/restaurace/ i /en/). Přímý doklad
+  od provozovatele tedy nemáme, obě půlky klíče nesou katalogy.
+  POLE `nocleh` NEVYPLŇOVAT bez pramene — objekt se tituluje jako horský hotel
+  a katalogy lůžka uvádějí, ale to je katalogový údaj, ne doklad provozovatele.
+  -> NÁVRH POVÝŠIT (k ruční kontrole).

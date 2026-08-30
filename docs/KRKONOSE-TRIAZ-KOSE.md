@@ -328,6 +328,84 @@ důvod). Obojí zkusit z jiné sítě.
 
 **Stav koše B po čtyřech čteních: 42 položek — 4 parkují, 27 přečteno, 11 zbývá.**
 
+## KOŠ B DOČTEN (30. 8. 2026): posledních 11 kandidátů — jeden k povýšení, jeden vyloučený tagem
+
+Páté a poslední čtení koše B. Zbývalo 11 kandidátů, u kterých **OSM nenese web
+ani adresu** — tedy skupina, kde je doklad nejdražší. Vše `verified: false`,
+citace s URL zapsané do `interniPoznamky`. Do `data/chaty/` se nesáhlo.
+
+| kandidát                  | občerstvení pro veřejnost                                 | role na trase                                     | návrh redakci    |
+| ------------------------- | ---------------------------------------------------------- | -------------------------------------------------- | ---------------- |
+| `zizkova-bouda`           | **doloženo** (aktivní záznam Firmy.cz, denně 10:00–2:00)    | **doložena** („leží při hlavní turistické trase")   | **POVÝŠIT**      |
+| `hotel-bouda-jana`        | spíš ano („restaurace s celodenním provozem")               | ne — Velká Úpa, středisko, 920 m                    | K RUČNÍ KONTROLE |
+| `sudecka-chata-u-prezesa` | **doloženo** (Tripadvisor: „Bar, restaurace")               | ne — ulice v Szklarské Porębě Średnie               | K RUČNÍ KONTROLE |
+| `prezesowa-chata`         | **doloženo** (Złota Firma: „Restauracja")                   | ne — ulice Odrodzenia, zástavba                     | K RUČNÍ KONTROLE |
+| `swojska-chata`           | **doloženo** (oficiální portál Karpacze, sekce gastro)      | ne — hlavní ulice Karpacze                          | K RUČNÍ KONTROLE |
+| `trejbalova-bouda`        | **sporné** — katalogy si protiřečí (viz níž)                | jen cyklo + běžky (10 m / 50 m), pěší značka ne     | K RUČNÍ KONTROLE |
+| `horska-sluzba-cerny-dul` | **ne** — je to stanice Horské služby, tag je chybný         | —                                                   | **NEZAŘAZOVAT**  |
+| `szklana-chata`           | beze stopy                                                  | beze stopy                                          | otevřený         |
+| `wiejska-chata`           | beze stopy                                                  | beze stopy                                          | otevřený         |
+| `turisticka-chata`        | beze stopy                                                  | beze stopy                                          | otevřený         |
+| `horska`                  | beze stopy                                                  | beze stopy                                          | otevřený         |
+
+**Žižkova bouda je jediný čistý nález dne — a potvrzuje upřesněný vzor z 29. 8.**
+Samostatný záznam „Restaurace Žižkova bouda" na Firmy.cz je **aktivní**
+(kategorie „Czech and traditional Czech restaurants", denně 10:00–2:00), takže
+občerstvení pro veřejnost drží; roli na trase dokládá ceskehory.cz doslovnou
+větou „Hotel leží při hlavní turistické trase" a řadí objekt mezi „Boudy na
+hřebenech", 1003 m n. m. Vlastní web `zizkovabouda.cz` se přitom **ze sandboxu
+nenačte** (přesměrovací smyčka, „too many redirects", na /cs/ i /en/) — obě
+půlky klíče tedy nesou katalogy, ne provozovatel.
+
+**Horská služba Černý Důl je vyloučená, a je to chyba v OSM, ne sporný případ.**
+Kandidát byl v koši B kvůli `amenity=restaurant`. Telefon `+420 721 488 470` se
+ale shoduje s telefonem okrsku Horské služby ČR dle jejích oficiálních stránek
+(Černý Důl 272, stanice v 625 m); žádné veřejné občerstvení tam pramen neuvádí.
+**Shoda telefonu — táž levná metoda totožnosti, kterou 29. 8. potvrdila Janskou
+boudu shodou e-mailu — tentokrát kandidáta vyloučila.** Stojí za zapamatování:
+identifikátor umí rozhodnout oběma směry.
+
+**Trejbalova bouda je poprvé případ, kdy si protiřečí dva katalogy o kategorii.**
+Firmy.cz vede objekt **jen** jako „Mountain cabins and chalets" + „Economy
+accommodation", tedy zcela bez gastro kategorie, a k tomu samé večerní hodiny
+(Po–Čt 17–21). Oficiální krajský portál `vychodni-cechy.info` proti tomu vede
+týž objekt v rubrice „hostinec (s kuchyní), letní terasa / zahrádka" — z toho je
+ovšem doložený zatím jen titulek ze seznamu výsledků, protože stránka vrátila
+403. Rozhodne stránka „Hospůdka" na vlastním webu, ta se dnes nenačetla
+(robots.txt ConnectTimeout).
+
+**Čtyři kandidáti nemají na webu žádnou stopu — a u všech čtyř je příčina táž:
+jméno je obecné slovo.** `turisticka-chata` je doslova název kategorie, po které
+je průvodce pojmenovaný; `horska` je přídavné jméno, kterým se v Krkonoších
+jmenuje každá druhá chalupa; `szklana-chata` je ve městě sklářů slovo vázané na
+desítky hutí a obchodů; `wiejska-chata` totéž o stupeň slabší. **Nevyřazuji je —
+absence dokladu není doklad absence.** U každého je zapsané, co se hledalo.
+**Poznatek pro příští běhy: u kandidáta s obecným jménem je dohledávka podle
+názvu ztráta času; levnější je vyjít z OSM elementu a jeho okolí.**
+
+**Nový pár k rozhodnutí:** `prezesowa-chata` (way/298141357) a `szklana-chata`
+(node/6008380200) stojí od sebe **zhruba 30–40 m**. Může jít o dva podniky na
+jednom místě i o jeden objekt zapsaný dvakrát. Než se do `szklana-chata`
+investuje další dohledávka, má smysl rozhodnout ten pár — kdyby šlo o jeden
+objekt, práce odpadne. (Je to týž typ otázky jako trojice jmenovců z 24. 8.
+Kontrola `blizke-body.ts` ovšem měří kandidáty **jen proti publikovaným
+profilům**, dva kandidáty mezi sebou neporovnává — **to je díra v kontrole**
+a stojí za samostatnou opravu.)
+
+**Klíč střediska drží po dnešku už osm kandidátů.** K pěti z 29. 8. přibyly tři
+polské podniky v zástavbě (Sudecka chata u Prezesa a Prezesowa Chata ve
+Szklarské Porębě, Swojska Chata v Karpaczi) a okrajově Hotel Bouda Jana ve
+Velké Úpě. U všech je občerstvení doložené a role na trase ne — čekají na jedno
+Michalovo rozhodnutí.
+
+**Nedosažitelné domény, nově:** `zizkovabouda.cz` (přesměrovací smyčka),
+`trejbalovabouda.cz` (robots.txt ConnectTimeout), `restu.cz` (robots.txt
+nedostupný), `vychodni-cechy.info` (403).
+
+**Stav koše B po pěti čteních: 42 položek — 4 parkují, 38 přečteno, 0 zbývá.
+KOŠ B JE DOČTENÝ.** Další v pořadí je **koš D** (2 položky), pak **koš E** (5)
+a nakonec **koš C** (131, hromadné čtení).
+
 ## Koše podle OSM tagů
 
 ### A · OSM typ horské chaty (`alpine_hut` / `wilderness_hut`) — brát první — 7 _(odpracován 25. 8. 2026, viz oddíl výš)_

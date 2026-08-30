@@ -21,3 +21,18 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  TRIÁŽ 30. 8. 2026 (koš B, páté čtení) — OBČERSTVENÍ DOLOŽENÉ oficiálním
+  městským pramenem, role na trase nedoložená; opět „klíč střediska".
+  OBČERSTVENÍ: oficiální turistický portál města Karpacz vede objekt v sekci
+  gastronomie jako „Restauracja", adresa „Konstytucji 3 Maja 51"
+  (https://www.karpacz.pl/swojska-chata-pl/g), s koncesí na alkohol kategorií
+  A, B i C. Otvírací doba je na stránce prázdná (u všech dnů pomlčky) —
+  z toho NEPLYNE, že je zavřeno, jen že údaj chybí. Podnik má i samostatný
+  záznam v restauračních katalozích (Tripadvisor, pkt.pl, Panorama Firm).
+  POZOR NA JMENOVCE: `swojska-chata` je v `_jmenovci.yaml` kvůli jesenickému
+  jmenovci; navíc existuje stejnojmenná karczma v Kotlině Kłodzké
+  (swojskachata.com, Szczytna) — to je TŘETÍ stejnojmenný objekt a při
+  dohledávání se plete. Karpacký je ten na Konstytucji 3 Maja.
+  ROLE NA TRASE: nedoložená — hlavní ulice Karpacze.
+  -> K RUČNÍ KONTROLE, nepovyšovat bez rozhodnutí o klíči střediska.

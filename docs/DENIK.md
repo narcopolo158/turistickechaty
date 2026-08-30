@@ -28,6 +28,106 @@ Formát zápisu (nejnovější nahoře):
 > ručního spuštění úlohy — server-side routina bez ovládání v aplikaci;
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
+
+## 2026-08-30 — denní session: KOŠ B DOČTEN, posledních 11 kandidátů
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, re-export DATA-37, rozhodnutí o sémantice `obec`, katalog
+  vydavatele, tři případy na Michalovi, klik na workflow, staging). Vzal jsem
+  tedy „Příště" z 29. 8.: **dočíst koš B.**
+- **Koš B je po pěti čteních DOČTENÝ** — 42 položek, 4 parkují na Michalových
+  rozhodnutích, 38 přečteno, 0 zbývá. Dnes posledních **11 kandidátů**, a byla
+  to nejdražší skupina: ani jeden nemá v OSM web ani adresu. Vše
+  `verified: false`, citace s URL do `interniPoznamky`, do `data/chaty/` se
+  nesáhlo.
+  - **Žižkova bouda — jediný čistý nález dne, obě půlky klíče doložené.** Role
+    na trase doslovnou větou z ceskehory.cz „**Hotel leží při hlavní turistické
+    trase**", objekt řazený mezi „Boudy na hřebenech", 1003 m n. m.
+    Občerstvení přes **aktivní** samostatný záznam „Restaurace Žižkova bouda"
+    na Firmy.cz (kategorie česká restaurace, denně 10:00–2:00). → **NÁVRH
+    POVÝŠIT.** Vlastní web `zizkovabouda.cz` se ze sandboxu nenačte
+    (přesměrovací smyčka), takže obě půlky nesou katalogy, ne provozovatel.
+  - **Horská služba Černý Důl vyloučena — a je to chyba v OSM, ne sporný
+    případ.** Kandidát byl v koši B kvůli `amenity=restaurant`, jenže telefon
+    `+420 721 488 470` se shoduje s telefonem okrsku **Horské služby ČR**
+    (oficiální stránky HS, Černý Důl 272, stanice v 625 m) a žádné veřejné
+    občerstvení tam pramen neuvádí. **Shoda telefonu — táž levná metoda
+    totožnosti, kterou 29. 8. Janskou boudu potvrdila shoda e-mailu — dnes
+    kandidáta vyloučila.** Identifikátor tedy umí rozhodnout oběma směry.
+  - **Trejbalova bouda — poprvé si dva katalogy protiřečí o kategorii.**
+    Firmy.cz ji vede **jen** jako horskou chatu a ekonomické ubytování, zcela
+    bez gastro kategorie, a k tomu samé večerní hodiny (Po–Čt 17–21).
+    Oficiální krajský portál `vychodni-cechy.info` proti tomu vede týž objekt
+    v rubrice „hostinec (s kuchyní), letní terasa / zahrádka" — doložený je
+    z toho zatím jen titulek ze seznamu výsledků, stránka vrátila 403. Role na
+    trase: cyklostezka 10 m, běžkařské tratě 50 m; **značená pěší trasa
+    doložená není**. → k ruční kontrole, zatím nepovyšovat.
+  - **Tři polské podniky v zástavbě + Hotel Bouda Jana** (Sudecka chata
+    u Prezesa a Prezesowa Chata ve Szklarské Porębě, Swojska Chata v Karpaczi,
+    Bouda Jana ve Velké Úpě): u všech čtyř je **občerstvení doložené** —
+    Tripadvisor vede Sudeckou jako „Bar, restaurace", Złota Firma Prezesowou
+    jako „Restauracja", **oficiální portál města Karpacz** Swojskou v sekci
+    gastronomie, u Boudy Jana píše ceskehory.cz „restaurace s celodenním
+    provozem". Role na trase **u žádného doložená není** — jsou to ulice ve
+    středisku. → všechny čtyři k ruční kontrole, čekají na tvoje rozhodnutí
+    o klíči střediska.
+  - **Čtyři kandidáti nemají na webu žádnou stopu, a příčina je u všech táž:
+    jméno je obecné slovo.** `turisticka-chata` je doslova název kategorie, po
+    které je průvodce pojmenovaný; `horska` je přídavné jméno, kterým se
+    v Krkonoších jmenuje každá druhá chalupa; `szklana-chata` je ve městě
+    sklářů slovo vázané na desítky hutí; `wiejska-chata` totéž. **Nevyřazuji
+    je — absence dokladu není doklad absence**, u každého je zapsané, co se
+    hledalo. **Poznatek pro příští běhy: u obecného jména je dohledávka podle
+    názvu ztráta času, levnější je vyjít z OSM elementu a jeho okolí.**
+- **Vedlejší nález, systémový — díra v kontrole.** `prezesowa-chata` a
+  `szklana-chata` stojí od sebe **30–40 m** a může jít o týž objekt zapsaný
+  dvakrát. Kontrola `blizke-body.ts` z 23. 8. to ale **neohlásí**: měří
+  kandidáty jen proti **publikovaným profilům**, dva kandidáty mezi sebou
+  neporovnává. Návrh: rozšířit ji o porovnání kandidát × kandidát v téže
+  oblasti (rozhodnuté páry mlčí stejně jako dnes).
+- `npm run kontrola` celé zelené, `tsc --noEmit` čistý.
+
+**Příště:** koš B skončil, další v pořadí je **koš D** (2 položky), pak **koš E**
+(5) a nakonec **koš C** (131, hromadné čtení). Vedle toho leží z 28. 8.
+Broumovsko (doměřit okno, rozhodnout polskou stranu), dál trvá devět padajících
+testů z 22. 8. a blokované DATA-04 / DATA-05 / DATA-20 / DATA-22 / DATA-25.
+
+**Otázky pro Michala:**
+
+- **Žižkovu boudu povýšit?** Obě půlky klíče doložené, nic proti ní nemám.
+  Jediná výhrada: výška 1003 m stojí zatím na jediném katalogovém prameni
+  (vlastní web se ze sandboxu nenačte) — brát ji do profilu s poctivostní
+  větou, nebo počkat na druhý pramen?
+- **Klíč střediska drží po dnešku už osm kandidátů** ve čtyřech střediscích na
+  obou stranách hranice. Otázka z 29. 8. se nemění, jen zdražuje: **počítá se
+  veřejné občerstvení uvnitř střediska, když k němu nevede značka?** Nová
+  dnešní trojice je jednoznačně „podnik v ulici" (Odrodzenia ve Szklarské
+  Porębě, Konstytucji 3 Maja v Karpaczi) — podle mě **ne**; Hotel Bouda Jana ve
+  Velké Úpě je ale zase případ „u nástupu do hor", kde si netroufám.
+- **`prezesowa-chata` × `szklana-chata` — jeden objekt, nebo dva?** (30–40 m od
+  sebe). Rozhodni prosím dřív, než se do `szklana-chata` pustí další
+  dohledávka — kdyby šlo o jeden objekt, práce odpadne.
+- **Mám rozšířit `blizke-body.ts` o porovnání kandidát × kandidát?** Dnes ta
+  díra propustila pár, který by kontrola měla hlásit sama.
+- Trvá z 29. 8.: **Dvořákovu a Mumlavskou boudu povýšit?** (a u Mumlavské brát
+  historii od 1879 z jediného pramene?); **Dvořákova bouda „s tradicí od
+  1876"** — dohledat z vlastního webu?; **Broumovsko — brát i polskou
+  stranu?**; **Bouda pod Sněžkou — najedí se u ní kolemjdoucí?**;
+  **`chata-stopa` × `chata-misecky`**; **Boudu Malá Úpa a Chatu Borůvku
+  povýšit?**; **Karczma Hutnika — platí klíč i pro podnik z roku 2012?**;
+  **232 kandidátů tvrdí „tourism=undefined" — opravit?**
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu spadne
+na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`;
+`npm ci` je v čerstvém sandboxu potřeba pustit před `npm run kontrola`;
+`WebFetch` funguje až poté, co URL projde `WebSearch`. Nově do seznamu
+nedosažitelných domén: **`zizkovabouda.cz`** (přesměrovací smyčka „too many
+redirects" na /cs/ i /en/), **`trejbalovabouda.cz`** a **`restu.cz`** (robots.txt
+nedostupný) a **`vychodni-cechy.info`** (403).
+
 ## 2026-08-29 — denní session: koš B počtvrté, devět kandidátů — dva k povýšení, tři beze stopy
 
 **Hotovo:**

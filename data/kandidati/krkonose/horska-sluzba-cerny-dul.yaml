@@ -28,3 +28,18 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  TRIÁŽ 30. 8. 2026 (koš B, páté čtení) — NEZAŘAZOVAT, a je to CHYBA V OSM TAGU,
+  ne sporný případ.
+  Kandidát je do koše B zařazený kvůli tagu `amenity=restaurant`. Telefon
+  v kandidátovi (+420 721 488 470) se ale SHODUJE s telefonem okrsku Horské
+  služby ČR Černý Důl dle oficiálních stránek HS ČR
+  (https://www.horskasluzba.cz/cz/oblasti/krkonose/okrsky/0405-cerny-dul):
+  adresa „Černý Důl 272, 543 44 Černý Důl", telefon „+420 721 488 470",
+  stanice v zimní sezoně v 625 m n. m. Táž stránka neuvádí u stanice ŽÁDNÉ
+  občerstvení pro veřejnost.
+  Jde tedy o záchranářskou stanici, ne o objekt s veřejným občerstvením; tag
+  `amenity=restaurant` je v OSM chybný. Shoda telefonu je přitom táž levná
+  metoda totožnosti, kterou 29. 8. posloužila shoda e-mailu u Janské boudy —
+  tentokrát vyloučila kandidáta, místo aby ho potvrdila.
+  -> NEZAŘAZOVAT (do průvodce nepatří; není to chata ani občerstvení).

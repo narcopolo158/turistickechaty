@@ -24,3 +24,20 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  TRIÁŽ 30. 8. 2026 (koš B, páté čtení) — OBČERSTVENÍ DOLOŽENÉ, role na trase ne;
+  další případ do otázky „klíč střediska".
+  OBČERSTVENÍ: katalog Złota Firma vede podnik v kategorii „Restauracja
+  Szklarska Poręba", adresa „Odrodzenia 1A, 58-580 Szklarska Poręba"
+  (https://zlotafirma.pl/company/prezesowa-chata-4788623); z recenzí je patrný
+  běžný veřejný provoz („Zamówienia składa się przy barze", „Pyszne jedzenie
+  w niewysokich cenach, duze porcje"). Otvírací doba tam uvedená není.
+  ROLE NA TRASE: nedoložená — ulice Odrodzenia je v zástavbě Szklarské Poręby.
+  POZOR NA VZTAH K `szklana-chata`: oba kandidáti stojí od sebe zhruba 30–40 m
+  (50,8261/15,5225 vs. 50,8266/15,5229). Může jít o dva podniky na jednom místě,
+  i o jeden objekt zapsaný v OSM dvakrát pod různými jmény. NEROZHODUJI —
+  patří to k témuž typu otázky jako trojice jmenovců z 24. 8.
+  OSM tag je `amenity=biergarten`, prameny mluví o restauraci — mírný rozpor,
+  týž druh jako u chata-ducha-gor 26. 8. (tag popisuje jinak než prameny).
+  -> K RUČNÍ KONTROLE, nepovyšovat bez rozhodnutí o klíči střediska
+  a bez vyjasnění vztahu ke `szklana-chata`.

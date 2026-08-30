@@ -21,3 +21,15 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=undefined (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  TRIÁŽ 30. 8. 2026 (koš B, páté čtení) — BEZE STOPY NA WEBU.
+  Hledáno: „Turistická chata" ve spojení se Špindlerovým Mlýnem a restaurací
+  (bod leží na 50,7198/15,6164, tedy v katastru Špindlerova Mlýna). Výsledky
+  vracejí jiné špindlerovské podniky (Chata Spindler, Chata Labská) a obecné
+  katalogy horských chat — pod tímhle jménem tam objekt není.
+  PAST VE JMÉNĚ, a je to past nejhoršího druhu: „Turistická chata" je obecné
+  označení celé kategorie, po které je průvodce pojmenovaný. Vyhledávač na ně
+  vrací cokoli. Levnější než dohledávat jméno bude příště vyjít z OSM elementu
+  (node/1501960040) a jeho okolí.
+  NEVYŘAZUJI: absence dokladu není doklad absence.
+  -> ZŮSTÁVÁ OTEVŘENÝ, k dalšímu čtení.
