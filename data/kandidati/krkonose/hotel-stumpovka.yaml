@@ -57,3 +57,17 @@ interniPoznamky: >-
   File:Štumpovka a Dvoračky.jpg (86 m, obě budovy) — vše cs:ŠJů,
   CC BY-SA 3.0; po povýšení může DATA-02 běh založit i vlastní soubor fotek
   (bude mít vlastní GPS).
+
+  MĚŘENO 31. 8. 2026 (triáž koš E) — NEPŘÍTOMNOST V OSM EXPORTECH JE NOVĚ
+  DOLOŽENÁ, NE ODHADNUTÁ. Hlavička tvrdila, že objekt v OSM exportu DATA-01
+  není; koš E to nezměřil (ruční kandidát nemá OSM URL, podle které koš
+  dohledával). Proměřeno tedy dvěma cestami nad exporty v repu, bez dotazu
+  do sítě: (1) podle jména — řetězec „Štumpovka"/„Stumpovka" se v žádném
+  z osmi exportů oblasti nevyskytuje; (2) podle okolí — v okruhu 1,5 km od
+  bodu Chaty Dvoračky (50.747423 / 15.5121665) leží v exportech **jediný
+  element, a to sama Chata Dvoračky** (way/252520174, `tourism=alpine_hut`,
+  0 m); nejbližší další je bezejmenný `tourism=chalet` 1 581 m odsud.
+  Hotel Štumpovka stojí přitom podle fotek Commons 22–104 m od Dvoraček,
+  takže v exportu by být měl — v OSM tedy patrně chybí, nebo je pod jménem,
+  které dotaz nesbírá. GPS proto z repa doplnit NEJDE a zůstává na ručním
+  běhu (mapa, nebo web areálu).

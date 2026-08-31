@@ -28,3 +28,17 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ZMĚŘENO 31. 8. 2026 (triáž koš E) — TENTO KANDIDÁT JE TÝŽ OBJEKT JAKO
+  `modrokamenna-bouda`. Dvojici vede `data/_jmenovci.yaml` od 22. 8. 2026,
+  ale nerozhodnutou, protože ruční kandidát neměl v repu `lat`/`lng`
+  a registr proto odkázal rozhodnutí na budoucí běh DATA-31. Souřadnice ale
+  v repu byla — v krajském katalogu hkregion.cz, citovaném v overeniLokace
+  ručního souboru: 50°38'34.95"N, 15°47'27.24"E, tedy **9,8 m** od bodu
+  tohoto kandidáta. Jeden dům, ne dva stejnojmenné v jedné obci.
+
+  Ruční soubor je věcně bohatší (veřejná restaurace doložená doslovnou větou
+  webu obce Janské Lázně, kapacita 50 lůžek / 15 pokojů, turistická známka
+  č. 2540), tenhle přidává jen OSM bod a odkaz na ubytovací portál. Návrh:
+  sloučit do `modrokamenna-bouda` a tenhle soubor vyřadit jako duplicitu —
+  **rozhodnutí patří redakci, nedělám sám. NEPOVYŠOVAT ani jeden.**

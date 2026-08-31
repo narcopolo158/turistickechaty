@@ -19,7 +19,13 @@ import { join } from 'node:path'
 
 import { describe, expect, it } from 'vitest'
 
-import { BLIZKO_M, najdiBlizkeBody, vzdalenostM } from '../../scripts/kontrola/blizke-body'
+import {
+  BLIZKO_KANDIDATI_M,
+  BLIZKO_M,
+  najdiBlizkeBody,
+  najdiBlizkeKandidaty,
+  vzdalenostM,
+} from '../../scripts/kontrola/blizke-body'
 
 /** Dočasný kořen se dvěma oblastmi a registrem jmenovců. */
 const kostra = () => {
@@ -147,5 +153,77 @@ describe('najdiBlizkeBody', () => {
     expect(
       najdiBlizkeBody(join(koren, 'kandidati'), join(koren, 'chaty'), join(koren, 'nic.yaml')),
     ).toEqual([])
+  })
+})
+
+/**
+ * KANDIDÁT × KANDIDÁT (doplněno 31. 8. 2026). Druhá polovina téhož měření:
+ * `najdiBlizkeBody` výš porovnává kandidáta jen s publikovaným profilem, takže
+ * dvojice dvou nepovýšených kandidátů jí propadne celá. Vyžádaly si ji dva
+ * nálezy za sebou — `prezesowa-chata` × `szklana-chata` (30–40 m, 30. 8.)
+ * a `modrokamenna-bouda` × `penzion-modrokamenna-bouda` (9,8 m, 31. 8.).
+ *
+ * Práh je tu ale jiný a je změřený: v surové zásobě kandidátů leží celé chatové
+ * osady stejných domků (šumavské řady „FH 1–34"), takže na 50 m vychází 384
+ * dvojic a 298 z nich je jen ze Šumavy. Na 10 m jich zbývá 8 a jsou to skoro
+ * samé pravé dvojice — proto `BLIZKO_KANDIDATI_M = 10`.
+ */
+describe('najdiBlizkeKandidaty', () => {
+  it('najde dvojici dvou nepovýšených kandidátů (vzor Modrokamenná bouda)', () => {
+    const { kandidati, registr } = kostra()
+    zaznam(join(kandidati, 'krkonose', 'modrokamenna-bouda.yaml'), 'Modrokamenná bouda', 50.643114, 15.7909801)
+    zaznam(
+      join(kandidati, 'krkonose', 'penzion-modrokamenna-bouda.yaml'),
+      'Penzion Modrokamenná bouda',
+      50.643114,
+      15.7909801,
+      '# Zdroj: https://www.openstreetmap.org/node/2399375802\n',
+    )
+    const pary = najdiBlizkeKandidaty(kandidati, registr)
+    expect(pary).toHaveLength(1)
+    expect([pary[0].a.slug, pary[0].b.slug].sort()).toEqual([
+      'modrokamenna-bouda',
+      'penzion-modrokamenna-bouda',
+    ])
+  })
+
+  it('práh 10 m odděluje — sousední domky chatové osady se nehlásí', () => {
+    const { kandidati, registr } = kostra()
+    // 0,0004 ° šířky ≈ 44 m: pod starým padesátimetrovým prahem, nad novým.
+    zaznam(join(kandidati, 'krkonose', 'fh-1.yaml'), 'FH 1', 50.7, 15.7)
+    zaznam(join(kandidati, 'krkonose', 'fh-2.yaml'), 'FH 2', 50.7004, 15.7)
+    expect(najdiBlizkeKandidaty(kandidati, registr)).toHaveLength(0)
+    expect(najdiBlizkeKandidaty(kandidati, registr, 50)).toHaveLength(1)
+  })
+
+  it('rozhodnutý pár z registru jmenovců mlčí', () => {
+    const { kandidati, registr } = kostra()
+    zaznam(join(kandidati, 'krkonose', 'a.yaml'), 'A', 50.7, 15.7)
+    zaznam(join(kandidati, 'krkonose', 'b.yaml'), 'B', 50.70001, 15.7)
+    expect(najdiBlizkeKandidaty(kandidati, registr)).toHaveLength(1)
+    writeFileSync(
+      registr,
+      'jmenovci:\n  - jadro: ab\n    objekty:\n      - krkonose/a\n      - krkonose/b\n',
+    )
+    expect(najdiBlizkeKandidaty(kandidati, registr)).toHaveLength(0)
+  })
+
+  it('dva zápisy TÉŽE OSM entity nehlásí — to je práce duplicity-oblasti', () => {
+    const { kandidati, registr } = kostra()
+    const url = '# Zdroj: https://www.openstreetmap.org/node/111\n'
+    zaznam(join(kandidati, 'krkonose', 'a.yaml'), 'A', 50.7, 15.7, url)
+    zaznam(join(kandidati, 'krkonose', 'b.yaml'), 'B', 50.70001, 15.7, url)
+    expect(najdiBlizkeKandidaty(kandidati, registr)).toHaveLength(0)
+  })
+
+  it('nad skutečným repem drží TVAR nálezu — jedna oblast, pod prahem, seřazeno', () => {
+    const pary = najdiBlizkeKandidaty()
+    for (const p of pary) {
+      expect(p.a.oblast).toBe(p.b.oblast)
+      expect(p.vzdalenostM).toBeLessThanOrEqual(BLIZKO_KANDIDATI_M)
+      expect(p.a.slug).not.toBe(p.b.slug)
+    }
+    const vzdalenosti = pary.map((p) => p.vzdalenostM)
+    expect([...vzdalenosti].sort((a, b) => a - b)).toEqual(vzdalenosti)
   })
 })

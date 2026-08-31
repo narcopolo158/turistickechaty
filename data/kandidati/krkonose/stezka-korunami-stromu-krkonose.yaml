@@ -36,3 +36,41 @@ interniPoznamky: >-
   amenity=restaurant, 93 m, https://www.openstreetmap.org/way/1448059733
 
   Výška věže dle OSM: 45.5 m
+
+  KOŠ D, PŘEČTENO 31. 8. 2026 — OBČERSTVENÍ DOLOŽENO, PŘÍSTUPNOST NE.
+  Objekt je vyhlídková věž s okružní stezkou na okraji Janských Lázní
+  (u dolní stanice Černohorského expresu). Vše `verified: false`.
+
+  OBČERSTVENÍ — doloženo dvěma prameny a shoduje se s OSM. Vlastní web
+  provozovatele (treetop-walks.com/krkonose/o-stezce/restaurace, načteno
+  31. 8. 2026) vede v areálu **Restauraci V korunách** a píše doslova:
+  „Restaurace je otevřena denně během otevírací doby Stezky korunami stromů
+  v Krkonoších", stezka „je otevřena od 9:30 do 19:00". Kudy z nudy
+  (kudyznudy.cz/aktivity/restaurace-v-korunach, načteno 31. 8. 2026) uvádí
+  adresu „Krkonošská č. ev. 350, 542 25 Janské Lázně", provoz „leden -
+  prosinec 1.1. - 31.12.", „pondělí - neděle 09:30 - 19:00" (mimo 24. 12.),
+  venkovní zahrádku a v teplých měsících „venkovní stánek s rychlým
+  občerstvením, zmrzlinou a osvěžujícími nápoji"; kontakt info@stezkakrkonose.cz,
+  +420 499 110 019. Sedí to s OSM dokladem z hlavičky kandidáta (V Korunách,
+  `amenity=restaurant`, 93 m).
+
+  KŘÍŽOVÁ SHODA VÝŠKY VĚŽE: OSM uvádí 45,5 m, Kudy z nudy
+  (kudyznudy.cz/aktivity/stezka-korunami-stromu-v-janskych-laznich, načteno
+  31. 8. 2026) doslova „Vyhlídková věž (…) je vysoká 45 metrů, vodorovná
+  část stezky se nachází ve výšce 24 metrů". Dva nezávislé prameny, rozdíl
+  je zaokrouhlení — nezapisovat jako rozpor. Titul „Stavba roku 2018
+  Královéhradeckého kraje" tamtéž.
+
+  CO DOLOŽENO NENÍ — a je to zrovna to rozhodující: **žádný ze tří čtených
+  pramenů neříká, zda se do restaurace dá vejít bez vstupenky na stezku.**
+  Zkoušen i článek ceske-novinky.cz z 27. 4. 2024 — mlčí také. U boudy na
+  trase je veřejná přístupnost samozřejmá, u placené atrakce ne, takže
+  tohle není formalita: pokud je restaurace za turniketem, není to veřejné
+  občerstvení ve smyslu klíče zařazení, ale součást vstupenky.
+  **NEPOVYŠOVAT, dokud se to nedoloží** — otázka pro Michala, případně
+  telefonát na +420 499 110 019 (patří do docs/TELEFONATY-KRKONOSE.md).
+
+  DRUHÁ OTEVŘENÁ PŮLKA — role na trase: ani jeden pramen neuvádí, že ke
+  stezce vede značená turistická trasa; popisují ji jako cíl u lanovky
+  a u lázeňského města. Je to tedy tentýž typ případu jako „klíč střediska",
+  který od 29. 8. drží osm kandidátů.

@@ -19,9 +19,12 @@ vyska: 790
 kapacita: 50 # krajský katalog: „Celková kapacita lůžek: 50" (verified:false)
 pokoje: 15 # krajský katalog: „Celkový počet pokojů: 15" (verified:false)
 
-# GPS záměrně NEvyplněna do polí: krajský katalog ji uvádí (viz
-# overeniLokace), ale bez vlastního ověření ji nepřebíráme — doplnit při
-# povýšení proti OSM/mapě, ať nesedíme na jediném katalogu.
+# GPS DOPLNĚNA 31. 8. 2026: podmínka z původní poznámky („doplnit proti
+# OSM/mapě, ať nesedíme na jediném katalogu") je splněná — OSM zná objekt
+# jako node/2399375802 a jeho bod se s katalogovou GPS shoduje na 9,8 m.
+# Pole nesou hodnotu z OSM (přesnější zápis), verified: false.
+lat: 50.643114
+lng: 15.7909801
 
 kontakty:
   web: https://www.modrokamennabouda.cz/
@@ -112,3 +115,35 @@ interniPoznamky: >-
   a přiznat rozpor výšek.
   ČÍSLO ZNÁMKY VYŘEŠENO (Michal, 27. 7. 2026, odpověď na otázku č. 15): platí 2540
   (oficiální seznam vydavatele); dřívější zápis kotouče jako 2640 byl omyl.
+
+  NÁLEZ 31. 8. 2026 (triáž koš E) — GPS DOPLNĚNA, PODMÍNKA Z HLAVIČKY SPLNĚNA.
+  Hlavička žádala GPS nepřebírat z jediného katalogu a ověřit ji proti OSM.
+  Měřeno nad exporty v repu (bez dotazu do sítě): OSM zná objekt jako
+  **node/2399375802 „Penzion Modrokamenná bouda"** (`tourism=guest_house`,
+  web az-ubytovani.net) na 50.643114 / 15.7909801. Krajský katalog uvádí
+  50°38'34.95"N, 15°47'27.24"E = 50.643042 / 15.790900 — **rozdíl 9,8 m**.
+  Dva nezávislé prameny se tedy o poloze shodují; pole `lat`/`lng` nesou
+  hodnotu OSM (přesnější zápis), `verified: false`.
+
+  TÍM SE ZAVÍRÁ OTÁZKA PARKOVANÁ OD 22. 8. 2026 — a je to hlavní přínos
+  dnešního zápisu. Registr `data/_jmenovci.yaml` vede dvojici
+  `modrokamenna-bouda` × `penzion-modrokamenna-bouda` od 22. 8. s doslovným
+  odůvodněním „DVĚ ENTITY, u kterých se vzdálenost ZMĚŘIT NEDÁ (…) Rozhodne
+  DATA-31 (dohledávka GPS), ne úvaha; do té doby dva kandidáti." Chybějící
+  souřadnice byla přesně ta jedna věc, která rozhodnutí držela — a ležela
+  přitom v repu celou dobu, v krajském katalogu citovaném v overeniLokace
+  tohoto souboru. Naměřeno: **9,8 m mezi katalogovou GPS a OSM bodem**, tedy
+  jeden dům, ne dva stejnojmenné v jedné obci.
+
+  NEBYL to tedy nález nehlídaného páru (tak jsem to nejdřív napsal a je to
+  omyl, který tu nechávám přiznaný): kontrola pár hlásila správně, jen si
+  vyžádala měření, které nikdo neudělal. Poučení je jiné a spíš nepříjemné:
+  **parkované rozhodnutí může čekat na údaj, který v repu už je** — registr
+  odkázal na budoucí běh DATA-31, ačkoli stačilo přečíst pramen o pár řádků
+  výš v témž souboru.
+
+  ZBÝVÁ REDAKČNÍ KROK, nedělám sám: který ze dvou souborů přežije. Tenhle je
+  věcně bohatší (veřejná restaurace doložená doslovnou větou webu obce,
+  kapacita 50 lůžek / 15 pokojů, známkové místo 2540), OSM kandidát přidává
+  jen bod a odkaz na ubytovací portál. Návrh: sloučit do tohoto souboru
+  a `penzion-modrokamenna-bouda` vyřadit jako duplicitu.

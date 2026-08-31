@@ -29,6 +29,119 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-08-31 — denní session: koše D a E odpracovány, a koš E neměřil, co slibuje
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04** i **DATA-05** jsou dál blokované ze
+  stejných důvodů (DATA-04 má dokladovou část vyčerpanou od 2. 8., zbytek jsou
+  telefonáty; DATA-05 čeká na re-export DATA-37). Vzal jsem tedy „Příště"
+  z 30. 8.: po dočteném koši B jsou na řadě **koše D (2) a E (5)** — obojí se
+  vešlo do jedné session, dohromady 7 kandidátů. Do `data/chaty/` se nesáhlo.
+- **Koš D dojet, obě položky rozhodnuty.**
+  - **`rozhledna-zaly` — beze změny, verdikt z 29. 7. trvá.** Je to VĚŽ objektu,
+    který v korpusu leží jako publikovaný profil `zaly`; rozhlednu i restauraci
+    u paty drží jeden provoz (týž telefon, tytéž hodiny, jedna doména). Táž
+    situace jako u tří ze sedmi položek koše A 25. 8.: **koš je pořadí čtení,
+    ne rozhodnutí, a starší rozhodnutí ho přebíjí.**
+  - **`stezka-korunami-stromu-krkonose` — občerstvení doloženo, přístupnost ne.**
+    V areálu běží **Restaurace V korunách**, denně 9:30–19:00, celoročně mimo
+    24. 12., venkovní zahrádka a v létě stánek s rychlým občerstvením (vlastní
+    web provozovatele + Kudy z nudy). Křížová shoda výšky věže: OSM 45,5 m ×
+    Kudy z nudy „vysoká 45 metrů". **Nepovyšovat ale:** ani jeden ze tří
+    čtených pramenů neříká, jestli se do restaurace dá vejít **bez vstupenky
+    na stezku**. U boudy na trase je veřejná přístupnost samozřejmá, u placené
+    atrakce ne — za turniketem by to nebylo veřejné občerstvení ve smyslu
+    klíče, ale součást vstupenky.
+- **Koš E odpracován — a ukázalo se, že koš měřil odkaz, ne objekt.** Koš E
+  („OSM element se v exportech nedohledal") dohledával element podle **první
+  OSM URL v hlavičce kandidáta**. Jenže **všech pět jeho položek jsou ruční
+  nebo katalogoví kandidáti, kteří OSM URL nikdy neměli** — koš tedy nezměřil
+  nepřítomnost objektu v OSM, nýbrž nepřítomnost odkazu v našem souboru.
+  Přeměřeno podle **jména a podle okolí**, nad exporty v repu, bez jediného
+  dotazu do sítě:
+  - **`josefova-bouda` V OSM JE** — way/74863464, `amenity=restaurant`,
+    `tourism=hotel`, telefon, doména josefovabouda.cz, **246 m od publikovaného
+    profilu Erlebachovy boudy**, tedy přesně tam, kde ji popisuje pramen.
+    Doplněna GPS, telefon i doklad občerstvení; hlavička souboru, která tvrdila
+    opak, je opravená. Tohle je jediná položka koše E, které se dnes věcně
+    pohnulo dopředu.
+  - **`modrokamenna-bouda` V OSM JE** jako `penzion-modrokamenna-bouda`
+    (node/2399375802) — viz hlavní nález níž.
+  - **`postovna-na-snezce` a `hotel-stumpovka` v exportech doloženě nejsou** —
+    a nově je to změřené, ne odhadnuté: v okruhu 1 km od vrcholu Sněžky není
+    v exportech žádný element (nejbližší je Dom Śląski 851 m), v okruhu 1,5 km
+    od Dvoraček leží jediný element, a to sama Chata Dvoračky (0 m), ačkoli
+    Štumpovka stojí podle fotek Commons 22–104 m od ní. GPS obou tedy z repa
+    doplnit nejde a dál čeká na ruční běh.
+  - **`hrncirske-boudy` neměřitelné** (bez GPS) a verdikt z 25. 7. trvá:
+    enkláva několika stavení, ne jedna chata. Otázka na Michala, ne úkol.
+- **HLAVNÍ NÁLEZ — parkované rozhodnutí čekalo na údaj, který v repu už byl.**
+  Dvojici `modrokamenna-bouda` × `penzion-modrokamenna-bouda` vede
+  `data/_jmenovci.yaml` **od 22. 8. 2026**, ale nerozhodnutou, s odůvodněním
+  „DVĚ ENTITY, u kterých se vzdálenost ZMĚŘIT NEDÁ (…) Rozhodne DATA-31
+  (dohledávka GPS), ne úvaha". Chybějící souřadnice ručního kandidáta ale na
+  žádný budoucí běh čekat nemusela: **ležela v repu celou dobu**, uvnitř
+  `overeniLokace` téhož souboru, v citaci krajského katalogu (50°38'34.95"N,
+  15°47'27.24"E). Od bodu OSM je to **9,8 m** — jeden dům. Registr je proto
+  přepsaný na „jeden objekt, dva zápisy". Poučení je nepříjemnější než ten
+  jeden pár: **odkaz na budoucí běh je levnější než čtení vlastního souboru,
+  a proto se píše i tam, kde se číst mělo.**
+- **Z toho kontrola: `blizke-body.ts` umí nově kandidát × kandidát.** Rozšíření
+  navržené 30. 8. (kvůli `prezesowa-chata` × `szklana-chata`) a dnes vyžádané
+  podruhé. **Práh je ale jiný a je změřený:** padesátimetrový práh z DATA-38
+  sedí na pár kandidát × profil, protože profil je kurátorovaný objekt;
+  v surové zásobě kandidátů leží ale celé chatové osady stejných domků, takže
+  na 50 m vychází **384 dvojic a 298 z nich je ze Šumavy** (řady „FH 1–34",
+  „Schwarzes Haus 61–65"). Rozdělení: 50 m → 384, 30 m → 202, 15 m → 62,
+  **10 m → 8**. `BLIZKO_KANDIDATI_M = 10` (zhruba půdorys boudy) je první práh,
+  na kterém je výstup čitelný — a osm nálezů je skoro samá pravá dvojice:
+  `havlova-bouda` × `restaurace-havlova-bouda` (3,4 m), `kramarova-chata`
+  × `kramarova-chata-na-suchem-vrchu` (6,1 m), `vazecka-chata`
+  × `vazecka-chata-bistro` (6,3 m), `chata-sudecka-z-widokiem`
+  × `sudecka-chata-u-prezesa` (9,7 m — souvisí s nálezem z 30. 8.).
+  NEROZHODUJE, 5 nových testů (14 v souboru).
+- **Vlastní chyba, přiznaná v datech:** dvojici Modrokamenné jsem nejdřív zapsal
+  jako „nález nehlídaného páru". Nebyla — kontrola pár hlásila správně už od
+  22. 8., jen si vyžádala měření, které nikdo neudělal. Oprava je v obou
+  kandidátských souborech, ne přepsaná.
+- `npm run kontrola` celé zelené, `tsc --noEmit` čistý.
+
+**Příště:** **koš C** — 131 položek, hromadné čtení, a je to poslední koš
+krkonošské triáže. Vedle toho leží z 28. 8. Broumovsko (doměřit okno,
+rozhodnout polskou stranu), dál trvá devět padajících testů z 22. 8.
+a blokované DATA-04 / DATA-05 / DATA-20 / DATA-22 / DATA-25.
+
+**Otázky pro Michala:**
+
+- **Stezka korunami stromů — dá se do Restaurace V korunách bez vstupenky na
+  stezku?** Na tom stojí celé zařazení objektu: pokud je restaurace za
+  turniketem, není to veřejné občerstvení ve smyslu klíče. Web to neříká,
+  telefonát by to zavřel (+420 499 110 019) — nebo to víš z vlastní návštěvy?
+- **Modrokamenná bouda — sloučit dvojici?** Změřeno 9,8 m, je to jeden dům.
+  Návrh: nechat bohatší ruční soubor (veřejná restaurace doložená větou webu
+  obce, kapacita, známkové místo 2540) a `penzion-modrokamenna-bouda` vyřadit
+  jako duplicitu. Sloučení je redakční krok, nedělám ho sám.
+- **Osm dvojic kandidátů do 10 m** teď hlásí nová kontrola — mám je příští
+  session projít a rozhodnout, nebo počkat, až doběhne koš C?
+- Trvá z 30. 8.: **Žižkovu boudu povýšit?** (a brát výšku 1003 m z jediného
+  katalogového pramene?); **klíč střediska drží osm kandidátů** — počítá se
+  veřejné občerstvení uvnitř střediska, když k němu nevede značka?;
+  **`prezesowa-chata` × `szklana-chata` — jeden objekt, nebo dva?**;
+  **Dvořákovu a Mumlavskou boudu povýšit?**; **Broumovsko — brát i polskou
+  stranu?**; **Bouda pod Sněžkou — najedí se u ní kolemjdoucí?**;
+  **`chata-stopa` × `chata-misecky`**; **Boudu Malá Úpa a Chatu Borůvku
+  povýšit?**; **Karczma Hutnika — platí klíč i pro podnik z roku 2012?**;
+  **232 kandidátů tvrdí „tourism=undefined" — opravit?**
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu spadne
+na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`;
+`npm ci` je v čerstvém sandboxu potřeba pustit před `npm run kontrola`;
+`WebFetch` funguje až poté, co URL projde `WebSearch`. Do seznamu nedosažitelných
+domén nově nic nepřibylo; **krkonose.eu je dál mimo dosah** (robots.txt
+ConnectTimeout) a mrzí to i dnes — vede stránku resortu Sv. František, která by
+u Josefovy boudy doplnila výšku a kapacitu.
+
 ## 2026-08-30 — denní session: KOŠ B DOČTEN, posledních 11 kandidátů
 
 **Hotovo:**

@@ -48,7 +48,7 @@ const KROKY = [
   // identita podle OSM URL (duplicity-oblasti) dve entity teze stavby nevidi,
   // pojistka DATA-38 se pta jen na JINE oblasti a jen pri shodnem jadru nazvu,
   // kolize-jmen vidi jen jmena. Krkonossky beh 22. 8. 2026 spadl doprostred.
-  ['blizke-body', 'kandidat par metru od profilu teze oblasti (k rozhodnuti)', false],
+  ['blizke-body', 'kandidat par metru od profilu i od druheho kandidata teze oblasti (k rozhodnuti)', false],
   // ROZHODUJE: vadne razitko neshodi sebe, ale cely deploy — seed razitek
   // bezi uvnitr nasazeni. Cisty stav je presne nula.
   ['razitka', 'razitkovy korpus: profil chaty, sken, atribuce prevzetí', true],

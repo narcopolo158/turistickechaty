@@ -1184,16 +1184,29 @@ jmenovci:
       - krkonose/modrokamenna-bouda
       - krkonose/penzion-modrokamenna-bouda
     duvod: >-
-      DVĚ ENTITY, u kterých se vzdálenost ZMĚŘIT NEDÁ — a nedomýšlí se:
-      kandidát Modrokamenná bouda (Janské Lázně, 790 m,
+      JEDEN OBJEKT, DVA ZÁPISY — změřeno 31. 8. 2026. Zápis z 22. 8. 2026
+      zněl doslova: „DVĚ ENTITY, u kterých se vzdálenost ZMĚŘIT NEDÁ —
+      a nedomýšlí se: kandidát Modrokamenná bouda (Janské Lázně, 790 m,
       modrokamennabouda.cz) nemá v repu `lat`/`lng` vůbec, kdežto
       Penzion Modrokamenná bouda (node/2399375802) je na
       50,643114 / 15,7909801. Bez souřadnic prvního objektu se nedá
       říct, jestli jde o jeden provoz o dvou zápisech (vzor Černá bouda
       výš), nebo o dva domy téhož jména v jedné obci. Rozhodne DATA-31
-      (dohledávka GPS), ne úvaha; do té doby dva kandidáti.
-    rozhodl: Claude (22. 8. 2026, po běhu DATA-01 nad Krkonošemi — souřadnice chybí)
-    checked: 2026-08-22
+      (dohledávka GPS), ne úvaha; do té doby dva kandidáti."
+      MĚŘENÍ (31. 8. 2026, triáž koš E): souřadnice prvního objektu na
+      DATA-31 čekat nemusela — ležela v repu celou dobu, v krajském
+      katalogu hkregion.cz citovaném v `overeniLokace` ručního souboru:
+      50°38'34.95"N, 15°47'27.24"E = 50,643042 / 15,790900. Od bodu OSM
+      je to 9,8 m, tedy jeden dům, ne dva stejnojmenné v jedné obci.
+      Ruční soubor dostal `lat`/`lng` z OSM (přesnější zápis,
+      verified:false). ZBÝVÁ REDAKČNÍ KROK, nedělá ho session: sloučit do
+      bohatšího ručního souboru (veřejná restaurace doložená doslovnou
+      větou webu obce, kapacita 50/15, známkové místo 2540)
+      a `penzion-modrokamenna-bouda` vyřadit jako duplicitu.
+    rozhodl: >-
+      Claude (22. 8. 2026 založeno bez souřadnic; 31. 8. 2026 dvojice
+      změřena z katalogové GPS — jeden objekt, sloučení čeká na redakci)
+    checked: 2026-08-31
   - jadro: pod lipami
     objekty:
       - krkonose/chata-pod-lipami

@@ -9,19 +9,39 @@ slug: josefova-bouda
 zeme: cz
 oblast: krkonose
 typ: obsluhovana
-# BEZ GPS — v OSM exportu DATA-01 objekt není (dohledat ručně z OSM či
-# webu resortu před povýšením).
+# GPS DOPLNĚNA 31. 8. 2026 z OSM (way/74863464, těžiště) — dřívější poznámka
+# „v OSM exportu DATA-01 objekt není" byla omyl, viz interniPoznamky.
+lat: 50.757053
+lng: 15.6358175
+kontakty:
+  telefon: +420 499 523329
+  web: http://www.josefovabouda.cz/indexGE.html
 overeniLokace:
   source: >-
-    server Krkonose.eu (triáž 26. 7. 2026, stránka „Resort Sv. František
-    – Erlebachova a Josefova bouda"): součást resortu u Erlebachovy
-    boudy nad Špindlerovým Mlýnem; profil Erlebachovy (publikován) ji
-    cituje doslova: „Další možností je kouzelná Josefova bouda,
-    romantická chata hotelového typu". Rezervační portály (Booking,
-    hledáno 27. 7. 2026) vedou „Resort Sv. František - Josefova Bouda"
-    samostatně. GPS zatím nedoložena.
+    OpenStreetMap https://www.openstreetmap.org/way/74863464 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright);
+    element nese jméno „Josefova bouda", vlastní doménu josefovabouda.cz
+    a leží 246 m od publikovaného profilu Erlebachovy boudy (dohledáno
+    31. 8. 2026 v `_overpass-export-cz.json`, stav OSM dat 2026-08-22).
+    Starší doklad polohy slovem: server Krkonose.eu (triáž 26. 7. 2026,
+    stránka „Resort Sv. František – Erlebachova a Josefova bouda"):
+    součást resortu u Erlebachovy boudy nad Špindlerovým Mlýnem; profil
+    Erlebachovy (publikován) ji cituje doslova: „Další možností je
+    kouzelná Josefova bouda, romantická chata hotelového typu".
+    Rezervační portály (Booking, hledáno 27. 7. 2026) vedou „Resort Sv.
+    František - Josefova Bouda" samostatně.
   verified: false
-  checked: '2026-07-27'
+  checked: '2026-08-31'
+overeniObcerstveni:
+  source: >-
+    OpenStreetMap https://www.openstreetmap.org/way/74863464 — tag
+    `amenity=restaurant` vedle `tourism=hotel`; data © přispěvatelé
+    OpenStreetMap, ODbL 1.0. POZOR: tag neříká, zda jde o vlastní
+    restauraci boudy, nebo o sdílenou restauraci resortu Sv. František,
+    ani zda obslouží kolemjdoucího bez ubytování — nedomýšlet, dotáhnout
+    před povýšením.
+  verified: false
+  checked: '2026-08-31'
 interniPoznamky: >-
   RUČNÍ KANDIDÁT (27. 7. 2026) — Michal v odpovědích na otázky uzavření
   Krkonoš (č. 7) rozhodl kandidáta založit. Vzešlo z profilu Erlebachovy
@@ -32,3 +52,29 @@ interniPoznamky: >-
   K dotažení před povýšením: GPS (OSM nebo web resortu), výška, kapacita,
   služby (restaurace resortu vs. vlastní), historie (po kom Josefova?),
   vztah k Erlebachově (společný provozovatel — resort).
+
+  NÁLEZ 31. 8. 2026 (triáž koš E) — HLAVIČKA TOHOTO SOUBORU BYLA VĚCNĚ ŠPATNĚ.
+  Stálo tu „v OSM exportu DATA-01 objekt není"; měřeno nad exporty, které v repu
+  leží (bez jediného dotazu do sítě), tam JE: way/74863464, jméno doslova
+  „Josefova bouda", tagy `amenity=restaurant`, `tourism=hotel`,
+  `phone=+420 499 523329`, `website=http://www.josefovabouda.cz/indexGE.html`,
+  těžiště 50.757053 / 15.6358175. Totožnost dokládají tři nezávislé znaky:
+  jméno, vlastní doména josefovabouda.cz a vzdálenost **246 m od publikovaného
+  profilu Erlebachovy boudy** (50.7589321 / 15.633979) — přesně ta poloha, kterou
+  popisuje pramen v overeniLokace („součást resortu u Erlebachovy boudy").
+  GPS proto doplněna z OSM, `verified: false`.
+
+  Proč ji koš E nenašel: koš E dohledával OSM element podle **první OSM URL
+  v hlavičce kandidáta**, jenže tenhle kandidát je RUČNÍ a žádnou OSM URL nikdy
+  neměl — koš tedy nezměřil nepřítomnost objektu v OSM, ale nepřítomnost odkazu
+  v našem souboru. Hledání podle JMÉNA to zavřelo na první pokus.
+
+  Co tím padá a co ne: **GPS a doklad veřejného občerstvení jsou tím pokryté**
+  (`amenity=restaurant` je OSM tvrzení, ne náš závěr). Dál chybí: výška, kapacita,
+  zda má bouda vlastní restauraci, nebo jen sdílí resortní (OSM tag to
+  nerozlišuje), historie a po kom je jméno. Vlastní web resortu
+  (erlebachovabouda.cz/en, načteno 31. 8. 2026) o Josefově boudě říká jedinou
+  větu — „Josef's Chalet is a cosy romantic Alpine-style chalet" — a výšku
+  1 150 m uvádí **pro resort jako celek**, ne pro tuhle budovu; nepřebírat.
+  Server Krkonose.eu se ze sandboxu dál nenačte (robots.txt ConnectTimeout,
+  známo od 29. 8.).

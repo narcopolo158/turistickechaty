@@ -217,6 +217,76 @@ export const najdiBlizkeBody = (
   )
 }
 
+export type ParKandidatu = {
+  vzdalenostM: number
+  a: Bod
+  b: Bod
+}
+
+/**
+ * KANDIDÁT × KANDIDÁT v téže oblasti — druhá polovina téhož měření, doplněná
+ * 31. 8. 2026 poté, co ji dva nálezy za sebou vyžádaly:
+ *
+ *  - 30. 8. 2026: `prezesowa-chata` a `szklana-chata` stojí ve Szklarské
+ *    Porębě 30–40 m od sebe a může jít o týž podnik zapsaný dvakrát.
+ *  - 31. 8. 2026: `modrokamenna-bouda` (ruční kandidát z triáže DATA-22)
+ *    a `penzion-modrokamenna-bouda` (běh DATA-01 z 22. 8.) jsou **9,8 m**
+ *    od sebe a je to prokazatelně týž dům; jádro názvu se liší jen
+ *    předsazeným slovem „Penzion", takže shodu neohlásila ani `kolize-jmen`,
+ *    ani pojistka DATA-38.
+ *
+ * `najdiBlizkeBody` výš měří kandidáta jen proti **publikovanému profilu**,
+ * takže dvojice dvou nepovýšených kandidátů jí propadne celá. Registry
+ * rozhodnutých párů i to, že kontrola NEROZHODUJE, zůstávají stejné — je to
+ * týž rozhodovací úkol, jen o patro dřív, ještě před povýšením.
+ *
+ * PRÁH JE ALE JINÝ, A JE TO ZMĚŘENO. Padesátimetrový práh z DATA-38 sedí na
+ * pár kandidát × profil, protože profil je kurátorovaný objekt — blízký zásah
+ * u něj něco znamená. V surové zásobě kandidátů leží ale celé chatové osady
+ * stejných domků, takže na 50 m vychází **384 dvojic a 298 z nich je ze
+ * Šumavy** (řady „FH 1–34", „Schwarzes Haus 61–65“ — legitimní sousedé, ne
+ * duplicity). Měřeno 31. 8. 2026 nad celým repem: 50 m → 384, 30 m → 202,
+ * 15 m → 62, **10 m → 8**. Teprve na deseti metrech je výstup čitelný a skoro
+ * samá pravá dvojice (`havlova-bouda` × `restaurace-havlova-bouda` 3,4 m,
+ * `kramarova-chata` × `kramarova-chata-na-suchem-vrchu` 6,1 m, `vazecka-chata`
+ * × `vazecka-chata-bistro` 6,3 m). Deset metrů je zhruba půdorys boudy: dva
+ * body blíž k sobě jsou spíš týž dům než dva sousední.
+ */
+export const BLIZKO_KANDIDATI_M = 10
+
+export const najdiBlizkeKandidaty = (
+  korenKandidati: string = KOREN_KANDIDATI,
+  registr: string = REGISTR_JMENOVCU,
+  prah: number = BLIZKO_KANDIDATI_M,
+  registrVyrazenych: string = join(process.cwd(), 'data', 'kandidati', '_vyrazeno.yaml'),
+): ParKandidatu[] => {
+  const rozhodnuto = rozhodnuteDvojice(registr)
+  const vyrazeno = vyrazeneObjekty(registrVyrazenych)
+  const zivi = nactiBody(korenKandidati).filter(
+    (k) =>
+      !k.povyseny &&
+      !(k.osm && vyrazeno.osm.has(k.osm)) &&
+      !vyrazeno.slugy.has(`${k.oblast}/${k.slug}`),
+  )
+  const out: ParKandidatu[] = []
+  for (let i = 0; i < zivi.length; i += 1) {
+    for (let j = i + 1; j < zivi.length; j += 1) {
+      const a = zivi[i]!
+      const b = zivi[j]!
+      if (a.oblast !== b.oblast) continue // jiné oblasti řeší DATA-36/38
+      // Dva zápisy TÉŽE OSM entity nejsou nález — to je práce pro
+      // `duplicity-oblasti`, která identitu podle OSM URL umí.
+      if (a.osm && b.osm && a.osm === b.osm) continue
+      const par = [`${a.oblast}/${a.slug}`, `${b.oblast}/${b.slug}`].sort()
+      if (rozhodnuto.has(`${par[0]}|${par[1]}`)) continue
+      const d = vzdalenostM(a, b)
+      if (d > prah) continue
+      out.push({ vzdalenostM: d, a, b })
+    }
+  }
+  return out.sort((x, y) => x.vzdalenostM - y.vzdalenostM || x.a.slug.localeCompare(y.a.slug))
+}
+
 const spustenoPrimo = process.argv[1]?.includes('blizke-body')
 if (spustenoPrimo) {
   const pary = najdiBlizkeBody()
@@ -242,6 +312,27 @@ if (spustenoPrimo) {
     console.log('kontrola zmlkne; (3) když jsou to dvě stavby, zapsat to tam taky, ať')
     console.log('to příští triáž neřeší znovu. Vzdálenost sama nerozhoduje: 9 m je')
     console.log('jasná dvojí entita, 47 m můžou být dvě sousední boudy.')
+  }
+
+  const paryK = najdiBlizkeKandidaty()
+  console.log()
+  for (const p of paryK) {
+    console.log(
+      `? ${p.vzdalenostM.toFixed(1).padStart(6)} m  ${p.a.oblast}/${p.a.slug}` +
+        (p.a.nazev ? ` — ${p.a.nazev}` : ''),
+    )
+    console.log(
+      `          KANDIDÁT  ${p.b.oblast}/${p.b.slug}` + (p.b.nazev ? ` — ${p.b.nazev}` : ''),
+    )
+  }
+  console.log()
+  console.log(`dvojic nepovýšených kandidátů do ${BLIZKO_KANDIDATI_M} m v téže oblasti: ${paryK.length}`)
+  if (paryK.length) {
+    console.log()
+    console.log('Totéž, jen o patro dřív: dva kandidáti pár metrů od sebe jsou nejspíš')
+    console.log('týž objekt zapsaný dvakrát (ruční zápis × běh DATA-01, nebo dvě OSM')
+    console.log('entity jednoho domu). Rozhodnutí patří do data/_jmenovci.yaml stejně')
+    console.log('jako u páru s profilem — tím kontrola zmlkne.')
   }
   // Návratový kód schválně 0 — viz hlavička.
   process.exit(0)
