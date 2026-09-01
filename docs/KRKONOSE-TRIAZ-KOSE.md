@@ -903,3 +903,104 @@ i vyřazené kandidáty skript sám vynechává.
 
 oblast krkonose | kandidatu k triazi: 185 | NADEJNE 107 · POSOUDIT 31 · MIMO 47
 preskoceno (publikovane/odlozene/vyrazene): 78
+
+## KOŠ C ROZVRSTVEN MĚŘENÍM (1. 9. 2026) — a jedenáct kandidátů v něm nemá být
+
+Koš C má 131 položek a číst je tempem koše B (pět až jedenáct za session) je
+práce na dvanáct sessions. Koš B přitom sám ukázal, kde se ten čas ztrácí:
+u obecného jména dohledávka nepřinese nic (zápis 30. 8.). Dnes se proto koš C
+**nečetl, ale změřil** — skriptem `scripts/triaz-kos-c.ts` nad exporty
+v repu, bez jediného dotazu do sítě.
+
+**Kontrolní číslo sedí:** skript si koš C odvodil znovu z exportů (kandidát,
+jehož OSM element nese `tourism` z ubytovací sady a nemá na sobě gastro
+`amenity`) a napočítal **131** — přesně tolik, kolik má tabulka z 22. 8.
+Vrstvení tedy stojí na téže množině, ne na jiné.
+
+### C1 · dvojí zápis téhož objektu — 7 (+1 ručně, viz níž)
+
+Gastro element se **shodným jádrem názvu** do 150 m od kandidáta. Jádro i práh
+jsou tytéž, jakými pipeline slučuje duplicity (`jadroNazvu`, `SLOUCIT_DO_M`) —
+shoda jména sama nestačí (jmenovci v různých údolích), poloha sama taky ne
+(chata a hospoda vedle sebe jsou dva podniky); rozhoduje až obojí naráz.
+
+| kandidát | OSM typ kandidáta | gastro element téhož jména | vzdálenost |
+| --- | --- | --- | --- |
+| `decinska-bouda` — Děčínská bouda | `tourism=guest_house` | Děčínská bouda (`node/5341404078`, `amenity=restaurant`, Mo-Su 10:00–16:00) | 8 m |
+| `hancova-bouda` — Hančova bouda | `tourism=hotel` | Hančova bouda (`node/2147053804`, `amenity=restaurant`, týž telefon i web `hancovabouda.cz`) | 11 m |
+| `chata-izerska` — Chata Izerska | `tourism=hotel` | Chata Izerska (`way/262941130`, `amenity=restaurant`) | 12 m |
+| `bouda-v-obrim-dole` — Bouda v Obřím Dole | `tourism=guest_house` | Bouda v Obřím Dole (`node/262099408`, `amenity=restaurant`, Mo-Su 10:00–22:00, web `boudavobrimdole.cz/restaurace`) | 13 m |
+| `lidicka-bouda` — Lidická bouda | `tourism=hotel` | Lidická Bouda (`node/5488661851`, `amenity=restaurant`) | 20 m |
+| `chata-za-wsia` — Chata za Wsią | `tourism=chalet` | Chata za Wsią (`node/2951365228`, `amenity=restaurant`, 7:00–22:00) | 60 m |
+| `amelkowa-chata` — Amelkowa chata | `tourism=guest_house` | Amelkowa chata (`node/13970694498`, `amenity=restaurant`) | 62 m |
+
+**+ `havlova-bouda` — Havlova bouda, 3 m od `Restaurace Havlova bouda`**
+(`node/13115070893`, `amenity=restaurant`). Skript ji sám nechytí a je to
+jeho mez, ne nález: `jadroNazvu` odstraňuje slova *chata / bouda / hotel /
+penzion*, ale **ne slovo *restaurace***, takže jádra „havlova" a „restaurace
+havlova" se neshodnou. Že jde o týž provoz, drží tři nezávislé věci: 3 m,
+týž web `havlovabouda.cz` a **sousední ID uzlů** (…892 a …893, tedy zapsané
+jedním editorem naráz). Sadu slov v `jadroNazvu` **neměním** — pohání
+slučování duplicit v DATA-01 a rozšířit ji znamená změnit, co se slučuje
+v celém korpusu. Otázka pro Michala v deníku.
+
+**Co z toho plyne věcně:** u těchhle osmi je **první půlka klíče zařazení
+(veřejné občerstvení) doložená z OSM**, u čtyř z nich i s otvíračkou. Zbývá
+u nich jen role na trase. Nejsou to tedy „kandidáti, o kterých OSM ví jen to,
+že se v nich spí" — jsou to boudy s doloženou hospodou, které do koše C spadly
+omylem. Osm ze 131 se dá číst rovnou a s vysokou výtěžností.
+
+**A odkud ten omyl je — je to naše chyba, ne chyba OSM.** OSM vede tyhle
+objekty **dvojím zápisem**: ubytovací element (budova nebo POI) a vedle něj
+uzel restaurace. `slucDuplicity` (DATA-01) z takové dvojice nechá **entitu
+s víc tagy a druhou zahodí** — a víc tagů má skoro vždy ten ubytovací zápis
+(nese web, telefon, adresu). Zahodí se tím ale právě ten tag, který dokládá
+občerstvení, a kandidát propadne z koše B do koše C. **Slučování nesloučí
+tagy, jen vybere vítěze.**
+
+**Návrh opravy (nedělám sám, mění pipeline):** při slučování duplicit přenést
+do vítěze `amenity` poraženého a jeho OSM URL do `interniPoznamky` — ať se
+doklad neztratí. Přepočet celého korpusu ale vyžaduje běh DATA-01, a ten je
+síťový; dnes jde jen popsat.
+
+### C2 · gastro JINÉHO jména do 30 m — 4
+
+Soused, ne doklad. Do 30 m leží gastro element, ale jmenuje se jinak — v osadě
+plné boudiček je to běžné a nevypovídá to o kandidátovi nic.
+
+| kandidát | nejbližší gastro | vzdálenost | pozn. |
+| --- | --- | --- | --- |
+| `chata-sudecka-z-widokiem` | Sudecka chata u Prezesa | 10 m | týž pár, který 31. 8. našla kontrola blízkých bodů (9,7 m) — otázka „jeden objekt, nebo dva" trvá |
+| `hoffmannova-bouda` | Hoffmanovy Boudy | 12 m | jednotné × množné číslo téhož jména; enkláva, nebo dům a jeho hospoda? Musí přečíst člověk |
+| `chata-jerabinka` | Chata Hradečanka | 28 m | osada Pomezní Boudy — druhá nejbližší je publikovaná Pomezní bouda (49 m), viz `_jmenovci.yaml`. Sousedé, ne dvojí zápis |
+| `havlova-bouda` | Restaurace Havlova bouda | 3 m | **patří do C1**, viz výš — sem ji vrací jen mez `jadroNazvu` |
+
+### C3 · bez gastra v dosahu — 120
+
+Zbytek. **Není to vyřazení a nesmí se tak číst** — OSM mlčení není doklad
+absence (poučka z koše E, 31. 8.). Znamená to jen, že tihle kandidáti
+potřebují dohledávku u pramenů, kdežto C1 se dá přečíst rovnou.
+
+Rozložení podle vzdálenosti od nejbližšího referenčního bodu střediska
+(`data/strediska/krkonose/`, 16 bodů). Není to důkaz role na trase — tu měří
+značka, kterou export nenese — ale je to nejlevnější dostupný proxy pro to,
+co se u koše B rozhodovalo pořád dokola: „ulice ve středisku" × „dům o samotě":
+
+| pásmo | počet |
+| --- | --- |
+| do 250 m | 8 |
+| 250–500 m | 11 |
+| 0,5–1 km | 20 |
+| 1–2 km | 25 |
+| 2–4 km | 30 |
+| nad 4 km | 26 |
+
+Podle OSM typu: `chalet` 69, `guest_house` 35, `hotel` 13, `hostel` 4,
+`apartment` 1 — tedy **víc než polovina koše C jsou `chalet`**, což je
+v českých Krkonoších z devíti desetin rekreační domek, ne bouda.
+
+**Pořadí čtení, které z měření vychází:** C1 (8, doložené občerstvení) →
+C2 (4, sporní sousedé) → C3 od nejvzdálenějších od středisek, protože tam je
+šance na boudu na trase největší. Celý koš C se tím nezmenšil, ale přestal být
+jednolitou hromadou 131 jmen.
+

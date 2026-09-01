@@ -855,10 +855,7 @@ export type PolohaJinde = { jadro: string; lat: number; lng: number; kde: string
  * DATA-38. Bez jména nebo GPS se záznam do indexu nedostane (není co
  * porovnávat); soubory s podtržítkem jsou registry, ne záznamy.
  */
-export const indexPolohJinychOblasti = (
-  koreny: string[],
-  vlastniOblast: string,
-): PolohaJinde[] => {
+export const indexPolohJinychOblasti = (koreny: string[], vlastniOblast: string): PolohaJinde[] => {
   const out: PolohaJinde[] = []
   for (const koren of koreny) {
     if (!existsSync(koren)) continue
@@ -1009,7 +1006,10 @@ export const zapisKandidaty = (
  */
 export const SLOUCIT_DO_M = 150
 
-const jadroNazvu = (s: string | undefined): string =>
+// Exportované kvůli `scripts/triaz-kos-c.ts`, který týmž jádrem hledá dvojí
+// zápis téhož objektu (ubytovací element × gastro element) — ať se shoda
+// jmen měří stejným pravidlem, jakým ji slučuje pipeline.
+export const jadroNazvu = (s: string | undefined): string =>
   (s ?? '')
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/gu, '')
@@ -1290,7 +1290,13 @@ const main = async () => {
     oblast.slug,
   )
   const report = zapisKandidaty(
-    polozky, kandAdr, rucAdr, nactiVyrazene(), oblast.slug, jinaOblast, polohyJinde,
+    polozky,
+    kandAdr,
+    rucAdr,
+    nactiVyrazene(),
+    oblast.slug,
+    jinaOblast,
+    polohyJinde,
   )
 
   console.log(`\n## DATA-01 report (stav OSM dat: ${stavy.join(', ')})`)

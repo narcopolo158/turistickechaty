@@ -29,6 +29,106 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-01 — denní session: koš C rozvrstven měřením, a jedenáct kandidátů v něm nemá být
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, re-export DATA-37, sémantika `obec`, katalog vydavatele, tři
+  případy na tobě, klik na workflow, staging). Vzal jsem tedy „Příště"
+  z 31. 8.: **koš C**, 131 položek, poslední koš krkonošské triáže.
+- **Koš C se dnes NEČETL, ale ZMĚŘIL.** Číst ho tempem koše B (pět až jedenáct
+  za session) je práce na dvanáct sessions a koš B sám ukázal, kde se ten čas
+  ztrácí. Nový `scripts/triaz-kos-c.ts` proto koš C rozvrství podle signálů,
+  které leží v repu — **bez jediného dotazu do sítě**. Nic nezapisuje do
+  `data/`, nic nevyřazuje, nic nepovyšuje.
+  **Kontrolní číslo sedí:** skript si koš C odvodil znovu z exportů a napočítal
+  **131** — přesně tolik, kolik má tabulka z 22. 8. Vrství se tedy táž množina.
+- **C1 — osm kandidátů má veřejné občerstvení doložené z OSM a do koše C
+  vůbec nepatří.** OSM vede tyhle boudy **dvojím zápisem**: ubytovacím
+  elementem a vedle něj uzlem `amenity=restaurant` téhož jména, pár metrů
+  vedle. `decinska-bouda` (8 m), `hancova-bouda` (11 m, týž telefon i web),
+  `chata-izerska` (12 m), `bouda-v-obrim-dole` (13 m, web končí na
+  `/restaurace`), `lidicka-bouda` (20 m), `chata-za-wsia` (60 m),
+  `amelkowa-chata` (62 m) — a k tomu ručně `havlova-bouda` (3 m, viz níž).
+  **U čtyř z nich nese OSM i otvírací dobu.** Zbývá u nich jen role na trase.
+- **A odkud ten omyl je — je to naše chyba, ne chyba OSM.** `slucDuplicity`
+  v DATA-01 z dvojice nechá **entitu s víc tagy a druhou zahodí**; víc tagů má
+  skoro vždy ten ubytovací zápis (nese web, telefon, adresu). Zahodí se tím
+  **právě ten tag, který dokládá občerstvení** — a kandidát propadne z koše B
+  do koše C. Slučování nesloučí tagy, jen vybere vítěze. **Návrh opravy
+  (nedělám sám, mění pipeline):** přenést do vítěze `amenity` poraženého a jeho
+  OSM URL do `interniPoznamky`. Přepočet korpusu ale chce běh DATA-01, a ten
+  je síťový.
+- **Mez vlastního nástroje, přiznaná rovnou:** `havlova-bouda` skript sám
+  nechytí. `jadroNazvu` odstraňuje slova *chata / bouda / hotel / penzion*,
+  ale **ne slovo *restaurace***, takže jádra „havlova" a „restaurace havlova"
+  se neshodnou. Že jde o týž provoz, drží 3 m, týž web `havlovabouda.cz`
+  a **sousední ID uzlů** (…892 a …893 — zapsané jedním editorem naráz).
+  Sadu slov v `jadroNazvu` **neměním**: pohání slučování duplicit v celém
+  korpusu. Otázka pro tebe níž.
+- **C2 — čtyři sousedé, ne doklady.** Gastro do 30 m, ale jiného jména:
+  `chata-sudecka-z-widokiem` × Sudecka chata u Prezesa (10 m — týž pár, který
+  31. 8. našla kontrola blízkých bodů), `hoffmannova-bouda` × Hoffmanovy Boudy
+  (12 m, jednotné × množné číslo), `chata-jerabinka` × Chata Hradečanka (28 m,
+  osada Pomezní Boudy). Musí přečíst člověk.
+- **C3 — zbývajících 120, a NENÍ to vyřazení.** OSM mlčení není doklad absence
+  (poučka z koše E, 31. 8.). Změřená je u nich vzdálenost k nejbližšímu
+  referenčnímu bodu střediska — proxy pro „ulice ve středisku × dům o samotě",
+  ne důkaz role na trase: do 250 m 8, do 500 m 11, do 1 km 20, do 2 km 25,
+  do 4 km 30, nad 4 km 26. Podle OSM typu je **víc než polovina koše C
+  `chalet`** (69), což je v českých Krkonoších z devíti desetin rekreační
+  domek, ne bouda.
+- **Poznatek, který stojí za zapamatování:** koš C se dnes nezmenšil ani
+  o položku, a přesto je hotová práce za dvanáct sessions. **Rozdíl mezi
+  „131 jmen" a „8 + 4 + 120 s pořadím čtení" neudělalo čtení, ale měření nad
+  daty, která v repu ležela celou dobu** — táž lekce jako 31. 8. u Modrokamenné.
+- Nový test `tests/int/triaz-kos-c.int.spec.ts` (6 testů) drží kontrolní číslo
+  131, obě půlky pravidla dvojího zápisu (jméno **i** poloha) a to, že soused
+  s jiným jménem za dvojí zápis neprojde. `npm run kontrola` zelené,
+  `tsc --noEmit` čistý, prettier i eslint proběhly.
+- Vedlejší úklid: `vzdalenostM` v `blizke-body.ts` bere nově `Souradnice`
+  (`{lat, lng}`) místo celého `Bod` — rozšíření typu, žádná změna chování;
+  `jadroNazvu` je z DATA-01 exportované, ať se shoda jmen měří jedním pravidlem.
+
+**Příště:** **přečíst C1** — osm kandidátů s doloženým občerstvením, u kterých
+zbývá jen role na trase; je to nejvýtěžnějších osm položek celé krkonošské
+triáže. Pak C2 (4 sporní sousedé). Vedle toho leží z 28. 8. Broumovsko
+(doměřit okno, rozhodnout polskou stranu), dál trvá deset padajících testů
+(ověřeno dnes proti čistému stromu — jsou starší než dnešní změny, všechny
+stojí na nedostupném Postgresu, resp. na exportech) a blokované
+DATA-04 / DATA-05 / DATA-20 / DATA-22 / DATA-25.
+
+**Otázky pro Michala:**
+
+- **Má `jadroNazvu` odstraňovat i slova *restaurace / restauracja / hospoda /
+  bufet*?** Dnes kvůli tomu neprošla `havlova-bouda`. Pozor, není to kosmetika:
+  jádro pohání **slučování duplicit v DATA-01 nad celým korpusem**, takže
+  rozšíření sady změní, co se sloučí — u příštího běhu, ve všech osmnácti
+  oblastech. Sám to neměním.
+- **Přenášet při slučování duplicit `amenity` poraženého do vítěze?** Bez toho
+  bude každý příští běh DATA-01 vyrábět tutéž chybu: doklad o hospodě zmizí
+  a bouda spadne mezi ubytování. Oprava je levná, ale její efekt se projeví
+  až přepočtem, tedy síťovým během.
+- **Osm kandidátů z C1 — mám je příští session rovnou číst a navrhovat
+  povýšení?** Občerstvení u nich doložené je, role na trase ne.
+- Trvá z 31. 8.: **Stezka korunami stromů — dá se do Restaurace V korunách bez
+  vstupenky?**; **Modrokamenná bouda — sloučit dvojici?** (9,8 m, jeden dům);
+  **osm dvojic kandidátů do 10 m** z nové kontroly; a dál z 30. 8.:
+  **Žižkovu boudu povýšit?**; **klíč střediska drží osm kandidátů**;
+  **`prezesowa-chata` × `szklana-chata`**; **Dvořákovu a Mumlavskou boudu
+  povýšit?**; **Broumovsko — brát i polskou stranu?**; **Bouda pod Sněžkou**;
+  **`chata-stopa` × `chata-misecky`**; **Boudu Malá Úpa a Chatu Borůvku
+  povýšit?**; **Karczma Hutnika**; **232 kandidátů tvrdí „tourism=undefined"**.
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu
+spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin
+main`; `npm ci` je v čerstvém sandboxu potřeba pustit před `npm run kontrola`;
+`WebFetch` funguje až poté, co URL projde `WebSearch`. Dnešní session **síť
+nepotřebovala vůbec** — celá stála na exportech v repu, a je to poprvé, co to
+u krkonošské triáže vyšlo.
+
 ## 2026-08-31 — denní session: koše D a E odpracovány, a koš E neměřil, co slibuje
 
 **Hotovo:**

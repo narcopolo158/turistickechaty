@@ -97,8 +97,11 @@ const osmZeSouboru = (obsah: string): string | null => {
   return m ? normalizujOsm(m[0]) : null
 }
 
+/** Souřadnice — vše, co haversine potřebuje. `Bod` je jeho nadmnožina. */
+export type Souradnice = { lat: number; lng: number }
+
 /** Vzdálenost dvou bodů na kouli v metrech (haversine, R = 6371 km). */
-export const vzdalenostM = (a: Bod, b: Bod): number => {
+export const vzdalenostM = (a: Souradnice, b: Souradnice): number => {
   const R = 6_371_000
   const rad = (x: number) => (x * Math.PI) / 180
   const f1 = rad(a.lat)
@@ -326,7 +329,9 @@ if (spustenoPrimo) {
     )
   }
   console.log()
-  console.log(`dvojic nepovýšených kandidátů do ${BLIZKO_KANDIDATI_M} m v téže oblasti: ${paryK.length}`)
+  console.log(
+    `dvojic nepovýšených kandidátů do ${BLIZKO_KANDIDATI_M} m v téže oblasti: ${paryK.length}`,
+  )
   if (paryK.length) {
     console.log()
     console.log('Totéž, jen o patro dřív: dva kandidáti pár metrů od sebe jsou nejspíš')
