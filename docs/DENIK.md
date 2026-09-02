@@ -29,6 +29,107 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-02 — denní session: role na trase se dá změřit, a pět kandidátů má obě půlky klíče
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, re-export DATA-37, sémantika `obec`, katalog vydavatele, tři
+  případy na tobě, klik na workflow, staging). Vzal jsem tedy „Příště"
+  z 1. 9.: **koš C1**, osm kandidátů s doloženým občerstvením.
+- **Ale ne čtením pramenů — měřením.** Zápis z 1. 9. u C1 končil větou
+  „zbývá u nich jen role na trase". Druhá půlka klíče zařazení se přitom
+  u každého kandidáta dosud **odhadovala z dojmu** („stojí to v osadě"),
+  nebo se nahrazovala vzdáleností od střediska — což je proxy pro zástavbu,
+  ne pro trasu. **Podklad ale leží v repu od DATA-06:**
+  `data/trasy/krkonose/_overpass-trasy.json` nese 310 relací `route=hiking`
+  **i s geometrií**, a nikdo se jich na tohle dosud nezeptal.
+- **Nový `scripts/triaz-role-na-trase.ts`** měří u kandidáta čtyři věci, opět
+  **bez jediného dotazu do sítě**: kolmou vzdálenost k ose nejbližší **značené**
+  trasy, počet různých značených tras do 250 m, vzdálenost k nejbližšímu
+  **rozcestníku** (`role=guidepost`) a to, jestli některá blízká trasa
+  kandidáta **jmenuje jako cíl**. Do `data/` nezapisuje nic.
+  Měří se kolmo k úsečce, ne k nejbližšímu lomovému bodu cesty — na dlouhém
+  rovném úseku by druhý způsob přeceňoval vzdálenost i o stovky metrů.
+- **KALIBRACE, a to je na tom to hlavní: měření sedí na korpusu, který už jsi
+  rozhodl.** **70 ze 75** publikovaných krkonošských profilů se souřadnicemi
+  leží do 250 m od značené trasy (93 %). Kdyby to vyšlo jinak, měřil bych něco
+  jiného, než si myslím. Pět výjimek má vysvětlení: `raisova-chata-na-zvicine`
+  8 666 m — leží v **Podkrkonoší, mimo okno** krkonošského exportu, tedy
+  vlastnost okna, ne doklad, že ke Zvičině značka nevede (DATA-29);
+  dál `chatka-akt-towarzystwa-bazynowego` 590 m, `u-kotle` 454 m, `zakouti`
+  373 m, `chata-u-jirky` 263 m.
+- **Pět z osmi kandidátů C1 má obě půlky klíče doložené měřením** — hospodu
+  z OSM tagu (1. 9.) a polohu na značené trase: `bouda-v-obrim-dole` 11 m
+  (modrá č. 1812 na Obří sedlo), `lidicka-bouda` 16 m, `decinska-bouda` 35 m
+  (**a rozcestník 32 m**), `chata-izerska` 62 m, `amelkowa-chata` 66 m
+  (**devět** značených tras do 250 m — uzel u Przełęczy Okraj).
+  **Tři jsou jinde a je to informace, ne verdikt:** `hancova-bouda` 372 m,
+  `havlova-bouda` 382 m a `chata-za-wsia` 612 m. Publikované `u-kotle` (454 m)
+  a `zakouti` (373 m) jsou na tom stejně, takže to samo nevylučuje nic — jen
+  u nich roli musí doložit pramen, ne měření.
+- **Nález navíc, mimo koš C1: `hoffmannova-bouda` (koš C2) je CÍLEM značené
+  trasy.** KČT **4228 se jmenuje „Svoboda nad Úpou – Hoffmannova bouda"**
+  a druhá zelená (NS Střední hřeben) ji vede v cílech taky. Ze čtyř měření
+  mluví tohle jediné přímo o roli: vzdálenost říká „vede tudy", název trasy
+  říká, kam vede. Otázka z C2 („enkláva, nebo dům a jeho hospoda?") tím
+  nemizí — sousední Hoffmanovy Boudy jsou 12 m —, ale posouvá se.
+- **Meze měření jsou v hlavičce skriptu i v dokumentaci přiznané:** blízkost
+  značky **není** role na trase (značka vede i středem Špindlerova Mlýna),
+  takže měření rozhoduje spolehlivě jen v jednom směru — „daleko od každé
+  značky = doloženo to není". Rozcestníky jsou navíc na polské straně řídké
+  (230 z 1 469 v exportu), takže kilometrová čísla u `chata-izerska`
+  a `chata-za-wsia` měří hustotu tagování, ne pustinu.
+- Nový test `tests/int/triaz-role-na-trase.int.spec.ts` (7 testů) drží kolmé
+  měření proti měření k lomovému bodu, kalibraci nad publikovaným korpusem
+  (>90 % do prahu), případ mimo okno exportu i to, že se krátké jádro názvu
+  za shodu jména nepovažuje. Typ `TrasaRelace` v `data06-trasy.ts` rozšířen
+  o `lat`/`lon` členských uzlů (rozcestníky) — rozšíření typu, žádná změna
+  chování. `npm run kontrola` zelené, `tsc --noEmit` čistý, eslint bez výtek.
+- **Poznatek, který stojí za zapamatování:** je to potřetí za sebou
+  (Modrokamenná 31. 8., koš C 1. 9., dnes role na trase), co odpověď ležela
+  v datech, která v repu byla celou dobu, a stačilo se na ně zeptat jinak.
+  Krkonošská triáž má dnes obě půlky klíče měřitelné z repa — občerstvení
+  z OSM tagů, roli na trase z exportu tras.
+
+**Příště:** **přečíst pět kandidátů C1 s oběma půlkami klíče** — `bouda-v-obrim-dole`,
+`lidicka-bouda`, `decinska-bouda`, `chata-izerska`, `amelkowa-chata` — a navrhnout
+povýšení; jsou to nejvýtěžnější položky, co krkonošské triáži zbyly. Pak zbylá
+trojice C1 (`hancova-bouda`, `havlova-bouda`, `chata-za-wsia`), u které musí roli
+doložit pramen. Nabízí se taky pustit měření role na trase **na koš C3** a řadit
+ho podle značky místo podle střediska (u 120 položek by to bylo poprvé, co má
+jejich pořadí oporu v klíči). Vedle toho leží z 28. 8. Broumovsko (doměřit okno,
+rozhodnout polskou stranu), dál trvá deset padajících testů (stojí na nedostupném
+Postgresu, resp. na exportech) a blokované DATA-04 / DATA-05 / DATA-20 / DATA-22 / DATA-25.
+
+**Otázky pro Michala:**
+
+- **Mám těch pět kandidátů C1 příští session rovnou číst a navrhovat povýšení?**
+  Obě půlky klíče u nich měřením sedí, chybí jen pramen ke čtení. (Táž otázka
+  visí z 1. 9., dnes je k ní o důvod víc.)
+- **`hoffmannova-bouda` — bere se „trasa nese boudu v názvu" jako doklad role
+  na trase?** Podle mě je to silnější doklad než jakákoli vzdálenost, ale je to
+  konvence, a tu neurčuji sám.
+- **Má se práh 250 m někde zapsat jako konvence?** Dnes je to konstanta ve
+  skriptu, kalibrovaná na tvém korpusu (93 % publikovaných profilů se do něj
+  vejde). Pokud ano, patří k ní i věta, že překročení prahu **není vyřazení**.
+- Trvá z 1. 9.: **má `jadroNazvu` odstraňovat i slova *restaurace / restauracja /
+  hospoda / bufet*?**; **přenášet při slučování duplicit `amenity` poraženého do
+  vítěze?**; a dál **Stezka korunami stromů — dá se do Restaurace V korunách bez
+  vstupenky?**; **Modrokamenná bouda — sloučit dvojici?**; **osm dvojic kandidátů
+  do 10 m**; **Žižkovu boudu povýšit?**; **klíč střediska drží osm kandidátů**;
+  **`prezesowa-chata` × `szklana-chata`**; **Dvořákovu a Mumlavskou boudu
+  povýšit?**; **Broumovsko — brát i polskou stranu?**; **Bouda pod Sněžkou**;
+  **`chata-stopa` × `chata-misecky`**; **Boudu Malá Úpa a Chatu Borůvku
+  povýšit?**; **Karczma Hutnika**; **232 kandidátů tvrdí „tourism=undefined"**.
+
+**Poznámka pro příští bezobslužný běh:** platí dál — `git push` v sandboxu
+spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin
+main`; `npm ci` je v čerstvém sandboxu potřeba pustit před `npm run kontrola`;
+`WebFetch` funguje až poté, co URL projde `WebSearch`. Dnešní session **síť
+nepotřebovala vůbec** — podruhé za sebou.
+
 ## 2026-09-01 — denní session: koš C rozvrstven měřením, a jedenáct kandidátů v něm nemá být
 
 **Hotovo:**

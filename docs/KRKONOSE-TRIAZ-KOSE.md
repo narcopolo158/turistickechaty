@@ -1004,3 +1004,81 @@ C2 (4, sporní sousedé) → C3 od nejvzdálenějších od středisek, protože 
 šance na boudu na trase největší. Celý koš C se tím nezmenšil, ale přestal být
 jednolitou hromadou 131 jmen.
 
+
+## ROLE NA TRASE ZMĚŘENA (2. 9. 2026) — druhá půlka klíče přestala být dojmem
+
+Koš C1 (1. 9.) doložil u osmi kandidátů **první** půlku klíče zařazení,
+veřejné občerstvení, a zápis končil větou „zbývá u nich jen role na trase".
+Ta se ale dosud u každého kandidáta odhadovala — „stojí to v osadě",
+„je to bouda o samotě" — nebo se nahrazovala vzdáleností od střediska, což
+je proxy pro zástavbu, ne pro trasu.
+
+Přitom podklad leží v repu od DATA-06: `data/trasy/krkonose/_overpass-trasy.json`
+nese 310 relací `route=hiking` **i s geometrií**. Nový
+`scripts/triaz-role-na-trase.ts` z nich měří — opět **bez jediného dotazu do
+sítě** — čtyři věci: kolmou vzdálenost k ose nejbližší **značené** trasy,
+počet různých značených tras do 250 m, vzdálenost k nejbližšímu **rozcestníku**
+(`role=guidepost`) a to, jestli některá blízká trasa kandidáta **jmenuje jako
+cíl**.
+
+**Kolmo, ne k lomovému bodu.** Měří se vzdálenost k úsečce, ne k nejbližšímu
+lomovému bodu cesty; na dlouhém rovném úseku by druhý způsob přeceňoval
+vzdálenost i o stovky metrů a boudu u cesty by odsunul mezi „daleko od značky".
+
+### Kalibrace: měření sedí na korpusu, který už redakce rozhodla
+
+Publikované krkonošské profily prošly klíčem zařazení, takže „role na trase"
+u nich platí. **70 ze 75** profilů se souřadnicemi leží do 250 m od značené
+trasy (93 %) — kdyby měření tvrdilo opak u větší části z nich, měřilo by něco
+jiného, než si myslí. Pět výjimek má vysvětlení a jsou samy o sobě poučné:
+`raisova-chata-na-zvicine` (8 666 m) leží v **Podkrkonoší, tedy mimo okno**
+krkonošského exportu tras — vlastnost okna, ne doklad, že ke Zvičině značka
+nevede (DATA-29); `chatka-akt-towarzystwa-bazynowego` 590 m, `u-kotle` 454 m,
+`zakouti` 373 m, `chata-u-jirky` 263 m. Práh 250 m je tedy dělicí čára ke
+čtení, **ne kritérium vyřazení**.
+
+### Co měření říká o koši C1
+
+| kandidát                          | k ose nejbližší značky                                     | značených tras do 250 m | rozcestník |
+| --------------------------------- | ---------------------------------------------------------- | ----------------------- | ---------- |
+| `bouda-v-obrim-dole`              | **11 m** — modrá č. 1812 „Pec pod Sněžkou – Obří sedlo"    | 2                       | 119 m      |
+| `lidicka-bouda`                   | **16 m** — zelená č. 4208 „Javoří Mlýn – U Dvorské boudy"  | 3                       | 255 m      |
+| `decinska-bouda`                  | **35 m** — zelená č. 4206 „Špindlerův Mlýn – Horní Maršov" | 2                       | **32 m**   |
+| `chata-izerska`                   | **62 m** — modrá „Szklarska Poręba – Pasterka"             | 2                       | 5 871 m    |
+| `amelkowa-chata`                  | **66 m** — žlutá „Schronisko Szwajcarka – Przełęcz Okraj"  | **9**                   | 132 m      |
+| `hancova-bouda`                   | 372 m — červená č. 0431 „Bucharova cesta"                  | 0                       | 403 m      |
+| `chata-za-wsia`                   | 612 m — zelená „Cieplice Śląskie – Karpniki"               | 0                       | 11 117 m   |
+| + `havlova-bouda` (ručně, viz C1) | 382 m — modrá „Pec pod Sněžkou – Černý Důl"                | 0                       | 463 m      |
+
+**Pět z osmi má obě půlky klíče doložené měřením** — hospodu z OSM tagu (C1)
+a polohu na značené trase. U `decinske-boudy` je k tomu rozcestník 32 m,
+u `amelkowe-chaty` devět značených tras do 250 m (uzel u Przełęczy Okraj).
+Tahle pětice je nejvýtěžnější, co krkonošská triáž zbylo.
+
+**Tři jsou jinde a je to informace, ne verdikt:** `hancova-bouda`,
+`chata-za-wsia` a `havlova-bouda` leží 372–612 m od každé značky. Publikované
+`u-kotle` (454 m) a `zakouti` (373 m) jsou na tom stejně, takže to samo
+o sobě nevylučuje nic — jen to znamená, že roli na trase u nich musí doložit
+pramen, ne měření.
+
+### Nález navíc: trasa, která boudu jmenuje jako cíl
+
+Ze čtyř měření mluví přímo o roli jen jedno — vzdálenost říká „vede tudy",
+kdežto název trasy říká, kam ta trasa vede. **`hoffmannova-bouda` z koše C2**
+je toho případ: KČT **4228 se jmenuje „Svoboda nad Úpou – Hoffmannova bouda"**
+a druhá zelená (NS Střední hřeben) ji vede v cílech taky. Bouda je tedy
+**cílem značené trasy**, ne domem u ní — a to je silnější doklad role, než
+jaký dá jakákoli vzdálenost. Otázka „enkláva, nebo dům a jeho hospoda?"
+z C2 tím nemizí (sousední Hoffmanovy Boudy jsou 12 m), ale posouvá se:
+o objektu toho jména KČT ví jako o cíli.
+
+V celém koši C1 tenhle signál **nezabral ani jednou** — a to je čekaná
+vlastnost, ne chyba: názvy tras nesou hlavně obce a sedla.
+
+**Meze měření, přiznané rovnou.** Blízkost značky **není** role na trase:
+značená trasa vede i středem Špindlerova Mlýna, takže apartmán u silnice bude
+mít ke značce 20 m stejně jako bouda na hřebeni. Měření proto rozhoduje
+spolehlivě jen v jednom směru („daleko od každé značky = doloženo to není"),
+kdežto „blízko" je pozvánka ke čtení. Rozcestníky jsou navíc na polské straně
+řídké (230 z 1 469 v exportu), takže kilometrová čísla u `chata-izerska`
+a `chata-za-wsia` měří hustotu tagování, ne pustinu.

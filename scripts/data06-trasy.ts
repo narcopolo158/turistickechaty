@@ -110,7 +110,17 @@ export type TrasaRelace = {
   type: 'relation'
   id: number
   tags?: Record<string, string>
-  members?: { type: string; ref: number; role: string; geometry?: { lat: number; lon: number }[] }[]
+  // `lat`/`lon` nese Overpass u ČLENSKÝCH UZLŮ (rozcestníky, zastávky), kdežto
+  // u členských cest je místo nich `geometry`. Rozšíření typu doplněno
+  // 2. 9. 2026 kvůli měření role na trase — chování se nemění.
+  members?: {
+    type: string
+    ref: number
+    role: string
+    lat?: number
+    lon?: number
+    geometry?: { lat: number; lon: number }[]
+  }[]
 }
 
 // `out geom;` (NE `out geom tags;` — to vrací jen tagy bez geometrie, délky
