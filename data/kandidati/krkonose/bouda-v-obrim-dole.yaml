@@ -29,3 +29,29 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENÍ PRAMENŮ 3. 9. 2026 (koš C1, DATA-03) — NEPOVYŠOVAT, dvě překážky:
+  (1) STAV PROVOZU. Vlastní doména z OSM `boudavobrimdole.cz` dnes vrací
+  302 na `https://www.chatapodstudnicnou.cz/cs` — tedy na jiný objekt,
+  jehož profil už vedeme (data/chaty/krkonose/chata-pod-studnicnou.yaml).
+  Firmy.cz, záznam „Bouda v Obřím Dole" (en.firmy.cz/company/13832201-…,
+  otevřeno 3. 9. 2026) doslova: „This business or branch is no longer
+  active."; ceskehory.cz (…/bouda-v-obrim-dole-pec-pod-snezkou.html):
+  „Objekt v archivu - prezentace není aktivní."
+  (2) RIZIKO DUPLICITY / TÉHOŽ PROVOZOVATELE. Telefon OSM +420 728 465 454
+  se shoduje s telefonem na webu Chaty pod Studničnou (otevřeno 3. 9. 2026).
+  Adresy i souřadnice jsou přitom různé: „Obří důl 116" (ceskehory.cz,
+  penziony.cz) × „Chata pod Studničnou 120"; body leží ~720 m od sebe.
+  Jde tedy nejspíš o dva domy jednoho provozovatele, ne o duplicitu —
+  ale dokud prezentace mlčí, nevíme, zda BOD ještě jede.
+
+  Co prameny nesou k obsahu (kdyby se povyšovalo): ceskehory.cz (archiv)
+  „nadmořská výška: 928 m", „kapacita: 31 lůžek", „Obří důl 116, 542 21
+  Pec pod Sněžkou"; penziony.cz (aktivní, otevřeno 3. 9. 2026) „Kapacita
+  31 osob" v „11 pokoje" (5×2, 3×3, 1×5, 1×7) a o hospodě doslova
+  „stylovou hospůdku s barem"; ceskehory.cz „Hospůdka s velmi záludně
+  vybaveným barem". Ani jeden pramen NEŘÍKÁ, že je hospůdka přístupná
+  kolemjdoucím — občerstvení pro veřejnost tedy doloženo NENÍ. OSM sice
+  vede zvlášť node 262099408 `amenity=restaurant`, `opening_hours=Mo-Su
+  10:00-22:00`, `website=https://boudavobrimdole.cz/restaurace`, jenže
+  ta stránka dnes neexistuje (viz redirect výše) — tag je starší než stav.

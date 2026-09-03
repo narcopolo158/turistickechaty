@@ -30,3 +30,26 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENÍ PRAMENŮ 3. 9. 2026 (koš C1, DATA-03) — NEJSILNĚJŠÍ Z PĚTICE,
+  přesto zatím bez doslovné věty o veřejném přístupu.
+  Firmy.cz, záznam „Děčínská bouda - Horská farma"
+  (en.firmy.cz/company/12992686-…, otevřeno 3. 9. 2026): záznam je AKTIVNÍ
+  (na rozdíl od jiných čtených dnes není označen „již není aktivní"),
+  kategorie „Farmhouse accommodation", adresa „Pec pod Sněžkou, Velká Úpa
+  181, 542 21", otevírací doba „10:00–16:00" pro všechny dny v týdnu,
+  telefon „+420 733 557 999" (shoda s OSM), web je facebooková stránka
+  „Děčínská bouda - Horská farma na Růžové hoře".
+  DVA NEZÁVISLÉ PRAMENY SE SHODUJÍ NA TÉŽE DOBĚ: OSM node 5341404078
+  (`amenity=restaurant`) nese `opening_hours=Mo-Su 10:00-16:00`
+  a `check_date:opening_hours=2025-10-11`. Denní doba 10–16 u objektu,
+  který jinak nabízí nocleh, ukazuje na okno pro příchozí — ale je to
+  úsudek z čísla, ne citace, a tak se to sem zapisuje.
+  gastrozoom.cz (…/decinska-bouda-horska-farma-na-ruzove-hore-7489/):
+  zaměření „Penziony, Restaurace", kontaktní osoba „Pechoč Jaroslav";
+  o podmínkách přístupu mlčí.
+  NEDOČTENO: pecpodsnezkou.cz/turisticke-cile/horska-farma-decinska-bouda-1/
+  (oficiální web města, tedy nejlepší kandidát na doslovnou větu) vrátil
+  3. 9. 2026 dvakrát za sebou timeout. Zkusit příště — na téhle jediné
+  stránce nejspíš stojí, jestli se dá u Děčínské boudy zastavit cestou
+  na Růžovou horu.

@@ -31,3 +31,23 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=hotel (alpine_hut = obsluhovaná, wilderness_hut
   = útulna).
+
+  ČTENÍ PRAMENŮ 3. 9. 2026 (koš C1, DATA-03) — NEPOVYŠOVAT: klíč zařazení
+  není doložen ani jednou půlkou.
+  Vlastní web chataizerska.pl (otevřeno 3. 9. 2026) mluví o penzionu, ne
+  o schronisku: 9 pokojů (č. 1–9), adresa „ul.Piastowska 32, 58-580
+  Szklarska Poręba", činnost „Od 1992 roku", majitelé „Beata i Maciej
+  Stanisz-Podgórscy", telefon „691891304", e-mail „biuro@chataizerska.pl".
+  O jídle jen „smaczne, domowe posiłki" — a to pro nocující; větu
+  o gastronomii pro příchozí zvenčí web nemá.
+  Katalogy si v typu protiřečí: kierunkowo.pl ho v titulku vede jako
+  „schronisko w Szklarskiej Porębie", gdzie-wyjechac.pl jako
+  „Gospodarstwo Agroturystyczne". Nerozhodovat podle titulků katalogů.
+  OSM vede vedle hotelu (way 297818231) i samostatnou budovu
+  way 262941130 s `amenity=restaurant` a `opening_hours=Mo-Su 13:00-18:30`,
+  19 m od hotelu. Je to jediný doklad občerstvení a je to TAG, ne pramen
+  o veřejném přístupu.
+  K ROLI NA TRASE: adresa Piastowska 32 leží v zástavbě Szklarské Poręby,
+  ne na hřebeni. Naměřených 62 m ke značené trase (2. 9. 2026) proto měří
+  přesně tu mez, kterou si skript sám přiznává — značka vede i městem.
+  U tohohle kandidáta tedy měření roli nedokládá.

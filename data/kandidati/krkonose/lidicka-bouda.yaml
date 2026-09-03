@@ -28,3 +28,32 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=hotel (alpine_hut = obsluhovaná, wilderness_hut
   = útulna).
+
+  ČTENÍ PRAMENŮ 3. 9. 2026 (koš C1, DATA-03) — NEPOVYŠOVAT: objekt je dnes
+  doložen jako REZIDENČNÍ APARTMÁNY, ne jako bouda s veřejnou restaurací.
+  novostavby.com/property/lidicka-bouda/ (otevřeno 3. 9. 2026) doslova:
+  „Lidická bouda představuje rezidenční projekt zasazený do srdce Krkonoš";
+  „18 luxusních apartmánů"; „Rekonstrukce již byla dokončena a jednotky
+  jsou tak připraveny k předání." bookingpec.com (…/lidicka-bouda/):
+  „stylové apartmány v Krkonoších", „apartmány s kuchyňským koutem",
+  wellness s bazénem a saunou; restaurace pro veřejnost tam zmíněna není.
+  Sedí to i s OSM: budova way 32612737 nese `building:flats=7`
+  a `start_date=2025-08-27`.
+
+  Občerstvení: Firmy.cz vede samostatný záznam „Hotel Lidická bouda -
+  Restaurace" (firmy.cz/detail/12956713-…, otevřeno 3. 9. 2026), kategorie
+  „Restaurace / Hotelové restaurace", adresa „Pec pod Sněžkou 217" — ale
+  doslova: „Tato firma nebo pobočka již není aktivní." Pozor, ten záznam
+  navíc uvádí web `www.lidicka-bouda.cz`, tedy JINOU doménu než OSM
+  (`lidickabouda.cz`). Jediná věta o veřejné restauraci je z archivu:
+  ceskehory.cz (…/popis/lidicka-bouda-pec-pod-snezkou.html) „Restaurace
+  s výhledem na Sněžku otevřena denně" — táž stránka se ovšem hlásí
+  „Objekt v archivu - prezentace není aktivní. Uvedené údaje nemusí být
+  již aktuální." Táž stránka k poloze: „cca 2km od města Pece pod Sněžkou
+  na hřebenu, hned vedle vleku Mulda" (lokalita Lučiny).
+
+  Závěr: doklad občerstvení pro veřejnost je NEAKTUÁLNÍ (archiv + zrušený
+  záznam), a proti němu stojí dva živé prameny o apartmánech. Kandidát se
+  nevyřazuje (absence dokladu není doklad opaku), ale povýšení by dnes
+  tvrdilo něco, co prameny nedrží. K rozhodnutí je otázka pro Michala:
+  patří do průvodce dům, který byl boudou a dnes je apartmánovým domem?

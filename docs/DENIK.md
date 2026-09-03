@@ -29,6 +29,78 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-03 — denní session: pět kandidátů C1 přečteno — a měření slibovalo víc, než prameny drží
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, re-export DATA-37, sémantika `obec`, katalog vydavatele, tři
+  případy na tobě, klik na workflow, staging). Vzal jsem tedy „Příště" z 2. 9.:
+  **přečíst pět kandidátů C1**, u kterých měření našlo obě půlky klíče.
+- **Výsledek je střízlivější, než měření slibovalo: k povýšení dnes nenavrhuji
+  ani jednoho z pěti.** Do `data/chaty/` se nesáhlo, nic se nevyřadilo, všechny
+  nálezy jsou s URL a datem v `interniPoznamky` kandidátů.
+- **`bouda-v-obrim-dole` — objekt možná nejede pod tímhle jménem.** Doména
+  z OSM `boudavobrimdole.cz` dnes vrací **302 na `chatapodstudnicnou.cz`**,
+  tedy na objekt, jehož profil **už vedeme**. Firmy.cz: „This business or branch
+  is no longer active."; ceskehory.cz: „Objekt v archivu". Telefon +420 728 465 454
+  je na obou webech **týž**, ale adresy i souřadnice se liší (Obří důl 116
+  × Chata pod Studničnou 120, body ~720 m od sebe) — nejspíš dva domy jednoho
+  provozovatele, ne duplicita. penziony.cz je aktivní a nese „31 osob" v „11 pokoje"
+  a „stylovou hospůdku s barem" — ale ani jeden pramen neříká, že je hospůdka
+  pro kolemjdoucí.
+- **`lidicka-bouda` — dnes rezidenční apartmány.** novostavby.com: „rezidenční
+  projekt", „18 luxusních apartmánů", „Rekonstrukce již byla dokončena";
+  bookingpec.com: „stylové apartmány". Sedí to s OSM (`building:flats=7`,
+  `start_date=2025-08-27`). Firmy.cz záznam „Hotel Lidická bouda - Restaurace"
+  je **neaktivní**; jediná věta o veřejné restauraci („Restaurace s výhledem
+  na Sněžku otevřena denně") je z **archivní** stránky ceskehory.cz.
+- **`decinska-bouda` — nejsilnější z pětice a jediná, která má šanci příště.**
+  Firmy.cz záznam je **aktivní**, otevírací doba „10:00–16:00" každý den,
+  telefon souhlasí s OSM — a **OSM nese tutéž dobu** (`Mo-Su 10:00-16:00`,
+  `check_date:opening_hours=2025-10-11`). Dva nezávislé prameny na téže době.
+  Doslovná věta o veřejném přístupu ale pořád chybí; nejlepší kandidát na ni,
+  oficiální `pecpodsnezkou.cz`, vrátil **dvakrát timeout**.
+- **`chata-izerska` — klíč nedrží ani jednou půlkou.** Vlastní web je o penzionu
+  (9 pokojů, „Od 1992 roku", ul. Piastowska 32 **v zástavbě** Szklarské Poręby),
+  jídlo jen „domowe posiłki" pro nocující. Naměřených 62 m ke značce (2. 9.)
+  je přesně ta mez, kterou si skript sám přiznává — značka vede i městem.
+- **`amelkowa-chata` — občerstvení doloženo jen pro ubytované** („kuchnia
+  serwowana w restauracji", režim BB/HB, ceník 2026). Neprozkoumaný zůstal
+  `chatynaokraju.com.pl`, na který katalog odkazuje jako na stránky objektu.
+- **Poznatek, který stojí za zapamatování — a je to protipól toho včerejšího:**
+  OSM tag `amenity=restaurant` **není pramen o veřejném přístupu**, je to tag.
+  Ze čtyř kandidátů, u kterých ten tag byl jediným dokladem občerstvení, ho
+  čtení pramenů nepotvrdilo ani jednou; u dvou dokonce ukázalo, že podnik za ním
+  **skončil nebo se přestavěl**. Měření z 1.–2. 9. tedy triáž seřadilo správně
+  (byla to nejvýtěžnější pětice), ale to, co změřilo, je *kandidatura na čtení*,
+  ne splněný klíč. `npm run kontrola` zelené.
+
+**Příště:** **dočíst `decinska-bouda`** — `pecpodsnezkou.cz/turisticke-cile/horska-farma-decinska-bouda-1/`
+(dnes 2× timeout) plus facebooková stránka „Horská farma na Růžové hoře"; je to
+jediný z pětice, u kterého doslovná věta o veřejném přístupu reálně může být.
+Pak `chatynaokraju.com.pl` k `amelkowa-chata`. Potom trojice C1 bez měření role
+(`hancova-bouda`, `havlova-bouda`, `chata-za-wsia`) a měření role na trase nad
+košem C3 (120 položek). Vedle toho leží Broumovsko z 28. 8., deset padajících
+testů (Postgres/exporty) a blokované DATA-04 / DATA-05 / DATA-20 / DATA-22 / DATA-25.
+
+**Otázky pro Michala:**
+
+- **Patří do průvodce dům, který BYL boudou a dnes je apartmánovým domem?**
+  (`lidicka-bouda`, doloženo 18 apartmánů po rekonstrukci.) Podle klíče
+  „role na trase a občerstvení pro veřejnost" nepatří, ale je to první případ
+  tohohle druhu a konvenci k němu nemáme.
+- **`bouda-v-obrim-dole`: máme psát provozovatele dohromady s Chatou pod
+  Studničnou?** Shodný telefon a přesměrovaná doména na to ukazují, ale jsou
+  to dva domy 720 m od sebe. Nebo počkat, až se ozve pramen o samotné BOD?
+- **Bere se shoda otevírací doby ve dvou nezávislých pramenech (Firmy.cz
+  a OSM `check_date`) jako doklad veřejného občerstvení?** U `decinska-bouda`
+  je to jediné, co k tomu máme, a rozhodne to o povýšení.
+- Trvá z 2. 9.: **„trasa nese boudu v názvu" jako doklad role** (`hoffmannova-bouda`)?;
+  **má se práh 250 m zapsat jako konvence?**; **`jadroNazvu` a slova restaurace/hospoda?**;
+  **přenášet `amenity` poraženého při slučování duplicit?**
+
 ## 2026-09-02 — denní session: role na trase se dá změřit, a pět kandidátů má obě půlky klíče
 
 **Hotovo:**
