@@ -29,6 +29,92 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-04 — denní session: Děčínská bouda povýšena (79. krkonošský profil) — a jedna vymyšlená citace
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging). Vzal jsem tedy „Příště" z 3. 9.: **dočíst
+  `decinska-bouda`**, pak `chatynaokraju.com.pl` k `amelkowa-chata`.
+- **`decinska-bouda` POVÝŠENA** do `data/chaty/krkonose/` — 79. krkonošský
+  profil, vše `verified: false` dle konvence B. Doslovná věta o veřejném
+  přístupu, která včera chyběla, se našla hned dvakrát nezávisle: **České hory**
+  („V přízemí jsou 2 místnosti k posezení a kde je zajištěno občerstvení
+  z prodejem i pro příchozí návštěvníky" — pravopis pramene) a **oficiální web
+  města Pec pod Sněžkou** v sekci Turistické cíle („pokud se nevejdete do
+  restaurace, nemusíte se ničeho bát z boku chaty mají hadové okénko").
+  Druhou půlku klíče — roli na trase — držel už včerejšek: 35 m ke značce,
+  rozcestník 32 m.
+- **Stránka města, která včera dvakrát spadla na timeout, se dnes otevřela
+  a nesla víc, než se čekalo:** historii (osm letních bud v polovině
+  19. století, kolem cesta horských nosičů na Sněžku; 1846 původní stavení,
+  o půl roku později zbořeno a nahrazeno hostincem, který stojí dodnes;
+  po odsunu podniková chata **ČSAD Děčín** — odtud jméno; od 2006 farmaří
+  manželé Mlejnkovi), farmu s vlastní mlékárnou za boudou a obsluhu v dobových
+  krojích. Profil má proto i `milniky` a tři `zajimavosti`.
+- **Tři rozpory profil nese nahlas, nesrovnává je:** výška **1255**
+  (hkregion.cz) × **1280** (České hory) — zapsáno nižší dle konvence
+  z 27. 7. 2026; provozovatel **Mlejnkovi** (web města) × kontaktní osoba
+  **„Pechoč Jaroslav"** (gastrozoom.cz); a **47 metrů k Boudě Růžohorky**,
+  kterou už vedeme. Duplicita to není — jiné číslo popisné (Velká Úpa 181 ×
+  182), jiný telefon i e-mail —, ale oba profily citují České hory a oba
+  prameny mluví o „dvou místnostech k posezení" a shodně o 1280 m. Ta shoda
+  formulací je nápadná a je zapsaná jako past pro budoucí telefonát.
+- **`amelkowa-chata` — vlastní web dočten, klíč dál nedrží.**
+  `chatynaokraju.com.pl` mluví o kuchyni jako o součásti pobytu
+  („tradycyjna polska kuchnia w naszej restauracji", pokoje 2–4 lůžka,
+  od 100 zł/os.), žádná věta o kolemjdoucích. Prošel jsem i všechny tři
+  stránky recenzí — jídlo se chválí často, ale vždy u pobytu.
+- **A to je dnešní nález, který stojí za zapamatování víc než ta bouda:
+  shrnutí stránky mi podstrčilo citaci, která na webu není.** U Amelkowé
+  chaty mi první čtení vrátilo recenzi „Byliśmy dziś na zupce i naleśnikach
+  po zejściu ze szlaku" — přesně tu chybějící půlku klíče. Adresné dohledání
+  ve všech třech stránkách recenzí ukázalo, že **taková věta tam nikde není**;
+  byla vymyšlená. Kdybych ji vzal, měl by dnes průvodce povýšený objekt
+  postavený na neexistujícím prameni. **Konvence, kterou si z toho beru:
+  doslovná citace se vždy potvrzuje druhým, adresným dotazem na tutéž
+  stránku — shrnutí není pramen.** Mimochodem stejný postup zafungoval
+  i u Děčínské boudy: první shrnutí parafrázovalo, doslovný text přišel
+  až na druhý dotaz.
+- `npm run kontrola` zelené (včetně `kolize-jmen`, která sousedství
+  s Růžohorkami nezvedla).
+
+**Příště:** trojice C1 bez měřené role na trase (`hancova-bouda`,
+`havlova-bouda`, `chata-za-wsia`) — u nich roli musí doložit pramen, ne
+měření. Pak měření role na trase nad **košem C3** (120 položek) a řazení
+podle značky místo podle střediska. Vedle toho pořád leží Broumovsko
+z 28. 8., deset padajících testů (Postgres/exporty) a blokované DATA-04 /
+DATA-05 / DATA-20 / DATA-22 / DATA-25. U `bouda-v-obrim-dole` a
+`lidicka-bouda` čekám na tvoje odpovědi níž.
+
+**Otázky pro Michala:**
+
+- **Bere se sousedství 47 metrů jako signál k prověření?** Děčínská bouda
+  a Bouda Růžohorky stojí prakticky vedle sebe a průvodce je vede jako dva
+  profily. Rozdíly (čp., telefon, e-mail) na dva objekty ukazují, ale
+  potvrdit to umíš jen ty — je to jeden telefonát na dvě čísla.
+- **Má se ta konvence o doslovných citacích zapsat natvrdo?** Tj. že žádná
+  citace nesmí do `overeni*.source` bez druhého, adresného dotazu na tutéž
+  stránku. Zdržuje to o jedno čtení navíc, ale dnes to zachytilo vymyšlený
+  pramen.
+- Trvá z 3. 9.: **patří do průvodce dům, který BYL boudou a dnes je
+  apartmánovým domem** (`lidicka-bouda`)?; **psát `bouda-v-obrim-dole`
+  dohromady s Chatou pod Studničnou?** (shodný telefon, přesměrovaná doména,
+  ale 720 m od sebe). Otázka „bere se shoda otvírací doby ve dvou pramenech
+  jako doklad veřejného občerstvení?" u Děčínské boudy odpadla — našla se
+  přímá věta —, ale jako obecná konvence zůstává otevřená a vrátí se.
+- Trvá z 2. 9.: **„trasa nese boudu v názvu" jako doklad role**
+  (`hoffmannova-bouda`)?; **má se práh 250 m zapsat jako konvence?**;
+  **`jadroNazvu` a slova restaurace/hospoda?**; **přenášet `amenity`
+  poraženého při slučování duplicit?**
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. `WebFetch`
+dál vyžaduje provenienci — každý pramen se musí nejdřív najít přes
+vyhledávání, teprve pak otevřít.
+
 ## 2026-09-03 — denní session: pět kandidátů C1 přečteno — a měření slibovalo víc, než prameny drží
 
 **Hotovo:**

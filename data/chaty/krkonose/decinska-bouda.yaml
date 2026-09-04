@@ -1,0 +1,347 @@
+# Děčínská bouda — profil povýšen z kandidáta DATA-01 (koš C1 triáže) v denní
+# session 4. 9. 2026, poté co se doložily OBĚ půlky klíče zařazení:
+#  (1) OBČERSTVENÍ PRO VEŘEJNOST — doslovná věta, která od 3. 9. chyběla:
+#      České hory, „V přízemí jsou 2 místnosti k posezení a kde je zajištěno
+#      občerstvení z prodejem i pro příchozí návštěvníky" (pravopis pramene
+#      zachován). Nezávisle oficiální web města Pec pod Sněžkou v sekci
+#      Turistické cíle: „pokud se nevejdete do restaurace, nemusíte se
+#      ničeho bát z boku chaty mají hadové okénko."
+#  (2) ROLE NA TRASE — měření z 2. 9. 2026 (scripts/triaz-role-na-trase.ts):
+#      35 m k ose značené trasy, rozcestník 32 m.
+# Konvence B: každý údaj má source, verified zůstává false, dokud ho neověří
+# Michal vlastním dotazem nebo návštěvou. Nic nedomýšlet!
+#
+# POZOR NA DVĚ VĚCI, které profil nese vědomě:
+#  (a) 47 metrů odsud stojí Bouda Růžohorky, kterou už vedeme. NENÍ to táž
+#      bouda: jiné číslo popisné (181 × 182), jiný telefon, jiný e-mail.
+#      Podrobně v interniPoznamky.
+#  (b) Výška se v pramenech liší o 25 metrů (1255 × 1280) a rozřešená není.
+
+nazev: Děčínská bouda
+slug: decinska-bouda
+zeme: cz
+typ: obsluhovana
+stav: v-provozu
+oblast: krkonose
+
+aliasy:
+  - nazev: Horská farma na Růžové hoře
+    poznamka: >-
+      jméno, pod kterým se objekt dnes prezentuje — nese ho jeho facebooková
+      stránka, záznam na Firmy.cz i prezentace na Českých horách
+  - nazev: Děčínská bouda - Horská farma
+    poznamka: podoba jména v obchodním rejstříku dle záznamu na Firmy.cz
+
+# ── Doplňková fakta ───────────────────────────────────────────────────────
+zajimavosti:
+  - text: >-
+      Personál obsluhuje v dobových krojích — bouda se drží tradice horského
+      hospodaření a je vedena jako farma s vlastním stádem.
+    kategorie: jine
+    zdroj: https://www.pecpodsnezkou.cz/turisticke-cile/horska-farma-decinska-bouda-1/
+  - text: >-
+      Vlastní mlékárna stojí hned za boudou; vyrábějí v ní domácí jogurty,
+      zákys, máslo a tvaroh z mléka vlastních krav a ovcí, které spásají luční
+      enklávy v Eliščině údolí, na Pomezních boudách, ve Velké Úpě a na Černé
+      hoře.
+    kategorie: gastro
+    zdroj: https://www.pecpodsnezkou.cz/turisticke-cile/horska-farma-decinska-bouda-1/
+  - text: >-
+      Dnešní jméno nese bouda po podnikové chatě ČSAD Děčín, jako která
+      fungovala dlouhá léta po druhé světové válce.
+    kategorie: jine
+    zdroj: https://www.pecpodsnezkou.cz/turisticke-cile/horska-farma-decinska-bouda-1/
+
+kontakty:
+  telefon: +420 733 557 999
+  email: horskafarma@email.cz
+  web: https://www.facebook.com/p/D%C4%9B%C4%8D%C3%ADnsk%C3%A1-bouda-Horsk%C3%A1-farma-na-R%C5%AF%C5%BEov%C3%A9-ho%C5%99e-100070968215553/
+
+# ── Lokace ────────────────────────────────────────────────────────────────
+lat: 50.7106102
+lng: 15.74952
+vyska: 1255
+obec: Pec pod Sněžkou
+overeniLokace:
+  source: >-
+    GPS: OpenStreetMap https://www.openstreetmap.org/way/174009063 — data ©
+    přispěvatelé OpenStreetMap, ODbL 1.0 (openstreetmap.org/copyright), stav dat
+    2026-08-22. Nezávisle týž bod uvádí regionální portál Královéhradeckého
+    kraje (https://www.hkregion.cz/dr-cs/105065-decinska-bouda.html, čteno
+    4. 9. 2026): 50°42'38.17"N, 15°44'58.32"E, což je po převodu 50,71060 /
+    15,74953 — shoda na metry. ADRESA: „Velká Úpa 181, 542 21 Pec pod Sněžkou"
+    shodně hkregion.cz, České hory
+    (https://www.ceskehory.cz/ubytovani/decinska-bouda-pec-pod-snezkou.html)
+    i záznam na Firmy.cz. VÝŠKA — ROZPOR, který profil nese nahoře: hkregion.cz
+    uvádí 1255 m, České hory 1280 m. Zapsáno nižší číslo dle konvence
+    z 27. 7. 2026; rozdíl 25 m nemáme čím rozsoudit a nedomýšlíme ho.
+    Poloha: Růžohorky na Růžové hoře, 3,5 km pod vrcholem Sněžky (České hory).
+    Sekundární prameny, v terénu neověřeno.
+  verified: false
+  checked: '2026-09-04'
+
+# ── Nocleh ────────────────────────────────────────────────────────────────
+nocleh: ano
+kapacita: 21
+pokoje:
+  - typ: Pokoje se třemi až pěti lůžky (5 pokojů)
+overeniNocleh:
+  source: >-
+    České hory
+    (https://www.ceskehory.cz/ubytovani/decinska-bouda-pec-pod-snezkou.html,
+    čteno 4. 9. 2026): „V objektu jsou 3-4-5 lůžkové pokoje", „V objektu je
+    5 pokojů", 21 lůžek, „WC a sprchy společné (odděleně pro dámy a pány)",
+    „Ubytování s polopenzí". Oficiální web města Pec pod Sněžkou
+    (https://www.pecpodsnezkou.cz/turisticke-cile/horska-farma-decinska-bouda-1/)
+    popisuje objekt jako „horský hostinec s ubytováním" a k roku převzetí
+    státem uvádí „budovu s pěti pokoji a dvaceti lůžky" — dnešní počet
+    21 lůžek je tedy z jediného pramene. Ceny ani rezervační podmínky
+    nemáme. Sekundární prameny, verified: false.
+  verified: false
+  checked: '2026-09-04'
+
+# ── Občerstvení ───────────────────────────────────────────────────────────
+kuchyne: ano
+typObcerstveni: restaurace
+specialita: >-
+  Staročeská kuchyně z vlastních surovin a domácí mléčné výrobky z mlékárny za
+  boudou — jogurty, zákys, máslo a tvaroh (dle oficiálního webu města a portálu
+  Královéhradeckého kraje, neověřeno)
+otviraciDoba: >-
+  Denně 10:00–16:00 (shodně záznam na Firmy.cz a OSM tag opening_hours
+  „Mo-Su 10:00-16:00" s check_date 2025-10-11) — hlavní sezóna dle města
+  Pec pod Sněžkou od května do října. Neověřeno, před cestou ověřit.
+overeniObcerstveni:
+  source: >-
+    VEŘEJNÝ PŘÍSTUP DOLOŽEN DOSLOVA — České hory
+    (https://www.ceskehory.cz/ubytovani/decinska-bouda-pec-pod-snezkou.html,
+    čteno 4. 9. 2026): „V přízemí jsou 2 místnosti k posezení a kde je
+    zajištěno občerstvení z prodejem i pro příchozí návštěvníky. Domácí kuchyně
+    - domácí výrobky které dostanete na váš stůl vás určitě potěší."
+    (Pravopis pramene zachován.) Nezávisle oficiální web města Pec pod Sněžkou
+    (https://www.pecpodsnezkou.cz/turisticke-cile/horska-farma-decinska-bouda-1/,
+    čteno 4. 9. 2026), sekce Turistické cíle: „Hlavní sezónu mají od května do
+    října, pokud se nevejdete do restaurace, nemusíte se ničeho bát z boku
+    chaty mají hadové okénko." — tedy restaurace plus výdejní okénko z boku
+    budovy. (Slovo „hadové" nese pramen takto; co přesně jím míní, nevíme
+    a nedomýšlíme.) OTVÍRACÍ DOBA ze dvou nezávislých pramenů shodně
+    10:00–16:00 denně: záznam „Děčínská bouda - Horská farma" na Firmy.cz
+    (https://en.firmy.cz/company/12992686-decinska-bouda-horska-farma-pec-pod-snezkou-velka-upa.html,
+    čteno 3. 9. 2026, záznam aktivní) a OSM node
+    https://www.openstreetmap.org/node/5341404078 (amenity=restaurant,
+    opening_hours=Mo-Su 10:00-16:00, check_date:opening_hours=2025-10-11).
+    Sekundární prameny, verified: false.
+  verified: false
+  checked: '2026-09-04'
+
+# ── Služby ────────────────────────────────────────────────────────────────
+# `platbaKartou` a `lyzarna` ZÁMĚRNĚ NEVYPLNĚNY — prameny je neuvádějí.
+wifi: ano
+psi: ano
+overeniSluzby:
+  source: >-
+    České hory
+    (https://www.ceskehory.cz/ubytovani/decinska-bouda-pec-pod-snezkou.html,
+    čteno 4. 9. 2026) uvádějí u objektu Wi-Fi a pobyt se psem „po domluvě" —
+    psi:ano tedy s výhradou předchozí domluvy. Sociální zařízení je společné,
+    odděleně pro ženy a muže. O platbě kartou ani lyžárně žádný dosažitelný
+    pramen nepíše — pole zůstávají nevyplněná. Sekundární pramen,
+    verified: false.
+  verified: false
+  checked: '2026-09-04'
+
+# ── Provoz ────────────────────────────────────────────────────────────────
+sezona: >-
+  Hlavní sezóna od května do října; jestli je bouda otevřená i mimo ni,
+  doložené nemáme
+overeniProvoz:
+  source: >-
+    Oficiální web města Pec pod Sněžkou
+    (https://www.pecpodsnezkou.cz/turisticke-cile/horska-farma-decinska-bouda-1/,
+    čteno 4. 9. 2026): „Hlavní sezónu mají od května do října." Formulace
+    o hlavní sezóně nevylučuje provoz mimo ni, ale ani ho netvrdí — proto
+    `sezona` není vyplněna hodnotou „celoročně". Provozovatelé: „od roku 2006
+    zde farmaří manželé Mlejnkovi" (tentýž pramen). POZOR: gastrozoom.cz
+    (https://www.gastrozoom.cz/podnik/decinska-bouda-horska-farma-na-ruzove-hore-7489/,
+    čteno 3. 9. 2026) uvádí jako kontaktní osobu „Pechoč Jaroslav" — se jménem
+    provozovatelů z webu města se to nesrovnává a rozřešené to nemáme.
+    Telefon +420 733 557 999 shodně OSM (way/174009063), Firmy.cz, České hory
+    i hkregion.cz. E-mail horskafarma@email.cz nese OSM i České hory, které
+    vedle něj uvádějí ještě decinskabouda@seznam.cz. Vlastní doména objektu
+    není známa; jako web se všude uvádí facebooková stránka „Děčínská bouda -
+    Horská farma na Růžové hoře". Sekundární prameny, verified: false.
+  verified: false
+  checked: '2026-09-04'
+
+# ── Přístup ───────────────────────────────────────────────────────────────
+autem: >-
+  Bouda stojí v národním parku na Růžové hoře a prameny k ní popisují jen pěší
+  přístup a blízkost lanovky. Jestli a kam se dá dojet autem, doložené nemáme.
+overeniPristup:
+  source: >-
+    České hory
+    (https://www.ceskehory.cz/ubytovani/decinska-bouda-pec-pod-snezkou.html,
+    čteno 4. 9. 2026): objekt je „3,5 km pod vrcholem Sněžky, 600 m od stanice
+    lanové dráhy Růžová hora". Měření nad exportem značených tras
+    (scripts/triaz-role-na-trase.ts, 2. 9. 2026, data
+    data/trasy/krkonose/_overpass-trasy.json): 35 m k ose nejbližší značené
+    trasy a 32 m k nejbližšímu rozcestníku — bouda tedy stojí přímo u značené
+    cesty. Historicky vedla kolem „cesta horských nosičů na Sněžku"
+    (https://www.pecpodsnezkou.cz/turisticke-cile/horska-farma-decinska-bouda-1/).
+    Konkrétní barvy značek, výchozí body ani časy výstupu žádný z pramenů
+    neuvádí — nepřebíráme je. Sekundární prameny a vlastní měření,
+    verified: false.
+  verified: false
+  checked: '2026-09-04'
+
+# ── Historie ──────────────────────────────────────────────────────────────
+rokVzniku: 1846
+milniky:
+  - rok: 1846
+    udalost: >-
+      Na místě postaveno původní stavení; o půl roku později je pan Richter
+      nechal zbořit a postavit nový horský hostinec s ubytováním, který se
+      v mírně rozšířené podobě dochoval dodnes
+  - rok: 2006
+    udalost: Hospodaří tu manželé Mlejnkovi a bouda funguje jako horská farma
+overeniHistorie:
+  source: >-
+    https://www.pecpodsnezkou.cz/turisticke-cile/horska-farma-decinska-bouda-1/
+    (oficiální web města Pec pod Sněžkou, čteno 4. 9. 2026): „v polovině
+    19. století zde stálo 8 letních bud a kolem vedla cesta horských nosičů na
+    Sněžku. Od roku 1846 bylo postaveno původní stavení, avšak o půl roku
+    později pan Richter nechal stavení zbořit a postavit nový horský hostinec
+    s ubytováním (v mírně rozšířené podobě se dochoval dodnes). Po vyhnání
+    sudetských Němců budovu s pěti pokoji a dvaceti lůžky převzal
+    československý stát a dlouhá léta fungovala jako podniková chata ČSAD
+    Děčín." Období hospodaření Bergerových nese pramen jako „V roce 19966-1972",
+    což je zjevný překlep a rok začátku z něj nevyčteme — do milníků proto
+    NEJDE. Rok převzetí státem pramen neuvádí (jen „po vyhnání sudetských
+    Němců"), proto také není milníkem. Jediný pramen, verified: false.
+  verified: false
+  checked: '2026-09-04'
+
+# ── Obsah ─────────────────────────────────────────────────────────────────
+perex: >-
+  Horská farma na Růžohorkách pod Sněžkou, která se drží tradice horského
+  hospodaření: vlastní stádo, mlékárna za boudou a obsluha v dobových krojích.
+  Hostinec s ubytováním tu stojí od roku 1846, dnešní jméno nese po podnikové
+  chatě ČSAD Děčín. Občerstvení je i pro příchozí.
+text:
+  - >-
+    Děčínská bouda stojí na Růžohorkách na Růžové hoře, tři a půl kilometru pod
+    vrcholem Sněžky a asi šest set metrů od stanice lanovky. Vede kolem ní
+    značená cesta — měření nad exportem tras ji našlo pětatřicet metrů od osy
+    značky a rozcestník je ještě o tři metry blíž —, takže je to bouda, kterou
+    turista na cestě k Sněžce míjí, ne dům stranou provozu. Že to místo mělo
+    roli na trase odjakživa, připomíná i historie: v polovině devatenáctého
+    století tu stálo osm letních bud a kolem vedla cesta horských nosičů na
+    Sněžku.
+  - >-
+    Dnes je to hlavně farma. Hospodaří tu od roku 2006 manželé Mlejnkovi, jejich
+    krávy a ovce spásají luční enklávy v Eliščině údolí, na Pomezních boudách,
+    ve Velké Úpě i na Černé hoře a hned za boudou stojí mlékárna, ve které se
+    z toho mléka dělají jogurty, zákys, máslo a tvaroh. Obsluha nosí dobové
+    kroje. Kuchyně se popisuje jako staročeská a vaří z vlastních surovin.
+  - >-
+    Zastavit se tu dá i bez rezervace a bez noclehu: v přízemí jsou dvě
+    místnosti k posezení a občerstvení je výslovně i pro příchozí návštěvníky,
+    a kdyby bylo uvnitř plno, funguje z boku chaty výdejní okénko. Otevírací
+    dobu uvádějí dva na sobě nezávislé prameny shodně — denně od deseti do
+    čtyř —, hlavní sezóna je od května do října. Jestli je otevřeno i mimo ni,
+    žádný z pramenů neříká, takže to netvrdíme ani my.
+  - >-
+    Přespat se dá v pěti pokojích po třech až pěti lůžkách, dohromady je jich
+    jednadvacet; sociální zařízení je společné, oddělené pro ženy a muže,
+    a ubytování se nabízí s polopenzí. Pes je vítán po domluvě, Wi-Fi bouda má.
+  - >-
+    Historie stavby je krátká a trochu neklidná. Původní stavení tu vzniklo
+    v roce 1846, jenže o půl roku později je majitel nechal zbořit a postavil
+    místo něj nový horský hostinec s ubytováním — a ten se v mírně rozšířené
+    podobě dochoval dodnes. Po vyhnání sudetských Němců budovu převzal
+    československý stát a dlouhá léta sloužila jako podniková chata ČSAD Děčín;
+    odtud jméno, které se drží dodnes, i když s Děčínem už bouda nemá nic
+    společného.
+  - >-
+    Dvě věci si před cestou ověřte přímo u provozovatele. Nadmořská výška se
+    v pramenech rozchází o pětadvacet metrů — jeden uvádí 1255, druhý 1280 —
+    a rozsoudit to neumíme, takže tu stojí nižší číslo. A všechno ostatní výše
+    pochází ze sekundárních pramenů; redakce zatím nic z toho neověřila vlastním
+    dotazem ani návštěvou.
+
+zdroje:
+  - popis: >-
+      Oficiální web města Pec pod Sněžkou, sekce Turistické cíle — historie od
+      poloviny 19. století, přestavba roku 1846, podniková chata ČSAD Děčín,
+      hospodaření Mlejnkových od roku 2006, farma a mlékárna, dobové kroje,
+      hlavní sezóna a výdejní okénko
+    url: https://www.pecpodsnezkou.cz/turisticke-cile/horska-farma-decinska-bouda-1/
+  - popis: >-
+      České hory — občerstvení „i pro příchozí návštěvníky", 5 pokojů a 21
+      lůžek, dvě místnosti k posezení, Wi-Fi a pes po domluvě, vzdálenost od
+      Sněžky a od lanovky, výška 1280 m
+    url: https://www.ceskehory.cz/ubytovani/decinska-bouda-pec-pod-snezkou.html
+  - popis: >-
+      Turistický portál Královéhradeckého kraje — GPS objektu, adresa,
+      nadmořská výška 1255 m, telefon
+    url: https://www.hkregion.cz/dr-cs/105065-decinska-bouda.html
+  - popis: >-
+      Firmy.cz, aktivní záznam „Děčínská bouda - Horská farma" — otevírací doba
+      10:00–16:00 denně, adresa, telefon
+    url: https://en.firmy.cz/company/12992686-decinska-bouda-horska-farma-pec-pod-snezkou-velka-upa.html
+  - popis: >-
+      OpenStreetMap (poloha objektu, kontakty, ODbL) a node restaurace
+      s otvírací dobou a datem její poslední kontroly
+    url: https://www.openstreetmap.org/way/174009063
+
+interniPoznamky: >-
+  Povýšeno z data/kandidati/krkonose/decinska-bouda.yaml (DATA-01, koš C1
+  triáže) v denní session 4. 9. 2026. Vše verified: false dle konvence B —
+  ověří teprve Michal vlastním dotazem nebo návštěvou.
+
+  PROČ AŽ TEĎ: 3. 9. 2026 byla Děčínská bouda označena za nejsilnějšího
+  z pětice kandidátů C1, ale chyběla doslovná věta o veřejném přístupu — měli
+  jsme jen shodu otevírací doby ve dvou pramenech (Firmy.cz + OSM check_date),
+  což je úsudek z čísla, ne citace. Dnes se ta věta našla na Českých horách
+  („občerstvení z prodejem i pro příchozí návštěvníky") a nezávisle na
+  oficiálním webu města (restaurace + výdejní okénko z boku chaty). Otázka
+  z deníku 3. 9., jestli se shoda otvíracích dob bere jako doklad, tím pro
+  tenhle profil ztrácí naléhavost — ale jako obecná konvence zůstává otevřená
+  a stojí za odpověď (bude se opakovat).
+
+  SOUSEDSTVÍ S BOUDOU RŮŽOHORKY — 47 METRŮ, A PŘESTO JINÝ OBJEKT.
+  bouda-ruzohorky.yaml má 50,7103765 / 15,7500803, tenhle profil
+  50,7106102 / 15,74952; to je zhruba 47 m. Že nejde o duplicitu, drží tři
+  nezávislé rozdíly: číslo popisné (Velká Úpa 181 × 182), telefon
+  (+420 733 557 999 × +420 606 209 727) a e-mail (horskafarma@email.cz ×
+  ruzohorky@seznam.cz). Pozor ale na past: oba profily citují České hory a oba
+  prameny mluví o „dvou místnostech k posezení" a shodně uvádějí 1280 m —
+  ta shoda formulací je nápadná a stojí za kontrolu při případném telefonátu.
+  Růžohorky vedeme s 20 lůžky v 10 dvoulůžkových pokojích, Děčínskou boudu
+  s 21 lůžky v 5 pokojích po 3–5 lůžkách; to se nepřekrývá.
+
+  ROZPOR VÝŠKY 1255 (hkregion.cz) × 1280 (České hory) je přiznaný
+  v overeniLokace i v próze; zapsáno nižší dle konvence z 27. 7. 2026.
+  Hypotéza (NEDOLOŽENÁ, proto ne v próze): 1280 m je výška enklávy Růžohorky
+  jako celku — nese ji i profil Boudy Růžohorky —, kdežto 1255 patří téhle
+  budově níž po svahu. Ověřit.
+
+  ROZPOR PROVOZOVATELE: web města jmenuje manžele Mlejnkovy (od 2006),
+  gastrozoom.cz uvádí kontaktní osobu „Pechoč Jaroslav". Do profilu vzato jméno
+  z oficiálního webu města jako z autoritativnějšího pramene, rozpor přiznán
+  v overeniProvoz. Do DATA-04.
+
+  CO PROFIL VĚDOMĚ NEVYPLŇUJE:
+  — `sezona: celoročně`: prameny mluví jen o „hlavní sezóně květen–říjen",
+    což provoz mimo ni nevylučuje, ale ani netvrdí.
+  — barvy značek a časy výstupu: měření zná vzdálenost ke značce, ne její
+    barvu; žádný pramen přístupové trasy nepopisuje.
+  — platba kartou, lyžárna, ceny, rezervace: nikde doloženo.
+  — rok převzetí státem a roky hospodaření Bergerových: pramen je uvádí jako
+    „V roce 19966-1972", tedy s překlepem, ze kterého se rok nedá vyčíst.
+
+  NEDOČTENO: facebooková stránka objektu (jediný „vlastní" web, který prameny
+  uvádějí) — do DATA-04 spolu s ověřením kapacity, výšky, sezóny mimo
+  květen–říjen a jména provozovatele.
+
+  FOTKA ZATÍM ŽÁDNÁ — licenční síto DATA-02 nad tímhle objektem neběželo.
