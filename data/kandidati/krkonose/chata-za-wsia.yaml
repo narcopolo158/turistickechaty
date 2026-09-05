@@ -29,3 +29,35 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=hotel (alpine_hut = obsluhovaná, wilderness_hut
   = útulna).
+
+  TRIÁŽ KOŠ C1 — křížové ověření (checked 2026-09-05, WebSearch + vlastní web,
+  vše verified: false):
+
+  Klíč NEDRŽÍ rolí na trase, a to doslovným zněním vlastního webu. Objekt je
+  „Hotel Restauracja Chata za Wsią", adresa **Górská 1, 58-533 Mysłakowice** —
+  tedy obec v kotlině mezi Krkonošemi a Rudawami Janowickimi, „kilka minut od
+  Jeleniej Góry". Vlastní web (https://www.chatazawsia.com/) polohu popisuje
+  doslova jako „Świetna baza wypadowa na szlaki turystyczne Karkonoszy, trasy
+  rowerowe w Rudawach Janowickich oraz stoki narciarskie w Karpaczu" — tedy
+  **výchozí bod ke krkonošským trasám**, ne objekt na trase. To je opak role na
+  trase: chata je tu cílem cesty autem, ne zastávkou pěšího.
+
+  Občerstvení pro veřejnost je naopak pravděpodobné: „Restauracja czynna jest
+  codziennie w godzinach 7:00–21:00 (z wyjątkiem Wigilii i Sylwestra)". Věta
+  o hostech zvenčí tam ale výslovně není a k rozhodnutí to nestačí — druhá
+  půlka klíče chybí tak jako tak.
+
+  Povaha objektu: hotel s restaurací a **svatebními sály** („połączenie hotelu
+  i restauracji z salami weselnymi"). Stáří provozu web zmiňuje jen nepřímo:
+  „pracownicy, którzy pracują od samego początku istnienia Chaty za wsią —
+  czyli około 40 lat"; rok vzniku uveden není.
+
+  NÁVRH REDAKCI: **VYŘADIT** — nesplňuje klíč (role na trase). Není to horská
+  ani turistická chata v našem smyslu, ale hotel se svatebními sály v obci
+  v podhůří; jméno „Chata" je marketingové, ne funkční. Vyřazení ale čeká na
+  Michalovo potvrzení, protože `_vyrazeno.yaml` nese u každé položky „rozhodl"
+  a tenhle případ nespadá pod žádné existující stálé pravidlo (není to
+  duplicita ani mimo-pohoří — Mysłakowice do krkonošského podhůří patří).
+
+  Vedlejší nález k DATA-29 (přesahové oblasti): kdyby průvodce někdy vedl
+  vrstvu „ubytování v podhůří jako výchozí bod", tohle je její typický zástupce.

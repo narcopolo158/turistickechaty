@@ -28,3 +28,45 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  TRIÁŽ KOŠ C1 — křížové ověření (checked 2026-09-05, WebSearch + otevřené
+  stránky, vše verified: false):
+
+  NÁLEZ DNE: tenhle kandidát a kandidát `restaurace-havlova-bouda`
+  (https://www.openstreetmap.org/node/13115070893) jsou podle pramenů TÝŽ
+  OBJEKT, ne dva. Doklady: (a) OSM uzly leží **3,4 metru od sebe** (50,6865972
+  / 15,7334747 × 50,686627 / 15,7334621) a mají po sobě jdoucí ID (…892
+  a …893) — vznikly jedním editem; (b) oba nesou týž web havlovabouda.cz;
+  (c) oba firemní záznamy mají **shodné IČO 26730901** a shodnou adresu „Pec
+  pod Sněžkou 8, 542 21"; (d) starší, AKTIVNÍ záznam „Havlova bouda"
+  (https://en.firmy.cz/company/2237848-havlova-bouda-pec-pod-snezkou.html)
+  mluví o jednom domě, který restauraci **má**, doslova (anglická verze):
+  „Offer accommodation in a mountain chalet with a total capacity of 35 beds.
+  We offer three to six-bed rooms with shared bathroom. There is a common room
+  with a bar and television. There are ski slopes, cable cars and lifts close
+  to the property. The chalet has a restaurant with catering facilities."
+  Telefon +420 602 872 231 (ubytování) × +420 602 396 109 (restaurace) je
+  jediný rozdíl mezi záznamy — dvě linky jednoho provozu, ne dva objekty.
+
+  SLOUČENÍ ZATÍM NEPROVEDENO — čeká na Michalovu odpověď na otevřenou otázku
+  z 2. 9. 2026 („`jadroNazvu` a slova restaurace/hospoda?"). Michalovo pravidlo
+  z 20. 7. 2026 („jestli je to duplicita podle názvu i podle GPS, pak sloučit")
+  na GPS sedí (3,4 m), na název jen jádrem — „Havlova bouda" × „Restaurace
+  Havlova bouda". Shodné IČO ale ukazuje na tutéž identitu nezávisle na názvu,
+  takže tenhle případ je zároveň konkrétním podkladem k rozhodnutí té obecné
+  otázky. Návrh: sloučit do `havlova-bouda` (starší, obecnější jméno) a uzel
+  …893 zapsat do `_vyrazeno.yaml` jako duplicitu.
+
+  Občerstvení pro veřejnost: DOLOŽENO NEPŘÍMO (aktivní samostatný restaurační
+  záznam na Firmy.cz, popis „Provozujeme restauraci v horské chatě." — detaily
+  viz `restaurace-havlova-bouda.yaml`), doslovná věta o kolemjdoucích chybí
+  i po dnešním čtení.
+
+  Role na trase NEDOLOŽENA — adresa Pec pod Sněžkou 8, tedy středisko; žádný
+  pramen neuvádí značenou trasu. Vlastní web se bezobslužně nepřečetl ani dnes:
+  http://www.havlovabouda.cz/restaurace/ i https://krajinapodsnezkou.cz/ubytovani/havlova-bouda/
+  padají na timeout při čtení robots.txt, https://havlova-bouda.hotel.cz/accommodation/
+  vrací 410. Zůstává na ruční pohled.
+
+  NÁVRH REDAKCI: SPORNÉ S KLÍČEM (středisko Pec pod Sněžkou) + DUPLICITA
+  k `restaurace-havlova-bouda` k rozhodnutí.

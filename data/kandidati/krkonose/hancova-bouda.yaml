@@ -29,3 +29,44 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=hotel (alpine_hut = obsluhovaná, wilderness_hut
   = útulna).
+
+  TRIÁŽ KOŠ C1 — křížové ověření (checked 2026-09-05, WebSearch + otevřené
+  stránky, vše verified: false):
+
+  Občerstvení pro veřejnost DOLOŽENO NEPŘÍMO, doslovná věta o kolemjdoucích
+  chybí. Firmy.cz vede AKTIVNÍ samostatný záznam „Restaurace Hančova bouda"
+  (https://en.firmy.cz/company/12725346-restaurace-hancova-bouda-benecko.html),
+  obor „české a tradiční české restaurace", adresa „Benecko 32, 512 37",
+  telefon +420 603 176 094; popis podniku zní v anglické verzi stránky doslova
+  „Operation of a restaurant offering Czech cuisine. We offer well-conditioned
+  beers and good home-cooked meals. Our chefs try, a bit contrary to today's
+  times, to cook according to the culinary art from the times of our
+  grandmothers." Tj. týž vzor jako u Havlovy boudy: samostatný, aktivní
+  restaurační záznam vedle záznamu ubytovacího. Ani jeden ze čtyř přečtených
+  pramenů ale neříká, že se obslouží i host bez ubytování.
+
+  Vlastní web (https://hancovabouda.cz/en/ — česká verze se bezobslužně
+  nenačetla, proto citace anglicky) mluví o restauraci s krbem a o kapacitě
+  „space for the group as much as 50 people"; o veřejném přístupu nic. Kudy
+  z nudy (https://www.kudyznudy.cz/aktivity/hancova-bouda) jen parafrázuje
+  vlastní web („Restaurace s dominantou krbu v průčelí vás přímo obejme svojí
+  pohodou."). Oficiální stránka obce
+  (https://www.obecbenecko.cz/turistika/ubytovani/hotely/hancova-bouda-1/) uvádí
+  „rustikální prostředí restaurace s krbem" a „zahradní restaurace s grilem",
+  kapacitu 18 dvoulůžkových / 4 třílůžkové / 2 čtyřlůžkové pokoje, telefon
+  +420 481 582 632 (shoda s OSM) a e-mail hancovabouda@quick.cz.
+
+  Role na trase NEDOLOŽENA. Adresa je Benecko 32, tedy středisko; vlastní web
+  polohu popisuje doslova jako „is situated on slow slope among the fields and
+  woods but nevertheless near the road" (česká parafráze na Kudy z nudy:
+  „Hančova bouda je na mírném svahu uprostřed luk a lesů a přece blízko
+  silnice.") — tedy u silnice, ne u značky. Žádný pramen neuvádí značenou trasu
+  ani rozcestník.
+
+  Rok vzniku, nadmořská výška ani historie nejsou v žádném ze čtyř pramenů.
+  Wikipedie heslo „Hančova bouda" má, ale doména je pro bezobslužné čtení
+  jen cache-only — nepřečteno, kandidát na ruční pohled.
+
+  NÁVRH REDAKCI: SPORNÉ S KLÍČEM (středisko Benecko) — týž vzor jako Havlova
+  bouda, Johannova bouda a Chata Hradečanka: občerstvení doložené (nepřímo,
+  aktivním restauračním záznamem), role na trase ne.

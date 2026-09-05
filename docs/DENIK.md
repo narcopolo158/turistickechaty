@@ -29,6 +29,88 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-05 — denní session: trojice C1 přečtena — jedna duplicita, jeden návrh na vyřazení
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging). Vzal jsem tedy „Příště" ze 4. 9.: **trojici C1 bez
+  měřené role na trase** — `hancova-bouda`, `havlova-bouda`, `chata-za-wsia`.
+  U nich měl roli doložit pramen, ne měření.
+- **Do `data/chaty/` se nesáhlo, nic se nevyřadilo ani nesloučilo.** Všechny
+  tři nálezy jsou s URL a datem v `interniPoznamky` kandidátů, dva z nich
+  končí návrhem, který ale potřebuje tvoje slovo (níž).
+- **`havlova-bouda` — nález dne: je to týž objekt jako `restaurace-havlova-bouda`.**
+  Doklady jdou nad rámec jména: OSM uzly leží **3,4 metru od sebe** a mají po
+  sobě jdoucí ID (…892 a …893, tedy jeden edit); oba nesou týž web
+  havlovabouda.cz; oba firemní záznamy mají **shodné IČO 26730901** i adresu
+  „Pec pod Sněžkou 8". A starší, aktivní záznam mluví o jednom domě, který
+  restauraci **má**: „The chalet has a restaurant with catering facilities."
+  Dva různé telefony (602 872 231 ubytování × 602 396 109 restaurace) jsou dvě
+  linky jednoho provozu. Sloučení jsem **neprovedl** — visí to na tvé otevřené
+  otázce o `jadroNazvu` (viz níž).
+- **`hancova-bouda` (Benecko) — týž vzor jako Havlova: občerstvení doložené
+  nepřímo, role na trase ne.** Firmy.cz vede **aktivní** samostatný záznam
+  „Restaurace Hančova bouda" (obor české restaurace, Benecko 32, telefon
+  603 176 094). Doslovná věta o kolemjdoucích ale ve čtyřech pramenech
+  (vlastní web, Kudy z nudy, stránka obce Benecko, Firmy.cz) není. Polohu
+  vlastní web popisuje doslova jako dům „na mírném svahu uprostřed luk a lesů
+  a přece blízko silnice" — u silnice, ne u značky. Návrh: SPORNÉ S KLÍČEM
+  (středisko), stejná přihrádka jako Johannova bouda a Chata Hradečanka.
+- **`chata-za-wsia` — klíč nedrží, a řekl to vlastní web.** Objekt je „Hotel
+  Restauracja Chata za Wsią", Górska 1, **Mysłakowice** — obec v kotlině,
+  „kilka minut od Jeleniej Góry" —, a o poloze píše doslova: „Świetna baza
+  wypadowa na szlaki turystyczne Karkonoszy". To je **opak** role na trase:
+  výchozí bod, kam se přijede autem, ne zastávka pěšího. Restaurace má sice
+  otevřeno „codziennie w godzinach 7:00–21:00", ale druhá půlka klíče chybí
+  tak jako tak. Je to hotel se svatebními sály; „Chata" ve jméně je
+  marketing, ne funkce. Návrh: **VYŘADIT**.
+- **Poznatek k zapamatování:** dnešek je protipól toho, co se učíme od 3. 9.
+  U Havlovy boudy nerozhodl název ani GPS, ale **IČO** — shodné identifikační
+  číslo je doklad totožnosti objektu nezávislý na tom, jak se který uzel
+  jmenuje. Stojí za to ho u sporných duplicit hledat dřív než cokoli jiného.
+  Druhá věc: **„baza wypadowa" je v katalozích formulace, která roli na trase
+  přímo vylučuje** — vyplatí se po ní ve zbytku koše C3 rovnou hledat, ušetří
+  to čtení.
+- Poznámka k prostředí: `npm run kontrola` potřebuje po čerstvém klonu nejdřív
+  `npm ci` (jinak spadne 7 kontrol na chybějícím balíčku `yaml` — není to
+  regrese). Po instalaci **vše zelené**, včetně `kolize-jmen`, která dvojici
+  Havlových bud nezvedla — dvě různá jména, byť týž dům.
+
+**Příště:** měření role na trase nad **košem C3** (120 položek) a řazení podle
+značky místo podle střediska; při čtení rovnou filtrovat na formulace typu
+„baza wypadowa" / „výchozí bod". Vedle toho pořád leží Broumovsko z 28. 8.,
+deset padajících testů (Postgres/exporty) a blokované DATA-04 / DATA-05 /
+DATA-20 / DATA-22 / DATA-25. Tři dnešní návrhy čekají na tebe.
+
+**Otázky pro Michala:**
+
+- **Sloučit `restaurace-havlova-bouda` do `havlova-bouda`?** Tvoje pravidlo
+  z 20. 7. („duplicita podle názvu i podle GPS → sloučit") sedí na GPS (3,4 m),
+  na název jen jádrem. Shodné IČO ale totožnost dokládá nezávisle na jménu —
+  **stačí IČO jako samostatný doklad duplicity?** Tím by se zároveň odpověděla
+  tvá vlastní otevřená otázka o `jadroNazvu` a slovech restaurace/hospoda.
+- **Potvrdíš vyřazení `chata-za-wsia`?** Do `_vyrazeno.yaml` patří ke každé
+  položce „rozhodl" a tenhle případ nespadá pod žádné stálé pravidlo (není to
+  duplicita ani mimo-pohoří — Mysłakowice do podhůří patří). Je to první
+  vyřazení kvůli **povaze objektu** (hotel se svatebními sály).
+- **Bere se aktivní samostatný restaurační záznam na Firmy.cz jako doklad
+  občerstvení pro veřejnost?** Sessions ho tak zatím berou (Havlova, Hančova,
+  Sasanka), ale nikde to není zapsané jako konvence — a od 3. 9. víme, že
+  podobně vypadající OSM tag `amenity=restaurant` doklad NENÍ.
+- Trvá ze 4. 9.: **sousedství 47 metrů (Děčínská bouda × Bouda Růžohorky) jako
+  signál k prověření?**; **zapsat natvrdo konvenci o doslovných citacích**
+  (žádná citace do `overeni*.source` bez druhého adresného dotazu na tutéž
+  stránku)?
+- Trvá z 3. 9.: **patří do průvodce dům, který BYL boudou a dnes je
+  apartmánovým domem** (`lidicka-bouda`)?; **psát `bouda-v-obrim-dole`
+  dohromady s Chatou pod Studničnou?**
+- Trvá z 2. 9.: **„trasa nese boudu v názvu" jako doklad role**
+  (`hoffmannova-bouda`)?; **má se práh 250 m zapsat jako konvence?**;
+  **přenášet `amenity` poraženého při slučování duplicit?**
+
 ## 2026-09-04 — denní session: Děčínská bouda povýšena (79. krkonošský profil) — a jedna vymyšlená citace
 
 **Hotovo:**
