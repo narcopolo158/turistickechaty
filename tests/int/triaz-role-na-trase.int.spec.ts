@@ -17,11 +17,13 @@ import { parse } from 'yaml'
 import { describe, expect, it } from 'vitest'
 
 import type { TrasaRelace } from '../../scripts/data06-trasy'
+import { kose } from '../../scripts/triaz-kos-c'
 import {
   jmenujeCil,
   nactiTrasy,
   roleBodu,
   roleNaTrase,
+  slugyKose,
   U_TRASY_M,
   vzdalenostKUsecceM,
 } from '../../scripts/triaz-role-na-trase'
@@ -106,5 +108,27 @@ describe('role na trase — jméno cíle v názvu trasy', () => {
     // Jmenovec o pět údolí dál o roli kandidáta nedokládá nic.
     const vsechny = roleNaTrase('krkonose', ['hoffmannova-bouda'])[0]
     expect(vsechny.jmenujiCil.every((t) => t.vzdalenostM <= U_TRASY_M)).toBe(true)
+  })
+})
+
+/**
+ * VÝBĚR KOŠE (6. 9. 2026). Měření dostalo `--kos c1|c2|c3`, aby šlo pustit
+ * nad celým košem C3 (120 položek). Test drží, že se výběr bere z `kose()`
+ * — tedy z téhož pravidla, jaké vrství koš C —, a hlavně že se pro C3
+ * NEZTRÁCEJÍ kandidáti: každý slug koše musí mít v repu souřadnice, jinak
+ * ho `nactiKandidaty` tiše vynechá a tabulka bude kratší, než koš je.
+ */
+describe('role na trase — výběr koše', () => {
+  it('slugyKose vrací tytéž koše jako rozvrstvení koše C', () => {
+    expect(slugyKose('krkonose', 'c1')).toEqual(kose('krkonose').c1.map((k) => k.slug))
+    expect(slugyKose('krkonose', 'c3')).toHaveLength(120)
+  })
+
+  it('u koše C3 se měřením neztratí ani jeden kandidát', { timeout: 120_000 }, () => {
+    // Kandidát bez `lat`/`lng` v YAML by z výsledku vypadl bez hlášky —
+    // a chyběl by pak i v pořadí čtení, které z měření vychází.
+    const slugy = slugyKose('krkonose', 'c3')
+    const zmereno = roleNaTrase('krkonose', slugy)
+    expect(zmereno).toHaveLength(slugy.length)
   })
 })

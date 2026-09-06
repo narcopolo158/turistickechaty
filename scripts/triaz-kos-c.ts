@@ -239,22 +239,43 @@ export const kosC = (oblast: string, koren = 'data'): Kandidat[] => {
   return out
 }
 
+/**
+ * Rozvrstvení koše C na C1/C2/C3 — jedno místo pro pravidlo, které do
+ * 6. 9. 2026 žilo jen uvnitř `main()` téhle úlohy. Odsud si ho bere
+ * i `triaz-role-na-trase.ts`, aby se koše nikde neurčovaly dvakrát jinak
+ * (týž důvod, proč se značení bere z `znaceniZTagu` a jádro jména
+ * z `jadroNazvu`).
+ *
+ * C1 a C2 se vracejí seřazené podle vzdálenosti, kterou koš definuje;
+ * **C3 v pořadí, v jakém přišel z `kosC` (podle slugu)** — řazení C3 je
+ * věcí výpisu, ne rozvrstvení.
+ */
+export const kose = (
+  oblast: string,
+  koren = 'data',
+): { c1: Kandidat[]; c2: Kandidat[]; c3: Kandidat[] } => {
+  const vse = kosC(oblast, koren)
+  const maGastroVDosahu = (k: Kandidat): boolean =>
+    k.gastroM !== null && k.gastroM <= GASTRO_DOSAH_M
+  return {
+    c1: vse
+      .filter((k) => k.dvojiZapis !== null)
+      .sort((a, b) => (a.dvojiZapis?.vzdalenostM ?? 0) - (b.dvojiZapis?.vzdalenostM ?? 0)),
+    c2: vse
+      .filter((k) => k.dvojiZapis === null && maGastroVDosahu(k))
+      .sort((a, b) => (a.gastroM ?? 0) - (b.gastroM ?? 0)),
+    c3: vse.filter((k) => k.dvojiZapis === null && !maGastroVDosahu(k)),
+  }
+}
+
 const m = (x: number | null): string => (x === null ? '—' : `${Math.round(x)} m`)
 
 const main = () => {
   const args = process.argv.slice(2)
   const oblast = args.find((a) => !a.startsWith('--')) ?? 'krkonose'
   const md = args.includes('--md')
-  const vse = kosC(oblast)
-  const c1 = vse
-    .filter((k) => k.dvojiZapis !== null)
-    .sort((a, b) => (a.dvojiZapis?.vzdalenostM ?? 0) - (b.dvojiZapis?.vzdalenostM ?? 0))
-  const c2 = vse
-    .filter((k) => k.dvojiZapis === null && k.gastroM !== null && k.gastroM <= GASTRO_DOSAH_M)
-    .sort((a, b) => (a.gastroM ?? 0) - (b.gastroM ?? 0))
-  const c3 = vse.filter(
-    (k) => k.dvojiZapis === null && !(k.gastroM !== null && k.gastroM <= GASTRO_DOSAH_M),
-  )
+  const { c1, c2, c3 } = kose(oblast)
+  const vse = [...c1, ...c2, ...c3]
 
   if (md) {
     console.log(`### C1 · dvojí zápis téhož objektu — ${c1.length}\n`)

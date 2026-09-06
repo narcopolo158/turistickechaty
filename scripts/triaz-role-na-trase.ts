@@ -39,6 +39,7 @@
  * Nic nezapisuje do `data/`, nic nevyřazuje, nic nepovyšuje.
  *
  *   npx tsx scripts/triaz-role-na-trase.ts                        # celý koš C1 Krkonoš
+ *   npx tsx scripts/triaz-role-na-trase.ts --kos c3               # koš C3 (120 položek)
  *   npx tsx scripts/triaz-role-na-trase.ts --slugy a,b,c          # vybraní kandidáti
  *   npx tsx scripts/triaz-role-na-trase.ts jizerske-hory --vse    # všichni kandidáti oblasti
  *   npx tsx scripts/triaz-role-na-trase.ts --md                   # tabulka do dokumentace
@@ -49,7 +50,7 @@ import { join } from 'node:path'
 import { jadroNazvu, vzdalenostM } from './data01-overpass-krkonose'
 import { znaceniZTagu, type TrasaRelace, type Znaceni } from './data06-trasy'
 import { cestyOblasti } from './oblasti'
-import { kosC } from './triaz-kos-c'
+import { kose } from './triaz-kos-c'
 
 /** Do téhle vzdálenosti bereme kandidáta jako ležícího U značené trasy. */
 export const U_TRASY_M = 250
@@ -253,12 +254,18 @@ export const roleNaTrase = (oblast: string, slugy?: string[]): RoleNaTrase[] => 
   return nactiKandidaty(oblast, slugy).map((b) => ({ ...b, ...roleBodu(b, relace, b.nazev) }))
 }
 
+/**
+ * Slugy libovolného koše C. C1 nese občerstvení doložené z OSM a měření mu
+ * dodává druhou půlku klíče; **u C3 je to naopak** — občerstvení doložené
+ * není, takže měření tam o zařazení nerozhoduje vůbec a říká jen, koho má
+ * smysl číst dřív. „Daleko od každé značky" u C3 tedy znamená „ani druhou
+ * půlku klíče měření nedává", ne „vyřadit".
+ */
+export const slugyKose = (oblast: string, kos: 'c1' | 'c2' | 'c3'): string[] =>
+  kose(oblast)[kos].map((k) => k.slug)
+
 /** Slugy koše C1 oblasti (dvojí zápis téhož objektu — gastro doložené z OSM). */
-export const slugyC1 = (oblast: string): string[] =>
-  kosC(oblast)
-    .filter((k) => k.dvojiZapis !== null)
-    .sort((a, b) => (a.dvojiZapis?.vzdalenostM ?? 0) - (b.dvojiZapis?.vzdalenostM ?? 0))
-    .map((k) => k.slug)
+export const slugyC1 = (oblast: string): string[] => slugyKose(oblast, 'c1')
 
 // ── Výpis ───────────────────────────────────────────────────────────────────
 
@@ -275,12 +282,24 @@ const main = () => {
   const oblast = args.find((a) => !a.startsWith('--')) ?? 'krkonose'
   const md = args.includes('--md')
   const vse = args.includes('--vse')
+  const kosArg = args.find((a) => a.startsWith('--kos'))
+  const kos = kosArg
+    ? ((kosArg.split('=')[1] ?? args[args.indexOf(kosArg) + 1] ?? '').toLowerCase() as
+        'c1' | 'c2' | 'c3')
+    : null
+  if (kos && !['c1', 'c2', 'c3'].includes(kos)) {
+    console.error(`Neznámý koš „${kos}" — čekám c1, c2 nebo c3.`)
+    process.exitCode = 1
+    return
+  }
   const slugyArg = args.find((a) => a.startsWith('--slugy'))
   const slugy = slugyArg
     ? (slugyArg.split('=')[1] ?? args[args.indexOf(slugyArg) + 1] ?? '').split(',').filter(Boolean)
-    : vse
-      ? undefined
-      : slugyC1(oblast)
+    : kos
+      ? slugyKose(oblast, kos)
+      : vse
+        ? undefined
+        : slugyC1(oblast)
 
   if (!nactiTrasy(oblast)) {
     console.error(
@@ -302,7 +321,7 @@ const main = () => {
     console.log('| --- | --- | --- | --- | --- |')
     for (const v of vysledky) {
       console.log(
-        `| ${v.nazev} | ${popisZnacky(v.nejblizsi)} | ${v.doPrahu.length} | ${m(v.rozcestnikM)} | ${v.jmenujiCil.length > 0 ? 'ano' : '—'} |`,
+        `| \`${v.slug}\` — ${v.nazev} | ${popisZnacky(v.nejblizsi)} | ${v.doPrahu.length} | ${m(v.rozcestnikM)} | ${v.jmenujiCil.length > 0 ? 'ano' : '—'} |`,
       )
     }
     return

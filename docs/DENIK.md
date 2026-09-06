@@ -29,6 +29,94 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-06 — denní session: koš C3 změřen — a pořadí čtení z 1. 9. míří jinam
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných
+  důvodů (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na
+  tobě, klik na workflow, staging). Vzal jsem tedy „Příště" z 5. 9.: **měření
+  role na trase nad košem C3** (120 položek) a řazení podle značky místo
+  podle střediska.
+- **Do `data/` se nesáhlo** — dnešek je celý měření a dokumentace. Nic se
+  nepovýšilo, nevyřadilo ani nesloučilo.
+- **Rozvrstvení koše C je nově na jednom místě.** `triaz-kos-c.ts` dostal
+  exportovanou `kose(oblast)` vracející `{ c1, c2, c3 }`; do dneška to
+  pravidlo žilo uvnitř `main()` té úlohy a `triaz-role-na-trase.ts` si C1
+  skládal vlastním filtrem — dvě místa, jedno pravidlo. Měření teď umí
+  `--kos c1|c2|c3`. Rozklad drží čísla z 1. 9.: **7 / 4 / 120**.
+- **Nález dne: staré a nové pořadí čtení se skoro nepotkají.** Prvních 20
+  podle vzdálenosti od střediska (doporučení z 1. 9.) a prvních 20 podle
+  vzdálenosti ke značce mají **společnou jedinou položku** —
+  `szkolne-schronisko-mlodziezowe-skalnik`. Devět z dvaceti „nejvzdálenějších
+  od střediska" je přitom **nad prahem 250 m** ke značce, tedy tam, kde
+  měření nedá nic; třináct z dvaceti „nejblíž ke značce" leží naopak **do
+  kilometru od střediska**, kam by staré pořadí poslalo člověka až nakonec.
+  Obojí je vysvětlitelné (jedno hledá dům o samotě, druhé dům u cesty), ale
+  klíč zařazení se ptá na roli na trase — takže **pořadí čtení C3 se od
+  dneška řídí značkou a rozcestníkem, ne střediskem**.
+- **Čísla koše C3:** 84 ze 120 do prahu 250 m (41 z nich má do prahu dvě
+  a víc značek), 36 nad prahem. Pásma: do 50 m — 35, 50–150 m — 33,
+  150–250 m — 16, 250–500 m — 15, 0,5–1 km — 11, nad 1 km — 10.
+- **Deset kandidátů má nejsilnější kombinaci** (do 50 m od značky + dvě a víc
+  značek + rozcestník do 150 m): `chata-viktorka`,
+  `felicity-grand-apartments`, `chata-medika-2411927307`, `chata-gracie`,
+  `chata-jestrab`, `hotel-spindlerova-bouda-depandance`, `hribeci-bouda`,
+  `hotel-cerna-bouda`, `penzion-modrokamenna-bouda`,
+  `mlynarka-ubytovani-v-krkonosich`.
+- **Dva kandidáty jmenuje značená trasa jako cíl** — jediné ze čtyř měření,
+  které mluví přímo o roli: `penzion-modrokamenna-bouda` (zelená č. 4210
+  „Svoboda nad Úpou – Václavák") a `schronisko-srebrny-potok` (žlutá
+  „Jarkowice – Obniżenie za Łysociną"). U Srebrného Potoku se to potkává
+  s párem, který už dřív zvedla kontrola `blizke-body` — číst obojí naráz.
+- **Vedlejší nález: 14 shluků, 36 položek koše.** Kandidáti C3 vzájemně
+  proměření prahem 300 m tvoří shluky; největší jsou pětice u Karpacze se
+  jmény horských květin (`arnika`, `rozeniec`, `lilia`, `goryczka`,
+  `dziewiecsil` — všech pět 1 345–1 367 m od značky a 2 454–2 493 m od
+  střediska) a čtveřice `lodge-1/2/3` + `mounttain-holiday-lodges`
+  u Podgórzyna. **Není to doklad duplicity** (jiná jména, jiné uzly), ale
+  je to doklad, že jde o jedno místo — a tedy že stačí jedno čtení pramene
+  na celý shluk místo pěti.
+- **Testy:** +3 na rozvrstvení koše C (drží rozklad 7/4/120, nepřekrývání,
+  a že C3 je opravdu „bez gastra v dosahu") a +2 na výběr koše v měření
+  (hlavní z nich hlídá, že se u C3 měřením **neztratí ani jeden kandidát** —
+  kandidát bez `lat`/`lng` by tiše vypadl z tabulky). `npm run kontrola`,
+  `tsc` i `lint` zelené.
+- **Zápis do dokumentace:** `docs/KRKONOSE-TRIAZ-KOSE.md` má nový oddíl
+  „KOŠ C3 ZMĚŘEN (6. 9. 2026)" i s celou tabulkou 120 kandidátů seřazenou
+  podle vzdálenosti ke značce. V tabulce je výslovně napsané, že **pořadí
+  je pořadí čtení, ne pořadí zamítání** — koš C3 nemá doložené občerstvení,
+  takže o zařazení nerozhoduje u žádného řádku.
+
+**Příště:** začít číst prameny k desítce s nejsilnější kombinací, od
+`penzion-modrokamenna-bouda` (jmenuje ho trasa) a `schronisko-srebrny-potok`
+(jmenuje ho trasa + otevřený pár z `blizke-body`); u shluků číst jeden
+pramen na celý shluk. Vedle toho pořád leží Broumovsko z 28. 8., deset
+padajících testů (Postgres/exporty) a blokované DATA-04 / DATA-05 /
+DATA-20 / DATA-22 / DATA-25. Otevřené otázky z 2.–5. 9. čekají na tebe.
+
+**Otázky pro Michala:**
+
+- **Bereme „jmenuje ho značená trasa jako cíl" jako doklad role na trase?**
+  U `hoffmannove-boudy` to sessions 2. 9. tak četly, ale zapsané jako
+  konvence to není — a dnes ten signál padl na dva kandidáty koše C3, kde
+  je to jediná půlka klíče, kterou vůbec máme.
+- **Má se u shluků číst jeden pramen na celý shluk?** Pětice u Karpacze
+  vypadá na jeden rekreační areál rozepsaný do pěti uzlů; měření to dokládá
+  jen jako „jedno místo", ne jako jeden podnik. Šetřilo by to čtení, ale
+  vyrábí to riziko, že se do pěti profilů přenese jeden pramen.
+- Trvá z 5. 9.: **sloučit `restaurace-havlova-bouda` do `havlova-bouda`
+  na základě shodného IČO?**; **potvrdíš vyřazení `chata-za-wsia`?**;
+  **bere se aktivní restaurační záznam na Firmy.cz jako doklad občerstvení
+  pro veřejnost?**
+- Trvá ze 4. 9.: **sousedství 47 metrů jako signál k prověření?**;
+  **zapsat natvrdo konvenci o doslovných citacích?**
+- Trvá z 3. 9.: **`lidicka-bouda` — dům, který BYL boudou?**;
+  **`bouda-v-obrim-dole` dohromady s Chatou pod Studničnou?**
+- Trvá z 2. 9.: **má se práh 250 m zapsat jako konvence?**; **přenášet
+  `amenity` poraženého při slučování duplicit?**
+
 ## 2026-09-05 — denní session: trojice C1 přečtena — jedna duplicita, jeden návrh na vyřazení
 
 **Hotovo:**

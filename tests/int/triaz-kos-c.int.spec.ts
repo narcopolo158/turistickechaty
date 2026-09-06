@@ -12,7 +12,7 @@
  */
 import { describe, expect, it } from 'vitest'
 
-import { GASTRO_DOSAH_M, kosC } from '../../scripts/triaz-kos-c'
+import { GASTRO_DOSAH_M, kosC, kose } from '../../scripts/triaz-kos-c'
 
 const vse = kosC('krkonose')
 const dle = (slug: string) => vse.find((k) => k.slug === slug)
@@ -61,6 +61,34 @@ describe('koš C krkonošské triáže', () => {
     for (const k of vse) {
       if (k.strediskoM === null) expect(k.strediskoNazev).toBeNull()
       else expect(k.strediskoM).toBeGreaterThan(0)
+    }
+  })
+})
+
+/**
+ * ROZVRSTVENÍ NA JEDNOM MÍSTĚ (6. 9. 2026). Do dneška žilo pravidlo C1/C2/C3
+ * uvnitř `main()` téhle úlohy a `triaz-role-na-trase.ts` si C1 skládal
+ * vlastním filtrem. Test drží, že `kose()` vrací TÝŽ rozklad jako čísla
+ * z 1. 9. (7 / 4 / 120), že se koše nepřekrývají a že dohromady dávají celý
+ * koš C — jinak by se kandidát tiše ztratil mezi dvěma pořadími čtení.
+ */
+describe('koš C — rozvrstvení na C1/C2/C3', () => {
+  const { c1, c2, c3 } = kose('krkonose')
+
+  it('drží rozklad 7 / 4 / 120 z 1. 9. 2026', () => {
+    expect([c1.length, c2.length, c3.length]).toEqual([7, 4, 120])
+  })
+
+  it('koše se nepřekrývají a dohromady dají celý koš C', () => {
+    const slugy = [...c1, ...c2, ...c3].map((k) => k.slug)
+    expect(new Set(slugy).size).toBe(slugy.length)
+    expect(new Set(slugy)).toEqual(new Set(vse.map((k) => k.slug)))
+  })
+
+  it('C3 je opravdu „bez gastra v dosahu", ne zbytek po jiném pravidle', () => {
+    for (const k of c3) {
+      expect(k.dvojiZapis).toBeNull()
+      if (k.gastroM !== null) expect(k.gastroM).toBeGreaterThan(GASTRO_DOSAH_M)
     }
   })
 })

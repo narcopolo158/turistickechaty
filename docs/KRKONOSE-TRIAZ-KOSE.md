@@ -1082,3 +1082,231 @@ spolehlivě jen v jednom směru („daleko od každé značky = doloženo to nen
 kdežto „blízko" je pozvánka ke čtení. Rozcestníky jsou navíc na polské straně
 řídké (230 z 1 469 v exportu), takže kilometrová čísla u `chata-izerska`
 a `chata-za-wsia` měří hustotu tagování, ne pustinu.
+
+
+## KOŠ C3 ZMĚŘEN (6. 9. 2026) — a pořadí čtení, které z 1. 9. vyšlo, míří jinam
+
+Koš C3 (120 kandidátů, „bez gastra v dosahu") měl od 1. 9. 2026 doporučené
+pořadí čtení: **od nejvzdálenějších od střediska**, protože tam je šance na
+boudu na trase největší. Ta věta ale měla slabinu přiznanou hned u ní —
+vzdálenost od střediska je proxy pro **zástavbu**, ne pro trasu. Od 2. 9. je
+v repu měření, které se ptá přímo na druhou půlku klíče, a dnes proběhlo nad
+celým košem C3: `npx tsx scripts/triaz-role-na-trase.ts krkonose --kos c3`.
+Znovu **bez jediného dotazu do sítě** — nad exportem tras DATA-06, který
+v repu leží.
+
+### Rozvrstvení koše C je teď na jednom místě
+
+`triaz-kos-c.ts` dostal exportovanou funkci `kose(oblast)`, která vrací
+`{ c1, c2, c3 }`. Do dneška to pravidlo žilo uvnitř `main()` té úlohy
+a `triaz-role-na-trase.ts` si C1 skládal vlastním filtrem — dvě místa, jedno
+pravidlo. Teď si oba berou totéž (týž důvod, proč se značení bere jen
+z `znaceniZTagu` a jádro jména jen z `jadroNazvu`), a měření umí vzít
+libovolný koš: `--kos c1|c2|c3`.
+
+### Co měření říká o celém koši C3
+
+| pásmo ke značce | kandidátů |
+| --- | --- |
+| do 50 m | 35 |
+| 50–150 m | 33 |
+| 150–250 m | 16 |
+| 250–500 m | 15 |
+| 0,5–1 km | 11 |
+| nad 1 km | 10 |
+
+**84 ze 120 leží do prahu 250 m** od značené trasy, 41 z nich má do prahu
+dvě a víc různých značek. To je přesně ta mez, kterou měření o sobě samo
+říká: značka vede i středem Špindlerova Mlýna, takže „blízko" v koši, kde
+občerstvení doložené **není**, nerozhoduje o zařazení vůbec — je to jen
+pořadí čtení. Naopak **36 kandidátů nad prahem** znamená, že ani druhou
+půlku klíče jim měření nedá a musel by ji doložit pramen.
+
+### Nález dne: staré a nové pořadí čtení se skoro nepotkají
+
+Prvních dvacet podle vzdálenosti od střediska a prvních dvacet podle
+vzdálenosti ke značce mají **společnou jedinou položku** —
+`szkolne-schronisko-mlodziezowe-skalnik` (23 m ke značce, 7 402 m od
+nejbližšího střediska). Devět z dvaceti „nejvzdálenějších od střediska"
+je přitom **nad prahem 250 m** ke značce, tedy tam, kde měření nedává nic;
+a třináct z dvaceti „nejblíž ke značce" leží **do kilometru od střediska**,
+tedy tam, kam by staré pořadí poslalo člověka až nakonec.
+
+Obojí je vysvětlitelné a nic z toho neruší: „daleko od střediska" hledá dům
+o samotě, „blízko značky" hledá dům u cesty, a v Krkonoších to nejsou tytéž
+domy. Praktický závěr je ale jednoznačný — **pořadí čtení C3 se řídí značkou
+a rozcestníkem, ne střediskem**, protože klíč zařazení se ptá na roli na
+trase, ne na osamělost.
+
+### Nejvýtěžnější desítka, kterou z toho brát
+
+Do 50 m od značky, zároveň dvě a víc značek do prahu a rozcestník do 150 m
+(rozcestník je místo, kde turista rozhoduje, kudy dál):
+
+| kandidát | ke značce | značek do 250 m | rozcestník |
+| --- | --- | --- | --- |
+| `chata-viktorka` | 8 m | 2 | 87 m |
+| `felicity-grand-apartments` | 8 m | 7 | 37 m |
+| `chata-medika-2411927307` | 11 m | 2 | 57 m |
+| `chata-gracie` | 21 m | 2 | 123 m |
+| `chata-jestrab` | 22 m | 2 | 142 m |
+| `hotel-spindlerova-bouda-depandance` | 24 m | 8 | 34 m |
+| `hribeci-bouda` | 24 m | 3 | 40 m |
+| `hotel-cerna-bouda` | 25 m | 4 | 33 m |
+| `penzion-modrokamenna-bouda` | 38 m | 3 | 59 m |
+| `mlynarka-ubytovani-v-krkonosich` | 47 m | 6 | 138 m |
+
+**Dva kandidáty jmenuje značená trasa jako cíl** — a to je jediné ze čtyř
+měření, které mluví přímo o roli, ne o poloze: `penzion-modrokamenna-bouda`
+(zelená č. 4210 „Svoboda nad Úpou – Václavák") a `schronisko-srebrny-potok`
+(žlutá „Jarkowice – Obniżenie za Łysociną"). U Modrokamenné boudy k tomu
+sedí i zbytek — 38 m ke značce, tři značky do prahu, rozcestník 59 m.
+Srebrny Potok navíc **už jednou zvedla kontrola `blizke-body`** jako pár
+se shodou jména (viz oddíl o koši D/E), takže se u něj mají číst obě věci
+naráz.
+
+### Vedlejší nález: čtrnáct shluků, které se dají číst jednou místo pětkrát
+
+Kandidáti C3 vzájemně proměření prahem 300 m tvoří **14 shluků** — dohromady
+36 položek koše, tedy skoro třetina. Největší dva jsou učebnicové:
+
+- **`arnika`, `rozeniec`, `lilia`, `goryczka`, `dziewiecsil`** — pět
+  kandidátů u Karpacze se jmény horských květin, všech pět **1 345–1 367 m**
+  od nejbližší značky a **2 454–2 493 m** od střediska. Ta čísla se u pěti
+  různých objektů takhle neshodnou náhodou.
+- **`lodge-1`, `lodge-2`, `lodge-3`, `mounttain-holiday-lodges`** — 97 až
+  113 m od téže modré u Podgórzyna.
+
+**Není to doklad duplicity** (jiná jména, jiné OSM uzly) a nesmí se tak číst;
+je to doklad, že těch pět či čtyři zápisů popisuje jedno místo, a tedy že
+stačí jedno čtení pramene na celý shluk. Zbylých dvanáct shluků je po dvou
+až čtyřech položkách.
+
+### Celý koš C3 podle vzdálenosti ke značce
+
+Generováno `npx tsx scripts/triaz-role-na-trase.ts krkonose --kos c3 --md`.
+**Pořadí je pořadí čtení, ne pořadí zamítání** — koš C3 nemá doložené
+občerstvení, takže o zařazení tahle tabulka nerozhoduje u žádného řádku.
+
+| kandidát | k nejbližší značce | značek do 250 m | rozcestník | jmenuje ho trasa |
+| --- | --- | --- | --- | --- |
+| `chata-kovarna` — Chata Kovárna | 8 m — zluta · č. 7223 · [Ž] Horní Maršov - Kutná | 3 | 277 m | — |
+| `chata-viktorka` — Chata Viktorka | 8 m — zelena · č. 4228 · Svoboda nad Úpou - Hoffmannova bouda | 2 | 87 m | — |
+| `felicity-grand-apartments` — Felicity Grand Apartments | 8 m — zelena · [Z] Špindlerův mlýn - okruh | 7 | 37 m | — |
+| `apartman-u-potoka` — Apartmán U potoka | 8 m — modra · [M] Horní Maršov - Lysečinská bouda | 3 | 315 m | — |
+| `chata-tereza` — Chata Tereza | 9 m — modra · č. 1817 · [M] Janské Lázně - Pod Starou horou | 1 | 412 m | — |
+| `chata-tobisek` — Chata Tobísek | 9 m — zelena · č. 4208 · [Z] Javoří Mlýn - U Dvorské boudy | 4 | 158 m | — |
+| `chalupa-marsovka` — Chalupa Maršovka | 10 m — modra · [M] Horní Maršov - Lysečinská bouda | 3 | 275 m | — |
+| `sporthotel-svycarska-bouda` — Sporthotel Švýcarská bouda | 10 m — zluta · č. 140007 · [Ž] Labská přehrada hráz. - Pod Černou skálou | 1 | 199 m | — |
+| `chata-medika-2411927307` — Chata Medika | 11 m — cervena · č. 0403 · [Č] Cesta bratří Čapků | 2 | 57 m | — |
+| `bouda-sestidomi` — bouda Šestidomí | 11 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky | 1 | 810 m | — |
+| `chalupa-u-rihu` — Chalupa U Říhů | 11 m — zluta · [Ž] Nad Dolním Dvorem - Klínovka | 1 | 355 m | — |
+| `sosnowy-szept` — Sosnowy Szept | 12 m — cervena · č. GSS · Główny Szlak Sudecki | 1 | 4783 m | — |
+| `sliwkowa-chata-sliwkowa-chata` — Śliwkowa Chata / Sliwkowa Chata | 13 m — modra · Podgórzyn Górny - Przełęcz Karkonoska | 4 | 5132 m | — |
+| `makuka` — Makuka | 16 m — cervena · č. 0431 · [Č] Bucharova cesta | 1 | 291 m | — |
+| `chata-baraba` — Chata Baraba | 17 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky | 2 | 480 m | — |
+| `chata-popelka` — Chata Popelka | 20 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky | 2 | 486 m | — |
+| `chata-gracie` — Chata Grácie | 21 m — zelena · č. 4228 · Svoboda nad Úpou - Hoffmannova bouda | 2 | 123 m | — |
+| `bouda-u-lesa` — Bouda U lesa | 22 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky | 1 | 601 m | — |
+| `chata-jestrab` — Chata Jestřáb | 22 m — zelena · č. 4228 · Svoboda nad Úpou - Hoffmannova bouda | 2 | 142 m | — |
+| `szkolne-schronisko-mlodziezowe-skalnik` — Szkolne Schronisko Młodzieżowe "Skalnik" | 23 m — cervena · č. GSS · Główny Szlak Sudecki | 2 | 8346 m | — |
+| `hotel-spindlerova-bouda-depandance` — Hotel Špindlerova bouda - Depandance | 24 m — cervena · č. 0401 · Cesta česko-polského přátelství | 8 | 34 m | — |
+| `hribeci-bouda` — Hříběcí Bouda | 24 m — cervena · č. 0406 · [Č] Luční bouda - Vrchlabí | 3 | 40 m | — |
+| `horska-chata-hanapetr` — Horská chata HANAPETR | 24 m — zelena · č. 4207 · Špindlerův Mlýn;Hrnčířské boudy;Nad boudou Mír | 2 | 341 m | — |
+| `hotel-cerna-bouda` — Hotel ČERNÁ BOUDA | 25 m — zluta · č. 7211 · [Ž] Černý Důl - Nad Portášovými boudami | 4 | 33 m | — |
+| `schronisko-srebrny-potok` — Schronisko Srebrny Potok | 26 m — zluta · Jarkowice - Obniżenie za Łysociną | 3 | 2560 m | ano |
+| `schronisko-liczyrzepa` — Schronisko Liczyrzepa | 28 m — zelena · Szklarska Poręba - Wałbrzych | 1 | 2747 m | — |
+| `dom-pod-jaworami` — Dom Pod Jaworami | 29 m — modra · Borowice-Miłków | 3 | 5629 m | — |
+| `chata-u-kohouta` — Chata U Kohouta | 30 m — zluta · č. 7227 · Svoboda nad Úpou - Nad Hoffmannovou boudou | 2 | 544 m | — |
+| `wellness-hotel-liberecka-bouda` — Wellness hotel LIBERECKÁ BOUDA | 34 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr | 1 | 1074 m | — |
+| `chata-zapiecek` — Chata Zapiecek | 35 m — modra · Podgórzyn Górny - Przełęcz Karkonoska | 1 | 4809 m | — |
+| `szkolne-schronisko-mlodziezowe-zloty-widok` — Szkolne Schronisko Młodzieżowe ZŁOTY WIDOK | 37 m — modra · Piechowice - Pod Wielkim Szyszakiem | 1 | 6448 m | — |
+| `penzion-modrokamenna-bouda` — Penzion Modrokamenná bouda | 38 m — zelena · č. 4210 · [Z] Svoboda nad Úpou - Václavák | 3 | 59 m | ano |
+| `pension-chata-lovrana` — Pension Chata Lovrana | 38 m — cervena · č. 0407 · [Č] Svoboda nad Úpou - Chata Na Rozcestí | 2 | 295 m | — |
+| `mlynarka-ubytovani-v-krkonosich` — Mlynářka, ubytování v krkonoších | 47 m — zluta · č. 7211 · [Ž] Černý Důl - Nad Portášovými boudami | 6 | 138 m | — |
+| `sruby-podspalov` — sruby Podspálov | 49 m — zelena · NS Údolím Jizery - Riegrova stezka | 2 | 257 m | — |
+| `ministerska` — Ministerská | 53 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr | 1 | 363 m | — |
+| `chalupa-u-medveda` — Chalupa u Medvěda | 54 m — zluta · [Ž] Nad Dolním Dvorem - Klínovka | 1 | 289 m | — |
+| `chata-silnicka` — Chata Silnička | 59 m — modra · Velká Úpa - Nad Portášovými boudami | 1 | 582 m | — |
+| `chata-advokatka` — chata Advokátka | 59 m — zelena · č. 4228 · Svoboda nad Úpou - Hoffmannova bouda | 3 | 200 m | — |
+| `janova-bouda` — Janova bouda | 61 m — zluta · [Ž] Nad Dolním Dvorem - Klínovka | 2 | 62 m | — |
+| `hottur-osrodek-wczasowo-wypoczynkowy` — HOTTUR  Ośrodek Wczasowo-Wypoczynkowy | 62 m — zelena · Szklarska Poręba - Wałbrzych | 2 | 3158 m | — |
+| `chata-lom` — Chata Lom | 66 m — zluta · č. 7310 · [Ž] U Třídomí - Česká Budka | 1 | 835 m | — |
+| `chata-medika` — Chata Medika | 67 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr | 1 | 1283 m | — |
+| `mlodziezowe-schronisko-w-staniszowie` — Młodzieżowe Schronisko w Staniszowie | 80 m — zelena · Cieplice Śląskie - Karpniki | 2 | 10864 m | — |
+| `bouda-mama` — Bouda Máma | 80 m — zluta · č. 7236 · [Ž] U Růžového dolu - Pod Větrníkem | 2 | 264 m | — |
+| `osada-sniezka` — Osada Śnieżka | 83 m — modra · Sudecka Droga św. Jakuba | 1 | 11947 m | — |
+| `wioska-finska-kalevala` — Wioska Fińska Kalevala | 91 m — modra · Borowice-Miłków | 4 | 3801 m | — |
+| `chata-votocka` — Chata Votočka | 93 m — zluta · č. 7308 · [Ž] Rokytnice - Rezek | 1 | 641 m | — |
+| `lodge-1` — Lodge 1 | 97 m — modra · Podgórzyn Górny - Przełęcz Karkonoska | 1 | 5717 m | — |
+| `iskierka` — Iskierka | 100 m — cervena · č. GSS · Główny Szlak Sudecki | 1 | 4413 m | — |
+| `chata-spindler` — Chata Špindler | 101 m — zluta · č. 7362 · [Ž] U Dívčí lávky - Petrovka | 4 | 117 m | — |
+| `ludvikova-bouda` — Ludvikova bouda | 101 m — modra · č. 1816 · U Zrcadlových bud - Janské Lázně | 1 | 324 m | — |
+| `lodge-2` — Lodge 2 | 104 m — modra · Podgórzyn Górny - Przełęcz Karkonoska | 1 | 5714 m | — |
+| `bouda-jirinka` — Bouda Jiřinka | 104 m — modra · č. 1817 · [M] Janské Lázně - Pod Starou horou | 2 | 401 m | — |
+| `baronova-bouda` — Baronova Bouda | 104 m — zluta · [Ž] Nad Dolním Dvorem - Klínovka | 1 | 474 m | — |
+| `szkolne-schronisko-mlodziezowe-plum` — Szkolne Schronisko Młodzieżowe PLUM | 105 m — modra · Piechowice - Pod Wielkim Szyszakiem | 1 | 7179 m | — |
+| `lesna-chata` — Leśna Chata | 106 m — cerna · Szlak dokoła Szklarskiej Poręby | 1 | 3554 m | — |
+| `chata-katerina` — Chata Kateřina | 110 m — cervena · č. 0402 · Labská bouda - Horní Mísečky vlek | 6 | 246 m | — |
+| `penzion-karlova-chata` — Penzion Karlova chata | 110 m — modra · [M] Horní Maršov - Lysečinská bouda | 1 | 1052 m | — |
+| `lodge-3` — Lodge 3 | 111 m — modra · Podgórzyn Górny - Przełęcz Karkonoska | 1 | 5712 m | — |
+| `mounttain-holiday-lodges` — Mounttain Holiday Lodges | 113 m — modra · Podgórzyn Górny - Przełęcz Karkonoska | 1 | 5698 m | — |
+| `java` — Java | 113 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr | 1 | 314 m | — |
+| `chata` — Chata | 126 m — zluta · č. 140007 · [Ž] Labská přehrada hráz. - Pod Černou skálou | 1 | 122 m | — |
+| `chata-varta` — Chata Varta | 134 m — zelena · [Z] U Thamových bud - Nad Pražačkou - H. Maršov | 1 | 822 m | — |
+| `chata-ferra` — Chata FERRA | 138 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky | 1 | 1625 m | — |
+| `krausovy-boudy` — Krausovy boudy | 141 m — zluta · č. 140007 · [Ž] Labská přehrada hráz. - Pod Černou skálou | 1 | 381 m | — |
+| `zacisze-pod-smielcem` — Zacisze Pod Śmielcem | 149 m — cerna · Schronisko Pod Łabskim Szczytem - Pod Petrovou Boudou | 3 | 4477 m | — |
+| `capkova-chata` — Čapkova chata | 150 m — zluta · [Ž] Lesní bouda - Pec pod Sněžkou | 2 | 852 m | — |
+| `chata-opavia` — Chata Opavia | 161 m — cervena · č. 0406 · [Č] Luční bouda - Vrchlabí | 1 | 345 m | — |
+| `turisticka-chata-lajdacek` — Turistická chata Lajdáček | 165 m — zluta · č. 140007 · [Ž] Labská přehrada hráz. - Pod Černou skálou | 1 | 383 m | — |
+| `chata-baronka` — Chata Baronka | 166 m — modra · č. 1810 · [M] Hrnčířské boudy - Vrchlabí (kostel) | 2 | 291 m | — |
+| `chata-jitka` — Chata Jitka | 180 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr | 1 | 1533 m | — |
+| `chata-kabrtova-bouda` — Chata Kábrtova Bouda | 182 m — zluta · č. 7211 · [Ž] Černý Důl - Nad Portášovými boudami | 1 | 256 m | — |
+| `grohmanova-bouda` — Grohmanova bouda | 190 m — cervena · č. 0406 · [Č] Luční bouda - Vrchlabí | 2 | 324 m | — |
+| `dalibor` — Dalibor | 194 m — zelena · [Z] Špindlerův mlýn - okruh | 4 | 306 m | — |
+| `gorska-chata` — Górska Chata | 204 m — cerna · Szlak dokoła Szklarskiej Poręby | 1 | 3091 m | — |
+| `apartmany-tri-boudy` — Apartmány tři boudy | 212 m — cervena · č. 0431 · [Č] Bucharova cesta | 1 | 229 m | — |
+| `zielony-domek` — Zielony Domek | 215 m — cervena · č. GSS · Główny Szlak Sudecki | 1 | 3978 m | — |
+| `chata-honzik` — Chata Honzík | 216 m — modra · č. 1817 · [M] Janské Lázně - Pod Starou horou | 1 | 555 m | — |
+| `chata-pod-lipami` — Chata pod lipami | 219 m — cervena · [Č] místní okruh Rokytno - Horní Domky | 2 | 393 m | — |
+| `chata-orlik` — Chata Orlik | 239 m — zelena · č. 4206 · [Z] Špindlerův Mlýn - Horní Maršov | 4 | 241 m | — |
+| `chalupa-baba-jaga` — Chalupa Baba Jaga | 243 m — modra · č. 1824 · [M] Roh hranic - Prkenný důl | 1 | 627 m | — |
+| `chata-jasanka` — chata Jasanka | 245 m — zluta · č. 140007 · [Ž] Labská přehrada hráz. - Pod Černou skálou | 1 | 478 m | — |
+| `domek-w-karkonoszach` — Domek w Karkonoszach | 246 m — cerna · Sobieszów - Podgórzyn Górny | 2 | 6737 m | — |
+| `happy-house` — Happy House | 263 m — modra · č. 1801 · [M] Harrachov - Špindlerův mlýn | 0 | 423 m | — |
+| `bergpoolhaus` — Bergpoolhaus | 276 m — cervena · č. 0431 · [Č] Bucharova cesta | 0 | 630 m | — |
+| `hajenka-haida` — Hájenka Haida | 277 m — zelena · Pohádková NS | 0 | 595 m | — |
+| `chata-protez` — chata Protěž | 278 m — zelena · Pec pod Sněžkou | 0 | 336 m | — |
+| `wiilla-jagoda-jagniatkow` — Wiilla Jagoda Jagniątków | 282 m — modra · Podgórzyn Dolny - Czarna Przełęcz | 0 | 4204 m | — |
+| `pod-zielonym-dachem` — Pod Zielonym Dachem | 293 m — zelena · Szklarska Poręba - Wałbrzych | 0 | 10665 m | — |
+| `chata-gall` — Chata Gall | 296 m — zluta · [Ž] Nad Dolním Dvorem - Klínovka | 0 | 874 m | — |
+| `chata-beata` — Chata Beata | 305 m — cervena · č. 0403 · [Č] Cesta bratří Čapků | 0 | 316 m | — |
+| `chata-biegacza` — Chata Biegacza | 306 m — cerna · Szlak dokoła Szklarskiej Poręby | 0 | 3138 m | — |
+| `contemplace` — Contemplace | 309 m — zelena · Szklarska Poręba - Wałbrzych | 0 | 3581 m | — |
+| `chata-kubik` — Chata Kubík | 339 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr | 0 | 1485 m | — |
+| `zinneckerovy-boudy` — Zinneckerovy Boudy | 355 m — cervena · č. 0407 · [Č] Svoboda nad Úpou - Chata Na Rozcestí | 0 | 565 m | — |
+| `chata-karolinka` — Chata Karolínka | 367 m — cervena · č. 0431 · [Č] Bucharova cesta | 0 | 398 m | — |
+| `schronisko-mlodziezowe-lubawia` — Schronisko Młodzieżowe LUBAWIA | 375 m — modra · Mieroszów – Lubawka | 0 | 3492 m | — |
+| `chalupa-sport` — Chalupa Sport | 436 m — modra · č. 1805 · [M] Jablonec n. Jiz. - Pod Černou skálou | 0 | 492 m | — |
+| `chata-solunka` — Chata Solunka | 520 m — zluta · č. 7307 · [Ž] Rokytnice n. Jiz - Sedlo Mokrá Prelecz | 0 | 733 m | — |
+| `chata-uvaly` — Chata Úvaly | 571 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky | 0 | 950 m | — |
+| `mohwaldova-bouda` — Möhwaldova bouda | 588 m — zluta · č. 7207 · [Ž] Žalý - Vrchlabí | 0 | 943 m | — |
+| `browarowka` — Browarówka | 627 m — modra · Sudecka Droga św. Jakuba | 0 | 12405 m | — |
+| `widokowo` — Widokowo | 644 m — cerna · Karpacz Muzeum Zabawek - Sowia Przełęcz | 0 | 3323 m | — |
+| `szkolne-schronisko-mlodziezowe-wojtek` — Szkolne Schronisko Młodzieżowe "Wojtek" | 700 m — modra · Szklarska Poręba - Pasterka | 0 | 5750 m | — |
+| `lyzarsky-vlek-ubytovani` — Lyžařský vlek - ubytování | 752 m — cervena · č. 0404 · [Č] Náchod - Pod Pasekou | 0 | 950 m | — |
+| `widok-na-sniezke` — Widok na Śnieżkę | 811 m — modra · Sudecka Droga św. Jakuba | 0 | 12190 m | — |
+| `holiday-park-resort` — Holiday Park & Resort | 837 m — zelena · Cieplicki szlak spacerowy Zielony | 0 | 11423 m | — |
+| `ostoja-karkonoska` — Ostoja Karkonoska | 875 m — modra · Podgórzyn Dolny - Czarna Przełęcz | 0 | 7618 m | — |
+| `chata-botas` — Chata Botas | 875 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky | 0 | 1173 m | — |
+| `jawa` — Jawa | 1044 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky | 0 | 1079 m | — |
+| `sokolska-chata-babeta` — Sokolská chata Babeta | 1070 m — zluta · [Ž] Poniklá - Roztoky u Semil | 0 | 1219 m | — |
+| `czarodziejska-gora` — Czarodziejska Góra | 1125 m — modra · Szklarska Poręba - Pasterka | 0 | 14907 m | — |
+| `arnika` — Arnika | 1345 m — modra · Borowice-Miłków | 0 | 4885 m | — |
+| `rozeniec` — Różeniec | 1350 m — modra · Borowice-Miłków | 0 | 4884 m | — |
+| `goryczka` — Goryczka | 1355 m — modra · Borowice-Miłków | 0 | 4884 m | — |
+| `lilia` — Lilia | 1362 m — modra · Borowice-Miłków | 0 | 4884 m | — |
+| `dziewiecsil` — Dziewiećsił | 1367 m — modra · Borowice-Miłków | 0 | 4884 m | — |
+| `apartamenty-every-sky` — Apartamenty Every Sky | 1421 m — modra · Borowice-Miłków | 0 | 5101 m | — |
+| `przystan-nad-bobrem` — Przystań nad Bobrem | 2820 m — cervena · č. GSS · Główny Szlak Sudecki | 0 | 9044 m | — |
