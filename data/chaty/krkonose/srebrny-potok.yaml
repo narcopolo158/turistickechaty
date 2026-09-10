@@ -74,7 +74,12 @@ overeniHistorie:
   checked: '2026-07-26'
 
 # ── Provoz ────────────────────────────────────────────────────────────────
+# Telefon a e-mail DOPLNĚNY 10. 9. 2026 z OSM way/738607232 — z druhého
+# zápisu téhož domu (viz interniPoznamky). `verified: false`, vlastním
+# dotazem neověřeno; týž telefon nese i starší zápis node/8939671641.
 kontakty:
+  telefon: +48 883 715 719
+  email: schronisko.s.potok@gmail.com
   web: https://srebrny-potok.net/
 sezona: celoročně
 otviraciDoba: >-
@@ -136,4 +141,6 @@ interniPoznamky: |-
   Povýšeno z data/kandidati/krkonose/srebrny-potok.yaml (DATA-01, OSM) 27. 7. 2026 — schváleno Michalem 20. 7. 2026 (✅ en bloc), provedeno z citací triáže DATA-27 (plné citace tam).
   OPRAVA STARŠÍHO ZÁPISU: poloha „u Przełęczy Okraj" z kandidáta byla špatně — vlastní web klade objekt nad Jarkowice na Grzbiet Lasocki. Věta „nejníže položený a nejvýchodnější objekt průvodce" je ověřitelná proti korpusu (615 m je minimum; lng 15.88 maximum) — přepočítat při růstu korpusu.
   ROZPOR kapacity 45 (vlastní web) × 35 (Naszesudety) — dle pravidla Michala (27. 7. 2026) pole nese NIŽŠÍ číslo 35, přiznáno v próze.
-  K dotažení: historie (polské prameny?), provozovatel, telefon/e-mail, polský znaczek (seznam znaczki-turystyczne.pl ze sandboxu nedostupný), hero fotka, GPS proti mapě.
+  K dotažení: historie (polské prameny?), provozovatel, polský znaczek (seznam znaczki-turystyczne.pl ze sandboxu nedostupný), hero fotka, GPS proti mapě.
+  ROLE NA TRASE ZMĚŘENA 10. 9. 2026 (nad exportem tras DATA-06, bez dotazu do sítě) — a je to nejsilnější doklad, jaký k tomuhle objektu máme. Schronisko leží 26 m od žluté značky „Jarkowice – Obniżenie za Łysociną", do 250 m má tři značené trasy, a hlavně: DVĚ ČERVENÉ TRASY HO JMENUJÍ PŘÍMO JAKO KONCOVÝ BOD ÚSEKU — „Rozdroże Kowarskie – Schronisko Srebrny Potok" a „Schronisko Srebrny Potok – Pod Albeřickým vrchem". Značení tedy s objektem počítá jako s orientačním bodem trasy; druhou půlku klíče zařazení (role na trase) to dokládá silněji než próza profilu, která se opírá jen o povahu podniku. Rozcestník je daleko (2,6 km), což u koncového bodu úseku nevadí. POZOR na konvenci: „jmenuje ho značená trasa jako cíl" jako doklad role visí jako otevřená otázka na Michalovi (deník 6. 9. 2026) — do veřejné prózy se tedy zatím nepřepisuje.
+  TELEFON A E-MAIL DOPLNĚNY 10. 9. 2026 z OSM way/738607232 (druhý zápis téhož domu, registr jmenovců „srebrny potok"): +48 883 715 719 a schronisko.s.potok@gmail.com, obojí verified:false. Tím se z fronty „k dotažení" škrtá položka telefon/e-mail — ale ne ověření: potvrzení z první ruky pořád chybí.

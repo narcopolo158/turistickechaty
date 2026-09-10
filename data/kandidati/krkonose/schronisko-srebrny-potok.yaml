@@ -30,3 +30,13 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=hostel (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  NEČÍST JAKO NOVÉHO KANDIDÁTA (10. 9. 2026). Registr `data/_jmenovci.yaml`
+  rozhodl už 22. 8. 2026, že jde o TÝŽ OBJEKT jako publikovaný profil
+  `data/chaty/krkonose/srebrny-potok.yaml` (6 m, shodná doména
+  srebrny-potok.net) — tenhle soubor je druhý OSM zápis téhož domu
+  (way/738607232 × node/8939671641), ne druhá chata. Měření role na trase,
+  které pod tímhle slugem vyšlo (žlutá 26 m; dvě červené trasy jmenují
+  schronisko jako koncový bod úseku), je zapsané v profilu. Odtud se do
+  profilu 10. 9. 2026 přenesl telefon a e-mail z OSM tagů — jinak tenhle
+  soubor nenese nic, co by profil neměl. NEPOVYŠOVAT.

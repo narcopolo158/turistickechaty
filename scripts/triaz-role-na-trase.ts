@@ -50,7 +50,7 @@ import { join } from 'node:path'
 import { jadroNazvu, vzdalenostM } from './data01-overpass-krkonose'
 import { znaceniZTagu, type TrasaRelace, type Znaceni } from './data06-trasy'
 import { cestyOblasti } from './oblasti'
-import { kose } from './triaz-kos-c'
+import { kose, rozhodnuteDuplicity } from './triaz-kos-c'
 
 /** Do téhle vzdálenosti bereme kandidáta jako ležícího U značené trasy. */
 export const U_TRASY_M = 250
@@ -314,14 +314,20 @@ const main = () => {
     (a, b) => (a.nejblizsi?.vzdalenostM ?? Infinity) - (b.nejblizsi?.vzdalenostM ?? Infinity),
   )
 
+  // Registr jmenovců u části kandidátů už rozhodl, že jde o druhý zápis
+  // téhož domu. Měření se u nich udělá stejně (je zadarmo), ale výpis to
+  // říká nahlas, ať se k duplicitnímu slugu nečtou prameny podruhé.
+  const duplicity = rozhodnuteDuplicity(oblast)
+
   if (md) {
     console.log(
-      `| kandidát | k nejbližší značce | značek do ${U_TRASY_M} m | rozcestník | jmenuje ho trasa |`,
+      `| kandidát | k nejbližší značce | značek do ${U_TRASY_M} m | rozcestník | jmenuje ho trasa | rozhodnutá duplicita |`,
     )
-    console.log('| --- | --- | --- | --- | --- |')
+    console.log('| --- | --- | --- | --- | --- | --- |')
     for (const v of vysledky) {
+      const duplicita = duplicity.get(v.slug)
       console.log(
-        `| \`${v.slug}\` — ${v.nazev} | ${popisZnacky(v.nejblizsi)} | ${v.doPrahu.length} | ${m(v.rozcestnikM)} | ${v.jmenujiCil.length > 0 ? 'ano' : '—'} |`,
+        `| \`${v.slug}\` — ${v.nazev} | ${popisZnacky(v.nejblizsi)} | ${v.doPrahu.length} | ${m(v.rozcestnikM)} | ${v.jmenujiCil.length > 0 ? 'ano' : '—'} | ${duplicita ? `týž objekt jako \`${duplicita.partner}\`` : '—'} |`,
       )
     }
     return
@@ -331,6 +337,11 @@ const main = () => {
   console.log(`(měřeno nad exportem DATA-06 v repu; práh „u trasy" = ${U_TRASY_M} m)\n`)
   for (const v of vysledky) {
     console.log(`${v.slug} — ${v.nazev}`)
+    const duplicita = duplicity.get(v.slug)
+    if (duplicita)
+      console.log(
+        `    TÝŽ OBJEKT JAKO ${duplicita.partner} (${m(duplicita.vzdalenostM)}, registr jmenovců) — prameny číst tam`,
+      )
     console.log(`    nejbližší značka: ${popisZnacky(v.nejblizsi)}`)
     console.log(
       `    značených tras do ${U_TRASY_M} m: ${v.doPrahu.length}` +

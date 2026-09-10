@@ -29,6 +29,95 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-10 — denní session: čtvrtina fronty čtení byla už rozhodnutá
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging). Vzal jsem tedy „Příště" z 6. 9.: **číst prameny
+  k desítce nejsilnějších kandidátů koše C3**, od `penzion-modrokamenna-bouda`
+  a `schronisko-srebrny-potok`.
+- **Nález dne: první dva na řadě prameny nepotřebovaly.** Oba jsou **druhým
+  OSM zápisem téhož domu** a `data/_jmenovci.yaml` o obou rozhodl už dřív —
+  Srebrny Potok 22. 8. (6 m od publikovaného profilu), Modrokamenná 31. 8.
+  (0 m od bohatšího kandidátského souboru). Třetí případ přibyl měřením:
+  `hotel-cerna-bouda` je 14 m od publikovaného profilu Černá bouda.
+  **Tři z dvanácti položek jmenovaných 6. 9. k přednostnímu čtení** jsou tedy
+  práce, kterou už někdo udělal — čtvrtina fronty.
+- **Do `data/chaty/` se sáhlo jednou, do `data/kandidati/` třikrát**, nic se
+  nevyřadilo, nepovýšilo ani nesloučilo.
+- **Fronta čtení se nově škrtá strojově.** `scripts/triaz-kos-c.ts` má
+  `rozhodnuteDuplicity(oblast)`; obě triážní úlohy takového kandidáta ve výpisu
+  označí „TÝŽ OBJEKT JAKO … — prameny číst tam". **Složení košů se nemění**
+  (drží 7 / 4 / 120), je to škrt ve frontě, ne verdikt.
+- **Práh je 30 m (`TYZ_DUM_M`), ne shoda jména** — a v tom je celý vtip.
+  Registr vede pod jedním jádrem jména duplicity i skutečné jmenovce; podle
+  jména by z fronty vypadly dva různé domy. Měření sedí se slovním verdiktem
+  registru u **všech pěti** krkonošských dvojic v koších C: tři pod prahem jsou
+  „týž objekt", `decinska-bouda` × `bouda-ruzohorky` (47,2 m, čp. 181 × 182)
+  a `chata-jerabinka` × `pomezni-bouda` (48,4 m, různé weby) zůstávají jako dva
+  sousední domy, `chata-medika` × `chata-medika-2411927307` (15,6 km) jako
+  učebnicový jmenovec.
+- **Vedlejší výtěžek — měření pod duplicitními slugy platí pro objekt, ne pro
+  slug, takže jsem ho přepsal tam, kam patří:**
+  - **Srebrny Potok** (publikovaný profil): žlutá značka 26 m, tři trasy do
+    250 m a **dvě červené trasy jmenují schronisko jako koncový bod úseku**
+    („Rozdroże Kowarskie – Schronisko Srebrny Potok"; „Schronisko Srebrny
+    Potok – Pod Albeřickým vrchem"). Profil se o roli na trase do dneška opíral
+    jen o povahu podniku. Z OSM zápisu duplicity se doplnil **telefon
+    +48 883 715 719 a e-mail schronisko.s.potok@gmail.com** (`verified: false`)
+    — z fronty „k dotažení" tím padá položka telefon/e-mail.
+  - **Modrokamenná bouda** (kandidát): zelená č. 4210 na 38 m, tři trasy do
+    250 m, rozcestník 59 m, **žlutá trasa ji jmenuje v popisu úseku** („[Ž]
+    Horní Maršov – Modrokamenná bouda"). S veřejnou restaurací doloženou
+    doslovnou větou webu obce má **obě půlky klíče doložené** — zbývá tvoje
+    rozhodnutí o sloučení duplicity.
+- **Do veřejné prózy se z toho nepřepsalo nic** — signál „jmenuje ho trasa jako
+  cíl" visí na tvé otevřené otázce z 6. 9., vede se tedy jako měření
+  v `interniPoznamky`.
+- **Testy:** +4 na rozhodnuté duplicity (že se najdou právě tři, že z fronty
+  **nevypadne** jmenovec ani sousední bouda, že je každá pod prahem, a že se
+  nemění složení košů). `npm run kontrola`, `tsc` i `lint` zelené.
+- **Zápis do dokumentace:** `docs/KRKONOSE-TRIAZ-KOSE.md` má oddíl „FRONTA
+  ČTENÍ PROŠKRTNUTA (10. 9. 2026)" s tabulkou tří duplicit a s kontrolou prahu
+  proti registru.
+
+**Příště:** číst prameny k desítce z 6. 9. **bez tří škrtnutých** — tedy od
+`chata-viktorka` (zelená č. 4228 na 8 m, dvě značky, rozcestník 87 m), dál
+`chata-gracie`, `chata-jestrab`, `hribeci-bouda`, `chata-medika-2411927307`
+(pozor: jmenovec, ne duplicita — Albeřice, doména alberice.slinet.cz),
+`felicity-grand-apartments`, `hotel-spindlerova-bouda-depandance`,
+`mlynarka-ubytovani-v-krkonosich`; u shluků číst jeden pramen na celý shluk.
+Vedle toho pořád leží Broumovsko z 28. 8., deset padajících testů
+(Postgres/exporty) a blokované DATA-04 / DATA-05 / DATA-20 / DATA-22 /
+DATA-25. Otevřené otázky z 2.–6. 9. čekají na tebe.
+
+**Otázky pro Michala:**
+
+- **Má se `rozhodnuteDuplicity` zapsat i jako kontrola v `npm run kontrola`?**
+  Dnes je to jen značka do výpisu triáže. Jako kontrola by hlídala, že se
+  k rozhodnuté duplicitě nezaloží druhý profil — ale taky by mohla hlásit
+  dvojice, které vědomě držíš oba.
+- Trvá z 6. 9.: **bereme „jmenuje ho značená trasa jako cíl" jako doklad role
+  na trase?** Dnes na tom stojí dva nejlepší dnešní nálezy (Srebrny Potok
+  a Modrokamenná bouda), takže se ta otázka začíná řetězit.
+- Trvá z 6. 9.: **má se u shluků číst jeden pramen na celý shluk?**
+- Trvá z 5. 9.: **sloučit `restaurace-havlova-bouda` do `havlova-bouda`
+  na základě shodného IČO?**; **potvrdíš vyřazení `chata-za-wsia`?**; **bere se
+  aktivní restaurační záznam na Firmy.cz jako doklad občerstvení pro
+  veřejnost?** — a nově k tomu patří **sloučení `penzion-modrokamenna-bouda`
+  do `modrokamenna-bouda`** (návrh leží od 31. 8., dnes k němu přibyla role
+  na trase; po sloučení má kandidát obě půlky klíče a je zralý na povýšení).
+- Trvá ze 4. 9.: **sousedství 47 metrů jako signál k prověření?** (dnešní práh
+  30 m tu dvojici vědomě nechává jako dva domy — což je s tvou odpovědí
+  provázané); **zapsat natvrdo konvenci o doslovných citacích?**
+- Trvá z 3. 9.: **`lidicka-bouda` — dům, který BYL boudou?**;
+  **`bouda-v-obrim-dole` dohromady s Chatou pod Studničnou?**
+- Trvá z 2. 9.: **má se práh 250 m zapsat jako konvence?**; **přenášet
+  `amenity` poraženého při slučování duplicit?**
+
 ## 2026-09-06 — denní session: koš C3 změřen — a pořadí čtení z 1. 9. míří jinam
 
 **Hotovo:**

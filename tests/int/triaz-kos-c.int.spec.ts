@@ -12,7 +12,13 @@
  */
 import { describe, expect, it } from 'vitest'
 
-import { GASTRO_DOSAH_M, kosC, kose } from '../../scripts/triaz-kos-c'
+import {
+  GASTRO_DOSAH_M,
+  kosC,
+  kose,
+  rozhodnuteDuplicity,
+  TYZ_DUM_M,
+} from '../../scripts/triaz-kos-c'
 
 const vse = kosC('krkonose')
 const dle = (slug: string) => vse.find((k) => k.slug === slug)
@@ -90,5 +96,51 @@ describe('koš C — rozvrstvení na C1/C2/C3', () => {
       expect(k.dvojiZapis).toBeNull()
       if (k.gastroM !== null) expect(k.gastroM).toBeGreaterThan(GASTRO_DOSAH_M)
     }
+  })
+})
+
+/**
+ * ROZHODNUTÉ DUPLICITY VE FRONTĚ ČTENÍ (10. 9. 2026). Měření koše C3 z 6. 9.
+ * postavilo pořadí čtení podle značky a do desítky „nejsilnějších" pustilo
+ * tři kandidáty, o kterých registr jmenovců dávno rozhodl, že jsou druhým
+ * zápisem téhož domu. Test drží obojí naráz: že se takový kandidát pozná,
+ * a hlavně že se z fronty NEVYHODÍ jmenovec — dva různé domy téhož jména
+ * (Chata Medika × Chata Medika, 15,6 km) i dvě sousední boudy (47 a 48 m)
+ * musí zůstat ke čtení. Práh je proto `TYZ_DUM_M`, ne shoda jména.
+ */
+describe('koš C — kandidáti, o kterých registr jmenovců už rozhodl', () => {
+  const duplicity = rozhodnuteDuplicity('krkonose')
+
+  it('ve frontě čtení koše C najde právě tři rozhodnuté duplicity', () => {
+    // Mapa pokrývá celou oblast (a obě strany dvojice — profil i kandidáta);
+    // fronty čtení se týkají jen ty položky, které leží v koších C.
+    const vKosi = vse.map((k) => k.slug).filter((slug) => duplicity.has(slug))
+    expect(vKosi.sort()).toEqual([
+      'hotel-cerna-bouda',
+      'penzion-modrokamenna-bouda',
+      'schronisko-srebrny-potok',
+    ])
+    expect(duplicity.get('schronisko-srebrny-potok')?.partner).toBe('krkonose/srebrny-potok')
+    expect(duplicity.get('hotel-cerna-bouda')?.partner).toBe('krkonose/cerna-bouda')
+  })
+
+  it('nevyhodí z fronty jmenovce ani sousední boudu', () => {
+    // Dva různé domy téhož jména na opačných stranách Krkonoš (15 601 m).
+    expect(duplicity.has('chata-medika')).toBe(false)
+    expect(duplicity.has('chata-medika-2411927307')).toBe(false)
+    // Sousedé s různými čísly popisnými a různými weby (47,2 a 48,4 m) —
+    // registr je vede jako DVA objekty, ne jako duplicitu.
+    expect(duplicity.has('decinska-bouda')).toBe(false)
+    expect(duplicity.has('chata-jerabinka')).toBe(false)
+  })
+
+  it('každá nalezená duplicita je měřená pod prahem téhož domu', () => {
+    for (const z of duplicity.values()) expect(z.vzdalenostM).toBeLessThanOrEqual(TYZ_DUM_M)
+  })
+
+  it('nemění složení košů — je to značka do výpisu, ne filtr', () => {
+    const { c1, c2, c3 } = kose('krkonose')
+    expect([c1.length, c2.length, c3.length]).toEqual([7, 4, 120])
+    expect(c3.some((k) => k.slug === 'schronisko-srebrny-potok')).toBe(true)
   })
 })

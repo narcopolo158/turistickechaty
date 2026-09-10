@@ -51,6 +51,16 @@ import { normalizujOsm, vzdalenostM } from './kontrola/blizke-body'
 /** Práh, na kterém dva OSM elementy popisují týž dům (viz komentář výš). */
 export const GASTRO_DOSAH_M = 30
 
+/**
+ * Práh, na kterém dva zápisy popisují TÝŽ DŮM. Je to schválně totéž číslo
+ * jako `GASTRO_DOSAH_M` a z téhož důvodu (dvě OSM entity v půdorysu jedné
+ * budovy); měří se jím ale jiná věc — ne gastro element u kandidáta, nýbrž
+ * dvojice, o které už rozhodl registr jmenovců. Krkonošská data drží obojí:
+ * pod prahem leží tři registrem potvrzené duplicity, nad ním dvě dvojice
+ * sousedních bud (47 a 48 m).
+ */
+export const TYZ_DUM_M = GASTRO_DOSAH_M
+
 /** OSM tagy, kterými se v exportu hlásí veřejné občerstvení. */
 export const GASTRO_AMENITY = new Set([
   'restaurant',
@@ -268,6 +278,80 @@ export const kose = (
   }
 }
 
+/**
+ * KANDIDÁTI, O KTERÝCH UŽ REGISTR JMENOVCŮ ROZHODL, ŽE JSOU TÝŽ OBJEKT
+ * JAKO NĚCO JINÉHO (10. 9. 2026).
+ *
+ * `data/_jmenovci.yaml` vede dvojice se shodným jádrem jména a u každé
+ * říká, jestli jde o dva různé domy (jmenovci), nebo o jeden dům ve dvou
+ * zápisech. Pro pořadí ČTENÍ je ten rozdíl zásadní: jmenovce přečíst
+ * musíme (jsou to dva objekty), kdežto druhý zápis téhož domu je práce,
+ * kterou už někdo udělal — profil nebo bohatší kandidátský soubor existuje
+ * a čtení pramenů patří tam, ne k duplicitnímu slugu.
+ *
+ * Rozlišuje se MĚŘENÍM, ne čtením prózy pole `duvod`: partner z registru
+ * musí ležet ve stejné oblasti a do `TYZ_DUM_M`. Dvojice Chata Medika ×
+ * Chata Medika (15 601 m, opačné strany Krkonoš) tak ve frontě čtení
+ * zůstane, kdežto Hotel Černá bouda (14 m od publikovaného profilu)
+ * z ní vypadne.
+ *
+ * KŘÍŽOVÁ KONTROLA PROTI REGISTRU (10. 9. 2026): měření sedí se slovním
+ * verdiktem registru u všech pěti krkonošských dvojic v koších C — tři
+ * pod prahem jsou v registru popsané jako „týž objekt" (Černá bouda 14 m,
+ * Modrokamenná 0 m, Srebrny Potok 6 m), dvě nad prahem jako dva sousední
+ * domy (Děčínská × Růžohorky 47 m, Jeřabinka × Pomezní 48 m — různá čísla
+ * popisná, různé weby). Práh tedy nerozhoduje víc, než co už rozhodla
+ * redakce; jen to čte strojově.
+ *
+ * NEVYŘAZUJE a nemění složení košů — je to značka do výpisu, aby se nad
+ * rozhodnutou duplicitou nestrávila session čtením pramenů.
+ */
+export const rozhodnuteDuplicity = (
+  oblast: string,
+  koren = 'data',
+): Map<string, { partner: string; vzdalenostM: number }> => {
+  const out = new Map<string, { partner: string; vzdalenostM: number }>()
+  const registr = join(koren, '_jmenovci.yaml')
+  if (!existsSync(registr)) return out
+  const d = parse(readFileSync(registr, 'utf8')) as { jmenovci?: { objekty?: string[] }[] } | null
+
+  /** Souřadnice objektu `oblast/slug` — profil má přednost před kandidátem. */
+  const bod = (klic: string): { lat: number; lng: number } | null => {
+    const [obl, slug] = klic.split('/')
+    if (!obl || !slug) return null
+    for (const podadresar of ['chaty', 'kandidati']) {
+      const cesta = join(koren, podadresar, obl, `${slug}.yaml`)
+      if (!existsSync(cesta)) continue
+      const obsah = readFileSync(cesta, 'utf8')
+      const lat = cislo(obsah, 'lat')
+      const lng = cislo(obsah, 'lng')
+      if (lat !== null && lng !== null) return { lat, lng }
+    }
+    return null
+  }
+
+  for (const zaznam of d?.jmenovci ?? []) {
+    const objekty = zaznam.objekty ?? []
+    for (const a of objekty) {
+      if (!a.startsWith(`${oblast}/`)) continue
+      const bodA = bod(a)
+      if (!bodA) continue
+      for (const b of objekty) {
+        if (b === a || !b.startsWith(`${oblast}/`)) continue
+        const bodB = bod(b)
+        if (!bodB) continue
+        const vzdalenost = vzdalenostM(bodA, bodB)
+        if (vzdalenost > TYZ_DUM_M) continue
+        const slug = a.slice(oblast.length + 1)
+        const drivejsi = out.get(slug)
+        if (drivejsi && drivejsi.vzdalenostM <= vzdalenost) continue
+        out.set(slug, { partner: b, vzdalenostM: vzdalenost })
+      }
+    }
+  }
+  return out
+}
+
 const m = (x: number | null): string => (x === null ? '—' : `${Math.round(x)} m`)
 
 const main = () => {
@@ -305,6 +389,7 @@ const main = () => {
     return
   }
 
+  const duplicity = rozhodnuteDuplicity(oblast)
   console.log(`Koš C oblasti ${oblast}: ${vse.length} kandidátů`)
   console.log(`  C1 dvojí zápis téhož objektu (jádro jména do ${SLOUCIT_DO_M} m): ${c1.length}`)
   console.log(`  C2 gastro jiného jména do ${GASTRO_DOSAH_M} m:                  ${c2.length}`)
@@ -331,6 +416,17 @@ const main = () => {
       (k) => k.strediskoM !== null && k.strediskoM > od && k.strediskoM <= doM,
     ).length
     console.log(`  ${popis.padEnd(10)} ${n}`)
+  }
+
+  // Rozhodnuté duplicity se vypisují na konci, protože nejsou vrstvou koše,
+  // ale škrtem ve frontě čtení: k těmhle slugům se prameny číst nemají.
+  const zasazene = vse.filter((k) => duplicity.has(k.slug))
+  console.log(
+    `\nUŽ ROZHODNUTO REGISTREM JMENOVCŮ — týž objekt, prameny číst jinde: ${zasazene.length}`,
+  )
+  for (const k of zasazene) {
+    const z = duplicity.get(k.slug)!
+    console.log(`  ${k.slug} — ${k.nazev}: ${m(z.vzdalenostM)} → ${z.partner}`)
   }
 }
 

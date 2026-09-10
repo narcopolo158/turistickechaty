@@ -1310,3 +1310,62 @@ občerstvení, takže o zařazení tahle tabulka nerozhoduje u žádného řádk
 | `dziewiecsil` — Dziewiećsił | 1367 m — modra · Borowice-Miłków | 0 | 4884 m | — |
 | `apartamenty-every-sky` — Apartamenty Every Sky | 1421 m — modra · Borowice-Miłków | 0 | 5101 m | — |
 | `przystan-nad-bobrem` — Przystań nad Bobrem | 2820 m — cervena · č. GSS · Główny Szlak Sudecki | 0 | 9044 m | — |
+
+## FRONTA ČTENÍ PROŠKRTNUTA (10. 9. 2026) — tři z deseti „nejsilnějších" jsou dávno rozhodnuté duplicity
+
+Měření z 6. 9. 2026 postavilo pořadí čtení koše C3 podle značky a vybralo
+z něj **desítku s nejsilnější kombinací** (do 50 m od značky + dvě a víc
+značek + rozcestník do 150 m), plus dva kandidáty, které značená trasa jmenuje
+jako cíl. Dnešní session měla tu frontu začít číst. První dva na řadě ale
+prameny nepotřebovaly — **potřebovaly nahlédnout do registru jmenovců**.
+
+**Nález:** ve frontě čtení koše C leží **tři** kandidáti, o kterých
+`data/_jmenovci.yaml` dávno rozhodl, že jsou **druhým zápisem téhož domu**:
+
+| kandidát | týž objekt jako | naměřeno | rozhodnuto |
+| --- | --- | --- | --- |
+| `hotel-cerna-bouda` | profil `krkonose/cerna-bouda` | 14 m | 22. 8. 2026 |
+| `schronisko-srebrny-potok` | profil `krkonose/srebrny-potok` | 6 m | 22. 8. 2026 |
+| `penzion-modrokamenna-bouda` | kandidát `krkonose/modrokamenna-bouda` | 0 m | 31. 8. 2026 |
+
+Všechny tři byly v dvanáctce jmenované 6. 9. k přednostnímu čtení — tedy
+**čtvrtina fronty** je práce, kterou už někdo udělal. Není to chyba měření
+role na trase (to počítá vzdálenosti, ne identitu objektů), ale chyběl krok
+mezi: pořadí čtení se skládalo bez ohledu na registr.
+
+**Co s tím:** `scripts/triaz-kos-c.ts` má nově `rozhodnuteDuplicity(oblast)`
+a obě triážní úlohy takového kandidáta ve výpisu označí („TÝŽ OBJEKT JAKO …
+— prameny číst tam"). **Nic nevyřazuje a nemění složení košů** (rozklad drží
+7 / 4 / 120); je to škrt ve frontě čtení, ne verdikt o objektu.
+
+**Práh je `TYZ_DUM_M` = 30 m, ne shoda jména** — a to je na tom to podstatné.
+Registr vede pod jedním jádrem jména obojí: duplicity i skutečné jmenovce.
+Kdyby se fronta škrtala podle jména, vypadly by z ní dva různé domy. Měření
+proti registru sedí u všech pěti krkonošských dvojic v koších C:
+
+- pod prahem tři výše zmíněné — registr je slovně popisuje jako „týž objekt";
+- nad prahem `decinska-bouda` × `bouda-ruzohorky` (47,2 m, čp. 181 × 182)
+  a `chata-jerabinka` × `pomezni-bouda` (48,4 m, různé weby) — dva sousední
+  domy, oba zůstávají ke čtení;
+- a `chata-medika` × `chata-medika-2411927307` (15 601 m, opačné strany hor)
+  jako učebnicový jmenovec.
+
+Práh tedy nerozhoduje víc, než co rozhodla redakce — jen to čte strojově.
+
+**Vedlejší výtěžek, protože měření pod duplicitními slugy vyšlo stejně:**
+
+- **Srebrny Potok** (publikovaný profil): žlutá značka 26 m, tři trasy do
+  250 m — a **dvě červené trasy jmenují schronisko jako koncový bod úseku**
+  („Rozdroże Kowarskie – Schronisko Srebrny Potok", „Schronisko Srebrny
+  Potok – Pod Albeřickým vrchem"). Profil se do dneška o roli na trase
+  opíral jen o povahu podniku. Z OSM zápisu duplicity se do profilu doplnil
+  **telefon +48 883 715 719 a e-mail** (`verified: false`).
+- **Modrokamenná bouda** (kandidát): zelená č. 4210 na 38 m, tři trasy do
+  250 m, rozcestník 59 m a **žlutá trasa boudu jmenuje v popisu úseku**
+  („[Ž] Horní Maršov – Modrokamenná bouda"). S veřejnou restaurací
+  doloženou doslovnou větou webu obce má tenhle kandidát **obě půlky klíče
+  doložené** — zbývá redakční rozhodnutí o sloučení duplicity.
+
+Obojí ale visí na **otevřené otázce z 6. 9.**: bereme „jmenuje ho značená
+trasa jako cíl" jako doklad role na trase? Do veřejné prózy se proto zatím
+nepřepisuje nic — je to zapsané jako měření v `interniPoznamky`.
