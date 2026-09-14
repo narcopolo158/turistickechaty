@@ -21,3 +21,34 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=hotel (alpine_hut = obsluhovaná, wilderness_hut
   = útulna).
+
+  ČTENÍ PRAMENŮ 14. 9. 2026 (koš C3, DATA-03) — NEPOVYŠOVAT: restaurace je
+  doložena, ale jen prameny, které samy hlásí konec provozu.
+  Firmy.cz vede objekt DVAKRÁT a OBA záznamy jsou NEAKTIVNÍ (otevřeno
+  14. 9. 2026): „Hříběcí bouda - restaurace"
+  (firmy.cz/detail/13140094-…) — kategorie „České a staročeské restaurace",
+  adresa „Strážné 63, 543 52", web „www.hribeci-bouda.cz", GPS
+  50,6778852778 / 15,6269380556, a doslova „Tato firma nebo pobočka již
+  není aktivní."; „Hříběcí bouda" (firmy.cz/detail/13368077-…) — kategorie
+  „Hotely" a „Ubytovací služby", táž adresa, web „hribeciboudy.cz", táž
+  věta „Tato firma nebo pobočka již není aktivní."
+  IDENTITA POTVRZENA MĚŘENÍM: GPS z Firmy.cz leží 13,6 m od našeho bodu
+  (pod prahem TYZ_DUM_M 30 m) — je to týž dům, ne jmenovec.
+  Doména `hribeciboudy.cz` se 14. 9. 2026 nedá otevřít: vrací 302 sama na
+  sebe (https → http → https), tedy smyčku. Prezentace tak nežije ani na
+  vlastním webu.
+  Jediná věta o hospodě je z blogu krkonosskeboudy.cz
+  (…/2015/07/hribeci-bouda.html, otevřeno 14. 9. 2026): „Součástí boudy je
+  restaurace, kde vaří tradičn českou kuchyni" (překlep je v pramenu).
+  Týž článek uvádí „800 metrů. nad mořem", „Hříběcí bouda disponuje
+  kapacitou 60 lůžek", e-mail „hribecibouda@seznam.cz", telefon
+  „+420 606 901 777", web „www.hribecibouda.cz". Článek je z roku 2015
+  a o veřejném přístupu do restaurace NEMLUVÍ — proti dvěma neaktivním
+  záznamům z Firmy.cz je to pramen starý a slabší.
+  Stav provozu je tedy sporný až záporný. Nevyřazuji: jméno, poloha na
+  hřebenové cestě i doložená restaurace z objektu dělají kandidáta, který
+  si zaslouží dočtení — ale povýšit ho dnes nejde.
+  PŘÍŠTĚ ZAČÍT TADY: penziony.cz/strazne/hribeci-bouda/,
+  ceskehory.cz/ubytovani/hribeci-bouda-strazne.html a
+  pivnidenicek.cz/…/11004-hribeci-bouda (zda vedou provoz jako živý),
+  a doména `hribeci-bouda.cz` z neaktivního záznamu — dnes nečteno.

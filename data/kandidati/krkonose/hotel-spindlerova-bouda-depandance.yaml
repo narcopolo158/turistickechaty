@@ -30,3 +30,30 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=hotel (alpine_hut = obsluhovaná, wilderness_hut
   = útulna).
+
+  ČTENÍ PRAMENŮ 14. 9. 2026 (koš C3, DATA-03) — NEPOVYŠOVAT, a navrhuji
+  ŠKRTNOUT Z FRONTY ČTENÍ: není to samostatný objekt, ale vedlejší budova
+  profilu, který už vedeme (data/chaty/krkonose/hotel-spindlerova-bouda.yaml).
+  Doklad je z webu samotného provozovatele, ne z našeho odhadu.
+  spindlerovabouda.cz/ubytovani (otevřeno 14. 9. 2026) o depandanci doslova:
+  „Samostatná ubytovací budova přibližně 70–100 metrů od hlavní budovy.",
+  „klidnější část ubytování" a — to je pro klíč zařazení rozhodující —
+  „v budově se nacházejí pouze hotelové pokoje a lyžárna". Vlastní
+  občerstvení tedy depandance NEMÁ; hospoda je v hlavní budově, u které je
+  už doložená na publikovaném profilu. Jediná adresa, kterou web uvádí, je
+  adresa hlavní budovy: „Špindlerův Mlýn 108, 543 51".
+  Shodují se i všechny kontakty z OSM: web `spindlerovabouda.cz`, telefon
+  +420 499 329 200 a e-mail info@spindlerovabouda.cz jsou kontakty hlavního
+  hotelu. Jméno objektu to ostatně říká samo — „Depandance".
+  MĚŘENÍ: náš bod leží 152,4 m od publikovaného profilu — tedy NAD prahem
+  TYZ_DUM_M (30 m), takže `rozhodnuteDuplicity` z 10. 9. tuhle dvojici
+  NENAJDE. Rozpor se 70–100 m z webu jde nejspíš na vrub tomu, že OSM way
+  20897236 měříme těžištěm budovy; na verdiktu to nic nemění.
+  POZNÁMKA K POLI `zeme`: kandidát má `zeme: pl`, publikovaný profil
+  `zeme: cz` a adresa i web jsou české. Špindlerova bouda stojí přímo na
+  hranici, takže to je nejspíš vada odvození země ze souřadnice u OSM
+  exportu — patří to k DATA-39, tady jen zaznamenávám.
+  Vedlejší nález pro klíč: doklad „obě půlky klíče" se u vedlejší budovy
+  nesmí brát z mateřského podniku. Kdyby se depandance povýšila,
+  průvodce by tvrdil, že je to chata s hospodou — a vlastní web říká
+  „pouze hotelové pokoje a lyžárna".

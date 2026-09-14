@@ -1369,3 +1369,58 @@ Práh tedy nerozhoduje víc, než co rozhodla redakce — jen to čte strojově.
 Obojí ale visí na **otevřené otázce z 6. 9.**: bereme „jmenuje ho značená
 trasa jako cíl" jako doklad role na trase? Do veřejné prózy se proto zatím
 nepřepisuje nic — je to zapsané jako měření v `interniPoznamky`.
+
+## PRVNÍCH PĚT PŘEČTENO (14. 9. 2026) — jediná hospoda pro veřejnost z pěti, a jedna vedlejší budova cizího profilu
+
+Fronta z 10. 9. 2026 (desítka z 6. 9. bez tří škrtnutých duplicit) se začala
+číst od `chata-viktorka`. Přečteno pět kandidátů. **Do `data/chaty/` se
+nesáhlo, nic se nevyřadilo ani nepovýšilo** — všechno je zatím návrh
+s pramenem a datem v `interniPoznamky` příslušného kandidáta.
+
+| Kandidát | Občerstvení pro veřejnost | Stav provozu | Verdikt |
+| --- | --- | --- | --- |
+| `chata-viktorka` | **DOLOŽENO** dvěma nezávislými prameny (Firmy.cz aktivní 11:00–20:00; Tripadvisor „lodge with bistro", Takeout) | živý | **obě půlky klíče — k povýšení**, visí na otázce z 5. 9. |
+| `chata-gracie` | doložen **opak**: „Pronajímáme pouze celý objekt", samoobslužná kuchyně | prezentace v archivu | návrh **VYŘADIT** |
+| `chata-jestrab` | žádný pramen | web z OSM je mrtvý Google+ odkaz | držet, nečitelné |
+| `hribeci-bouda` | restaurace doložena blogem z r. 2015, ale **oba záznamy na Firmy.cz neaktivní** | doména vrací smyčku 302 | držet, dočíst |
+| `hotel-spindlerova-bouda-depandance` | **vlastní web říká „pouze hotelové pokoje a lyžárna"** | živý (mateřský hotel) | **škrtnout z fronty** — vedlejší budova publikovaného profilu |
+
+### Nález dne: práh 30 m chytá týž dům, ale ne vedlejší budovu téhož podniku
+
+`rozhodnuteDuplicity` z 10. 9. škrtá z fronty kandidáta, který leží do
+`TYZ_DUM_M` (30 m) od už rozhodnutého objektu. Depandance Špindlerovy boudy
+leží **152,4 m** od publikovaného profilu `hotel-spindlerova-bouda` — tedy
+hluboko nad prahem, takže ji pojistka nenajde. Přitom to není ani duplicita,
+ani soused: je to **druhá budova téhož podniku**, a říká to web provozovatele
+(„Samostatná ubytovací budova přibližně 70–100 metrů od hlavní budovy",
+„v budově se nacházejí pouze hotelové pokoje a lyžárna").
+
+Signál, který tu dvojici spojuje, není vzdálenost, ale **shodné kontakty**:
+web, telefon i e-mail kandidáta z OSM jsou kontakty hlavního hotelu. To je
+levně měřitelné nad daty, která už v repu leží — a je to návrh na rozšíření
+pojistky, ne hotová konvence (viz otázka v deníku).
+
+Druhá půlka nálezu je věcná: kdyby se depandance povýšila, průvodce by o ní
+tvrdil, že je to chata s hospodou — protože doklad občerstvení by si vzala
+od mateřského podniku. **Doklad klíče se z mateřského objektu na vedlejší
+budovu nepřenáší.**
+
+### Vedlejší nálezy
+
+- **Kontakty z rezervačního portálu nejsou kontakty objektu.** `janskelazne.cz`
+  uvádí u Chaty Viktorka i u Chaty Grácie **týž pár telefonů**
+  (+420 733 645 729, +420 603 416 095) a e-mail ve tvaru
+  `<objekt>@janskelazne.cz`. Do profilů se takové kontakty přebírat nesmějí.
+- **Web z OSM u dvou z pěti kandidátů neplatí.** Viktorka má v OSM
+  `chataviktorka.cz`, ale živá doména je `naseviktorka.cz`; Jestřáb má
+  `plus.google.com/…` — službu zrušenou v roce 2019.
+- **Tři z pěti kandidátů mají v pramenech rozpor v adrese** (Viktorka
+  Černohorská 119 × 26, Grácie Luční 139 × Černohorská 265). Na verdikt
+  o klíči to nemá vliv, na povýšení ano.
+- **Silná kombinace měření v zástavbě nedokládá roli na trase.** U Grácie
+  i Jestřába je „do 50 m od značky + dvě značky + rozcestník" dané tím, že
+  značka vede Janskými Lázněmi. Je to táž mez, kterou si měření přiznalo už
+  u `chata-izerska` 3. 9. 2026.
+- **`chata-viktorka` × `chata-jestrab` = 60,2 m.** Další dvojice sousedních
+  domů nad prahem, po `decinska-bouda` × `bouda-ruzohorky` (47,2 m). Patří
+  k otevřené otázce ze 4. 9.

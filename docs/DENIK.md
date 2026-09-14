@@ -29,6 +29,111 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-14 — denní session: pět kandidátů přečteno — jedna hospoda, jedna vedlejší budova cizího profilu
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging) — od 10. 9. do repa nepřibyl žádný tvůj commit. Vzal
+  jsem tedy „Příště" z 10. 9.: **číst frontu koše C3 od `chata-viktorka`**.
+- **Přečteno pět kandidátů:** `chata-viktorka`, `chata-gracie`,
+  `chata-jestrab`, `hribeci-bouda`, `hotel-spindlerova-bouda-depandance`.
+  **Do `data/chaty/` se nesáhlo**, nic se nevyřadilo, nepovýšilo ani
+  nesloučilo — všechno je návrh s URL a datem v `interniPoznamky`.
+- **Jediná doložená hospoda pro veřejnost z pěti: Chata Viktorka.** Dva
+  nezávislé prameny, oba otevřené dnes: Firmy.cz vede záznam jako **aktivní**
+  (kategorie „Restaurant and hospitality services", otevírací doba
+  „11:00–20:00"), Tripadvisor ho vede v kategorii restaurací s popisem
+  „Traditional family lodge with bistro", toutéž dobou „11:00 AM - 8:00 PM"
+  a se znaky otevřeného provozu („Table Service", „Takeout"). S rolí na trase
+  změřenou 6. 9. (zelená č. 4228 na 8 m) má **obě půlky klíče** — jenže
+  povýšení visí na tvé otázce z 5. 9., jestli restaurační záznam bereme jako
+  doklad. Tady je ten doklad širší než jen Firmy.cz, proto otázku připomínám.
+- **Nález dne: práh 30 m chytá týž dům, ale ne vedlejší budovu téhož
+  podniku.** `hotel-spindlerova-bouda-depandance` leží **152,4 m** od
+  publikovaného profilu `hotel-spindlerova-bouda` — nad prahem `TYZ_DUM_M`,
+  takže ho pojistka `rozhodnuteDuplicity` z 10. 9. nenajde. Přitom to není
+  ani duplicita, ani soused: **je to druhá budova téhož hotelu a říká to jeho
+  vlastní web** — „Samostatná ubytovací budova přibližně 70–100 metrů od
+  hlavní budovy", „v budově se nacházejí pouze hotelové pokoje a lyžárna".
+  Co ty dva body spojuje, není vzdálenost, ale **shodný web, telefon
+  i e-mail** — a to se dá měřit nad daty, která už v repu leží.
+  Kdyby se depandance povýšila, průvodce by o ní tvrdil, že je to chata
+  s hospodou: doklad by si vzala od mateřského podniku. **Doklad klíče se
+  z mateřského objektu na vedlejší budovu nepřenáší.**
+- **Jeden návrh na vyřazení: Chata Grácie.** Prameny dokládají pravý opak
+  občerstvení pro veřejnost — ceskehory.cz doslova „Pronajímáme pouze celý
+  objekt" a kuchyň jako vybavení pro hosty, prezentace navíc „v archivu".
+  Objekt pronajímaný vcelku jedné skupině druhou půlku klíče nemá a mít
+  nebude.
+- **Dva držím, číst se nedaly:** `chata-jestrab` nemá dohledatelnou vlastní
+  prezentaci (web z OSM je **mrtvý odkaz na Google+**, službu zrušenou 2019)
+  a vyhledávání vrací jen jmenovce v Hlinsku a apartmánový dům z roku 2017,
+  u kterého totožnost doložená není. `hribeci-bouda` má restauraci doloženou
+  blogem z roku 2015, ale **oba záznamy na Firmy.cz jsou neaktivní** a vlastní
+  doména vrací smyčku 302 — identita objektu je přitom jistá (GPS z Firmy.cz
+  je 13,6 m od našeho bodu).
+- **Vedlejší nález, který se týká všech janskolázeňských kandidátů:
+  kontakty z rezervačního portálu nejsou kontakty objektu.** `janskelazne.cz`
+  uvádí u Viktorky i u Grácie **týž pár telefonů** a e-mail ve tvaru
+  `<objekt>@janskelazne.cz`. Do profilů je přebírat nesmíme. K tomu: web
+  z OSM neplatí u dvou z pěti kandidátů a tři z pěti mají v pramenech
+  **rozpor v adrese** (na klíč to vliv nemá, na povýšení ano).
+- **`chata-viktorka` × `chata-jestrab` = 60,2 m** — druhá dvojice sousedních
+  domů nad prahem po Děčínské × Růžohorky (47,2 m). Doklad hospody od
+  souseda se nepřenáší, ale k tvé otevřené otázce ze 4. 9. to patří.
+- **Kontroly:** `npm run kontrola`, `tsc` i `lint` zelené; pět upravených
+  YAML ověřeno parserem.
+- **Zápis do dokumentace:** `docs/KRKONOSE-TRIAZ-KOSE.md` má oddíl „PRVNÍCH
+  PĚT PŘEČTENO (14. 9. 2026)" s tabulkou verdiktů a s rozborem nálezu
+  o vedlejší budově.
+
+**Příště:** dočíst zbytek fronty z 10. 9. — `chata-medika-2411927307`
+(jmenovec, ne duplicita; doména `alberice.slinet.cz`),
+`felicity-grand-apartments` a `mlynarka-ubytovani-v-krkonosich`; u Hříběcí
+boudy začít na `penziony.cz`, `ceskehory.cz` a `pivnidenicek.cz` a u domény
+`hribeci-bouda.cz` ze staršího záznamu. Vedle toho pořád leží Broumovsko
+z 28. 8., deset padajících testů (Postgres/exporty) a blokované DATA-04 /
+DATA-05 / DATA-20 / DATA-22 / DATA-25. Otevřené otázky z 2.–10. 9. čekají
+na tebe.
+
+**Otázky pro Michala:**
+
+- **Má `rozhodnuteDuplicity` škrtat i vedlejší budovy podle shodných
+  kontaktů?** Dnešní depandance je 152 m daleko, takže práh 30 m ji minul,
+  ale web/telefon/e-mail má shodné s publikovaným profilem. Kandidátů
+  se shodnou doménou je v koších nejspíš víc a bylo by to levné měření —
+  jen chci vědět, jestli to má být škrt ve frontě (jako 10. 9.), nebo
+  rovnou kontrola.
+- **Bere se aktivní restaurační záznam jako doklad občerstvení pro
+  veřejnost?** (trvá z 5. 9.) U Viktorky na tom dnes stojí jediné možné
+  povýšení a doklad je širší než minule — Firmy.cz **a** Tripadvisor se
+  shodují na otevírací době a Tripadvisor navíc uvádí „Takeout".
+- **Potvrdíš vyřazení `chata-gracie`?** Doloženo „Pronajímáme pouze celý
+  objekt" — druhá půlka klíče chybí a chybět bude.
+- Trvá z 10. 9.: **má se `rozhodnuteDuplicity` zapsat i jako kontrola
+  v `npm run kontrola`?**
+- Trvá z 6. 9.: **bereme „jmenuje ho značená trasa jako cíl" jako doklad
+  role na trase?**; **má se u shluků číst jeden pramen na celý shluk?**
+- Trvá z 5. 9.: **sloučit `restaurace-havlova-bouda` do `havlova-bouda`
+  na základě shodného IČO?**; **potvrdíš vyřazení `chata-za-wsia`?**;
+  **sloučit `penzion-modrokamenna-bouda` do `modrokamenna-bouda`?**
+- Trvá ze 4. 9.: **sousedství 47 metrů jako signál k prověření?** (dnes
+  k tomu přibyla dvojice na 60,2 m); **zapsat natvrdo konvenci o doslovných
+  citacích?**
+- Trvá z 3. 9.: **`lidicka-bouda` — dům, který BYL boudou?**;
+  **`bouda-v-obrim-dole` dohromady s Chatou pod Studničnou?**
+- Trvá z 2. 9.: **má se práh 250 m zapsat jako konvence?**; **přenášet
+  `amenity` poraženého při slučování duplicit?**
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. `WebFetch`
+dál vyžaduje provenienci („PROVENANCE_REQUIRED") — každý pramen se musí
+nejdřív najít přes `WebSearch`. Dnes navíc `npm run kontrola` v čistém klonu
+spadne, dokud neproběhne `npm ci` (chybí balík `yaml`).
+
 ## 2026-09-10 — denní session: čtvrtina fronty čtení byla už rozhodnutá
 
 **Hotovo:**
