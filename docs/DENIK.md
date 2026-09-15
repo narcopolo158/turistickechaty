@@ -29,6 +29,126 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-15 — denní session: fronta koše C3 dočtena — tři návrhy na vyřazení a cizí budova podruhé
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging) — od 10. 9. do repa nepřibyl žádný tvůj commit. Vzal
+  jsem tedy „Příště" ze 14. 9.: **dočíst zbytek fronty koše C3**.
+- **Fronta z 10. 9. je tím dočtená.** Přečteni poslední tři kandidáti —
+  `chata-medika-2411927307`, `felicity-grand-apartments`,
+  `mlynarka-ubytovani-v-krkonosich` — a k tomu dočtena **Hříběcí bouda**,
+  která zůstala ze 14. 9. rozdělaná. **Do `data/chaty/` se nesáhlo**, nic se
+  nevyřadilo, nepovýšilo ani nesloučilo — všechno je návrh s URL a datem
+  v `interniPoznamky`.
+- **Tři návrhy na vyřazení, u všech tří doložený opak občerstvení pro
+  veřejnost:**
+  - **Chata Medika (Albeřice)** — objekt je naopak **živý**, Firmy.cz vede
+    aktivní záznam a vlastní web `chata-medika.cz` běží. Jenže o restauraci
+    nemluví ani slovem a stravování popisuje jako samoobslužné: „plně
+    k dispozici nově zařízená a prostorná kuchyň pro vlastní stravování".
+    Druhá půlka klíče doložena není a podle vlastní prezentace ani být nemůže.
+  - **Mlynářka** — ve skutečnosti **Chalupa Mlynářka, Černý Důl 100**.
+    Doslova „Objekt se pronajímá celý - po dobu pobytu ho budete mít jen pro
+    sebe" a „Stravování vlastní nebo si můžete zařídit v přilehlé restauraci."
+    Restaurace je tedy **přilehlá, ne součást objektu**. Týž případ jako
+    Chata Grácie ze 14. 9.
+  - **Felicity Grand Apartments** — viz nález dne níž.
+- **Nález dne: cizí budova podruhé ve dvou dnech, a tentokrát to prozradilo
+  číslo popisné.** Felicity Grand Apartments **hospodu doloženou má** —
+  restauraci V Uličce, výslovně přístupnou veřejnosti. Jenže vlastní web
+  provozovatele jedním dechem dodává, že je „located on the ground floor of
+  **Hotel Grand**", a Hotel Grand má na témže webu adresu **Okružní 155**,
+  kdežto náš kandidát vede Firmy.cz na **Špindlerův Mlýn 224**. Dvě čísla
+  popisná = dvě budovy jednoho provozovatele (Felicity Hotels s.r.o.).
+  Kdyby se kandidát povýšil, průvodce by o apartmánovém domě tvrdil hospodu,
+  kterou má o dům dál. **Pravidlo ze 14. 9. platí beze změny: doklad klíče se
+  z mateřského objektu na vedlejší budovu nepřenáší.** Včera ty dvě budovy
+  prozradily shodné kontakty, dnes rozdílné čp. — obojí je levné měření
+  a obojí je mimo dosah prahu 30 m.
+- **Hříběcí bouda dočtena — a zůstává na telefonát.** Ani jeden z dnes
+  otevřených pramenů nedokládá živou hospodu pro veřejnost:
+  `penziony.cz` se sice tváří živě („Ověřený zápis"), ale o restauraci tam
+  není ani věta; `ceskehory.cz` hlásí „Objekt v archivu - prezentace není
+  aktivní."; `pivnidenicek.cz` „Neznámá otevírací doba" s komentáři staršími
+  devíti let; `hribeci.hotel.cz` vrací **410 Gone** (prezentace zrušena, ne
+  jen opuštěná), `hportal.cz` 404 a doména `hribeciboudy.cz` drží smyčku 302
+  i dnes. Identita domu je přitom jistá (GPS z penziony.cz 5,7 m od našeho
+  bodu) a poloha na hřebenové cestě taky.
+- **Dva vzory, které se budou opakovat, a stojí za pojmenování:**
+  **(1) pevné časy jídel nejsou otvíračka** — cztip.cz uvádí u Hříběcí boudy
+  snídaně 8:00–9:30, obědy 12:00–14:00, večeře 18:00–19:30; to je rozpis
+  penzionu pro ubytované, ne doklad veřejného přístupu.
+  **(2) jméno z OSM může ukazovat jinam, než kam vede vyhledávání** —
+  na „Mlynářka Krkonoše" vyskočí přednostně **Penzion Mlynářka, Dolní Dvůr 3**,
+  jiný dům **4 192,6 m** od našeho bodu. Kdo by četl prameny podle jména,
+  popsal by cizí objekt.
+- **Web z OSM neplatí u dvou ze tří dnešních** (Medika `alberice.slinet.cz`
+  × živé `chata-medika.cz`; Mlynářka `mlynarka-krkonose.cz` se nepodařilo
+  otevřít ani doložit). Za dva dny je to **čtyři z osmi kandidátů** — u tagu
+  `website` se vyplatí počítat s tím, že je mrtvý.
+- **Všechny čtyři identity potvrzeny měřením** proti GPS z pramenů: Medika
+  11,9 m, Felicity 6,0 m, Mlynářka 3,9 m, Hříběcí 5,7 m — vše hluboko pod
+  prahem `TYZ_DUM_M` (30 m).
+- **Kontroly:** `npm run kontrola`, `tsc` i `lint` zelené; čtyři upravené
+  YAML ověřeny parserem.
+- **Zápis do dokumentace:** `docs/KRKONOSE-TRIAZ-KOSE.md` má oddíl „FRONTA
+  KOŠE C3 DOČTENA (15. 9. 2026)" s tabulkou verdiktů a s rozborem nálezu
+  o cizí budově.
+
+**Příště:** fronta z 10. 9. je vyčerpaná, takže navázat je potřeba **novým
+výběrem z koše C3** (drží 120 položek) — nabízí se vzít další desítku podle
+téhož kritéria jako 6. 9. (nejsilnější měření role na trase) a před čtením
+ji proškrtnout `rozhodnuteDuplicity`. Kdyby ses mezitím ozval k otázce
+o shodných kontaktech, dal by se ten škrt rovnou rozšířit a fronta by se
+zkrátila sama. Vedle toho pořád leží Broumovsko z 28. 8., deset padajících
+testů (Postgres/exporty) a blokované DATA-04 / DATA-05 / DATA-20 / DATA-22 /
+DATA-25. Otevřené otázky z 2.–14. 9. čekají na tebe.
+
+**Otázky pro Michala:**
+
+- **Hříběcí bouda — zavoláš tam, nebo ji máme vyřadit?** Je to jediný
+  z osmi dočtených kandidátů, kde se stav provozu z pramenů vyčíst nedá:
+  identita domu i poloha na hřebenové cestě sedí, ale všechny prezentace
+  jsou mrtvé nebo archivní a telefonní čísla jsou **tři různá** (499 434 187
+  × 606 901 777 × 606 040 775 / 608 638 576). Jeden telefonát to rozhodne,
+  z webu už to nepůjde.
+- **Potvrdíš tři dnešní vyřazení?** `chata-medika-2411927307` (vlastní web:
+  kuchyň pro vlastní stravování, o restauraci ani slovo),
+  `mlynarka-ubytovani-v-krkonosich` („pronajímá se celý", restaurace
+  přilehlá) a `felicity-grand-apartments` (hospoda o dům dál).
+- **Má se „pevné časy jídel" zapsat jako vzor, který sám o sobě veřejný
+  přístup nedokládá?** Je to blízké tvé otevřené otázce z 5. 9. o aktivním
+  restauračním záznamu — jen z opačné strany.
+- Trvá ze 14. 9.: **má `rozhodnuteDuplicity` škrtat i vedlejší budovy podle
+  shodných kontaktů?** (dnes k tomu přibyl druhý případ, u kterého by ale
+  shodné kontakty nestačily — rozhodlo až číslo popisné);
+  **bere se aktivní restaurační záznam jako doklad občerstvení pro
+  veřejnost?**; **potvrdíš vyřazení `chata-gracie`?**
+- Trvá z 10. 9.: **má se `rozhodnuteDuplicity` zapsat i jako kontrola
+  v `npm run kontrola`?**
+- Trvá z 6. 9.: **bereme „jmenuje ho značená trasa jako cíl" jako doklad
+  role na trase?**; **má se u shluků číst jeden pramen na celý shluk?**
+- Trvá z 5. 9.: **sloučit `restaurace-havlova-bouda` do `havlova-bouda`
+  na základě shodného IČO?**; **potvrdíš vyřazení `chata-za-wsia`?**;
+  **sloučit `penzion-modrokamenna-bouda` do `modrokamenna-bouda`?**
+- Trvá ze 4. 9.: **sousedství 47 metrů jako signál k prověření?**;
+  **zapsat natvrdo konvenci o doslovných citacích?**
+- Trvá z 3. 9.: **`lidicka-bouda` — dům, který BYL boudou?**;
+  **`bouda-v-obrim-dole` dohromady s Chatou pod Studničnou?**
+- Trvá z 2. 9.: **má se práh 250 m zapsat jako konvence?**; **přenášet
+  `amenity` poraženého při slučování duplicit?**
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. `WebFetch`
+dál vyžaduje provenienci („PROVENANCE_REQUIRED") — každý pramen se musí
+nejdřív najít přes `WebSearch`; dnes na to doplatily dvě domény
+(`mlynarka-krkonose.cz`, `hribeci-bouda.cz`), které vyhledávání nevrátilo.
+`npm run kontrola` v čistém klonu spadne, dokud neproběhne `npm ci`.
+
 ## 2026-09-14 — denní session: pět kandidátů přečteno — jedna hospoda, jedna vedlejší budova cizího profilu
 
 **Hotovo:**

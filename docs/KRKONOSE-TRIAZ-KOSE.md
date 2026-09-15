@@ -1424,3 +1424,62 @@ budovu nepřenáší.**
 - **`chata-viktorka` × `chata-jestrab` = 60,2 m.** Další dvojice sousedních
   domů nad prahem, po `decinska-bouda` × `bouda-ruzohorky` (47,2 m). Patří
   k otevřené otázce ze 4. 9.
+
+## FRONTA KOŠE C3 DOČTENA (15. 9. 2026) — tři návrhy na vyřazení a druhý případ cizí budovy
+
+Zbytek fronty z 10. 9. 2026 (`chata-medika-2411927307`,
+`felicity-grand-apartments`, `mlynarka-ubytovani-v-krkonosich`) je přečtený
+a k tomu je dočtená **Hříběcí bouda**, která zůstala z 14. 9. rozdělaná.
+**Do `data/chaty/` se nesáhlo, nic se nevyřadilo ani nepovýšilo** — všechno
+je návrh s pramenem a datem v `interniPoznamky` příslušného kandidáta.
+
+| Kandidát | Občerstvení pro veřejnost | Stav provozu | Verdikt |
+| --- | --- | --- | --- |
+| `chata-medika-2411927307` | žádné — vlastní web nabízí „kuchyň pro vlastní stravování" | **živý**, Firmy.cz aktivní | návrh **VYŘADIT** |
+| `mlynarka-ubytovani-v-krkonosich` | doložen **opak**: „Objekt se pronajímá celý", restaurace je „přilehlá" | živý | návrh **VYŘADIT** |
+| `felicity-grand-apartments` | hospoda je v **jiné budově** téhož provozovatele (čp. 155 × náš čp. 224) | Firmy.cz: „Firma neměla delší dobu aktualizaci." | návrh **VYŘADIT** |
+| `hribeci-bouda` | žádný pramen otevřený dnes nedokládá veřejný přístup | archiv, 410 Gone, 404, smyčka 302 | **na telefonát** |
+
+### Nález dne: cizí budova podruhé ve dvou dnech — a tentokrát to prozradilo číslo popisné
+
+`felicity-grand-apartments` je učebnicové zopakování včerejší depandance,
+jen s jiným měřítkem. Vlastní web provozovatele restauraci **V Uličce**
+skutečně popisuje jako veřejnosti přístupnou — ale jedním dechem dodává, že
+je „located on the ground floor of **Hotel Grand**". A Hotel Grand má na
+témže webu adresu **Okružní 155**, kdežto náš kandidát vede Firmy.cz na
+**Špindlerův Mlýn 224**. Dvě čísla popisná = dvě budovy.
+
+Včera ty dvě budovy prozradily shodné kontakty, dnes rozdílné číslo popisné.
+Obojí je levné měření — **a obojí je mimo dosah prahu 30 m**: depandance byla
+152 m daleko, tady je to centrum města, kde je pod prahem budov víc.
+Pravidlo ze 14. 9. platí beze změny: **doklad klíče se z mateřského objektu
+na vedlejší budovu nepřenáší.** Praktický důsledek pro čtení dalších košů:
+u kandidáta, jehož jediný doklad hospody visí na webu **firmy**, ne objektu,
+se musí dohledat číslo popisné té hospody.
+
+### Vedlejší nálezy
+
+- **Jméno z OSM může ukazovat na jiný objekt, než na jaký vede vyhledávání.**
+  `mlynarka-ubytovani-v-krkonosich` je ve skutečnosti **Chalupa Mlynářka,
+  Černý Důl 100** (e-chalupy.cz, GPS 3,9 m od našeho bodu). Hledání na
+  „Mlynářka Krkonoše" ale přednostně vrací **Penzion Mlynářka, Dolní Dvůr 3**
+  — jiný dům **4 192,6 m** daleko, s jiným telefonem i webem. Jmenovec, ne
+  duplicita; kdo by četl prameny podle jména, popsal by cizí objekt.
+- **Web z OSM neplatí znovu, u dvou ze tří dnešních.** Medika má v OSM
+  `alberice.slinet.cz`, živá prezentace je `chata-medika.cz`; Mlynářka má
+  `mlynarka-krkonose.cz`, které se dnes nepodařilo otevřít ani doložit.
+  Za dva dny je to **čtyři z osmi kandidátů** — u OSM tagu `website` se
+  vyplatí počítat s tím, že je mrtvý.
+- **Pevné časy jídel nejsou otvíračka.** cztip.cz uvádí u Hříběcí boudy
+  snídaně 8:00–9:30, obědy 12:00–14:00, večeře 18:00–19:30. To je rozpis
+  penzionu pro ubytované; jako doklad veřejného přístupu neobstojí. Vedle
+  „aktivního restauračního záznamu" (otázka z 5. 9.) je tohle druhý vzor,
+  který se bude opakovat — stojí za to ho pojmenovat.
+- **Tři sady telefonů u jednoho objektu.** Hříběcí bouda má napříč prameny
+  499 434 187 × 606 901 777 × 606 040 775 / 608 638 576, ke třem sadám
+  ještě rozpor v kapacitě (45 × 60 lůžek) a ve výšce (840 × 800 m).
+  Katalogy opisují jeden od druhého a stárnou spolu.
+- **Silná kombinace měření v zástavbě nedokládá roli na trase** — potřetí.
+  U Felicity (centrum Špindlerova Mlýna, sedm značek) i u Mlynářky (Černý
+  Důl, šest značek) je to táž mez jako u `chata-izerska` 3. 9. a u Grácie
+  s Jestřábem 14. 9.
