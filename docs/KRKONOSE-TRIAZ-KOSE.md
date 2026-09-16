@@ -1483,3 +1483,100 @@ se musí dohledat číslo popisné té hospody.
   U Felicity (centrum Špindlerova Mlýna, sedm značek) i u Mlynářky (Černý
   Důl, šest značek) je to táž mez jako u `chata-izerska` 3. 9. a u Grácie
   s Jestřábem 14. 9.
+
+## DRUHÁ FRONTA KOŠE C3 SESTAVENA (16. 9. 2026) — a shluk tří domů v Horním Maršově padl celý
+
+Fronta z 6. 9. 2026 (deset „nejsilnějších" + dva jmenovaní trasou) je od
+15. 9. dočtená, takže tahle session postavila **druhou frontu** a začala ji
+číst. Pořadí backlogu se nemění, **DATA-04 / DATA-05 / DATA-20 / DATA-22 /
+DATA-25 / DATA-28 i F1-IMPL zůstávají blokované** ze stejných důvodů — od
+10. 9. do repa nepřibyl Michalův commit.
+
+### Kritérium druhé fronty: o jeden stupeň volnější než 6. 9.
+
+První fronta brala kombinaci **do 50 m od značky + dvě a víc značek do 250 m
++ rozcestník do 150 m**. Ta množina je vyčerpaná. Druhá fronta drží první
+dvě podmínky a **pouští tu nejpřísnější (rozcestník)**:
+
+| # | kandidát | k značce | značek do 250 m | rozcestník |
+| --- | --- | --- | --- | --- |
+| 1 | `chata-kovarna` | 8 m | 3 | 277 m |
+| 2 | `apartman-u-potoka` | 8 m | 3 | 315 m |
+| 3 | `chata-tobisek` | 9 m | 4 | 158 m |
+| 4 | `chalupa-marsovka` | 10 m | 3 | 275 m |
+| 5 | `sliwkowa-chata-sliwkowa-chata` | 13 m | 4 | 5132 m |
+| 6 | `chata-baraba` | 17 m | 2 | 480 m |
+| 7 | `chata-popelka` | 20 m | 2 | 486 m |
+| 8 | `szkolne-schronisko-mlodziezowe-skalnik` | 23 m | 2 | 8346 m |
+| 9 | `horska-chata-hanapetr` | 24 m | 2 | 341 m |
+| 10 | `dom-pod-jaworami` | 29 m | 3 | 5629 m |
+
+Za desítkou zbývají ještě `chata-u-kohouta` (30 m), `pension-chata-lovrana`
+(38 m) a `sruby-podspalov` (49 m); `hotel-cerna-bouda`, `schronisko-srebrny-potok`
+a `penzion-modrokamenna-bouda` tenhle filtr taky splňují, ale jsou škrtnuté
+jako rozhodnuté duplicity (10. 9.).
+
+**Pojistka z 10. 9. proběhla před čtením a tentokrát neškrtla nic.**
+`rozhodnuteDuplicity('krkonose')` vede 16 záznamů (8 dvojic) a ani jeden
+z třinácti kandidátů druhé fronty v nich není. U první fronty škrtla
+čtvrtinu — u druhé nulu. Rozdíl není náhoda: registr jmenovců drží hlavně
+publikované profily a jejich druhé zápisy, a ty se sesbíraly do nejsilnější
+kombinace. Čím dál od ní, tím míň je v koši už rozhodnuté práce.
+
+### Nález dne: tři kandidáti, sto metrů, tři různé domy — a všechny tři padají
+
+Prvních pět míst fronty obsadily tři objekty, které stojí **do 103 m od sebe**
+v Horním Maršově: `chata-kovarna` × `chalupa-marsovka` = 74 m,
+`chata-kovarna` × `apartman-u-potoka` = 103 m, `chalupa-marsovka` ×
+`apartman-u-potoka` = **44 m**. Přečetly se tedy najednou — přesně ten
+způsob, který 6. 9. slíbil vedlejší nález o čtrnácti shlucích.
+
+**Nejsou to duplicity ani vedlejší budovy.** Rozhodly adresy: Maršovka je
+**Lysečinská 9**, U potoka **Lysečinská 10** — sousední čísla, ale dva
+provozovatelé (`marsovka.cz` × `ubytovanikrkonose-marsov.cz`) a dva různé
+telefony. Kovárna je **Kovářská 86** a třetí provozovatel. Práh 30 m je tedy
+minul správně — a je to **třetí den po sobě, kdy o vztahu dvou blízkých bodů
+rozhodlo číslo popisné, ne vzdálenost** (14. 9. shodné kontakty u depandance,
+15. 9. rozdílná čp. u Felicity). K otevřené otázce ze 4. 9. o sousedství
+47 metrů: měření samo neurčí nic, ale **měření + čp. + provozovatel to
+rozhodne pokaždé**.
+
+**Všechny tři ale padají na téže půlce klíče.** Ani u jednoho neuvádí žádný
+pramen restauraci nebo občerstvení pro veřejnost; všechny tři popisují
+stravování jako samoobslužné:
+
+| kandidát | doklad | verdikt |
+| --- | --- | --- |
+| Chata Kovárna | hkregion.cz: kuchyňský kout pro hosty; janskelazne.cz doslova „Možnost vlastního vaření" | návrh VYŘADIT |
+| Chalupa Maršovka | turistika.cz: „léto 25.900kč, zima 26.600kč / **chalupa za týden**" — cena za celý objekt | návrh VYŘADIT |
+| Apartmán U potoka | vlastní web: „Plně vybavená kuchyně: lednice s mrazákem, sporák, mikrovlnka, kávovar, toustovač" | návrh VYŘADIT |
+
+**Do `data/chaty/` se nesáhlo**, nic se nevyřadilo ani nepovýšilo — všechno
+je návrh s URL a datem v `interniPoznamky`.
+
+### Vedlejší nálezy
+
+- **Kategorie zápisu na Firmy.cz rozhoduje, aktivita ne.** `apartman-u-potoka`
+  má na Firmy.cz záznam **aktivní**, „nonstop" otvíračku a shodné kontakty —
+  a přesto nedokládá hospodu: kategorie zní „Ubytování v apartmánech"
+  a „Horské ubytování". U Chaty Viktorka (14. 9.) stála kategorie
+  „Restaurant and hospitality services" a to byl doklad. **Je to protějšek
+  téže otázky z 5. 9., jen z druhé strany:** neptat se, jestli je záznam
+  živý, ale **v jaké kategorii**. „Nonstop" u ubytování je dostupnost
+  recepce, ne otvíračka kuchyně — příbuzné vzoru „pevné časy jídel"
+  z 15. 9.
+- **Kontakty portálu potřetí.** `janskelazne.cz` uvádí u Kovárny týž pár
+  telefonů (+420 733 645 729 / +420 603 416 095) jako u Chaty Grácie
+  i Chaty Viktorka, k tomu e-mail `chalupakovarna@janskelazne.cz` a web
+  `chalupakovarna.janskelazne.cz`. Nález ze 14. 9. tedy platí i pro třetí
+  objekt — **do profilů se tyhle kontakty přebírat nesmějí**.
+- **Web z OSM počtvrté nesedí.** Tag `website` u Kovárny vede na
+  `e-chalupy.cz/…-kovarna-1586.php`, kdežto vyhledávání vrací na témže
+  portálu jiný záznam (`…-o8397`). URL z OSM se nepodařilo dohledat, tedy
+  ani otevřít — netvrdíme, že je mrtvá. Za tři dny je to **pět z jedenácti
+  čtených kandidátů**, u nichž `website` z OSM neplatí nebo se nedá doložit.
+- **Jméno z OSM nesedí u Kovárny:** OSM „Chata Kovárna", oba prameny
+  „Chalupa Kovárna". Na verdiktu to nic nemění, na dohledávání ano.
+- **Obě identity ověřeny měřením** proti GPS z pramenů: Maršovka 4 m
+  (vlastní web), U potoka 4 m (Firmy.cz). Kovárna GPS v pramenech nemá —
+  identitu drží adresa a jméno.

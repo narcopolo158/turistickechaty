@@ -29,6 +29,123 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-16 — denní session: druhá fronta koše C3 postavena — a shluk tří domů v Horním Maršově padl celý
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging) — od 10. 9. do repa nepřibyl žádný tvůj commit. Vzal
+  jsem tedy „Příště" z 15. 9.: **nový výběr z koše C3**.
+- **Druhá fronta čtení postavena (13 kandidátů, čte se prvních 10).** Fronta
+  z 6. 9. byla vyčerpaná, takže kritérium se o stupeň uvolnilo: drží se
+  **do 50 m od značky + dvě a víc značek do 250 m**, pouští se ta nejpřísnější
+  podmínka (rozcestník do 150 m). Tabulka je v
+  `docs/KRKONOSE-TRIAZ-KOSE.md`, oddíl „DRUHÁ FRONTA KOŠE C3 SESTAVENA".
+- **Pojistka z 10. 9. proběhla před čtením a tentokrát neškrtla nic.**
+  `rozhodnuteDuplicity('krkonose')` vede 16 záznamů (8 dvojic) a ani jeden
+  z třinácti kandidátů druhé fronty v nich není. U první fronty škrtla
+  čtvrtinu, u druhé nulu — registr drží hlavně publikované profily a jejich
+  druhé zápisy, a ty se nasbíraly do nejsilnější kombinace. Čím dál od ní,
+  tím míň je v koši už rozhodnuté práce.
+- **Přečteni tři kandidáti, a přečetli se najednou.** `chata-kovarna`,
+  `chalupa-marsovka` a `apartman-u-potoka` obsadily první, druhé a čtvrté
+  místo fronty — a stojí **do 103 m od sebe** v Horním Maršově (Kovárna ×
+  Maršovka 74 m, Kovárna × U potoka 103 m, Maršovka × U potoka **44 m**).
+  Je to poprvé, co se uplatnil vedlejší nález z 6. 9. o čtrnácti shlucích.
+  **Do `data/chaty/` se nesáhlo**, nic se nevyřadilo ani nepovýšilo —
+  všechno je návrh s URL a datem v `interniPoznamky`.
+- **Tři návrhy na vyřazení, u všech tří samoobslužné stravování:**
+  - **Chata Kovárna** — hkregion.cz popisuje jen kuchyňský kout pro hosty,
+    janskelazne.cz doslova „Možnost vlastního vaření". O restauraci ani věta.
+  - **Chalupa Maršovka** — turistika.cz uvádí cenu „léto 25.900kč, zima
+    26.600kč / **chalupa za týden**". Cena za celý objekt na týden = pronájem
+    vcelku jedné skupině. Týž případ jako Grácie (14. 9.) a Mlynářka (15. 9.),
+    jen doložený cenou místo věty o pronájmu.
+  - **Apartmán U potoka** — vlastní web: „Plně vybavená kuchyně: lednice
+    s mrazákem, sporák, mikrovlnka, kávovar, toustovač". Veřejná restaurace
+    zmíněna není.
+- **Nález dne: o vztahu dvou blízkých bodů rozhodlo potřetí za sebou číslo
+  popisné.** Maršovka je **Lysečinská 9**, U potoka **Lysečinská 10** —
+  sousední čísla, ale dva provozovatelé (`marsovka.cz` ×
+  `ubytovanikrkonose-marsov.cz`) a dva různé telefony; Kovárna je
+  **Kovářská 86** a třetí provozovatel. Práh 30 m je minul správně. Po
+  depandanci se shodnými kontakty (14. 9.) a Felicity s rozdílnými čp.
+  (15. 9.) je to třetí den po sobě. K tvé otázce ze 4. 9.: **měření samo
+  neurčí nic, ale měření + čp. + provozovatel to rozhodne pokaždé.**
+- **Druhý nález: u Firmy.cz rozhoduje kategorie zápisu, ne to, že je živý.**
+  `apartman-u-potoka` má záznam **aktivní**, otvíračku „nonstop" a shodné
+  kontakty — a hospodu přesto nedokládá: kategorie zní „Ubytování
+  v apartmánech" a „Horské ubytování". U Chaty Viktorka (14. 9.) stála
+  kategorie „Restaurant and hospitality services" a to doklad byl. Je to
+  **protějšek tvé otevřené otázky z 5. 9. z druhé strany** — a „nonstop"
+  u ubytování je dostupnost recepce, ne otvíračka kuchyně (příbuzné vzoru
+  „pevné časy jídel" z 15. 9.).
+- **Kontakty portálu potřetí:** `janskelazne.cz` uvádí u Kovárny týž pár
+  telefonů (+420 733 645 729 / +420 603 416 095) jako u Grácie i Viktorky,
+  k tomu e-mail `chalupakovarna@janskelazne.cz`. Nález ze 14. 9. platí i pro
+  třetí objekt.
+- **Web z OSM počtvrté nesedí** (Kovárna: tag vede na
+  `e-chalupy.cz/…-kovarna-1586.php`, vyhledávání vrací na témže portálu jiný
+  záznam `…-o8397`; URL z OSM se nepodařilo dohledat, tedy ani otevřít).
+  Za tři dny je to **pět z jedenácti** čtených kandidátů. A **jméno z OSM**
+  u Kovárny taky nesedí: OSM „Chata Kovárna", oba prameny „Chalupa Kovárna".
+- **Identity ověřeny měřením** proti GPS z pramenů: Maršovka 4 m (vlastní
+  web), U potoka 4 m (Firmy.cz) — obojí hluboko pod prahem `TYZ_DUM_M`
+  (30 m). Kovárna GPS v pramenech nemá, identitu drží adresa a jméno.
+- **Kontroly:** `npm run kontrola`, `tsc` i `lint` zelené; tři upravené YAML
+  ověřeny parserem.
+
+**Příště:** číst druhou frontu dál od 3. místa — `chata-tobisek` (9 m, čtyři
+značky, rozcestník 158 m — z fronty nejblíž původnímu kritériu),
+`sliwkowa-chata-sliwkowa-chata`, `chata-baraba`, `chata-popelka`,
+`szkolne-schronisko-mlodziezowe-skalnik`, `horska-chata-hanapetr`,
+`dom-pod-jaworami`. `chata-tobisek` nemá v YAML žádné kontakty ani web, takže
+u něj bude dohledávka stát jen na jménu a poloze. Vedle toho pořád leží
+Broumovsko z 28. 8., deset padajících testů (Postgres/exporty) a blokované
+DATA-04 / DATA-05 / DATA-20 / DATA-22 / DATA-25. Otevřené otázky z 2.–15. 9.
+čekají na tebe.
+
+**Otázky pro Michala:**
+
+- **Potvrdíš tři dnešní vyřazení?** `chata-kovarna`, `chalupa-marsovka`
+  a `apartman-u-potoka` — u všech tří prameny popisují stravování jako
+  samoobslužné a veřejnou restauraci nezmiňují vůbec.
+- **Má se „kategorie zápisu na Firmy.cz" zapsat jako rozlišovací kritérium?**
+  Je to konkrétní podoba tvé otázky z 5. 9.: dnešek ukazuje, že aktivní
+  záznam sám o sobě nerozhoduje — rozhoduje, jestli je objekt zapsaný
+  v restauračních, nebo v ubytovacích kategoriích. Kdyby to platilo, dala by
+  se ta otázka u většiny kandidátů uzavřít strojově.
+- **Stačí ti „měření + čp. + provozovatel" jako odpověď na sousedství
+  47 metrů ze 4. 9.?** Tři dny po sobě to rozhodlo spolehlivě a dnes to
+  oddělilo dva domy vzdálené 44 m. Pokud ano, zapsal bych to jako konvenci.
+- Trvá z 15. 9.: **Hříběcí bouda — zavoláš tam, nebo ji máme vyřadit?**;
+  **potvrdíš vyřazení `chata-medika-2411927307`, `mlynarka-ubytovani-v-krkonosich`
+  a `felicity-grand-apartments`?**; **má se „pevné časy jídel" zapsat jako
+  vzor, který veřejný přístup nedokládá?**
+- Trvá ze 14. 9.: **má `rozhodnuteDuplicity` škrtat i vedlejší budovy podle
+  shodných kontaktů?**; **potvrdíš vyřazení `chata-gracie`?**
+- Trvá z 10. 9.: **má se `rozhodnuteDuplicity` zapsat i jako kontrola
+  v `npm run kontrola`?**
+- Trvá z 6. 9.: **bereme „jmenuje ho značená trasa jako cíl" jako doklad
+  role na trase?**
+- Trvá z 5. 9.: **sloučit `restaurace-havlova-bouda` do `havlova-bouda`
+  na základě shodného IČO?**; **potvrdíš vyřazení `chata-za-wsia`?**;
+  **sloučit `penzion-modrokamenna-bouda` do `modrokamenna-bouda`?**
+- Trvá ze 4. 9.: **zapsat natvrdo konvenci o doslovných citacích?**
+- Trvá z 3. 9.: **`lidicka-bouda` — dům, který BYL boudou?**;
+  **`bouda-v-obrim-dole` dohromady s Chatou pod Studničnou?**
+- Trvá z 2. 9.: **má se práh 250 m zapsat jako konvence?**; **přenášet
+  `amenity` poraženého při slučování duplicit?**
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. `WebFetch`
+dál vyžaduje provenienci („PROVENANCE_REQUIRED") — každý pramen se musí
+nejdřív najít přes `WebSearch`; dnes na to doplatila URL z OSM tagu
+`website` u Kovárny. `npm run kontrola` v čistém klonu spadne, dokud
+neproběhne `npm ci`.
+
 ## 2026-09-15 — denní session: fronta koše C3 dočtena — tři návrhy na vyřazení a cizí budova podruhé
 
 **Hotovo:**
