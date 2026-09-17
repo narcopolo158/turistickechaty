@@ -21,3 +21,38 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENÍ 17. 9. 2026 (druhá fronta koše C3, 6. místo) — NÁVRH VYŘADIT, čeká na
+  potvrzení Michalem. Čteno společně s `chata-popelka` (37 m odsud): jsou to
+  DVĚ BUDOVY JEDNOHO PROVOZOVATELE na jedné adrese Strážné 147, 543 52.
+
+  Prameny (vše nalezeno přes WebSearch, čteno 17. 9. 2026): (1) Živéfirmy.cz
+  https://www.zivefirmy.cz/chata-baraba_f1071358 — zápis AKTIVNÍ, obor
+  „Chaty, chalupy" (ne restaurační), Jaroslav Kobr, IČO 12228478,
+  tel. 499 434 184, GPS 50.666336, 15.613078 = 7 m od našeho bodu → identita
+  ověřena měřením. (2) zimniubytovani.webnode.cz
+  https://zimniubytovani.webnode.cz/chata-baraba-popelka/ — doslova
+  „ubytování ve dvou chalupách v obci Strážné", stravování „možnost
+  samostatného vaření nebo polopenze", tel. +420 602 304 033, kontakt
+  aku.kobr@seznam.cz. (3) mrk.cz https://www.mrk.cz/rekreace.php?id=36476 —
+  adresa Strážné 147, doslova „Nabízíme polopenzi s chutným jídlem z naší
+  kuchyně." (4) gastrozoom.cz
+  https://www.gastrozoom.cz/restaurace/chata-baraba-6225/ — týž objekt,
+  Strážné 147, p. Kobr Jaroslav, IČO 12228478.
+
+  Proč to nestačí: polopenze a vlastní vaření jsou služby pro ubytované
+  hosty; veřejnou restauraci nezmiňuje ani jeden ze čtyř pramenů. Týž vzor
+  jako Śliwkowa Chata (17. 9.) a „pevné časy jídel" z 15. 9.
+
+  NÁLEZ: zápis v gastro katalogu sám hospodu nedokládá. GastroZoom je
+  restaurační katalog, ale kategorie záznamu zní „Chaty a chalupy" a popis
+  provozu, jídelníček ani otvíračka tam nejsou (poslední aktualizace
+  25. 2. 2022). Je to protějšek nálezu o Firmy.cz ze 16. 9. — rozhoduje
+  kategorie zápisu, ne to, v jakém katalogu leží.
+
+  Vztah k `chata-popelka`: NENÍ to duplicita ani dvojí zápis téhož domu —
+  pramen mluví o dvou chalupách. Jedna adresa, jedno IČO, jeden telefon,
+  jeden web. Pojistka `rozhodnuteDuplicity` tuhle dvojici minula dvakrát:
+  vzdálenost 37 m je nad prahem TYZ_DUM_M (30 m) a jména nemají společné
+  jádro, takže v registru `data/_jmenovci.yaml` dvojice vůbec není. Otázka
+  pro Michala je v deníku.

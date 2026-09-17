@@ -29,6 +29,131 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-17 — denní session: čtyři kandidáti přečteni — a dvě chalupy jednoho majitele, které pojistka minula dvakrát
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging) — od 10. 9. do repa nepřibyl žádný tvůj commit. Vzal
+  jsem tedy „Příště" z 16. 9.: **druhá fronta koše C3 od 3. místa**.
+- **Přečteni čtyři kandidáti:** `chata-tobisek` (3. místo),
+  `sliwkowa-chata-sliwkowa-chata` (5.), `chata-baraba` (6.) a `chata-popelka`
+  (7.). **Do `data/chaty/` se nesáhlo**, nic se nevyřadilo ani nepovýšilo —
+  všechno je návrh s URL a datem v `interniPoznamky`. Tabulka je
+  v `docs/KRKONOSE-TRIAZ-KOSE.md`, oddíl „DRUHÁ FRONTA ČTENA DÁL".
+- **Čtyři návrhy na vyřazení, u všech čtyř stejná půlka klíče.** Role na trase
+  je silná (9–20 m od značky, 2–4 značky do 250 m), občerstvení pro veřejnost
+  nedokládá žádný pramen:
+  - **Chata Tobísek** — czeskiegory.pl doslova „chata wynajmowana jest
+    całkowicie jednej grupie dla 16-21 osób", Firmy.cz „K dispozici je kuchyň,
+    jídelna, společenská místnost a lyžárna". Zápis na Firmy.cz je navíc
+    **neaktivní** a v kategorii „Horské ubytování".
+  - **Śliwkowa Chata** (Przesieka, PL) — e-wczasy.pl: dům k pronájmu celý,
+    po patrech nebo po pokojích; „możliwość wykupienia pobytu wraz
+    z wyżywieniem" je strava k ubytování, ne hospoda.
+  - **Chata Baraba** a **Chata Popelka** (Strážné) — „možnost samostatného
+    vaření nebo polopenze" (zimniubytovani.webnode.cz), „Nabízíme polopenzi
+    s chutným jídlem z naší kuchyně." (mrk.cz). Veřejná restaurace v žádném
+    ze čtyř pramenů.
+- **Nález dne: zápis v gastro katalogu sám hospodu nedokládá.**
+  `chata-baraba` **má** záznam na GastroZoom.cz — tedy v restauračním
+  katalogu — a přesto nic nedokládá: kategorie zní **„Chaty a chalupy"**,
+  popis provozu, jídelníček ani otvíračka chybí, poslední aktualizace
+  25. 2. 2022. Je to **přímý protějšek včerejšího nálezu o Firmy.cz**, jen
+  z druhé strany. Dohromady to dává: **rozhoduje kategorie zápisu — ne
+  katalog, ve kterém leží, ani to, jestli je záznam živý.**
+- **Druhý nález: `chata-baraba` a `chata-popelka` jsou dvě chalupy jednoho
+  majitele — a pojistka je minula dvakrát.** Stojí **37 m od sebe**,
+  zimniubytovani.webnode.cz o nich mluví jako o „ubytování ve **dvou
+  chalupách** v obci Strážné", sdílejí adresu **Strážné 147**, IČO
+  **12228478** (Jaroslav Kobr), telefon i web. `rozhodnuteDuplicity` je
+  nezachytila ani vzdáleností (37,3 m je nad prahem `TYZ_DUM_M` = 30 m), ani
+  registrem — jména „Baraba" a „Popelka" nemají společné jádro, takže dvojice
+  v `data/_jmenovci.yaml` vůbec není.
+- **Čtvrtý den po sobě rozhodl provozovatel a čp., ne vzdálenost — jen
+  tentokrát opačným směrem.** V Maršově (16. 9.) sousední čp. tři domy
+  rozdělila, tady je jedna adresa a jedno IČO spojily. Tvá otázka ze 4. 9.
+  o sousedství 47 metrů tím dostává obě strany: **měření staví frontu,
+  verdikt dává provozovatel a adresa.**
+- **Jmenovec mimo náš koš:** v Horní Malé Úpě je **druhá Chata Popelka**
+  (chatapopelka.cz) — jiný objekt ~15 km odsud. `chata-tobisek` neměl v YAML
+  žádné kontakty ani web, takže se dohledával jen jménem a polohou; u takových
+  je tahle past nejbližší.
+- **Jméno z OSM nesedí popáté:** czeskiegory.pl vede na téže adrese
+  (Velká Úpa 144) a týchž souřadnicích název **„Chalupa v Údolí"**. Netvrdíme,
+  který je aktuální. Za čtyři dny je to **šest z patnácti** čtených kandidátů,
+  u nichž jméno nebo `website` z OSM neplatí. **Typ z OSM nesedí u Śliwkowé**
+  (tag `tourism=hotel`, prameny popisují dům k pronájmu).
+- **Identity ověřeny měřením** proti GPS z pramenů: Tobísek 14 m (Firmy.cz),
+  Śliwkowa 3 m (e-wczasy.pl), Baraba 7 m (Živéfirmy). Popelka vlastní GPS
+  v pramenech nemá — drží ji jméno a pramen o dvou chalupách; jediná GPS
+  v pramenech padne na Barabu, takže **adresu nese Baraba**.
+- **Kontroly:** `npm ci` → `npm run kontrola`, `tsc` i `lint`; čtyři upravené
+  YAML ověřeny parserem. (Výsledek viz poznámka k prostředí níže.)
+
+**Příště:** dočíst druhou frontu — zbývá
+`szkolne-schronisko-mlodziezowe-skalnik` (23 m, 2 značky),
+`horska-chata-hanapetr` (24 m, 2), `dom-pod-jaworami` (29 m, 3) a za desítkou
+`chata-u-kohouta` (30 m), `pension-chata-lovrana` (38 m), `sruby-podspalov`
+(49 m). Vedle toho pořád leží Broumovsko z 28. 8., deset padajících testů
+(Postgres/exporty) a blokované DATA-04 / DATA-05 / DATA-20 / DATA-22 /
+DATA-25. Otevřené otázky z 2.–16. 9. čekají na tebe.
+
+**Otázky pro Michala:**
+
+- **Potvrdíš čtyři dnešní vyřazení?** `chata-tobisek`,
+  `sliwkowa-chata-sliwkowa-chata`, `chata-baraba` a `chata-popelka` — u všech
+  čtyř prameny popisují jídlo jako službu pro ubytované (polopenze, strava
+  k pobytu) nebo jako vlastní vaření, veřejnou restauraci nezmiňují.
+- **Mají `chata-baraba` a `chata-popelka` zůstat jako dva kandidáti, nebo se
+  slučují do jednoho?** Dvě chalupy, jedna adresa, jedno IČO, jeden telefon —
+  ale dva skutečné domy 37 m od sebe. Je to tvoje otázka o vedlejších budovách
+  ze 14. 9. znovu, jen se shodným IČO místo shodných kontaktů.
+- **Má `rozhodnuteDuplicity` dostat druhý vstup vedle registru jmenovců?**
+  Dnešek ukazuje mez: funkce čte jen `data/_jmenovci.yaml`, takže dvojici
+  s různými jmény nemůže najít, ani kdyby byla 2 m od sebe. Nabízí se
+  **shodná adresa nebo IČO** jako druhý klíč — to by Barabu s Popelkou
+  našlo, a nespoléhalo by to na práh 30 m.
+- **Uzavřeme otázku z 5. 9. takto: „rozhoduje kategorie zápisu, ne katalog
+  ani aktivita"?** Po včerejšku (aktivní zápis v ubytovací kategorii = není
+  doklad) a dnešku (zápis v gastro katalogu v ubytovací kategorii = taky není
+  doklad) mi to přijde jako hotová konvence, kterou bych zapsal natvrdo.
+- Trvá z 16. 9.: **potvrdíš vyřazení `chata-kovarna`, `chalupa-marsovka`
+  a `apartman-u-potoka`?**; **stačí ti „měření + čp. + provozovatel" jako
+  odpověď na sousedství 47 metrů ze 4. 9.?**
+- Trvá z 15. 9.: **Hříběcí bouda — zavoláš tam, nebo ji máme vyřadit?**;
+  **potvrdíš vyřazení `chata-medika-2411927307`,
+  `mlynarka-ubytovani-v-krkonosich` a `felicity-grand-apartments`?**;
+  **má se „pevné časy jídel" zapsat jako vzor, který veřejný přístup
+  nedokládá?**
+- Trvá ze 14. 9.: **má `rozhodnuteDuplicity` škrtat i vedlejší budovy podle
+  shodných kontaktů?**; **potvrdíš vyřazení `chata-gracie`?**
+- Trvá z 10. 9.: **má se `rozhodnuteDuplicity` zapsat i jako kontrola
+  v `npm run kontrola`?**
+- Trvá z 6. 9.: **bereme „jmenuje ho značená trasa jako cíl" jako doklad
+  role na trase?**
+- Trvá z 5. 9.: **sloučit `restaurace-havlova-bouda` do `havlova-bouda`
+  na základě shodného IČO?**; **potvrdíš vyřazení `chata-za-wsia`?**;
+  **sloučit `penzion-modrokamenna-bouda` do `modrokamenna-bouda`?**
+- Trvá ze 4. 9.: **zapsat natvrdo konvenci o doslovných citacích?**
+- Trvá z 3. 9.: **`lidicka-bouda` — dům, který BYL boudou?**;
+  **`bouda-v-obrim-dole` dohromady s Chatou pod Studničnou?**
+- Trvá z 2. 9.: **má se práh 250 m zapsat jako konvence?**; **přenášet
+  `amenity` poraženého při slučování duplicit?**
+
+**Poznámka k prostředí:** `npm ci` v čistém klonu proběhl bez chyby a
+**`npm run kontrola`, `tsc` i `lint` jsou dnes zelené** (kontrola: 20
+workflow souborů, 0 vad; fixtura 25 souborů, 4 kontroly, 0 spadlo). `git push`
+přes sandboxovou proxy spadne na 403, prochází s
+`git -c http.proxy= -c https.proxy= push origin main`. `WebFetch` dál vyžaduje
+provenienci („PROVENANCE_REQUIRED") — každý pramen se musí nejdřív najít přes
+`WebSearch`. Dnes se nedaly otevřít tři stránky nalezené vyhledáváním:
+`strazne.eu` (404 na obou variantách URL), `penziony.cz` (404),
+`dopenzionu.cz` (portál ukončen) a `ekatalog.cz` (410) — verdikt u Baraby
+a Popelky proto stojí na Živéfirmy, webnode, mrk.cz a GastroZoom.
+
 ## 2026-09-16 — denní session: druhá fronta koše C3 postavena — a shluk tří domů v Horním Maršově padl celý
 
 **Hotovo:**

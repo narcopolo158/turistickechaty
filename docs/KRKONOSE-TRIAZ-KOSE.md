@@ -1580,3 +1580,90 @@ je návrh s URL a datem v `interniPoznamky`.
 - **Obě identity ověřeny měřením** proti GPS z pramenů: Maršovka 4 m
   (vlastní web), U potoka 4 m (Firmy.cz). Kovárna GPS v pramenech nemá —
   identitu drží adresa a jméno.
+
+## DRUHÁ FRONTA ČTENA DÁL (17. 9. 2026) — čtyři kandidáti, čtyři návrhy na vyřazení a dvě chalupy jednoho majitele
+
+Pořadí backlogu se nemění, **DATA-04 / DATA-05 / DATA-20 / DATA-22 / DATA-25 /
+DATA-28 i F1-IMPL zůstávají blokované** ze stejných důvodů — od 10. 9. do repa
+nepřibyl Michalův commit. Vzato tedy „Příště" z 16. 9.: druhá fronta od
+3. místa. Přečteni **`chata-tobisek`, `sliwkowa-chata-sliwkowa-chata`,
+`chata-baraba` a `chata-popelka`** (3., 5., 6. a 7. místo). **Do `data/chaty/`
+se nesáhlo** — všechno jsou návrhy s URL a datem v `interniPoznamky`.
+
+### Všichni čtyři padají na téže půlce klíče
+
+| kandidát | doklad | verdikt |
+| --- | --- | --- |
+| Chata Tobísek | czeskiegory.pl: „chata wynajmowana jest całkowicie jednej grupie dla 16-21 osób"; Firmy.cz (zápis **neaktivní**, kategorie „Horské ubytování"): „K dispozici je kuchyň, jídelna, společenská místnost a lyžárna" | návrh VYŘADIT |
+| Śliwkowa Chata | e-wczasy.pl: „możliwość wynajęcia całego domku… osobno parteru lub poddasza albo pojedynczo pokoi" + „możliwość wykupienia pobytu wraz z wyżywieniem"; meteor-turystyka.pl: domek pro 8 osob s kuchyňským koutem | návrh VYŘADIT |
+| Chata Baraba | zimniubytovani.webnode.cz: „možnost samostatného vaření nebo polopenze"; mrk.cz: „Nabízíme polopenzi s chutným jídlem z naší kuchyně." | návrh VYŘADIT |
+| Chata Popelka | týž provozovatel a tytéž prameny jako Baraba | návrh VYŘADIT |
+
+Ani u jednoho ze čtyř nezmiňuje žádný pramen restauraci nebo občerstvení pro
+veřejnost. Role na trase je u všech čtyř silná (9–20 m od značky, 2–4 značky
+do 250 m) — **klíč ale žádá obě půlky.**
+
+### Nález dne: zápis v gastro katalogu sám hospodu nedokládá
+
+`chata-baraba` má záznam na **GastroZoom.cz**, tedy v restauračním katalogu —
+a přesto hospodu nedokládá: kategorie zní **„Chaty a chalupy"**, popis
+provozu, jídelníček ani otvíračka tam nejsou a poslední aktualizace je
+z 25. 2. 2022. Je to **přímý protějšek nálezu ze 16. 9. o Firmy.cz**, jen
+z opačné strany: tam aktivní záznam v ubytovací kategorii hospodu nedoložil,
+tady ji nedoloží ani záznam v gastro katalogu, když je kategorie ubytovací.
+**Rozhoduje kategorie zápisu, ne katalog, ve kterém leží, ani to, jestli je
+živý.** Michalova otevřená otázka z 5. 9. tím má třetí a poslední díl.
+
+### Druhý nález: dvě chalupy jednoho majitele, které pojistka minula dvakrát
+
+`chata-baraba` a `chata-popelka` stojí **37 m od sebe** a
+zimniubytovani.webnode.cz o nich mluví doslova jako o „ubytování ve **dvou
+chalupách** v obci Strážné". Sdílejí adresu **Strážné 147**, IČO **12228478**
+(Jaroslav Kobr), telefon i web — na rozdíl od shluku v Horním Maršově
+(16. 9.), kde tři body do 103 m měly tři různé provozovatele a tři různá čp.
+
+**Pojistka `rozhodnuteDuplicity` tuhle dvojici minula dvakrát:**
+
+1. **Vzdálenost** 37,3 m je nad prahem `TYZ_DUM_M` (30 m).
+2. **Jména** „Baraba" a „Popelka" nemají společné jádro, takže dvojice není
+   v registru `data/_jmenovci.yaml` vůbec — a registr je jediný vstup té
+   funkce.
+
+Čtvrtý den po sobě tedy rozhodl **provozovatel a číslo popisné, ne
+vzdálenost** — jen tentokrát opačným směrem než 14.–16. 9.: adresa a IČO
+dvojici **spojily**, kdežto v Maršově sousední čp. tři domy **rozdělila**.
+Měření je pořád jen fronta, ne verdikt.
+
+Který bod nese adresu, rozhodlo měření: jediná GPS v pramenech (Živéfirmy
+50.666336, 15.613078) padne na **Barabu** (7 m), od Popelky je 38 m.
+
+### Vedlejší nálezy
+
+- **Jmenovec mimo náš koš.** V Horní Malé Úpě je **druhá Chata Popelka**
+  (chatapopelka.cz, e-chalupy.cz/…-o6132) — jiný objekt, jiný provozovatel,
+  ~15 km od našeho kandidáta. Při dohledávání podle jména se prameny obou
+  míchají. `chata-tobisek` neměl v YAML žádné kontakty ani web, takže se
+  dohledával jen jménem a polohou — a právě u takových je tahle past
+  nejbližší.
+- **Jméno z OSM nesedí popáté.** czeskiegory.pl vede na téže adrese
+  (Velká Úpa 144) a týchž souřadnicích název **„Chalupa v Údolí"**, kdežto
+  Firmy.cz i URL portálu drží „Chata Tobísek". Netvrdíme, který je aktuální —
+  identitu drží adresa a GPS. Za čtyři dny je to **šest z patnácti** čtených
+  kandidátů, u nichž jméno nebo `website` z OSM neplatí.
+- **Typ z OSM nesedí u Śliwkowé:** tag `tourism=hotel`, oba prameny popisují
+  dům k pronájmu (celý, po patrech nebo po pokojích).
+- **„Strava k ubytování" popáté.** Śliwkowa („pobyt wraz z wyżywieniem")
+  i Baraba/Popelka („polopenze") nabízejí jídlo, ale jen ubytovaným.
+  Kolemjdoucí turista si tam nesedne. Připojuje se ke vzoru „pevné časy
+  jídel" z 15. 9. — **a je to zdaleka nejčastější důvod vyřazení v celém
+  koši C3.**
+- **Identity ověřeny měřením:** Tobísek 14 m (Firmy.cz), Śliwkowa 3 m
+  (e-wczasy.pl), Baraba 7 m (Živéfirmy). Popelka vlastní GPS v pramenech
+  nemá — drží ji jméno a pramen o dvou chalupách.
+
+### Co zbývá ve druhé frontě
+
+Přečteno je 1.–7. místo. Zbývá **`szkolne-schronisko-mlodziezowe-skalnik`**
+(23 m, 2 značky), **`horska-chata-hanapetr`** (24 m, 2), **`dom-pod-jaworami`**
+(29 m, 3) a za desítkou **`chata-u-kohouta`** (30 m),
+**`pension-chata-lovrana`** (38 m) a **`sruby-podspalov`** (49 m).
