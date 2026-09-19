@@ -29,6 +29,57 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-19 — denní session: první desítka druhé fronty dočtena — a Dom Pod Jaworami jako první nepadá
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  — od 10. 9. do repa nepřibyl tvůj commit. Vzal jsem „Příště" ze 17. 9.:
+  **druhá fronta koše C3, 8.–10. místo**.
+- **Přečteni tři kandidáti** (do `data/chaty/` se nesáhlo, vše jsou návrhy
+  s URL a datem v `interniPoznamky`, tabulka v `docs/KRKONOSE-TRIAZ-KOSE.md`,
+  oddíl „PRVNÍ DESÍTKA DOČTENA"):
+  - **`horska-chata-hanapetr`** — návrh VYŘADIT: pronájem celé chaty
+    („84.000kč / chata za týden"), „plné i poloviční penze", Firmy.cz
+    v ubytovací kategorii. Identita 4 m.
+  - **`szkolne-schronisko-mlodziezowe-skalnik`** — návrh VYŘADIT, ale
+    **hraniční**: ubytovna PTSM pro pěší na Głównym Szlaku Sudeckim, jenže
+    jediný konkrétní pramen (2017) píše o jídle „wiem, że w schronisku PTSM,
+    go nie dostanę".
+  - **`dom-pod-jaworami`** — návrh **DRŽET**: „Gospoda i przytulny pensjonat
+    z 12 miejscami noclegowymi" (KarkonoszeGO, 2020), „leśniczówka
+    z noclegami i bufetem" (Trasa dla Bobasa), u kaple sv. Anny na Grabowci,
+    kam vede pět značek včetně červené GSS. Chybí jen doklad dnešního provozu.
+- **Nález dne:** první kandidát druhé fronty, u kterého nepadá ani jedna
+  půlka klíče — a OSM ho vede jako `tourism=chalet` jménem pronajímaného
+  domu. Do užšího výběru ho dostala jen vzdálenost od značky, ne typ ani
+  jméno.
+- **Web z OSM nesedí posedmé** (Hanapetr: `hanapetr.cernypetr.com` vs.
+  `hanapetr.cz`).
+- **Kontroly:** tři upravené YAML ověřeny parserem.
+
+**Příště:** dočíst zbytek druhé fronty za desítkou — `chata-u-kohouta`
+(30 m), `pension-chata-lovrana` (38 m), `sruby-podspalov` (49 m). Pak shrnout
+celý koš C3 (poměr vyřazení / drženo) jako podklad pro tvé hromadné
+rozhodnutí.
+
+**Otázky pro Michala:**
+
+- **Dom Pod Jaworami (Sosnówka, +48 608 521 761 dle OSM) — zavoláš, jestli
+  gospoda/bufet u kaple sv. Anny dnes funguje pro kolemjdoucí?** Je to jediný
+  z jedenácti kandidátů druhé fronty, který má doklad obou půlek klíče.
+- **Skalnik: má „nocleh pro pěší na dálkové trase bez jídla" být výjimkou
+  z klíče** (obdobně jako útulny a bivaky v rozsahu z 30. 7.), nebo vyřadit?
+- **Potvrdíš vyřazení `horska-chata-hanapetr`?**
+- Trvají otázky ze 17. 9. a starší (vyřazení Tobísek / Śliwkowa / Baraba /
+  Popelka, druhý klíč `rozhodnuteDuplicity` podle adresy nebo IČO, konvence
+  „rozhoduje kategorie zápisu" a další).
+
+**Poznámka k prostředí:** `WebFetch` dál vyžaduje provenienci; neotevřely se
+`hanapetr.cz` (robots.txt timeout), `dompodjaworami.pl` (smyčka přesměrování),
+`infoturystyka.pl` (403) a Wix stránka Skalniku.
+
 ## 2026-09-17 — denní session: čtyři kandidáti přečteni — a dvě chalupy jednoho majitele, které pojistka minula dvakrát
 
 **Hotovo:**

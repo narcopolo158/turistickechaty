@@ -1667,3 +1667,52 @@ Přečteno je 1.–7. místo. Zbývá **`szkolne-schronisko-mlodziezowe-skalnik`
 (23 m, 2 značky), **`horska-chata-hanapetr`** (24 m, 2), **`dom-pod-jaworami`**
 (29 m, 3) a za desítkou **`chata-u-kohouta`** (30 m),
 **`pension-chata-lovrana`** (38 m) a **`sruby-podspalov`** (49 m).
+
+## DRUHÁ FRONTA — PRVNÍ DESÍTKA DOČTENA (19. 9. 2026) — a první kandidát, u něhož nepadá ani jedna půlka klíče
+
+Pořadí backlogu se nemění, **DATA-04 / DATA-05 / DATA-20 / DATA-22 / DATA-25 /
+DATA-28 i F1-IMPL zůstávají blokované** — od 10. 9. do repa nepřibyl Michalův
+commit. Vzato „Příště" ze 17. 9.: přečteno **8.–10. místo** druhé fronty.
+**Do `data/chaty/` se nesáhlo** — návrhy s URL a datem jsou v `interniPoznamky`.
+
+| kandidát | doklad | verdikt |
+| --- | --- | --- |
+| Szkolne Schronisko Młodzieżowe „Skalnik" (Bukowiec, PL) | pawlowski.cc (2017, pěší na Głównym Szlaku Sudeckim): přespání 22 zł, o jídle „wiem, że w schronisku PTSM, go nie dostanę"; Nocowanie.pl: „kuchnię serwującą całodniowe wyżywienie" bez určení pro koho | návrh VYŘADIT — **hraniční** |
+| Horská chata HANAPETR (Dolní Dvůr) | Firmy.cz: ubytovací kategorie, „celoroční ubytování o kapacitě 42 lůžek… pro sportovní a firemní akce"; Turistika.cz: „84.000kč / chata za týden"; ČeskéHory.cz (archiv): „plné i poloviční penze" | návrh VYŘADIT |
+| Dom Pod Jaworami (Sosnówka, PL) | KarkonoszeGO (2020): „Gospoda i przytulny pensjonat z 12 miejscami noclegowymi"; Trasa dla Bobasa: „leśniczówka z noclegami i bufetem"; u kaple sv. Anny, kam vede pět značených cest včetně červené GSS | návrh **DRŽET** — chybí jen doklad dnešního provozu |
+
+### Nález dne: Dom Pod Jaworami — první kandidát druhé fronty, který nepadá
+
+Po jedenácti přečtených kandidátech druhé fronty a sérii „strava k ubytování"
+je tu poprvé **gospoda s bufetem u výletního cíle** (kaple sv. Anny na
+Grabowci, 1719), ke kterému vede pět značek. OSM ho přitom vede jako
+`tourism=chalet` a jménem pronajímaného domu — **typ ani jméno z OSM by ho do
+užšího výběru nikdy nedostaly; dostala ho tam jen vzdálenost od značky.**
+Otevřené zůstává jediné: prameny s gospodou jsou z roku 2020 nebo bez data,
+web provozovatele se zacyklí v přesměrování. Rozhodne telefonát.
+
+### Hraniční případ: turistická ubytovna na hlavní sudetské trase
+
+Skalnik je levná ubytovna PTSM, kde přespávají pěší z Głównego Szlaku
+Sudeckiego — role na trase je tu tedy silnější než pouhá blízkost značky.
+Občerstvení pro veřejnost ale jediný konkrétní pramen (2017) popírá. Klíč
+žádá obě půlky, proto návrh vyřadit; otázka pro Michala, zda „nocleh pro pěší
+na dálkové trase bez jídla" má být výjimka (analogie útulen a bivaků, které
+rozsah z 30. 7. zahrnuje).
+
+### Vedlejší nálezy
+
+- **Web z OSM nesedí posedmé:** Hanapetr má v OSM `hanapetr.cernypetr.com`,
+  prameny vedou na `hanapetr.cz`. Skalnikův web z OSM je dnes jen rám
+  s odkazem na wixsite.
+- **Identita měřením:** Hanapetr 4 m (Firmy.cz). Skalnik a Dom Pod Jaworami
+  GPS v přečtených pramenech nemají — drží je adresa (ul. Szkolna 2, Bukowiec;
+  ul. Św. Anny 3, Sosnówka) a jméno.
+- **Neotevřené prameny:** `hanapetr.cz` (robots.txt timeout),
+  `dompodjaworami.pl` (smyčka přesměrování), `infoturystyka.pl` (403 u obou),
+  `viasudetica.wixsite.com/skalnik` (nepovolená provenience).
+
+### Co zbývá ve druhé frontě
+
+První desítka je přečtená. Zbývá za desítkou **`chata-u-kohouta`** (30 m),
+**`pension-chata-lovrana`** (38 m) a **`sruby-podspalov`** (49 m).
