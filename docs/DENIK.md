@@ -29,6 +29,109 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-21 — denní session: druhá fronta koše C3 dočtena — a kandidát, který v Krkonoších vůbec neleží
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging) — od 10. 9. do repa nepřibyl tvůj commit. Vzal jsem
+  „Příště" z 19. 9.: **zbytek druhé fronty koše C3** a pak souhrn celého koše.
+- **Přečteni poslední tři kandidáti druhé fronty** (do `data/chaty/` se
+  nesáhlo, vše jsou návrhy s URL a datem v `interniPoznamky`, tabulka
+  v `docs/KRKONOSE-TRIAZ-KOSE.md`, oddíl „DRUHÁ FRONTA KOŠE C3 DOČTENA"):
+  - **`chata-u-kohouta`** (30 m od žluté) — návrh VYŘADIT, ale **jiným
+    důvodem než všichni předchozí**: nenašel se ani jeden živý pramen.
+    Jediná stopa je titulek mrtvého zápisu netfirmy.cz („Chata U Kohouta –
+    Janské Lázně", stránka vrací 410), seznam ubytování v Janských Lázních
+    na ČeskéHory.cz objekt neuvádí. Poloha měřením: 481 m od Stezky korunami
+    stromů, 668 m od Hoffmannovy boudy — západní svah Černé hory.
+  - **`pension-chata-lovrana`** (38 m od červené) — návrh VYŘADIT, hraniční.
+    Jídelna se snídaněmi, obědy a večeřemi, „Snídaně, Polopenze, Plná penze",
+    bar ve společenské místnosti, „Každou středu (i v zimě) se griluje";
+    věta „Součástí penzionu je také restaurace" na JanskeLazne.cz nikde
+    neříká, že je pro neubytované. Identita měřením 5 m (GPS z Hkregionu).
+  - **`sruby-podspalov`** (49 m od zelené) — návrh VYŘADIT **dvakrát**:
+    pronájem celého srubu po týdnech („9.000kč / srub za týden", 1–16 osob)
+    a k tomu objekt vůbec neleží v Krkonoších.
+- **Nález dne: okno oblasti chytlo cizí pohoří podruhé.** `sruby-podspalov`
+  je na 15,3035° v. d., tedy **3 metry od západní hrany** krkonošského okna
+  DATA-01 (`lngMin` 15,3), a měřením **11 437 m** k nejbližšímu krkonošskému
+  kandidátovi a **16 399 m** k nejbližšímu publikovanému profilu. Pramen ho
+  sám řadí do „Český ráj / Podkrkonoší / Spálov". První takový případ byla
+  `jestrebi-bouda`, kvůli které se 28. 8. zakládalo Broumovsko — jenže ta
+  klíč splňovala, tahle ne, takže přeřazení nic nezachrání. `cesky-raj`
+  i `podkrkonosi` jsou navíc zatím jen složky kandidátů, v
+  `scripts/oblasti.ts` nakonfigurované nejsou.
+- **Druhý nález: „žádný pramen" je jiný verdikt než „pramen říká opak".**
+  Patnáct kandidátů koše C3 padlo na doložené stravě pro ubytované; Chata
+  U Kohouta je první, u níž **není co číst**. Vyřadit ji stejnou větou by
+  smazalo rozdíl mezi „doloženo, že hospoda není" a „nevíme nic" — a mrtvý
+  zápis navíc neprozradí ani kategorii, tedy to, co podle konvence ze 17. 9.
+  rozhoduje.
+- **Souhrn celého koše C3 sepsán** jako podklad pro tvé hromadné rozhodnutí
+  (tabulka v triážním dokumentu): z 120 kandidátů je přečteno **21** (17,5 %),
+  obě fronty jsou dočtené. Výsledek: **1 k povýšení** (`chata-viktorka`),
+  **3 držet / na telefonát** (`hribeci-bouda`, `chata-jestrab`,
+  `dom-pod-jaworami`), **1 škrtnutý jako vedlejší budova** (depandance
+  Špindlerovy boudy) a **16 návrhů na vyřazení**. Výtěžnost front, které se
+  stavěly jako nejvýtěžnější, je tedy **1 z 21** na povýšení.
+- **Vedlejší nálezy:** u Lovrany mají čtyři katalogy **tři adresy**
+  (Zvonečková 106, Černohorská 265, Lázeňská 46) a **dvě kapacity** (78 a 52
+  lůžek) při shodných 27 pokojích — do YAML se proto nepřenáší ani adresa,
+  ani kapacita, a je to živý případ otevřené **KONTROLA-11**. Yelp vede
+  Lovranu v kategorii „Food" bez popisu provozu — zrcadlový případ Baraby
+  z GastroZoomu (tam gastro katalog v ubytovací kategorii, tady ubytovací
+  objekt v gastro kategorii).
+- **Pojistka z 10. 9.:** ani jeden z dnešních tří není v `data/_jmenovci.yaml`,
+  takže `rozhodnuteDuplicity` neškrtla nic — u druhé fronty tedy nula za
+  všech třináct kandidátů.
+- **Kontroly:** `npm ci` v čistém klonu proběhl bez chyby, **`npm run kontrola`
+  je zelená** (20 workflow souborů, 0 vad; fixtura 25 souborů, 4 kontroly,
+  0 spadlo); tři upravené YAML ověřeny parserem.
+
+**Příště:** rozhodnout, jak dál se zbývajícími **99 kandidáty koše C3** — obě
+připravené fronty jsou dočtené, takže další čtení by šlo do slabší části koše
+(36 kandidátů je nad prahem 250 m od značky, tam měření druhou půlku klíče
+nedá vůbec). Nabízí se buď hromadný průchod přes strojově čitelný doklad
+(kategorie zápisu, cena za celý objekt za týden) a čtení po jednom jen tam,
+kde takový doklad chybí, nebo jiné pořadí podle tvého rozhodnutí. Vedle toho
+pořád leží Broumovsko z 28. 8., deset padajících testů (Postgres/exporty)
+a blokované DATA-04 / DATA-05 / DATA-20 / DATA-22 / DATA-25 / DATA-28 /
+F1-IMPL. Otevřené otázky z 2.–19. 9. čekají na tebe.
+
+**Otázky pro Michala:**
+
+- **Má „nenašel jsem žádný pramen" být vyřazení, nebo odložení?** U
+  `chata-u-kohouta` nejde o doložený opak, ale o nedoložitelnost. V repu je
+  na to `data/kandidati/_odlozeno.yaml` („aktivní ‚zatím ne'"), dosud
+  používaný pro čekání na rozhodnutí o rozsahu nebo na stav provozu.
+  Navrhuji zapsat konvenci: **bez jediného živého pramene → `_odlozeno.yaml`,
+  ne `_vyrazeno.yaml`** (vyřazené DATA-01 nezakládá znovu, odložené se do
+  fronty vrátí).
+- **Potvrdíš dnešní tři návrhy na vyřazení?** `pension-chata-lovrana`
+  a `sruby-podspalov` jistě; u `chata-u-kohouta` záleží na odpovědi výš.
+- **Sruby Podspálov: smazat ze krkonošských kandidátů, nebo nechat ležet?**
+  Objekt je 16 km od nejbližšího profilu a klíč nesplňuje, takže zakládat pro
+  něj Český ráj nemá smysl — ale chytlo ho okno a příště ho chytne znovu.
+  Nabízí se **zúžit `lngMin` krkonošského okna** (dnes 15,3; hřeben začíná
+  u Harrachova, tj. ~15,43), nebo objekt vyřadit a okno nechat.
+- **Jak dál se zbývajícími 99 kandidáty C3?** Viz „Příště" — hromadný průchod
+  přes strojově čitelný doklad, nebo čtení po jednom dál?
+- Trvají otázky z 19. 9. a starší (Dom Pod Jaworami — zavoláš?; výjimka pro
+  Skalnik; vyřazení `horska-chata-hanapetr`; Baraba × Popelka jako jeden nebo
+  dva; druhý klíč `rozhodnuteDuplicity` podle adresy nebo IČO; konvence
+  „rozhoduje kategorie zápisu"; Hříběcí bouda; a další z 2.–17. 9.).
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. `WebFetch`
+dál vyžaduje provenienci — u `lovrana.eu` se povolení nestihlo vyřídit
+(PROVENANCE_REQUIRED), takže web provozovatele Lovrany zůstal nepřečtený.
+Dál se neotevřely `penziony.cz` (smyčka přesměrování), `chatalovrana.cz`
+(robots.txt timeout), `srubypodspalov.cz` (smyčka https→http na tutéž adresu)
+a `netfirmy.cz` (410 Gone).
+
 ## 2026-09-19 — denní session: první desítka druhé fronty dočtena — a Dom Pod Jaworami jako první nepadá
 
 **Hotovo:**

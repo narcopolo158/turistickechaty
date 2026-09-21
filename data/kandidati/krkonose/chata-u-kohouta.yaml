@@ -21,3 +21,29 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENÍ 21. 9. 2026 (druhá fronta koše C3, 11. místo, 30 m ke značce) —
+  NÁVRH VYŘADIT, ale jiným důvodem než dosavadní fronta: o objektu se
+  nenašel ANI JEDEN pramen. Klíč zařazení tedy nepadá na doložené
+  „stravě k ubytování", nýbrž na nedoložitelnosti; rozhodnutí patří
+  Michalovi (viz otázka v deníku, jestli takový případ vyřadit, nebo
+  odložit do `data/kandidati/_odlozeno.yaml`).
+
+  Co se hledalo a nenašlo (WebSearch 21. 9. 2026, dotazy na jméno
+  v kombinaci s Janskými Lázněmi, Svobodou nad Úpou, Černým Dolem,
+  Rudníkem a Černou horou): jediná stopa je zápis katalogu netfirmy.cz
+  https://www.netfirmy.cz/firma/10331-chata-u-kohouta/ s titulkem
+  „Chata U Kohouta – Janské Lázně" ve výsledcích vyhledávání — stránka
+  sama vrací 410 Gone, obsah tedy nemáme a kategorie zápisu se nedá
+  přečíst. Seznam ubytování v Janských Lázních na ČeskéHory.cz
+  https://www.ceskehory.cz/ubytovani/janske-lazne.htm objekt se slovem
+  „Kohout" neuvádí. Katalogové zápisy „U Kohouta", které vyhledávání
+  vrací (Libošovice/Podkost, Vráž, Rampuše, Stálkov, Pec pod Sněžkou —
+  Chata u Kohoutů), jsou jmenovci jinde v republice, ne tento objekt.
+
+  Poloha měřením (21. 9. 2026): 481 m od Stezky korunami stromů,
+  661 m od Hoffmanových Boud a 668 m od Hoffmannovy boudy — sedí
+  s žlutou č. 7227 „Svoboda nad Úpou – Nad Hoffmannovou boudou" (30 m),
+  tedy západní svah Černé hory nad Janskými Lázněmi. Obec ani adresa
+  z pramene nejsou, proto se `obec` NEZAPISUJE (DATA-17 R6).
+  OSM nese jen `name` a `tourism=chalet`, žádný web ani adresu.

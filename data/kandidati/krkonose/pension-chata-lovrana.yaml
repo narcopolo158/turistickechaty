@@ -28,3 +28,51 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENÍ 21. 9. 2026 (druhá fronta koše C3, 12. místo, 38 m ke značce) —
+  NÁVRH VYŘADIT, hraniční. Role na trase je slabší, ale doložená (38 m
+  od červené č. 0407 „[Č] Svoboda nad Úpou – Chata Na Rozcestí", dvě
+  značky do 250 m, rozcestník 295 m); občerstvení PRO VEŘEJNOST
+  nedokládá žádný z pěti přečtených pramenů. Jídlo je popsáno jako
+  služba pro ubytované.
+
+  Identita měřením: GPS z Hkregion.cz (50°38'7,275"N, 15°46'50,70"E)
+  padne 5 m od OSM uzlu — nejbližší doklad totožnosti, jaký v pramenech
+  je. Provozovatel David Lorenc odpovídá e-mailu david.lorenc@lovrana.eu
+  i webu z OSM (lovrana.eu).
+
+  Prameny (nalezeno přes WebSearch, čteno 21. 9. 2026):
+  (1) Hkregion.cz https://www.hkregion.cz/dr-cs/9824-penzion-lovrana.html
+  — „Penzion Lovrana nabízí ubytování ve dvou až šestilůžkových pokojích",
+  „společenská místnost s barem (televizor, DVD přehrávač, satelit, WiFi,
+  xBox)", vaří se česká kuchyně, „Každou středu (i v zimě) se griluje";
+  52 lůžek, 685 m n. m., adresa Lázeňská 46. O veřejném přístupu ke
+  stravování ani slovo. (2) TravelContact.cz
+  https://www.travelcontact.cz/index.php/detail/1542174-pension-chata-lovrana
+  — kategorie zápisu „Horské chaty", adresa Zvonečková 106, „ubytování
+  ve dvou, tří a čtyřlůžkových pokojích horské chaty v Krkonoších",
+  o restauraci nic. (3) SkiResort Černá hora – Pec
+  https://www.skiresort.cz/sluzby/ubytovani/pro-skoly_4/penzion-lovrana_15/
+  — adresa „Znovečková 106" (zřejmě přepis Zvonečkové), 78 lůžek,
+  27 pokojů, stravování nabízené jako „Snídaně, Polopenze, Plná penze",
+  rezervace přes stránku Chaty Lovrana na janskelazne.cz; sekce je
+  „ubytování pro školy". (4) JanskeLazne.cz
+  https://www.janskelazne.cz/cz/chata-lovrana-janske-lazne-275.html
+  — pod jménem „Chata Lovrana", adresa Černohorská 265, 78 lůžek,
+  27 pokojů: „v hlavní budově je jídelna, kde se podávají snídaně,
+  večeře a obědy" a v sekci sport/zábava „Součástí penzionu je také
+  restaurace". Že by restaurace byla otevřená neubytovaným, tam není.
+  (5) EDB.eu https://www.edb.eu/en/czech-firm-375600-david-lorenc
+  — zápis „David Lorenc – Penzion LOVRANA**".
+
+  ROZPOR PRAMENŮ, který se nezapisuje ani jednou stranou: tři adresy
+  (Zvonečková 106 u TravelContactu a SkiResortu, Černohorská 265
+  u JanskeLazne.cz, Lázeňská 46 u Hkregionu) a dvě kapacity (78 lůžek
+  u JanskeLazne.cz a SkiResortu, 52 u Hkregionu) při shodných 27 pokojích.
+  Nedá se z pramenů rozhodnout, jde-li o jeden objekt se špatně vedenou
+  adresou, nebo o dva domy téhož provozovatele (jmenovec „Chata Lovrana"
+  × „Penzion Chata Lovrana"). Proto se do YAML nepřenáší ani adresa,
+  ani kapacita. Yelp vede zápis v kategorii „Food", ale bez popisu
+  provozu — podle konvence z 17. 9. (kategorie zápisu, ne katalog)
+  to doklad hospody není. Web lovrana.eu se nedal otevřít
+  (WebFetch: PROVENANCE_REQUIRED), penziony.cz smyčka přesměrování.

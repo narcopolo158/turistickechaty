@@ -21,3 +21,33 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENÍ 21. 9. 2026 (druhá fronta koše C3, 13. a poslední místo, 49 m
+  ke značce) — NÁVRH VYŘADIT, a to dvakrát: objekt klíč zařazení
+  nesplňuje a navíc NELEŽÍ V KRKONOŠÍCH. Do krkonošského koše ho
+  dostalo jen okno dotazu DATA-01 (`lngMin` 15,3 — objekt je na
+  15,3035).
+
+  Klíč zařazení: pronájem celého srubu po týdnech, občerstvení pro
+  veřejnost nedokládá žádný pramen. Prameny (nalezeno přes WebSearch,
+  čteno 21. 9. 2026): (1) Turistika.cz
+  https://www.turistika.cz/chaty-chalupy/detail/sruby-podspalov-spalov-12550
+  — poloha „Český ráj / Podkrkonoší / Spálov", kapacita „1 až 16 osob",
+  4 ložnice, cena „léto 9.000kč, zima 8.000kč / srub za týden", sruby
+  z roku 1940 „na okraji lesa, hned vedle soutoku řeky Jizery
+  a Kamenice", v objektu kuchyňka. (2) Vlastní web
+  http://srubypodspalov.cz/ se nedal přečíst (smyčka přesměrování
+  https→http, WebFetch vrací REDIRECT DETECTED na tutéž adresu).
+  Rok 1940 ani historii do dat nepřenáším — je to jediný pramen
+  a objekt se navrhuje vyřadit.
+
+  Poloha měřením (21. 9. 2026): 11 437 m k nejbližšímu krkonošskému
+  kandidátovi (Sokolská chata Babeta) a 16 399 m k nejbližšímu
+  publikovanému profilu (Chata Studenov); od krkonošského hřebene
+  desítky kilometrů. Je to druhý doložený případ, kdy okno jedné
+  oblasti chytlo cizí pohoří — první byla `jestrebi-bouda`
+  (Jestřebí hory), kvůli které se zakládalo Broumovsko.
+  Pro Spálov ale cílová oblast neexistuje: `cesky-raj`
+  i `podkrkonosi` jsou zatím jen složky kandidátů, v
+  `scripts/oblasti.ts` nakonfigurované nejsou.
+  Přeřazení souboru je rozhodnutí o rozsahu → Michal.

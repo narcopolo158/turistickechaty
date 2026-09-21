@@ -1716,3 +1716,89 @@ rozsah z 30. 7. zahrnuje).
 
 První desítka je přečtená. Zbývá za desítkou **`chata-u-kohouta`** (30 m),
 **`pension-chata-lovrana`** (38 m) a **`sruby-podspalov`** (49 m).
+
+## DRUHÁ FRONTA KOŠE C3 DOČTENA (21. 9. 2026) — a kandidát, který v Krkonoších vůbec neleží
+
+Pořadí backlogu se nemění, **DATA-04 / DATA-05 / DATA-20 / DATA-22 / DATA-25 /
+DATA-28 i F1-IMPL zůstávají blokované** — od 10. 9. do repa nepřibyl Michalův
+commit. Vzato „Příště" z 19. 9.: přečtena **11.–13. místo** druhé fronty, tedy
+její zbytek. **Do `data/chaty/` se nesáhlo** — návrhy s URL a datem jsou
+v `interniPoznamky` příslušných kandidátů.
+
+| kandidát | doklad | verdikt |
+| --- | --- | --- |
+| Chata U Kohouta (Janské Lázně / Černá hora) | **žádný pramen**: jediná stopa je titulek mrtvého zápisu netfirmy.cz („Chata U Kohouta – Janské Lázně", stránka vrací 410 Gone); seznam ubytování v Janských Lázních na ČeskéHory.cz objekt neuvádí | návrh VYŘADIT — **z nedoložitelnosti**, ne z doloženého opaku |
+| Pension Chata Lovrana (Janské Lázně) | Hkregion.cz: pokoje 2–6 lůžek, „společenská místnost s barem", česká kuchyně, „Každou středu (i v zimě) se griluje"; TravelContact.cz kategorie „Horské chaty"; SkiResort: „Snídaně, Polopenze, Plná penze" v sekci pro školy; JanskeLazne.cz: „v hlavní budově je jídelna, kde se podávají snídaně, večeře a obědy" + „Součástí penzionu je také restaurace" (bez slova o neubytovaných) | návrh VYŘADIT — **hraniční** |
+| sruby Podspálov (Spálov u Železného Brodu) | Turistika.cz: „Český ráj / Podkrkonoší / Spálov", „léto 9.000kč, zima 8.000kč / **srub za týden**", 1–16 osob, kuchyňka | návrh VYŘADIT — a **navíc mimo oblast** |
+
+### Nález dne: okno oblasti chytlo cizí pohoří podruhé — a tentokrát není kam kandidáta přeřadit
+
+`sruby-podspalov` leží na 15,3035° v. d., tedy **3 metry od západní hrany**
+krkonošského okna DATA-01 (`lngMin` 15,3). Měřením: **11 437 m** k nejbližšímu
+krkonošskému kandidátovi (Sokolská chata Babeta) a **16 399 m** k nejbližšímu
+publikovanému profilu (Chata Studenov). Pramen sám objekt řadí do „Český ráj /
+Podkrkonoší". Je to **druhý doložený případ, kdy okno jedné oblasti chytlo
+cizí pohoří** — první byla `jestrebi-bouda` (Jestřebí hory), kvůli které se
+28. 8. zakládalo Broumovsko. Rozdíl je v tom, že tehdy bylo kam oblast
+založit, protože kandidát klíč splňoval; tady klíč nesplňuje (pronájem celého
+srubu po týdnech), takže přeřazení nic nezachrání. `cesky-raj` i `podkrkonosi`
+jsou navíc zatím jen složky kandidátů — v `scripts/oblasti.ts` nakonfigurované
+nejsou.
+
+### Druhý nález: „žádný pramen" je jiný verdikt než „pramen říká opak"
+
+Za osm dní čtení koše C3 padlo patnáct kandidátů na tom, že prameny popisují
+jídlo jako službu pro ubytované. **Chata U Kohouta je první, u níž není co
+čtít**: pět různě formulovaných dotazů nenašlo živý pramen a jediná stopa
+(netfirmy.cz) je mrtvá, takže se z ní nedá přečíst ani kategorie zápisu —
+právě to, co podle konvence ze 17. 9. rozhoduje. Vyřadit ji jako ostatní by
+smazalo rozdíl mezi „doloženo, že hospoda není" a „nevíme nic". V repu na to
+existuje mechanismus — `data/kandidati/_odlozeno.yaml` („aktivní ‚zatím ne'") —
+jen se dosud používal pro objekty, kde se čekalo na rozhodnutí o rozsahu nebo
+na stav provozu, ne na nedoložitelnost. Otázka pro Michala je v deníku.
+
+### Vedlejší nálezy
+
+- **Čtyři katalogy, tři adresy, dvě kapacity.** U Lovrany uvádějí prameny
+  Zvonečkovou 106 (TravelContact, SkiResort, Yelp), Černohorskou 265
+  (JanskeLazne.cz) a Lázeňskou 46 (Hkregion), k tomu 78 lůžek (JanskeLazne.cz,
+  SkiResort) proti 52 (Hkregion) při shodných 27 pokojích. Nedá se rozhodnout,
+  jde-li o jeden objekt se špatně vedenou adresou, nebo o dva domy téhož
+  provozovatele. Do YAML se proto nepřenáší ani adresa, ani kapacita —
+  a je to živý případ otevřené **KONTROLA-11** (konvence „zapiš nižší číslo"
+  bez určeného směru).
+- **Identita měřením:** Lovrana 5 m (GPS z Hkregionu, 50°38'7,275"N,
+  15°46'50,70"E). U Kohouta ani Podspálova žádný pramen GPS neuvádí —
+  drží je jen jméno a poloha z OSM.
+- **Yelp vede Lovranu v kategorii „Food"**, ale bez popisu provozu. Podle
+  konvence ze 17. 9. (rozhoduje kategorie zápisu, ne katalog) to doklad
+  hospody není — a je to zrcadlový případ Baraby z GastroZoomu: tam gastro
+  katalog s ubytovací kategorií, tady ubytovací objekt v gastro kategorii.
+- **Neotevřené prameny:** `lovrana.eu` (WebFetch PROVENANCE_REQUIRED),
+  `penziony.cz` (smyčka přesměrování), `chatalovrana.cz` (robots.txt timeout),
+  `srubypodspalov.cz` (smyčka https→http na tutéž adresu),
+  `netfirmy.cz` (410 Gone).
+
+### CELÝ KOŠ C3 — souhrn čtení 14.–21. 9. 2026 jako podklad pro hromadné rozhodnutí
+
+Koš C3 má **120 kandidátů** (měření 6. 9.). Přečteno je jich **21** ve dvou
+frontách, tedy 17,5 %; obě fronty jsou teď dočtené.
+
+| verdikt | počet | kdo |
+| --- | --- | --- |
+| obě půlky klíče — k povýšení | 1 | `chata-viktorka` |
+| držet, rozhodne telefonát nebo chybí pramen | 3 | `hribeci-bouda`, `chata-jestrab`, `dom-pod-jaworami` |
+| škrtnuto z fronty jako vedlejší budova publikovaného profilu | 1 | `hotel-spindlerova-bouda-depandance` |
+| návrh VYŘADIT | 16 | `chata-gracie`, `chata-medika-2411927307`, `mlynarka-ubytovani-v-krkonosich`, `felicity-grand-apartments`, `chata-kovarna`, `chalupa-marsovka`, `apartman-u-potoka`, `chata-tobisek`, `sliwkowa-chata-sliwkowa-chata`, `chata-baraba`, `chata-popelka`, `szkolne-schronisko-mlodziezowe-skalnik`, `horska-chata-hanapetr`, `chata-u-kohouta`, `pension-chata-lovrana`, `sruby-podspalov` |
+
+**Co z toho plyne pro zbývajících 99.** Výtěžnost obou front je **1 z 21**
+(4,8 %) na povýšení a 3 z 21 na „rozhodne telefonát". Přitom fronty se stavěly
+tak, aby byly nejvýtěžnější — první brala nejsilnější kombinaci (do 50 m od
+značky + 2 značky do 250 m + rozcestník do 150 m), druhá tutéž bez
+rozcestníku. Zbytek koše je tedy podle měření **slabší**, ne silnější:
+u 36 kandidátů měření druhou půlku klíče nedá vůbec (nad 250 m od značky).
+Naproti tomu **15 ze 16 návrhů na vyřazení padlo na téže půlce klíče** —
+občerstvení jen pro ubytované. Návrh na pořadí dalších sessions je proto
+v deníku jako otázka: číst dál po jednom, nebo vzít zbytek koše hromadně přes
+strojově čitelný doklad (kategorie zápisu, cena za celý objekt za týden), a po
+jednom číst jen to, co takový doklad nemá.
