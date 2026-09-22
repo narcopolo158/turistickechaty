@@ -29,6 +29,86 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-22 — denní session: zbytek koše C3 změřen strojově — a měření říká, že hromadný průchod koš nedočte
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging) — od 10. 9. do repa nepřibyl tvůj commit. Vzal jsem
+  „Příště" z 21. 9.: rozhodnout, jak dál se zbývajícími 99 kandidáty koše C3.
+- **Místo rozhodnutí jsem to změřil.** Nový `scripts/triaz-kos-c3-tagy.ts`
+  (+ zápis v `docs/KRKONOSE-TRIAZ-KOSE.md`, oddíl „ZBYTEK KOŠE C3 ZMĚŘEN
+  STROJOVĚ ČITELNÝMI SIGNÁLY") měří čtyři signály z OSM tagů v repu, bez
+  jediného dotazu do sítě. **Nejdřív se kalibrují na jednadvaceti
+  přečtených** — signál, který nerozdělí to, co už rozhodnuté je, je bezcenný
+  i pro zbytek. Do `data/` se nesáhlo, nic se nevyřadilo, nic nepovýšilo.
+- **Co kalibrace ukázala:**
+  - **Lexikon jména je jediný signál, který neoznačil ani jednoho mimo
+    vyřazení** — 6 ze 6. `chata-viktorka` (jediná k povýšení) ani žádný ze tří
+    držených slovo ubytování ve jméně nenesou.
+  - **„Žádná gastro stopa v tazích" nedělí vůbec** — označí celý koš C3, což
+    je jeho definice; na přečtených dá přesně základní podíl 16/21. Zapsáno,
+    ať se to nezkouší znovu.
+  - **Absence webu i telefonu** je slabší signál (7 z 8) a o zařazení neříká
+    nic — jen to, že není co číst, přesně případ `chata-u-kohouta` z 21. 9.
+  - **`tourism` na tomhle vzorku ověřit nejde** — 69 ze 120 kandidátů koše je
+    `chalet` a přečtených `apartment` je nula.
+- **Hlavní nález: hromadný průchod koš nevyřeší.** Strojově čitelný doklad
+  dosáhne **na 12 z 99**, tedy na 12 % zbytku, a u dalších pěti dá jen
+  pozvánku ke čtení (slabá gastro stopa `bar`/`opening_hours`:
+  `chata-pod-lipami`, `osada-sniezka`, obě `szkolne-schronisko-mlodziezowe-*`,
+  `wioska-finska-kalevala`). **Zbývajících 82 kandidátů neoznačí žádný signál
+  ani jedním směrem** — jsou to `chalet` a `guest_house` s neutrálním jménem,
+  tedy přesně ten typ, u kterého koš B ukázal (30. 8.), že dohledávka podle
+  jména nic nepřinese. Odpověď na otázku z 21. 9. je tedy: hromadný průchod
+  se vyplatí jako **první** krok (ušetří 12 čtení), ale koš nedočte.
+- **Druhý nález: kalibrace nerozhodla mezi dvěma variantami téhož signálu.**
+  Volnější („jméno nese slovo ubytování") a přísnější („…a žádné slovo
+  boudy") daly na přečtených **totožných 6/6**, ale na nepřečtených se
+  rozcházejí o dva: `penzion-modrokamenna-bouda` a
+  `wellness-hotel-liberecka-bouda` nesou obě slova naráz. Modrokamenná bouda
+  je jméno boudy na hřebeni, ne penzionu v údolí — volnější varianta by tu
+  označila objekt, který do fronty vyřazovaných nepatří. Doporučuji používat
+  **přísnější** variantu (označených 10, ne 12).
+- **Verdikty se neopisují do kódu** — skript si přečtených jednadvacet čte ze
+  souhrnné tabulky v `docs/KRKONOSE-TRIAZ-KOSE.md`, aby verdikt žil na jednom
+  místě a kalibrace se neposouvala ručně.
+- **Kontroly:** `npm run kontrola` zelená (20 workflow souborů, 0 vad;
+  fixtura 25 souborů, 4 kontroly, 0 spadlo), eslint i prettier nad novým
+  skriptem bez připomínek.
+
+**Příště:** pokud to schválíš, projít **12 (resp. 10) kandidátů označených
+lexikonem** jako třetí frontu koše C3 — u osmi z nich je v OSM web nebo
+telefon, takže čtení má kde začít. Tím se koš C3 vyčerpá po strojově
+čitelné stránce a zbude 82 kandidátů, u kterých už žádná levná cesta není.
+Vedle toho pořád leží Broumovsko z 28. 8., deset padajících testů
+(Postgres/exporty) a blokované DATA-04 / DATA-05 / DATA-20 / DATA-22 /
+DATA-25 / DATA-28 / F1-IMPL. Otevřené otázky z 2.–21. 9. čekají na tebe.
+
+**Otázky pro Michala:**
+
+- **Co se zbývajícími 82 kandidáty koše C3, na které žádný signál nedosáhne?**
+  Číst po jednom je ~17 sessions při dosavadní výtěžnosti 1 povýšení z 21.
+  Nabízí se: (a) číst dál po jednom, (b) koš C3 uzavřít jako celek s tím, že
+  se k němu vrátíme, až přibude lepší pramen, (c) přečíst jen ty, které mají
+  v OSM web nebo telefon (59 z 99), a zbytek odložit.
+- **Přísnější, nebo volnější varianta lexikonu?** Navrhuji přísnější, tedy
+  nedávat do fronty `penzion-modrokamenna-bouda` a
+  `wellness-hotel-liberecka-bouda` — obě nesou ve jméně „bouda".
+- **Mám u té dvanáctky (resp. desítky) číst prameny, nebo ti stačí seznam?**
+  Čtení dvanácti kandidátů je zhruba na dvě session.
+- Trvají otázky z 21. 9. a starší (žádný pramen → `_odlozeno.yaml` místo
+  `_vyrazeno.yaml`?; potvrzení tří návrhů na vyřazení; Sruby Podspálov a
+  zúžení `lngMin` krkonošského okna; Dom Pod Jaworami — zavoláš?; výjimka pro
+  Skalnik; Baraba × Popelka jako jeden nebo dva; druhý klíč
+  `rozhodnuteDuplicity` podle adresy nebo IČO; a další z 2.–19. 9.).
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. Dnešní
+session pracovala jen nad daty v repu, takže `WebFetch` nebyl potřeba.
+
 ## 2026-09-21 — denní session: druhá fronta koše C3 dočtena — a kandidát, který v Krkonoších vůbec neleží
 
 **Hotovo:**

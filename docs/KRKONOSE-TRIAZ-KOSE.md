@@ -1802,3 +1802,96 @@ občerstvení jen pro ubytované. Návrh na pořadí dalších sessions je proto
 v deníku jako otázka: číst dál po jednom, nebo vzít zbytek koše hromadně přes
 strojově čitelný doklad (kategorie zápisu, cena za celý objekt za týden), a po
 jednom číst jen to, co takový doklad nemá.
+
+## ZBYTEK KOŠE C3 ZMĚŘEN STROJOVĚ ČITELNÝMI SIGNÁLY (22. 9. 2026) — a nejdřív kalibrace, až pak zbytek
+
+Deník 21. 9. položil otázku, jestli vzít zbývajících 99 kandidátů koše C3
+hromadně přes strojově čitelný doklad místo čtení po jednom. Tahle session na
+ni **neodpovídá rozhodnutím** — dělá krok, který každému takovému rozhodnutí
+musí předcházet: měří, jestli signály čitelné z repu vůbec odpovídají tomu, co
+u přečtených jednadvaceti vyšlo ze čtení pramenů. Kdyby signál přečtenou
+jednadvacítku nerozdělil, je bezcenný i pro zbytek.
+
+Měří `scripts/triaz-kos-c3-tagy.ts` nad OSM tagy v exportech v repu, bez
+jediného dotazu do sítě. Nic nezapisuje do `data/`, nic nevyřazuje.
+
+### Kalibrace na jednadvaceti přečtených
+
+| signál | označil z přečtených | z toho na vyřazení | koho označil mimo |
+| --- | --- | --- | --- |
+| tourism=apartment nebo hostel | 1 / 21 | 1 | — |
+| jméno nese slovo ubytování | 6 / 21 | 6 | — |
+| jméno nese slovo ubytování a ŽÁDNÉ slovo boudy | 6 / 21 | 6 | — |
+| žádná gastro stopa v tagech | 21 / 21 | 16 | `chata-jestrab`, `chata-viktorka`, `dom-pod-jaworami`, `hotel-spindlerova-bouda-depandance`, `hribeci-bouda` |
+| bez webu i telefonu (není co číst) | 8 / 21 | 7 | `hribeci-bouda` |
+
+Základní podíl vyřazení mezi přečtenými je 16/21. Z toho plyne:
+
+- **Lexikon jména je jediný signál, který neoznačil ani jednoho mimo
+  vyřazení** — šest ze šesti. `chata-viktorka` (jediná k povýšení) ani žádný
+  ze tří držených slovo ubytování ve jméně nenesou.
+- **„Žádná gastro stopa v tazích" nedělí vůbec** — označuje celý koš C3 (to
+  je jeho definice), takže na 21 přečtených dává přesně základní podíl. Jako
+  třídicí signál je bezcenný; zapsáno proto, aby se nezkoušel znovu.
+- **Absence webu i telefonu je slabší, ale nezanedbatelná** (7 z 8). Neříká
+  nic o zařazení, jen o tom, že u takového kandidáta není co číst — přesně
+  případ `chata-u-kohouta` z 21. 9.
+- **`tourism` nerozhoduje** — 69 ze 120 kandidátů je `chalet` a přečtených
+  `apartment` je nula. Na tomhle vzorku signál nejde ověřit.
+
+### Co signál najde ve zbývajících 99
+
+| tourism | v koši | přečteno | z toho na vyřazení |
+| --- | --- | --- | --- |
+| `chalet` | 69 | 12 | 10 |
+| `guest_house` | 34 | 5 | 4 |
+| `hotel` | 12 | 3 | 1 |
+| `hostel` | 4 | 1 | 1 |
+| `apartment` | 1 | 0 | 0 |
+
+**Lexikon jména označil 12 z 99.** Pořadí čtení, ne verdikt:
+
+| kandidát | tourism | slovo ve jméně | gastro stopa | web/telefon |
+| --- | --- | --- | --- | --- |
+| `apartamenty-every-sky` — Apartamenty Every Sky | `chalet` | apartament | — | ne |
+| `apartmany-tri-boudy` — Apartmány tři boudy | `hotel` | apartm | — | ano |
+| `domek-w-karkonoszach` — Domek w Karkonoszach | `chalet` | domek | — | ano |
+| `chalupa-baba-jaga` — Chalupa Baba Jaga | `apartment` | chalupa | — | ne |
+| `chalupa-sport` — Chalupa Sport | `chalet` | chalupa | — | ne |
+| `chalupa-u-medveda` — Chalupa u Medvěda | `chalet` | chalupa | — | ano |
+| `chalupa-u-rihu` — Chalupa U Říhů | `chalet` | chalupa | — | ano |
+| `lyzarsky-vlek-ubytovani` — Lyžařský vlek - ubytování | `chalet` | ubytov | — | ano |
+| `penzion-karlova-chata` — Penzion Karlova chata | `guest_house` | penzion | — | ano |
+| `penzion-modrokamenna-bouda` — Penzion Modrokamenná bouda | `guest_house` | penzion | — | ano |
+| `wellness-hotel-liberecka-bouda` — Wellness hotel LIBERECKÁ BOUDA | `hotel` | wellness | — | ano |
+| `zielony-domek` — Zielony Domek | `chalet` | domek | — | ne |
+
+**Vedle toho pět kandidátů se slabou gastro stopou v tazích** — koš C3 z
+definice nemá `amenity=restaurant`, ale tyhle nesou `bar` nebo
+`opening_hours`, což je pozvánka ke čtení, ne doklad: `chata-pod-lipami`
+(bar), `osada-sniezka`, `szkolne-schronisko-mlodziezowe-plum`,
+`szkolne-schronisko-mlodziezowe-zloty-widok` a `wioska-finska-kalevala`
+(u všech čtyř `opening_hours`). Všech pět má v OSM web nebo telefon, takže
+u nich je čím čtení začít.
+
+### Hlavní nález: hromadný průchod koš nevyřeší
+
+**Strojově čitelný doklad dosáhne na 12 z 99, tedy na 12 % zbytku** — a
+u dalších 5 dá jen pozvánku ke čtení. Zbývajících 82 kandidátů žádný signál
+z repu neoznačí ani jedním směrem: jsou to `chalet` a `guest_house` s
+neutrálním jménem, přesně ten typ, u kterého koš B ukázal (30. 8.), že
+dohledávka podle jména nic nepřinese, protože jméno je obecné slovo. Odpověď
+na otázku z deníku tedy zní: **hromadný průchod se vyplatí jako PRVNÍ krok
+(ušetří 12 čtení), ale koš nedočte** — a pro zbylých 82 pořád platí jen čtení
+po jednom, nebo Michalovo rozhodnutí koš uzavřít jinak.
+
+### Druhý nález: kalibrace nerozhodla mezi dvěma variantami téhož signálu
+
+Volnější („jméno nese slovo ubytování") a přísnější varianta („…a žádné slovo
+boudy") daly na přečtených **totožný výsledek, 6/6** — vzorek mezi nimi
+nerozhoduje. Na nepřečtených se ale rozcházejí o dva kandidáty:
+`penzion-modrokamenna-bouda` a `wellness-hotel-liberecka-bouda` nesou obě
+slova naráz. Modrokamenná bouda je přitom jméno boudy na hřebeni, ne
+penzionu v údolí, takže volnější varianta by tu označila objekt, který do
+fronty vyřazovaných nepatří. **Doporučení: používat přísnější variantu** —
+s ní je označených 10, ne 12.
