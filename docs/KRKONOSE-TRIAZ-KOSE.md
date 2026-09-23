@@ -1895,3 +1895,79 @@ slova naráz. Modrokamenná bouda je přitom jméno boudy na hřebeni, ne
 penzionu v údolí, takže volnější varianta by tu označila objekt, který do
 fronty vyřazovaných nepatří. **Doporučení: používat přísnější variantu** —
 s ní je označených 10, ne 12.
+
+## TŘETÍ FRONTA KOŠE C3 — PRVNÍCH ŠEST PŘEČTENO (23. 9. 2026) — a Jestřebí hory v krkonošském okně potřetí
+
+Pořadí backlogu se nemění, **DATA-04 / DATA-05 / DATA-20 / DATA-22 / DATA-25 /
+DATA-28 i F1-IMPL zůstávají blokované** ze stejných důvodů (telefonáty, katalog
+vydavatele, sémantika `obec`, tři případy na Michalovi, klik na workflow,
+staging) — od 10. 9. do repa nepřibyl Michalův commit. Vzato „Příště" z 22. 9.:
+**třetí fronta koše C3**, tedy deset kandidátů, které označil lexikon jména
+v **přísné** variantě (doporučené 22. 9.). Přečteno je jich **šest**, zbylé
+čtyři zůstávají na příště. **Do `data/chaty/` se nesáhlo** — návrhy s URL
+a datem jsou v `interniPoznamky` příslušných kandidátů.
+
+| kandidát | doklad | verdikt |
+| --- | --- | --- |
+| Penzion Karlova chata (Dolní Lysečiny, Horní Maršov) | ČeskéHory.cz: druh ubytování „penzion", 28 lůžek, pokoje 2–5lůžkové, stravování „s polopenzí", plná penze na objednávku „pro skupiny na kurzech či školách v přírodě"; o neubytovaných nic; zápis archivní | návrh VYŘADIT |
+| Chalupa u Medvěda (Dolní Dvůr) | ČeskéHory.cz: „3 nové plně vybavené apartmány", 18 lůžek; jediné jmenované občerstvení je v okolí („2x restaurace, samoobsluha s bufetem"), tedy cizí podniky; zápis archivní | návrh VYŘADIT |
+| Zielony Domek (Karpacz) | Karpacz.pl (oficiální městský portál): „Apartamenty Zielony Domek", Konstytucji 3 Maja 72b, 13 osob v 5 apartmánech, celoročně; o stravování nic | návrh VYŘADIT |
+| Lyžařský vlek – ubytování (Radvanice-Studénka) | ČeskéHory.cz: „apartmány", 11 lůžek, každý s vlastní kuchyňkou, bar ve společenské místnosti; Svazek obcí Jestřebí hory: areál „provozují školu lyžování, půjčovnu lyží a snowboardů, ubytování a stravování" — komu, se neříká | návrh VYŘADIT — **hraniční** a **navíc mimo oblast** |
+| Chalupa U Říhů (Dolní Dvůr) | **žádný pramen**: vlastní web (DNS se nepřeložilo), obecní web i katalog krkonose-info.cz (robots.txt ConnectTimeout); ve vyhledávání jen titulek vlastního webu | BEZ VERDIKTU — není co číst |
+| Apartmány tři boudy (Benecko) | **žádný pramen**: vlastní web triboudy.cz jen se schválením (PROVENANCE_REQUIRED), tři dotazy do vyhledávače nenašly katalogový zápis objektu | BEZ VERDIKTU — pramen existuje, nedosáhneme na něj |
+
+### Nález dne: krkonošské okno chytlo Jestřebí hory potřetí — a tentokrát je kam přeřadit
+
+`lyzarsky-vlek-ubytovani` leží u Radvanic v osadě Studénka. Měřením:
+**967 m ke kandidátovi `broumovsko/jestrebi-bouda`** a **17 016 m
+k nejbližšímu publikovanému krkonošskému profilu** (Rychorská bouda). Jeho
+souřadnice (50,5687 / 16,0431) padnou dovnitř broumovského okna DATA-01
+(50,44–50,72 / 15,95–16,45), které se 28. 8. 2026 zakládalo právě kvůli
+Jestřebí boudě.
+
+Je to **třetí doložený případ, kdy okno jedné oblasti chytlo cizí pohoří** —
+po `jestrebi-bouda` (28. 8.) a `sruby-podspalov` (21. 9.). Od Podspálova se liší
+tím, že tady by přeřazení mělo kam mířit: broumovské okno objekt pokrývá.
+Jenže klíč zařazení nesplňuje, takže přeřazení nic nezachrání a kandidát padá
+tak jako tak. **Co z toho plyne systémově:** oba jestřebohorské objekty ležely
+v krkonošském okně, ale chytily se každý zvlášť a s měsícem odstupu. Kandidáti
+z překryvu oken se dnes měří **až při čtení, po jednom** — přitom měření
+vzdálenosti k nejbližšímu publikovanému profilu téže oblasti je strojové a dá
+se udělat nad celým korpusem kandidátů naráz. Návrh na kontrolu je v deníku.
+
+### Vedlejší nálezy
+
+- **Tři ze čtyř přečtených zápisů jsou archivní.** ČeskéHory.cz vede Karlovu
+  chatu, Chalupu u Medvěda i radvanický vlek s hlavičkou „Objekt v archivu -
+  prezentace není aktivní. Uvedené údaje nemusí být již aktuální." Stáří údaje
+  z nich přečíst nejde, takže verdikt stojí na tom, co zápis **popisuje**
+  (apartmány s vlastní kuchyňkou, polopenze pro ubytované), ne na tom, co
+  tvrdí o dnešním provozu. Do YAML se proto nepřenáší ani kapacita, ani
+  kontakty.
+- **Identita měřením sedí u všech tří** zápisů, které GPS nesou: Karlova chata
+  8,5 m, Chalupa u Medvěda 4,5 m, radvanický vlek 3,8 m od OSM uzlu. U Zielonego
+  Domku pramen GPS neuvádí — drží ji jméno a adresa v centru Karpacze.
+- **Jmenovec přes republiku:** „Chalupa u Medvěda" stejného jména stojí
+  i v Karlově pod Pradědem v Jeseníkách (`chalupa-umedveda.cz`, e-chalupy.cz
+  ID 0502). S krkonošským objektem nemá nic společného; zapsáno, aby se při
+  příštím dohledávání podle jména nespárovaly.
+- **Poloha vedená chybně i v pramenu:** ČeskéHory.cz řadí radvanický vlek do
+  Orlických hor, Svazek obcí Jestřebí hory ho vede v Podkrkonoší. Ani jeden
+  údaj se nepřenáší — polohu drží měření.
+- **Neotevřené prameny:** `triboudy.cz` (PROVENANCE_REQUIRED), `chalupaurihu.cz`
+  (robots.txt: jméno domény se nepřeložilo), `dolnidvur.cz` a
+  `krkonose-info.cz` (robots.txt ConnectTimeout), `domkinawczasy.pl` (404),
+  `booking.com` (robots.txt). Domény z OSM (`karlovachata.cz`,
+  `chalupaumedveda.cz`, `vlekradvanice.cz`) se ve vyhledávání neukázaly a přímo
+  se nenačítaly — konvence z 2. 8. 2026.
+
+### Co zbývá ve třetí frontě
+
+Čtyři kandidáti: `apartamenty-every-sky` (Ściegny, bez webu i telefonu),
+`chalupa-baba-jaga` (`tourism=apartment`, bez kontaktu), `chalupa-sport`
+(bez kontaktu) a `domek-w-karkonoszach` (telefon a e-mail
+`zaciszegajowe@gmail.com`; vyhledávač k němu vrací zápis „Domek
+w Karkonoszach" / „Gajowe Zacisze u Gryfiego" v Zachełmí u Podgórzyna, ale
+čitelná stránka se zatím nenašla — booking.com robots.txt, domkinawczasy.pl
+404). Tři ze čtyř nemají v OSM web ani telefon, takže u nich podle měření
+z 22. 9. nejspíš nebude co číst.

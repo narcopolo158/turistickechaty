@@ -28,3 +28,19 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENÍ 23. 9. 2026 (třetí fronta koše C3 — kandidáti označení lexikonem
+  jména, přísná varianta) — BEZ VERDIKTU, nebylo co číst. Druhý případ po
+  `chata-u-kohouta` (21. 9. 2026), kdy se nenačetl žádný pramen.
+
+  Co se zkoušelo: vlastní web z OSM chalupaurihu.cz (WebFetch:
+  ROBOTS_DISALLOWED — robots.txt se nestáhl, jméno domény se nepřeložilo),
+  obecní web dolnidvur.cz a katalog krkonose-info.cz (u obou WebFetch:
+  robots.txt ConnectTimeout). Tři různě formulované dotazy vrátily vždy
+  jen tytéž tři odkazy, z nichž se dá přečíst pouze titulek vlastního webu
+  „Chalupa u Říhů - Dolní Dvůr - Home".
+
+  Nerozhoduje se tedy ani jedním směrem: rozdíl mezi „doloženo, že hospoda
+  není" a „nevíme nic" se podle nálezu z 21. 9. nemá stírat. Čeká na
+  Michalovo rozhodnutí, jestli takové případy mají jít do
+  `data/kandidati/_odlozeno.yaml`.

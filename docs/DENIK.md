@@ -29,6 +29,84 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-23 — denní session: třetí fronta koše C3 rozečtena — a Jestřebí hory v krkonošském okně potřetí
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging) — od 10. 9. do repa nepřibyl tvůj commit. Vzal jsem
+  „Příště" z 22. 9.: **třetí frontu koše C3**, tedy deset kandidátů označených
+  lexikonem jména v **přísné** variantě (tu jsem 22. 9. doporučil, takže
+  `penzion-modrokamenna-bouda` ani `wellness-hotel-liberecka-bouda` ve frontě
+  nejsou).
+- **Přečteno šest z deseti**, čtyři zbývají. **Do `data/chaty/` se nesáhlo**,
+  nic se nevyřadilo ani nepovýšilo — návrhy s URL a datem jsou
+  v `interniPoznamky` kandidátů, souhrn v `docs/KRKONOSE-TRIAZ-KOSE.md`.
+- **Čtyři návrhy na vyřazení:** `penzion-karlova-chata` (penzion s polopenzí
+  pro ubytované, 28 lůžek), `chalupa-u-medveda` (tři apartmány, jediné
+  jmenované občerstvení jsou cizí podniky v okolí), `zielony-domek`
+  (apartmány v centru Karpacze, o stravování nic) a `lyzarsky-vlek-ubytovani`
+  — ten **hraniční**: prameny jmenují „ubytování a stravování" jedním dechem,
+  ale komu je stravování určeno, neříká ani jeden.
+- **Dva bez verdiktu, protože nebylo co číst:** `chalupa-u-rihu` (vlastní web
+  se nepřeložil v DNS, obecní web i katalog spadly na robots.txt) a
+  `apartmany-tri-boudy` (vlastní web jen s tvým svolením, vyhledávač na objekt
+  nemá jediný katalogový zápis). Verdikt ani jedním směrem — rozdíl mezi
+  „doloženo, že hospoda není" a „nevíme nic" držím podle nálezu z 21. 9.
+- **Nález dne: krkonošské okno chytlo Jestřebí hory potřetí.**
+  `lyzarsky-vlek-ubytovani` stojí u Radvanic v osadě Studénka — měřením
+  **967 m od kandidáta `broumovsko/jestrebi-bouda`** a **17 016 m od
+  nejbližšího publikovaného krkonošského profilu** (Rychorská bouda). Jeho
+  souřadnice padnou dovnitř broumovského okna, které se 28. 8. zakládalo
+  právě kvůli Jestřebí boudě. Oproti `sruby-podspalov` (21. 9.) by tu
+  přeřazení mělo kam mířit; klíč zařazení ale objekt nesplňuje, takže padá
+  tak jako tak.
+- **Identita měřením** sedí u všech tří zápisů, které GPS nesou: 8,5 m
+  (Karlova chata), 4,5 m (Chalupa u Medvěda), 3,8 m (radvanický vlek).
+  Zapsán i jmenovec přes republiku — „Chalupa u Medvěda" stejného jména stojí
+  v Karlově pod Pradědem v Jeseníkách.
+- **Kontroly:** `npm run kontrola` zelená (20 workflow souborů, 0 vad;
+  fixtura 25 souborů, 4 kontroly, 0 spadlo); šest změněných YAML se
+  kontrolně přeparsovalo, aby zápis poznámek nerozbil blokový skalár.
+
+**Příště:** dočíst zbytek třetí fronty koše C3 — `apartamenty-every-sky`,
+`chalupa-baba-jaga`, `chalupa-sport` a `domek-w-karkonoszach`. Tři ze čtyř
+nemají v OSM web ani telefon, takže podle měření z 22. 9. u nich nejspíš
+nebude co číst a fronta se tím vyčerpá; pak zbude 82 kandidátů koše C3, na
+které nedosáhne žádný signál — a to je pořád otevřená otázka z 22. 9. Vedle
+toho leží Broumovsko z 28. 8., deset padajících testů (Postgres/exporty)
+a blokované DATA-04 / DATA-05 / DATA-20 / DATA-22 / DATA-25 / DATA-28 /
+F1-IMPL.
+
+**Otázky pro Michala:**
+
+- **Návrh na novou kontrolu:** oba jestřebohorské objekty ležely
+  v krkonošském okně, ale chytily se každý zvlášť a s měsícem odstupu, vždy
+  až při ručním čtení. Vzdálenost kandidáta k nejbližšímu publikovanému
+  profilu vlastní oblasti je přitom **strojově měřitelná nad celým korpusem
+  naráz**. Mám takovou kontrolu (řekněme „kandidát daleko od své oblasti")
+  přidat do `npm run kontrola` jako UPOZORNĚNÍ, ne vadu? Odhad je na jednu
+  session.
+- **Trvá otázka z 21. 9.:** kandidát, u kterého se nenačetl žádný pramen
+  (`chata-u-kohouta`, dnes `chalupa-u-rihu`) — do `_odlozeno.yaml`, nebo
+  vyřadit jako ostatní? Dnes přibyl třetí typ: `apartmany-tri-boudy`, kde
+  pramen nejspíš existuje, jen na něj bez tvého svolení nedosáhnu.
+- **Smím načíst přímo domény z OSM** u kandidátů, které vyhledávač nenajde
+  (`triboudy.cz`, `karlovachata.cz`, `chalupaumedveda.cz`, `vlekradvanice.cz`)?
+  Konvence z 2. 8. říká, že přímé načtení chce tvoje svolení — stačí, když
+  řekneš „u kandidátů koše C ano", a příští session je otevře.
+- Trvají otázky z 22. 9. a starší (co se zbývajícími 82 kandidáty koše C3;
+  potvrzení návrhů na vyřazení; Sruby Podspálov a zúžení `lngMin`; Dom Pod
+  Jaworami — zavoláš?; výjimka pro Skalnik; Baraba × Popelka; druhý klíč
+  `rozhodnuteDuplicity`; a další z 2.–21. 9.).
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. WebFetch
+otevře jen stránky, které předtím vrátil WebSearch — přímá doména končí na
+`PROVENANCE_REQUIRED` a v bezobslužném běhu nemá kdo svolení udělit.
+
 ## 2026-09-22 — denní session: zbytek koše C3 změřen strojově — a měření říká, že hromadný průchod koš nedočte
 
 **Hotovo:**

@@ -28,3 +28,35 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENÍ 23. 9. 2026 (třetí fronta koše C3 — kandidáti označení lexikonem
+  jména, přísná varianta) — NÁVRH VYŘADIT, hraniční — A NAVÍC MIMO
+  OBLAST. Objekt je ubytovací zázemí lyžařského vleku; „stravování" se
+  v pramenech jmenuje, ale vždy vedle „ubytování" a nikde se nepíše, že
+  je přístupné i tomu, kdo tu nebydlí.
+
+  Identita měřením: GPS z ČeskéHory.cz (50,568719 N / 16,043123 E) padne
+  3,8 m od OSM uzlu.
+
+  Prameny (nalezeny přes WebSearch, čteny 23. 9. 2026):
+  (1) ČeskéHory.cz
+  https://www.ceskehory.cz/ubytovani/ubytovani-lyzarsky-vlek-radvanice.html
+  — druh ubytování „apartmány", 11 lůžek ve třech apartmánech, každý
+  „vlastní kuchyňkou a sociálním zařízením", adresa Radvanice 112, osada
+  Studénka; společenská místnost s barem a „velkou kuchyní hned vedle",
+  tedy vybavení pro ubytované. Zápis je archivní („Objekt v archivu -
+  prezentace není aktivní"). Poloha je tu vedena chybně jako Orlické hory.
+  (2) Svazek obcí Jestřebí hory
+  https://www.jestrebihory.net/cs/aktivity/detail/id/253-lyzarsky-vlek-radvanice
+  — areál „provozují školu lyžování, půjčovnu lyží a snowboardů, ubytování
+  a stravování"; komu je stravování určeno, se neříká.
+
+  MIMO OBLAST — třetí doložený případ, kdy krkonošské okno DATA-01 chytlo
+  cizí pohoří: objekt leží v Jestřebích horách u Radvanic, měřením
+  **967 m od kandidáta `broumovsko/jestrebi-bouda`** a **17 016 m od
+  nejbližšího publikovaného krkonošského profilu** (Rychorská bouda).
+  Souřadnice padnou dovnitř broumovského okna (50,44–50,72 / 15,95–16,45),
+  takže na rozdíl od `sruby-podspalov` (21. 9.) by tu přeřazení kam mířit
+  mělo — jenže klíč zařazení objekt nesplňuje, takže přeřazení nic
+  nezachrání. Vlek sám je zapsaný i v OSM jako `aerialway`; kandidátem je
+  ubytování v jeho zázemí.
