@@ -1971,3 +1971,75 @@ w Karkonoszach" / „Gajowe Zacisze u Gryfiego" v Zachełmí u Podgórzyna, ale
 čitelná stránka se zatím nenašla — booking.com robots.txt, domkinawczasy.pl
 404). Tři ze čtyř nemají v OSM web ani telefon, takže u nich podle měření
 z 22. 9. nejspíš nebude co číst.
+
+## TŘETÍ FRONTA KOŠE C3 DOČTENA (24. 9. 2026) — a jméno v OSM, které objekt vůbec nepojmenovává
+
+Pořadí backlogu se nemění, **DATA-04 / DATA-05 / DATA-20 / DATA-22 / DATA-25 /
+DATA-28 i F1-IMPL zůstávají blokované** ze stejných důvodů (telefonáty, katalog
+vydavatele, sémantika `obec`, tři případy na Michalovi, klik na workflow,
+staging) — od 10. 9. 2026 do repa nepřibyl Michalův commit. Vzato „Příště"
+z 23. 9.: **zbývající čtyři kandidáti třetí fronty**. Tím je **třetí fronta koše
+C3 dočtena celá** (10 z 10). **Do `data/chaty/` se nesáhlo** — návrhy s URL
+a datem jsou v `interniPoznamky` příslušných kandidátů.
+
+| kandidát | doklad | verdikt |
+| --- | --- | --- |
+| Apartamenty Every Sky (Kwiatowa 7, Ściegny) | booked.com.pl: „Apartamenty Every Sky Górskie Tarasy", 8 pokojů, sauna a bazén; ze stravování „menu śniadaniowe" a „stół na świeżym powietrzu" pro ubytované; karpacz.pl u druhé adresy téhož řetězce („Apartamenty", 5 apartmánů / 21 míst) o stravování nic | návrh VYŘADIT |
+| Chalupa Baba Jaga (Prkenný Důl, Žacléř) | vlastní web baba-jaga.cz: pokoje a apartmán do 22 (+4) osob; ke stravování odkazuje na „restauraci Zelený Mlýn, která je 50 m od mé chaloupky", snídaně „na vyžádání a dle kapacity" | návrh VYŘADIT — občerstvení patří **cizí budově** |
+| Chalupa Sport (u Rokytnice nad Jizerou) | **identita nedoložena**: jediný podobný objekt (Apartmány SPORT, apartmany-sport.cz) se hlásí „přímo v centru Rokytnice", kdežto OSM objekt leží 2 459 m od střediska; adresu ani GPS pramen neuvádí, jméno „Sport" identitu neunese | BEZ VERDIKTU — není co spolehlivě přečíst |
+| Domek w Karkonoszach = **Gajowe Zacisze u Gryfiego** (Żołnierska 81c, Zachełmie) | otonoclegi.pl: „luksusowy domek letniskowy" pro 6 osob, „aneks kuchenny", jídla jen na objednávku u majitele a jen pro ubytované; veřejný provoz pramen neuvádí | návrh VYŘADIT |
+
+### Nález dne: OSM jméno bylo titulek inzerátu, ne jméno objektu
+
+`domek-w-karkonoszach` se 23. 9. nepodařilo přečíst — vyhledávač na jméno
+„Domek w Karkonoszach" vracel jen aggregátory, které spadly na robots.txt nebo
+404. Dnes ho otevřel **e-mail z OSM tagů**: `zaciszegajowe@gmail.com` je
+přesmyčka jména **Gajowe Zacisze u Gryfiego**, pod kterým objekt inzeruje.
+Hledání podle OSM jména proto nemohlo uspět — „Domek w Karkonoszach" je
+popisný titulek inzerátu („domek v Krkonoších"), ne jméno objektu.
+
+**Co z toho plyne systémově:** u kandidátů, jejichž OSM jméno je obecný popis
+(`domek`, `chalupa`, `apartamenty` + jméno pohoří nebo obecné slovo), je
+**e-mailová adresa z OSM tagů silnější identifikátor než jméno** — doména nebo
+lokální část e-mailu nese skutečnou obchodní značku. Dnešní druhý případ míří
+proti tomu ze stejné strany: `chalupa-sport` obecné jméno má, e-mail ani web
+v OSM nenese, a proto zůstal nepřečtený. Signál „jméno je obecný popis" se dá
+změřit stejně jako lexikon z 22. 9.; návrh na kontrolu je v deníku.
+
+### Vedlejší nálezy
+
+- **„Every Sky" je značka řetězce, ne jeden objekt.** Vyhledávání vrátilo
+  nejméně šest adres téhož pronajímatele (Staszica 30, Ogrodnicza 7,
+  Wyspiańskiego, Saneczkowa 3, Nad Łomnicą 1b-6b a Nad Łomnicą 15) plus
+  Ściegny. OSM uzel tedy pojmenovává jednu jednotku řetězce a GPS pramene
+  padne **190,7 m** od něj, tedy nad prahem 30 m. Verdikt se tím nemění —
+  všechny jednotky jsou apartmány bez veřejného občerstvení — ale identitu
+  dnes u tohoto kandidáta drží jméno a obec, nikoli měření.
+- **Občerstvení cizí budovy potřetí.** Baba Jaga odkazuje na restauraci
+  Zelený Mlýn 50 m odtud; stejný vzorec jako `chalupa-u-medveda` (23. 9.)
+  a nález o cizí budově z 15. 9. Zelený Mlýn sám klíč zařazení nesplňuje
+  (údolní podnik bez role na trase), ale zapsáno je to u kandidáta, aby se
+  příště nespárovalo jako jeho vlastní hospoda.
+- **Identita nad prahem 30 m u obou dnešních doložených kandidátů**
+  (190,7 m a 66,9 m). U aggregátorů apartmánů je to očekávatelné — souřadnice
+  míří na střed obce nebo ulice, ne na dům. Práh 30 m je tedy užitečný
+  u katalogů s vlastním měřením (ČeskéHory.cz: 3,8–8,5 m), u rezervačních
+  portálů ne; identitu tam musí unést jméno, adresa nebo e-mail.
+
+### KOŠ C3 — stav po dočtení třetí fronty
+
+Přečteno je **31 kandidátů** koše C3 ze 120 (14.–24. 9. 2026): 1 návrh na
+povýšení (`chata-viktorka`), 3 držené bez verdiktu ve prospěch pokračování,
+**23 návrhů na vyřazení** a **4 bez verdiktu, protože nebylo co čítat**
+(`chata-u-kohouta`, `chalupa-u-rihu`, `apartmany-tri-boudy`, `chalupa-sport`).
+Kontrolní součet: 1 + 3 + 23 + 4 = 31.
+
+Strojově čitelné signály z 22. 9. jsou tím **vyčerpané**: lexikon jména
+v přísné variantě označil deset kandidátů a všech deset je přečteno. Ze
+**89 nepřečtených** zbývá podle měření z 22. 9.: **2** označené jen volnější
+variantou lexikonu (`penzion-modrokamenna-bouda`,
+`wellness-hotel-liberecka-bouda` — obě nesou ve jméně „bouda", proto ve frontě
+nebyly), **5** se slabou gastro stopou `bar`/`opening_hours` (`chata-pod-lipami`,
+`osada-sniezka`, obě `szkolne-schronisko-mlodziezowe-*`,
+`wioska-finska-kalevala`) a **82**, na které nedosáhne žádný signál ani jedním
+směrem. Otevřená otázka z 22. 9. 2026 na Michala tím trvá a je teď na řadě.

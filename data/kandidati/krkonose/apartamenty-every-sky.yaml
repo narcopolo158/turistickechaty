@@ -22,3 +22,26 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENÍ 24. 9. 2026 (třetí fronta koše C3, dočtení) — NÁVRH VYŘADIT.
+  Pramen popisuje apartmánový objekt se snídaní pro ubytované; občerstvení
+  pro veřejnost nedokládá žádný.
+
+  Pramen (nalezen přes WebSearch, čten 24. 9. 2026):
+  https://apartamenty-every-sky-gorskie-tarasy-kwiatowa-sciegny.booked.com.pl/
+  — „Apartamenty Every Sky Górskie Tarasy", Kwiatowa 7, Ścięgny (Miłków),
+  58-540; osm pokojů, balkony, sauna a odkrytý bazén; ze stravování
+  „menu śniadaniowe" a „stół na świeżym powietrzu", tedy snídaně pro
+  ubytované. O přístupu neubytovaných ani slovo.
+
+  Identita měřením je SLABŠÍ než u ostatních: GPS pramene (50,798151 /
+  15,772977) padne 190,7 m od OSM uzlu, tedy nad prahem 30 m. Identitu drží
+  jméno a obec (Ściegny × OSM `obec: Ściegny`); souřadnice aggregátoru jsou
+  u apartmánů typicky posazené na střed obce, ne na dům. Verdikt se tím
+  ale nemění: „Every Sky" je značka pronajímatele apartmánů s řadou adres
+  (Staszica 30, Ogrodnicza 7, Wyspiańskiego, Saneczkowa 3, Nad Łomnicą
+  1b-6b i 15 — všechny Karpacz a okolí), takže i kdyby OSM uzel mířil na
+  jinou jednotku téhož řetězce, jde pořád o apartmány bez veřejného
+  občerstvení. Druhý pramen pro srovnání: oficiální městský portál
+  https://www.karpacz.pl/everysky-ogrodnicza-pl/a — „Apartamenty", 5
+  apartmánů / 21 míst, Ogrodnicza 7, Osiedle Skalne; o stravování nic.

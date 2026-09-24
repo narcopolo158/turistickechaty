@@ -29,6 +29,95 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-24 — denní session: třetí fronta koše C3 dočtena — a jméno v OSM, které objekt vůbec nepojmenovává
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging) — od 10. 9. do repa nepřibyl tvůj commit. Vzal jsem
+  „Příště" z 23. 9.: **zbývající čtyři kandidáty třetí fronty koše C3**. Tím je
+  **třetí fronta dočtena celá** (10 z 10).
+- **Do `data/chaty/` se nesáhlo**, nic se nevyřadilo ani nepovýšilo — návrhy
+  s URL a datem jsou v `interniPoznamky` kandidátů, souhrn v
+  `docs/KRKONOSE-TRIAZ-KOSE.md`.
+- **Tři návrhy na vyřazení:** `apartamenty-every-sky` (apartmány Kwiatowa 7
+  ve Ściegnech, ze stravování jen „menu śniadaniowe" pro ubytované),
+  `chalupa-baba-jaga` (Prkenný Důl u Žacléře — vlastní web odkazuje na
+  „restauraci Zelený Mlýn, která je 50 m od mé chaloupky", tedy **cizí
+  budova**) a `domek-w-karkonoszach` („luksusowy domek letniskowy" pro 6 osob
+  s kuchyňským koutem, jídla jen na objednávku u majitele a jen ubytovaným).
+- **Jeden bez verdiktu:** `chalupa-sport`. Jediný podobně pojmenovaný objekt
+  (Apartmány SPORT) se hlásí „přímo v centru Rokytnice nad Jizerou", kdežto náš
+  OSM objekt leží měřením **2 459 m od střediska Rokytnice** a 4 722 m od
+  nejbližšího publikovaného profilu (Chata Studenov). Adresu ani GPS ten pramen
+  neuvádí a jméno „Sport" identitu neunese — rozdíl mezi „doloženo, že hospoda
+  není" a „nevíme nic" držím podle nálezu z 21. 9.
+- **Nález dne: OSM jméno bylo titulek inzerátu, ne jméno objektu.**
+  `domek-w-karkonoszach` se 23. 9. nepodařilo přečíst; dnes ho odemkl **e-mail
+  z OSM tagů** `zaciszegajowe@gmail.com` — objekt inzeruje jako **Gajowe Zacisze
+  u Gryfiego** (ul. Żołnierska 81c, Zachełmie). „Domek w Karkonoszach" je
+  popisný titulek („domek v Krkonoších"), takže hledání podle OSM jména nemohlo
+  uspět. U kandidátů s obecným jménem je **e-mail silnější identifikátor než
+  jméno** — a `chalupa-sport` je dnešní protipříklad: obecné jméno, a v OSM
+  žádný e-mail ani web.
+- **Vedlejší nález: práh identity 30 m u rezervačních portálů nefunguje.**
+  Oba dnes doložené zápisy jsou nad ním — Every Sky **190,7 m**, Gajowe Zacisze
+  **66,9 m** — protože aggregátory posazují souřadnice na střed obce nebo ulice.
+  U katalogů s vlastním měřením (ČeskéHory.cz) to bylo 3,8–8,5 m. Identitu tam
+  musí unést jméno, adresa nebo e-mail; zapsáno, ať se práh nevykládá jako
+  univerzální.
+- **„Every Sky" je značka řetězce, ne jeden objekt** — nejméně šest dalších
+  adres téhož pronajímatele v Karpaczi a okolí. Verdikt se tím nemění (všechny
+  jednotky jsou apartmány), ale OSM uzel pojmenovává jednu z nich.
+- **Kontroly:** `npm run kontrola` zelená (20 workflow souborů, 0 vad; fixtura
+  25 souborů, 4 kontroly, 0 spadlo); čtyři změněné YAML se kontrolně
+  přeparsovaly, aby zápis poznámek nerozbil blokový skalár.
+
+**Příště:** koš C3 je po strojově čitelné stránce **vyčerpaný** — přečteno 31
+kandidátů ze 120, zbývá 89 a z nich **82 neoznačí žádný signál**. Bez tvého
+rozhodnutí (otázka z 22. 9.) není kam pokračovat levně; nabízí se mezitím
+vzít **2 kandidáty označené volnější variantou lexikonu** (`penzion-modrokamenna-bouda`,
+`wellness-hotel-liberecka-bouda`) a **5 se slabou gastro stopou**
+(`chata-pod-lipami`, `osada-sniezka`, obě `szkolne-schronisko-mlodziezowe-*`,
+`wioska-finska-kalevala`) — to je na dvě session a signál pro ně už změřený je.
+Vedle toho pořád leží Broumovsko z 28. 8., deset padajících testů
+(Postgres/exporty) a blokované DATA-04 / DATA-05 / DATA-20 / DATA-22 /
+DATA-25 / DATA-28 / F1-IMPL.
+
+**Otázky pro Michala:**
+
+- **Nejdůležitější, trvá od 22. 9.: co se 82 kandidáty koše C3, na které
+  nedosáhne žádný signál?** Číst po jednom je ~17 sessions při dosavadní
+  výtěžnosti (1 povýšení z 31 přečtených). Varianty: (a) číst dál po jednom,
+  (b) koš C3 uzavřít jako celek a vrátit se, až přibude lepší pramen,
+  (c) přečíst jen ty, které mají v OSM web nebo telefon, zbytek odložit.
+  Dokud neodpovíš, budu brát sedmičku s měřeným signálem (viz „Příště").
+- **Nový návrh na signál — „jméno je obecný popis".** Dnešní dvojice ukázala,
+  že u kandidátů, jejichž OSM jméno je popis a ne značka („domek",
+  „chalupa" + obecné slovo), rozhoduje o čitelnosti **e-mail nebo doména
+  v OSM tazích**. Mám to spočítat nad zbývajícími 82, ať se ví, u kolika z nich
+  vůbec existuje identifikátor k hledání? Je to na jednu session a odpověď na
+  otázku výše by to podložilo měřením místo odhadu.
+- **Trvá z 23. 9.:** smím načíst přímo domény z OSM u kandidátů, které
+  vyhledávač nenajde (`triboudy.cz`, `karlovachata.cz`, `chalupaumedveda.cz`,
+  `vlekradvanice.cz`)? Stačí „u kandidátů koše C ano".
+- **Trvá z 23. 9.:** mám přidat kontrolu „kandidát daleko od své oblasti" do
+  `npm run kontrola` jako UPOZORNĚNÍ (ne vadu)? Odhad jedna session.
+- **Trvá z 21. 9.:** kandidát, u kterého se nenačetl žádný pramen — dnes
+  přibyl čtvrtý (`chalupa-sport`) — do `_odlozeno.yaml`, nebo vyřadit jako
+  ostatní?
+- Trvají starší otázky (potvrzení návrhů na vyřazení; Sruby Podspálov a zúžení
+  `lngMin`; Dom Pod Jaworami — zavoláš?; výjimka pro Skalnik; Baraba ×
+  Popelka; druhý klíč `rozhodnuteDuplicity`; a další z 2.–23. 9.).
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. WebFetch
+otevře jen stránky, které předtím vrátil WebSearch — přímá doména končí na
+`PROVENANCE_REQUIRED`. `node_modules` v sandboxu nejsou, `npm ci` je potřeba
+pustit, než se dají spustit kontroly.
+
 ## 2026-09-23 — denní session: třetí fronta koše C3 rozečtena — a Jestřebí hory v krkonošském okně potřetí
 
 **Hotovo:**
