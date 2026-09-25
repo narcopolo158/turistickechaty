@@ -2043,3 +2043,68 @@ nebyly), **5** se slabou gastro stopou `bar`/`opening_hours` (`chata-pod-lipami`
 `osada-sniezka`, obě `szkolne-schronisko-mlodziezowe-*`,
 `wioska-finska-kalevala`) a **82**, na které nedosáhne žádný signál ani jedním
 směrem. Otevřená otázka z 22. 9. 2026 na Michala tím trvá a je teď na řadě.
+
+## ČTVRTÁ FRONTA KOŠE C3 ROZEČTENA (25. 9. 2026) — tři přečtení a jeden kandidát, jehož spis se nepíše sem
+
+Fronta dne je sedmice s **už změřeným** signálem, doporučená v deníku 24. 9.:
+2 kandidáti volnější varianty lexikonu jména + 5 se slabou gastro stopou.
+Přečteni **tři** (`wellness-hotel-liberecka-bouda`, `chata-pod-lipami`,
+`osada-sniezka`), čtyři zbývají na příště. **Do `data/chaty/` se nesáhlo**, nic
+se nevyřadilo ani nepovýšilo — návrhy s URL a datem jsou v `interniPoznamky`
+kandidátů.
+
+| kandidát                         | veřejné občerstvení                                                     | role na trase (měřeno 25. 9.)                       | návrh                                |
+| -------------------------------- | ----------------------------------------------------------------------- | --------------------------------------------------- | ------------------------------------ |
+| `wellness-hotel-liberecka-bouda` | **doloženo** (Firmy.cz samostatně jako restaurace; 10–22 denně)         | 34 m k modré 1808, rozcestník 1 074 m               | KLÍČ SPLNĚN, visí na klíči střediska |
+| `chata-pod-lipami`               | doloženo jednou větou („Pizzu možno i s sebou"), hospoda pro turisty ne | 219 m k červené, rozcestník 393 m, zástavba Rokytna | SPORNÉ (klíč střediska)              |
+| `osada-sniezka`                  | doloženo bohatě (Albero à la carte 100 míst, Miód 120 míst)             | 83 m k modré, **rozcestník 11 947 m**               | VYŘADIT — chybí role na trase        |
+
+**Dvojka volnějšího lexikonu je ve skutečnosti jednička.**
+`penzion-modrokamenna-bouda` je od 31. 8. 2026 změřená duplicita
+`modrokamenna-bouda` (9,8 m, jeden dům); prameny k objektu se čtou v bohatším
+souboru, takže z fronty vypadá bez čtení. Fronta na příště je proto
+`wioska-finska-kalevala` a tři `szkolne-schronisko-mlodziezowe-*`
+(`plum`, `skalnik`, `zloty-widok`; u `skalnik` platí Michalova otevřená otázka
+na výjimku a `wojtek` je 700 m od každé značky).
+
+### Nález dne: první kandidát, který padá na DRUHÉ půlce klíče, a ne na první
+
+Dvacet tři návrhů na vyřazení z koše C3 do dneška padlo na chybějícím
+občerstvení — apartmány, penziony, domky s kuchyňským koutem. `osada-sniezka`
+je první opačný případ: gastro má bohatší než většina publikovaných bud (dvě
+restaurace, 220 míst dohromady, pizzerie, poolbar), a přesto klíč nesplňuje,
+protože **k nejbližšímu rozcestníku je 11 947 m**. Bez měření role na trase by
+ten objekt vypadal jako jasné povýšení; fronta se dosud četla tak, že se první
+půlka klíče hledala v pramenech a druhá se odhadovala z dojmu. Tenhle kandidát
+říká, proč se měří obojí.
+
+### Vedlejší nálezy
+
+- **Otvírací doba nahrazuje větu o veřejnosti — a neumí to všude stejně.**
+  U Liberecké boudy dokládá občerstvení publikovaná doba restaurace (10–22)
+  plus samostatná restaurační kategorie na Firmy.cz; týž Firmy.cz ale u Chaty
+  pod lipami vede provozní dobu 8–22 a kategorii **penzion**, takže tam ta
+  samá doba dokládá jen otevřenou recepci. Doba bez kategorie nestačí.
+- **Jídlo s sebou je slabší doklad než hospoda, ale silnější než polopenze.**
+  „Pizzu možno i s sebou" na vlastním webu Chaty pod lipami je prodej mimo
+  ubytování, tedy adresát není jen host — o hospodě pro kolemjdoucí ale
+  neříká nic. Zapsáno jako samostatná úroveň mezi „doloženo" a „nedoloženo".
+- **Doména v OSM ≠ oficiální doména.** `osada-sniezka` nese v OSM
+  `osada-sniezka.com`, oficiální web běží na `osada-sniezka.pl`. Netvrdíme,
+  že `.com` nefunguje (nezkoušeno) — jen že prameny odkazují na `.pl`. Týž
+  druh rozporu jako u Kochanówky (25. 7. 2026).
+- **Sezonnost jako nové neznámo.** Vlastní web Liberecké boudy u objednávek
+  píše „jen v zimní sezóně 26.12. - 30.3."; jestli věta platí pro celý objekt
+  nebo pro objednávaný balíček, z ní poznat nelze. Celoroční provoz tedy
+  doložen není.
+
+### KOŠ C3 — stav po rozečtení čtvrté fronty
+
+Přečteno je **34 kandidátů** koše C3 ze 120 (14.–25. 9. 2026): 1 návrh na
+povýšení (`chata-viktorka`), **1 klíč splněn a visí na klíči střediska**
+(`wellness-hotel-liberecka-bouda`), 1 sporné (`chata-pod-lipami`), 3 držené bez
+verdiktu ve prospěch pokračování, **24 návrhů na vyřazení** a **4 bez verdiktu,
+protože nebylo co čítat**. Kontrolní součet: 1 + 1 + 1 + 3 + 24 + 4 = 34.
+Ze **86 nepřečtených** má změřený signál už jen **4** (viz fronta na příště);
+zbylých **82** neoznačí žádný signál ani jedním směrem a otevřená otázka
+z 22. 9. 2026 na Michala tím trvá.

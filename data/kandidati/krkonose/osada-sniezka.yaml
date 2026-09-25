@@ -32,3 +32,37 @@ interniPoznamky: >-
   wilderness_hut = útulna).
 
   Otvírací doba dle OSM (surový formát, neověřeno): Mo-Su 7:00 - 22:00
+
+  ČTENO 25. 9. 2026 (koš C3, fronta „slabá gastro stopa") — NÁVRH: VYŘADIT,
+  ale NE kvůli občerstvení: gastro je tu doložené bohatě, chybí ROLE NA TRASE.
+  Nevyřazuji sám, rozhodne redakce.
+
+  Co objekt je: „Górski Kompleks Wypoczynkowy" / rodinný resort v Łomnici
+  u Karpacze, ul. Spacerowa 8–13, cca 600 m n. m., **950 lůžek ve 340 pokojích
+  a apartmánech**, konferenčně-banketový sál na 250 osob
+  (https://www.konferencje.pl/o/osada-sniezka,20955.html, čteno 25. 9. 2026).
+  To je řádově jiná stavba než bouda; klíč zařazení ale nerozhoduje podle typu
+  stavby, proto tohle samo o sobě verdikt není.
+
+  Gastro doloženo: dvě restaurace — **Albero** (à la carte, středomořská
+  a polská kuchyně, pizza, 100 míst) a **Miód** (bufet, snídaně a večeře,
+  120 míst), vedle toho Pizzeria & Poolbar, domek lapoński (40) a Chata
+  Grillowa (18) (tamtéž + https://www.osada-sniezka.pl/en/restaurants-osada-sniezka/albero-restaurant,
+  čteno 25. 9. 2026). Albero má vlastní stránku na Facebooku i samostatný zápis
+  na Tripadvisoru, což u restaurace obvykle znamená klientelu i zvenčí —
+  DOSLOVNOU VĚTU o vstupu neubytovaných ale nemá žádný z přečtených pramenů
+  a vlastní web adresáta nejmenuje. Nedomýšlím: „à la carte" není totéž co
+  „pro kolemjdoucí".
+
+  ROLE NA TRASE (`scripts/triaz-role-na-trase.ts`, 25. 9. 2026): 83 m k modré
+  (Sudecka Droga św. Jakuba), jedna značka do 250 m, **nejbližší rozcestník
+  11 947 m** — nejdál ze všech dnes měřených kandidátů. Blízkost značky podle
+  poučky skriptu roli nedokládá (Droga św. Jakuba vede osadou), a bez
+  rozcestníku v dosahu není doložené místo, kde by se u objektu rozhodovalo
+  o cestě. Druhá půlka klíče tedy doložená není.
+
+  VEDLEJŠÍ NÁLEZ — DOMÉNA V OSM JE JINÁ NEŽ OFICIÁLNÍ: OSM (a tedy i pole
+  `kontakty.web` tohoto kandidáta) nese `osada-sniezka.com`, kdežto oficiální
+  web resortu běží na **`osada-sniezka.pl`** (čteno 25. 9. 2026). Netvrdím, že
+  `.com` nefunguje — nezkoušel jsem ji; jen že prameny odkazují na `.pl`. Týž
+  druh rozporu jako u Kochanówky (25. 7. 2026).

@@ -30,3 +30,38 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO 25. 9. 2026 (koš C3, fronta „slabá gastro stopa") — NÁVRH: VEŘEJNÝ
+  PRODEJ JÍDLA DOLOŽEN JEDNOU DOSLOVNOU VĚTOU, ROLE NA TRASE NE; SPORNÉ,
+  ROZHODNE REDAKCE. Nepovyšuji ani nevyřazuji sám.
+
+  Nejsilnější doklad: vlastní web v novinkách píše „NOVĚ jsme nabídku
+  restaurace CHATY POD LIPAMI rozšířili o vlastní pizzu o průměru 32cm
+  v jednotné ceně 149 Kč! Pizzu možno i s sebou."
+  (https://www.chatapodlipami.cz/cs/15-novinky-a-akce/131-nove-pizza, čteno
+  25. 9. 2026). Jídlo s sebou je prodej mimo ubytování — adresátem tedy nejsou
+  jen hosté. Je to ale doklad o PRODEJI JÍDLA, ne o hospodě pro kolemjdoucí
+  turisty; tu nejmenuje žádný pramen.
+
+  Co k tomu říkají ostatní prameny: vlastní sekce Restaurace jmenuje „a-la-carte
+  pokrmy v baru", snídaně formou švédských stolů, dietní a vegetariánskou
+  stravu, specialitu „Podlipský uzený pstruh" a „uzavřené salónky pro cca 20
+  nebo 40 osob" na školení, oslavy a firemní akce — otvírací dobu ani adresáta
+  neuvádí (https://www.chatapodlipami.cz/cs/restaurace, čteno 25. 9. 2026).
+  ČeskéHory.cz zmiňují „dvě oddělené restaurace s krbovými kamny", 68 lůžek,
+  680 m n. m., adresu Rokytno 140, a zápis samy označují za neaktivní
+  (https://www.ceskehory.cz/ubytovani/chata-pod-lipami-rokytnice-nad-jizerou-2.html,
+  čteno 25. 9. 2026). Firmy.cz vedou objekt v kategorii penzion / horská chata
+  (NE restaurace), provozní doba 8:00–22:00 denně, text provozovatele mluví jen
+  o ubytování a „možnosti polopenze"
+  (https://en.firmy.cz/company/12924586-penzion-chata-pod-lipami-rokytnice-nad-jizerou-rokytno.html,
+  čteno 25. 9. 2026). Samostatná restaurační kategorie tedy CHYBÍ — v tom je to
+  slabší případ než `wellness-hotel-liberecka-bouda`.
+
+  IDENTITA MĚŘENÍM: GPS Firmy.cz 50.735341 N, 15.482035 E leží 7,1 m od bodu
+  kandidáta, adresa Rokytno 140 se shoduje s katalogem. Jde o týž objekt.
+
+  ROLE NA TRASE (`scripts/triaz-role-na-trase.ts`, 25. 9. 2026): 219 m
+  k červené (místní okruh Rokytno – Horní Domky), dvě značky do 250 m,
+  rozcestník 393 m. Objekt stojí v zástavbě Rokytna, tedy platí i otázka klíče
+  střediska (Rokytnice nad Jizerou).

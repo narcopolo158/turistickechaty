@@ -29,6 +29,105 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-25 — denní session: čtvrtá fronta koše C3 rozečtena — a první kandidát, který padá na roli na trase
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging) — od 10. 9. do repa nepřibyl tvůj commit. Vzal jsem
+  „Příště" z 24. 9.: **sedmičku kandidátů koše C3 s už změřeným signálem**
+  (2 volnější lexikon + 5 slabá gastro stopa).
+- **Přečteni tři, čtyři zbývají.** **Do `data/chaty/` se nesáhlo**, nic se
+  nevyřadilo ani nepovýšilo — návrhy s URL a datem jsou v `interniPoznamky`
+  kandidátů, souhrn v `docs/KRKONOSE-TRIAZ-KOSE.md`.
+- **`wellness-hotel-liberecka-bouda` — KLÍČ SPLNĚN, visí na klíči střediska.**
+  Firmy.cz vedou objekt jako **samostatný zápis v kategorii restaurace**
+  s doslovným textem provozovatele („Provozujeme restauraci. Naleznete u nás
+  hotová jídla, dezerty, točená piva, nápoje a domácí kuchyni."), ČeskéHory.cz
+  uvádějí restauraci **denně 10:00–22:00** a skibar 9:00–16:30, vlastní web
+  v objednávkách „Restaurace: 10:00 - 22:00". Identita měřením 16,1 m, adresa
+  Dolní Dvůr 123 se shoduje. Komplikace: OSM ho popisuje jako **novostavbu**
+  wellness hotelu u horní stanice vleku (Luisino údolí), takže platí táž
+  otázka jako u `sasanka` a mísečkového shluku. Patří do té hromádky, ne na web.
+- **`chata-pod-lipami` — sporné.** Nejsilnější doklad je jedna doslovná věta
+  vlastního webu: „Pizzu možno i s sebou." To je prodej mimo ubytování, tedy
+  adresátem nejsou jen hosté — o hospodě pro kolemjdoucí ale nic. Firmy.cz
+  vedou objekt jako **penzion** (ne restauraci), provozovatel mluví jen
+  o ubytování a „možnosti polopenze"; ČeskéHory.cz zmiňují dvě restaurace, ale
+  zápis samy označují za neaktivní. Identita měřením 7,1 m. Leží v zástavbě
+  Rokytna → klíč střediska.
+- **`osada-sniezka` — návrh na vyřazení, a poprvé NE kvůli občerstvení.**
+  Gastro je tam bohatší než u většiny publikovaných bud (Albero à la carte
+  100 míst, Miód bufet 120 míst, pizzerie, poolbar, banketní sál na 250 osob),
+  jde ale o **resort o 950 lůžkách ve 340 pokojích** v Łomnici a měřením je
+  **11 947 m k nejbližšímu rozcestníku** — druhá půlka klíče doložená není.
+- **Nález dne:** dosavadních 23 návrhů na vyřazení z koše C3 padlo na chybějícím
+  občerstvení; `osada-sniezka` je první, kdo padá na **roli na trase**. Fronta
+  se dosud četla tak, že se první půlka klíče hledala v pramenech a druhá
+  odhadovala z dojmu — tenhle případ říká, proč se měří obojí.
+- **Vedlejší nálezy:** (a) publikovaná otvírací doba dokládá občerstvení jen
+  **s restaurační kategorií** — týž Firmy.cz dává Liberecké boudě 10–22
+  u restaurace a Chatě pod lipami 8–22 u penzionu, kde to znamená jen otevřenou
+  recepci; (b) „jídlo s sebou" je nová úroveň mezi „doloženo" a „nedoloženo";
+  (c) OSM u `osada-sniezka` nese doménu `osada-sniezka.com`, oficiální web běží
+  na `osada-sniezka.pl` (nezkoušel jsem, jestli `.com` žije — jen to, kam míří
+  prameny); (d) sezonnost Liberecké boudy („jen v zimní sezóně 26.12. - 30.3.")
+  nejde z pramene vztáhnout k celému objektu, celoroční provoz doložen není.
+- **Dvojka volnějšího lexikonu je ve skutečnosti jednička:**
+  `penzion-modrokamenna-bouda` je od 31. 8. změřená duplicita
+  `modrokamenna-bouda` (9,8 m, jeden dům), prameny se čtou v bohatším souboru.
+- **Kontroly:** `npm run kontrola` zelená (20 workflow souborů, 0 vad; fixtura
+  25 souborů, 4 kontroly, 0 spadlo); tři změněné YAML se kontrolně přeparsovaly,
+  aby zápis poznámek nerozbil blokový skalár.
+
+**Příště:** dočíst frontu — `wioska-finska-kalevala` a tři
+`szkolne-schronisko-mlodziezowe-*` (`plum`, `skalnik`, `zloty-widok`; u
+`skalnik` platí tvá otevřená otázka na výjimku, `wojtek` je 700 m od každé
+značky, takže roli na trase doloženou nemá). Tím jsou **všechny změřené signály
+koše C3 vyčerpané** a dál se bez tvého rozhodnutí nedá pokračovat levně.
+Vedle toho pořád leží Broumovsko z 28. 8., deset padajících testů
+(Postgres/exporty) a blokované DATA-04 / DATA-05 / DATA-20 / DATA-22 /
+DATA-25 / DATA-28 / F1-IMPL.
+
+**Otázky pro Michala:**
+
+- **Nejdůležitější, trvá od 22. 9.: co s 82 kandidáty koše C3, na které
+  nedosáhne žádný signál?** Varianty beze změny: (a) číst dál po jednom
+  (~17 sessions při dosavadní výtěžnosti), (b) koš C3 uzavřít jako celek
+  a vrátit se, až přibude lepší pramen, (c) přečíst jen ty, které mají v OSM
+  web nebo telefon. **Po dnešku je (c) podloženější** — dva ze tří dnešních
+  kandidátů se daly přečíst jen proto, že web nebo telefon v OSM byly.
+- **Nová, a je to rozhodnutí o osmi až deseti kandidátech: klíč střediska.**
+  `wellness-hotel-liberecka-bouda` je devátý objekt s doloženým veřejným
+  občerstvením, který visí jen na tom, že stojí ve středisku (vedle `sasanka`,
+  `chata-misecky`, `pension-jilemnicka-bouda`, `restaurace-havlova-bouda`,
+  `hladik-ziza-janska-bouda`, `chata-karkonoska`, `hotel-bouda-jana` a dalších).
+  Jedna věta od tebe („objekty ve sjezdovkových střediscích do průvodce
+  ano/ne, a pokud ano, za jaké podmínky") uvolní celou hromádku naráz.
+- **Souhlasíš s dnešními třemi návrhy?** Vyřadit `osada-sniezka`; `chata-pod-lipami`
+  a `wellness-hotel-liberecka-bouda` počkají na klíč střediska.
+- **Trvá z 24. 9.:** mám spočítat signál „jméno je obecný popis" (rozhoduje
+  e-mail nebo doména v OSM) nad zbývajícími 82? Je to na jednu session
+  a podložilo by to odpověď na první otázku měřením místo odhadu.
+- **Trvá z 23. 9.:** smím načíst přímo domény z OSM u kandidátů, které
+  vyhledávač nenajde (`triboudy.cz`, `karlovachata.cz`, `chalupaumedveda.cz`,
+  `vlekradvanice.cz`)? Stačí „u kandidátů koše C ano".
+- **Trvá z 23. 9.:** mám přidat kontrolu „kandidát daleko od své oblasti" do
+  `npm run kontrola` jako UPOZORNĚNÍ (ne vadu)? Odhad jedna session.
+- **Trvá z 21. 9.:** kandidát, u kterého se nenačetl žádný pramen (už čtyři) —
+  do `_odlozeno.yaml`, nebo vyřadit jako ostatní?
+- Trvají starší otázky (Sruby Podspálov a zúžení `lngMin`; Dom Pod Jaworami —
+  zavoláš?; výjimka pro Skalnik; Baraba × Popelka; druhý klíč
+  `rozhodnuteDuplicity`; a další z 2.–24. 9.).
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. WebFetch
+otevře jen stránky, které předtím vrátil WebSearch — přímá doména končí na
+`PROVENANCE_REQUIRED`. `node_modules` v sandboxu nejsou, `npm ci` je potřeba
+pustit, než se dají spustit kontroly.
+
 ## 2026-09-24 — denní session: třetí fronta koše C3 dočtena — a jméno v OSM, které objekt vůbec nepojmenovává
 
 **Hotovo:**

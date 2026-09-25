@@ -38,3 +38,41 @@ interniPoznamky: >-
   pool, whirlpool, sauna, massage) in the heart of the Giant Mountains is
   located right at the top station SKI AREA Luisino Valley Lower Court.
   Liberecká cottage is set in beautiful unspoiled country
+
+  ČTENO 25. 9. 2026 (koš C3, fronta „volnější lexikon jména") — NÁVRH:
+  VEŘEJNÉ OBČERSTVENÍ DOLOŽENO, KLÍČ VISÍ NA ROZHODNUTÍ O STŘEDISCÍCH,
+  ROZHODNE REDAKCE. Nepovyšuji sám.
+
+  Doklady k občerstvení: (1) Firmy.cz vede objekt jako samostatný zápis
+  v kategorii „Restaurace — České a staročeské restaurace" s doslovným textem
+  provozovatele „Provozujeme restauraci. Naleznete u nás hotová jídla,
+  dezerty, točená piva, nápoje a domácí kuchyni."
+  (https://www.firmy.cz/detail/12956172-liberecka-bouda-dolni-dvur.html,
+  čteno 25. 9. 2026). (2) Katalog ČeskéHory.cz uvádí „restauraci (denně
+  10:00-22:00)" a „skibar s venkovní terasou (denně 9:00-16:30)", vedle toho
+  ubytování s polopenzí; restaurace nabízí „čepované pivo a českou kuchyni"
+  (https://www.ceskehory.cz/ubytovani/liberecka-bouda-dolni-dvur.html, čteno
+  25. 9. 2026). (3) Vlastní web v sekci objednávek uvádí „Restaurace: 10:00 -
+  22:00" (https://libereckabouda.cz/order/, čteno 25. 9. 2026). Adresátem
+  restaurace žádný z pramenů výslovně nejmenuje veřejnost — nese ji
+  publikovaná otvírací doba a samostatná restaurační kategorie, stejným
+  způsobem jako u `sasanka`.
+
+  SEZONNOST: vlastní web u objednávek říká, že provoz je „jen v zimní sezóně
+  26.12. - 30.3." (čteno 25. 9. 2026). Celoroční provoz tedy doložen NENÍ;
+  jestli věta platí pro celý objekt nebo jen pro objednávaný balíček, z ní
+  poznat nelze — nedomýšlím.
+
+  IDENTITA MĚŘENÍM: GPS ČeskýchHor 50.662095 N, 15.629944 E leží 16,1 m od bodu
+  kandidáta; adresa Dolní Dvůr 123 se shoduje s Firmy.cz. Jde o týž objekt.
+
+  ROLE NA TRASE (`scripts/triaz-role-na-trase.ts`, 25. 9. 2026): 34 m k modré
+  č. 1808 Špindlerův Mlýn – Dolní Dvůr, jedna značka do 250 m, rozcestník
+  1 074 m. Blízkost značky podle poučky skriptu není doklad role na trase.
+
+  CO OBJEKT KOMPLIKUJE: OSM poznámka ho popisuje jako „newly built mountain
+  hotel" u horní stanice vleku SKI AREAL Luisino údolí, tedy novostavbu
+  s wellness — turistickou minulost mu nikdo nedoloží a stojí ve středisku.
+  Přesně na to čeká otázka klíče střediska (visí od 29. 8. 2026 u `sasanka`,
+  `chata-misecky`, `pension-jilemnicka-bouda` a dalších). Dokud Michal
+  nerozhodne, PATŘÍ DO TÉŽE HROMÁDKY, ne na web ani do `_vyrazeno.yaml`.
