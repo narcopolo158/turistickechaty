@@ -32,3 +32,35 @@ interniPoznamky: >-
   wilderness_hut = útulna).
 
   Otvírací doba dle OSM (surový formát, neověřeno): Mo-Su 17:00-10:00
+
+  ČTENO 26. 9. 2026 (koš C3, dočtení čtvrté fronty) — NÁVRH: VYŘADIT.
+  Nevyřazuji sám, rozhodne redakce. Týž obraz jako u `…-plum`: objekt vaří pro
+  ubytované a pro skupiny, hospoda pro kolemjdoucí doložená není.
+
+  Pramen správce (https://schronisko-wojtek.pl/noclegi/zloty-widok-piechowice/,
+  čteno 26. 9. 2026): „Obiekt dysponuje dobrze wyposażoną kuchnią samoobsługową,
+  kuchnią żywienia zbiorowego dla grup zorganizowanych, jadalnią." Adresáty jsou
+  ubytovaní a organizované skupiny; o prodeji jídla veřejnosti nic. Poloha dle
+  téhož pramene: „Schronisko Złoty Widok znajduje się w dzielnicy Piechowic -
+  Michałowice, około 10km od Szklarskiej Poręby"; kontaktní adresa správce je ale
+  ul. Piastowska 1, 58-580 Szklarska Poręba (tj. adresa jiného objektu, viz níže).
+
+  NÁLEZ — JEDEN KONTAKT NA ČTYŘI DOMY, A TÍM PADÁ VČEREJŠÍ POUČKA O E-MAILU.
+  Správce provozuje podle vlastního webu **čtyři schroniska**: Wojtek (Szklarska
+  Poręba), Plum (Piechowice), Złoty Widok (Piechowice-Michałowice) a Wojtek
+  (Jelenia Góra). Telefon +48 696 046 824 a e-mail magdalada@poczta.onet.pl
+  patří všem čtyřem — v našem fondu je nesou `…-plum`,
+  `…-zloty-widok` i `…-wojtek`. Poučka z 24. 9. 2026 („u kandidátů s obecným
+  jménem je e-mail silnější identifikátor než jméno") tady tedy NEPLATÍ: e-mail
+  ukazuje na správce, ne na dům. Identitu u téhle skupiny unese jen adresa.
+
+  VEDLEJŠÍ NÁLEZ — DOMÉNA V OSM UKAZUJE NA SESTERSKÝ OBJEKT. Kandidát nese
+  v `kontakty.web` z OSM `https://www.schronisko-wojtek.pl/`, tedy web *jiného*
+  schroniska téhož správce; vlastní doména objektu je
+  `schronisko-zlotywidok.pl` (nalezena přes WebSearch 26. 9. 2026, obsah
+  neotevírán). Není to tedy totéž jako u `osada-sniezka` (kde OSM nese jinou
+  koncovku téže značky) — tady OSM odkazuje na jinou budovu.
+
+  ROLE NA TRASE (`scripts/triaz-role-na-trase.ts`, 26. 9. 2026): 37 m k modré
+  (Piechowice – Pod Wielkim Szyszakiem), 1 značka do 250 m, nejbližší rozcestník
+  6 448 m (u polských objektů nerozhoduje, viz nález 26. 9. 2026).

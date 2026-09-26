@@ -33,3 +33,52 @@ interniPoznamky: >-
 
   Otvírací doba dle OSM (surový formát, neověřeno): Mo-Fr 12:00, Sa-Su 12:00,
   Sa-Su 14:00
+
+  ČTENO 26. 9. 2026 (koš C3, dočtení čtvrté fronty) — NÁVRH: VYŘADIT.
+  Nevyřazuji sám, rozhodne redakce. Veřejné občerstvení doložené není a objekt
+  navíc není volně přístupný.
+
+  Co objekt je: placená zážitková atrakce s ubytováním — „Lapońska Wioska
+  KALEVALA", Lapońska 1, 58-564 Borowice (vlastní web https://kalevala.pl/,
+  čteno 26. 9. 2026). Ubytování v laponských a visících stanech, „namiot
+  Wikinga", „Domek Muminka", sauny; pro děti vzdělávací programy
+  (https://www.borowice.com.pl/laponska-wioska-kalevala, čteno 26. 9. 2026).
+
+  Občerstvení — co prameny skutečně říkají (ceník
+  https://www.dzieciochatki.pl/miejsce-przyjazne-dzieciom/laponska-wioska-kalevala/ceny,
+  čteno 26. 9. 2026): (a) snídaně formou švédského stolu 25 zł/os. **pro
+  ubytované**; (b) finské menu 60 zł/os. **jen pro organizované skupiny od 15
+  osob a s objednávkou 48 h předem**; (c) „kawiarenkę, gdzie w dowolnym czasie
+  można będzie przygotować kawę, herbatę, poczytać książkę" — tedy samoobslužný
+  koutek, ne hospoda; (d) o víkendech finský trh **Kauppatori, čynny 11–16**,
+  s možností koupit regionální jídlo. Ani jeden z těch adresátů není kolemjdoucí
+  turista bez rezervace.
+
+  A hlavně: objekt se nedá projít. Vlastní web (čteno 26. 9. 2026): „Zwiedzanie
+  raz dziennie w każdą sobotę i niedzielę punkt 12:00. W pozostałe dni możliwe
+  tylko po wcześniejszej rezerwacji telefonicznej." Vstupné 30 zł (zlevněné) /
+  35 zł, ceník na dzieciochatki.pl uvádí 20/25 zł a dodává „Zwiedzanie Kalevali
+  dostępne tylko po wcześniejszej rezerwacji online" (obě čísla ponechávám, jak
+  stojí v pramenech — nesjednocuji je). Turista, který jde po modré, se tam tedy
+  nenají ani nevejde.
+
+  ROLE NA TRASE (`scripts/triaz-role-na-trase.ts`, 26. 9. 2026): 91 m k modré
+  (Borowice–Miłków), **4 značené trasy do 250 m** (modrá 91 m, zelená/žlutá/černá
+  212 m), nejbližší rozcestník 3 801 m. Blízkost značky podle poučky skriptu roli
+  nedokládá; ke vzdálenosti rozcestníku viz níže — u polských objektů nerozhoduje.
+
+  VEDLEJŠÍ NÁLEZ — „OTVÍRACÍ DOBA" V OSM JSOU ČASY PROHLÍDEK. Kandidát nese
+  z OSM `opening_hours` ve tvaru „Mo-Fr 12:00, Sa-Su 12:00, Sa-Su 14:00", což
+  vypadá jako vadný zápis doby. Vlastní web to vysvětluje: 12:00 je **čas
+  začátku jediné denní prohlídky**. Údaj tedy nedokládá otevřený provoz, nýbrž
+  opak — vstup v jediném čase a na rezervaci. Poučka: bodový čas bez rozsahu
+  v `opening_hours` čtěme jako čas akce, ne jako otvíračku.
+
+  VEDLEJŠÍ NÁLEZ — TŘI RŮZNÁ TELEFONNÍ ČÍSLA. OSM +48 605 431 516,
+  borowice.com.pl +48 791 589 644, vlastní web +48 723 586 759 (vše čteno
+  26. 9. 2026). Nevybírám z nich ani nespojuji — jen zapisuji rozpor; pro
+  budoucí ověření je platné to z vlastního webu, ale doklad o tom nemáme.
+
+  Identita: adresa Lapońska 1, Borowice se shoduje mezi vlastním webem
+  a katalogem, souřadnice žádný pramen neuvádí — identitu tu nese jméno
+  a adresa, ne měření (týž případ jako u aggregátorů 24. 9. 2026).

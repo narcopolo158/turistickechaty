@@ -29,6 +29,118 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-26 — denní session: čtvrtá fronta koše C3 dočtena — a rozcestník, který na polské straně neměří totéž
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging) — od 10. 9. do repa nepřibyl tvůj commit. Vzal jsem
+  „Příště" z 25. 9.: **zbývající čtyři kandidáty čtvrté fronty koše C3**. Tím je
+  **čtvrtá fronta dočtena** a fronta koše C3 vyčerpaná úplně.
+- **Do `data/chaty/` se nesáhlo**, nic se nevyřadilo ani nepovýšilo — návrhy
+  s URL a datem jsou v `interniPoznamky` kandidátů, souhrn v
+  `docs/KRKONOSE-TRIAZ-KOSE.md`.
+- **Tři návrhy na vyřazení:** `wioska-finska-kalevala`,
+  `szkolne-schronisko-mlodziezowe-plum` a `szkolne-schronisko-mlodziezowe-zloty-widok`.
+  U `szkolne-schronisko-mlodziezowe-skalnik` **verdikt neměním** (hraniční, čeká
+  na tvou odpověď o výjimce) — jen jsem doplnil, co přinesl web, který se
+  19. 9. nepodařilo otevřít.
+- **Nález dne: vzdálenost k rozcestníku má na polské straně jiné měřítko.**
+  `osada-sniezka` padla 25. 9. na 11 947 m k rozcestníku; dnešní čtveřice má
+  3 801–8 346 m a stejnou úvahou by padla celá. Kalibroval jsem tedy signál nad
+  **publikovanými** chatami, kde o zařazení spor není: **CZ medián 130 m**
+  (59 chat, 48 z nich do 500 m), **PL medián 983 m** (17 chat, do 500 m jen 6)
+  a dvě publikované polské boudy jsou dál než většina dnešních kandidátů
+  (`kochanowka` 4 867 m, `schronisko-wysoki-kamien` 5 694 m). Příčina je
+  v datech, ne v terénu — polské `role=guidepost` v exportu DATA-06 skoro
+  nejsou. **Pravidlo pro další čtení: u polských kandidátů rozcestník
+  o roli na trase nerozhoduje ani jedním směrem**, rozhoduje vzdálenost ke
+  značce a jméno trasy. Verdikt `osada-sniezka` platí dál (11 947 m je za
+  polským maximem), ale rezerva je menší, než jak to včera vypadalo.
+- **Druhý nález: jeden e-mail na čtyři domy.** Telefon +48 696 046 824
+  a e-mail magdalada@poczta.onet.pl patří **čtyřem schroniskám jednoho
+  správce** (Wojtek Szklarska Poręba, Plum, Złoty Widok, Wojtek Jelenia Góra)
+  a v našem fondu je nesou tři kandidáti. Poučka z 24. 9. („u obecného jména
+  je e-mail silnější identifikátor než jméno") tím dostává hranici: sdílený
+  kontakt **otevírá prameny**, ale identitu budovy unese jen **adresa**.
+  Třetí výskyt vzorce „jeden provozovatel, několik objektů" po Baraba ×
+  Popelka a Every Sky.
+- **Vedlejší nálezy:** (a) bodový čas v OSM `opening_hours` je čas akce, ne
+  otvíračka — Kalevalino „Mo-Fr 12:00" je začátek jediné denní prohlídky;
+  (b) `…-plum` má na vlastním webu **vyloučení** místo mlčení („Turyści
+  indywidualni mogą skorzystać z kuchni samoobsługowej", plná strava jen
+  skupinám) — to je silnější doklad než obvyklá mezera v pramenech;
+  (c) Kalevala je první kandidát, který padá na **nepřístupnosti** (vstupenka
+  30/35 zł, vstup „tylko po wcześniejszej rezerwacji"), ne na chybějící
+  kuchyni; (d) doména v OSM může ukazovat na **sesterský objekt** —
+  `…-zloty-widok` nese `schronisko-wojtek.pl`, vlastní doména je
+  `schronisko-zlotywidok.pl`; (e) web, který jednou nešel otevřít, může jít
+  podruhé (Skalnikův wixsite) — „nepodařilo se otevřít" je stav pokusu, ne
+  vlastnost pramene.
+- **Opravil jsem součet koše C3.** Zápisy z 24. a 25. 9. mluvily o „86
+  nepřečtených, z toho 4 se signálem a 82 bez" — ta dvojice si neodpovídala,
+  protože `skalnik` byl přečtený už 19. 9. a byl zároveň v přečtených
+  i v nepřečtených. Skutečnost: **přečteno 37, nepřečteno 83, se signálem 0**
+  (120 = 37 + 83).
+- **Kontroly:** `npm run kontrola` zelená; čtyři změněné YAML se kontrolně
+  přeparsovaly, aby zápis poznámek nerozbil blokový skalár.
+
+**Příště:** **fronta koše C3 je vyčerpaná úplně** — na zbývajících 83 kandidátů
+nedosáhne žádný signál a bez tvého rozhodnutí (otázka z 22. 9., dnes pošesté)
+není kam pokračovat levně. Nabízí se proto vzít něco jiného: **Broumovsko
+z 28. 8.**, **deset padajících testů (Postgres/exporty)**, nebo — pokud chceš
+u koše zůstat — **spočítat nad 83 kandidáty, u kolika z nich vůbec existuje
+identifikátor k hledání** (web, telefon nebo e-mail v OSM), což by tvou
+odpověď na otázku z 22. 9. podložilo měřením místo odhadu. Dokud neřekneš jinak,
+vezmu příště ten výpočet — je na jednu session a nic nevyřazuje.
+
+**Otázky pro Michala:**
+
+- **Nejdůležitější, trvá od 22. 9. a dnes už je to jediná cesta dál: co s 83
+  kandidáty koše C3, na které nedosáhne žádný signál?** Varianty: (a) číst dál
+  po jednom (~17 sessions při dosavadní výtěžnosti — 1 povýšení z 37
+  přečtených), (b) koš C3 uzavřít jako celek a vrátit se, až přibude lepší
+  pramen, (c) přečíst jen ty, které mají v OSM web, telefon nebo e-mail,
+  zbytek odložit. **Doporučuji (c)** — dnešní čtení to podpořilo znovu: oba
+  přečtení schroniska odemkl sdílený kontakt z OSM.
+- **Nová, metodická a levná na odpověď: mám u polských kandidátů rozcestník
+  přestat uvádět jako argument?** Měření z dneška říká, že na polské straně
+  nerozhoduje. Navrhuji ho u PL dál **měřit a zapisovat, ale nevyvozovat z něj
+  verdikt** — a totéž zpětně poznamenat u `osada-sniezka`. Stačí „ano, tak to
+  veď".
+- **Trvá: klíč střediska** — jedna věta od tebe („objekty ve sjezdovkových
+  střediscích do průvodce ano/ne, a za jakých podmínek") uvolní naráz devět
+  objektů s doloženým veřejným občerstvením (`wellness-hotel-liberecka-bouda`,
+  `sasanka`, `chata-misecky`, `pension-jilemnicka-bouda`,
+  `restaurace-havlova-bouda`, `hladik-ziza-janska-bouda`, `chata-karkonoska`,
+  `hotel-bouda-jana` a další).
+- **Souhlasíš s dnešními třemi návrhy na vyřazení?** (Kalevala, Plum, Złoty
+  Widok — u všech tří prameny adresáta jídla pojmenovávají a kolemjdoucí to
+  není.)
+- **Trvá z 19. 9.: výjimka pro Skalnik.** Je to levná ubytovna PTSM přímo na
+  Głównym Szlaku Sudeckim (23 m k červené), vaří „całodzienne wyżywienie", ale
+  ani vlastní web neříká pro koho, a jediný konkrétní pramen (2017) říká, že
+  jednotlivec jídlo nedostane. Bereme roli na trase jako důvod k výjimce, nebo
+  platí klíč tak, jak je?
+- **Trvá z 24. 9.:** smím načíst přímo domény z OSM u kandidátů, které
+  vyhledávač nenajde (`triboudy.cz`, `karlovachata.cz`, `chalupaumedveda.cz`,
+  `vlekradvanice.cz`)? Stačí „u kandidátů koše C ano".
+- **Trvá z 23. 9.:** mám přidat kontrolu „kandidát daleko od své oblasti" do
+  `npm run kontrola` jako UPOZORNĚNÍ (ne vadu)? Odhad jedna session.
+- **Trvá z 21. 9.:** kandidát, u kterého se nenačetl žádný pramen (čtyři) —
+  do `_odlozeno.yaml`, nebo vyřadit jako ostatní?
+- Trvají starší otázky (Sruby Podspálov a zúžení `lngMin`; Dom Pod Jaworami —
+  zavoláš?; Baraba × Popelka; druhý klíč `rozhodnuteDuplicity`; a další
+  z 2.–25. 9.).
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. WebFetch
+otevře jen stránky, které předtím vrátil WebSearch — přímá doména končí na
+`PROVENANCE_REQUIRED`. `node_modules` v sandboxu nejsou, `npm ci` je potřeba
+pustit, než se dají spustit kontroly.
+
 ## 2026-09-25 — denní session: čtvrtá fronta koše C3 rozečtena — a první kandidát, který padá na roli na trase
 
 **Hotovo:**

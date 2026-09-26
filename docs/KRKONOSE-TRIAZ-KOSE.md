@@ -2108,3 +2108,102 @@ protože nebylo co čítat**. Kontrolní součet: 1 + 1 + 1 + 3 + 24 + 4 = 34.
 Ze **86 nepřečtených** má změřený signál už jen **4** (viz fronta na příště);
 zbylých **82** neoznačí žádný signál ani jedním směrem a otevřená otázka
 z 22. 9. 2026 na Michala tím trvá.
+
+## ČTVRTÁ FRONTA KOŠE C3 DOČTENA (26. 9. 2026) — a rozcestník, který na polské straně neměří totéž
+
+Fronta dne jsou čtyři kandidáti, kteří 25. 9. zbyli: `wioska-finska-kalevala`
+a tři `szkolne-schronisko-mlodziezowe-*` (`plum`, `skalnik`, `zloty-widok`).
+Tím je **čtvrtá fronta dočtena** a všechny změřené signály koše C3 jsou
+vyčerpané. **Do `data/chaty/` se nesáhlo**, nic se nevyřadilo ani nepovýšilo —
+návrhy s URL a datem jsou v `interniPoznamky` kandidátů.
+
+| kandidát                                   | veřejné občerstvení                                                                  | role na trase (měřeno 26. 9.)                    | návrh                           |
+| ------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------ | ------------------------------- |
+| `wioska-finska-kalevala`                   | **ne** — snídaně ubytovaným, menu jen skupinám 15+ na 48 h, kavárnička samoobslužná | 91 m k modré, 4 značky do 250 m, rozcestník 3 801 m | VYŘADIT (a vstup jen na rezervaci) |
+| `szkolne-schronisko-mlodziezowe-plum`      | **ne, a pramen to říká sám** — plná strava jen skupinám, jednotlivec dostane kuchyň  | 105 m k modré, rozcestník 7 179 m                | VYŘADIT                         |
+| `szkolne-schronisko-mlodziezowe-zloty-widok` | **ne** — samoobslužná kuchyň + kuchyň pro skupiny + jadalnia                        | 37 m k modré, rozcestník 6 448 m                 | VYŘADIT                         |
+| `szkolne-schronisko-mlodziezowe-skalnik`   | vaří „całodzienne wyżywienie", pro koho neříká ani vlastní web                       | 23 m k červené GSS, 2 značky, rozcestník 8 346 m | BEZE ZMĚNY — hraniční, na Michalovi |
+
+### Nález dne: vzdálenost k rozcestníku má na polské straně jiné měřítko než na české
+
+`osada-sniezka` padla 25. 9. na tom, že k nejbližšímu rozcestníku je 11 947 m.
+Dnešní čtveřice má 3 801 až 8 346 m a stejnou úvahou by padla celá — proto jsem
+signál nejdřív kalibroval nad **publikovanými** chatami, u kterých o zařazení
+už není spor (jednorázový skript, nic nezapisoval):
+
+| | publikovaných | medián rozcestníku | do 500 m | nad 3 000 m | maximum |
+| --- | --- | --- | --- | --- | --- |
+| **CZ** | 59 | **130 m** | 48 | 1 (Raisova chata 9 084 m) | 9 084 m |
+| **PL** | 17 | **983 m** | 6 | 2 | **5 694 m** (Wysoki Kamień) |
+
+Medián je na polské straně **sedmkrát dál** a dvě publikované polské boudy
+(`kochanowka` 4 867 m, `schronisko-wysoki-kamien` 5 694 m) leží dál než tři ze
+čtyř dnešních kandidátů. Příčina je v datech, ne v terénu: české `role=guidepost`
+jsou v exportu DATA-06 hustě, polské skoro ne. Z toho plyne pravidlo pro další
+čtení: **u polských kandidátů vzdálenost k rozcestníku o roli na trase
+nerozhoduje ani jedním směrem** — rozhoduje vzdálenost ke značce a jméno trasy.
+Verdikt `osada-sniezka` platí dál (11 947 m je za maximem publikovaného polského
+pole), ale rezerva je menší, než jak to 25. 9. vypadalo — a pokud si Michal
+u toho objektu vyžádá jiný pohled, tohle je důvod, proč se ptát.
+
+### Druhý nález: jeden e-mail na čtyři domy — poučka z 24. 9. tím dostává hranici
+
+24. 9. jsme si u `domek-w-karkonoszach` zapsali, že **u kandidátů s obecným
+jménem je e-mail z OSM silnější identifikátor než jméno**. Dnešní trojice
+schronisek tu poučku ohraničuje: telefon +48 696 046 824 a e-mail
+magdalada@poczta.onet.pl patří **čtyřem objektům jednoho správce** (Wojtek
+Szklarska Poręba, Plum, Złoty Widok, Wojtek Jelenia Góra) a v našem fondu je
+nesou tři různí kandidáti. Kontakt tedy ukazuje na **správce, ne na dům**.
+Přesná podoba poučky: sdílený kontakt otevírá prameny (proto se dnes dva
+kandidáti dali přečíst), ale identitu konkrétní budovy unese jen adresa.
+Je to třetí výskyt vzorce „jeden provozovatel, několik objektů" po Baraba ×
+Popelka (17. 9.) a Every Sky (24. 9.).
+
+### Vedlejší nálezy
+
+- **Bodový čas v OSM `opening_hours` je čas akce, ne otvíračka.**
+  `wioska-finska-kalevala` nese „Mo-Fr 12:00, Sa-Su 12:00, Sa-Su 14:00", což
+  vypadá jako vadný zápis; vlastní web říká, že 12:00 je začátek **jediné denní
+  prohlídky**. Tvar bez rozsahu tedy provoz nedokládá — spíš dokládá opak.
+- **Nová úroveň nad „nedoloženo": pramen sám řekne, co jednotlivec nedostane.**
+  `…-plum` má na vlastním webu rozdělené adresáty doslova („Dla grup
+  zorganizowanych … pełne wyżywienie", „Turyści indywidualni mogą skorzystać
+  z kuchni samoobsługowej"). To je silnější doklad než obvyklé mlčení pramenů
+  — u tohoto kandidáta nejde o mezeru, ale o vyloučení.
+- **Placená atrakce jako nový typ objektu v koši.** Kalevala není penzion ani
+  apartmán; je to zážitkový areál se vstupenkou (30/35 zł dle vlastního webu,
+  20/25 zł dle katalogu) a vstupem „tylko po wcześniejszej rezerwacji".
+  Pro klíč zařazení je to jasné ne — ale je to první kandidát, který padá
+  na **nepřístupnosti**, ne na chybějící kuchyni.
+- **Doména v OSM může ukazovat na sesterský objekt.** `…-zloty-widok` nese
+  z OSM `schronisko-wojtek.pl`, tedy web jiné budovy téhož správce; vlastní
+  doména je `schronisko-zlotywidok.pl`. Jiný případ než `osada-sniezka`
+  (jiná koncovka téže značky) — tady odkaz vede na jiný dům.
+- **Web, který jednou nešel otevřít, může jít otevřít podruhé.** Vlastní web
+  Skalniku se 19. 9. zastavil na rámu s odkazem na wixsite; dnes se obsah
+  načetl (`viasudetica.wixsite.com/skalnik`) a přinesl nový telefon i e-mail.
+  Verdikt to nezměnilo, ale „nepodařilo se otevřít" je stav pokusu, ne
+  vlastnost pramene — vyplatí se u hraničních případů zkusit znovu.
+
+### KOŠ C3 — stav po dočtení čtvrté fronty
+
+Přečteno je **37 kandidátů** koše C3 ze 120 (14.–26. 9. 2026) — dnes přibyli
+tři, `skalnik` se jen doplnil a v počtu už byl. Rozpad: 1 návrh na povýšení
+(`chata-viktorka`), 1 klíč splněn a visí na klíči střediska
+(`wellness-hotel-liberecka-bouda`), 1 sporné (`chata-pod-lipami`), 3 držené bez
+verdiktu ve prospěch pokračování, **26 návrhů na vyřazení** (23 + dnešní tři),
+1 hraniční čekající na Michalovu výjimku (`szkolne-schronisko-mlodziezowe-skalnik`
+— dosud se počítal mezi návrhy na vyřazení, od dneška stojí zvlášť, ať je vidět,
+že na něj čeká rozhodnutí) a **4 bez verdiktu, protože nebylo co čítat**.
+Kontrolní součet: 1 + 1 + 1 + 3 + 26 + 1 + 4 = 37.
+
+Nepřečtených je tedy **83** a **žádného z nich neoznačí žádný signál** — fronta
+čtení koše C3 je vyčerpaná úplně. Bez Michalova rozhodnutí (otázka z 22. 9. 2026,
+dnes položená pošesté) se dál nedá pokračovat levně.
+
+**Opravený součet, aby čísla dala dohromady:** zápisy z 24. a 25. 9. mluvily
+o „86 nepřečtených, z toho 4 se signálem a 82 bez signálu". Ta dvojice si
+neodpovídala — jeden ze čtyř se signálem (`szkolne-schronisko-mlodziezowe-skalnik`)
+byl přečtený už 19. 9. a byl tedy zároveň v přečtených i v nepřečtených.
+Skutečné čísla: přečteno 37, nepřečteno 83, kandidátů se signálem 0.
+120 = 37 + 83.
