@@ -29,6 +29,109 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-27 — denní session: u kolika z 83 kandidátů koše C3 je vůbec kde začít — a doporučení (c) padlo na vlastní kalibraci
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging) — od 10. 9. do repa nepřibyl tvůj commit. Vzal jsem
+  „Příště" z 26. 9.: **spočítat nad nepřečtenými kandidáty koše C3, u kolika
+  z nich vůbec existuje identifikátor k hledání.** Do `data/` se nesáhlo, nic
+  se nevyřadilo ani nepovýšilo.
+- **Nový skript `scripts/triaz-kos-c3-identifikatory.ts`** měří čtyři úrovně
+  (web · kontakt bez webu · adresa bez kontaktu · jen jméno), celé nad exporty
+  v repu, bez jediného dotazu do sítě. Výsledek: ze **83 nepřečtených** má
+  **46 web**, **1 kontakt**, **12 adresu** a **24 jen jméno a `tourism`**.
+  **Varianta (c) má tedy rozsah 59 z 83** (71 %).
+- **Nejdřív ale oprava, bez které by měření běželo nad špatným zbytkem.**
+  Tabulka verdiktů, ze které skripty čtou, obsahovala jen 21 kandidátů z front
+  do 21. 9. — fronty 23.–26. 9. si verdikty zapsaly do svých vlastních oddílů.
+  Skripty proto hlásily „přečteno 21 · zbývá 99" místo 37 a 83. Tabulka je
+  doplněná o šestnáct kandidátů, označená jako **živá** a je teď jediné místo,
+  kde verdikty žijí. Vyšly při tom najevo dvě chyby rozpadu: číslo „26 návrhů
+  na vyřazení" v sobě mělo i škrtnutou vedlejší budovu
+  (`hotel-spindlerova-bouda-depandance`) a `chata-u-kohouta` stál od 24. 9.
+  ve dvou kategoriích naráz. Správně je **25** návrhů na vyřazení; derivace je
+  u tabulky, souhrnná čísla (31 / 34 / 37) byla správná už předtím.
+- **NÁLEZ DNE: doporučení (c) z 26. 9. vlastní kalibrací neprošlo, a proto ho
+  měním.** Kdyby chybějící identifikátor předpovídal slepou uličku, ležely by
+  všechny čtyři přečtené případy „nebylo co číst" v úrovni NIC. Skutečnost:
+  **dva ze čtyř měli v OSM web** (`chalupa-u-rihu` — DNS; `apartmany-tri-boudy`
+  — PROVENANCE_REQUIRED) a **sedm z devíti přečtených bez identifikátoru se
+  přečíst podařilo**. Míra selhání: bez identifikátoru 2 z 9 (22 %), s webem
+  2 z 22 (9 %). Varianta (c) by tedy odložila 24 kandidátů, z nichž by se podle
+  téhle míry přečíst podařilo asi **19** — za ušetřených pět marných
+  dohledávek. **Nové doporučení: identifikátor brát jako POŘADÍ čtení, ne jako
+  filtr.**
+- **Druhý nález, metodický: kalibrace je tak stará jako tabulka, ze které
+  čte.** Lexikon jména vypadal 22. 9. bezchybně (označil 6 přečtených, všech 6
+  na vyřazení). Nad opravenými 37 označí **17, z toho 13 na vyřazení** — a mimo
+  vyřazení označí i `wellness-hotel-liberecka-bouda`, u kterého je klíč
+  **splněn**. Signál dělí dál, ale ne bezchybně; poučka z 22. 9. platila jen
+  díky zastaralému vzorku.
+- **Křížové měření, které (c) naopak obhájilo v jedné věci:** jména „bouda /
+  schronisko / útulna" jsou ve frontě ke čtení (13 z 59, 22 %) i v odložené
+  skupině (5 z 24, 20,8 %) zastoupená stejně — pořadí podle identifikátoru
+  tedy nic nadějného systematicky neschovává.
+- **Vedlejší nálezy:** (a) **osada Labská je v koši celá** — šest kandidátů
+  s `addr:place=Labská` a evidenčním číslem (1, 4, 7, 13, 22, 61), žádný nemá
+  web ani telefon, tři nesou ve jméně „bouda" nebo „turistická chata"; první
+  případ, kdy by se fronta dala postavit **podle osady**, ne podle kandidáta;
+  (b) `baronova-bouda` a `chata-baronka` nesou týž web `ski-baron.cz` — dva
+  kandidáti, jedna stránka ke čtení; (c) `lodge-1/2/3` jsou tři číslovaná
+  obecná jména bez jediného tagu navíc; (d) kandidát jménem `chata` (Labská 22)
+  je nejobecnější jméno v celém koši; (e) **ani jeden z 24 kandidátů bez
+  identifikátoru nenese `operator`** — OSM u nich mlčí úplně.
+- **Kontroly:** `npm run kontrola` zelená (20 workflow souborů, 0 vad; fixtura
+  25 souborů, 4 kontroly, 0 spadlo), `eslint` i `tsc --noEmit` čisté, prettier
+  přeformátoval dotčené soubory.
+
+**Příště:** vzít **prvních ~6 kandidátů fronty ke čtení** (úroveň „vlastní
+pramen", tedy web v OSM) — fronta je hotová v triážním dokumentu a začíná
+`baronova-bouda` / `chata-baronka` (jeden pramen pro oba), `bergpoolhaus`,
+`bouda-mama`, `browarowka`, `capkova-chata`. Levnější alternativa, pokud chceš
+raději měřený krok než čtení: **postavit fronta podle osady Labská** (šest
+souborů, jeden pramen obce). Dál pořád leží Broumovsko z 28. 8., deset
+padajících testů (Postgres/exporty) a blokované DATA-04 / DATA-05 / DATA-20 /
+DATA-22 / DATA-25 / DATA-28 / F1-IMPL.
+
+**Otázky pro Michala:**
+
+- **Nejdůležitější — otázka z 22. 9. je konečně podložená měřením a odpověď
+  na ni se mi změnila.** Doporučuju **(a) číst dál po jednom, ale v pořadí
+  podle identifikátoru**: nejdřív 59 kandidátů s webem/kontaktem/adresou,
+  24 bez identifikátoru na konec fronty. Varianta (c) (těch 24 odložit) by
+  podle kalibrace zahodila asi 19 čitelných kandidátů, aby ušetřila 5 marných
+  dohledávek. Stačí „ano, pořadí podle identifikátoru".
+- **Nová a levná: smím čtení stavět po OSADÁCH, ne po kandidátech?** U šestice
+  v Labské (a asi i jinde) je adresa jediný identifikátor a pramenem bude
+  katalog obce — jedno čtení by rozhodlo šest souborů. Stačí „ano, zkus to".
+- **Trvá z 24. 9.:** smím načíst přímo domény z OSM u kandidátů, které
+  vyhledávač nenajde (`triboudy.cz`, `karlovachata.cz`, `chalupaumedveda.cz`,
+  `vlekradvanice.cz`)? Dnešní měření tu otázku zvedá znovu a šířeji: **46 z 83
+  nepřečtených má v OSM web** a bez tvého „u kandidátů koše C ano" se u nich
+  čtení opírá o to, jestli doménu vrátí vyhledávač.
+- **Trvá: klíč střediska** — jedna věta od tebe („objekty ve sjezdovkových
+  střediscích do průvodce ano/ne, a za jakých podmínek") uvolní naráz devět
+  objektů s doloženým veřejným občerstvením.
+- **Trvá z 26. 9.:** souhlasíš s třemi návrhy na vyřazení (Kalevala, Plum,
+  Złoty Widok) a mám u polských kandidátů přestat vyvozovat verdikt
+  z rozcestníku?
+- **Trvá z 19. 9.: výjimka pro Skalnik.**
+- **Trvá z 23. 9.:** mám přidat kontrolu „kandidát daleko od své oblasti" do
+  `npm run kontrola` jako UPOZORNĚNÍ (ne vadu)?
+- **Trvá z 21. 9.:** kandidát, u kterého se nenačetl žádný pramen (čtyři) —
+  do `_odlozeno.yaml`, nebo vyřadit jako ostatní?
+- Trvají starší otázky (Sruby Podspálov a zúžení `lngMin`; Dom Pod Jaworami —
+  zavoláš?; Baraba × Popelka; druhý klíč `rozhodnuteDuplicity`; a další
+  z 2.–26. 9.).
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. `node_modules`
+v sandboxu nejsou, `npm ci` je potřeba pustit, než se dají spustit kontroly.
+
 ## 2026-09-26 — denní session: čtvrtá fronta koše C3 dočtena — a rozcestník, který na polské straně neměří totéž
 
 **Hotovo:**

@@ -1779,29 +1779,56 @@ na stav provozu, ne na nedoložitelnost. Otázka pro Michala je v deníku.
   `srubypodspalov.cz` (smyčka https→http na tutéž adresu),
   `netfirmy.cz` (410 Gone).
 
-### CELÝ KOŠ C3 — souhrn čtení 14.–21. 9. 2026 jako podklad pro hromadné rozhodnutí
+### CELÝ KOŠ C3 — souhrn čtení 14.–26. 9. 2026 (ŽIVÁ TABULKA VERDIKTŮ)
 
-Koš C3 má **120 kandidátů** (měření 6. 9.). Přečteno je jich **21** ve dvou
-frontách, tedy 17,5 %; obě fronty jsou teď dočtené.
+**Tahle tabulka je jediné místo, kde verdikty koše C3 žijí** — čte z ní
+`scripts/triaz-kos-c3-tagy.ts` (funkce `prectene()`) i
+`scripts/triaz-kos-c3-identifikatory.ts`. Dokud se do ní dopisovalo jen
+21 kandidátů z front 14.–21. 9., měřily oba skripty nad špatným zbytkem
+(hlásily „přečteno 21 · zbývá 99", zatímco skutečnost byla 37 a 83).
+**Dopsáno 27. 9. 2026** o šestnáct kandidátů přečtených 23.–26. 9. — verdikty
+se nepřepisují, jen se sem přenášejí přesně tak, jak je zapsaly příslušné
+oddíly níž. **Kdo čte dál, dopisuje sem.**
 
-| verdikt | počet | kdo |
-| --- | --- | --- |
-| obě půlky klíče — k povýšení | 1 | `chata-viktorka` |
-| držet, rozhodne telefonát nebo chybí pramen | 3 | `hribeci-bouda`, `chata-jestrab`, `dom-pod-jaworami` |
-| škrtnuto z fronty jako vedlejší budova publikovaného profilu | 1 | `hotel-spindlerova-bouda-depandance` |
-| návrh VYŘADIT | 16 | `chata-gracie`, `chata-medika-2411927307`, `mlynarka-ubytovani-v-krkonosich`, `felicity-grand-apartments`, `chata-kovarna`, `chalupa-marsovka`, `apartman-u-potoka`, `chata-tobisek`, `sliwkowa-chata-sliwkowa-chata`, `chata-baraba`, `chata-popelka`, `szkolne-schronisko-mlodziezowe-skalnik`, `horska-chata-hanapetr`, `chata-u-kohouta`, `pension-chata-lovrana`, `sruby-podspalov` |
+Koš C3 má **120 kandidátů** (měření 6. 9.). Přečteno je jich **37**, tedy
+30,8 %; nepřečtených je **83**.
 
-**Co z toho plyne pro zbývajících 99.** Výtěžnost obou front je **1 z 21**
-(4,8 %) na povýšení a 3 z 21 na „rozhodne telefonát". Přitom fronty se stavěly
-tak, aby byly nejvýtěžnější — první brala nejsilnější kombinaci (do 50 m od
-značky + 2 značky do 250 m + rozcestník do 150 m), druhá tutéž bez
-rozcestníku. Zbytek koše je tedy podle měření **slabší**, ne silnější:
+| verdikt                                                      | počet | kdo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ------------------------------------------------------------ | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| obě půlky klíče — k povýšení                                 | 1     | `chata-viktorka`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| klíč splněn, visí na klíči střediska                         | 1     | `wellness-hotel-liberecka-bouda`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| sporné — doklad neunese ani jeden směr                       | 1     | `chata-pod-lipami`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| držet, rozhodne telefonát nebo chybí pramen                  | 3     | `hribeci-bouda`, `chata-jestrab`, `dom-pod-jaworami`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| škrtnuto z fronty jako vedlejší budova publikovaného profilu | 1     | `hotel-spindlerova-bouda-depandance`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| návrh VYŘADIT                                                | 25    | `chata-gracie`, `chata-medika-2411927307`, `mlynarka-ubytovani-v-krkonosich`, `felicity-grand-apartments`, `chata-kovarna`, `chalupa-marsovka`, `apartman-u-potoka`, `chata-tobisek`, `sliwkowa-chata-sliwkowa-chata`, `chata-baraba`, `chata-popelka`, `horska-chata-hanapetr`, `pension-chata-lovrana`, `sruby-podspalov`, `penzion-karlova-chata`, `chalupa-u-medveda`, `zielony-domek`, `lyzarsky-vlek-ubytovani`, `apartamenty-every-sky`, `chalupa-baba-jaga`, `domek-w-karkonoszach`, `osada-sniezka`, `wioska-finska-kalevala`, `szkolne-schronisko-mlodziezowe-plum`, `szkolne-schronisko-mlodziezowe-zloty-widok` |
+| hraniční — čeká na Michalovu výjimku                         | 1     | `szkolne-schronisko-mlodziezowe-skalnik`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| BEZ VERDIKTU — nebylo co číst                                | 4     | `chata-u-kohouta`, `chalupa-u-rihu`, `apartmany-tri-boudy`, `chalupa-sport`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+
+Kontrolní součet: 1 + 1 + 1 + 3 + 1 + 25 + 1 + 4 = **37**.
+
+**Oprava součtu — „26 návrhů na vyřazení" byl součet dvou různých věcí.**
+Zápisy z 24., 25. i 26. 9. vedly rozpad tak, že ze seznamu vypadl řádek
+„škrtnuto jako vedlejší budova" (`hotel-spindlerova-bouda-depandance`)
+a jeho jednička se přičetla k návrhům na vyřazení. Souhrnná čísla (31, 34, 37)
+tím zůstala správná, rozpad ale tvrdil o jeden návrh na vyřazení víc, než
+kolik jich je. Druhá polovina opravy: `chata-u-kohouta` byl v tabulce z 21. 9.
+mezi šestnácti návrhy na vyřazení, ale 24. 9. ho stav koše přeřadil mezi
+čtyři „nebylo co číst" (žádný pramen se nenačetl) — v živé tabulce proto stojí
+jen v druhé kategorii. Derivace: 16 − `chata-u-kohouta` − `…-skalnik`
+(dnes stojí zvlášť) + 7 (třetí fronta) + 1 (`osada-sniezka`) + 3 (26. 9.) = **25**.
+
+**Co z toho plyne pro zbývajících 83.** Výtěžnost všech čtyř front je **1 z 37**
+(2,7 %) na povýšení, 1 z 37 na „klíč splněn, rozhodne klíč střediska" a 3 z 37
+na „rozhodne telefonát". Přitom fronty se stavěly tak, aby byly nejvýtěžnější —
+první brala nejsilnější kombinaci (do 50 m od značky + 2 značky do 250 m +
+rozcestník do 150 m), druhá tutéž bez rozcestníku, třetí a čtvrtá pak signály
+z tagů a ze jména. Zbytek koše je tedy podle měření **slabší**, ne silnější:
 u 36 kandidátů měření druhou půlku klíče nedá vůbec (nad 250 m od značky).
-Naproti tomu **15 ze 16 návrhů na vyřazení padlo na téže půlce klíče** —
-občerstvení jen pro ubytované. Návrh na pořadí dalších sessions je proto
-v deníku jako otázka: číst dál po jednom, nebo vzít zbytek koše hromadně přes
-strojově čitelný doklad (kategorie zápisu, cena za celý objekt za týden), a po
-jednom číst jen to, co takový doklad nemá.
+Naproti tomu **24 z 25 návrhů na vyřazení padlo na téže půlce klíče** —
+občerstvení jen pro ubytované (jediná výjimka je `osada-sniezka`, která padla
+na roli na trase). Návrh na pořadí dalších sessions je proto v deníku jako
+otázka: číst dál po jednom, nebo číst jen to, k čemu vůbec existuje
+identifikátor k hledání — a tu druhou možnost měří oddíl z 27. 9. 2026 níž.
 
 ## ZBYTEK KOŠE C3 ZMĚŘEN STROJOVĚ ČITELNÝMI SIGNÁLY (22. 9. 2026) — a nejdřív kalibrace, až pak zbytek
 
@@ -2207,3 +2234,227 @@ neodpovídala — jeden ze čtyř se signálem (`szkolne-schronisko-mlodziezowe-
 byl přečtený už 19. 9. a byl tedy zároveň v přečtených i v nepřečtených.
 Skutečné čísla: přečteno 37, nepřečteno 83, kandidátů se signálem 0.
 120 = 37 + 83.
+
+## ZBYTEK KOŠE C3 — JE U KOHO ZAČÍT ČTENÍ? (27. 9. 2026) — a varianta (c) neobstála tak, jak se čekalo
+
+Pořadí backlogu se nemění, **DATA-04 / DATA-05 / DATA-20 / DATA-22 / DATA-25 /
+DATA-28 i F1-IMPL zůstávají blokované** ze stejných důvodů (telefonáty, katalog
+vydavatele, sémantika `obec`, tři případy na Michalovi, klik na workflow,
+staging) — od 10. 9. 2026 do repa nepřibyl Michalův commit. Vzato „Příště"
+z 26. 9.: **spočítat nad nepřečtenými kandidáty koše C3, u kolika z nich vůbec
+existuje identifikátor k hledání.** Měří `scripts/triaz-kos-c3-identifikatory.ts`,
+celé nad exporty v repu, **bez jediného dotazu do sítě**. Do `data/` se nesáhlo,
+nic se nevyřadilo ani nepovýšilo.
+
+Otázka na Michala z 22. 9. nabízí tři varianty: (a) číst dál po jednom,
+(b) koš uzavřít, (c) přečíst jen ty, k nimž existuje identifikátor, zbytek
+odložit. Deník 26. 9. doporučil **(c)** — ten rozsah byl ale odhad ze dvou
+případů. Tohle je jeho číslo, a mění doporučení.
+
+### Nejdřív oprava, bez které by měření běželo nad špatným zbytkem
+
+Živá tabulka verdiktů (oddíl „CELÝ KOŠ C3 — souhrn") obsahovala jen
+**21 kandidátů** z front 14.–21. 9., protože fronty 23.–26. 9. si verdikty
+zapsaly do svých vlastních oddílů. Oba skripty, které z tabulky čtou, proto
+hlásily **„přečteno 21 · zbývá 99"** místo 37 a 83 — měřily tedy i nad
+šestnácti kandidáty, kteří rozhodnutí dávno měli. Tabulka je od dneška doplněná
+a označená jako **živá**; kdo čte dál, dopisuje do ní. Při doplnění vyšly najevo
+dvě chyby rozpadu (číslo „26 návrhů na vyřazení" v sobě mělo i škrtnutou
+vedlejší budovu; `chata-u-kohouta` stál od 24. 9. ve dvou kategoriích naráz) —
+derivace opraveného čísla **25** je u tabulky.
+
+**Vedlejší důsledek opravy: lexikon jména už není bezchybný.** Na 21 přečtených
+označil 6 kandidátů a všech 6 skončilo návrhem na vyřazení (kalibrace 22. 9.).
+Na 37 přečtených označí **17, z toho 13 na vyřazení** — mimo vyřazení označil
+`apartmany-tri-boudy`, `chalupa-sport`, `chalupa-u-rihu` a hlavně
+`wellness-hotel-liberecka-bouda`, u kterého je **klíč splněn**. Signál dělí dál,
+ale poučka z 22. 9. („na přečtených neoznačil ani jednoho mimo vyřazení")
+platila jen díky staré tabulce. Sebekalibrace nad zastaralým vzorkem si tím
+vysloužila vlastní poučku: **kalibrace je tak stará jako tabulka, ze které čte.**
+
+### Čtyři úrovně identifikátoru a co u koho v OSM leží
+
+Úrovně jsou popsané v hlavičce skriptu; stručně: **vlastní pramen** (web),
+**kontakt** (telefon / e-mail / síť bez webu), **adresa** (ulice nebo osada
+s číslem, případně RÚIAN identifikátor) a **nic** (jen jméno a `tourism`).
+
+| úroveň                                             | kolik | podíl  |
+| -------------------------------------------------- | ----- | ------ |
+| VLASTNÍ PRAMEN (web v OSM)                         | 46    | 55.4 % |
+| KONTAKT (telefon / e-mail / síť, bez webu)         | 1     | 1.2 %  |
+| ADRESA (ulice s číslem nebo registr, bez kontaktu) | 12    | 14.5 % |
+| NIC (jen jméno a tourism)                          | 24    | 28.9 % |
+
+**Varianta (c) má rozsah 59 z 83** (71,1 %); u **24 kandidátů** čtení nemá v OSM
+kde začít.
+
+### Kalibrace: dělí úroveň to, u koho čtení skutečně selhalo?
+
+Ze 37 přečtených skončili **čtyři** bez verdiktu proto, že se nenačetl žádný
+pramen. Kde v úrovních leží:
+
+| úroveň                                             | přečtených | z toho „nebylo co číst" | kdo z nich                              |
+| -------------------------------------------------- | ---------- | ----------------------- | --------------------------------------- |
+| VLASTNÍ PRAMEN (web v OSM)                         | 22         | 2                       | `apartmany-tri-boudy`, `chalupa-u-rihu` |
+| KONTAKT (telefon / e-mail / síť, bez webu)         | 3          | 0                       | —                                       |
+| ADRESA (ulice s číslem nebo registr, bez kontaktu) | 3          | 0                       | —                                       |
+| NIC (jen jméno a tourism)                          | 9          | 2                       | `chalupa-sport`, `chata-u-kohouta`      |
+
+**A tady varianta (c) neobstála tak, jak se čekalo.** Kdyby úroveň
+identifikátoru předpovídala slepou uličku, ležely by všechny čtyři případy
+v úrovni NIC. Skutečnost je jiná: **dva ze čtyř měli v OSM web**
+(`chalupa-u-rihu` — DNS se nepřeložilo; `apartmany-tri-boudy` — `triboudy.cz`
+skončil na PROVENANCE_REQUIRED), a naopak **sedm z devíti přečtených bez
+identifikátoru se přečíst podařilo** a verdikt dostali. Míra selhání: bez
+identifikátoru **2 z 9 (22 %)**, s webem v OSM **2 z 22 (9 %)**. Doména v OSM
+tedy riziko slepé uličky sníží asi na polovinu, ale neodstraní ho — a její
+nepřítomnost čtení nezablokuje.
+
+Cena varianty (c) se z toho spočítá: odložila by 24 kandidátů, u nichž by se
+podle téže míry přečíst podařilo asi **19** a slepou uličkou by bylo asi **5**.
+Za ušetřených pět marných dohledávek by se odložilo devatenáct čitelných
+objektů. **Doporučení se proto mění: identifikátor brát jako POŘADÍ čtení, ne
+jako filtr** — přečíst nejdřív 59 s identifikátorem, 24 bez něj nechat na
+konec fronty. Je to varianta (a) s levnějším pořadím, ne (c).
+
+### Křížové měření: neodkládala by (c) právě to nejnadějnější?
+
+Jméno „bouda / schronisko / útulna" je nejsilnější pozitivní signál, jaký koš
+má. Kdyby ležel zrovna v odložené skupině, hrála by (c) proti vlastnímu účelu:
+
+| skupina                       | kandidátů | z toho jméno boudy | podíl  |
+| ----------------------------- | --------- | ------------------ | ------ |
+| fronta ke čtení               | 59        | 13                 | 22 %   |
+| bez identifikátoru (odložení) | 24        | 5                  | 20.8 % |
+
+**Tady je zpráva dobrá — rozdíl 1,2 procentního bodu, tedy žádný.** Úroveň
+identifikátoru s nadějností jména nekoreluje, takže pořadí čtení podle
+identifikátoru nic systematicky neschovává. Odložená jména boudy by byla:
+`bouda-jirinka`, `bouda-sestidomi`, `bouda-u-lesa`, `mohwaldova-bouda`, `schronisko-mlodziezowe-lubawia`.
+
+### Fronta ke čtení (59) — pořadí čtení, ne pořadí zamítání
+
+| kandidát                                                                          | tourism       | web                                                                     | telefon | e-mail | síť | adresa                             |
+| --------------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- | ------- | ------ | --- | ---------------------------------- |
+| `baronova-bouda` — Baronova Bouda                                                 | `guest_house` | http://www.ski-baron.cz                                                 | —       | —      | —   | —                                  |
+| `bergpoolhaus` — Bergpoolhaus                                                     | `chalet`      | https://www.bergpoolhaus.eu/                                            | ano     | ano    | ano | —                                  |
+| `bouda-mama` — Bouda Máma                                                         | `hotel`       | https://www.boudamama.cz/                                               | —       | —      | —   | Pec pod Sněžkou 124                |
+| `browarowka` — Browarówka                                                         | `chalet`      | https://www.browarowka.pl/                                              | ano     | ano    | —   | Czarny Strumień 7, Łomnica         |
+| `capkova-chata` — Čapkova chata                                                   | `guest_house` | https://chaty-krkonose.cz/                                              | —       | —      | —   | Pec pod Sněžkou 42                 |
+| `contemplace` — Contemplace                                                       | `chalet`      | https://www.contemplace.pl                                              | ano     | ano    | —   | Świętego Jana z Dukli 18, Borowice |
+| `czarodziejska-gora` — Czarodziejska Góra                                         | `chalet`      | https://czarodziejskagora.eu                                            | ano     | ano    | ano | Mniszków 17, Janowice Wielkie      |
+| `grohmanova-bouda` — Grohmanova bouda                                             | `guest_house` | http://www.grohmanovabouda.cz                                           | —       | —      | —   | —                                  |
+| `hajenka-haida` — Hájenka Haida                                                   | `guest_house` | https://www.chatahaida.cz/                                              | —       | —      | —   | Horní Malá Úpa 4                   |
+| `holiday-park-resort` — Holiday Park & Resort                                     | `chalet`      | https://holidaypark.pl/uzdrowisko-cieplice-zdroj                        | ano     | —      | —   | Dolnośląska 6, Jelenia Góra        |
+| `hotel-cerna-bouda` — Hotel ČERNÁ BOUDA                                           | `hotel`       | https://www.cernabouda.cz/                                              | —       | —      | —   | —                                  |
+| `hottur-osrodek-wczasowo-wypoczynkowy` — HOTTUR Ośrodek Wczasowo-Wypoczynkowy     | `chalet`      | https://www.hottur.pl/                                                  | —       | —      | —   | —                                  |
+| `chata-baronka` — Chata Baronka                                                   | `chalet`      | http://www.ski-baron.cz                                                 | —       | —      | —   | —                                  |
+| `chata-beata` — Chata Beata                                                       | `chalet`      | http://www.chatabeata.cz                                                | —       | —      | —   | —                                  |
+| `chata-biegacza` — Chata Biegacza                                                 | `guest_house` | https://www.chatabiegacza.pl/                                           | —       | —      | —   | Odrodzenia 25, Szklarska Poręba    |
+| `chata-botas` — Chata Botas                                                       | `chalet`      | https://www.e-chalupy.cz/krkonose/chata-botas-stazne-pronajem-15627.php | ano     | —      | —   | Strážné 161                        |
+| `chata-ferra` — Chata FERRA                                                       | `chalet`      | http://www.chataferra.cz                                                | —       | —      | —   | —                                  |
+| `chata-honzik` — Chata Honzík                                                     | `chalet`      | www.chatahonzik.cz                                                      | —       | —      | —   | —                                  |
+| `chata-jitka` — Chata Jitka                                                       | `chalet`      | http://www.chatajitka.cz                                                | —       | —      | —   | —                                  |
+| `chata-kabrtova-bouda` — Chata Kábrtova Bouda                                     | `chalet`      | https://www.janskelazne.cz/cz/chata-kabrtova-bouda-cerna-hora-19.html   | —       | —      | —   | Horská 190, Janské Lázně           |
+| `chata-karolinka` — Chata Karolínka                                               | `guest_house` | https://www.chatakarolinka.cz/                                          | ano     | ano    | —   | Benecko 41                         |
+| `chata-kubik` — Chata Kubík                                                       | `chalet`      | http://www.chatakubik.cz/                                               | —       | —      | —   | —                                  |
+| `chata-medika` — Chata Medika                                                     | `chalet`      | http://www.chatamedika.cz/                                              | —       | —      | —   | Dolní Dvůr 128                     |
+| `chata-protez` — chata Protěž                                                     | `guest_house` | https://www.dominant-protez.cz/chataprotez                              | —       | —      | —   | Pec pod Sněžkou 30                 |
+| `chata-tereza` — Chata Tereza                                                     | `guest_house` | https://www.chatatereza.eu/                                             | —       | —      | —   | —                                  |
+| `chata-varta` — Chata Varta                                                       | `guest_house` | http://www.chatavarta.cz                                                | —       | —      | —   | —                                  |
+| `chata-votocka` — Chata Votočka                                                   | `guest_house` | https://www.chatavotocka.cz                                             | ano     | ano    | —   | Rokytno 54, Rokytnice nad Jizerou  |
+| `iskierka` — Iskierka                                                             | `chalet`      | www.iskierkadomek.pl                                                    | ano     | ano    | —   | Brzozowa 20, Lubawka               |
+| `janova-bouda` — Janova bouda                                                     | `guest_house` | https://www.skifamily.cz/                                               | —       | —      | —   | —                                  |
+| `jawa` — Jawa                                                                     | `chalet`      | https://chatajawa.cz/                                                   | —       | —      | —   | —                                  |
+| `lesna-chata` — Leśna Chata                                                       | `chalet`      | https://www.chatalesna.pl/                                              | ano     | ano    | —   | 1 Maja 60H                         |
+| `ludvikova-bouda` — Ludvikova bouda                                               | `chalet`      | http://www.ludvikovabouda.com/                                          | —       | —      | —   | —                                  |
+| `ministerska` — Ministerská                                                       | `chalet`      | https://ministerska.cz/                                                 | ano     | ano    | —   | —                                  |
+| `mlodziezowe-schronisko-w-staniszowie` — Młodzieżowe Schronisko w Staniszowie     | `guest_house` | https://www.schronisko.podgorzyn.pl/                                    | ano     | —      | —   | Staniszów 59                       |
+| `ostoja-karkonoska` — Ostoja Karkonoska                                           | `chalet`      | https://ostojakarkonoska.com.pl                                         | ano     | —      | —   | Jana Pawła II 33, Podgórzyn        |
+| `penzion-modrokamenna-bouda` — Penzion Modrokamenná bouda                         | `guest_house` | http://www.penzion-modrokamenna-bouda-janske-lazne.az-ubytovani.net/    | —       | —      | —   | —                                  |
+| `pod-zielonym-dachem` — Pod Zielonym Dachem                                       | `chalet`      | http://www.podzielonymdachem.i-noclegi.pl/                              | —       | —      | ano | Rędziny 23A                        |
+| `schronisko-liczyrzepa` — Schronisko Liczyrzepa                                   | `hostel`      | https://schronisko-liczyrzepa.pl/                                       | ano     | —      | —   | Skalna 45, Karpacz                 |
+| `schronisko-srebrny-potok` — Schronisko Srebrny Potok                             | `hostel`      | http://www.srebrny-potok.net/                                           | ano     | ano    | —   | Jarkowice 136                      |
+| `sokolska-chata-babeta` — Sokolská chata Babeta                                   | `chalet`      | https://sokolponikla.cz/                                                | —       | —      | —   | —                                  |
+| `szkolne-schronisko-mlodziezowe-wojtek` — Szkolne Schronisko Młodzieżowe "Wojtek" | `guest_house` | https://schronisko-wojtek.pl/                                           | ano     | ano    | —   | Piastowska 1, Szklarska Poręba     |
+| `widok-na-sniezke` — Widok na Śnieżkę                                             | `chalet`      | https://widoknasniezke.pl/                                              | —       | —      | —   | —                                  |
+| `widokowo` — Widokowo                                                             | `chalet`      | https://www.widokowo-karpacz.pl/                                        | —       | —      | —   | —                                  |
+| `wiilla-jagoda-jagniatkow` — Wiilla Jagoda Jagniątków                             | `chalet`      | https://willajagodajagniatkow.business.site/                            | ano     | —      | —   | Narciarska 7, Jelenia Góra         |
+| `zacisze-pod-smielcem` — Zacisze Pod Śmielcem                                     | `chalet`      | https://domkiwgorach.eu/                                                | —       | ano    | —   | Wczasowa 5a, Jelenia Góra          |
+| `zinneckerovy-boudy` — Zinneckerovy Boudy                                         | `chalet`      | https://zinneckerovy-boudy.cz/                                          | —       | —      | —   | —                                  |
+| `chata-gall` — Chata Gall                                                         | `chalet`      | —                                                                       | ano     | —      | —   | —                                  |
+| `dalibor` — Dalibor                                                               | `chalet`      | —                                                                       | —       | —      | —   | Špindlerův Mlýn 17                 |
+| `gorska-chata` — Górska Chata                                                     | `guest_house` | —                                                                       | —       | —      | —   | Wysoka 1, Szklarska Poręba         |
+| `chata` — Chata                                                                   | `hotel`       | —                                                                       | —       | —      | —   | Labská 22                          |
+| `chata-advokatka` — chata Advokátka                                               | `guest_house` | —                                                                       | —       | —      | —   | Luční 188, Janské Lázně            |
+| `chata-jasanka` — chata Jasanka                                                   | `guest_house` | —                                                                       | —       | —      | —   | Labská 7                           |
+| `chata-katerina` — Chata Kateřina                                                 | `guest_house` | —                                                                       | —       | —      | —   | Bedřichov 35, Špidnlerův Mlýn      |
+| `chata-solunka` — Chata Solunka                                                   | `guest_house` | —                                                                       | —       | —      | —   | Labská 61                          |
+| `chata-zapiecek` — Chata Zapiecek                                                 | `hotel`       | —                                                                       | —       | —      | —   | Karkonoska 48, Przesieka           |
+| `krausovy-boudy` — Krausovy boudy                                                 | `guest_house` | —                                                                       | —       | —      | —   | Labská 13                          |
+| `mounttain-holiday-lodges` — Mounttain Holiday Lodges                             | `chalet`      | —                                                                       | —       | —      | —   | Droga do Wodospadu 4a, Przesieka   |
+| `sporthotel-svycarska-bouda` — Sporthotel Švýcarská bouda                         | `hotel`       | —                                                                       | —       | —      | —   | Labská 1                           |
+| `turisticka-chata-lajdacek` — Turistická chata Lajdáček                           | `chalet`      | —                                                                       | —       | —      | —   | Labská 4                           |
+
+### Kandidáti bez identifikátoru (24) — na konec fronty, ne ven z ní
+
+| kandidát                                                          | tourism       | provozovatel v OSM |
+| ----------------------------------------------------------------- | ------------- | ------------------ |
+| `arnika` — Arnika                                                 | `chalet`      | —                  |
+| `bouda-jirinka` — Bouda Jiřinka                                   | `chalet`      | —                  |
+| `bouda-sestidomi` — bouda Šestidomí                               | `guest_house` | —                  |
+| `bouda-u-lesa` — Bouda U lesa                                     | `guest_house` | —                  |
+| `dziewiecsil` — Dziewiećsił                                       | `chalet`      | —                  |
+| `goryczka` — Goryczka                                             | `chalet`      | —                  |
+| `happy-house` — Happy House                                       | `chalet`      | —                  |
+| `chata-lom` — Chata Lom                                           | `chalet`      | —                  |
+| `chata-opavia` — Chata Opavia                                     | `guest_house` | —                  |
+| `chata-orlik` — Chata Orlik                                       | `hotel`       | —                  |
+| `chata-silnicka` — Chata Silnička                                 | `guest_house` | —                  |
+| `chata-spindler` — Chata Špindler                                 | `chalet`      | —                  |
+| `chata-uvaly` — Chata Úvaly                                       | `guest_house` | —                  |
+| `java` — Java                                                     | `chalet`      | —                  |
+| `lilia` — Lilia                                                   | `chalet`      | —                  |
+| `lodge-1` — Lodge 1                                               | `chalet`      | —                  |
+| `lodge-2` — Lodge 2                                               | `chalet`      | —                  |
+| `lodge-3` — Lodge 3                                               | `chalet`      | —                  |
+| `makuka` — Makuka                                                 | `chalet`      | —                  |
+| `mohwaldova-bouda` — Möhwaldova bouda                             | `hotel`       | —                  |
+| `przystan-nad-bobrem` — Przystań nad Bobrem                       | `chalet`      | —                  |
+| `rozeniec` — Różeniec                                             | `chalet`      | —                  |
+| `schronisko-mlodziezowe-lubawia` — Schronisko Młodzieżowe LUBAWIA | `hostel`      | —                  |
+| `sosnowy-szept` — Sosnowy Szept                                   | `chalet`      | —                  |
+
+**Ani jeden z těch 24 nenese `operator`** — OSM u nich mlčí úplně, drží jen
+jméno a `tourism`. (V celém zbytku koše nese jméno provozovatele osm kandidátů,
+všichni mimo tuhle skupinu.)
+
+### Vedlejší nálezy
+
+- **Osada Labská je celá v koši.** Šest kandidátů má `addr:place=Labská`
+  (část Špindlerova Mlýna) a evidenční číslo: `sporthotel-svycarska-bouda`
+  (č. 1), `turisticka-chata-lajdacek` (4), `chata-jasanka` (7),
+  `krausovy-boudy` (13), `chata` (22) a `chata-solunka` (61). Žádný z nich
+  nemá web ani telefon, u všech je adresa jediný identifikátor — a tři z nich
+  nesou ve jméně „bouda" nebo „turistická chata". Je to první případ, kdy by
+  se fronta dala postavit **podle osady**, ne podle kandidáta: jeden katalog
+  obce nebo jeden pramen o osadě může rozhodnout šest souborů naráz.
+- **`baronova-bouda` a `chata-baronka` nesou týž web** `ski-baron.cz`. Dva
+  kandidáti, jeden pramen — ke čtení jde jedna stránka, ne dvě. Vzorec „jeden
+  provozovatel, několik objektů" (Baraba × Popelka, Every Sky, čtyři
+  schroniska jednoho správce) tím dostává čtvrtý výskyt a poprvé je čitelný
+  z tagů dřív, než se otevře prohlížeč.
+- **`lodge-1`, `lodge-2`, `lodge-3`** jsou tři kandidáti s číslovaným obecným
+  jménem, `tourism=chalet`, bez jediného tagu navíc. Pátý výskyt téhož vzorce,
+  tentokrát tušitelný přímo ze jména.
+- **Kandidát jménem `chata`** (Labská 22, `tourism=hotel`) je nejobecnější
+  jméno v celém koši — jméno, které neunese vůbec nic, takže adresa je jediné,
+  čím u něj čtení může začít.
+
+### KOŠ C3 — stav k 27. 9. 2026
+
+Přečteno **37** ze 120, nepřečteno **83**; rozpad přečtených je v živé tabulce
+verdiktů. Nepřečtení jsou od dneška srovnaní do fronty podle toho, čím u nich
+čtení začne: **46** má v OSM web, **1** kontakt bez webu, **12** adresu bez
+kontaktu, **24** jen jméno. Fronta signálů z 22. 9. (gastro stopa, lexikon)
+zůstává vyčerpaná — nad 83 nepřečtenými neoznačí gastro stopa ani jednoho.

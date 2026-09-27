@@ -58,8 +58,18 @@ import { join } from 'node:path'
 
 import { kose, nactiExporty } from './triaz-kos-c'
 
-/** Verdikt, se kterým kandidát vyšel ze čtení pramenů (14.–21. 9. 2026). */
-export type Verdikt = 'povysit' | 'drzet' | 'vyradit' | 'skrtnuto'
+/**
+ * Verdikt, se kterým kandidát vyšel ze čtení pramenů (fronty od 14. 9. 2026).
+ *
+ * Rozšířeno 27. 9. 2026 o čtyři kategorie, které vznikly až při čtení třetí
+ * a čtvrté fronty a do živé tabulky se dopsaly týž den: `klic-splnen`
+ * (občerstvení doloženo, visí na klíči střediska), `sporne`, `hranicni`
+ * (čeká na Michalovu výjimku) a `necteno` — kandidát, u kterého se
+ * NENAČETL ŽÁDNÝ PRAMEN. Ta poslední kategorie je podstatná: neříká nic
+ * o objektu, říká, že čtení nemělo kde začít.
+ */
+export type Verdikt =
+  'povysit' | 'klic-splnen' | 'sporne' | 'drzet' | 'vyradit' | 'skrtnuto' | 'hranicni' | 'necteno'
 
 /**
  * Přečtené verdikty se NEOPISUJÍ do skriptu — čtou se ze souhrnné tabulky
@@ -83,8 +93,12 @@ export const prectene = (
     const popis = bunky[1] ?? ''
     let verdikt: Verdikt | null = null
     if (popis.includes('povýšení')) verdikt = 'povysit'
+    else if (popis.includes('klíč splněn')) verdikt = 'klic-splnen'
+    else if (popis.startsWith('sporné')) verdikt = 'sporne'
     else if (popis.startsWith('držet')) verdikt = 'drzet'
     else if (popis.includes('škrtnuto')) verdikt = 'skrtnuto'
+    else if (popis.includes('BEZ VERDIKTU')) verdikt = 'necteno'
+    else if (popis.startsWith('hraniční')) verdikt = 'hranicni'
     else if (popis.includes('VYŘADIT')) verdikt = 'vyradit'
     if (!verdikt) continue
     for (const m of (bunky[3] ?? '').matchAll(/`([a-z0-9-]+)`/gu)) out.set(m[1], verdikt)
@@ -107,7 +121,7 @@ const GASTRO_STOPY = [
 ]
 
 /** Slova ve jméně, která popisují pronájem ubytování, ne boudu na trase. */
-const LEXIKON_UBYTOVANI = [
+export const LEXIKON_UBYTOVANI = [
   'apartm',
   'apartament',
   'apartment',
@@ -129,7 +143,16 @@ const LEXIKON_UBYTOVANI = [
 ]
 
 /** Slova, kterými se hlásí bouda / schronisko / útulna — protipól lexikonu výš. */
-const LEXIKON_BOUDA = ['bouda', 'baude', 'schronisko', 'hütte', 'hutte', 'útuln', 'utuln', 'bacow']
+export const LEXIKON_BOUDA = [
+  'bouda',
+  'baude',
+  'schronisko',
+  'hütte',
+  'hutte',
+  'útuln',
+  'utuln',
+  'bacow',
+]
 
 export type Signaly = {
   slug: string
