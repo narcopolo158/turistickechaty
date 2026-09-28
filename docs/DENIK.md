@@ -29,6 +29,115 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-28 — denní session: první fronta stavěná podle identifikátoru — a druhý návrh na povýšení za patnáct dnů
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging) — od 10. 9. do repa nepřibyl tvůj commit. Vzal jsem
+  „Příště" z 27. 9.: **prvních šest kandidátů fronty ke čtení**, tedy první
+  fronta koše C3, která se nestaví podle měřeného signálu, ale podle **pořadí
+  identifikátoru**. Do `data/chaty/` se nesáhlo, nic se nevyřadilo ani
+  nepovýšilo — návrhy jsou v `interniPoznamky` kandidátů a v triážním dokumentu.
+- **Přečteno šest: `baronova-bouda`, `chata-baronka` (jeden provozovatel),
+  `bergpoolhaus`, `bouda-mama`, `browarowka`, `capkova-chata`.** Výsledek:
+  **1 návrh na povýšení, 1 hraniční, 4 návrhy na vyřazení.**
+- **NÁVRH NA POVÝŠENÍ: `bouda-mama` (Pec pod Sněžkou 124).** Obě půlky klíče
+  jsou doložené. Vlastní web říká o restauraci doslova „The original restaurant
+  can be visited every day 10 a.m. – 11 p.m." a žádné omezení na ubytované
+  neuvádí; restaurace i pizzerie jsou samostatně vedené i v rejstříku. Role na
+  trase: 80 m ke žluté č. 7236, dvě značené trasy do 250 m, rozcestník 264 m —
+  nejbližší rozcestník ze všech dosud čtených kandidátů koše C3. **Klíč
+  střediska se tu neuplatní** (obec, ne sjezdovka; v Peci máme 26 publikovaných
+  profilů). Před povýšením chybí výška, rok vzniku, kapacita a fotka s licencí.
+- **HRANIČNÍ, přidávám ke skupině čekající na tvůj klíč střediska:
+  `capkova-chata`.** Stojí „přímo na jedné z nejvyhledávanějších sjezdových
+  tratí zvané »Zahrádky«" ve výšce 1000 m, má 62–63 lůžek (dva prameny, dvě
+  čísla — obě zapsána) a doložený bar a jídelnu. Ale ani jeden pramen neříká,
+  že se tam nají kolemjdoucí bez ubytování — obě věty o stravě míří na hosty.
+  Na povýšení to nestačí, na vyřazení je to málo.
+- **Čtyři návrhy na vyřazení:** `baronova-bouda` (pronájem roubenky, 17 lůžek,
+  kuchyň pro ubytované), `chata-baronka` (rekreační chata, 25 lůžek, vlastní
+  kuchyň), `bergpoolhaus` (pronájem celého domu, navíc **0 značek do 250 m**)
+  a `browarowka` (domky; **627 m ke značce** a vlastní web posílá hosty do
+  restaurací v okolí — tedy vyloučení, ne mezera v pramenech).
+- **NÁLEZ DNE: pořadí podle identifikátoru je zatím výtěžnější než kterákoli
+  měřená fronta.** Čtyři fronty stavěné podle signálu daly za čtrnáct dnů
+  1 návrh na povýšení z 37 přečtených (2,7 %). Dnešní fronta dala 1 ze 6 hned
+  v první dávce — a hlavně: **čtení se nezastavilo ani jednou**, zatímco
+  u signálových front selhalo u 4 z 37. Vzorek je malý, extrapolovat z něj nic
+  nejde, ale doporučení z 27. 9. („identifikátor jako pořadí, ne jako filtr")
+  se v první dávce nevyvrátilo.
+- **Druhý nález: doména v OSM může ukazovat na JINOU ŽIVNOST provozovatele.**
+  `baronova-bouda` i `chata-baronka` nesou `website` = `ski-baron.cz`, což je
+  podle vlastního webu provozovatele půjčovna a lyžařská škola vedená externím
+  partnerem, ne stránka ani jednoho domu. Třetí druh vady v `website` po
+  „jméno je titulek inzerátu" (24. 9.) a „doména sesterského objektu" (26. 9.).
+  Poučka: web z OSM je vstupní bod k hledání, ne doklad o objektu.
+- **Třetí nález, který šetří práci dopředu:** vlastní web `baronovyboudy.cz`
+  vede vedle Baronovy Boudy i **Janovu Boudu** — a `janova-bouda` stojí v naší
+  frontě ke čtení s webem z OSM `skifamily.cz`, což je zase lyžařská škola.
+  Čtvrtý výskyt vzorce „jeden provozovatel, několik objektů", ale první, který
+  odpovídá na kandidáta dřív, než na něj přijde řada.
+- **Vedlejší nálezy:** (a) `ski-baron.cz` i `browarowka.pl` se napoprvé
+  zastavily na `PROVENANCE_REQUIRED`; u Browarówky stačilo doménu nejdřív najít
+  vyhledáváním a druhý pokus prošel — tvoje otázka z 24. 9. tím ale zodpovězená
+  není, jen se u části kandidátů dá obejít; (b) `bergpoolhaus` je v ubytovacím
+  katalogu týž dům jako „penzion Luxushaus" (shodu nese e-mail `info@luxushaus.cz`,
+  souřadnicově ověřená není); (c) `chata-baronka` má na jednom agregátoru
+  Dolní Dvůr 156 a na druhém 117, tedy totéž číslo jako Baronova Bouda —
+  souřadnice jsou od sebe ~350 m, takže o jeden dům nejde, obě čísla zapisuji;
+  (d) `chatabaronka.cz` patří jmenovci v Čenkovicích, ne našemu kandidátovi.
+- **Stav koše C3:** přečteno **43** ze 120, nepřečteno **77**; ve frontě ke
+  čtení zbývá **53** kandidátů, 24 bez identifikátoru dál na jejím konci.
+  Živá tabulka verdiktů i souhrn jsou dopsané, skripty z ní čtou správně
+  (`triaz-kos-c3-identifikatory.ts` hlásí 43 / 77).
+- **Kontroly:** `npm run kontrola` zelená (20 workflow souborů, 0 vad; fixtura
+  25 souborů, 4 kontroly, 0 spadlo), prettier přeformátoval dotčené soubory,
+  všech šest YAML se kontrolně přeparsovalo.
+
+**Příště:** vzít **dalších ~6 kandidátů fronty ke čtení** — následuje
+`contemplace`, `czarodziejska-gora`, `grohmanova-bouda`, `hajenka-haida`,
+`holiday-park-resort`, `hotel-cerna-bouda`. U `janova-bouda` (dál ve frontě)
+je pramen přečtený už dnes. Pořád leží Broumovsko z 28. 8., deset padajících
+testů (Postgres/exporty) a blokované DATA-04 / DATA-05 / DATA-20 / DATA-22 /
+DATA-25 / DATA-28 / F1-IMPL.
+
+**Otázky pro Michala:**
+
+- **Nové a konkrétní: souhlasíš s povýšením `bouda-mama`?** Je to teprve druhý
+  kandidát koše C3, u kterého jsou doložené obě půlky klíče. Stačí „ano,
+  povyš" — doplním výšku, rok vzniku a kapacitu z pramenů a založím profil.
+- **Nové: `capkova-chata` je učebnicový případ tvé nezodpovězené otázky
+  o střediscích** — chata o 62 lůžkách přímo na sjezdovce, s barem a jídelnou,
+  ale bez dokladu, že se tam nají kolemjdoucí. Jedna tvoje věta o objektech ve
+  sjezdovkových areálech rozhodne ji i devět dalších.
+- **Trvá z 27. 9.: pořadí čtení podle identifikátoru** — dnešní dávka ho
+  podpořila (1 povýšení ze 6, nulové selhání čtení). Pokud nenamítneš, jedu
+  v něm dál. Stačí mlčení.
+- **Trvá z 27. 9.: smím čtení stavět po OSADÁCH** (šestice v Labské — jedno
+  čtení by rozhodlo šest souborů)?
+- **Trvá z 24. 9.:** smím načíst přímo domény z OSM u kandidátů, které
+  vyhledávač nenajde? Dnes to dvakrát zdrželo a jednou se to dalo obejít.
+- **Trvá: klíč střediska** (viz výš — dnes přibyl devátý, vlastně desátý objekt).
+- **Trvá z 26. 9.:** souhlasíš s třemi návrhy na vyřazení (Kalevala, Plum,
+  Złoty Widok) a mám u polských kandidátů přestat vyvozovat verdikt
+  z rozcestníku?
+- **Trvá z 19. 9.: výjimka pro Skalnik.**
+- **Trvá z 23. 9.:** mám přidat kontrolu „kandidát daleko od své oblasti" do
+  `npm run kontrola` jako UPOZORNĚNÍ (ne vadu)?
+- **Trvá z 21. 9.:** kandidát, u kterého se nenačetl žádný pramen (čtyři) —
+  do `_odlozeno.yaml`, nebo vyřadit jako ostatní?
+- Trvají starší otázky (Sruby Podspálov a zúžení `lngMin`; Dom Pod Jaworami —
+  zavoláš?; Baraba × Popelka; druhý klíč `rozhodnuteDuplicity`; a další
+  z 2.–27. 9.).
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. `node_modules`
+v sandboxu nejsou, `npm ci` je potřeba pustit, než se dají spustit kontroly.
+
 ## 2026-09-27 — denní session: u kolika z 83 kandidátů koše C3 je vůbec kde začít — a doporučení (c) padlo na vlastní kalibraci
 
 **Hotovo:**

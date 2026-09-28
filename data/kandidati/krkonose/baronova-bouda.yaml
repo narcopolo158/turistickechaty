@@ -28,3 +28,29 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO 28. 9. 2026 (koš C3, pátá fronta — pořadí podle identifikátoru) —
+  NÁVRH: VYŘADIT. Nevyřazuji sám, rozhodne redakce. Veřejné občerstvení
+  doložené není.
+
+  Co objekt je: pronájem horské roubenky, Dolní Dvůr 117, 543 42, kapacita 17
+  lůžek (2× dvou-, 1× tří-, 1× čtyř-, 1× šestilůžkový pokoj) —
+  https://www.ceskehory.cz/ubytovani/baronova-bouda-dolni-dvur.html, čteno 28.
+  9. 2026. Vybavení dle téhož pramene: „Společenská místnost s TV, jídelna,
+  kompletně vybavená kuchyň, WIFI. Oplocená zahrada s posezením a ohništěm
+  (možnost zapůjčení grilu), parkování." Jídelna a kuchyň jsou vybavení pro
+  ubytované, ne provoz pro veřejnost.
+
+  Vlastní web provozovatele (https://baronovyboudy.cz/, čteno 28. 9. 2026)
+  nabízí ubytování, saunu, vířivku a masáž; o restauraci ani občerstvení pro
+  veřejnost nepíše nic.
+
+  ROLE NA TRASE (`scripts/triaz-role-na-trase.ts`, 28. 9. 2026): 104 m k žluté
+  [Ž] Nad Dolním Dvorem – Klínovka, 1 značená trasa do 250 m, nejbližší
+  rozcestník 474 m. Blízkost značky podle poučky skriptu roli nedokládá.
+
+  POZOR NA WEB Z OSM: tag `website` nese `ski-baron.cz`, což je podle
+  vlastního webu provozovatele PŮJČOVNA A LYŽAŘSKÁ ŠKOLA provozovaná externím
+  partnerem, ne stránka objektu. Vlastní doména objektu je `baronovyboudy.cz`.
+  Přímé načtení `ski-baron.cz` se ze sandboxu nepodařilo (PROVENANCE_REQUIRED)
+  a po nálezu vlastní domény už nebylo potřeba.

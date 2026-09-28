@@ -28,3 +28,30 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=hotel (alpine_hut = obsluhovaná, wilderness_hut
   = útulna).
+
+  ČTENO 28. 9. 2026 (koš C3, pátá fronta — pořadí podle identifikátoru) —
+  NÁVRH: POVÝŠIT do `data/chaty/krkonose/`. Nepovyšuji sám, rozhodne redakce.
+  Obě půlky klíče zařazení jsou doložené.
+
+  VEŘEJNÉ OBČERSTVENÍ — doloženo vlastním webem
+  (https://www.boudamama.cz/en/restaurant/, čteno 28. 9. 2026): „The original
+  restaurant can be visited every day 10 a.m. – 11 p.m." Žádné omezení na
+  ubytované web neuvádí; součástí provozu je i pizzerie. Adresa dle téhož
+  pramene: Pec pod Sněžkou 124, 542 21, okr. Trutnov. Kontakt z webu: +420 603
+  710 766, +420 499 896 273, hotel@boudamama.cz (v OSM zatím nebyl).
+  Restaurace i pizzerie jsou samostatně vedené i v podnikovém rejstříku
+  (firmy.cz, záznamy „Restaurace Bouda Máma" a „Pizzerie Bouda Máma", nalezeno
+  28. 9. 2026).
+
+  ROLE NA TRASE (`scripts/triaz-role-na-trase.ts`, 28. 9. 2026): 80 m k žluté
+  č. 7236 [Ž] U Růžového dolu – Pod Větrníkem, **2 značené trasy do 250 m**
+  (žlutá 80 m, modrá 108 m), nejbližší rozcestník 264 m. Ze všech dosud
+  čtených kandidátů koše C3 je to nejbližší rozcestník.
+
+  KLÍČ STŘEDISKA SE TU NEUPLATNÍ: objekt leží v obci Pec pod Sněžkou, kde už
+  máme 26 publikovaných profilů, ne ve sjezdovkovém areálu. Otevřená otázka na
+  Michala o objektech ve střediscích se tohoto kandidáta netýká.
+
+  CO JE TŘEBA DOPLNIT PŘED POVÝŠENÍM: nadmořská výška, rok vzniku a kapacita z
+  pramene (žádný z přečtených je neuvádí), fotka s licencí. Do `data/chaty/`
+  se dnes nesáhlo.

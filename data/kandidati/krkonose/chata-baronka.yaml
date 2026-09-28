@@ -28,3 +28,34 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO 28. 9. 2026 (koš C3, pátá fronta — pořadí podle identifikátoru) —
+  NÁVRH: VYŘADIT. Nevyřazuji sám, rozhodne redakce. Veřejné občerstvení
+  doložené není.
+
+  Co objekt je: zděná rekreační chata k pronájmu, kapacita 25 lůžek ve dvou-,
+  tří-, čtyř- a šestilůžkových pokojích; „K dispozici je společenská místnost
+  s televizí, jídelna, kompletně vybavená kuchyň a oplocená zahrada s
+  posezením, ohništěm a možností zapůjčení grilu." Zařazena v kategoriích
+  „Rekreační chaty a chalupy" a „Horské ubytování" —
+  https://www.firmy.cz/detail/651436-chata-baronka-dolni-dvur.html, čteno 28.
+  9. 2026. Druhý pramen říká totéž stručněji: „Ubytování na chatě uprostřed
+  obce Dolní Dvůr. Objekt vhodný hlavně pro sportovně založenou klientelu."
+  (https://www.hkregion.cz/dr-cs/102955-chata-baronka.html, čteno 28. 9.
+  2026).
+
+  ROZPOR V ADRESE, KTERÝ NEROZHODUJI: firmy.cz uvádí Dolní Dvůr 156, kdežto
+  https://www.ubytovani-trutnov.cz/chata-baronka/ (čteno 28. 9. 2026, záznam
+  už není v nabídce serveru) uvádí Dolní Dvůr 117 — tedy totéž číslo popisné
+  jako u sousední Baronovy Boudy. Čísla neslučuji ani nevybírám; zapisuji obě.
+  Souřadnice OSM obou kandidátů jsou od sebe zhruba 350 m, takže o jeden a týž
+  dům nejde — pravděpodobnější je záměna v agregátoru, doložená není.
+
+  ROLE NA TRASE (`scripts/triaz-role-na-trase.ts`, 28. 9. 2026): 166 m k modré
+  č. 1810 [M] Hrnčířské boudy – Vrchlabí (kostel), 2 značené trasy do 250 m
+  (modrá 166 m, žlutá 238 m), nejbližší rozcestník 291 m.
+
+  POZOR NA WEB Z OSM: tag `website` nese `ski-baron.cz` — stejnou doménu jako
+  `baronova-bouda`, a je to podle vlastního webu půjčovna a lyžařská škola, ne
+  stránka objektu. Pozor i na jmenovce: `chatabaronka.cz` patří CHATĚ BARONKA
+  V ČENKOVICÍCH (Pardubický kraj), s tímto objektem nesouvisí.

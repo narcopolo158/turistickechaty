@@ -29,3 +29,39 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO 28. 9. 2026 (koš C3, pátá fronta — pořadí podle identifikátoru) — BEZE
+  ZMĚNY, HRANIČNÍ. Držím bez verdiktu a připojuji ke skupině, která čeká na
+  Michalovu odpověď o klíči střediska. Objekt stojí PŘÍMO NA SJEZDOVCE.
+
+  Co prameny říkají a v čem se liší: https://www.region-
+  krkonose.cz/ubytovani/pec-pod-snezkou/horske-chaty-apartmany/capkova-chata/
+  (čteno 28. 9. 2026) uvádí ve vybavení „restaurace s barem a televizí" a
+  dodává, že „Čapkova chata poskytuje svým hostům stravu formou polopenzie ve
+  stylové jídelně s výhledem přímo na Sněžku"; kapacita 63 lůžek, 3 km od
+  centra. https://www.ceskehory.cz/ubytovani/capkova-chata-pec-pod-
+  snezkou.html (čteno 28. 9. 2026) uvádí kapacitu 62 lůžek, adresu Zahrádky
+  42, Pec pod Sněžkou 542 21, provozovatele Colosseum s r. o., stravu „formou
+  snídaně, večeře dle dohody", polopenzi a ve vybavení jen „Jídelna s TV, bar"
+  — restauraci nejmenuje. Obě čísla kapacity zapisuji, jak stojí v pramenech,
+  a nesjednocuji je.
+
+  Proč to nestačí na verdikt ani jedním směrem: ani jeden pramen neříká, že se
+  v restauraci nají kolemjdoucí turista bez ubytování — obě věty o stravě míří
+  na ubytované („svým hostům", „dle dohody"). Podle poučky ze 17. 9. 2026
+  („zápis v gastro katalogu sám hospodu nedokládá") to na doložení veřejného
+  občerstvení nestačí. Zároveň je to objekt o 62–63 lůžkách ve výšce 1000 m s
+  doloženým barem a jídelnou — na vyřazení je to málo.
+
+  ROLE NA TRASE (`scripts/triaz-role-na-trase.ts`, 28. 9. 2026): 150 m ke
+  žluté [Ž] Lesní bouda – Pec pod Sněžkou, 2 značené trasy do 250 m (žlutá 150
+  m, zelená 203 m), nejbližší rozcestník 852 m.
+
+  PROČ PATŘÍ KE KLÍČI STŘEDISKA: „Čapkova chata leží ve výšce 1000 m nad mořem
+  přímo na jedné z nejvyhledávanějších sjezdových tratí zvané »Zahrádky«"
+  (ceskehory.cz, čteno 28. 9. 2026). Je to tedy přesně ten typ objektu, na
+  který se od 19. 9. 2026 čeká Michalova věta o objektech ve sjezdovkových
+  střediscích.
+
+  POZOR NA WEB Z OSM: tag `website` nese `chaty-krkonose.cz`, což je ubytovací
+  portál, ne vlastní stránka objektu; vlastní doménu jsem nenašel.
