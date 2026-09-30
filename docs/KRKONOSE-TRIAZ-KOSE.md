@@ -135,13 +135,13 @@ koš B se musí číst po jednom s prameny, stejně jako koš A.
 zapsané přímo do `interniPoznamky`; do `data/chaty/` se nesáhlo):
 
 | kandidát               | občerstvení pro veřejnost                                   | role na trase                                             | návrh redakci    |
-| ---------------------- | ----------------------------------------------------------- | ---------------------------------------------------------- | ---------------- |
-| `chata-boruvka`        | **doloženo** (11–17, foodtruck, terasa)                      | **doložena** (Kubátova cesta na Sněžku, 860 m)              | **POVÝŠIT**      |
-| `karczma-hutnika`      | doloženo (a míří na kolemjdoucí)                             | doložena („przy głównym szlaku na wodospad Szklarki")       | K RUČNÍ KONTROLE |
-| `johannova-bouda`      | doloženo (samoobslužný bufet)                                | ne — okraj Vrchlabí, ve skiareálu, 550 m                    | SPORNÉ S KLÍČEM  |
-| `chata-ducha-gor`      | doloženo (restaurace 12–22)                                  | ne — pěší zóna 1 Maja, „w samym sercu Szklarskiej Poręby"   | NEZAŘAZOVAT      |
-| `bouda-mila`           | **nedoloženo** (jen pro ubytované)                           | nedoložena; firma „v likvidaci"                             | NEZAŘAZOVAT      |
-| `horska-chata-poutnik` | **nedoloženo** (pramen posílá do sousední Lysečinské boudy)  | poloha ano, trasa nedoložena; **provoz ukončen**            | NEZAŘAZOVAT      |
+| ---------------------- | ----------------------------------------------------------- | --------------------------------------------------------- | ---------------- |
+| `chata-boruvka`        | **doloženo** (11–17, foodtruck, terasa)                     | **doložena** (Kubátova cesta na Sněžku, 860 m)            | **POVÝŠIT**      |
+| `karczma-hutnika`      | doloženo (a míří na kolemjdoucí)                            | doložena („przy głównym szlaku na wodospad Szklarki")     | K RUČNÍ KONTROLE |
+| `johannova-bouda`      | doloženo (samoobslužný bufet)                               | ne — okraj Vrchlabí, ve skiareálu, 550 m                  | SPORNÉ S KLÍČEM  |
+| `chata-ducha-gor`      | doloženo (restaurace 12–22)                                 | ne — pěší zóna 1 Maja, „w samym sercu Szklarskiej Poręby" | NEZAŘAZOVAT      |
+| `bouda-mila`           | **nedoloženo** (jen pro ubytované)                          | nedoložena; firma „v likvidaci"                           | NEZAŘAZOVAT      |
+| `horska-chata-poutnik` | **nedoloženo** (pramen posílá do sousední Lysečinské boudy) | poloha ano, trasa nedoložena; **provoz ukončen**          | NEZAŘAZOVAT      |
 
 **Tři rozpory s OSM ze šesti čtených, všechny stejného druhu — tag tvrdí
 občerstvení, prameny ne.** `chata-ducha-gor` nese `amenity=fast_food;
@@ -165,13 +165,13 @@ web — doklad je u nich nejlevnější. Přečteno pět, metoda beze změny (We
 pak otevřené stránky; vše `verified: false`, citace s URL zapsané přímo do
 `interniPoznamky` kandidáta; do `data/chaty/` se nesáhlo).
 
-| kandidát                | občerstvení pro veřejnost                                     | role na trase                                                | návrh redakci               |
-| ----------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | --------------------------- |
-| `bouda-mala-upa`        | **doloženo pro NEUBYTOVANÉ** (léto 11–17, zima 12–15)          | doložena (vlastní web: „přímo na trase k Sněžce", 1040 m)      | **POVÝŠIT**                 |
-| `chata-stopa`           | **doloženo** (bufet Út–Ne 9–18, „zastávka všech výletníků")    | doložena (vlastní web)                                         | POVÝŠIT AŽ PO IDENTITĚ      |
-| `chata-misecky`         | doloženo (Firmy.cz aktivní, 11–22; „hosté restaurace")         | ne — středisko Horní Mísečky, sjezdovky                        | SPORNÉ (klíč střediska)     |
-| `chata-hradecanka`      | doloženo (Firmy.cz samostatný záznam „restaurace")             | ne — „hned u stejnojmenného svahu", obec ji vede mezi restauracemi | SPORNÉ S KLÍČEM         |
-| `horska-chata-dimrovka` | **nedoloženo** (restaurace v penzionu, přístup zvenčí nikde)   | ne — „přímo u sjezdové tratě Klondike", cyklostezky            | NEZAŘAZOVAT                 |
+| kandidát                | občerstvení pro veřejnost                                    | role na trase                                                      | návrh redakci           |
+| ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------ | ----------------------- |
+| `bouda-mala-upa`        | **doloženo pro NEUBYTOVANÉ** (léto 11–17, zima 12–15)        | doložena (vlastní web: „přímo na trase k Sněžce", 1040 m)          | **POVÝŠIT**             |
+| `chata-stopa`           | **doloženo** (bufet Út–Ne 9–18, „zastávka všech výletníků")  | doložena (vlastní web)                                             | POVÝŠIT AŽ PO IDENTITĚ  |
+| `chata-misecky`         | doloženo (Firmy.cz aktivní, 11–22; „hosté restaurace")       | ne — středisko Horní Mísečky, sjezdovky                            | SPORNÉ (klíč střediska) |
+| `chata-hradecanka`      | doloženo (Firmy.cz samostatný záznam „restaurace")           | ne — „hned u stejnojmenného svahu", obec ji vede mezi restauracemi | SPORNÉ S KLÍČEM         |
+| `horska-chata-dimrovka` | **nedoloženo** (restaurace v penzionu, přístup zvenčí nikde) | ne — „přímo u sjezdové tratě Klondike", cyklostezky                | NEZAŘAZOVAT             |
 
 **Nález dne, a je to riziko duplicity, ne drobnost.** Doména `stopamisecky.com`
 kandidáta `chata-stopa` nese v titulku stránky **„Rerstaurace | Chata Mísečky |
@@ -208,14 +208,14 @@ web. Přečteno sedm, metoda beze změny (WebSearch, pak otevřené stránky; v�
 čas.
 
 | kandidát                   | občerstvení pro veřejnost                                       | role na trase                                                     | návrh redakci                   |
-| -------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------- |
-| `schronisko-wysoki-kamien` | **doloženo** (PTTK: „funguje jako skromný bufet")                | **doloženo** — Główny Szlak Sudecki, 1056 m                         | **POVÝŠIT**                     |
-| `jestrebi-bouda`           | **doloženo** (bufet Po–Pá 11–16, So 10–22, Ne 10–15; KČT Úpice)  | **doloženo** — hřeben Jestřebích hor, 700 m                         | **JINÁ OBLAST** (viz níž)       |
-| `velke-pardubicke-boudy`   | doloženo (výletní portál: „další možnost občerstvení")           | doloženo — po zelené k rozcestí Nad Modrými kameny                  | k ruční kontrole, sklon POVÝŠIT |
-| `bouda-pod-snezkou`        | **nedoloženo** (OSM tvrdí restauraci, web mluví o ubytovaných)   | **doloženo nejlíp ze všech** — samota na konci Obřího dolu, modrá   | k ruční kontrole                |
-| `sokoli-boudy`             | doloženo (obecní web vede mezi restauracemi obce, Po–Ne 11–23)   | nedoloženo — Dolní Malá Úpa                                         | k ruční kontrole                |
-| `pension-jilemnicka-bouda` | doloženo (Firmy.cz aktivní samostatný záznam, 70 míst)           | ne — středisko Horní Mísečky                                        | SPORNÉ (klíč střediska)         |
-| `restaurace-havlova-bouda` | doloženo (Firmy.cz aktivní: „restauraci v horské chatě")         | ne — Pec pod Sněžkou 8, středisko                                   | SPORNÉ (klíč střediska)         |
+| -------------------------- | --------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------- |
+| `schronisko-wysoki-kamien` | **doloženo** (PTTK: „funguje jako skromný bufet")               | **doloženo** — Główny Szlak Sudecki, 1056 m                       | **POVÝŠIT**                     |
+| `jestrebi-bouda`           | **doloženo** (bufet Po–Pá 11–16, So 10–22, Ne 10–15; KČT Úpice) | **doloženo** — hřeben Jestřebích hor, 700 m                       | **JINÁ OBLAST** (viz níž)       |
+| `velke-pardubicke-boudy`   | doloženo (výletní portál: „další možnost občerstvení")          | doloženo — po zelené k rozcestí Nad Modrými kameny                | k ruční kontrole, sklon POVÝŠIT |
+| `bouda-pod-snezkou`        | **nedoloženo** (OSM tvrdí restauraci, web mluví o ubytovaných)  | **doloženo nejlíp ze všech** — samota na konci Obřího dolu, modrá | k ruční kontrole                |
+| `sokoli-boudy`             | doloženo (obecní web vede mezi restauracemi obce, Po–Ne 11–23)  | nedoloženo — Dolní Malá Úpa                                       | k ruční kontrole                |
+| `pension-jilemnicka-bouda` | doloženo (Firmy.cz aktivní samostatný záznam, 70 míst)          | ne — středisko Horní Mísečky                                      | SPORNÉ (klíč střediska)         |
+| `restaurace-havlova-bouda` | doloženo (Firmy.cz aktivní: „restauraci v horské chatě")        | ne — Pec pod Sněžkou 8, středisko                                 | SPORNÉ (klíč střediska)         |
 
 **Nález dne: `jestrebi-bouda` splňuje klíč, ale není z Krkonoš.** Souřadnice
 50,5612 / 16,0361 leží v jihovýchodním rohu krkonošského okna (`bbox` je
@@ -274,16 +274,16 @@ pak otevřené stránky; vše `verified: false`, citace s URL zapsané přímo d
 `interniPoznamky` kandidáta; do `data/chaty/` se nesáhlo).
 
 | kandidát                   | občerstvení pro veřejnost                                            | role na trase                                                   | návrh redakci                     |
-| -------------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------- | --------------------------------- |
-| `dvorakova-bouda`          | **doloženo doslova** („restaurace, přístupné všem příchozím hostům")  | doloženo — 1 235 m, Sedmidolí pod Petrovou boudou                 | **POVÝŠIT**                       |
-| `mumlavska-bouda`          | **doloženo** (restaurace, zavírá k 17:00 = shoda s OSM tagem)         | **doloženo** — u Mumlavského vodopádu                             | **POVÝŠIT**                       |
-| `hoffmanovy-boudy`         | slabě (uživatelský pramen: „restaurace s pensionem")                  | **doloženo** — rozcestník pěších, běžeckých i cyklotras, 794 m    | k ruční kontrole, sklon POVÝŠIT   |
-| `hladik-ziza-janska-bouda` | **doloženo výborně** (Firmy.cz aktivní, dvě kategorie, Čt–Ne)         | nedoloženo — Janské Lázně, středisko                              | k ruční kontrole (klíč střediska) |
-| `chata-tyrolska`           | doloženo (městský portál: „mała gastronomia")                         | sporná — u dolní stanice lanovky na Szrenicu                      | SPORNÉ, sklon NE (je to stánek)   |
-| `chata-karkonoska`         | doloženo (celoroční restaurace, 200 míst, svatby)                     | ne — Wolna 4, zástavba Karpacze, zázemí tříhvězdičkového hotelu   | NEPOVYŠOVAT (klíč střediska)      |
-| `bar-zielona-chatka`       | nedoloženo                                                            | nedoloženo                                                        | NEROZHODNUTO — nic nenalezeno     |
-| `chata-skrzata`            | nedoloženo                                                            | nedoloženo                                                        | NEROZHODNUTO — nic nenalezeno     |
-| `chata-u-sportu`           | nedoloženo                                                            | nedoloženo                                                        | NEROZHODNUTO — nic nenalezeno     |
+| -------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------- |
+| `dvorakova-bouda`          | **doloženo doslova** („restaurace, přístupné všem příchozím hostům") | doloženo — 1 235 m, Sedmidolí pod Petrovou boudou               | **POVÝŠIT**                       |
+| `mumlavska-bouda`          | **doloženo** (restaurace, zavírá k 17:00 = shoda s OSM tagem)        | **doloženo** — u Mumlavského vodopádu                           | **POVÝŠIT**                       |
+| `hoffmanovy-boudy`         | slabě (uživatelský pramen: „restaurace s pensionem")                 | **doloženo** — rozcestník pěších, běžeckých i cyklotras, 794 m  | k ruční kontrole, sklon POVÝŠIT   |
+| `hladik-ziza-janska-bouda` | **doloženo výborně** (Firmy.cz aktivní, dvě kategorie, Čt–Ne)        | nedoloženo — Janské Lázně, středisko                            | k ruční kontrole (klíč střediska) |
+| `chata-tyrolska`           | doloženo (městský portál: „mała gastronomia")                        | sporná — u dolní stanice lanovky na Szrenicu                    | SPORNÉ, sklon NE (je to stánek)   |
+| `chata-karkonoska`         | doloženo (celoroční restaurace, 200 míst, svatby)                    | ne — Wolna 4, zástavba Karpacze, zázemí tříhvězdičkového hotelu | NEPOVYŠOVAT (klíč střediska)      |
+| `bar-zielona-chatka`       | nedoloženo                                                           | nedoloženo                                                      | NEROZHODNUTO — nic nenalezeno     |
+| `chata-skrzata`            | nedoloženo                                                           | nedoloženo                                                      | NEROZHODNUTO — nic nenalezeno     |
+| `chata-u-sportu`           | nedoloženo                                                           | nedoloženo                                                      | NEROZHODNUTO — nic nenalezeno     |
 
 **Nález dne: poprvé máme přístup veřejnosti doložený doslovnou větou, ne
 odvozením.** Kudy z nudy píše u Dvořákovy boudy „V restauraci, **přístupné všem
@@ -334,19 +334,19 @@ Páté a poslední čtení koše B. Zbývalo 11 kandidátů, u kterých **OSM ne
 ani adresu** — tedy skupina, kde je doklad nejdražší. Vše `verified: false`,
 citace s URL zapsané do `interniPoznamky`. Do `data/chaty/` se nesáhlo.
 
-| kandidát                  | občerstvení pro veřejnost                                 | role na trase                                     | návrh redakci    |
-| ------------------------- | ---------------------------------------------------------- | -------------------------------------------------- | ---------------- |
-| `zizkova-bouda`           | **doloženo** (aktivní záznam Firmy.cz, denně 10:00–2:00)    | **doložena** („leží při hlavní turistické trase")   | **POVÝŠIT**      |
-| `hotel-bouda-jana`        | spíš ano („restaurace s celodenním provozem")               | ne — Velká Úpa, středisko, 920 m                    | K RUČNÍ KONTROLE |
-| `sudecka-chata-u-prezesa` | **doloženo** (Tripadvisor: „Bar, restaurace")               | ne — ulice v Szklarské Porębě Średnie               | K RUČNÍ KONTROLE |
-| `prezesowa-chata`         | **doloženo** (Złota Firma: „Restauracja")                   | ne — ulice Odrodzenia, zástavba                     | K RUČNÍ KONTROLE |
-| `swojska-chata`           | **doloženo** (oficiální portál Karpacze, sekce gastro)      | ne — hlavní ulice Karpacze                          | K RUČNÍ KONTROLE |
-| `trejbalova-bouda`        | **sporné** — katalogy si protiřečí (viz níž)                | jen cyklo + běžky (10 m / 50 m), pěší značka ne     | K RUČNÍ KONTROLE |
-| `horska-sluzba-cerny-dul` | **ne** — je to stanice Horské služby, tag je chybný         | —                                                   | **NEZAŘAZOVAT**  |
-| `szklana-chata`           | beze stopy                                                  | beze stopy                                          | otevřený         |
-| `wiejska-chata`           | beze stopy                                                  | beze stopy                                          | otevřený         |
-| `turisticka-chata`        | beze stopy                                                  | beze stopy                                          | otevřený         |
-| `horska`                  | beze stopy                                                  | beze stopy                                          | otevřený         |
+| kandidát                  | občerstvení pro veřejnost                                | role na trase                                     | návrh redakci    |
+| ------------------------- | -------------------------------------------------------- | ------------------------------------------------- | ---------------- |
+| `zizkova-bouda`           | **doloženo** (aktivní záznam Firmy.cz, denně 10:00–2:00) | **doložena** („leží při hlavní turistické trase") | **POVÝŠIT**      |
+| `hotel-bouda-jana`        | spíš ano („restaurace s celodenním provozem")            | ne — Velká Úpa, středisko, 920 m                  | K RUČNÍ KONTROLE |
+| `sudecka-chata-u-prezesa` | **doloženo** (Tripadvisor: „Bar, restaurace")            | ne — ulice v Szklarské Porębě Średnie             | K RUČNÍ KONTROLE |
+| `prezesowa-chata`         | **doloženo** (Złota Firma: „Restauracja")                | ne — ulice Odrodzenia, zástavba                   | K RUČNÍ KONTROLE |
+| `swojska-chata`           | **doloženo** (oficiální portál Karpacze, sekce gastro)   | ne — hlavní ulice Karpacze                        | K RUČNÍ KONTROLE |
+| `trejbalova-bouda`        | **sporné** — katalogy si protiřečí (viz níž)             | jen cyklo + běžky (10 m / 50 m), pěší značka ne   | K RUČNÍ KONTROLE |
+| `horska-sluzba-cerny-dul` | **ne** — je to stanice Horské služby, tag je chybný      | —                                                 | **NEZAŘAZOVAT**  |
+| `szklana-chata`           | beze stopy                                               | beze stopy                                        | otevřený         |
+| `wiejska-chata`           | beze stopy                                               | beze stopy                                        | otevřený         |
+| `turisticka-chata`        | beze stopy                                               | beze stopy                                        | otevřený         |
+| `horska`                  | beze stopy                                               | beze stopy                                        | otevřený         |
 
 **Žižkova bouda je jediný čistý nález dne — a potvrzuje upřesněný vzor z 29. 8.**
 Samostatný záznam „Restaurace Žižkova bouda" na Firmy.cz je **aktivní**
@@ -370,8 +370,7 @@ Firmy.cz vede objekt **jen** jako „Mountain cabins and chalets" + „Economy
 accommodation", tedy zcela bez gastro kategorie, a k tomu samé večerní hodiny
 (Po–Čt 17–21). Oficiální krajský portál `vychodni-cechy.info` proti tomu vede
 týž objekt v rubrice „hostinec (s kuchyní), letní terasa / zahrádka" — z toho je
-ovšem doložený zatím jen titulek ze seznamu výsledků, protože stránka vrátila
-403. Rozhodne stránka „Hospůdka" na vlastním webu, ta se dnes nenačetla
+ovšem doložený zatím jen titulek ze seznamu výsledků, protože stránka vrátila 403. Rozhodne stránka „Hospůdka" na vlastním webu, ta se dnes nenačetla
 (robots.txt ConnectTimeout).
 
 **Čtyři kandidáti nemají na webu žádnou stopu — a u všech čtyř je příčina táž:
@@ -440,13 +439,13 @@ nezměřil nepřítomnost objektu v OSM, ale nepřítomnost odkazu v našem soub
 Přeměřeno proto podle **jména a podle okolí**, nad exporty v repu, bez jediného
 dotazu do sítě — a hned dva z pěti v exportech jsou:
 
-| kandidát | výsledek 31. 8. |
-| --- | --- |
-| `josefova-bouda` | **V OSM JE** — way/74863464, `amenity=restaurant`, `tourism=hotel`, telefon, doména josefovabouda.cz, 246 m od profilu Erlebachovy boudy. GPS doplněna, občerstvení doloženo tagem. |
-| `modrokamenna-bouda` | **V OSM JE** jako `penzion-modrokamenna-bouda` (node/2399375802). GPS doplněna, dvojice změřena — viz níž. |
-| `postovna-na-snezce` | nepřítomnost **potvrzena měřením**: v okruhu 1 km od vrcholu Sněžky není v exportech žádný element, nejbližší je Dom Śląski 851 m. |
-| `hotel-stumpovka` | nepřítomnost **potvrzena měřením**: v okruhu 1,5 km od Dvoraček leží v exportech jediný element — sama Chata Dvoračky (0 m). Štumpovka přitom stojí 22–104 m od ní, takže v OSM patrně chybí. |
-| `hrncirske-boudy` | neměřitelné (kandidát nemá GPS) a verdikt z 25. 7. trvá: enkláva několika stavení, ne jedna chata. Otázka na Michala, ne úkol. |
+| kandidát             | výsledek 31. 8.                                                                                                                                                                               |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `josefova-bouda`     | **V OSM JE** — way/74863464, `amenity=restaurant`, `tourism=hotel`, telefon, doména josefovabouda.cz, 246 m od profilu Erlebachovy boudy. GPS doplněna, občerstvení doloženo tagem.           |
+| `modrokamenna-bouda` | **V OSM JE** jako `penzion-modrokamenna-bouda` (node/2399375802). GPS doplněna, dvojice změřena — viz níž.                                                                                    |
+| `postovna-na-snezce` | nepřítomnost **potvrzena měřením**: v okruhu 1 km od vrcholu Sněžky není v exportech žádný element, nejbližší je Dom Śląski 851 m.                                                            |
+| `hotel-stumpovka`    | nepřítomnost **potvrzena měřením**: v okruhu 1,5 km od Dvoraček leží v exportech jediný element — sama Chata Dvoračky (0 m). Štumpovka přitom stojí 22–104 m od ní, takže v OSM patrně chybí. |
+| `hrncirske-boudy`    | neměřitelné (kandidát nemá GPS) a verdikt z 25. 7. trvá: enkláva několika stavení, ne jedna chata. Otázka na Michala, ne úkol.                                                                |
 
 ### Hlavní nález: parkované rozhodnutí čekalo na údaj, který v repu už byl
 
@@ -924,20 +923,20 @@ jsou tytéž, jakými pipeline slučuje duplicity (`jadroNazvu`, `SLOUCIT_DO_M`)
 shoda jména sama nestačí (jmenovci v různých údolích), poloha sama taky ne
 (chata a hospoda vedle sebe jsou dva podniky); rozhoduje až obojí naráz.
 
-| kandidát | OSM typ kandidáta | gastro element téhož jména | vzdálenost |
-| --- | --- | --- | --- |
-| `decinska-bouda` — Děčínská bouda | `tourism=guest_house` | Děčínská bouda (`node/5341404078`, `amenity=restaurant`, Mo-Su 10:00–16:00) | 8 m |
-| `hancova-bouda` — Hančova bouda | `tourism=hotel` | Hančova bouda (`node/2147053804`, `amenity=restaurant`, týž telefon i web `hancovabouda.cz`) | 11 m |
-| `chata-izerska` — Chata Izerska | `tourism=hotel` | Chata Izerska (`way/262941130`, `amenity=restaurant`) | 12 m |
-| `bouda-v-obrim-dole` — Bouda v Obřím Dole | `tourism=guest_house` | Bouda v Obřím Dole (`node/262099408`, `amenity=restaurant`, Mo-Su 10:00–22:00, web `boudavobrimdole.cz/restaurace`) | 13 m |
-| `lidicka-bouda` — Lidická bouda | `tourism=hotel` | Lidická Bouda (`node/5488661851`, `amenity=restaurant`) | 20 m |
-| `chata-za-wsia` — Chata za Wsią | `tourism=chalet` | Chata za Wsią (`node/2951365228`, `amenity=restaurant`, 7:00–22:00) | 60 m |
-| `amelkowa-chata` — Amelkowa chata | `tourism=guest_house` | Amelkowa chata (`node/13970694498`, `amenity=restaurant`) | 62 m |
+| kandidát                                  | OSM typ kandidáta     | gastro element téhož jména                                                                                          | vzdálenost |
+| ----------------------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------- | ---------- |
+| `decinska-bouda` — Děčínská bouda         | `tourism=guest_house` | Děčínská bouda (`node/5341404078`, `amenity=restaurant`, Mo-Su 10:00–16:00)                                         | 8 m        |
+| `hancova-bouda` — Hančova bouda           | `tourism=hotel`       | Hančova bouda (`node/2147053804`, `amenity=restaurant`, týž telefon i web `hancovabouda.cz`)                        | 11 m       |
+| `chata-izerska` — Chata Izerska           | `tourism=hotel`       | Chata Izerska (`way/262941130`, `amenity=restaurant`)                                                               | 12 m       |
+| `bouda-v-obrim-dole` — Bouda v Obřím Dole | `tourism=guest_house` | Bouda v Obřím Dole (`node/262099408`, `amenity=restaurant`, Mo-Su 10:00–22:00, web `boudavobrimdole.cz/restaurace`) | 13 m       |
+| `lidicka-bouda` — Lidická bouda           | `tourism=hotel`       | Lidická Bouda (`node/5488661851`, `amenity=restaurant`)                                                             | 20 m       |
+| `chata-za-wsia` — Chata za Wsią           | `tourism=chalet`      | Chata za Wsią (`node/2951365228`, `amenity=restaurant`, 7:00–22:00)                                                 | 60 m       |
+| `amelkowa-chata` — Amelkowa chata         | `tourism=guest_house` | Amelkowa chata (`node/13970694498`, `amenity=restaurant`)                                                           | 62 m       |
 
 **+ `havlova-bouda` — Havlova bouda, 3 m od `Restaurace Havlova bouda`**
 (`node/13115070893`, `amenity=restaurant`). Skript ji sám nechytí a je to
-jeho mez, ne nález: `jadroNazvu` odstraňuje slova *chata / bouda / hotel /
-penzion*, ale **ne slovo *restaurace***, takže jádra „havlova" a „restaurace
+jeho mez, ne nález: `jadroNazvu` odstraňuje slova _chata / bouda / hotel /
+penzion_, ale **ne slovo _restaurace_**, takže jádra „havlova" a „restaurace
 havlova" se neshodnou. Že jde o týž provoz, drží tři nezávislé věci: 3 m,
 týž web `havlovabouda.cz` a **sousední ID uzlů** (…892 a …893, tedy zapsané
 jedním editorem naráz). Sadu slov v `jadroNazvu` **neměním** — pohání
@@ -968,12 +967,12 @@ síťový; dnes jde jen popsat.
 Soused, ne doklad. Do 30 m leží gastro element, ale jmenuje se jinak — v osadě
 plné boudiček je to běžné a nevypovídá to o kandidátovi nic.
 
-| kandidát | nejbližší gastro | vzdálenost | pozn. |
-| --- | --- | --- | --- |
-| `chata-sudecka-z-widokiem` | Sudecka chata u Prezesa | 10 m | týž pár, který 31. 8. našla kontrola blízkých bodů (9,7 m) — otázka „jeden objekt, nebo dva" trvá |
-| `hoffmannova-bouda` | Hoffmanovy Boudy | 12 m | jednotné × množné číslo téhož jména; enkláva, nebo dům a jeho hospoda? Musí přečíst člověk |
-| `chata-jerabinka` | Chata Hradečanka | 28 m | osada Pomezní Boudy — druhá nejbližší je publikovaná Pomezní bouda (49 m), viz `_jmenovci.yaml`. Sousedé, ne dvojí zápis |
-| `havlova-bouda` | Restaurace Havlova bouda | 3 m | **patří do C1**, viz výš — sem ji vrací jen mez `jadroNazvu` |
+| kandidát                   | nejbližší gastro         | vzdálenost | pozn.                                                                                                                    |
+| -------------------------- | ------------------------ | ---------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `chata-sudecka-z-widokiem` | Sudecka chata u Prezesa  | 10 m       | týž pár, který 31. 8. našla kontrola blízkých bodů (9,7 m) — otázka „jeden objekt, nebo dva" trvá                        |
+| `hoffmannova-bouda`        | Hoffmanovy Boudy         | 12 m       | jednotné × množné číslo téhož jména; enkláva, nebo dům a jeho hospoda? Musí přečíst člověk                               |
+| `chata-jerabinka`          | Chata Hradečanka         | 28 m       | osada Pomezní Boudy — druhá nejbližší je publikovaná Pomezní bouda (49 m), viz `_jmenovci.yaml`. Sousedé, ne dvojí zápis |
+| `havlova-bouda`            | Restaurace Havlova bouda | 3 m        | **patří do C1**, viz výš — sem ji vrací jen mez `jadroNazvu`                                                             |
 
 ### C3 · bez gastra v dosahu — 120
 
@@ -986,14 +985,14 @@ Rozložení podle vzdálenosti od nejbližšího referenčního bodu střediska
 značka, kterou export nenese — ale je to nejlevnější dostupný proxy pro to,
 co se u koše B rozhodovalo pořád dokola: „ulice ve středisku" × „dům o samotě":
 
-| pásmo | počet |
-| --- | --- |
-| do 250 m | 8 |
-| 250–500 m | 11 |
-| 0,5–1 km | 20 |
-| 1–2 km | 25 |
-| 2–4 km | 30 |
-| nad 4 km | 26 |
+| pásmo     | počet |
+| --------- | ----- |
+| do 250 m  | 8     |
+| 250–500 m | 11    |
+| 0,5–1 km  | 20    |
+| 1–2 km    | 25    |
+| 2–4 km    | 30    |
+| nad 4 km  | 26    |
 
 Podle OSM typu: `chalet` 69, `guest_house` 35, `hotel` 13, `hostel` 4,
 `apartment` 1 — tedy **víc než polovina koše C jsou `chalet`**, což je
@@ -1003,7 +1002,6 @@ v českých Krkonoších z devíti desetin rekreační domek, ne bouda.
 C2 (4, sporní sousedé) → C3 od nejvzdálenějších od středisek, protože tam je
 šance na boudu na trase největší. Celý koš C se tím nezmenšil, ale přestal být
 jednolitou hromadou 131 jmen.
-
 
 ## ROLE NA TRASE ZMĚŘENA (2. 9. 2026) — druhá půlka klíče přestala být dojmem
 
@@ -1083,7 +1081,6 @@ kdežto „blízko" je pozvánka ke čtení. Rozcestníky jsou navíc na polské
 řídké (230 z 1 469 v exportu), takže kilometrová čísla u `chata-izerska`
 a `chata-za-wsia` měří hustotu tagování, ne pustinu.
 
-
 ## KOŠ C3 ZMĚŘEN (6. 9. 2026) — a pořadí čtení, které z 1. 9. vyšlo, míří jinam
 
 Koš C3 (120 kandidátů, „bez gastra v dosahu") měl od 1. 9. 2026 doporučené
@@ -1107,13 +1104,13 @@ libovolný koš: `--kos c1|c2|c3`.
 ### Co měření říká o celém koši C3
 
 | pásmo ke značce | kandidátů |
-| --- | --- |
-| do 50 m | 35 |
-| 50–150 m | 33 |
-| 150–250 m | 16 |
-| 250–500 m | 15 |
-| 0,5–1 km | 11 |
-| nad 1 km | 10 |
+| --------------- | --------- |
+| do 50 m         | 35        |
+| 50–150 m        | 33        |
+| 150–250 m       | 16        |
+| 250–500 m       | 15        |
+| 0,5–1 km        | 11        |
+| nad 1 km        | 10        |
 
 **84 ze 120 leží do prahu 250 m** od značené trasy, 41 z nich má do prahu
 dvě a víc různých značek. To je přesně ta mez, kterou měření o sobě samo
@@ -1143,18 +1140,18 @@ trase, ne na osamělost.
 Do 50 m od značky, zároveň dvě a víc značek do prahu a rozcestník do 150 m
 (rozcestník je místo, kde turista rozhoduje, kudy dál):
 
-| kandidát | ke značce | značek do 250 m | rozcestník |
-| --- | --- | --- | --- |
-| `chata-viktorka` | 8 m | 2 | 87 m |
-| `felicity-grand-apartments` | 8 m | 7 | 37 m |
-| `chata-medika-2411927307` | 11 m | 2 | 57 m |
-| `chata-gracie` | 21 m | 2 | 123 m |
-| `chata-jestrab` | 22 m | 2 | 142 m |
-| `hotel-spindlerova-bouda-depandance` | 24 m | 8 | 34 m |
-| `hribeci-bouda` | 24 m | 3 | 40 m |
-| `hotel-cerna-bouda` | 25 m | 4 | 33 m |
-| `penzion-modrokamenna-bouda` | 38 m | 3 | 59 m |
-| `mlynarka-ubytovani-v-krkonosich` | 47 m | 6 | 138 m |
+| kandidát                             | ke značce | značek do 250 m | rozcestník |
+| ------------------------------------ | --------- | --------------- | ---------- |
+| `chata-viktorka`                     | 8 m       | 2               | 87 m       |
+| `felicity-grand-apartments`          | 8 m       | 7               | 37 m       |
+| `chata-medika-2411927307`            | 11 m      | 2               | 57 m       |
+| `chata-gracie`                       | 21 m      | 2               | 123 m      |
+| `chata-jestrab`                      | 22 m      | 2               | 142 m      |
+| `hotel-spindlerova-bouda-depandance` | 24 m      | 8               | 34 m       |
+| `hribeci-bouda`                      | 24 m      | 3               | 40 m       |
+| `hotel-cerna-bouda`                  | 25 m      | 4               | 33 m       |
+| `penzion-modrokamenna-bouda`         | 38 m      | 3               | 59 m       |
+| `mlynarka-ubytovani-v-krkonosich`    | 47 m      | 6               | 138 m      |
 
 **Dva kandidáty jmenuje značená trasa jako cíl** — a to je jediné ze čtyř
 měření, které mluví přímo o roli, ne o poloze: `penzion-modrokamenna-bouda`
@@ -1188,128 +1185,128 @@ Generováno `npx tsx scripts/triaz-role-na-trase.ts krkonose --kos c3 --md`.
 **Pořadí je pořadí čtení, ne pořadí zamítání** — koš C3 nemá doložené
 občerstvení, takže o zařazení tahle tabulka nerozhoduje u žádného řádku.
 
-| kandidát | k nejbližší značce | značek do 250 m | rozcestník | jmenuje ho trasa |
-| --- | --- | --- | --- | --- |
-| `chata-kovarna` — Chata Kovárna | 8 m — zluta · č. 7223 · [Ž] Horní Maršov - Kutná | 3 | 277 m | — |
-| `chata-viktorka` — Chata Viktorka | 8 m — zelena · č. 4228 · Svoboda nad Úpou - Hoffmannova bouda | 2 | 87 m | — |
-| `felicity-grand-apartments` — Felicity Grand Apartments | 8 m — zelena · [Z] Špindlerův mlýn - okruh | 7 | 37 m | — |
-| `apartman-u-potoka` — Apartmán U potoka | 8 m — modra · [M] Horní Maršov - Lysečinská bouda | 3 | 315 m | — |
-| `chata-tereza` — Chata Tereza | 9 m — modra · č. 1817 · [M] Janské Lázně - Pod Starou horou | 1 | 412 m | — |
-| `chata-tobisek` — Chata Tobísek | 9 m — zelena · č. 4208 · [Z] Javoří Mlýn - U Dvorské boudy | 4 | 158 m | — |
-| `chalupa-marsovka` — Chalupa Maršovka | 10 m — modra · [M] Horní Maršov - Lysečinská bouda | 3 | 275 m | — |
-| `sporthotel-svycarska-bouda` — Sporthotel Švýcarská bouda | 10 m — zluta · č. 140007 · [Ž] Labská přehrada hráz. - Pod Černou skálou | 1 | 199 m | — |
-| `chata-medika-2411927307` — Chata Medika | 11 m — cervena · č. 0403 · [Č] Cesta bratří Čapků | 2 | 57 m | — |
-| `bouda-sestidomi` — bouda Šestidomí | 11 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky | 1 | 810 m | — |
-| `chalupa-u-rihu` — Chalupa U Říhů | 11 m — zluta · [Ž] Nad Dolním Dvorem - Klínovka | 1 | 355 m | — |
-| `sosnowy-szept` — Sosnowy Szept | 12 m — cervena · č. GSS · Główny Szlak Sudecki | 1 | 4783 m | — |
-| `sliwkowa-chata-sliwkowa-chata` — Śliwkowa Chata / Sliwkowa Chata | 13 m — modra · Podgórzyn Górny - Przełęcz Karkonoska | 4 | 5132 m | — |
-| `makuka` — Makuka | 16 m — cervena · č. 0431 · [Č] Bucharova cesta | 1 | 291 m | — |
-| `chata-baraba` — Chata Baraba | 17 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky | 2 | 480 m | — |
-| `chata-popelka` — Chata Popelka | 20 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky | 2 | 486 m | — |
-| `chata-gracie` — Chata Grácie | 21 m — zelena · č. 4228 · Svoboda nad Úpou - Hoffmannova bouda | 2 | 123 m | — |
-| `bouda-u-lesa` — Bouda U lesa | 22 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky | 1 | 601 m | — |
-| `chata-jestrab` — Chata Jestřáb | 22 m — zelena · č. 4228 · Svoboda nad Úpou - Hoffmannova bouda | 2 | 142 m | — |
-| `szkolne-schronisko-mlodziezowe-skalnik` — Szkolne Schronisko Młodzieżowe "Skalnik" | 23 m — cervena · č. GSS · Główny Szlak Sudecki | 2 | 8346 m | — |
-| `hotel-spindlerova-bouda-depandance` — Hotel Špindlerova bouda - Depandance | 24 m — cervena · č. 0401 · Cesta česko-polského přátelství | 8 | 34 m | — |
-| `hribeci-bouda` — Hříběcí Bouda | 24 m — cervena · č. 0406 · [Č] Luční bouda - Vrchlabí | 3 | 40 m | — |
-| `horska-chata-hanapetr` — Horská chata HANAPETR | 24 m — zelena · č. 4207 · Špindlerův Mlýn;Hrnčířské boudy;Nad boudou Mír | 2 | 341 m | — |
-| `hotel-cerna-bouda` — Hotel ČERNÁ BOUDA | 25 m — zluta · č. 7211 · [Ž] Černý Důl - Nad Portášovými boudami | 4 | 33 m | — |
-| `schronisko-srebrny-potok` — Schronisko Srebrny Potok | 26 m — zluta · Jarkowice - Obniżenie za Łysociną | 3 | 2560 m | ano |
-| `schronisko-liczyrzepa` — Schronisko Liczyrzepa | 28 m — zelena · Szklarska Poręba - Wałbrzych | 1 | 2747 m | — |
-| `dom-pod-jaworami` — Dom Pod Jaworami | 29 m — modra · Borowice-Miłków | 3 | 5629 m | — |
-| `chata-u-kohouta` — Chata U Kohouta | 30 m — zluta · č. 7227 · Svoboda nad Úpou - Nad Hoffmannovou boudou | 2 | 544 m | — |
-| `wellness-hotel-liberecka-bouda` — Wellness hotel LIBERECKÁ BOUDA | 34 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr | 1 | 1074 m | — |
-| `chata-zapiecek` — Chata Zapiecek | 35 m — modra · Podgórzyn Górny - Przełęcz Karkonoska | 1 | 4809 m | — |
-| `szkolne-schronisko-mlodziezowe-zloty-widok` — Szkolne Schronisko Młodzieżowe ZŁOTY WIDOK | 37 m — modra · Piechowice - Pod Wielkim Szyszakiem | 1 | 6448 m | — |
-| `penzion-modrokamenna-bouda` — Penzion Modrokamenná bouda | 38 m — zelena · č. 4210 · [Z] Svoboda nad Úpou - Václavák | 3 | 59 m | ano |
-| `pension-chata-lovrana` — Pension Chata Lovrana | 38 m — cervena · č. 0407 · [Č] Svoboda nad Úpou - Chata Na Rozcestí | 2 | 295 m | — |
-| `mlynarka-ubytovani-v-krkonosich` — Mlynářka, ubytování v krkonoších | 47 m — zluta · č. 7211 · [Ž] Černý Důl - Nad Portášovými boudami | 6 | 138 m | — |
-| `sruby-podspalov` — sruby Podspálov | 49 m — zelena · NS Údolím Jizery - Riegrova stezka | 2 | 257 m | — |
-| `ministerska` — Ministerská | 53 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr | 1 | 363 m | — |
-| `chalupa-u-medveda` — Chalupa u Medvěda | 54 m — zluta · [Ž] Nad Dolním Dvorem - Klínovka | 1 | 289 m | — |
-| `chata-silnicka` — Chata Silnička | 59 m — modra · Velká Úpa - Nad Portášovými boudami | 1 | 582 m | — |
-| `chata-advokatka` — chata Advokátka | 59 m — zelena · č. 4228 · Svoboda nad Úpou - Hoffmannova bouda | 3 | 200 m | — |
-| `janova-bouda` — Janova bouda | 61 m — zluta · [Ž] Nad Dolním Dvorem - Klínovka | 2 | 62 m | — |
-| `hottur-osrodek-wczasowo-wypoczynkowy` — HOTTUR  Ośrodek Wczasowo-Wypoczynkowy | 62 m — zelena · Szklarska Poręba - Wałbrzych | 2 | 3158 m | — |
-| `chata-lom` — Chata Lom | 66 m — zluta · č. 7310 · [Ž] U Třídomí - Česká Budka | 1 | 835 m | — |
-| `chata-medika` — Chata Medika | 67 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr | 1 | 1283 m | — |
-| `mlodziezowe-schronisko-w-staniszowie` — Młodzieżowe Schronisko w Staniszowie | 80 m — zelena · Cieplice Śląskie - Karpniki | 2 | 10864 m | — |
-| `bouda-mama` — Bouda Máma | 80 m — zluta · č. 7236 · [Ž] U Růžového dolu - Pod Větrníkem | 2 | 264 m | — |
-| `osada-sniezka` — Osada Śnieżka | 83 m — modra · Sudecka Droga św. Jakuba | 1 | 11947 m | — |
-| `wioska-finska-kalevala` — Wioska Fińska Kalevala | 91 m — modra · Borowice-Miłków | 4 | 3801 m | — |
-| `chata-votocka` — Chata Votočka | 93 m — zluta · č. 7308 · [Ž] Rokytnice - Rezek | 1 | 641 m | — |
-| `lodge-1` — Lodge 1 | 97 m — modra · Podgórzyn Górny - Przełęcz Karkonoska | 1 | 5717 m | — |
-| `iskierka` — Iskierka | 100 m — cervena · č. GSS · Główny Szlak Sudecki | 1 | 4413 m | — |
-| `chata-spindler` — Chata Špindler | 101 m — zluta · č. 7362 · [Ž] U Dívčí lávky - Petrovka | 4 | 117 m | — |
-| `ludvikova-bouda` — Ludvikova bouda | 101 m — modra · č. 1816 · U Zrcadlových bud - Janské Lázně | 1 | 324 m | — |
-| `lodge-2` — Lodge 2 | 104 m — modra · Podgórzyn Górny - Przełęcz Karkonoska | 1 | 5714 m | — |
-| `bouda-jirinka` — Bouda Jiřinka | 104 m — modra · č. 1817 · [M] Janské Lázně - Pod Starou horou | 2 | 401 m | — |
-| `baronova-bouda` — Baronova Bouda | 104 m — zluta · [Ž] Nad Dolním Dvorem - Klínovka | 1 | 474 m | — |
-| `szkolne-schronisko-mlodziezowe-plum` — Szkolne Schronisko Młodzieżowe PLUM | 105 m — modra · Piechowice - Pod Wielkim Szyszakiem | 1 | 7179 m | — |
-| `lesna-chata` — Leśna Chata | 106 m — cerna · Szlak dokoła Szklarskiej Poręby | 1 | 3554 m | — |
-| `chata-katerina` — Chata Kateřina | 110 m — cervena · č. 0402 · Labská bouda - Horní Mísečky vlek | 6 | 246 m | — |
-| `penzion-karlova-chata` — Penzion Karlova chata | 110 m — modra · [M] Horní Maršov - Lysečinská bouda | 1 | 1052 m | — |
-| `lodge-3` — Lodge 3 | 111 m — modra · Podgórzyn Górny - Przełęcz Karkonoska | 1 | 5712 m | — |
-| `mounttain-holiday-lodges` — Mounttain Holiday Lodges | 113 m — modra · Podgórzyn Górny - Przełęcz Karkonoska | 1 | 5698 m | — |
-| `java` — Java | 113 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr | 1 | 314 m | — |
-| `chata` — Chata | 126 m — zluta · č. 140007 · [Ž] Labská přehrada hráz. - Pod Černou skálou | 1 | 122 m | — |
-| `chata-varta` — Chata Varta | 134 m — zelena · [Z] U Thamových bud - Nad Pražačkou - H. Maršov | 1 | 822 m | — |
-| `chata-ferra` — Chata FERRA | 138 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky | 1 | 1625 m | — |
-| `krausovy-boudy` — Krausovy boudy | 141 m — zluta · č. 140007 · [Ž] Labská přehrada hráz. - Pod Černou skálou | 1 | 381 m | — |
-| `zacisze-pod-smielcem` — Zacisze Pod Śmielcem | 149 m — cerna · Schronisko Pod Łabskim Szczytem - Pod Petrovou Boudou | 3 | 4477 m | — |
-| `capkova-chata` — Čapkova chata | 150 m — zluta · [Ž] Lesní bouda - Pec pod Sněžkou | 2 | 852 m | — |
-| `chata-opavia` — Chata Opavia | 161 m — cervena · č. 0406 · [Č] Luční bouda - Vrchlabí | 1 | 345 m | — |
-| `turisticka-chata-lajdacek` — Turistická chata Lajdáček | 165 m — zluta · č. 140007 · [Ž] Labská přehrada hráz. - Pod Černou skálou | 1 | 383 m | — |
-| `chata-baronka` — Chata Baronka | 166 m — modra · č. 1810 · [M] Hrnčířské boudy - Vrchlabí (kostel) | 2 | 291 m | — |
-| `chata-jitka` — Chata Jitka | 180 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr | 1 | 1533 m | — |
-| `chata-kabrtova-bouda` — Chata Kábrtova Bouda | 182 m — zluta · č. 7211 · [Ž] Černý Důl - Nad Portášovými boudami | 1 | 256 m | — |
-| `grohmanova-bouda` — Grohmanova bouda | 190 m — cervena · č. 0406 · [Č] Luční bouda - Vrchlabí | 2 | 324 m | — |
-| `dalibor` — Dalibor | 194 m — zelena · [Z] Špindlerův mlýn - okruh | 4 | 306 m | — |
-| `gorska-chata` — Górska Chata | 204 m — cerna · Szlak dokoła Szklarskiej Poręby | 1 | 3091 m | — |
-| `apartmany-tri-boudy` — Apartmány tři boudy | 212 m — cervena · č. 0431 · [Č] Bucharova cesta | 1 | 229 m | — |
-| `zielony-domek` — Zielony Domek | 215 m — cervena · č. GSS · Główny Szlak Sudecki | 1 | 3978 m | — |
-| `chata-honzik` — Chata Honzík | 216 m — modra · č. 1817 · [M] Janské Lázně - Pod Starou horou | 1 | 555 m | — |
-| `chata-pod-lipami` — Chata pod lipami | 219 m — cervena · [Č] místní okruh Rokytno - Horní Domky | 2 | 393 m | — |
-| `chata-orlik` — Chata Orlik | 239 m — zelena · č. 4206 · [Z] Špindlerův Mlýn - Horní Maršov | 4 | 241 m | — |
-| `chalupa-baba-jaga` — Chalupa Baba Jaga | 243 m — modra · č. 1824 · [M] Roh hranic - Prkenný důl | 1 | 627 m | — |
-| `chata-jasanka` — chata Jasanka | 245 m — zluta · č. 140007 · [Ž] Labská přehrada hráz. - Pod Černou skálou | 1 | 478 m | — |
-| `domek-w-karkonoszach` — Domek w Karkonoszach | 246 m — cerna · Sobieszów - Podgórzyn Górny | 2 | 6737 m | — |
-| `happy-house` — Happy House | 263 m — modra · č. 1801 · [M] Harrachov - Špindlerův mlýn | 0 | 423 m | — |
-| `bergpoolhaus` — Bergpoolhaus | 276 m — cervena · č. 0431 · [Č] Bucharova cesta | 0 | 630 m | — |
-| `hajenka-haida` — Hájenka Haida | 277 m — zelena · Pohádková NS | 0 | 595 m | — |
-| `chata-protez` — chata Protěž | 278 m — zelena · Pec pod Sněžkou | 0 | 336 m | — |
-| `wiilla-jagoda-jagniatkow` — Wiilla Jagoda Jagniątków | 282 m — modra · Podgórzyn Dolny - Czarna Przełęcz | 0 | 4204 m | — |
-| `pod-zielonym-dachem` — Pod Zielonym Dachem | 293 m — zelena · Szklarska Poręba - Wałbrzych | 0 | 10665 m | — |
-| `chata-gall` — Chata Gall | 296 m — zluta · [Ž] Nad Dolním Dvorem - Klínovka | 0 | 874 m | — |
-| `chata-beata` — Chata Beata | 305 m — cervena · č. 0403 · [Č] Cesta bratří Čapků | 0 | 316 m | — |
-| `chata-biegacza` — Chata Biegacza | 306 m — cerna · Szlak dokoła Szklarskiej Poręby | 0 | 3138 m | — |
-| `contemplace` — Contemplace | 309 m — zelena · Szklarska Poręba - Wałbrzych | 0 | 3581 m | — |
-| `chata-kubik` — Chata Kubík | 339 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr | 0 | 1485 m | — |
-| `zinneckerovy-boudy` — Zinneckerovy Boudy | 355 m — cervena · č. 0407 · [Č] Svoboda nad Úpou - Chata Na Rozcestí | 0 | 565 m | — |
-| `chata-karolinka` — Chata Karolínka | 367 m — cervena · č. 0431 · [Č] Bucharova cesta | 0 | 398 m | — |
-| `schronisko-mlodziezowe-lubawia` — Schronisko Młodzieżowe LUBAWIA | 375 m — modra · Mieroszów – Lubawka | 0 | 3492 m | — |
-| `chalupa-sport` — Chalupa Sport | 436 m — modra · č. 1805 · [M] Jablonec n. Jiz. - Pod Černou skálou | 0 | 492 m | — |
-| `chata-solunka` — Chata Solunka | 520 m — zluta · č. 7307 · [Ž] Rokytnice n. Jiz - Sedlo Mokrá Prelecz | 0 | 733 m | — |
-| `chata-uvaly` — Chata Úvaly | 571 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky | 0 | 950 m | — |
-| `mohwaldova-bouda` — Möhwaldova bouda | 588 m — zluta · č. 7207 · [Ž] Žalý - Vrchlabí | 0 | 943 m | — |
-| `browarowka` — Browarówka | 627 m — modra · Sudecka Droga św. Jakuba | 0 | 12405 m | — |
-| `widokowo` — Widokowo | 644 m — cerna · Karpacz Muzeum Zabawek - Sowia Przełęcz | 0 | 3323 m | — |
-| `szkolne-schronisko-mlodziezowe-wojtek` — Szkolne Schronisko Młodzieżowe "Wojtek" | 700 m — modra · Szklarska Poręba - Pasterka | 0 | 5750 m | — |
-| `lyzarsky-vlek-ubytovani` — Lyžařský vlek - ubytování | 752 m — cervena · č. 0404 · [Č] Náchod - Pod Pasekou | 0 | 950 m | — |
-| `widok-na-sniezke` — Widok na Śnieżkę | 811 m — modra · Sudecka Droga św. Jakuba | 0 | 12190 m | — |
-| `holiday-park-resort` — Holiday Park & Resort | 837 m — zelena · Cieplicki szlak spacerowy Zielony | 0 | 11423 m | — |
-| `ostoja-karkonoska` — Ostoja Karkonoska | 875 m — modra · Podgórzyn Dolny - Czarna Przełęcz | 0 | 7618 m | — |
-| `chata-botas` — Chata Botas | 875 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky | 0 | 1173 m | — |
-| `jawa` — Jawa | 1044 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky | 0 | 1079 m | — |
-| `sokolska-chata-babeta` — Sokolská chata Babeta | 1070 m — zluta · [Ž] Poniklá - Roztoky u Semil | 0 | 1219 m | — |
-| `czarodziejska-gora` — Czarodziejska Góra | 1125 m — modra · Szklarska Poręba - Pasterka | 0 | 14907 m | — |
-| `arnika` — Arnika | 1345 m — modra · Borowice-Miłków | 0 | 4885 m | — |
-| `rozeniec` — Różeniec | 1350 m — modra · Borowice-Miłków | 0 | 4884 m | — |
-| `goryczka` — Goryczka | 1355 m — modra · Borowice-Miłków | 0 | 4884 m | — |
-| `lilia` — Lilia | 1362 m — modra · Borowice-Miłków | 0 | 4884 m | — |
-| `dziewiecsil` — Dziewiećsił | 1367 m — modra · Borowice-Miłków | 0 | 4884 m | — |
-| `apartamenty-every-sky` — Apartamenty Every Sky | 1421 m — modra · Borowice-Miłków | 0 | 5101 m | — |
-| `przystan-nad-bobrem` — Przystań nad Bobrem | 2820 m — cervena · č. GSS · Główny Szlak Sudecki | 0 | 9044 m | — |
+| kandidát                                                                                  | k nejbližší značce                                                        | značek do 250 m | rozcestník | jmenuje ho trasa |
+| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | --------------- | ---------- | ---------------- |
+| `chata-kovarna` — Chata Kovárna                                                           | 8 m — zluta · č. 7223 · [Ž] Horní Maršov - Kutná                          | 3               | 277 m      | —                |
+| `chata-viktorka` — Chata Viktorka                                                         | 8 m — zelena · č. 4228 · Svoboda nad Úpou - Hoffmannova bouda             | 2               | 87 m       | —                |
+| `felicity-grand-apartments` — Felicity Grand Apartments                                   | 8 m — zelena · [Z] Špindlerův mlýn - okruh                                | 7               | 37 m       | —                |
+| `apartman-u-potoka` — Apartmán U potoka                                                   | 8 m — modra · [M] Horní Maršov - Lysečinská bouda                         | 3               | 315 m      | —                |
+| `chata-tereza` — Chata Tereza                                                             | 9 m — modra · č. 1817 · [M] Janské Lázně - Pod Starou horou               | 1               | 412 m      | —                |
+| `chata-tobisek` — Chata Tobísek                                                           | 9 m — zelena · č. 4208 · [Z] Javoří Mlýn - U Dvorské boudy                | 4               | 158 m      | —                |
+| `chalupa-marsovka` — Chalupa Maršovka                                                     | 10 m — modra · [M] Horní Maršov - Lysečinská bouda                        | 3               | 275 m      | —                |
+| `sporthotel-svycarska-bouda` — Sporthotel Švýcarská bouda                                 | 10 m — zluta · č. 140007 · [Ž] Labská přehrada hráz. - Pod Černou skálou  | 1               | 199 m      | —                |
+| `chata-medika-2411927307` — Chata Medika                                                  | 11 m — cervena · č. 0403 · [Č] Cesta bratří Čapků                         | 2               | 57 m       | —                |
+| `bouda-sestidomi` — bouda Šestidomí                                                       | 11 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky                        | 1               | 810 m      | —                |
+| `chalupa-u-rihu` — Chalupa U Říhů                                                         | 11 m — zluta · [Ž] Nad Dolním Dvorem - Klínovka                           | 1               | 355 m      | —                |
+| `sosnowy-szept` — Sosnowy Szept                                                           | 12 m — cervena · č. GSS · Główny Szlak Sudecki                            | 1               | 4783 m     | —                |
+| `sliwkowa-chata-sliwkowa-chata` — Śliwkowa Chata / Sliwkowa Chata                         | 13 m — modra · Podgórzyn Górny - Przełęcz Karkonoska                      | 4               | 5132 m     | —                |
+| `makuka` — Makuka                                                                         | 16 m — cervena · č. 0431 · [Č] Bucharova cesta                            | 1               | 291 m      | —                |
+| `chata-baraba` — Chata Baraba                                                             | 17 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky                        | 2               | 480 m      | —                |
+| `chata-popelka` — Chata Popelka                                                           | 20 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky                        | 2               | 486 m      | —                |
+| `chata-gracie` — Chata Grácie                                                             | 21 m — zelena · č. 4228 · Svoboda nad Úpou - Hoffmannova bouda            | 2               | 123 m      | —                |
+| `bouda-u-lesa` — Bouda U lesa                                                             | 22 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky                        | 1               | 601 m      | —                |
+| `chata-jestrab` — Chata Jestřáb                                                           | 22 m — zelena · č. 4228 · Svoboda nad Úpou - Hoffmannova bouda            | 2               | 142 m      | —                |
+| `szkolne-schronisko-mlodziezowe-skalnik` — Szkolne Schronisko Młodzieżowe "Skalnik"       | 23 m — cervena · č. GSS · Główny Szlak Sudecki                            | 2               | 8346 m     | —                |
+| `hotel-spindlerova-bouda-depandance` — Hotel Špindlerova bouda - Depandance               | 24 m — cervena · č. 0401 · Cesta česko-polského přátelství                | 8               | 34 m       | —                |
+| `hribeci-bouda` — Hříběcí Bouda                                                           | 24 m — cervena · č. 0406 · [Č] Luční bouda - Vrchlabí                     | 3               | 40 m       | —                |
+| `horska-chata-hanapetr` — Horská chata HANAPETR                                           | 24 m — zelena · č. 4207 · Špindlerův Mlýn;Hrnčířské boudy;Nad boudou Mír  | 2               | 341 m      | —                |
+| `hotel-cerna-bouda` — Hotel ČERNÁ BOUDA                                                   | 25 m — zluta · č. 7211 · [Ž] Černý Důl - Nad Portášovými boudami          | 4               | 33 m       | —                |
+| `schronisko-srebrny-potok` — Schronisko Srebrny Potok                                     | 26 m — zluta · Jarkowice - Obniżenie za Łysociną                          | 3               | 2560 m     | ano              |
+| `schronisko-liczyrzepa` — Schronisko Liczyrzepa                                           | 28 m — zelena · Szklarska Poręba - Wałbrzych                              | 1               | 2747 m     | —                |
+| `dom-pod-jaworami` — Dom Pod Jaworami                                                     | 29 m — modra · Borowice-Miłków                                            | 3               | 5629 m     | —                |
+| `chata-u-kohouta` — Chata U Kohouta                                                       | 30 m — zluta · č. 7227 · Svoboda nad Úpou - Nad Hoffmannovou boudou       | 2               | 544 m      | —                |
+| `wellness-hotel-liberecka-bouda` — Wellness hotel LIBERECKÁ BOUDA                         | 34 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr                 | 1               | 1074 m     | —                |
+| `chata-zapiecek` — Chata Zapiecek                                                         | 35 m — modra · Podgórzyn Górny - Przełęcz Karkonoska                      | 1               | 4809 m     | —                |
+| `szkolne-schronisko-mlodziezowe-zloty-widok` — Szkolne Schronisko Młodzieżowe ZŁOTY WIDOK | 37 m — modra · Piechowice - Pod Wielkim Szyszakiem                        | 1               | 6448 m     | —                |
+| `penzion-modrokamenna-bouda` — Penzion Modrokamenná bouda                                 | 38 m — zelena · č. 4210 · [Z] Svoboda nad Úpou - Václavák                 | 3               | 59 m       | ano              |
+| `pension-chata-lovrana` — Pension Chata Lovrana                                           | 38 m — cervena · č. 0407 · [Č] Svoboda nad Úpou - Chata Na Rozcestí       | 2               | 295 m      | —                |
+| `mlynarka-ubytovani-v-krkonosich` — Mlynářka, ubytování v krkonoších                      | 47 m — zluta · č. 7211 · [Ž] Černý Důl - Nad Portášovými boudami          | 6               | 138 m      | —                |
+| `sruby-podspalov` — sruby Podspálov                                                       | 49 m — zelena · NS Údolím Jizery - Riegrova stezka                        | 2               | 257 m      | —                |
+| `ministerska` — Ministerská                                                               | 53 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr                 | 1               | 363 m      | —                |
+| `chalupa-u-medveda` — Chalupa u Medvěda                                                   | 54 m — zluta · [Ž] Nad Dolním Dvorem - Klínovka                           | 1               | 289 m      | —                |
+| `chata-silnicka` — Chata Silnička                                                         | 59 m — modra · Velká Úpa - Nad Portášovými boudami                        | 1               | 582 m      | —                |
+| `chata-advokatka` — chata Advokátka                                                       | 59 m — zelena · č. 4228 · Svoboda nad Úpou - Hoffmannova bouda            | 3               | 200 m      | —                |
+| `janova-bouda` — Janova bouda                                                             | 61 m — zluta · [Ž] Nad Dolním Dvorem - Klínovka                           | 2               | 62 m       | —                |
+| `hottur-osrodek-wczasowo-wypoczynkowy` — HOTTUR Ośrodek Wczasowo-Wypoczynkowy             | 62 m — zelena · Szklarska Poręba - Wałbrzych                              | 2               | 3158 m     | —                |
+| `chata-lom` — Chata Lom                                                                   | 66 m — zluta · č. 7310 · [Ž] U Třídomí - Česká Budka                      | 1               | 835 m      | —                |
+| `chata-medika` — Chata Medika                                                             | 67 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr                 | 1               | 1283 m     | —                |
+| `mlodziezowe-schronisko-w-staniszowie` — Młodzieżowe Schronisko w Staniszowie             | 80 m — zelena · Cieplice Śląskie - Karpniki                               | 2               | 10864 m    | —                |
+| `bouda-mama` — Bouda Máma                                                                 | 80 m — zluta · č. 7236 · [Ž] U Růžového dolu - Pod Větrníkem              | 2               | 264 m      | —                |
+| `osada-sniezka` — Osada Śnieżka                                                           | 83 m — modra · Sudecka Droga św. Jakuba                                   | 1               | 11947 m    | —                |
+| `wioska-finska-kalevala` — Wioska Fińska Kalevala                                         | 91 m — modra · Borowice-Miłków                                            | 4               | 3801 m     | —                |
+| `chata-votocka` — Chata Votočka                                                           | 93 m — zluta · č. 7308 · [Ž] Rokytnice - Rezek                            | 1               | 641 m      | —                |
+| `lodge-1` — Lodge 1                                                                       | 97 m — modra · Podgórzyn Górny - Przełęcz Karkonoska                      | 1               | 5717 m     | —                |
+| `iskierka` — Iskierka                                                                     | 100 m — cervena · č. GSS · Główny Szlak Sudecki                           | 1               | 4413 m     | —                |
+| `chata-spindler` — Chata Špindler                                                         | 101 m — zluta · č. 7362 · [Ž] U Dívčí lávky - Petrovka                    | 4               | 117 m      | —                |
+| `ludvikova-bouda` — Ludvikova bouda                                                       | 101 m — modra · č. 1816 · U Zrcadlových bud - Janské Lázně                | 1               | 324 m      | —                |
+| `lodge-2` — Lodge 2                                                                       | 104 m — modra · Podgórzyn Górny - Przełęcz Karkonoska                     | 1               | 5714 m     | —                |
+| `bouda-jirinka` — Bouda Jiřinka                                                           | 104 m — modra · č. 1817 · [M] Janské Lázně - Pod Starou horou             | 2               | 401 m      | —                |
+| `baronova-bouda` — Baronova Bouda                                                         | 104 m — zluta · [Ž] Nad Dolním Dvorem - Klínovka                          | 1               | 474 m      | —                |
+| `szkolne-schronisko-mlodziezowe-plum` — Szkolne Schronisko Młodzieżowe PLUM               | 105 m — modra · Piechowice - Pod Wielkim Szyszakiem                       | 1               | 7179 m     | —                |
+| `lesna-chata` — Leśna Chata                                                               | 106 m — cerna · Szlak dokoła Szklarskiej Poręby                           | 1               | 3554 m     | —                |
+| `chata-katerina` — Chata Kateřina                                                         | 110 m — cervena · č. 0402 · Labská bouda - Horní Mísečky vlek             | 6               | 246 m      | —                |
+| `penzion-karlova-chata` — Penzion Karlova chata                                           | 110 m — modra · [M] Horní Maršov - Lysečinská bouda                       | 1               | 1052 m     | —                |
+| `lodge-3` — Lodge 3                                                                       | 111 m — modra · Podgórzyn Górny - Przełęcz Karkonoska                     | 1               | 5712 m     | —                |
+| `mounttain-holiday-lodges` — Mounttain Holiday Lodges                                     | 113 m — modra · Podgórzyn Górny - Przełęcz Karkonoska                     | 1               | 5698 m     | —                |
+| `java` — Java                                                                             | 113 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr                | 1               | 314 m      | —                |
+| `chata` — Chata                                                                           | 126 m — zluta · č. 140007 · [Ž] Labská přehrada hráz. - Pod Černou skálou | 1               | 122 m      | —                |
+| `chata-varta` — Chata Varta                                                               | 134 m — zelena · [Z] U Thamových bud - Nad Pražačkou - H. Maršov          | 1               | 822 m      | —                |
+| `chata-ferra` — Chata FERRA                                                               | 138 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky                       | 1               | 1625 m     | —                |
+| `krausovy-boudy` — Krausovy boudy                                                         | 141 m — zluta · č. 140007 · [Ž] Labská přehrada hráz. - Pod Černou skálou | 1               | 381 m      | —                |
+| `zacisze-pod-smielcem` — Zacisze Pod Śmielcem                                             | 149 m — cerna · Schronisko Pod Łabskim Szczytem - Pod Petrovou Boudou     | 3               | 4477 m     | —                |
+| `capkova-chata` — Čapkova chata                                                           | 150 m — zluta · [Ž] Lesní bouda - Pec pod Sněžkou                         | 2               | 852 m      | —                |
+| `chata-opavia` — Chata Opavia                                                             | 161 m — cervena · č. 0406 · [Č] Luční bouda - Vrchlabí                    | 1               | 345 m      | —                |
+| `turisticka-chata-lajdacek` — Turistická chata Lajdáček                                   | 165 m — zluta · č. 140007 · [Ž] Labská přehrada hráz. - Pod Černou skálou | 1               | 383 m      | —                |
+| `chata-baronka` — Chata Baronka                                                           | 166 m — modra · č. 1810 · [M] Hrnčířské boudy - Vrchlabí (kostel)         | 2               | 291 m      | —                |
+| `chata-jitka` — Chata Jitka                                                               | 180 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr                | 1               | 1533 m     | —                |
+| `chata-kabrtova-bouda` — Chata Kábrtova Bouda                                             | 182 m — zluta · č. 7211 · [Ž] Černý Důl - Nad Portášovými boudami         | 1               | 256 m      | —                |
+| `grohmanova-bouda` — Grohmanova bouda                                                     | 190 m — cervena · č. 0406 · [Č] Luční bouda - Vrchlabí                    | 2               | 324 m      | —                |
+| `dalibor` — Dalibor                                                                       | 194 m — zelena · [Z] Špindlerův mlýn - okruh                              | 4               | 306 m      | —                |
+| `gorska-chata` — Górska Chata                                                             | 204 m — cerna · Szlak dokoła Szklarskiej Poręby                           | 1               | 3091 m     | —                |
+| `apartmany-tri-boudy` — Apartmány tři boudy                                               | 212 m — cervena · č. 0431 · [Č] Bucharova cesta                           | 1               | 229 m      | —                |
+| `zielony-domek` — Zielony Domek                                                           | 215 m — cervena · č. GSS · Główny Szlak Sudecki                           | 1               | 3978 m     | —                |
+| `chata-honzik` — Chata Honzík                                                             | 216 m — modra · č. 1817 · [M] Janské Lázně - Pod Starou horou             | 1               | 555 m      | —                |
+| `chata-pod-lipami` — Chata pod lipami                                                     | 219 m — cervena · [Č] místní okruh Rokytno - Horní Domky                  | 2               | 393 m      | —                |
+| `chata-orlik` — Chata Orlik                                                               | 239 m — zelena · č. 4206 · [Z] Špindlerův Mlýn - Horní Maršov             | 4               | 241 m      | —                |
+| `chalupa-baba-jaga` — Chalupa Baba Jaga                                                   | 243 m — modra · č. 1824 · [M] Roh hranic - Prkenný důl                    | 1               | 627 m      | —                |
+| `chata-jasanka` — chata Jasanka                                                           | 245 m — zluta · č. 140007 · [Ž] Labská přehrada hráz. - Pod Černou skálou | 1               | 478 m      | —                |
+| `domek-w-karkonoszach` — Domek w Karkonoszach                                             | 246 m — cerna · Sobieszów - Podgórzyn Górny                               | 2               | 6737 m     | —                |
+| `happy-house` — Happy House                                                               | 263 m — modra · č. 1801 · [M] Harrachov - Špindlerův mlýn                 | 0               | 423 m      | —                |
+| `bergpoolhaus` — Bergpoolhaus                                                             | 276 m — cervena · č. 0431 · [Č] Bucharova cesta                           | 0               | 630 m      | —                |
+| `hajenka-haida` — Hájenka Haida                                                           | 277 m — zelena · Pohádková NS                                             | 0               | 595 m      | —                |
+| `chata-protez` — chata Protěž                                                             | 278 m — zelena · Pec pod Sněžkou                                          | 0               | 336 m      | —                |
+| `wiilla-jagoda-jagniatkow` — Wiilla Jagoda Jagniątków                                     | 282 m — modra · Podgórzyn Dolny - Czarna Przełęcz                         | 0               | 4204 m     | —                |
+| `pod-zielonym-dachem` — Pod Zielonym Dachem                                               | 293 m — zelena · Szklarska Poręba - Wałbrzych                             | 0               | 10665 m    | —                |
+| `chata-gall` — Chata Gall                                                                 | 296 m — zluta · [Ž] Nad Dolním Dvorem - Klínovka                          | 0               | 874 m      | —                |
+| `chata-beata` — Chata Beata                                                               | 305 m — cervena · č. 0403 · [Č] Cesta bratří Čapků                        | 0               | 316 m      | —                |
+| `chata-biegacza` — Chata Biegacza                                                         | 306 m — cerna · Szlak dokoła Szklarskiej Poręby                           | 0               | 3138 m     | —                |
+| `contemplace` — Contemplace                                                               | 309 m — zelena · Szklarska Poręba - Wałbrzych                             | 0               | 3581 m     | —                |
+| `chata-kubik` — Chata Kubík                                                               | 339 m — modra · č. 1808 · [M] Špindlerův Mlýn - Dolní Dvůr                | 0               | 1485 m     | —                |
+| `zinneckerovy-boudy` — Zinneckerovy Boudy                                                 | 355 m — cervena · č. 0407 · [Č] Svoboda nad Úpou - Chata Na Rozcestí      | 0               | 565 m      | —                |
+| `chata-karolinka` — Chata Karolínka                                                       | 367 m — cervena · č. 0431 · [Č] Bucharova cesta                           | 0               | 398 m      | —                |
+| `schronisko-mlodziezowe-lubawia` — Schronisko Młodzieżowe LUBAWIA                         | 375 m — modra · Mieroszów – Lubawka                                       | 0               | 3492 m     | —                |
+| `chalupa-sport` — Chalupa Sport                                                           | 436 m — modra · č. 1805 · [M] Jablonec n. Jiz. - Pod Černou skálou        | 0               | 492 m      | —                |
+| `chata-solunka` — Chata Solunka                                                           | 520 m — zluta · č. 7307 · [Ž] Rokytnice n. Jiz - Sedlo Mokrá Prelecz      | 0               | 733 m      | —                |
+| `chata-uvaly` — Chata Úvaly                                                               | 571 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky                       | 0               | 950 m      | —                |
+| `mohwaldova-bouda` — Möhwaldova bouda                                                     | 588 m — zluta · č. 7207 · [Ž] Žalý - Vrchlabí                             | 0               | 943 m      | —                |
+| `browarowka` — Browarówka                                                                 | 627 m — modra · Sudecka Droga św. Jakuba                                  | 0               | 12405 m    | —                |
+| `widokowo` — Widokowo                                                                     | 644 m — cerna · Karpacz Muzeum Zabawek - Sowia Przełęcz                   | 0               | 3323 m     | —                |
+| `szkolne-schronisko-mlodziezowe-wojtek` — Szkolne Schronisko Młodzieżowe "Wojtek"         | 700 m — modra · Szklarska Poręba - Pasterka                               | 0               | 5750 m     | —                |
+| `lyzarsky-vlek-ubytovani` — Lyžařský vlek - ubytování                                     | 752 m — cervena · č. 0404 · [Č] Náchod - Pod Pasekou                      | 0               | 950 m      | —                |
+| `widok-na-sniezke` — Widok na Śnieżkę                                                     | 811 m — modra · Sudecka Droga św. Jakuba                                  | 0               | 12190 m    | —                |
+| `holiday-park-resort` — Holiday Park & Resort                                             | 837 m — zelena · Cieplicki szlak spacerowy Zielony                        | 0               | 11423 m    | —                |
+| `ostoja-karkonoska` — Ostoja Karkonoska                                                   | 875 m — modra · Podgórzyn Dolny - Czarna Przełęcz                         | 0               | 7618 m     | —                |
+| `chata-botas` — Chata Botas                                                               | 875 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky                       | 0               | 1173 m     | —                |
+| `jawa` — Jawa                                                                             | 1044 m — zluta · č. 7201 · [Ž] Vrchlabí - U Hromovky                      | 0               | 1079 m     | —                |
+| `sokolska-chata-babeta` — Sokolská chata Babeta                                           | 1070 m — zluta · [Ž] Poniklá - Roztoky u Semil                            | 0               | 1219 m     | —                |
+| `czarodziejska-gora` — Czarodziejska Góra                                                 | 1125 m — modra · Szklarska Poręba - Pasterka                              | 0               | 14907 m    | —                |
+| `arnika` — Arnika                                                                         | 1345 m — modra · Borowice-Miłków                                          | 0               | 4885 m     | —                |
+| `rozeniec` — Różeniec                                                                     | 1350 m — modra · Borowice-Miłków                                          | 0               | 4884 m     | —                |
+| `goryczka` — Goryczka                                                                     | 1355 m — modra · Borowice-Miłków                                          | 0               | 4884 m     | —                |
+| `lilia` — Lilia                                                                           | 1362 m — modra · Borowice-Miłków                                          | 0               | 4884 m     | —                |
+| `dziewiecsil` — Dziewiećsił                                                               | 1367 m — modra · Borowice-Miłków                                          | 0               | 4884 m     | —                |
+| `apartamenty-every-sky` — Apartamenty Every Sky                                           | 1421 m — modra · Borowice-Miłków                                          | 0               | 5101 m     | —                |
+| `przystan-nad-bobrem` — Przystań nad Bobrem                                               | 2820 m — cervena · č. GSS · Główny Szlak Sudecki                          | 0               | 9044 m     | —                |
 
 ## FRONTA ČTENÍ PROŠKRTNUTA (10. 9. 2026) — tři z deseti „nejsilnějších" jsou dávno rozhodnuté duplicity
 
@@ -1322,11 +1319,11 @@ prameny nepotřebovaly — **potřebovaly nahlédnout do registru jmenovců**.
 **Nález:** ve frontě čtení koše C leží **tři** kandidáti, o kterých
 `data/_jmenovci.yaml` dávno rozhodl, že jsou **druhým zápisem téhož domu**:
 
-| kandidát | týž objekt jako | naměřeno | rozhodnuto |
-| --- | --- | --- | --- |
-| `hotel-cerna-bouda` | profil `krkonose/cerna-bouda` | 14 m | 22. 8. 2026 |
-| `schronisko-srebrny-potok` | profil `krkonose/srebrny-potok` | 6 m | 22. 8. 2026 |
-| `penzion-modrokamenna-bouda` | kandidát `krkonose/modrokamenna-bouda` | 0 m | 31. 8. 2026 |
+| kandidát                     | týž objekt jako                        | naměřeno | rozhodnuto  |
+| ---------------------------- | -------------------------------------- | -------- | ----------- |
+| `hotel-cerna-bouda`          | profil `krkonose/cerna-bouda`          | 14 m     | 22. 8. 2026 |
+| `schronisko-srebrny-potok`   | profil `krkonose/srebrny-potok`        | 6 m      | 22. 8. 2026 |
+| `penzion-modrokamenna-bouda` | kandidát `krkonose/modrokamenna-bouda` | 0 m      | 31. 8. 2026 |
 
 Všechny tři byly v dvanáctce jmenované 6. 9. k přednostnímu čtení — tedy
 **čtvrtina fronty** je práce, kterou už někdo udělal. Není to chyba měření
@@ -1377,13 +1374,13 @@ Fronta z 10. 9. 2026 (desítka z 6. 9. bez tří škrtnutých duplicit) se zača
 nesáhlo, nic se nevyřadilo ani nepovýšilo** — všechno je zatím návrh
 s pramenem a datem v `interniPoznamky` příslušného kandidáta.
 
-| Kandidát | Občerstvení pro veřejnost | Stav provozu | Verdikt |
-| --- | --- | --- | --- |
-| `chata-viktorka` | **DOLOŽENO** dvěma nezávislými prameny (Firmy.cz aktivní 11:00–20:00; Tripadvisor „lodge with bistro", Takeout) | živý | **obě půlky klíče — k povýšení**, visí na otázce z 5. 9. |
-| `chata-gracie` | doložen **opak**: „Pronajímáme pouze celý objekt", samoobslužná kuchyně | prezentace v archivu | návrh **VYŘADIT** |
-| `chata-jestrab` | žádný pramen | web z OSM je mrtvý Google+ odkaz | držet, nečitelné |
-| `hribeci-bouda` | restaurace doložena blogem z r. 2015, ale **oba záznamy na Firmy.cz neaktivní** | doména vrací smyčku 302 | držet, dočíst |
-| `hotel-spindlerova-bouda-depandance` | **vlastní web říká „pouze hotelové pokoje a lyžárna"** | živý (mateřský hotel) | **škrtnout z fronty** — vedlejší budova publikovaného profilu |
+| Kandidát                             | Občerstvení pro veřejnost                                                                                       | Stav provozu                     | Verdikt                                                       |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------------------- | -------------------------------- | ------------------------------------------------------------- |
+| `chata-viktorka`                     | **DOLOŽENO** dvěma nezávislými prameny (Firmy.cz aktivní 11:00–20:00; Tripadvisor „lodge with bistro", Takeout) | živý                             | **obě půlky klíče — k povýšení**, visí na otázce z 5. 9.      |
+| `chata-gracie`                       | doložen **opak**: „Pronajímáme pouze celý objekt", samoobslužná kuchyně                                         | prezentace v archivu             | návrh **VYŘADIT**                                             |
+| `chata-jestrab`                      | žádný pramen                                                                                                    | web z OSM je mrtvý Google+ odkaz | držet, nečitelné                                              |
+| `hribeci-bouda`                      | restaurace doložena blogem z r. 2015, ale **oba záznamy na Firmy.cz neaktivní**                                 | doména vrací smyčku 302          | držet, dočíst                                                 |
+| `hotel-spindlerova-bouda-depandance` | **vlastní web říká „pouze hotelové pokoje a lyžárna"**                                                          | živý (mateřský hotel)            | **škrtnout z fronty** — vedlejší budova publikovaného profilu |
 
 ### Nález dne: práh 30 m chytá týž dům, ale ne vedlejší budovu téhož podniku
 
@@ -1433,12 +1430,12 @@ a k tomu je dočtená **Hříběcí bouda**, která zůstala z 14. 9. rozdělan�
 **Do `data/chaty/` se nesáhlo, nic se nevyřadilo ani nepovýšilo** — všechno
 je návrh s pramenem a datem v `interniPoznamky` příslušného kandidáta.
 
-| Kandidát | Občerstvení pro veřejnost | Stav provozu | Verdikt |
-| --- | --- | --- | --- |
-| `chata-medika-2411927307` | žádné — vlastní web nabízí „kuchyň pro vlastní stravování" | **živý**, Firmy.cz aktivní | návrh **VYŘADIT** |
-| `mlynarka-ubytovani-v-krkonosich` | doložen **opak**: „Objekt se pronajímá celý", restaurace je „přilehlá" | živý | návrh **VYŘADIT** |
-| `felicity-grand-apartments` | hospoda je v **jiné budově** téhož provozovatele (čp. 155 × náš čp. 224) | Firmy.cz: „Firma neměla delší dobu aktualizaci." | návrh **VYŘADIT** |
-| `hribeci-bouda` | žádný pramen otevřený dnes nedokládá veřejný přístup | archiv, 410 Gone, 404, smyčka 302 | **na telefonát** |
+| Kandidát                          | Občerstvení pro veřejnost                                                | Stav provozu                                     | Verdikt           |
+| --------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------ | ----------------- |
+| `chata-medika-2411927307`         | žádné — vlastní web nabízí „kuchyň pro vlastní stravování"               | **živý**, Firmy.cz aktivní                       | návrh **VYŘADIT** |
+| `mlynarka-ubytovani-v-krkonosich` | doložen **opak**: „Objekt se pronajímá celý", restaurace je „přilehlá"   | živý                                             | návrh **VYŘADIT** |
+| `felicity-grand-apartments`       | hospoda je v **jiné budově** téhož provozovatele (čp. 155 × náš čp. 224) | Firmy.cz: „Firma neměla delší dobu aktualizaci." | návrh **VYŘADIT** |
+| `hribeci-bouda`                   | žádný pramen otevřený dnes nedokládá veřejný přístup                     | archiv, 410 Gone, 404, smyčka 302                | **na telefonát**  |
 
 ### Nález dne: cizí budova podruhé ve dvou dnech — a tentokrát to prozradilo číslo popisné
 
@@ -1486,30 +1483,29 @@ se musí dohledat číslo popisné té hospody.
 
 ## DRUHÁ FRONTA KOŠE C3 SESTAVENA (16. 9. 2026) — a shluk tří domů v Horním Maršově padl celý
 
-Fronta z 6. 9. 2026 (deset „nejsilnějších" + dva jmenovaní trasou) je od
-15. 9. dočtená, takže tahle session postavila **druhou frontu** a začala ji
+Fronta z 6. 9. 2026 (deset „nejsilnějších" + dva jmenovaní trasou) je od 15. 9. dočtená, takže tahle session postavila **druhou frontu** a začala ji
 číst. Pořadí backlogu se nemění, **DATA-04 / DATA-05 / DATA-20 / DATA-22 /
-DATA-25 / DATA-28 i F1-IMPL zůstávají blokované** ze stejných důvodů — od
-10. 9. do repa nepřibyl Michalův commit.
+DATA-25 / DATA-28 i F1-IMPL zůstávají blokované** ze stejných důvodů — od 10. 9. do repa nepřibyl Michalův commit.
 
 ### Kritérium druhé fronty: o jeden stupeň volnější než 6. 9.
 
 První fronta brala kombinaci **do 50 m od značky + dvě a víc značek do 250 m
-+ rozcestník do 150 m**. Ta množina je vyčerpaná. Druhá fronta drží první
-dvě podmínky a **pouští tu nejpřísnější (rozcestník)**:
 
-| # | kandidát | k značce | značek do 250 m | rozcestník |
-| --- | --- | --- | --- | --- |
-| 1 | `chata-kovarna` | 8 m | 3 | 277 m |
-| 2 | `apartman-u-potoka` | 8 m | 3 | 315 m |
-| 3 | `chata-tobisek` | 9 m | 4 | 158 m |
-| 4 | `chalupa-marsovka` | 10 m | 3 | 275 m |
-| 5 | `sliwkowa-chata-sliwkowa-chata` | 13 m | 4 | 5132 m |
-| 6 | `chata-baraba` | 17 m | 2 | 480 m |
-| 7 | `chata-popelka` | 20 m | 2 | 486 m |
-| 8 | `szkolne-schronisko-mlodziezowe-skalnik` | 23 m | 2 | 8346 m |
-| 9 | `horska-chata-hanapetr` | 24 m | 2 | 341 m |
-| 10 | `dom-pod-jaworami` | 29 m | 3 | 5629 m |
+- rozcestník do 150 m**. Ta množina je vyčerpaná. Druhá fronta drží první
+  dvě podmínky a **pouští tu nejpřísnější (rozcestník)**:
+
+| #   | kandidát                                 | k značce | značek do 250 m | rozcestník |
+| --- | ---------------------------------------- | -------- | --------------- | ---------- |
+| 1   | `chata-kovarna`                          | 8 m      | 3               | 277 m      |
+| 2   | `apartman-u-potoka`                      | 8 m      | 3               | 315 m      |
+| 3   | `chata-tobisek`                          | 9 m      | 4               | 158 m      |
+| 4   | `chalupa-marsovka`                       | 10 m     | 3               | 275 m      |
+| 5   | `sliwkowa-chata-sliwkowa-chata`          | 13 m     | 4               | 5132 m     |
+| 6   | `chata-baraba`                           | 17 m     | 2               | 480 m      |
+| 7   | `chata-popelka`                          | 20 m     | 2               | 486 m      |
+| 8   | `szkolne-schronisko-mlodziezowe-skalnik` | 23 m     | 2               | 8346 m     |
+| 9   | `horska-chata-hanapetr`                  | 24 m     | 2               | 341 m      |
+| 10  | `dom-pod-jaworami`                       | 29 m     | 3               | 5629 m     |
 
 Za desítkou zbývají ještě `chata-u-kohouta` (30 m), `pension-chata-lovrana`
 (38 m) a `sruby-podspalov` (49 m); `hotel-cerna-bouda`, `schronisko-srebrny-potok`
@@ -1536,8 +1532,7 @@ způsob, který 6. 9. slíbil vedlejší nález o čtrnácti shlucích.
 provozovatelé (`marsovka.cz` × `ubytovanikrkonose-marsov.cz`) a dva různé
 telefony. Kovárna je **Kovářská 86** a třetí provozovatel. Práh 30 m je tedy
 minul správně — a je to **třetí den po sobě, kdy o vztahu dvou blízkých bodů
-rozhodlo číslo popisné, ne vzdálenost** (14. 9. shodné kontakty u depandance,
-15. 9. rozdílná čp. u Felicity). K otevřené otázce ze 4. 9. o sousedství
+rozhodlo číslo popisné, ne vzdálenost** (14. 9. shodné kontakty u depandance, 15. 9. rozdílná čp. u Felicity). K otevřené otázce ze 4. 9. o sousedství
 47 metrů: měření samo neurčí nic, ale **měření + čp. + provozovatel to
 rozhodne pokaždé**.
 
@@ -1545,10 +1540,10 @@ rozhodne pokaždé**.
 pramen restauraci nebo občerstvení pro veřejnost; všechny tři popisují
 stravování jako samoobslužné:
 
-| kandidát | doklad | verdikt |
-| --- | --- | --- |
-| Chata Kovárna | hkregion.cz: kuchyňský kout pro hosty; janskelazne.cz doslova „Možnost vlastního vaření" | návrh VYŘADIT |
-| Chalupa Maršovka | turistika.cz: „léto 25.900kč, zima 26.600kč / **chalupa za týden**" — cena za celý objekt | návrh VYŘADIT |
+| kandidát          | doklad                                                                                           | verdikt       |
+| ----------------- | ------------------------------------------------------------------------------------------------ | ------------- |
+| Chata Kovárna     | hkregion.cz: kuchyňský kout pro hosty; janskelazne.cz doslova „Možnost vlastního vaření"         | návrh VYŘADIT |
+| Chalupa Maršovka  | turistika.cz: „léto 25.900kč, zima 26.600kč / **chalupa za týden**" — cena za celý objekt        | návrh VYŘADIT |
 | Apartmán U potoka | vlastní web: „Plně vybavená kuchyně: lednice s mrazákem, sporák, mikrovlnka, kávovar, toustovač" | návrh VYŘADIT |
 
 **Do `data/chaty/` se nesáhlo**, nic se nevyřadilo ani nepovýšilo — všechno
@@ -1585,19 +1580,18 @@ je návrh s URL a datem v `interniPoznamky`.
 
 Pořadí backlogu se nemění, **DATA-04 / DATA-05 / DATA-20 / DATA-22 / DATA-25 /
 DATA-28 i F1-IMPL zůstávají blokované** ze stejných důvodů — od 10. 9. do repa
-nepřibyl Michalův commit. Vzato tedy „Příště" z 16. 9.: druhá fronta od
-3. místa. Přečteni **`chata-tobisek`, `sliwkowa-chata-sliwkowa-chata`,
+nepřibyl Michalův commit. Vzato tedy „Příště" z 16. 9.: druhá fronta od 3. místa. Přečteni **`chata-tobisek`, `sliwkowa-chata-sliwkowa-chata`,
 `chata-baraba` a `chata-popelka`** (3., 5., 6. a 7. místo). **Do `data/chaty/`
 se nesáhlo** — všechno jsou návrhy s URL a datem v `interniPoznamky`.
 
 ### Všichni čtyři padají na téže půlce klíče
 
-| kandidát | doklad | verdikt |
-| --- | --- | --- |
-| Chata Tobísek | czeskiegory.pl: „chata wynajmowana jest całkowicie jednej grupie dla 16-21 osób"; Firmy.cz (zápis **neaktivní**, kategorie „Horské ubytování"): „K dispozici je kuchyň, jídelna, společenská místnost a lyžárna" | návrh VYŘADIT |
+| kandidát       | doklad                                                                                                                                                                                                           | verdikt       |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| Chata Tobísek  | czeskiegory.pl: „chata wynajmowana jest całkowicie jednej grupie dla 16-21 osób"; Firmy.cz (zápis **neaktivní**, kategorie „Horské ubytování"): „K dispozici je kuchyň, jídelna, společenská místnost a lyžárna" | návrh VYŘADIT |
 | Śliwkowa Chata | e-wczasy.pl: „możliwość wynajęcia całego domku… osobno parteru lub poddasza albo pojedynczo pokoi" + „możliwość wykupienia pobytu wraz z wyżywieniem"; meteor-turystyka.pl: domek pro 8 osob s kuchyňským koutem | návrh VYŘADIT |
-| Chata Baraba | zimniubytovani.webnode.cz: „možnost samostatného vaření nebo polopenze"; mrk.cz: „Nabízíme polopenzi s chutným jídlem z naší kuchyně." | návrh VYŘADIT |
-| Chata Popelka | týž provozovatel a tytéž prameny jako Baraba | návrh VYŘADIT |
+| Chata Baraba   | zimniubytovani.webnode.cz: „možnost samostatného vaření nebo polopenze"; mrk.cz: „Nabízíme polopenzi s chutným jídlem z naší kuchyně."                                                                           | návrh VYŘADIT |
+| Chata Popelka  | týž provozovatel a tytéž prameny jako Baraba                                                                                                                                                                     | návrh VYŘADIT |
 
 Ani u jednoho ze čtyř nezmiňuje žádný pramen restauraci nebo občerstvení pro
 veřejnost. Role na trase je u všech čtyř silná (9–20 m od značky, 2–4 značky
@@ -1675,11 +1669,11 @@ DATA-28 i F1-IMPL zůstávají blokované** — od 10. 9. do repa nepřibyl Mich
 commit. Vzato „Příště" ze 17. 9.: přečteno **8.–10. místo** druhé fronty.
 **Do `data/chaty/` se nesáhlo** — návrhy s URL a datem jsou v `interniPoznamky`.
 
-| kandidát | doklad | verdikt |
-| --- | --- | --- |
-| Szkolne Schronisko Młodzieżowe „Skalnik" (Bukowiec, PL) | pawlowski.cc (2017, pěší na Głównym Szlaku Sudeckim): přespání 22 zł, o jídle „wiem, że w schronisku PTSM, go nie dostanę"; Nocowanie.pl: „kuchnię serwującą całodniowe wyżywienie" bez určení pro koho | návrh VYŘADIT — **hraniční** |
-| Horská chata HANAPETR (Dolní Dvůr) | Firmy.cz: ubytovací kategorie, „celoroční ubytování o kapacitě 42 lůžek… pro sportovní a firemní akce"; Turistika.cz: „84.000kč / chata za týden"; ČeskéHory.cz (archiv): „plné i poloviční penze" | návrh VYŘADIT |
-| Dom Pod Jaworami (Sosnówka, PL) | KarkonoszeGO (2020): „Gospoda i przytulny pensjonat z 12 miejscami noclegowymi"; Trasa dla Bobasa: „leśniczówka z noclegami i bufetem"; u kaple sv. Anny, kam vede pět značených cest včetně červené GSS | návrh **DRŽET** — chybí jen doklad dnešního provozu |
+| kandidát                                                | doklad                                                                                                                                                                                                   | verdikt                                             |
+| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| Szkolne Schronisko Młodzieżowe „Skalnik" (Bukowiec, PL) | pawlowski.cc (2017, pěší na Głównym Szlaku Sudeckim): přespání 22 zł, o jídle „wiem, że w schronisku PTSM, go nie dostanę"; Nocowanie.pl: „kuchnię serwującą całodniowe wyżywienie" bez určení pro koho  | návrh VYŘADIT — **hraniční**                        |
+| Horská chata HANAPETR (Dolní Dvůr)                      | Firmy.cz: ubytovací kategorie, „celoroční ubytování o kapacitě 42 lůžek… pro sportovní a firemní akce"; Turistika.cz: „84.000kč / chata za týden"; ČeskéHory.cz (archiv): „plné i poloviční penze"       | návrh VYŘADIT                                       |
+| Dom Pod Jaworami (Sosnówka, PL)                         | KarkonoszeGO (2020): „Gospoda i przytulny pensjonat z 12 miejscami noclegowymi"; Trasa dla Bobasa: „leśniczówka z noclegami i bufetem"; u kaple sv. Anny, kam vede pět značených cest včetně červené GSS | návrh **DRŽET** — chybí jen doklad dnešního provozu |
 
 ### Nález dne: Dom Pod Jaworami — první kandidát druhé fronty, který nepadá
 
@@ -1725,11 +1719,11 @@ commit. Vzato „Příště" z 19. 9.: přečtena **11.–13. místo** druhé fr
 její zbytek. **Do `data/chaty/` se nesáhlo** — návrhy s URL a datem jsou
 v `interniPoznamky` příslušných kandidátů.
 
-| kandidát | doklad | verdikt |
-| --- | --- | --- |
-| Chata U Kohouta (Janské Lázně / Černá hora) | **žádný pramen**: jediná stopa je titulek mrtvého zápisu netfirmy.cz („Chata U Kohouta – Janské Lázně", stránka vrací 410 Gone); seznam ubytování v Janských Lázních na ČeskéHory.cz objekt neuvádí | návrh VYŘADIT — **z nedoložitelnosti**, ne z doloženého opaku |
-| Pension Chata Lovrana (Janské Lázně) | Hkregion.cz: pokoje 2–6 lůžek, „společenská místnost s barem", česká kuchyně, „Každou středu (i v zimě) se griluje"; TravelContact.cz kategorie „Horské chaty"; SkiResort: „Snídaně, Polopenze, Plná penze" v sekci pro školy; JanskeLazne.cz: „v hlavní budově je jídelna, kde se podávají snídaně, večeře a obědy" + „Součástí penzionu je také restaurace" (bez slova o neubytovaných) | návrh VYŘADIT — **hraniční** |
-| sruby Podspálov (Spálov u Železného Brodu) | Turistika.cz: „Český ráj / Podkrkonoší / Spálov", „léto 9.000kč, zima 8.000kč / **srub za týden**", 1–16 osob, kuchyňka | návrh VYŘADIT — a **navíc mimo oblast** |
+| kandidát                                    | doklad                                                                                                                                                                                                                                                                                                                                                                                    | verdikt                                                       |
+| ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| Chata U Kohouta (Janské Lázně / Černá hora) | **žádný pramen**: jediná stopa je titulek mrtvého zápisu netfirmy.cz („Chata U Kohouta – Janské Lázně", stránka vrací 410 Gone); seznam ubytování v Janských Lázních na ČeskéHory.cz objekt neuvádí                                                                                                                                                                                       | návrh VYŘADIT — **z nedoložitelnosti**, ne z doloženého opaku |
+| Pension Chata Lovrana (Janské Lázně)        | Hkregion.cz: pokoje 2–6 lůžek, „společenská místnost s barem", česká kuchyně, „Každou středu (i v zimě) se griluje"; TravelContact.cz kategorie „Horské chaty"; SkiResort: „Snídaně, Polopenze, Plná penze" v sekci pro školy; JanskeLazne.cz: „v hlavní budově je jídelna, kde se podávají snídaně, večeře a obědy" + „Součástí penzionu je také restaurace" (bez slova o neubytovaných) | návrh VYŘADIT — **hraniční**                                  |
+| sruby Podspálov (Spálov u Železného Brodu)  | Turistika.cz: „Český ráj / Podkrkonoší / Spálov", „léto 9.000kč, zima 8.000kč / **srub za týden**", 1–16 osob, kuchyňka                                                                                                                                                                                                                                                                   | návrh VYŘADIT — a **navíc mimo oblast**                       |
 
 ### Nález dne: okno oblasti chytlo cizí pohoří podruhé — a tentokrát není kam kandidáta přeřadit
 
@@ -1738,8 +1732,7 @@ krkonošského okna DATA-01 (`lngMin` 15,3). Měřením: **11 437 m** k nejbliž
 krkonošskému kandidátovi (Sokolská chata Babeta) a **16 399 m** k nejbližšímu
 publikovanému profilu (Chata Studenov). Pramen sám objekt řadí do „Český ráj /
 Podkrkonoší". Je to **druhý doložený případ, kdy okno jedné oblasti chytlo
-cizí pohoří** — první byla `jestrebi-bouda` (Jestřebí hory), kvůli které se
-28. 8. zakládalo Broumovsko. Rozdíl je v tom, že tehdy bylo kam oblast
+cizí pohoří** — první byla `jestrebi-bouda` (Jestřebí hory), kvůli které se 28. 8. zakládalo Broumovsko. Rozdíl je v tom, že tehdy bylo kam oblast
 založit, protože kandidát klíč splňoval; tady klíč nesplňuje (pronájem celého
 srubu po týdnech), takže přeřazení nic nezachrání. `cesky-raj` i `podkrkonosi`
 jsou navíc zatím jen složky kandidátů — v `scripts/oblasti.ts` nakonfigurované
@@ -1790,22 +1783,28 @@ na stav provozu, ne na nedoložitelnost. Otázka pro Michala je v deníku.
 se nepřepisují, jen se sem přenášejí přesně tak, jak je zapsaly příslušné
 oddíly níž. **Kdo čte dál, dopisuje sem.**
 
-Koš C3 má **120 kandidátů** (měření 6. 9.). Přečteno je jich **43**, tedy
-35,8 %; nepřečtených je **77**. *(Dopsáno 28. 9. 2026 o šest kandidátů páté
-fronty — první fronty stavěné podle identifikátoru.)*
+Koš C3 má **120 kandidátů** (měření 6. 9.). Přečteno (či z fronty rozhodnuto) je jich **49**, tedy
+40,8 %; nepřečtených je **71**. _(Dopsáno 28. 9. 2026 o šest kandidátů páté
+fronty — první fronty stavěné podle identifikátoru — a 30. 9. 2026 o pět
+kandidátů šesté fronty plus jednu rozhodnutou duplicitu, která se nečte.)_
 
-| verdikt                                                      | počet | kdo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ------------------------------------------------------------ | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| obě půlky klíče — k povýšení                                 | 2     | `chata-viktorka`, `bouda-mama`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| klíč splněn, visí na klíči střediska                         | 1     | `wellness-hotel-liberecka-bouda`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| sporné — doklad neunese ani jeden směr                       | 1     | `chata-pod-lipami`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| držet, rozhodne telefonát nebo chybí pramen                  | 3     | `hribeci-bouda`, `chata-jestrab`, `dom-pod-jaworami`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| škrtnuto z fronty jako vedlejší budova publikovaného profilu | 1     | `hotel-spindlerova-bouda-depandance`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| návrh VYŘADIT                                                | 29    | `chata-gracie`, `chata-medika-2411927307`, `mlynarka-ubytovani-v-krkonosich`, `felicity-grand-apartments`, `chata-kovarna`, `chalupa-marsovka`, `apartman-u-potoka`, `chata-tobisek`, `sliwkowa-chata-sliwkowa-chata`, `chata-baraba`, `chata-popelka`, `horska-chata-hanapetr`, `pension-chata-lovrana`, `sruby-podspalov`, `penzion-karlova-chata`, `chalupa-u-medveda`, `zielony-domek`, `lyzarsky-vlek-ubytovani`, `apartamenty-every-sky`, `chalupa-baba-jaga`, `domek-w-karkonoszach`, `osada-sniezka`, `wioska-finska-kalevala`, `szkolne-schronisko-mlodziezowe-plum`, `szkolne-schronisko-mlodziezowe-zloty-widok`, `baronova-bouda`, `chata-baronka`, `bergpoolhaus`, `browarowka` |
-| hraniční — čeká na klíč střediska / Michalovu výjimku        | 2     | `szkolne-schronisko-mlodziezowe-skalnik`, `capkova-chata`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| BEZ VERDIKTU — nebylo co číst                                | 4     | `chata-u-kohouta`, `chalupa-u-rihu`, `apartmany-tri-boudy`, `chalupa-sport`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| verdikt                                                           | počet | kdo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| ----------------------------------------------------------------- | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| obě půlky klíče — k povýšení                                      | 2     | `chata-viktorka`, `bouda-mama`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| klíč splněn, visí na klíči střediska                              | 1     | `wellness-hotel-liberecka-bouda`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| sporné — doklad neunese ani jeden směr                            | 1     | `chata-pod-lipami`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| držet, rozhodne telefonát nebo chybí pramen                       | 3     | `hribeci-bouda`, `chata-jestrab`, `dom-pod-jaworami`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| škrtnuto z fronty jako vedlejší budova publikovaného profilu      | 1     | `hotel-spindlerova-bouda-depandance`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| škrtnuto z fronty jako ROZHODNUTÁ DUPLICITA publikovaného profilu | 1     | `hotel-cerna-bouda` (= `cerna-bouda`, 14 m, registr `_jmenovci.yaml` z 22. 8. 2026)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| návrh VYŘADIT                                                     | 34    | `chata-gracie`, `chata-medika-2411927307`, `mlynarka-ubytovani-v-krkonosich`, `felicity-grand-apartments`, `chata-kovarna`, `chalupa-marsovka`, `apartman-u-potoka`, `chata-tobisek`, `sliwkowa-chata-sliwkowa-chata`, `chata-baraba`, `chata-popelka`, `horska-chata-hanapetr`, `pension-chata-lovrana`, `sruby-podspalov`, `penzion-karlova-chata`, `chalupa-u-medveda`, `zielony-domek`, `lyzarsky-vlek-ubytovani`, `apartamenty-every-sky`, `chalupa-baba-jaga`, `domek-w-karkonoszach`, `osada-sniezka`, `wioska-finska-kalevala`, `szkolne-schronisko-mlodziezowe-plum`, `szkolne-schronisko-mlodziezowe-zloty-widok`, `baronova-bouda`, `chata-baronka`, `bergpoolhaus`, `browarowka`, `contemplace`, `czarodziejska-gora`, `grohmanova-bouda`, `hajenka-haida`, `holiday-park-resort` |
+| hraniční — čeká na klíč střediska / Michalovu výjimku             | 2     | `szkolne-schronisko-mlodziezowe-skalnik`, `capkova-chata`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| BEZ VERDIKTU — nebylo co číst                                     | 4     | `chata-u-kohouta`, `chalupa-u-rihu`, `apartmany-tri-boudy`, `chalupa-sport`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
-Kontrolní součet: 2 + 1 + 1 + 3 + 1 + 29 + 2 + 4 = **43**.
+Kontrolní součet: 2 + 1 + 1 + 3 + 1 + 1 + 34 + 2 + 4 = **49**.
+_(Aktualizováno 30. 9. 2026: +5 návrhů na vyřazení z pěti čtených
+kandidátů šesté fronty, +1 nový řádek „rozhodnutá duplicita" pro
+`hotel-cerna-bouda`, který se nečte. `grohmanova-bouda` je počítána
+mezi návrhy na vyřazení, ale patří zároveň do DATA-25 — viz oddíl níž.)_
 
 **Oprava součtu — „26 návrhů na vyřazení" byl součet dvou různých věcí.**
 Zápisy z 24., 25. i 26. 9. vedly rozpad tak, že ze seznamu vypadl řádek
@@ -1845,13 +1844,13 @@ jediného dotazu do sítě. Nic nezapisuje do `data/`, nic nevyřazuje.
 
 ### Kalibrace na jednadvaceti přečtených
 
-| signál | označil z přečtených | z toho na vyřazení | koho označil mimo |
-| --- | --- | --- | --- |
-| tourism=apartment nebo hostel | 1 / 21 | 1 | — |
-| jméno nese slovo ubytování | 6 / 21 | 6 | — |
-| jméno nese slovo ubytování a ŽÁDNÉ slovo boudy | 6 / 21 | 6 | — |
-| žádná gastro stopa v tagech | 21 / 21 | 16 | `chata-jestrab`, `chata-viktorka`, `dom-pod-jaworami`, `hotel-spindlerova-bouda-depandance`, `hribeci-bouda` |
-| bez webu i telefonu (není co číst) | 8 / 21 | 7 | `hribeci-bouda` |
+| signál                                         | označil z přečtených | z toho na vyřazení | koho označil mimo                                                                                            |
+| ---------------------------------------------- | -------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------ |
+| tourism=apartment nebo hostel                  | 1 / 21               | 1                  | —                                                                                                            |
+| jméno nese slovo ubytování                     | 6 / 21               | 6                  | —                                                                                                            |
+| jméno nese slovo ubytování a ŽÁDNÉ slovo boudy | 6 / 21               | 6                  | —                                                                                                            |
+| žádná gastro stopa v tagech                    | 21 / 21              | 16                 | `chata-jestrab`, `chata-viktorka`, `dom-pod-jaworami`, `hotel-spindlerova-bouda-depandance`, `hribeci-bouda` |
+| bez webu i telefonu (není co číst)             | 8 / 21               | 7                  | `hribeci-bouda`                                                                                              |
 
 Základní podíl vyřazení mezi přečtenými je 16/21. Z toho plyne:
 
@@ -1869,30 +1868,30 @@ Základní podíl vyřazení mezi přečtenými je 16/21. Z toho plyne:
 
 ### Co signál najde ve zbývajících 99
 
-| tourism | v koši | přečteno | z toho na vyřazení |
-| --- | --- | --- | --- |
-| `chalet` | 69 | 12 | 10 |
-| `guest_house` | 34 | 5 | 4 |
-| `hotel` | 12 | 3 | 1 |
-| `hostel` | 4 | 1 | 1 |
-| `apartment` | 1 | 0 | 0 |
+| tourism       | v koši | přečteno | z toho na vyřazení |
+| ------------- | ------ | -------- | ------------------ |
+| `chalet`      | 69     | 12       | 10                 |
+| `guest_house` | 34     | 5        | 4                  |
+| `hotel`       | 12     | 3        | 1                  |
+| `hostel`      | 4      | 1        | 1                  |
+| `apartment`   | 1      | 0        | 0                  |
 
 **Lexikon jména označil 12 z 99.** Pořadí čtení, ne verdikt:
 
-| kandidát | tourism | slovo ve jméně | gastro stopa | web/telefon |
-| --- | --- | --- | --- | --- |
-| `apartamenty-every-sky` — Apartamenty Every Sky | `chalet` | apartament | — | ne |
-| `apartmany-tri-boudy` — Apartmány tři boudy | `hotel` | apartm | — | ano |
-| `domek-w-karkonoszach` — Domek w Karkonoszach | `chalet` | domek | — | ano |
-| `chalupa-baba-jaga` — Chalupa Baba Jaga | `apartment` | chalupa | — | ne |
-| `chalupa-sport` — Chalupa Sport | `chalet` | chalupa | — | ne |
-| `chalupa-u-medveda` — Chalupa u Medvěda | `chalet` | chalupa | — | ano |
-| `chalupa-u-rihu` — Chalupa U Říhů | `chalet` | chalupa | — | ano |
-| `lyzarsky-vlek-ubytovani` — Lyžařský vlek - ubytování | `chalet` | ubytov | — | ano |
-| `penzion-karlova-chata` — Penzion Karlova chata | `guest_house` | penzion | — | ano |
-| `penzion-modrokamenna-bouda` — Penzion Modrokamenná bouda | `guest_house` | penzion | — | ano |
-| `wellness-hotel-liberecka-bouda` — Wellness hotel LIBERECKÁ BOUDA | `hotel` | wellness | — | ano |
-| `zielony-domek` — Zielony Domek | `chalet` | domek | — | ne |
+| kandidát                                                          | tourism       | slovo ve jméně | gastro stopa | web/telefon |
+| ----------------------------------------------------------------- | ------------- | -------------- | ------------ | ----------- |
+| `apartamenty-every-sky` — Apartamenty Every Sky                   | `chalet`      | apartament     | —            | ne          |
+| `apartmany-tri-boudy` — Apartmány tři boudy                       | `hotel`       | apartm         | —            | ano         |
+| `domek-w-karkonoszach` — Domek w Karkonoszach                     | `chalet`      | domek          | —            | ano         |
+| `chalupa-baba-jaga` — Chalupa Baba Jaga                           | `apartment`   | chalupa        | —            | ne          |
+| `chalupa-sport` — Chalupa Sport                                   | `chalet`      | chalupa        | —            | ne          |
+| `chalupa-u-medveda` — Chalupa u Medvěda                           | `chalet`      | chalupa        | —            | ano         |
+| `chalupa-u-rihu` — Chalupa U Říhů                                 | `chalet`      | chalupa        | —            | ano         |
+| `lyzarsky-vlek-ubytovani` — Lyžařský vlek - ubytování             | `chalet`      | ubytov         | —            | ano         |
+| `penzion-karlova-chata` — Penzion Karlova chata                   | `guest_house` | penzion        | —            | ano         |
+| `penzion-modrokamenna-bouda` — Penzion Modrokamenná bouda         | `guest_house` | penzion        | —            | ano         |
+| `wellness-hotel-liberecka-bouda` — Wellness hotel LIBERECKÁ BOUDA | `hotel`       | wellness       | —            | ano         |
+| `zielony-domek` — Zielony Domek                                   | `chalet`      | domek          | —            | ne          |
 
 **Vedle toho pět kandidátů se slabou gastro stopou v tazích** — koš C3 z
 definice nemá `amenity=restaurant`, ale tyhle nesou `bar` nebo
@@ -1935,14 +1934,14 @@ v **přísné** variantě (doporučené 22. 9.). Přečteno je jich **šest**, z
 čtyři zůstávají na příště. **Do `data/chaty/` se nesáhlo** — návrhy s URL
 a datem jsou v `interniPoznamky` příslušných kandidátů.
 
-| kandidát | doklad | verdikt |
-| --- | --- | --- |
-| Penzion Karlova chata (Dolní Lysečiny, Horní Maršov) | ČeskéHory.cz: druh ubytování „penzion", 28 lůžek, pokoje 2–5lůžkové, stravování „s polopenzí", plná penze na objednávku „pro skupiny na kurzech či školách v přírodě"; o neubytovaných nic; zápis archivní | návrh VYŘADIT |
-| Chalupa u Medvěda (Dolní Dvůr) | ČeskéHory.cz: „3 nové plně vybavené apartmány", 18 lůžek; jediné jmenované občerstvení je v okolí („2x restaurace, samoobsluha s bufetem"), tedy cizí podniky; zápis archivní | návrh VYŘADIT |
-| Zielony Domek (Karpacz) | Karpacz.pl (oficiální městský portál): „Apartamenty Zielony Domek", Konstytucji 3 Maja 72b, 13 osob v 5 apartmánech, celoročně; o stravování nic | návrh VYŘADIT |
-| Lyžařský vlek – ubytování (Radvanice-Studénka) | ČeskéHory.cz: „apartmány", 11 lůžek, každý s vlastní kuchyňkou, bar ve společenské místnosti; Svazek obcí Jestřebí hory: areál „provozují školu lyžování, půjčovnu lyží a snowboardů, ubytování a stravování" — komu, se neříká | návrh VYŘADIT — **hraniční** a **navíc mimo oblast** |
-| Chalupa U Říhů (Dolní Dvůr) | **žádný pramen**: vlastní web (DNS se nepřeložilo), obecní web i katalog krkonose-info.cz (robots.txt ConnectTimeout); ve vyhledávání jen titulek vlastního webu | BEZ VERDIKTU — není co číst |
-| Apartmány tři boudy (Benecko) | **žádný pramen**: vlastní web triboudy.cz jen se schválením (PROVENANCE_REQUIRED), tři dotazy do vyhledávače nenašly katalogový zápis objektu | BEZ VERDIKTU — pramen existuje, nedosáhneme na něj |
+| kandidát                                             | doklad                                                                                                                                                                                                                          | verdikt                                              |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| Penzion Karlova chata (Dolní Lysečiny, Horní Maršov) | ČeskéHory.cz: druh ubytování „penzion", 28 lůžek, pokoje 2–5lůžkové, stravování „s polopenzí", plná penze na objednávku „pro skupiny na kurzech či školách v přírodě"; o neubytovaných nic; zápis archivní                      | návrh VYŘADIT                                        |
+| Chalupa u Medvěda (Dolní Dvůr)                       | ČeskéHory.cz: „3 nové plně vybavené apartmány", 18 lůžek; jediné jmenované občerstvení je v okolí („2x restaurace, samoobsluha s bufetem"), tedy cizí podniky; zápis archivní                                                   | návrh VYŘADIT                                        |
+| Zielony Domek (Karpacz)                              | Karpacz.pl (oficiální městský portál): „Apartamenty Zielony Domek", Konstytucji 3 Maja 72b, 13 osob v 5 apartmánech, celoročně; o stravování nic                                                                                | návrh VYŘADIT                                        |
+| Lyžařský vlek – ubytování (Radvanice-Studénka)       | ČeskéHory.cz: „apartmány", 11 lůžek, každý s vlastní kuchyňkou, bar ve společenské místnosti; Svazek obcí Jestřebí hory: areál „provozují školu lyžování, půjčovnu lyží a snowboardů, ubytování a stravování" — komu, se neříká | návrh VYŘADIT — **hraniční** a **navíc mimo oblast** |
+| Chalupa U Říhů (Dolní Dvůr)                          | **žádný pramen**: vlastní web (DNS se nepřeložilo), obecní web i katalog krkonose-info.cz (robots.txt ConnectTimeout); ve vyhledávání jen titulek vlastního webu                                                                | BEZ VERDIKTU — není co číst                          |
+| Apartmány tři boudy (Benecko)                        | **žádný pramen**: vlastní web triboudy.cz jen se schválením (PROVENANCE_REQUIRED), tři dotazy do vyhledávače nenašly katalogový zápis objektu                                                                                   | BEZ VERDIKTU — pramen existuje, nedosáhneme na něj   |
 
 ### Nález dne: krkonošské okno chytlo Jestřebí hory potřetí — a tentokrát je kam přeřadit
 
@@ -2010,18 +2009,17 @@ z 23. 9.: **zbývající čtyři kandidáti třetí fronty**. Tím je **třetí 
 C3 dočtena celá** (10 z 10). **Do `data/chaty/` se nesáhlo** — návrhy s URL
 a datem jsou v `interniPoznamky` příslušných kandidátů.
 
-| kandidát | doklad | verdikt |
-| --- | --- | --- |
-| Apartamenty Every Sky (Kwiatowa 7, Ściegny) | booked.com.pl: „Apartamenty Every Sky Górskie Tarasy", 8 pokojů, sauna a bazén; ze stravování „menu śniadaniowe" a „stół na świeżym powietrzu" pro ubytované; karpacz.pl u druhé adresy téhož řetězce („Apartamenty", 5 apartmánů / 21 míst) o stravování nic | návrh VYŘADIT |
-| Chalupa Baba Jaga (Prkenný Důl, Žacléř) | vlastní web baba-jaga.cz: pokoje a apartmán do 22 (+4) osob; ke stravování odkazuje na „restauraci Zelený Mlýn, která je 50 m od mé chaloupky", snídaně „na vyžádání a dle kapacity" | návrh VYŘADIT — občerstvení patří **cizí budově** |
-| Chalupa Sport (u Rokytnice nad Jizerou) | **identita nedoložena**: jediný podobný objekt (Apartmány SPORT, apartmany-sport.cz) se hlásí „přímo v centru Rokytnice", kdežto OSM objekt leží 2 459 m od střediska; adresu ani GPS pramen neuvádí, jméno „Sport" identitu neunese | BEZ VERDIKTU — není co spolehlivě přečíst |
-| Domek w Karkonoszach = **Gajowe Zacisze u Gryfiego** (Żołnierska 81c, Zachełmie) | otonoclegi.pl: „luksusowy domek letniskowy" pro 6 osob, „aneks kuchenny", jídla jen na objednávku u majitele a jen pro ubytované; veřejný provoz pramen neuvádí | návrh VYŘADIT |
+| kandidát                                                                         | doklad                                                                                                                                                                                                                                                        | verdikt                                           |
+| -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| Apartamenty Every Sky (Kwiatowa 7, Ściegny)                                      | booked.com.pl: „Apartamenty Every Sky Górskie Tarasy", 8 pokojů, sauna a bazén; ze stravování „menu śniadaniowe" a „stół na świeżym powietrzu" pro ubytované; karpacz.pl u druhé adresy téhož řetězce („Apartamenty", 5 apartmánů / 21 míst) o stravování nic | návrh VYŘADIT                                     |
+| Chalupa Baba Jaga (Prkenný Důl, Žacléř)                                          | vlastní web baba-jaga.cz: pokoje a apartmán do 22 (+4) osob; ke stravování odkazuje na „restauraci Zelený Mlýn, která je 50 m od mé chaloupky", snídaně „na vyžádání a dle kapacity"                                                                          | návrh VYŘADIT — občerstvení patří **cizí budově** |
+| Chalupa Sport (u Rokytnice nad Jizerou)                                          | **identita nedoložena**: jediný podobný objekt (Apartmány SPORT, apartmany-sport.cz) se hlásí „přímo v centru Rokytnice", kdežto OSM objekt leží 2 459 m od střediska; adresu ani GPS pramen neuvádí, jméno „Sport" identitu neunese                          | BEZ VERDIKTU — není co spolehlivě přečíst         |
+| Domek w Karkonoszach = **Gajowe Zacisze u Gryfiego** (Żołnierska 81c, Zachełmie) | otonoclegi.pl: „luksusowy domek letniskowy" pro 6 osob, „aneks kuchenny", jídla jen na objednávku u majitele a jen pro ubytované; veřejný provoz pramen neuvádí                                                                                               | návrh VYŘADIT                                     |
 
 ### Nález dne: OSM jméno bylo titulek inzerátu, ne jméno objektu
 
 `domek-w-karkonoszach` se 23. 9. nepodařilo přečíst — vyhledávač na jméno
-„Domek w Karkonoszach" vracel jen aggregátory, které spadly na robots.txt nebo
-404. Dnes ho otevřel **e-mail z OSM tagů**: `zaciszegajowe@gmail.com` je
+„Domek w Karkonoszach" vracel jen aggregátory, které spadly na robots.txt nebo 404. Dnes ho otevřel **e-mail z OSM tagů**: `zaciszegajowe@gmail.com` je
 přesmyčka jména **Gajowe Zacisze u Gryfiego**, pod kterým objekt inzeruje.
 Hledání podle OSM jména proto nemohlo uspět — „Domek w Karkonoszach" je
 popisný titulek inzerátu („domek v Krkonoších"), ne jméno objektu.
@@ -2145,12 +2143,12 @@ Tím je **čtvrtá fronta dočtena** a všechny změřené signály koše C3 jso
 vyčerpané. **Do `data/chaty/` se nesáhlo**, nic se nevyřadilo ani nepovýšilo —
 návrhy s URL a datem jsou v `interniPoznamky` kandidátů.
 
-| kandidát                                   | veřejné občerstvení                                                                  | role na trase (měřeno 26. 9.)                    | návrh                           |
-| ------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------ | ------------------------------- |
-| `wioska-finska-kalevala`                   | **ne** — snídaně ubytovaným, menu jen skupinám 15+ na 48 h, kavárnička samoobslužná | 91 m k modré, 4 značky do 250 m, rozcestník 3 801 m | VYŘADIT (a vstup jen na rezervaci) |
-| `szkolne-schronisko-mlodziezowe-plum`      | **ne, a pramen to říká sám** — plná strava jen skupinám, jednotlivec dostane kuchyň  | 105 m k modré, rozcestník 7 179 m                | VYŘADIT                         |
-| `szkolne-schronisko-mlodziezowe-zloty-widok` | **ne** — samoobslužná kuchyň + kuchyň pro skupiny + jadalnia                        | 37 m k modré, rozcestník 6 448 m                 | VYŘADIT                         |
-| `szkolne-schronisko-mlodziezowe-skalnik`   | vaří „całodzienne wyżywienie", pro koho neříká ani vlastní web                       | 23 m k červené GSS, 2 značky, rozcestník 8 346 m | BEZE ZMĚNY — hraniční, na Michalovi |
+| kandidát                                     | veřejné občerstvení                                                                 | role na trase (měřeno 26. 9.)                       | návrh                               |
+| -------------------------------------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------- | ----------------------------------- |
+| `wioska-finska-kalevala`                     | **ne** — snídaně ubytovaným, menu jen skupinám 15+ na 48 h, kavárnička samoobslužná | 91 m k modré, 4 značky do 250 m, rozcestník 3 801 m | VYŘADIT (a vstup jen na rezervaci)  |
+| `szkolne-schronisko-mlodziezowe-plum`        | **ne, a pramen to říká sám** — plná strava jen skupinám, jednotlivec dostane kuchyň | 105 m k modré, rozcestník 7 179 m                   | VYŘADIT                             |
+| `szkolne-schronisko-mlodziezowe-zloty-widok` | **ne** — samoobslužná kuchyň + kuchyň pro skupiny + jadalnia                        | 37 m k modré, rozcestník 6 448 m                    | VYŘADIT                             |
+| `szkolne-schronisko-mlodziezowe-skalnik`     | vaří „całodzienne wyżywienie", pro koho neříká ani vlastní web                      | 23 m k červené GSS, 2 značky, rozcestník 8 346 m    | BEZE ZMĚNY — hraniční, na Michalovi |
 
 ### Nález dne: vzdálenost k rozcestníku má na polské straně jiné měřítko než na české
 
@@ -2159,10 +2157,10 @@ Dnešní čtveřice má 3 801 až 8 346 m a stejnou úvahou by padla celá — p
 signál nejdřív kalibroval nad **publikovanými** chatami, u kterých o zařazení
 už není spor (jednorázový skript, nic nezapisoval):
 
-| | publikovaných | medián rozcestníku | do 500 m | nad 3 000 m | maximum |
-| --- | --- | --- | --- | --- | --- |
-| **CZ** | 59 | **130 m** | 48 | 1 (Raisova chata 9 084 m) | 9 084 m |
-| **PL** | 17 | **983 m** | 6 | 2 | **5 694 m** (Wysoki Kamień) |
+|        | publikovaných | medián rozcestníku | do 500 m | nad 3 000 m               | maximum                     |
+| ------ | ------------- | ------------------ | -------- | ------------------------- | --------------------------- |
+| **CZ** | 59            | **130 m**          | 48       | 1 (Raisova chata 9 084 m) | 9 084 m                     |
+| **PL** | 17            | **983 m**          | 6        | 2                         | **5 694 m** (Wysoki Kamień) |
 
 Medián je na polské straně **sedmkrát dál** a dvě publikované polské boudy
 (`kochanowka` 4 867 m, `schronisko-wysoki-kamien` 5 694 m) leží dál než tři ze
@@ -2177,15 +2175,15 @@ u toho objektu vyžádá jiný pohled, tohle je důvod, proč se ptát.
 ### Druhý nález: jeden e-mail na čtyři domy — poučka z 24. 9. tím dostává hranici
 
 24. 9. jsme si u `domek-w-karkonoszach` zapsali, že **u kandidátů s obecným
-jménem je e-mail z OSM silnější identifikátor než jméno**. Dnešní trojice
-schronisek tu poučku ohraničuje: telefon +48 696 046 824 a e-mail
-magdalada@poczta.onet.pl patří **čtyřem objektům jednoho správce** (Wojtek
-Szklarska Poręba, Plum, Złoty Widok, Wojtek Jelenia Góra) a v našem fondu je
-nesou tři různí kandidáti. Kontakt tedy ukazuje na **správce, ne na dům**.
-Přesná podoba poučky: sdílený kontakt otevírá prameny (proto se dnes dva
-kandidáti dali přečíst), ale identitu konkrétní budovy unese jen adresa.
-Je to třetí výskyt vzorce „jeden provozovatel, několik objektů" po Baraba ×
-Popelka (17. 9.) a Every Sky (24. 9.).
+       jménem je e-mail z OSM silnější identifikátor než jméno**. Dnešní trojice
+       schronisek tu poučku ohraničuje: telefon +48 696 046 824 a e-mail
+       magdalada@poczta.onet.pl patří **čtyřem objektům jednoho správce** (Wojtek
+       Szklarska Poręba, Plum, Złoty Widok, Wojtek Jelenia Góra) a v našem fondu je
+       nesou tři různí kandidáti. Kontakt tedy ukazuje na **správce, ne na dům**.
+       Přesná podoba poučky: sdílený kontakt otevírá prameny (proto se dnes dva
+       kandidáti dali přečíst), ale identitu konkrétní budovy unese jen adresa.
+       Je to třetí výskyt vzorce „jeden provozovatel, několik objektů" po Baraba ×
+       Popelka (17. 9.) a Every Sky (24. 9.).
 
 ### Vedlejší nálezy
 
@@ -2556,3 +2554,144 @@ Ve frontě ke čtení zbývá **53 kandidátů** z 59; následuje `contemplace`,
 `czarodziejska-gora`, `grohmanova-bouda`, `hajenka-haida`,
 `holiday-park-resort`, `hotel-cerna-bouda`. Kandidátů bez identifikátoru je
 dál 24 a stojí na konci fronty, ne mimo ni.
+
+## ŠESTÁ FRONTA KOŠE C3 — DRUHÁ DÁVKA PODLE IDENTIFIKÁTORU (30. 9. 2026) — a jeden slot ve frontě, který se vůbec neměl číst
+
+Vzato „Příště" z 28. 9.: dalších šest kandidátů fronty ke čtení. Do
+`data/chaty/` se sáhlo jen jednou, a to přípisem do `interniPoznamky`
+publikovaného profilu `cerna-bouda` (nález níž); nic se nevyřadilo ani
+nepovýšilo, verdikty jsou návrhy v `interniPoznamky` kandidátů.
+
+**Přečteno pět, šestý se nečte.** `contemplace`, `czarodziejska-gora`,
+`grohmanova-bouda`, `hajenka-haida`, `holiday-park-resort` →
+**pět návrhů na vyřazení, žádné povýšení, žádný hraniční případ.**
+`hotel-cerna-bouda` je rozhodnutá duplicita publikovaného profilu (viz níž).
+
+| kandidát              | verdikt                                 | na čem padá                                                                                                             | role na trase (250 m / rozcestník) |
+| --------------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| `contemplace`         | návrh VYŘADIT                           | pramen říká OPAK: „You are on your own in the kitchen"; dům pro 2–4 osoby, hosty posílá do restaurací v Karpaczi        | 0 tras / 3 581 m                   |
+| `czarodziejska-gora`  | návrh VYŘADIT                           | občerstvení nedoloženo (zařízení fundace, „mountain hostel … so called »barn«"); navíc leží v Rudawách, ne v Krkonoších | 0 tras / **14 907 m**              |
+| `grohmanova-bouda`    | návrh VYŘADIT, **ale patří do DATA-25** | provozní jednotky „pouze ubytovaným hostům" (pramen ARCHIVNÍ); role na trase JE doložená                                | **2 trasy** / 324 m                |
+| `hajenka-haida`       | návrh VYŘADIT                           | polopenze pro ubytované, dva nezávislé prameny, veřejné občerstvení ani jeden nezmiňuje                                 | 0 tras / 595 m                     |
+| `holiday-park-resort` | návrh VYŘADIT                           | resort přes 200 domků otevřený v září 2022, gastro pro hosty; Cieplice = lázeňská část Jelenie Góry v kotlině           | 0 tras / **11 423 m**              |
+
+### Nález dne: ve frontě ke čtení stojí tři slota, o kterých repo už od 22. 8. ví, že se čtou zbytečně
+
+`hotel-cerna-bouda` (node/2398705807) je **týž objekt jako publikovaný profil
+`data/chaty/krkonose/cerna-bouda.yaml`** — 14 metrů od sebe. Rozhodnuto to
+bylo **22. 8. 2026** v registru `data/_jmenovci.yaml` (jádro „cerna"), a to
+doslova: „NENÍ jmenovec, ale TÝŽ OBJEKT ve dvou zápisech… Kandidát se proto
+NEPOVYŠUJE jako druhý profil." Do dnešní fronty se přesto dostal, protože
+fronta z 27. 9. se stavěla **jen podle úrovně identifikátoru** a rozhodnuté
+duplicity nefiltrovala — přitom mechanismus na to v repu je
+(`rozhodnuteDuplicity()` v `scripts/triaz-kos-c.ts`) a `triaz-role-na-trase.ts`
+značku duplicity dokonce vypisuje.
+
+**Změřeno, kolik slotů to je** (`rozhodnuteDuplicity('krkonose')` nad koš C3, 30. 9. 2026): Krkonoše mají 16 rozhodnutých duplicit, z toho **tři leží v koši
+C3 a všechny tři ve frontě ke čtení**:
+
+| kandidát                     | partner                       | vzdálenost | stav partnera           |
+| ---------------------------- | ----------------------------- | ---------- | ----------------------- |
+| `hotel-cerna-bouda`          | `krkonose/cerna-bouda`        | 14 m       | publikovaný profil      |
+| `penzion-modrokamenna-bouda` | `krkonose/modrokamenna-bouda` | 0 m        | ruční kandidát, bohatší |
+| `schronisko-srebrny-potok`   | `krkonose/srebrny-potok`      | 6 m        | publikovaný profil      |
+
+Fronta ke čtení je tím o tři kratší, a nejde o názor: u
+`penzion-modrokamenna-bouda` registr rovnou předepisuje redakční krok
+(„sloučit do bohatšího ručního souboru… a `penzion-modrokamenna-bouda`
+vyřadit jako duplicitu"), u obou zbylých partnerů profil existuje.
+**Poučka: každá příští fronta se má filtrovat `rozhodnuteDuplicity()`, ne jen
+řadit podle identifikátoru.** Návrh na trvalé řešení je v deníku jako otázka
+(kontrola v `npm run kontrola`, nebo filtr přímo ve skriptu fronty).
+
+### Druhý nález: čtení duplicity není zbytečné, když se čte PRO PROFIL
+
+Než se `hotel-cerna-bouda` z fronty škrtl, přečetl se ve prospěch profilu — a
+zúžil mezeru, kterou profil sám u sebe vede od 25. 7. 2026 („Provozní doba
+hotelové restaurace pro neubytované nedoložena"). Firmy.cz vede **samostatný
+záznam „Restaurace Černá Bouda"** na adrese profilu (Horská 171, Janské
+Lázně) s otvírací dobou **10:00–16:30 denně**, tel. +420 731 855 855, e-mail
+info@cernabouda.cz. Podstatné je, že **to není doba bistra** — u bistra profil
+vede z webu objektu „po-ne: 09.00 - 18.00hod.". Záznam tedy patří buď druhému
+gastro provozu objektu (nejspíš hotelové restauraci), nebo je to jinak
+spravovaný zápis téhož bistra. Který z těch dvou, **nerozhoduje ani záznam,
+ani web, a nedomýšlí se to**: do polí profilu se nic nezapsalo, zapsala se
+poznámka. Telefonní otázka DATA-04 se tím zpřesňuje na: _je hotelová
+restaurace otevřená neubytovaným, a je 10:00–16:30 její doba?_
+
+Slabší doklad k témuž: seznam restaurací na obecním turistickém portálu
+(janskelazne.cz) Černou boudu **neuvádí vůbec** — z Černé hory je v něm jen
+„Fordbar Černá hora" (otevřeno v době provozu lanovky 9:30–16:30).
+Nepřítomnost v seznamu není doklad o nepřístupnosti, je to absence; zapsaná
+je proto, aby se nehledala podruhé.
+
+### Třetí nález: první kandidát koše C3 s doloženou turistickou minulostí, který přesto padá
+
+`grohmanova-bouda` je **první kandidát koše C3, u kterého je druhá půlka klíče
+doložená a padá jen první** — a zároveň první, u kterého je doložená
+turistická minulost, tedy přesně to, na co se ptá **DATA-25**. Podle
+poznejdomy.cz boudu osídlila „rodina Erbenů, která boudu již v 18. století
+osídlila", kolem roku 1900 byla „proslulá svými mléčnými výrobky, které se
+dvakrát týdně dopravovaly do Vrchlabí", a ve 30. letech se proslavila
+„výbornou kuchyní" a byla „téměř stále plná hostů". Role na trase je změřená:
+190 m k červené č. 0406 [Č] Luční bouda – Vrchlabí, 2 značené trasy do 250 m.
+
+Padá jen proto, že katalog ceskehory.cz říká, že provozní jednotky slouží
+„pouze ubytovaným hostům" — a **týž katalog o sobě říká, že prezentace je
+v archivu a údaje mohou být zastaralé**. Vyloučení tedy stojí na pramenu,
+který sám přiznává, že nemusí platit dnes. Je to první případ, kdy je návrh na
+vyřazení takhle slabě podložený; proto je v deníku jako otázka, ne jako
+hotová věc.
+
+### Vedlejší nálezy
+
+- **Rozpor v kapacitě u `grohmanova-bouda`, obě čísla zapsána:** ceskehory.cz
+  24 lůžek, poznejdomy.cz 37 lůžek. Ani jeden pramen nerozhoduje, které platí.
+  Týž pramen píše, že bouda „aktuálně poskytuje celoroční ubytování" — což je
+  v rozporu s tím, že objekt je vedený v databázi prazdnedomy.cz (záznam
+  3952). Stránka se ze sandboxu nenačetla (`ROBOTS_DISALLOWED`, robots.txt
+  vrací 500), takže co v záznamu stojí, NEVÍME; přečíst ji je samostatný krok.
+- **Rozpor v adrese u `czarodziejska-gora`:** OSM `Mniszków 17`, vlastní web
+  „Mniszków 31". Souřadnicově se rozdíl neměří, číslo popisné se nedomýšlí,
+  oba zápisy jsou v kandidátovi.
+- **`PROVENANCE_REQUIRED` znovu, a dnes se obejít nedalo u čtyř z pěti.**
+  Vlastní weby `contemplace.pl`, `grohmanovabouda.cz`, `chatahaida.cz`
+  a `cernabouda.cz` se nenačetly ani po vyhledání domény (u
+  `czarodziejskagora.eu` prošla anglická verze, u `holidaypark.pl` se
+  nenačetlo nic). Všech pět verdiktů proto stojí na katalozích a inzerátech,
+  ne na vlastních webech — u `czarodziejska-gora` je to jediný důvod, proč
+  verdikt zní „nedoloženo", a ne něco silnějšího. Michalova otázka z 24. 9.
+  (smím načítat domény přímo?) je tím naléhavější než kdy dřív.
+- **Dva claimy z inzerátu u `hajenka-haida`, ani jeden ověřený:** natáčel se
+  tam „vynikající film s Vlastimilem Brodským" (film se nejmenuje) a „Pramen
+  vyvěrající v chalupě je zdrojem radioaktivní léčivé vody". Do `zajimavosti`
+  bez druhého pramene nepatří ani jeden.
+- **Nejnižší výtěžnost dávky za celý koš C3.** Pět čtených, pět návrhů na
+  vyřazení, nula povýšení — zatímco první dávka podle identifikátoru (28. 9.)
+  dala 1 povýšení ze 6. Poučka z 28. 9. („identifikátor je výtěžnější než
+  měřený signál") se tím ani nepotvrzuje, ani nevyvrací; dvě dávky po šesti
+  jsou na závěr málo a extrapolovat z nich nejde.
+- **Čtvrtý a pátý doklad ke „kandidátovi daleko od své oblasti" (otázka
+  z 23. 9.).** `czarodziejska-gora` (14,9 km k rozcestníku, vlastní web polohu
+  popisuje jako „at the foot of the Karkonosze Mountains, in the neighbourhood
+  of Rudawski Landscape Park") a `holiday-park-resort` (11,4 km, městská
+  „szlak spacerowy" jako nejbližší značka). Obě čísla jsou o řád vyšší než
+  u čehokoli, co v koši C3 obstálo.
+
+### KOŠ C3 — stav po druhé dávce šesté fronty
+
+Přečteno (či z fronty rozhodnuto) je **49 kandidátů** koše C3 ze 120
+(14.–30. 9. 2026), nepřečtených je **71**. Rozpad: **2 návrhy na povýšení**
+(`chata-viktorka`, `bouda-mama`), 1 klíč splněn a visí na klíči střediska
+(`wellness-hotel-liberecka-bouda`), 1 sporné (`chata-pod-lipami`), 3 držené
+bez verdiktu, 1 škrtnutá vedlejší budova, **1 škrtnutá rozhodnutá duplicita**
+(`hotel-cerna-bouda`), **34 návrhů na vyřazení** (29 + dnešních pět),
+**2 hraniční čekající na Michalovo rozhodnutí** a 4 bez verdiktu, protože
+nebylo co číst. Kontrolní součet: 2 + 1 + 1 + 3 + 1 + 1 + 34 + 2 + 4 = 49.
+
+Ve frontě ke čtení zbývá **47 kandidátů** z 59 (`triaz-kos-c3-identifikatory.ts`
+hlásí 34 s webem + 1 s kontaktem + 12 s adresou), a po odečtení dvou dalších
+rozhodnutých duplicit (`penzion-modrokamenna-bouda`, `schronisko-srebrny-potok`)
+je **ke skutečnému čtení 45**. Následuje `hottur-osrodek-wczasowo-wypoczynkowy`, `chata-beata`,
+`chata-biegacza`, `chata-botas`, `chata-ferra`, `chata-honzik`. Kandidátů bez
+identifikátoru je dál 24 a stojí na konci fronty, ne mimo ni.

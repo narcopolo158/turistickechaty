@@ -28,3 +28,29 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO 30. 9. 2026 (koš C3, šestá fronta — pořadí podle identifikátoru) —
+  NÁVRH: VYŘADIT. Nevyřazuji sám, rozhodne redakce. Padá na OBOU půlkách
+  klíče zařazení.
+
+  VEŘEJNÉ OBČERSTVENÍ NEDOLOŽENO, dva nezávislé prameny shodně. Vlastní web
+  (https://www.chatahaida.cz/) se ze sandboxu nenačetl (PROVENANCE_REQUIRED).
+  Přečteny ceskehory.cz
+  (https://www.ceskehory.cz/ubytovani/chata-haida-mala-upa.html) a e-chalupy.cz
+  (https://www.e-chalupy.cz/horska-chata-haida-pronajem-horni-mala-upa-ubytovani-o21723),
+  oba 30. 9. 2026: roubená hájenka, **19 osob v 5 ložnicích** (čtyři
+  čtyřlůžkové a jeden třílůžkový pokoj), **1 000 m**, Horní Malá Úpa 4,
+  pronájem po pokojích, strava formou polopenze pro ubytované („bohaté
+  snídaně", večeře o třech chodech). O občerstvení pro kolemjdoucí nemluví ani
+  jeden — je to tedy MEZERA v pramenech, ne výslovné vyloučení, byť shodná
+  napříč dvěma prameny.
+
+  ROLE NA TRASE (`scripts/triaz-role-na-trase.ts`, 30. 9. 2026): nejbližší
+  značka 277 m (zelená, Pohádková NS), **0 značených tras do 250 m**,
+  nejbližší rozcestník 595 m. Role na trase doložená NENÍ.
+
+  DVA CLAIMY Z INZERÁTU, ani jeden ověřený (e-chalupy.cz, tedy tvrzení
+  provozovatele v inzerátu): „se zde natáčel vynikající film s Vlastimilem
+  Brodským" — film se nejmenuje — a „Pramen vyvěrající v chalupě je zdrojem
+  radioaktivní léčivé vody". Zapsáno jako claim inzerátu, nic z toho
+  nepřebírám jako fakt a do `zajimavosti` to bez druhého pramene nepatří.

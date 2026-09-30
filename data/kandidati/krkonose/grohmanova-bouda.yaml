@@ -28,3 +28,42 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO 30. 9. 2026 (koš C3, šestá fronta — pořadí podle identifikátoru) —
+  NÁVRH: VYŘADIT podle dnešního klíče, ALE s doloženou turistickou minulostí
+  → PATŘÍ DO DATA-25. Nevyřazuji sám, rozhodne redakce. Je to první kandidát
+  koše C3, u kterého je DRUHÁ půlka klíče doložená a padá jen první.
+
+  VEŘEJNÉ OBČERSTVENÍ — pramen říká OPAK, ale pramen je archivní. Vlastní web
+  (http://www.grohmanovabouda.cz) se ze sandboxu nenačetl
+  (PROVENANCE_REQUIRED ani po vyhledání domény; vyhledávač doménu nenabídl
+  vůbec). Přečten katalog ceskehory.cz
+  (https://www.ceskehory.cz/ubytovani/grohmanova-bouda-strazne.html, čteno
+  30. 9. 2026): horská chata, 24 lůžek, **1 270 m**, Strážné 106 – Zadní
+  Rennerovky, strava formou polopenze, provozní jednotky (jídelna, herna,
+  plzeňská pivnice) slouží „pouze ubytovaným hostům". POZOR: tatáž stránka
+  o sobě říká, že prezentace je v archivu a údaje mohou být zastaralé —
+  vyloučení tedy stojí na pramenu, který sám přiznává, že nemusí platit dnes.
+
+  ROLE NA TRASE JE DOLOŽENÁ (`scripts/triaz-role-na-trase.ts`, 30. 9. 2026):
+  190 m k červené č. 0406 [Č] Luční bouda – Vrchlabí, **2 značené trasy do
+  250 m** (červená 190 m, žlutá 249 m), nejbližší rozcestník 324 m.
+
+  TURISTICKÁ MINULOST — DOLOŽENÁ, a proto sem DATA-25 patří. Podle
+  poznejdomy.cz (https://poznejdomy.cz/domy/detail/41-grohmanova-bouda, čteno
+  30. 9. 2026): boudu osídlila „rodina Erbenů, která boudu již v 18. století
+  osídlila"; kolem roku 1900 byla „proslulá svými mléčnými výrobky, které se
+  dvakrát týdně dopravovaly do Vrchlabí"; ve 30. letech se proslavila
+  „výbornou kuchyní" a byla „téměř stále plná hostů". Týž pramen uvádí, že
+  Pepi Erben „se roku 1952 zúčastnil zimní olympiády v Oslu". Do `zajimavosti`
+  se to zapíše až při případném povýšení, ne do kandidáta.
+
+  ROZPOR V KAPACITĚ, obě čísla vedena: ceskehory.cz **24 lůžek**,
+  poznejdomy.cz **37 lůžek** a „aktuálně poskytuje celoroční ubytování".
+  Které číslo platí, ani jeden pramen nerozhoduje. Rok vzniku neuvádí žádný
+  z obou (18. století je datum OSÍDLENÍ rodinou, ne stavby — nedomýšlím).
+
+  VEDLEJŠÍ: objekt je vedený i v databázi prazdnedomy.cz (záznam 3952), což
+  by u živé boudy bylo zvláštní; stránka se ze sandboxu nenačetla
+  (ROBOTS_DISALLOWED, robots.txt vrací 500), takže co v záznamu stojí,
+  NEVÍME. Přečíst ji je samostatný krok, ne dnešní verdikt.

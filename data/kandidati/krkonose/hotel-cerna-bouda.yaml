@@ -28,3 +28,38 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=hotel (alpine_hut = obsluhovaná, wilderness_hut
   = útulna).
+
+  30. 9. 2026 (koš C3, šestá fronta): TENTO KANDIDÁT SE NEČTE A NEPOVYŠUJE —
+  je to ROZHODNUTÁ DUPLICITA publikovaného profilu
+  `data/chaty/krkonose/cerna-bouda.yaml`, 14 m od tohoto bodu. Rozhodnuto
+  22. 8. 2026 v registru `data/_jmenovci.yaml` (jádro „cerna"), ne dnes; dnešní
+  fronta ho nabídla ke čtení jen proto, že se stavěla podle úrovně
+  identifikátoru a rozhodnuté duplicity nefiltrovala. `triaz-role-na-trase.ts`
+  značku duplicity vypisuje správně.
+
+  ABY ČTENÍ NEBYLO ZTRACENÉ, přečetlo se PRO PROFIL, a jeden doklad přineslo:
+  profil u sebe od 25. 7. 2026 vede mezeru „Provozní doba hotelové restaurace
+  pro neubytované nedoložena". Firmy.cz vede samostatný záznam **„Restaurace
+  Černá Bouda"** (https://www.firmy.cz/detail/13350963-restaurace-cerna-bouda-janske-lazne.html,
+  čteno 30. 9. 2026) na adrese **Horská 171, 542 25 Janské Lázně** — tedy na
+  adrese profilu —, s otvírací dobou **10:00–16:30 denně**, telefonem +420 731
+  855 855 a e-mailem info@cernabouda.cz. ČEMU ta doba patří, záznam NEŘÍKÁ —
+  ale NENÍ to doba bistra: u bistra profil vede z webu objektu „po-ne: 09.00 -
+  18.00hod.", což je jiné okno. Buď tedy jde o druhý gastro provoz objektu
+  (nejspíš právě hotelovou restauraci), nebo o jinak spravovaný záznam téhož
+  bistra; který z těch dvou, nerozhoduje ani záznam, ani web. Mezeru
+  o hotelové restauraci to proto NEZAVÍRÁ, jen ji zužuje na jednu ostrou
+  telefonní otázku (viz profil a DATA-04). Poznámka je zapsaná i do profilu.
+
+  DRUHÝ, SLABŠÍ NÁLEZ: seznam restaurací na obecním turistickém portálu
+  (https://www.janskelazne.cz/cz/volny-cas/restaurace/, čteno 30. 9. 2026)
+  Černou boudu NEUVÁDÍ vůbec — z Černé hory je v něm jen „Fordbar Černá hora"
+  (Černá hora 266, otevřeno v době provozu lanovky 9:30–16:30). Nepřítomnost
+  v seznamu není doklad o nepřístupnosti, jen absence; zapisuji ji, aby se
+  nehledala podruhé.
+
+  ROLE NA TRASE (`scripts/triaz-role-na-trase.ts`, 30. 9. 2026), měřeno pro
+  profil: 25 m k žluté č. 7211 [Ž] Černý Důl – Nad Portášovými boudami,
+  **4 značené trasy do 250 m** (žlutá 25 m, zelená 25 m, červená 27 m, modrá
+  27 m), nejbližší rozcestník 33 m. Je to nejbohatší křižovatka značek ze
+  všech dosud měřených objektů koše C3.

@@ -29,6 +29,126 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-09-30 — denní session: pět kandidátů dočteno bez jediného povýšení — a tři slota ve frontě, o kterých repo dávno vědělo, že se čtou zbytečně
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging) — od 10. 9. do repa nepřibyl tvůj commit. Vzal jsem
+  „Příště" z 28. 9.: **dalších šest kandidátů fronty ke čtení** (šestá fronta,
+  druhá dávka podle identifikátoru). Nic se nevyřadilo ani nepovýšilo.
+- **Přečteno pět, šestý se nečte: `contemplace`, `czarodziejska-gora`,
+  `grohmanova-bouda`, `hajenka-haida`, `holiday-park-resort`** →
+  **pět návrhů na vyřazení, žádné povýšení, žádný hraniční případ.** Nejchudší
+  dávka celého koše C3.
+- **NÁLEZ DNE: ve frontě ke čtení stojí tři slota, o kterých repo ví od 22. 8., že se čtou zbytečně.** Šestý kandidát `hotel-cerna-bouda` je
+  **rozhodnutá duplicita** publikovaného profilu `cerna-bouda` — 14 m od sebe,
+  rozhodnuto v `data/_jmenovci.yaml` ještě v srpnu („NENÍ jmenovec, ale TÝŽ
+  OBJEKT ve dvou zápisech"). Do fronty se dostal proto, že fronta z 27. 9. se
+  stavěla **jen podle úrovně identifikátoru** a duplicity nefiltrovala,
+  přitom mechanismus (`rozhodnuteDuplicity()`) je v repu a
+  `triaz-role-na-trase.ts` značku duplicity dokonce vypisuje. **Změřil jsem,
+  kolik slotů to je: tři** — vedle `hotel-cerna-bouda` ještě
+  `penzion-modrokamenna-bouda` (0 m od ručního kandidáta, registr rovnou
+  předepisuje sloučení) a `schronisko-srebrny-potok` (6 m od publikovaného
+  profilu). Ke skutečnému čtení tedy zbývá **45**, ne 47.
+- **Druhý nález: čtení duplicity není zbytečné, když se čte PRO PROFIL.** Než
+  se `hotel-cerna-bouda` z fronty škrtl, přečetl se ve prospěch profilu a
+  **zúžil mezeru, kterou profil sám u sebe vede od 25. 7.** („provozní doba
+  hotelové restaurace pro neubytované nedoložena"). Firmy.cz vede samostatný
+  záznam **„Restaurace Černá Bouda"** na adrese profilu s dobou
+  **10:00–16:30 denně** — a to **není doba bistra**, u něhož profil vede
+  „po-ne: 09.00 - 18.00hod.". Buď je to druhý gastro provoz objektu (nejspíš
+  hotelová restaurace), nebo jinak spravovaný zápis téhož bistra; nerozhoduje
+  to ani záznam, ani web, **takže do polí profilu se nic nezapsalo** — jen
+  poznámka. Otázka na telefon se tím ale zpřesnila (viz níž).
+- **Třetí nález: `grohmanova-bouda` je první kandidát koše C3 s doloženou
+  turistickou minulostí — a zároveň nejslabší podložený návrh na vyřazení.**
+  Poznejdomy.cz: „rodina Erbenů, která boudu již v 18. století osídlila",
+  kolem 1900 „proslulá svými mléčnými výrobky, které se dvakrát týdně
+  dopravovaly do Vrchlabí", ve 30. letech „výbornou kuchyní" a „téměř stále
+  plná hostů". Role na trase je změřená (190 m k červené č. 0406 Luční bouda –
+  Vrchlabí, 2 trasy do 250 m). Padá jen na tom, že ceskehory.cz píše, že
+  provozní jednotky slouží „pouze ubytovaným hostům" — a **týž katalog o sobě
+  říká, že prezentace je v archivu a údaje mohou být zastaralé**. Zapsáno i do
+  DATA-25.
+- **Čtvrtý nález: `PROVENANCE_REQUIRED` dnes nešlo obejít u čtyř z pěti.**
+  Vlastní weby `contemplace.pl`, `grohmanovabouda.cz`, `chatahaida.cz`
+  a `cernabouda.cz` se nenačetly ani po vyhledání domény. Všech pět verdiktů
+  proto stojí na katalozích a inzerátech, ne na vlastních webech.
+- **Vedlejší nálezy:** (a) rozpor v kapacitě Grohmanovy boudy 24 (ceskehory.cz)
+  vs. 37 lůžek (poznejdomy.cz), obě čísla zapsána; týž objekt je přitom vedený
+  i v databázi prazdnedomy.cz (záznam 3952), který se ze sandboxu nenačetl
+  (robots.txt vrací 500) — co v něm stojí, NEVÍME; (b) rozpor v adrese
+  `czarodziejska-gora`: OSM `Mniszków 17` vs. web „Mniszków 31"; (c) dva
+  neověřené claimy z inzerátu u `hajenka-haida` (film s Vlastimilem Brodským,
+  „radioaktivní léčivá voda" z pramene v chalupě) — do `zajimavosti` bez
+  druhého pramene nepatří; (d) **čtvrtý a pátý doklad ke „kandidátovi daleko
+  od své oblasti"**: `czarodziejska-gora` 14 907 m k rozcestníku (vlastní web:
+  „at the foot of the Karkonosze… neighbourhood of Rudawski Landscape Park",
+  tedy Rudawy) a `holiday-park-resort` 11 423 m (Cieplice = lázeňská část
+  Jelenie Góry v kotlině).
+- **Stav koše C3:** přečteno (či z fronty rozhodnuto) **49** ze 120,
+  nepřečteno **71**; ve frontě ke čtení 47, ke skutečnému čtení **45**.
+  Živá tabulka verdiktů dopsána, skripty z ní čtou správně
+  (`triaz-kos-c3-identifikatory.ts` hlásí 49 / 71).
+- **Kontroly:** `npm run kontrola` zelená (20 workflow souborů, 0 vad;
+  fixtura 25 souborů, 4 kontroly, 0 spadlo), prettier přeformátoval dotčené
+  soubory, všech sedm YAML se kontrolně přeparsovalo.
+
+**Příště:** vzít **dalších ~6 kandidátů fronty ke čtení** — následuje
+`hottur-osrodek-wczasowo-wypoczynkowy`, `chata-beata`, `chata-biegacza`,
+`chata-botas`, `chata-ferra`, `chata-honzik`. **A nejdřív z fronty vyškrtnout
+`penzion-modrokamenna-bouda` a `schronisko-srebrny-potok`** — jsou to
+rozhodnuté duplicity a čtou se zbytečně. Pořád leží Broumovsko z 28. 8., deset
+padajících testů (Postgres/exporty) a blokované DATA-04 / DATA-05 / DATA-20 /
+DATA-22 / DATA-25 / DATA-28 / F1-IMPL.
+
+**Otázky pro Michala:**
+
+- **Nové a systémové: mám přidat filtr rozhodnutých duplicit do skriptu
+  fronty, nebo kontrolu do `npm run kontrola`?** Dnes se ukázalo, že fronta
+  nabízí ke čtení objekty, o kterých registr `_jmenovci.yaml` rozhodl už
+  v srpnu. Tři slota z 47 je 6 % marné práce — a mechanismus na to v repu je,
+  jen ho fronta nepoužívá. Stačí „přidej filtr".
+- **Nové a konkrétní: `grohmanova-bouda` — vyřadit, nebo držet do DATA-25?**
+  Role na trase je doložená, turistická minulost taky (Erbenovi od 18. století,
+  mléčné výrobky do Vrchlabí, ve 30. letech „téměř stále plná hostů"), a
+  vyloučení stojí na katalogu, který o sobě říká, že je archivní. Je to první
+  takhle slabě podložený návrh na vyřazení v koši.
+- **Nové, telefonní, a hodí se k DATA-04: u Černé boudy se otázka zúžila na
+  jednu větu** — je hotelová restaurace otevřená neubytovaným, a je
+  10:00–16:30 (dle firmy.cz) její doba, nebo doba bistra? Bistro má na webu
+  objektu 9:00–18:00, takže jde o dva různé časy a nedomýšlím, čí jsou.
+- **Trvá z 28. 9.: souhlasíš s povýšením `bouda-mama`?** Stačí „ano, povyš".
+- **Trvá z 28. 9.: `capkova-chata`** je učebnicový případ tvé nezodpovězené
+  otázky o objektech ve sjezdovkových areálech.
+- **Trvá z 27. 9.: pořadí čtení podle identifikátoru** — dnešní dávka ho
+  nepodpořila (0 povýšení z 5 proti 1 ze 6 z 28. 9.). Dvě dávky jsou na závěr
+  málo, jedu v něm dál, pokud nenamítneš.
+- **Trvá z 27. 9.: smím čtení stavět po OSADÁCH** (šestice v Labské)?
+- **Trvá z 24. 9., a dnes to zdrželo čtyři čtení z pěti:** smím načíst přímo
+  domény z OSM u kandidátů, které vyhledávač nenajde?
+- **Trvá: klíč střediska.**
+- **Trvá z 26. 9.:** souhlasíš s třemi návrhy na vyřazení (Kalevala, Plum,
+  Złoty Widok) a mám u polských kandidátů přestat vyvozovat verdikt
+  z rozcestníku?
+- **Trvá z 19. 9.: výjimka pro Skalnik.**
+- **Trvá z 23. 9.:** mám přidat kontrolu „kandidát daleko od své oblasti" do
+  `npm run kontrola` jako UPOZORNĚNÍ (ne vadu)? Dnes přibyly čtvrtý a pátý
+  doklad, oba o řád za hranicí.
+- **Trvá z 21. 9.:** kandidát, u kterého se nenačetl žádný pramen (čtyři) —
+  do `_odlozeno.yaml`, nebo vyřadit jako ostatní?
+- Trvají starší otázky (Sruby Podspálov a zúžení `lngMin`; Dom Pod Jaworami —
+  zavoláš?; Baraba × Popelka; druhý klíč `rozhodnuteDuplicity`; a další
+  z 2.–28. 9.).
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. `node_modules`
+v sandboxu nejsou, `npm ci` je potřeba pustit, než se dají spustit kontroly.
+
 ## 2026-09-28 — denní session: první fronta stavěná podle identifikátoru — a druhý návrh na povýšení za patnáct dnů
 
 **Hotovo:**
@@ -257,8 +377,7 @@ v sandboxu nejsou, `npm ci` je potřeba pustit, než se dají spustit kontroly.
 - **Tři návrhy na vyřazení:** `wioska-finska-kalevala`,
   `szkolne-schronisko-mlodziezowe-plum` a `szkolne-schronisko-mlodziezowe-zloty-widok`.
   U `szkolne-schronisko-mlodziezowe-skalnik` **verdikt neměním** (hraniční, čeká
-  na tvou odpověď o výjimce) — jen jsem doplnil, co přinesl web, který se
-  19. 9. nepodařilo otevřít.
+  na tvou odpověď o výjimce) — jen jsem doplnil, co přinesl web, který se 19. 9. nepodařilo otevřít.
 - **Nález dne: vzdálenost k rozcestníku má na polské straně jiné měřítko.**
   `osada-sniezka` padla 25. 9. na 11 947 m k rozcestníku; dnešní čtveřice má
   3 801–8 346 m a stejnou úvahou by padla celá. Kalibroval jsem tedy signál nad
@@ -884,8 +1003,7 @@ rozhodnutí.
 - **Nález dne: zápis v gastro katalogu sám hospodu nedokládá.**
   `chata-baraba` **má** záznam na GastroZoom.cz — tedy v restauračním
   katalogu — a přesto nic nedokládá: kategorie zní **„Chaty a chalupy"**,
-  popis provozu, jídelníček ani otvíračka chybí, poslední aktualizace
-  25. 2. 2022. Je to **přímý protějšek včerejšího nálezu o Firmy.cz**, jen
+  popis provozu, jídelníček ani otvíračka chybí, poslední aktualizace 25. 2. 2022. Je to **přímý protějšek včerejšího nálezu o Firmy.cz**, jen
   z druhé strany. Dohromady to dává: **rozhoduje kategorie zápisu — ne
   katalog, ve kterém leží, ani to, jestli je záznam živý.**
 - **Druhý nález: `chata-baraba` a `chata-popelka` jsou dvě chalupy jednoho
@@ -1598,8 +1716,7 @@ DATA-20 / DATA-22 / DATA-25. Tři dnešní návrhy čekají na tebe.
   Druhou půlku klíče — roli na trase — držel už včerejšek: 35 m ke značce,
   rozcestník 32 m.
 - **Stránka města, která včera dvakrát spadla na timeout, se dnes otevřela
-  a nesla víc, než se čekalo:** historii (osm letních bud v polovině
-  19. století, kolem cesta horských nosičů na Sněžku; 1846 původní stavení,
+  a nesla víc, než se čekalo:** historii (osm letních bud v polovině 19. století, kolem cesta horských nosičů na Sněžku; 1846 původní stavení,
   o půl roku později zbořeno a nahrazeno hostincem, který stojí dodnes;
   po odsunu podniková chata **ČSAD Děčín** — odtud jméno; od 2006 farmaří
   manželé Mlejnkovi), farmu s vlastní mlékárnou za boudou a obsluhu v dobových
@@ -1710,7 +1827,7 @@ vyhledávání, teprve pak otevřít.
   Ze čtyř kandidátů, u kterých ten tag byl jediným dokladem občerstvení, ho
   čtení pramenů nepotvrdilo ani jednou; u dvou dokonce ukázalo, že podnik za ním
   **skončil nebo se přestavěl**. Měření z 1.–2. 9. tedy triáž seřadilo správně
-  (byla to nejvýtěžnější pětice), ale to, co změřilo, je *kandidatura na čtení*,
+  (byla to nejvýtěžnější pětice), ale to, co změřilo, je _kandidatura na čtení_,
   ne splněný klíč. `npm run kontrola` zelené.
 
 **Příště:** **dočíst `decinska-bouda`** — `pecpodsnezkou.cz/turisticke-cile/horska-farma-decinska-bouda-1/`
@@ -1733,12 +1850,12 @@ testů (Postgres/exporty) a blokované DATA-04 / DATA-05 / DATA-20 / DATA-22 / D
 - **Bere se shoda otevírací doby ve dvou nezávislých pramenech (Firmy.cz
   a OSM `check_date`) jako doklad veřejného občerstvení?** U `decinska-bouda`
   je to jediné, co k tomu máme, a rozhodne to o povýšení.
-**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na
-403 („not in this session's authorized repository set"), prochází
-s `git -c http.proxy= -c https.proxy= push origin main`. Dnes navíc
-`WebFetch` odmítal URL, které nepřišly z výsledků vyhledávání
-(„PROVENANCE_REQUIRED") — každý pramen se proto musel nejdřív najít
-přes vyhledávání, teprve pak otevřít.
+  **Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na
+  403 („not in this session's authorized repository set"), prochází
+  s `git -c http.proxy= -c https.proxy= push origin main`. Dnes navíc
+  `WebFetch` odmítal URL, které nepřišly z výsledků vyhledávání
+  („PROVENANCE_REQUIRED") — každý pramen se proto musel nejdřív najít
+  přes vyhledávání, teprve pak otevřít.
 
 - Trvá z 2. 9.: **„trasa nese boudu v názvu" jako doklad role** (`hoffmannova-bouda`)?;
   **má se práh 250 m zapsat jako konvence?**; **`jadroNazvu` a slova restaurace/hospoda?**;
@@ -1829,8 +1946,8 @@ Postgresu, resp. na exportech) a blokované DATA-04 / DATA-05 / DATA-20 / DATA-2
 - **Má se práh 250 m někde zapsat jako konvence?** Dnes je to konstanta ve
   skriptu, kalibrovaná na tvém korpusu (93 % publikovaných profilů se do něj
   vejde). Pokud ano, patří k ní i věta, že překročení prahu **není vyřazení**.
-- Trvá z 1. 9.: **má `jadroNazvu` odstraňovat i slova *restaurace / restauracja /
-  hospoda / bufet*?**; **přenášet při slučování duplicit `amenity` poraženého do
+- Trvá z 1. 9.: **má `jadroNazvu` odstraňovat i slova _restaurace / restauracja /
+  hospoda / bufet_?**; **přenášet při slučování duplicit `amenity` poraženého do
   vítěze?**; a dál **Stezka korunami stromů — dá se do Restaurace V korunách bez
   vstupenky?**; **Modrokamenná bouda — sloučit dvojici?**; **osm dvojic kandidátů
   do 10 m**; **Žižkovu boudu povýšit?**; **klíč střediska drží osm kandidátů**;
@@ -1878,15 +1995,14 @@ nepotřebovala vůbec** — podruhé za sebou.
   OSM URL do `interniPoznamky`. Přepočet korpusu ale chce běh DATA-01, a ten
   je síťový.
 - **Mez vlastního nástroje, přiznaná rovnou:** `havlova-bouda` skript sám
-  nechytí. `jadroNazvu` odstraňuje slova *chata / bouda / hotel / penzion*,
-  ale **ne slovo *restaurace***, takže jádra „havlova" a „restaurace havlova"
+  nechytí. `jadroNazvu` odstraňuje slova _chata / bouda / hotel / penzion_,
+  ale **ne slovo _restaurace_**, takže jádra „havlova" a „restaurace havlova"
   se neshodnou. Že jde o týž provoz, drží 3 m, týž web `havlovabouda.cz`
   a **sousední ID uzlů** (…892 a …893 — zapsané jedním editorem naráz).
   Sadu slov v `jadroNazvu` **neměním**: pohání slučování duplicit v celém
   korpusu. Otázka pro tebe níž.
 - **C2 — čtyři sousedé, ne doklady.** Gastro do 30 m, ale jiného jména:
-  `chata-sudecka-z-widokiem` × Sudecka chata u Prezesa (10 m — týž pár, který
-  31. 8. našla kontrola blízkých bodů), `hoffmannova-bouda` × Hoffmanovy Boudy
+  `chata-sudecka-z-widokiem` × Sudecka chata u Prezesa (10 m — týž pár, který 31. 8. našla kontrola blízkých bodů), `hoffmannova-bouda` × Hoffmanovy Boudy
   (12 m, jednotné × množné číslo), `chata-jerabinka` × Chata Hradečanka (28 m,
   osada Pomezní Boudy). Musí přečíst člověk.
 - **C3 — zbývajících 120, a NENÍ to vyřazení.** OSM mlčení není doklad absence
@@ -1918,8 +2034,8 @@ DATA-04 / DATA-05 / DATA-20 / DATA-22 / DATA-25.
 
 **Otázky pro Michala:**
 
-- **Má `jadroNazvu` odstraňovat i slova *restaurace / restauracja / hospoda /
-  bufet*?** Dnes kvůli tomu neprošla `havlova-bouda`. Pozor, není to kosmetika:
+- **Má `jadroNazvu` odstraňovat i slova _restaurace / restauracja / hospoda /
+  bufet_?** Dnes kvůli tomu neprošla `havlova-bouda`. Pozor, není to kosmetika:
   jádro pohání **slučování duplicit v DATA-01 nad celým korpusem**, takže
   rozšíření sady změní, co se sloučí — u příštího běhu, ve všech osmnácti
   oblastech. Sám to neměním.
@@ -1961,8 +2077,7 @@ u krkonošské triáže vyšlo.
     situace jako u tří ze sedmi položek koše A 25. 8.: **koš je pořadí čtení,
     ne rozhodnutí, a starší rozhodnutí ho přebíjí.**
   - **`stezka-korunami-stromu-krkonose` — občerstvení doloženo, přístupnost ne.**
-    V areálu běží **Restaurace V korunách**, denně 9:30–19:00, celoročně mimo
-    24. 12., venkovní zahrádka a v létě stánek s rychlým občerstvením (vlastní
+    V areálu běží **Restaurace V korunách**, denně 9:30–19:00, celoročně mimo 24. 12., venkovní zahrádka a v létě stánek s rychlým občerstvením (vlastní
     web provozovatele + Kudy z nudy). Křížová shoda výšky věže: OSM 45,5 m ×
     Kudy z nudy „vysoká 45 metrů". **Nepovyšovat ale:** ani jeden ze tří
     čtených pramenů neříká, jestli se do restaurace dá vejít **bez vstupenky
@@ -2018,8 +2133,7 @@ u krkonošské triáže vyšlo.
   × `sudecka-chata-u-prezesa` (9,7 m — souvisí s nálezem z 30. 8.).
   NEROZHODUJE, 5 nových testů (14 v souboru).
 - **Vlastní chyba, přiznaná v datech:** dvojici Modrokamenné jsem nejdřív zapsal
-  jako „nález nehlídaného páru". Nebyla — kontrola pár hlásila správně už od
-  22. 8., jen si vyžádala měření, které nikdo neudělal. Oprava je v obou
+  jako „nález nehlídaného páru". Nebyla — kontrola pár hlásila správně už od 22. 8., jen si vyžádala měření, které nikdo neudělal. Oprava je v obou
   kandidátských souborech, ne přepsaná.
 - `npm run kontrola` celé zelené, `tsc --noEmit` čistý.
 
@@ -2233,7 +2347,7 @@ padajících testů z 22. 8. a blokované DATA-04 / DATA-05.
   restaurace v zástavbě (Chata Karkonoska) — podle mě **ne**, je to hotelový
   podnik, ne bouda; (b) samostatný podnik u nástupu do hor (Chata Tyrolska
   u lanovky, Janská bouda nad lázněmi) — tady si netroufám, protože nástupní bod
-  *je* role na trase.
+  _je_ role na trase.
 - **Dvořákovu a Mumlavskou boudu povýšit?** U obou jsou obě půlky klíče doložené
   a nic proti nim nemám. U Mumlavské bych do profilu vzal i historii od roku
   1879, ale nese ji **jediný pramen** (blog krkonosskeboudy.cz) — chceš ji tam
@@ -2261,8 +2375,8 @@ který by u Hoffmanových bud doplnil slabší půlku klíče.
 
 ## 2026-08-28 (druhý blok, Michal online) — Wysoki Kamień povýšen a Broumovsko dostalo okno
 
-Michal odpověděl na obě otázky z dopolední session jednou větou: *„wysoku kamien
-povysit, jestrebi bouda - zalozit broumovsko - bude tam i chata hvězda."* Obojí
+Michal odpověděl na obě otázky z dopolední session jednou větou: _„wysoku kamien
+povysit, jestrebi bouda - zalozit broumovsko - bude tam i chata hvězda."_ Obojí
 odpracováno.
 
 **Hotovo:**
@@ -2759,6 +2873,7 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
 ## 2026-08-24 — denní session: 11 párů blízkých bodů rozhodnuto a zapsáno (a jeden byl falešný poplach)
 
 **Hotovo:**
+
 - **Zjištění na začátku:** **DATA-04** je dál blokovaná (dokladová část
   vyčerpaná od 2. 8., zbylé otázky jsou telefonní) a **fronta DATA-05** je taky
   mimo dosah bezobslužného běhu (beskydská sedmička čeká na re-export DATA-37,
@@ -2819,6 +2934,7 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
 `npm ci` je v čerstvém sandboxu potřeba pustit před `npm run kontrola`.
 
 **Otázky pro Michala:**
+
 - **Krkonošská trojice (Dom Śląski, Szrenica, Labská bouda) — jeden objekt,
   nebo dva?** Vypadá to na gastro POI uvnitř téhož domu (druhá OSM entita).
   Stačí říct „jeden objekt" a je to hotové; do té doby jsou v registru jako
@@ -2840,6 +2956,7 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
 ## 2026-08-23 — denní session: triáž krkonošského běhu a díra mezi třemi kontrolami
 
 **Hotovo:**
+
 - **Zjištění na začátku:** **DATA-04** je dál blokovaná (dokladová část
   vyčerpaná od 2. 8., zbylé otázky jsou telefonní) a **fronta DATA-05** je taky
   mimo dosah bezobslužného běhu — beskydská sedmička čeká na re-export DATA-37,
@@ -2858,7 +2975,7 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
   „Chata Jeřabinka" zní nadějně a v OSM je `tourism=guest_house`, kdežto
   „Horská" nezní nijak a nese `amenity=restaurant`. **Předpověď z 22. 8.
   („drtivá většina jsou apartmány a penziony") tím platí měřeně: 131 ze 187.**
-  Mez toho měření je v dokumentu přiznaná — *nepřítomnost* tagu `amenity` NENÍ
+  Mez toho měření je v dokumentu přiznaná — _nepřítomnost_ tagu `amenity` NENÍ
   doklad, že objekt občerstvení nemá; koš C je fronta na hromadné čtení, ne na
   vyřazení.
 - **Systémový nález, a je z něj kontrola, ne jednorázové měření.** Tři
@@ -2907,6 +3024,7 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
 `npm ci` je v čerstvém sandboxu potřeba pustit před `npm run kontrola`.
 
 **Otázky pro Michala:**
+
 - **Tři blízké páry v Krkonoších — jeden objekt, nebo dva?** U Dom Śląski
   (4,2 m), Szrenice (5,7 m) a Labské boudy (19,5 m) to vypadá na druhou OSM
   entitu téhož domu. Sám kandidáty nemažu ani nepovyšuji; stačí říct „jeden
@@ -2925,6 +3043,7 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
 ## 2026-08-22 (druhý blok, Michal online) — DATA-01 nad Krkonošemi doběhl
 
 **Hotovo:**
+
 - **Michal pustil DATA-01 nad Krkonošemi** (commit `d291689`, +173 kandidátů).
   Pilotní oblast běžela poprvé od 20. 7. a **obě vrstvy, které jí chyběly, se
   doplnily**: `_overpass-dle-jmen-cz.json` (28 objektů) i `-pl.json` (5),
@@ -2993,6 +3112,7 @@ apartmány a penziony, které klíčem neprojdou) a rozhodnout „Boudu Svornost
 která zůstala nevysvětlená. Nezávisle na tom: devět padajících testů.
 
 **Otázky pro Michala:**
+
 - **Smazat kandidáta `krkonose/horska-chata-portasky`?** Je to prokazatelně
   týž OSM bod jako publikovaný profil. Sám ho nemažu — je to zásah do dat.
 - **Má se idempotence DATA-01 opřít o OSM id místo jména?** Dnešní případ
@@ -3011,6 +3131,7 @@ která zůstala nevysvětlená. Nezávisle na tom: devět padajících testů.
 ## 2026-08-22 — denní session: DATA-05, ukotvená dohledávka podle jmen je změřená
 
 **Hotovo:**
+
 - **Zjištění na začátku:** **DATA-04** je dál blokovaná — dokladová část je
   vyčerpaná od 2. 8., zbývají čistě telefonní otázky (KRNAP, PTTK Jelenia
   Góra, Luční bouda, Petrova bouda) a bezobslužný běh je nemá jak položit.
@@ -3087,6 +3208,7 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
 `npm ci` je v čerstvém sandboxu potřeba pustit před `npm run kontrola`.
 
 **Otázky pro Michala:**
+
 - **Uvolnit kotvu ve jmenné dohledávce?** Viz návrh výš. Je to jednořádková
   změna, ale platí na všechny oblasti a vyžádá si re-export.
 - **Pustíš DATA-01 nad Krkonošemi?** Ptám se pošesté a je to pořád jediná
@@ -3106,6 +3228,7 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
 ## 2026-08-21 — denní session: DATA-05, chybějící vrstva dotazu je nově měřená kontrolou
 
 **Hotovo:**
+
 - **Zjištění na začátku:** **DATA-04** je dál blokovaná — dokladová část je
   vyčerpaná od 2. 8., zbývají čistě telefonní otázky (KRNAP, PTTK Jelenia
   Góra, Luční bouda, Petrova bouda) a bezobslužný běh je nemá jak položit.
@@ -3156,6 +3279,7 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
 `npm ci` je v čerstvém sandboxu potřeba pustit před `npm run kontrola`.
 
 **Otázky pro Michala:**
+
 - **Pustíš DATA-01 nad Krkonošemi?** Je to teď doložené dvěma nezávislými
   měřeními (obsah exportu + nepřítomnost jmenné vrstvy) a visí na tom
   minimálně čtyři chybějící objekty pilotní oblasti. Ptám se popáté a je to
@@ -3175,6 +3299,7 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
 ## 2026-08-20 — denní session: DATA-05, koš C dojet (a dvě mezery v pokrytí oken)
 
 **Hotovo:**
+
 - **Zjištění na začátku:** **DATA-04** je dál blokovaná — dokladová část je
   vyčerpaná od 2. 8., zbývají čistě telefonní otázky (KRNAP, PTTK Jelenia
   Góra, Luční bouda, Petrova bouda). Beru tedy **DATA-05** tam, kde včerejšek
@@ -3196,9 +3321,8 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
     kdežto okno Jizerských hor končí na **15,45** → je **2,94 km východně od
     hrany**. Jmenná vrstva ho nezachránila, protože se ptá katalogovými jmény
     **uvnitř téhož okna**. Krkonošské okno ho naopak stáhlo, jenže jen jako
-    *občerstvení u rozhledny* — a **věž nemá tag `name`**, takže skončila
-    v `preskoceno` s důvodem `bez-nazvu`. **Je to týž mechanismus, který
-    17. 8. schoval Pardubické boudy** — potřetí za čtyři dny.
+    _občerstvení u rozhledny_ — a **věž nemá tag `name`**, takže skončila
+    v `preskoceno` s důvodem `bez-nazvu`. **Je to týž mechanismus, který 17. 8. schoval Pardubické boudy** — potřetí za čtyři dny.
   - **Rozpor nedomýšlet:** výška 1058 m (OSM i katalog) × 1050 m (portál).
 - **Vedlejší změřený nález ke krkonošskému exportu:**
   `data/kandidati/krkonose/` **nemá ani jeden soubor `_overpass-dle-jmen-*.json`**,
@@ -3234,20 +3358,20 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
     boudě. Terasa s bufetem a pizzerií je přesně civilně tagovaný případ,
     kvůli kterému fix z 30. 7. vznikl.
   - **Stejná past jako u Hříběcí boudy:** prezentace na ceskehory.cz je
-    označená „Objekt v archivu – prezentace není aktivní", takže *dnešní*
+    označená „Objekt v archivu – prezentace není aktivní", takže _dnešní_
     provoz doložený není. To je otázka na telefonát.
 - **Do `data/` se ani dnes nesáhlo** — změněny jen dva dokumenty (koš C
   a backlog). `npm run kontrola` vše zelené.
 
 **Příště:** koš C je dojet, takže navázat na frontu razítek dál — zbývá
 **beskydská sedmička** (patří k DATA-37, re-export) a jména z koše G, která
-čekají na detaily razítek. Nezávisle na tom: projít stejným metrem jako
-18. 8. i ostatní vrstvy dotazu (`_overpass-dle-jmen-*`, `-rozhledny-*`) —
+čekají na detaily razítek. Nezávisle na tom: projít stejným metrem jako 18. 8. i ostatní vrstvy dotazu (`_overpass-dle-jmen-*`, `-rozhledny-*`) —
 dnešní nález ukazuje, že chybějící vrstva se pozná i pouhou nepřítomností
 souboru, což je měřitelný podpis, který mi 18. 8. chyběl.
 
 **Návrhy změn (do deníku, ne do plan.md) — sám nezapisuji, jsou to zásahy do
 konfigurace a pipeline:**
+
 1. **Posunout východní hranu okna Jizerských hor** z 15,45 na ~15,53, aby
    pokryla Wysoki Kamień a hřeben nad Szklarskou Porębou. Překryv s Krkonošemi
    je u téhle dvojice **záměrný už dnes** (komentář v `oblasti.ts` u Jizerky
@@ -3270,6 +3394,7 @@ a `wysokikamien.com.pl` sandbox nepustil** (cache-only / provenance),
 `sandsteinpfade.de` cyklí redirect http↔https.
 
 **Otázky pro Michala:**
+
 - **Posunout východní hranu okna Jizerek na ~15,53?** Je to jednořádková
   změna v `oblasti.ts`, ale vyžádá si tři re-exporty. Bez ní Wysoki Kamień
   z jizerského běhu nikdy nevypadne — a je to katalogová položka s jistotou A.
@@ -3291,6 +3416,7 @@ a `wysokikamien.com.pl` sandbox nepustil** (cache-only / provenance),
 ## 2026-08-19 — denní session: DATA-05, koš E dojet a koš C otevřen
 
 **Hotovo:**
+
 - **Zjištění na začátku:** **DATA-04** je dál blokovaná (zbývají čistě
   telefonní otázky — KRNAP, PTTK Jelenia Góra, Luční bouda, Petrova bouda;
   dokladová část je vyčerpaná od 2. 8.). Beru tedy **DATA-05** přesně tam, kde
@@ -3323,7 +3449,7 @@ a `wysokikamien.com.pl` sandbox nepustil** (cache-only / provenance),
   - **Schronisko Liczyrzepa (Karpacz) — klíčem NEPROJDE.** Je to **Szkolne
     Schronisko Młodzieżowe** v ulici Skalna uvnitř města, 50 lůžek, „kuchnia,
     w której można przygotować własne posiłki" a teplé jídlo **na objednávku
-    v sousedním penzionu**. Polské *schronisko* tu neznamená horskou chatu, ale
+    v sousedním penzionu**. Polské _schronisko_ tu neznamená horskou chatu, ale
     mládežnickou noclehárnu — **stejná past jako beskydská „Rajcza -
     Nickulina"** v témž koši. Návrh vyřazení; sám nezapisuji.
   - **Chata Paprsek (Velké Vrbno) — doložená mezera v jesenickém korpusu.**
@@ -3359,6 +3485,7 @@ Nově: **`www.paprsek.cz`, `restu.cz` a kořen `hancovabouda.cz` sandbox nepust�
 (robots.txt / provenance) — podstránky téže domény přitom projít můžou.
 
 **Otázky pro Michala:**
+
 - **Hančova bouda — zakládat?** Restaurace doložena, ale ne její nezávislost
   na ubytování; je to penzion v obci u silnice. Ber to jako otázku po hranici:
   **kde přesně končí „role na trase"** u objektů na Benecku? Odpověď bude
@@ -3380,6 +3507,7 @@ Nově: **`www.paprsek.cz`, `restu.cz` a kořen `hancovabouda.cz` sandbox nepust�
 ## 2026-08-18 — denní session: DATA-05, dohledávka tří mezer + nález staré verze exportu
 
 **Hotovo:**
+
 - **Zjištění na začátku:** **DATA-04** je dál beze změny blokovaná — zbývají
   čistě telefonní otázky (KRNAP, PTTK Jelenia Góra, Luční bouda, Petrova
   bouda), dokladová část je vyčerpaná od 2. 8. Beru tedy **DATA-05** a v ní
@@ -3449,6 +3577,7 @@ podpis, podle kterého by se stará verze poznala.
 spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`.
 
 **Otázky pro Michala:**
+
 - **Pustíš DATA-01 nad Krkonošemi znovu?** (Actions → „DATA-01: OSM export
   chat (dle oblasti)", oblast `krkonose`.) Je to jeden klik a **ruší část
   včerejší otázky**: ptal jsem se, jestli mám Hříběcí a Jilemnickou boudu
@@ -3472,6 +3601,7 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
 ## 2026-08-17 — denní session: DATA-05, koš E prověřen (3 mezery v korpusu)
 
 **Hotovo:**
+
 - **Zjištění na začátku:** **DATA-04** je dál beze změny blokovaná —
   dokladová část je vyčerpaná od 2. 8., zbývají čistě telefonní otázky
   (KRNAP, PTTK Jelenia Góra, Luční bouda, Petrova bouda) a bezobslužný
@@ -3498,8 +3628,7 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
     FACT-0131 (vznik konec 17. století na staré Slezské cestě) a
     FACT-0132 (Vlasta Burian tam v 50. letech pobýval téměř rok), oboje
     Kudy z nudy, jistota B. V žádném našem seznamu není.
-  - **Jilemnická bouda — Horní Mísečky** — FACT-0048 (Seznam Zprávy,
-    3. 8. 2025) ji uvádí jako uzel, od kterého vede na Vrbatovu boudu
+  - **Jilemnická bouda — Horní Mísečky** — FACT-0048 (Seznam Zprávy, 3. 8. 2025) ji uvádí jako uzel, od kterého vede na Vrbatovu boudu
     žlutá 2,8 km / 1,5 h. Sedí i upřesnění razítka.
   - Přidruženě **Hančova bouda** — v OSM doložená zastávkou „Benecko,
     Hančova bouda" (`node/8243433481`, `ref:idol=898`). Zastávka
@@ -3543,6 +3672,7 @@ kandidáty.
 spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`.
 
 **Otázky pro Michala:**
+
 - **Mám u Pardubických bud založit kandidáta ručně?** Pravidlo říká
   „kandidáti vznikají exportem, ne ručním zápisem", takže jsem ho
   nezaložil — ale tenhle konkrétní objekt se z exportu nikdy nevynoří,
@@ -3563,6 +3693,7 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
 ## 2026-08-16 (třetí blok, s Michalem online) — DATA-05: triáž 139 razítkových kandidátů
 
 **Hotovo:**
+
 - **Triáž 139 kandidátů z razítek → `docs/DATA-05-razitka-triaz.md`.**
   Nejdřív mechanika: porovnání názvů razítek s CELÝM fondem
   `data/kandidati/**` (jména + aliasy; přesná shoda, částečná shoda
@@ -3601,6 +3732,7 @@ v repu); koš C rozpouštět s dohledávkami dotčených oblastí; koše B a D
 čekají na tebe.
 
 **Otázky pro Michala:**
+
 - **Góry Stołowe** — Pasterka a Szczeliniec jsou nejnavštěvovanější
   schroniska Kladska hned za Broumovskem. Založit oblast (vzor ORL-01)?
   A co Góry Sowie / Pieniny?
@@ -3614,6 +3746,7 @@ v repu); koš C rozpouštět s dohledávkami dotčených oblastí; koše B a D
 ## 2026-08-16 (druhý blok, s Michalem online) — DATA-05: alias-větev dojeta
 
 **Hotovo:**
+
 - Michal odpověděl: **session smí doplňovat aliasy sama.** Alias-větev
   (10 nabídek z 15. 8.) tedy dojeta:
   - **6 aliasů doplněno do profilů:** Lesní penzion Bunč („Bunč - chata"),
@@ -3654,6 +3787,7 @@ Martiňák, Kamenná chata na Tesáku, Hubertka, Lopeník / Mikulčin vrch,
 Křemešník, Devět skal) a Zlatá Studna na Šumavě.
 
 **Otázky pro Michala:**
+
 - **„Śnieżka - Karpacz"** — patří Domu Śląskiemu, nebo je to vrcholové
   razítko? Poslední nerozhodnutá alias-nabídka.
 - **„Kamenná chata" × „Kamenná chata - Chopok"** — obě razítka se nabízejí
@@ -3665,6 +3799,7 @@ Křemešník, Devět skal) a Zlatá Studna na Šumavě.
 ## 2026-08-16 — denní session: DATA-05, kolize ve frontě rozpuzeny + kontrola redakčního registru
 
 **Hotovo:**
+
 - **Zjištění na začátku:** **DATA-04** je dál beze změny blokovaná — zbývají
   čistě telefonní otázky (KRNAP, PTTK Jelenia Góra, Luční bouda, Petrova
   bouda), dokladová část je vyčerpaná od 2. 8. Beru tedy **DATA-05**.
@@ -3691,9 +3826,9 @@ Křemešník, Devět skal) a Zlatá Studna na Šumavě.
     KANDIDÁTA `javorniky-vsetinske-vrchy/masarykova-chata` — sedí i web
     masarykovachata.cz v jeho OSM tagu. Vzdálenost 179 345 m je naměřená
     v registru jmenovců.
-  Zapsáno do `nesouvisi:` **s doklady a s datem**; fronta ke kontrole
-  **40 → 37**, vyřazené 3 → 6. Do dat o chatách to nesahá — je to jen zákaz
-  stáhnout otisk k cizí chatě, a stačí smazat řádek, když to uvidíš jinak.
+    Zapsáno do `nesouvisi:` **s doklady a s datem**; fronta ke kontrole
+    **40 → 37**, vyřazené 3 → 6. Do dat o chatách to nesahá — je to jen zákaz
+    stáhnout otisk k cizí chatě, a stačí smazat řádek, když to uvidíš jinak.
 - **Zbylá kolize se rozhodnout NEDÁ:** holá „Chata Hvězda" proti „Chatě
   Hvězda u Broumovských stěn". Checklist vede obojí; která je která, řekne až
   detail. Nechávám tobě.
@@ -3725,8 +3860,9 @@ kandidáti vznikají exportem, ne ručním zápisem.
 spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`.
 
 **Otázky pro Michala:**
+
 - **Smí session doplňovat aliasy sama?** (Ptám se podruhé — na téhle odpovědi
-  stojí další krok DATA-05. U jasných případů jako *Bunč - chata* je to
+  stojí další krok DATA-05. U jasných případů jako _Bunč - chata_ je to
   mechanická oprava jména, ne tvrzení o chatě.)
 - **Byla tři vyloučení bez detailu razítka v pořádku?** Držel jsem se pravidla
   „rozhodne jen to, co je doložené" a každý řádek nese pramen. Když řekneš
@@ -3742,6 +3878,7 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
 ## 2026-08-15 — denní session: DATA-05, heuristika kandidátů rozšířena mimo Krkonoše
 
 **Hotovo:**
+
 - **Zjištění na začátku:** **DATA-04** je dál beze změny blokovaná — dokladová
   část je vyčerpaná od 2. 8., zbývají čistě telefonní otázky (KRNAP, PTTK
   Jelenia Góra, Luční bouda, Petrova bouda), které bezobslužný běh neumí.
@@ -3756,17 +3893,17 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
 - **Výstup rozdělen na dvě různé věci**, jak navrhoval včerejší nález:
   - **„Náš profil pod jiným jménem" (8)** — razítko sdílí s profilem výrazné
     slovo, tedy nejspíš vedeme totéž místo jinak a stačí doplnit alias:
-    *Bunč - chata* → Lesní penzion Bunč, *Kamenná chata - Chopok*,
-    *Schronisko Nad Łomniczką*, *Schronisko Orlica*, *w Doline Pięciu Stawów*,
-    *Slavíč - Kolářova chata* a dvě slabší (*Josefova bouda* × Kleť přes alias
-    „Josefova věž" — nejspíš planý poplach, *Śnieżka - Karpacz* × Dom Śląski).
+    _Bunč - chata_ → Lesní penzion Bunč, _Kamenná chata - Chopok_,
+    _Schronisko Nad Łomniczką_, _Schronisko Orlica_, _w Doline Pięciu Stawów_,
+    _Slavíč - Kolářova chata_ a dvě slabší (_Josefova bouda_ × Kleť přes alias
+    „Josefova věž" — nejspíš planý poplach, _Śnieżka - Karpacz_ × Dom Śląski).
   - **Noví kandidáti (136)** — chatový název bez vazby na náš korpus, vstup
     do triáže.
 - **Brzdy proti falešným aliasům:** obecná zeměpisná a druhová slova alias
   nezakládají (polsky „hala" = horská louka, „dolina", česky „lesní"), a slovo,
   které si nárokuje víc než tři profily, přestává být výrazné. Bez toho
-  heuristika nabízela beskydskou *Halu Miziowou* ke krkonošské *Hali
-  Szrenickiej* a každou „Lesní chatu" ke třem našim „lesním".
+  heuristika nabízela beskydskou _Halu Miziowou_ ke krkonošské _Hali
+  Szrenickiej_ a každou „Lesní chatu" ke třem našim „lesním".
 - **Report přiznává strop:** 109 razítek bez shody se vědomě nezkoumá (název
   nepojmenovává stavbu — rozhledny, muzea, vrcholy). Není to doklad, že mezi
   nimi chata není.
@@ -3786,8 +3923,9 @@ Studna na Šumavě.
 spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin main`.
 
 **Otázky pro Michala:**
-- **Smí session doplňovat aliasy sama?** U jasných případů (*Bunč - chata*,
-  *Slavíč - Kolářova chata*) je to mechanická oprava jména, ne tvrzení o chatě
+
+- **Smí session doplňovat aliasy sama?** U jasných případů (_Bunč - chata_,
+  _Slavíč - Kolářova chata_) je to mechanická oprava jména, ne tvrzení o chatě
   — ale alias mění, co párování napříště najde, tak se radši ptám.
 - **40 shod ve frontě ke kontrole pořád čeká** na tvé potvrzení (z toho 8
   kolizních); report `docs/DATA-05-razitka-parovani.md`, potvrzení do
@@ -3801,6 +3939,7 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
 ## 2026-08-14 — denní session: DATA-05 párování přepočteno nad korpusem 233
 
 **Hotovo:**
+
 - **Zjištění na začátku:** položky nad DATA-05 jsou dál blokované beze změny
   — **DATA-04** zbývají čistě telefonní otázky (KRNAP, PTTK Jelenia Góra,
   Luční bouda, Petrova bouda), dokladová část je vyčerpaná od 2. 8.
@@ -3824,7 +3963,7 @@ spadne na proxy, prochází s `git -c http.proxy= -c https.proxy= push origin ma
 chat" pořád filtruje jen krkonošská klíčová slova (`KRKONOSE_KLICE`) — z **253
 razítek bez shody** proto nabídne dva. Přitom **139 z nich má chatový název**
 (bouda / chata / schronisko / baude / hütte / útulna). Jsou mezi nimi dvě různé
-věci: kandidáti na nové profily *a* minutí aliasem u chat, které už vedeme —
+věci: kandidáti na nové profily _a_ minutí aliasem u chat, které už vedeme —
 „Bunč - chata" je náš Lesní penzion Bunč. Navrhuji heuristiku rozšířit na
 chatová klíčová slova napříč oblastmi a výstup rozdělit na „náš profil pod jiným
 jménem" (= doplnit alias) a „nový kandidát" (= vstup do triáže).
@@ -3840,6 +3979,7 @@ s `git -c http.proxy= -c https.proxy= push origin main`. Klonování
 funguje normálně.
 
 **Otázky pro Michala:**
+
 - **40 shod ve frontě ke kontrole čeká na tvé potvrzení** — u osmi kolizních
   stačí rozhodnout, který objekt je ten náš; report je v
   `docs/DATA-05-razitka-parovani.md`, potvrzení do
@@ -3858,6 +3998,7 @@ funguje normálně.
 ## 2026-08-10 (sedmý blok, čtyřhodinovka na pokyn Michala) — DATA-41 dokončeno (4 nové oblasti), fronta KH dojeta, korpus 233
 
 **Hotovo:**
+
 - **DATA-41 druhá vlna dokončena — čtyři ruční kandidáti povýšeni, čtyři nové oblasti:**
   - **Lesní penzion Bunč** — první profil **Chřibů** (oblast založena). Nástupce útulny KČT z 1924 (vypálena nacisty 1942, obnovena po 1946, sto let slaveno V/2024); dnes RUDOLF JELÍNEK a.s., 69 lůžek, restaurace. Commit `8a126ae`.
   - **Chata Tesák** — první profil **Hostýnských vrchů** (oblast založena). Chata z 1934 do základů vyhořela 29. 1. 2022 (závada elektro, škoda 12 mil.); občerstvení běží v dřevěném provizoriu, obnova má projekt i povolení, chybí ≥10 mil. Jmenovci na sedle (kamenná chata KČT — budoucí kandidát!) poznamenáni. Commit `89000f5`.
@@ -3872,6 +4013,7 @@ funguje normálně.
 - Kontroly po každém kroku zelené; **korpus 233 profilů, 21 publikačních oblastí** (14 pohoří + 7 turistických oblastí).
 
 **Příště:**
+
 - Zlatá Studna (Šumava, katalog 1110 m) — rešerše nenašla provozovanou chatu, jen historii; prověřit a rozhodnout (zaniklá → data/zanikle?).
 - Rozčíst „slabé shody" katalog-pokryti (schroniska PTTK v Beskydech ×10, Churáňov, Rovina, Kotař…).
 - Dotáhnout kandidáty: Antýgl, Chata Martiňák, Kamenná chata na Tesáku, Hubertka (Chřiby), Chata Lopeník / Mikulčin vrch (Bílé Karpaty), Křemešník a Devět skal (Vysočina).
@@ -3879,6 +4021,7 @@ funguje normálně.
 - Až Michal klikne DATA-01: jeseniky (katalog čeká 6 mezer), javorniky, mala-fatra, oravska-magura, zapadne-tatry (katalog čeká 10!), slovensky-raj, bieszczady; DATA-37 beskydy znovu (přinese Martiňák s GPS).
 
 **Otázky pro Michala:**
+
 - **HUT-0109 „Horská chata Bučina"** — potvrdit sloučení s HUT-0104 (Alpská vyhlídka): druhá chata na Bučině podle rešerše neexistuje.
 - **Naturhotel Sachsenbaude a Berggasthof Kuhberg** — dva přiznané hraniční případy (wellness dům; apartmány bez restaurace). Nechat, nebo stáhnout?
 - **Zinnwaldbaude** — doména přesměrovává jinam; jestli víš, že penzion skončil, vyřadím ho rovnou.
@@ -4095,11 +4238,10 @@ katalog oblasti 8/10:
   7 pokojů/19 lůžek dle vlastního webu (rozpor s Kudy z nudy 11/27
   přiznán); lanovka 1952 z Bohosudova — 2 348 m, nejdelší sedačková bez
   mezistanice v ČR.
-- **Fichtelberghaus** (HUT-0293, A): kontinuita od 1889, požár
-  25. 2. 1963, budova 1999 ve stylu 1910 — a AKTUALITA: hotel od
+- **Fichtelberghaus** (HUT-0293, A): kontinuita od 1889, požár 25. 2. 1963, budova 1999 ve stylu 1910 — a AKTUALITA: hotel od
   1. 3. 2026 v rekonstrukci (hosté do Sachsenbaude), restaurace
-  Erzgebirgsstuben jede dál. Slug drží tvar kandidáta (hotel-…) kvůli
-  identitě páru oblast/slug.
+     Erzgebirgsstuben jede dál. Slug drží tvar kandidáta (hotel-…) kvůli
+     identitě páru oblast/slug.
 - **Schwartenbergbaude** (HUT-0294, A): spolková bauda
   Erzgebirgsvereinu 1926/27, restaurace, nocleh NE.
 - **Berggasthof Auersberg** (HUT-0297): SLABÁ SHODA ROZHODNUTA —
@@ -4127,20 +4269,21 @@ katalog oblasti 8/10:
 ORLICKÝCH HOR, vlajková loď: Fuchsova funkcionalistická chata KČT
 1924–25, sto let 2025, 54 lůžek; datum otevření 14. × 27. 9. 1925 —
 rozpor přiznán), **Domček Horskej služby na Čertovici** (rozplet sedla
-DOTAŽEN — všechny čtyři provozy mají profil; stanice HS 1968 → obnova
-17. 6. 2018, 20 lůžek, GPS z POI Cesty SNP), **Chata Opalisko**
+DOTAŽEN — všechny čtyři provozy mají profil; stanice HS 1968 → obnova 17. 6. 2018, 20 lůžek, GPS z POI Cesty SNP), **Chata Opalisko**
 (fronta „NT Liptov+Opalisko" odbavena — Opalisko povýšeno, hotel
 Liptov NEPOVÝŠEN: veřejné občerstvení nedoloženo, třída jizerské
 Barbory, zapsáno do kandidáta) a **Encián na Skalnatom plese** (VT-02
 ZAVŘENA: Jurkovičova stanice lanovky 1936–37, NKP, galerie + kavárna
-+ kaple 2015 + Dom hostí 14 lůžek; GPS z ubytovacího katalogu, v OSM
-budova chybí; rozpor provozovatele TDS × TOS se neslučuje).
+
+- kaple 2015 + Dom hostí 14 lůžek; GPS z ubytovacího katalogu, v OSM
+  budova chybí; rozpor provozovatele TDS × TOS se neslučuje).
 
 **DATA-38 HOTOVO:** druhé síto exportu — shodné jádro názvu
-+ vzdálenost do `DVOJI_ENTITA_M = 50 m` proti záznamům JINÝCH oblastí
-→ nezakládat, vypsat jako „pravděpodobně druhá OSM entita". Práh
-zdůvodněn (9 m Čarták jasný, 150 m dělí sousední chatu Gírové; případy
-50–150 m projdou a chytí je kontrola kolizí). 4 testy (50 v souboru).
+
+- vzdálenost do `DVOJI_ENTITA_M = 50 m` proti záznamům JINÝCH oblastí
+  → nezakládat, vypsat jako „pravděpodobně druhá OSM entita". Práh
+  zdůvodněn (9 m Čarták jasný, 150 m dělí sousední chatu Gírové; případy
+  50–150 m projdou a chytí je kontrola kolizí). 4 testy (50 v souboru).
 
 **KOLIZE LUŽICKÉHO EXPORTU (klik Michala, +62 kandidátů) ROZHODNUTY
 MĚŘENÍM** hned po vzniku: Česká chalupa 32 758 m, Chalupa × CHALUPA
@@ -4150,11 +4293,12 @@ Jedlová 140 896 m (jméno hory v obou pohořích). Registr 63 jader.
 
 **REŠERŠNÍ NÁLEZY ZAPSANÉ DO KANDIDÁTŮ (nepovýšeno, poctivě):**
 Švýcarská bouda (signály mimo provoz: Firmy.cz „již není aktivní"
-+ výskyt na prazdnedomy.cz — doklad zatím slabý), Barborka Klínovec
-(katalogová položka NENÍ kandidát chata-barbora z Českého Jiřetína;
-skutečná Barborka v Háji u Loučné je „penzion bez obsluhy"
-s restaurací přes silnici — třída jizerské Barbory), hotel Liptov
-(191 lůžek v jádru Jasné, strava jen pro hosty).
+
+- výskyt na prazdnedomy.cz — doklad zatím slabý), Barborka Klínovec
+  (katalogová položka NENÍ kandidát chata-barbora z Českého Jiřetína;
+  skutečná Barborka v Háji u Loučné je „penzion bez obsluhy"
+  s restaurací přes silnici — třída jizerské Barbory), hotel Liptov
+  (191 lůžek v jádru Jasné, strava jen pro hosty).
 
 **ÚKLID BACKLOGU:** odškrtnuty KONTROLA-08/09/10 (v poznámkách měly
 „HOTOVO" z 8. 8., checkboxy zůstaly) a VT-02, DATA-36, DATA-38.
