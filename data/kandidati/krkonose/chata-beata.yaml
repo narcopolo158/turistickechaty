@@ -28,3 +28,31 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO 2. 10. 2026 (šestá fronta koše C3, třetí dávka podle identifikátoru).
+  NÁVRH: VYŘADIT — padá na OBOU půlkách klíče.
+
+  Role na trase: 0 značených tras do 250 m, nejbližší značka 305 m (červená
+  č. 0403 Cesta bratří Čapků), rozcestník 316 m.
+  Občerstvení pro veřejnost: pramen říká OPAK. Jde o pronájem celé chaty se
+  čtyřmi apartmány (2× čtyřlůžkový, 2× šestilůžkový), 20 lůžek, každý apartmán
+  má „vlastní kuchyni (lednice s mrazáčkem, sporák, mikrovlnná trouba, varná
+  konvice)" — tedy vlastní vaření. Týž pramen posílá hosty na jídlo JINAM:
+  „Restaurace v hotelu Stará Celnice, penzionu Liberta a U Dána. Dál několik
+  restaurací v Horním Maršově."
+
+  POZOR, pramen je ARCHIVNÍ: ceskehory.cz u záznamu uvádí „Objekt v archivu -
+  prezentace není aktivní. Uvedené údaje nemusí být již aktuální." (týž druh
+  výhrady jako u `grohmanova-bouda` 30. 9.). U vyřazení kvůli chybějícímu
+  veřejnému gastru to ale váží míň než u povýšení — a první půlka klíče padá
+  měřením nad OSM daty, ne nad katalogem.
+
+  Adresa dle pramene: Horní Albeřice 7, Horní Maršov (OSM `obec` nenese).
+  Pozn. k poli `obec` (patří k DATA-20): Horní Albeřice jsou část obce Horní
+  Maršov — záznam uvádí obojí, profil by musel rozlišit sídlo a administrativní
+  obec.
+  DOMÉNA: OSM nese `chatabeata.cz` (bez spojovníku), vyhledávač ale nachází
+  živý vlastní web na `chata-beata.cz` (SE spojovníkem). Která z domén objektu
+  patří, odtud NEROZHODNUTO — `chata-beata.cz` se nenačetl (smyčka 302
+  https→http). Obě varianty tu jsou zapsané, nic se nepřepisuje.
+  Pramen: https://www.ceskehory.cz/ubytovani/chata-beata-horni-alberice.html

@@ -28,3 +28,35 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO 2. 10. 2026 (šestá fronta koše C3, třetí dávka podle identifikátoru).
+  NÁVRH: VYŘADIT — občerstvení pro veřejnost doloženě NENÍ; role na trase je
+  přitom z dnešní dávky nejlepší (138 m k žluté č. 7201 Vrchlabí – U Hromovky,
+  1 značená trasa do 250 m, rozcestník 1 625 m).
+
+  Co prameny říkají: megaubytko.cz vede objekt jako samoobslužný pronájem —
+  kuchyně s běžným vybavením, společné jídelní prostory, a u gastra výslovně
+  „Restaurant within 1,500 m", tedy restaurace v okolí, ne v domě. Veřejný
+  provoz tím pramen rovnou vylučuje, nejen nedokládá.
+
+  TOTOŽNOST OVĚŘENA SOUŘADNICÍ: megaubytko uvádí GPS 50.651362837278,
+  15.630159408564 — od bodu tohoto kandidáta (50.6514298, 15.6303347) je to
+  asi 25 m. Jde o týž dům; jméno „Chata Ferra" nese v Krkonoších víc záznamů,
+  proto to tu stojí výslovně.
+
+  ROZPOR V KAPACITĚ, obě čísla zapsána: megaubytko.cz „47 beds across
+  12 bedrooms", firmy.cz „Chata má kapacitu 42 lůžek ve 12 pokojích". Ani jeden
+  pramen nerozhoduje. Záznam na firmy.cz navíc nese varování „Tato firma nebo
+  pobočka již není aktivní" a uvádí „Nabízíme snídaně, polopenze a plné penze"
+  — to je strava pro ubytované, ne veřejný provoz, a je to zápis neaktivní.
+
+  ROZPOR V ADRESE A OBCI (patří k DATA-20): megaubytko „Horní Lánov 160,
+  543 42, Dolní Dvůr" — jeden řádek jmenuje DVĚ obce; firmy.cz „Horní Lánov 160,
+  543 41"; hkregion.cz objekt řadí pod Strážné a popisuje jako ležící „na vrchu
+  Vápenice poblíž střediska Strážné u Vrchlabí". Tři prameny, tři různá zařazení.
+  Nedomýšlím které platí — je to další doklad, proč pole `obec` potřebuje
+  rozhodnutou sémantiku.
+  Prameny: https://en.megaubytko.cz/chata-ferra ;
+  https://www.firmy.cz/detail/596571-rekreacni-chata-ferra-lanov-horni-lanov.html ;
+  https://www.hkregion.cz/dr-cs/3254-horska-chata-ferra.html
+  Vlastní web http://www.chataferra.cz se ze sandboxu nenačetl.

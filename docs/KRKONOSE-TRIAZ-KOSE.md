@@ -2333,67 +2333,67 @@ identifikátoru nic systematicky neschovává. Odložená jména boudy by byla:
 
 ### Fronta ke čtení (59) — pořadí čtení, ne pořadí zamítání
 
-| kandidát                                                                          | tourism       | web                                                                     | telefon | e-mail | síť | adresa                             |
-| --------------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- | ------- | ------ | --- | ---------------------------------- |
-| `baronova-bouda` — Baronova Bouda                                                 | `guest_house` | http://www.ski-baron.cz                                                 | —       | —      | —   | —                                  |
-| `bergpoolhaus` — Bergpoolhaus                                                     | `chalet`      | https://www.bergpoolhaus.eu/                                            | ano     | ano    | ano | —                                  |
-| `bouda-mama` — Bouda Máma                                                         | `hotel`       | https://www.boudamama.cz/                                               | —       | —      | —   | Pec pod Sněžkou 124                |
-| `browarowka` — Browarówka                                                         | `chalet`      | https://www.browarowka.pl/                                              | ano     | ano    | —   | Czarny Strumień 7, Łomnica         |
-| `capkova-chata` — Čapkova chata                                                   | `guest_house` | https://chaty-krkonose.cz/                                              | —       | —      | —   | Pec pod Sněžkou 42                 |
-| `contemplace` — Contemplace                                                       | `chalet`      | https://www.contemplace.pl                                              | ano     | ano    | —   | Świętego Jana z Dukli 18, Borowice |
-| `czarodziejska-gora` — Czarodziejska Góra                                         | `chalet`      | https://czarodziejskagora.eu                                            | ano     | ano    | ano | Mniszków 17, Janowice Wielkie      |
-| `grohmanova-bouda` — Grohmanova bouda                                             | `guest_house` | http://www.grohmanovabouda.cz                                           | —       | —      | —   | —                                  |
-| `hajenka-haida` — Hájenka Haida                                                   | `guest_house` | https://www.chatahaida.cz/                                              | —       | —      | —   | Horní Malá Úpa 4                   |
-| `holiday-park-resort` — Holiday Park & Resort                                     | `chalet`      | https://holidaypark.pl/uzdrowisko-cieplice-zdroj                        | ano     | —      | —   | Dolnośląska 6, Jelenia Góra        |
-| `hotel-cerna-bouda` — Hotel ČERNÁ BOUDA                                           | `hotel`       | https://www.cernabouda.cz/                                              | —       | —      | —   | —                                  |
-| `hottur-osrodek-wczasowo-wypoczynkowy` — HOTTUR Ośrodek Wczasowo-Wypoczynkowy     | `chalet`      | https://www.hottur.pl/                                                  | —       | —      | —   | —                                  |
-| `chata-baronka` — Chata Baronka                                                   | `chalet`      | http://www.ski-baron.cz                                                 | —       | —      | —   | —                                  |
-| `chata-beata` — Chata Beata                                                       | `chalet`      | http://www.chatabeata.cz                                                | —       | —      | —   | —                                  |
-| `chata-biegacza` — Chata Biegacza                                                 | `guest_house` | https://www.chatabiegacza.pl/                                           | —       | —      | —   | Odrodzenia 25, Szklarska Poręba    |
-| `chata-botas` — Chata Botas                                                       | `chalet`      | https://www.e-chalupy.cz/krkonose/chata-botas-stazne-pronajem-15627.php | ano     | —      | —   | Strážné 161                        |
-| `chata-ferra` — Chata FERRA                                                       | `chalet`      | http://www.chataferra.cz                                                | —       | —      | —   | —                                  |
-| `chata-honzik` — Chata Honzík                                                     | `chalet`      | www.chatahonzik.cz                                                      | —       | —      | —   | —                                  |
-| `chata-jitka` — Chata Jitka                                                       | `chalet`      | http://www.chatajitka.cz                                                | —       | —      | —   | —                                  |
-| `chata-kabrtova-bouda` — Chata Kábrtova Bouda                                     | `chalet`      | https://www.janskelazne.cz/cz/chata-kabrtova-bouda-cerna-hora-19.html   | —       | —      | —   | Horská 190, Janské Lázně           |
-| `chata-karolinka` — Chata Karolínka                                               | `guest_house` | https://www.chatakarolinka.cz/                                          | ano     | ano    | —   | Benecko 41                         |
-| `chata-kubik` — Chata Kubík                                                       | `chalet`      | http://www.chatakubik.cz/                                               | —       | —      | —   | —                                  |
-| `chata-medika` — Chata Medika                                                     | `chalet`      | http://www.chatamedika.cz/                                              | —       | —      | —   | Dolní Dvůr 128                     |
-| `chata-protez` — chata Protěž                                                     | `guest_house` | https://www.dominant-protez.cz/chataprotez                              | —       | —      | —   | Pec pod Sněžkou 30                 |
-| `chata-tereza` — Chata Tereza                                                     | `guest_house` | https://www.chatatereza.eu/                                             | —       | —      | —   | —                                  |
-| `chata-varta` — Chata Varta                                                       | `guest_house` | http://www.chatavarta.cz                                                | —       | —      | —   | —                                  |
-| `chata-votocka` — Chata Votočka                                                   | `guest_house` | https://www.chatavotocka.cz                                             | ano     | ano    | —   | Rokytno 54, Rokytnice nad Jizerou  |
-| `iskierka` — Iskierka                                                             | `chalet`      | www.iskierkadomek.pl                                                    | ano     | ano    | —   | Brzozowa 20, Lubawka               |
-| `janova-bouda` — Janova bouda                                                     | `guest_house` | https://www.skifamily.cz/                                               | —       | —      | —   | —                                  |
-| `jawa` — Jawa                                                                     | `chalet`      | https://chatajawa.cz/                                                   | —       | —      | —   | —                                  |
-| `lesna-chata` — Leśna Chata                                                       | `chalet`      | https://www.chatalesna.pl/                                              | ano     | ano    | —   | 1 Maja 60H                         |
-| `ludvikova-bouda` — Ludvikova bouda                                               | `chalet`      | http://www.ludvikovabouda.com/                                          | —       | —      | —   | —                                  |
-| `ministerska` — Ministerská                                                       | `chalet`      | https://ministerska.cz/                                                 | ano     | ano    | —   | —                                  |
-| `mlodziezowe-schronisko-w-staniszowie` — Młodzieżowe Schronisko w Staniszowie     | `guest_house` | https://www.schronisko.podgorzyn.pl/                                    | ano     | —      | —   | Staniszów 59                       |
-| `ostoja-karkonoska` — Ostoja Karkonoska                                           | `chalet`      | https://ostojakarkonoska.com.pl                                         | ano     | —      | —   | Jana Pawła II 33, Podgórzyn        |
-| `penzion-modrokamenna-bouda` — Penzion Modrokamenná bouda                         | `guest_house` | http://www.penzion-modrokamenna-bouda-janske-lazne.az-ubytovani.net/    | —       | —      | —   | —                                  |
-| `pod-zielonym-dachem` — Pod Zielonym Dachem                                       | `chalet`      | http://www.podzielonymdachem.i-noclegi.pl/                              | —       | —      | ano | Rędziny 23A                        |
-| `schronisko-liczyrzepa` — Schronisko Liczyrzepa                                   | `hostel`      | https://schronisko-liczyrzepa.pl/                                       | ano     | —      | —   | Skalna 45, Karpacz                 |
-| `schronisko-srebrny-potok` — Schronisko Srebrny Potok                             | `hostel`      | http://www.srebrny-potok.net/                                           | ano     | ano    | —   | Jarkowice 136                      |
-| `sokolska-chata-babeta` — Sokolská chata Babeta                                   | `chalet`      | https://sokolponikla.cz/                                                | —       | —      | —   | —                                  |
-| `szkolne-schronisko-mlodziezowe-wojtek` — Szkolne Schronisko Młodzieżowe "Wojtek" | `guest_house` | https://schronisko-wojtek.pl/                                           | ano     | ano    | —   | Piastowska 1, Szklarska Poręba     |
-| `widok-na-sniezke` — Widok na Śnieżkę                                             | `chalet`      | https://widoknasniezke.pl/                                              | —       | —      | —   | —                                  |
-| `widokowo` — Widokowo                                                             | `chalet`      | https://www.widokowo-karpacz.pl/                                        | —       | —      | —   | —                                  |
-| `wiilla-jagoda-jagniatkow` — Wiilla Jagoda Jagniątków                             | `chalet`      | https://willajagodajagniatkow.business.site/                            | ano     | —      | —   | Narciarska 7, Jelenia Góra         |
-| `zacisze-pod-smielcem` — Zacisze Pod Śmielcem                                     | `chalet`      | https://domkiwgorach.eu/                                                | —       | ano    | —   | Wczasowa 5a, Jelenia Góra          |
-| `zinneckerovy-boudy` — Zinneckerovy Boudy                                         | `chalet`      | https://zinneckerovy-boudy.cz/                                          | —       | —      | —   | —                                  |
-| `chata-gall` — Chata Gall                                                         | `chalet`      | —                                                                       | ano     | —      | —   | —                                  |
-| `dalibor` — Dalibor                                                               | `chalet`      | —                                                                       | —       | —      | —   | Špindlerův Mlýn 17                 |
-| `gorska-chata` — Górska Chata                                                     | `guest_house` | —                                                                       | —       | —      | —   | Wysoka 1, Szklarska Poręba         |
-| `chata` — Chata                                                                   | `hotel`       | —                                                                       | —       | —      | —   | Labská 22                          |
-| `chata-advokatka` — chata Advokátka                                               | `guest_house` | —                                                                       | —       | —      | —   | Luční 188, Janské Lázně            |
-| `chata-jasanka` — chata Jasanka                                                   | `guest_house` | —                                                                       | —       | —      | —   | Labská 7                           |
-| `chata-katerina` — Chata Kateřina                                                 | `guest_house` | —                                                                       | —       | —      | —   | Bedřichov 35, Špidnlerův Mlýn      |
-| `chata-solunka` — Chata Solunka                                                   | `guest_house` | —                                                                       | —       | —      | —   | Labská 61                          |
-| `chata-zapiecek` — Chata Zapiecek                                                 | `hotel`       | —                                                                       | —       | —      | —   | Karkonoska 48, Przesieka           |
-| `krausovy-boudy` — Krausovy boudy                                                 | `guest_house` | —                                                                       | —       | —      | —   | Labská 13                          |
-| `mounttain-holiday-lodges` — Mounttain Holiday Lodges                             | `chalet`      | —                                                                       | —       | —      | —   | Droga do Wodospadu 4a, Przesieka   |
-| `sporthotel-svycarska-bouda` — Sporthotel Švýcarská bouda                         | `hotel`       | —                                                                       | —       | —      | —   | Labská 1                           |
-| `turisticka-chata-lajdacek` — Turistická chata Lajdáček                           | `chalet`      | —                                                                       | —       | —      | —   | Labská 4                           |
+| kandidát                                                                                                                                           | tourism       | web                                                                     | telefon | e-mail | síť | adresa                             |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- | ------- | ------ | --- | ---------------------------------- |
+| `baronova-bouda` — Baronova Bouda                                                                                                                  | `guest_house` | http://www.ski-baron.cz                                                 | —       | —      | —   | —                                  |
+| `bergpoolhaus` — Bergpoolhaus                                                                                                                      | `chalet`      | https://www.bergpoolhaus.eu/                                            | ano     | ano    | ano | —                                  |
+| `bouda-mama` — Bouda Máma                                                                                                                          | `hotel`       | https://www.boudamama.cz/                                               | —       | —      | —   | Pec pod Sněžkou 124                |
+| `browarowka` — Browarówka                                                                                                                          | `chalet`      | https://www.browarowka.pl/                                              | ano     | ano    | —   | Czarny Strumień 7, Łomnica         |
+| `capkova-chata` — Čapkova chata                                                                                                                    | `guest_house` | https://chaty-krkonose.cz/                                              | —       | —      | —   | Pec pod Sněžkou 42                 |
+| `contemplace` — Contemplace                                                                                                                        | `chalet`      | https://www.contemplace.pl                                              | ano     | ano    | —   | Świętego Jana z Dukli 18, Borowice |
+| `czarodziejska-gora` — Czarodziejska Góra                                                                                                          | `chalet`      | https://czarodziejskagora.eu                                            | ano     | ano    | ano | Mniszków 17, Janowice Wielkie      |
+| `grohmanova-bouda` — Grohmanova bouda                                                                                                              | `guest_house` | http://www.grohmanovabouda.cz                                           | —       | —      | —   | —                                  |
+| `hajenka-haida` — Hájenka Haida                                                                                                                    | `guest_house` | https://www.chatahaida.cz/                                              | —       | —      | —   | Horní Malá Úpa 4                   |
+| `holiday-park-resort` — Holiday Park & Resort                                                                                                      | `chalet`      | https://holidaypark.pl/uzdrowisko-cieplice-zdroj                        | ano     | —      | —   | Dolnośląska 6, Jelenia Góra        |
+| ~~`hotel-cerna-bouda` — Hotel ČERNÁ BOUDA~~ **ŠKRTNUTO 30. 9. 2026 — rozhodnutá duplicita profilu `cerna-bouda`**                                  | `hotel`       | https://www.cernabouda.cz/                                              | —       | —      | —   | —                                  |
+| `hottur-osrodek-wczasowo-wypoczynkowy` — HOTTUR Ośrodek Wczasowo-Wypoczynkowy                                                                      | `chalet`      | https://www.hottur.pl/                                                  | —       | —      | —   | —                                  |
+| `chata-baronka` — Chata Baronka                                                                                                                    | `chalet`      | http://www.ski-baron.cz                                                 | —       | —      | —   | —                                  |
+| `chata-beata` — Chata Beata                                                                                                                        | `chalet`      | http://www.chatabeata.cz                                                | —       | —      | —   | —                                  |
+| `chata-biegacza` — Chata Biegacza                                                                                                                  | `guest_house` | https://www.chatabiegacza.pl/                                           | —       | —      | —   | Odrodzenia 25, Szklarska Poręba    |
+| `chata-botas` — Chata Botas                                                                                                                        | `chalet`      | https://www.e-chalupy.cz/krkonose/chata-botas-stazne-pronajem-15627.php | ano     | —      | —   | Strážné 161                        |
+| `chata-ferra` — Chata FERRA                                                                                                                        | `chalet`      | http://www.chataferra.cz                                                | —       | —      | —   | —                                  |
+| `chata-honzik` — Chata Honzík                                                                                                                      | `chalet`      | www.chatahonzik.cz                                                      | —       | —      | —   | —                                  |
+| `chata-jitka` — Chata Jitka                                                                                                                        | `chalet`      | http://www.chatajitka.cz                                                | —       | —      | —   | —                                  |
+| `chata-kabrtova-bouda` — Chata Kábrtova Bouda                                                                                                      | `chalet`      | https://www.janskelazne.cz/cz/chata-kabrtova-bouda-cerna-hora-19.html   | —       | —      | —   | Horská 190, Janské Lázně           |
+| `chata-karolinka` — Chata Karolínka                                                                                                                | `guest_house` | https://www.chatakarolinka.cz/                                          | ano     | ano    | —   | Benecko 41                         |
+| `chata-kubik` — Chata Kubík                                                                                                                        | `chalet`      | http://www.chatakubik.cz/                                               | —       | —      | —   | —                                  |
+| `chata-medika` — Chata Medika                                                                                                                      | `chalet`      | http://www.chatamedika.cz/                                              | —       | —      | —   | Dolní Dvůr 128                     |
+| `chata-protez` — chata Protěž                                                                                                                      | `guest_house` | https://www.dominant-protez.cz/chataprotez                              | —       | —      | —   | Pec pod Sněžkou 30                 |
+| `chata-tereza` — Chata Tereza                                                                                                                      | `guest_house` | https://www.chatatereza.eu/                                             | —       | —      | —   | —                                  |
+| `chata-varta` — Chata Varta                                                                                                                        | `guest_house` | http://www.chatavarta.cz                                                | —       | —      | —   | —                                  |
+| `chata-votocka` — Chata Votočka                                                                                                                    | `guest_house` | https://www.chatavotocka.cz                                             | ano     | ano    | —   | Rokytno 54, Rokytnice nad Jizerou  |
+| `iskierka` — Iskierka                                                                                                                              | `chalet`      | www.iskierkadomek.pl                                                    | ano     | ano    | —   | Brzozowa 20, Lubawka               |
+| `janova-bouda` — Janova bouda                                                                                                                      | `guest_house` | https://www.skifamily.cz/                                               | —       | —      | —   | —                                  |
+| `jawa` — Jawa                                                                                                                                      | `chalet`      | https://chatajawa.cz/                                                   | —       | —      | —   | —                                  |
+| `lesna-chata` — Leśna Chata                                                                                                                        | `chalet`      | https://www.chatalesna.pl/                                              | ano     | ano    | —   | 1 Maja 60H                         |
+| `ludvikova-bouda` — Ludvikova bouda                                                                                                                | `chalet`      | http://www.ludvikovabouda.com/                                          | —       | —      | —   | —                                  |
+| `ministerska` — Ministerská                                                                                                                        | `chalet`      | https://ministerska.cz/                                                 | ano     | ano    | —   | —                                  |
+| `mlodziezowe-schronisko-w-staniszowie` — Młodzieżowe Schronisko w Staniszowie                                                                      | `guest_house` | https://www.schronisko.podgorzyn.pl/                                    | ano     | —      | —   | Staniszów 59                       |
+| `ostoja-karkonoska` — Ostoja Karkonoska                                                                                                            | `chalet`      | https://ostojakarkonoska.com.pl                                         | ano     | —      | —   | Jana Pawła II 33, Podgórzyn        |
+| ~~`penzion-modrokamenna-bouda` — Penzion Modrokamenná bouda~~ **ŠKRTNUTO 2. 10. 2026 — rozhodnutá duplicita kandidáta `modrokamenna-bouda` (0 m)** | `guest_house` | http://www.penzion-modrokamenna-bouda-janske-lazne.az-ubytovani.net/    | —       | —      | —   | —                                  |
+| `pod-zielonym-dachem` — Pod Zielonym Dachem                                                                                                        | `chalet`      | http://www.podzielonymdachem.i-noclegi.pl/                              | —       | —      | ano | Rędziny 23A                        |
+| `schronisko-liczyrzepa` — Schronisko Liczyrzepa                                                                                                    | `hostel`      | https://schronisko-liczyrzepa.pl/                                       | ano     | —      | —   | Skalna 45, Karpacz                 |
+| ~~`schronisko-srebrny-potok` — Schronisko Srebrny Potok~~ **ŠKRTNUTO 2. 10. 2026 — rozhodnutá duplicita profilu `srebrny-potok` (6 m)**            | `hostel`      | http://www.srebrny-potok.net/                                           | ano     | ano    | —   | Jarkowice 136                      |
+| `sokolska-chata-babeta` — Sokolská chata Babeta                                                                                                    | `chalet`      | https://sokolponikla.cz/                                                | —       | —      | —   | —                                  |
+| `szkolne-schronisko-mlodziezowe-wojtek` — Szkolne Schronisko Młodzieżowe "Wojtek"                                                                  | `guest_house` | https://schronisko-wojtek.pl/                                           | ano     | ano    | —   | Piastowska 1, Szklarska Poręba     |
+| `widok-na-sniezke` — Widok na Śnieżkę                                                                                                              | `chalet`      | https://widoknasniezke.pl/                                              | —       | —      | —   | —                                  |
+| `widokowo` — Widokowo                                                                                                                              | `chalet`      | https://www.widokowo-karpacz.pl/                                        | —       | —      | —   | —                                  |
+| `wiilla-jagoda-jagniatkow` — Wiilla Jagoda Jagniątków                                                                                              | `chalet`      | https://willajagodajagniatkow.business.site/                            | ano     | —      | —   | Narciarska 7, Jelenia Góra         |
+| `zacisze-pod-smielcem` — Zacisze Pod Śmielcem                                                                                                      | `chalet`      | https://domkiwgorach.eu/                                                | —       | ano    | —   | Wczasowa 5a, Jelenia Góra          |
+| `zinneckerovy-boudy` — Zinneckerovy Boudy                                                                                                          | `chalet`      | https://zinneckerovy-boudy.cz/                                          | —       | —      | —   | —                                  |
+| `chata-gall` — Chata Gall                                                                                                                          | `chalet`      | —                                                                       | ano     | —      | —   | —                                  |
+| `dalibor` — Dalibor                                                                                                                                | `chalet`      | —                                                                       | —       | —      | —   | Špindlerův Mlýn 17                 |
+| `gorska-chata` — Górska Chata                                                                                                                      | `guest_house` | —                                                                       | —       | —      | —   | Wysoka 1, Szklarska Poręba         |
+| `chata` — Chata                                                                                                                                    | `hotel`       | —                                                                       | —       | —      | —   | Labská 22                          |
+| `chata-advokatka` — chata Advokátka                                                                                                                | `guest_house` | —                                                                       | —       | —      | —   | Luční 188, Janské Lázně            |
+| `chata-jasanka` — chata Jasanka                                                                                                                    | `guest_house` | —                                                                       | —       | —      | —   | Labská 7                           |
+| `chata-katerina` — Chata Kateřina                                                                                                                  | `guest_house` | —                                                                       | —       | —      | —   | Bedřichov 35, Špidnlerův Mlýn      |
+| `chata-solunka` — Chata Solunka                                                                                                                    | `guest_house` | —                                                                       | —       | —      | —   | Labská 61                          |
+| `chata-zapiecek` — Chata Zapiecek                                                                                                                  | `hotel`       | —                                                                       | —       | —      | —   | Karkonoska 48, Przesieka           |
+| `krausovy-boudy` — Krausovy boudy                                                                                                                  | `guest_house` | —                                                                       | —       | —      | —   | Labská 13                          |
+| `mounttain-holiday-lodges` — Mounttain Holiday Lodges                                                                                              | `chalet`      | —                                                                       | —       | —      | —   | Droga do Wodospadu 4a, Przesieka   |
+| `sporthotel-svycarska-bouda` — Sporthotel Švýcarská bouda                                                                                          | `hotel`       | —                                                                       | —       | —      | —   | Labská 1                           |
+| `turisticka-chata-lajdacek` — Turistická chata Lajdáček                                                                                            | `chalet`      | —                                                                       | —       | —      | —   | Labská 4                           |
 
 ### Kandidáti bez identifikátoru (24) — na konec fronty, ne ven z ní
 
@@ -2695,3 +2695,128 @@ rozhodnutých duplicit (`penzion-modrokamenna-bouda`, `schronisko-srebrny-potok`
 je **ke skutečnému čtení 45**. Následuje `hottur-osrodek-wczasowo-wypoczynkowy`, `chata-beata`,
 `chata-biegacza`, `chata-botas`, `chata-ferra`, `chata-honzik`. Kandidátů bez
 identifikátoru je dál 24 a stojí na konci fronty, ne mimo ni.
+
+## ŠESTÁ FRONTA KOŠE C3 — TŘETÍ DÁVKA PODLE IDENTIFIKÁTORU (2. 10. 2026) — a jméno, které v Krkonoších nosí víc domů
+
+Vzato „Příště" z 30. 9.: nejdřív vyškrtnout z fronty dvě rozhodnuté duplicity,
+pak dalších šest kandidátů. Do `data/chaty/` se dnes nesáhlo vůbec, nic se
+nevyřadilo ani nepovýšilo — verdikty jsou návrhy v `interniPoznamky`
+kandidátů.
+
+**Vyškrtnuto z fronty před čtením (bez čtení, rozhodnuto dávno):**
+`penzion-modrokamenna-bouda` (0 m od ručního kandidáta `modrokamenna-bouda`,
+registr `_jmenovci.yaml` 31. 8. 2026) a `schronisko-srebrny-potok` (6 m od
+publikovaného profilu `srebrny-potok`, registr 22. 8. 2026). Obě řádky fronty
+jsou nově **přeškrtnuté přímo v tabulce „Fronta ke čtení (59)"** i s datem
+a důvodem, aby se příští dávka nemusela spoléhat na to, že si to někdo
+pamatuje z deníku. Totéž doplněno u `hotel-cerna-bouda` (škrtnut 30. 9.).
+
+**Přečteno šest: `hottur-osrodek-wczasowo-wypoczynkowy`, `chata-beata`,
+`chata-biegacza`, `chata-botas`, `chata-ferra`, `chata-honzik`** →
+**5 návrhů na vyřazení, 1 držený bez verdiktu, žádné povýšení.**
+
+| kandidát                               | verdikt                | na čem padá                                                                                                               | role na trase (250 m / rozcestník) |
+| -------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| `hottur-osrodek-wczasowo-wypoczynkowy` | návrh VYŘADIT          | kolonijní středisko (180 lůžek); „stołówka (160 miejsc)" + kavárna, ale veřejný přístup nedoložen; role na trase JE dobrá | **2 trasy** / 3 158 m              |
+| `chata-beata`                          | návrh VYŘADIT          | pramen říká OPAK: 4 apartmány s vlastními kuchyněmi, 20 lůžek, hosty posílá do restaurací v Horním Maršově                | 0 tras / 316 m                     |
+| `chata-biegacza`                       | návrh VYŘADIT          | pensjonat pro běžkaře v zástavbě Szklarské Poręby, 16 lůžek; veřejné občerstvení nedoloženo                               | 0 tras / 3 138 m                   |
+| `chata-botas`                          | návrh VYŘADIT          | pronájem CELÉ chaty pro 1–17 osob za 25–30 tis. Kč/týden, vlastní kuchyně; bar je vybavení domu                           | 0 tras / 1 173 m                   |
+| `chata-ferra`                          | návrh VYŘADIT          | samoobslužný pronájem, pramen gastro rovnou VYLUČUJE („Restaurant within 1,500 m"); role na trase přitom nejlepší z dávky | **1 trasa** / 1 625 m              |
+| `chata-honzik`                         | **DRŽET bez verdiktu** | „1 restaurant on site", ale ani doklad, ani vyloučení veřejného přístupu; druhý pramen se nepodařilo získat               | 1 trasa / 555 m                    |
+
+### Nález dne: jméno „Chata Ferra" nese v Krkonoších víc záznamů — a rozhodla až souřadnice
+
+Hledání `chata Ferra` vrátilo tři různá zařazení téhož jména: hkregion.cz
+pod **Strážné** („na vrchu Vápenice poblíž střediska Strážné u Vrchlabí"),
+firmy.cz pod **Horní Lánov 160** (zápis označený „Tato firma nebo pobočka již
+není aktivní") a megaubytko.cz pod **„Horní Lánov 160, 543 42, Dolní Dvůr"** —
+jeden řádek adresy, dvě obce. Který záznam patří k OSM bodu kandidáta, by se
+podle jména rozhodnout nedalo.
+
+Rozhodla **souřadnice v inzerátu**: megaubytko uvádí GPS
+50.651362837278 / 15.630159408564, od bodu kandidáta (50.6514298 /
+15.6303347) je to **asi 25 m**. Teprve tím je doloženo, že samoobslužný
+pronájem s 47 lůžky a náš kandidát jsou týž dům — a verdikt stojí na pramenu
+o správném objektu.
+
+**Poučka pro frontu:** u kandidáta s obecným nebo často se opakujícím jménem
+se pramen nepřijímá podle jména a obce, ale podle souřadnice, je-li v inzerátu.
+Je to levná kontrola a dnes změnila, o čem se vlastně rozhoduje. Kde
+souřadnice v prameni není, patří do poznámky věta, že totožnost objektu
+doložena není — mlčky se nepředpokládá.
+
+### Druhý nález: dva kandidáti z dnešní dávky dokládají, že `obec` nemá jednu hodnotu, ale dvě různé role (DATA-20)
+
+Blokovaná položka DATA-20 se ptá, co pole `obec` vlastně znamená. Dnešní dávka
+přidala **dva další doklady** k tomu, že nejde o chybějící hodnoty, ale
+o chybějící definici:
+
+- `chata-ferra` — tři prameny, tři zařazení (Strážné × Horní Lánov × Dolní
+  Dvůr), a megaubytko jmenuje dvě obce v jednom řádku adresy. Sídelní útvar,
+  poštovní adresa a administrativní obec se tu rozcházejí všechny tři.
+- `chata-beata` — adresa „Horní Albeřice 7, Horní Maršov". Horní Albeřice jsou
+  část obce Horní Maršov; jako rozlišovač jmenovců (role pole podle
+  `docs/DATA-17-jmenovci.md`) je přesnější sídlo, jako administrativní údaj
+  obec. Jedno pole dvě role neunese.
+
+U obou kandidátů jsou obě hodnoty zapsané a žádná se nepřepisuje. Je to týž
+druh nálezu jako u Lysečinské boudy v DATA-20, jen podruhé a potřetí.
+
+### Vedlejší nálezy
+
+- **Pátý druh vady v OSM `website`: doména liší se o spojovník.**
+  `chata-beata` nese v OSM `chatabeata.cz`, vyhledávač ale nachází živý
+  vlastní web na `chata-beata.cz`. Která z domén objektu patří, odtud
+  NEROZHODNUTO — `chata-beata.cz` skončil ve smyčce 302 (https→http) a
+  `chatabeata.cz` se ze sandboxu nenačetl. Do kandidáta jsou zapsané obě
+  varianty, nic se nepřepisuje. Řada vad v `website` je tím za pět:
+  titulek inzerátu místo jména (24. 9.), doména sesterského objektu (26. 9.),
+  jiná živnost provozovatele (28. 9.), druhý OSM zápis téhož domu (10. 9.)
+  a teď typografická varianta domény.
+- **Rozpor v kapacitě u `chata-ferra`, obě čísla zapsána:** 47 lůžek
+  (megaubytko.cz) × 42 lůžek ve 12 pokojích (firmy.cz, zápis neaktivní).
+  Počet pokojů se shoduje (12), počet lůžek ne.
+- **Rozpor v adrese u `hottur-osrodek-wczasowo-wypoczynkowy`, obě zapsány:**
+  „Borowice 22" (borowice.com.pl) × „Sosnowka, Borowice 18" (e-turysta.com).
+  OSM adresu nenese vůbec.
+- **ARCHIVNÍ pramen podruhé za tři dny.** `chata-beata` padá na záznamu
+  ceskehory.cz, který o sobě říká „Objekt v archivu - prezentace není aktivní.
+  Uvedené údaje nemusí být již aktuální." — stejná výhrada, jaká 30. 9.
+  oslabila vyřazení `grohmanova-bouda`. Rozdíl je v tom, že `chata-beata` padá
+  i na PRVNÍ půlce klíče, a ta se měří nad OSM daty, ne nad katalogem; archivní
+  pramen tedy nerozhoduje sám.
+- **Mlčení neúplného seznamu není doklad.** U `chata-honzik` jsem zkusil
+  ověřit veřejný gastro provoz obecním seznamem restaurací Horního Maršova.
+  Anglická verze stránky vypsala **jedinou** položku (Lysečinská bouda), česká
+  verze se nenačetla. Seznam je tedy prokazatelně neúplný a to, že v něm Chata
+  Honzík není, NEDOKLÁDÁ nic — zapsáno i do kandidáta, aby se z toho příští
+  dávka nepokusila udělat argument.
+- **`PROVENANCE_REQUIRED` zase, a dnes u pěti ze šesti.** Vlastní weby
+  `hottur.pl`, `chatabeata.cz`, `chatabiegacza.pl`, `chataferra.cz`
+  a `chatahonzik.cz` se nenačetly ani po vyhledání domény. Všech šest verdiktů
+  proto stojí na katalozích, inzerátech a rezervačních agregátorech.
+  Michalova otázka z 24. 9. (smím načítat domény přímo?) je tím položená
+  posedmé.
+- **Výtěžnost třetí dávky podle identifikátoru: 0 povýšení ze 6.** Bilance
+  pořadí podle identifikátoru je po třech dávkách 1 povýšení ze 17 přečtených
+  (5,9 %) proti 1 z 37 u měřených front (2,7 %). Rozdíl je pořád v mezích
+  náhody při takhle malých číslech — na závěr to nestačí a neextrapoluju z toho.
+
+### KOŠ C3 — stav po třetí dávce šesté fronty
+
+Přečteno (či z fronty rozhodnuto) je **57 kandidátů** koše C3 ze 120
+(14. 9. – 2. 10. 2026), nepřečtených je **63**. Rozpad: **2 návrhy na
+povýšení** (`chata-viktorka`, `bouda-mama`), 1 klíč splněn a visí na klíči
+střediska (`wellness-hotel-liberecka-bouda`), 1 sporné (`chata-pod-lipami`),
+**4 držené bez verdiktu** (3 dřívější + `chata-honzik`), 1 škrtnutá vedlejší
+budova, **3 škrtnuté rozhodnuté duplicity** (`hotel-cerna-bouda`,
+`penzion-modrokamenna-bouda`, `schronisko-srebrny-potok`), **39 návrhů na
+vyřazení** (34 + dnešních pět), **2 hraniční čekající na Michalovo rozhodnutí**
+a 4 bez verdiktu, protože nebylo co číst.
+Kontrolní součet: 2 + 1 + 1 + 4 + 1 + 3 + 39 + 2 + 4 = 57.
+
+Ve frontě ke čtení zbývá **39 kandidátů** a všichni se skutečně čtou — tři
+rozhodnuté duplicity jsou z fronty pryč i v tabulce. Následuje `chata-jitka`,
+`chata-kabrtova-bouda`, `chata-karolinka`, `chata-kubik`, `chata-medika`,
+`chata-protez`. Kandidátů bez identifikátoru je dál 24 a stojí na konci
+fronty, ne mimo ni.
