@@ -28,3 +28,36 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO 4. 10. 2026 (šestá fronta koše C3, čtvrtá dávka podle identifikátoru).
+  DRŽENÝ BEZ VERDIKTU — gastro provoz v objektu DOLOŽEN, veřejný přístup k němu
+  NE. Není to doložené vyloučení ani doložené splnění klíče; je to „třetí stav"
+  (viz deník 4. 10. 2026). Role na trase slabší-střední: 180 m k modré č. 1808
+  Špindlerův Mlýn – Dolní Dvůr, 1 značená trasa do 250 m, rozcestník 1 533 m.
+
+  CO OBJEKT JE: školní chata pražské školy, provozovaná pro školní skupiny.
+  Podskalská uvádí „Dolní Dvůr 53, 543 42 Dolní Dvůr", 32 lůžek ve dvou-, tří-
+  a čtyřlůžkových pokojích a mezi zázemím výslovně RESTAURACI (dál společenská
+  místnost, hřiště na míčové hry, ohniště, volejbalové hřiště, celoročně
+  udržované parkoviště). Rezervace „u paní Kláry Mottlové, tel. 728 455 444".
+  Firmy.cz vede týž objekt na téže adrese: „Ubytování s kapacitou 32 lůžek",
+  stravování a konferenční sál, tel. +420 728 455 444, chata-jitka@email.cz,
+  web www.chatajitka.cz, IČO 05130808; záznam působí aktivní (recenze 6/2026).
+  Že restaurace školní chaty obsluhuje i NEUBYTOVANÉ, neříká ani jeden pramen.
+
+  TOTOŽNOST DOLOŽENA, ALE NE SOUŘADNICÍ: ani jeden pramen GPS neuvádí.
+  Doklad je trojí shoda — doména www.chatajitka.cz je týž web jako v OSM tagu
+  `website` tohoto kandidáta, telefon 728 455 444 je na obou pramenech týž a
+  adresa Dolní Dvůr 53 na obou souhlasí. Je to slabší doklad než souřadnice
+  (poučka z 2. 10. 2026), proto to tu stojí výslovně.
+
+  JMENOVEC, pozor při dalším čtení: „Chata Jitka" je i v Mariánské u Jáchymova
+  (Mariánská 116, GPS 50.35869740166 / 12.886670725709, kapacita 5 osob,
+  bez stravy) — to NENÍ tento objekt a je o 200 km dál.
+
+  SOUSEDSTVÍ: `chata-kubik` (Dolní Dvůr 52) stojí asi 160 m odtud a je ve téže
+  dávce. Dvě různá čísla popisná, dva různé objekty — není to duplicita.
+  Prameny: https://podskalska.cz/skchata.aspx ;
+  https://www.firmy.cz/detail/13114937-chata-jitka-dolni-dvur.html
+  Vlastní web http://www.chatajitka.cz se ze sandboxu samostatně nenačetl
+  (PROVENANCE_REQUIRED), pracovalo se s oběma prameny výše.

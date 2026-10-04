@@ -2333,6 +2333,8 @@ identifikátoru nic systematicky neschovává. Odložená jména boudy by byla:
 
 ### Fronta ke čtení (59) — pořadí čtení, ne pořadí zamítání
 
+_Stav 4. 10. 2026: přeškrtnuté řádky jsou rozhodnuté duplicity (z fronty pryč). Ke čtení zbývá 33 kandidátů._
+
 | kandidát                                                                                                                                           | tourism       | web                                                                     | telefon | e-mail | síť | adresa                             |
 | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------- | ------- | ------ | --- | ---------------------------------- |
 | `baronova-bouda` — Baronova Bouda                                                                                                                  | `guest_house` | http://www.ski-baron.cz                                                 | —       | —      | —   | —                                  |
@@ -2820,3 +2822,141 @@ rozhodnuté duplicity jsou z fronty pryč i v tabulce. Následuje `chata-jitka`,
 `chata-kabrtova-bouda`, `chata-karolinka`, `chata-kubik`, `chata-medika`,
 `chata-protez`. Kandidátů bez identifikátoru je dál 24 a stojí na konci
 fronty, ne mimo ni.
+
+## Čtvrtá dávka šesté fronty (4. 10. 2026) — a nález, že klíč zařazení má třetí stav, o kterém nemluví
+
+Přečteno šest kandidátů v pořadí podle identifikátoru: `chata-jitka`,
+`chata-kabrtova-bouda`, `chata-karolinka`, `chata-kubik`, `chata-medika`,
+`chata-protez`. **Výsledek: 2 návrhy na vyřazení, 4 držené bez verdiktu,
+žádné povýšení.** Do `data/chaty/` se nesáhlo.
+
+| kandidát               | gastro v objektu podle pramenů                  | role na trase (strojově)         | verdikt                |
+| ---------------------- | ----------------------------------------------- | -------------------------------- | ---------------------- |
+| `chata-medika`         | „jídelnu, bar", podnikové středisko             | **67 m**, 1 trasa, rozc. 1 283 m | **DRŽET** (třetí stav) |
+| `chata-jitka`          | restaurace školní chaty                         | 180 m, 1 trasa, rozc. 1 533 m    | **DRŽET** (třetí stav) |
+| `chata-kabrtova-bouda` | samoobsluha + restaurace v SOUSEDNÍ budově      | 182 m, 1 trasa, **rozc. 256 m**  | **DRŽET** (DATA-25)    |
+| `chata-protez`         | žádné — vlastní web o stravě nemá nic           | 278 m, 0 tras, rozc. 336 m       | návrh **VYŘADIT**      |
+| `chata-kubik`          | „Bez stravy" — vyloučeno pramenem               | 339 m, 0 tras, rozc. 1 485 m     | návrh **VYŘADIT**      |
+| `chata-karolinka`      | „horská restaurace s domácí kuchyní" (archivní) | 367 m, 0 tras, rozc. 398 m       | **DRŽET** (třetí stav) |
+
+### NÁLEZ DNE: mezi „gastro není" a „gastro je veřejné" leží třetí stav, a je to většina
+
+Klíč zařazení se ptá na **občerstvení pro veřejnost**. Dosavadní čtení s tím
+zacházelo, jako by odpověď měla dvě hodnoty — pramen provoz doloží, nebo ne.
+Dnešní dávka ukázala, že hodnoty jsou tři:
+
+1. **gastro v objektu NENÍ** (nebo je pramenem vyloučené) — `chata-kubik`
+   („Bez stravy"), `chata-protez` (vlastní web o stravě nepíše nic),
+   a z dřívějších `chata-ferra` („Restaurant within 1,500 m");
+2. **gastro JE a je doloženě veřejné** — jádro klíče, povyšuje se;
+3. **gastro v objektu JE, ale komu je otevřené, pramen neříká** — a tady padá
+   verdikt do vzduchoprázdna. Dnes tři kandidáti ze šesti: `chata-medika`
+   („jídelnu, bar", ale je to rekreační středisko Nemocnice Na Homolce),
+   `chata-jitka` (restaurace, ale je to školní chata pražské školy),
+   `chata-karolinka` („nabízí příjemné posezení v krásné dřevěné horské
+   restauraci s domácí kuchyní" — formulace zní veřejně, pramen je archivní).
+
+**Proč to není jen slovíčkaření:** dosavadní rozhodování na třetí stav
+odpovídalo NEKONZISTENTNĚ. `hottur` (stolovna na 160 míst + kavárna) šel 2. 10. do návrhů na vyřazení „na nedoloženém veřejném přístupu". `chata-honzik`
+(„1 restaurant on site" u agregátoru) byl týž den **držený** s odůvodněním, že
+na vyřazení je to málo. Oba případy jsou tentýž stav a mají opačný výsledek.
+Po dnešku je takových kandidátů **šest z posledních dvanácti přečtených** —
+není to okrajový jev, je to polovina fronty.
+
+**Návrh pravidla (rozhoduje Michal, nezavádím ho sám):** třetí stav NENÍ důvod
+k vyřazení ani k povýšení, je to důvod k jedné otázce po telefonu — tedy řádek
+v **DATA-04**. Kandidát by zůstal držený s příznakem „čeká na telefonát" a
+fronta by o něm věděla, že se už nemá číst znovu. Levná varianta: nové pole
+`cekaNaTelefonat: true` v kandidátovi plus upozornění v `npm run kontrola`.
+
+### Druhý nález: podnikové a školní středisko jsou vlastní kategorie, ne „penzion"
+
+Dva ze tří dnešních kandidátů třetího stavu nejsou komerční ubytování:
+`chata-medika` je **rekreační středisko Nemocnice Na Homolce** (IČO 00064203,
+kontakt na doméně homolka.cz) a `chata-jitka` je **školní chata** pražské
+Podskalské (rezervace přes školu). U takového objektu se veřejný gastro provoz
+nedá předpokládat ani tam, kde jídelna doloženě je — provoz patří k vlastní
+skupině. Zároveň je to **jediný** typ objektu v koši C3, u kterého je plausibilní,
+že klíč nesplňuje dnes, ale splňoval ho v minulosti (DATA-25). Pro obě jsem
+minulost NEDOLOŽIL a nedomýšlím ji.
+
+### Třetí nález: `chata-kabrtova-bouda` je nejsilnější kandidát dávky a padá na cizí budově
+
+Objekt stojí **na vrcholu Černé hory, asi 1 300 m n. m., 200 m od horní stanice
+kabinové lanovky**, v zimě je dostupný jen lanovkou a jmenuje se „Bouda" — to
+je profil domu, který do průvodce patří. Veřejné občerstvení ale v objektu
+není: kudyznudy.cz „V těsném sousedství chaty restaurace s celoročním
+provozem", oficiální obecní stránka „common furnished kitchen for every one,
+possibility to order a lunch in the contiguous restaurant". Restaurace je
+**jiná budova** a nesmí se k objektu připsat — to je týž druh pasti jako
+„cizí budova" z 15. 9. a 28. 9. Kandidát proto zůstává držený, a to výslovně
+pro **DATA-25** (turistická minulost). Historii objektu vyhledávač nevrátil.
+
+### Vedlejší nálezy
+
+- **Nejtěsnější doklad totožnosti dosud: 2 m.** `chata-kubik` — hauzi.cz uvádí
+  GPS 50.656423 / 15.633551 proti bodu kandidáta 50.656404 / 15.6335689.
+  Poučka z 2. 10. („totožnost se dokládá souřadnicí, ne jménem") dnes zabrala
+  u tří kandidátů ze šesti: `chata-kubik` 2 m, `chata-protez` 4 m,
+  `chata-karolinka` 5 m. U `chata-jitka` souřadnici nemá ani jeden pramen a
+  totožnost stojí na trojí shodě domény, telefonu a adresy — slabší doklad,
+  zapsaný jako slabší.
+- **Jmenovci podruhé v jedné dávce.** „Chata Jitka" je i v Mariánské u
+  Jáchymova (GPS 50.3587 / 12.8867, kapacita 5, bez stravy) — 200 km odtud.
+  A dosavadní poznámka repa o dvou Medikách se **potvrdila**: živý web
+  chata-medika.cz patří albeřickému `chata-medika-2411927307`
+  („Horní Albeřice 12", Petra Pálková, IČ 03559521), ne dolnodvorskému
+  kandidátovi. **Past: kapacita 24 vychází u OBOU** — rozlišuje jen adresa a IČ.
+- **Dvě čísla popisná 160 m od sebe, a není to duplicita.** `chata-jitka`
+  (Dolní Dvůr 53) a `chata-kubik` (Dolní Dvůr 52) jsou sousedi ve téže dávce.
+  Práh blízkých bodů je neohlásí a správně — jsou to dva různé domy.
+- **ARCHIVNÍ pramen potřetí za týden** (po `grohmanova-bouda` 30. 9. a
+  `chata-beata` 2. 10.): `chata-karolinka` na ceskehory.cz s výhradou „Objekt
+  v archivu — prezentace není aktivní." Rozdíl proti `chata-beata`: Karolínka
+  na první půlce klíče měřené nad OSM daty NEPADÁ (OSM u ní nese telefon,
+  e-mail i web). Archiv je tu důvod k nedůvěře v datum, ne doklad o zániku.
+  **Je to už vzorec, ne náhoda** — stojí za úvahu, jestli archivní výhrada nemá
+  mít v poznámce vlastní značku, aby se nemusela hledat ve větě.
+- **Šestý druh vady v OSM `website`: smyčka přesměrování** u
+  `chata-kubik` — https verze vrací 302 na http verzi téže adresy. Totéž se 2. 10. stalo u jedné z domén `chata-beata`, takže to není jednorázovka.
+  Řada vad je tím za šest.
+- **Rozpory v adrese potřetí a počtvrté, obě hodnoty vždy zapsány:**
+  `chata-kabrtova-bouda` „Horská 192" (kudyznudy) × „Horská 190" (OSM);
+  `chata-protez` „Zahrádky 30, Pec pod Sněžkou" (vlastní web) × „Pec pod
+  Sněžkou 30" (OSM) — opět osada proti obci, tedy **pátý doklad k DATA-20**.
+- **Rozpory v telefonu, oba vždy zapsány:** `chata-kabrtova-bouda`
+  +420 603 507 054 (kudyznudy) × +420 733 645 729 (obecní rezervační kanál);
+  `chata-karolinka` +420 724 921152 (OSM) × +420 723 165 025 (kampocesku 2010).
+- **Superlativ k budoucím `zajimavosti`:** kampocesku.cz o `chata-karolinka`
+  píše, že je to „nejvýše položená chata" v Benecku (článek z 1. 3. 2010).
+  Je to claim článku, ne měření — při povýšení zapsat jen se zdrojem.
+- **Mrtvý odkaz ke vyškrtnutí z příštích čtení:** záznam firmy.cz
+  `424806-chata-protez-pec-pod-snezkou` vrací **HTTP 410**. ZlatéStránky.cz
+  a dolnidvur.cz se nenačetly na timeoutu `robots.txt` — ne na obsahu.
+- **`PROVENANCE_REQUIRED` dnes jen u dvou ze šesti** (`chatakarolinka.cz`,
+  `chatajitka.cz`) proti pěti z šesti 2. 10. Pomohlo, že dnešní dávka je česká
+  a vnitrozemská — katalogy hkregion.cz, kudyznudy.cz, firmy.cz, hauzi.cz
+  a ceskehory.cz ji pokrývají hustě. Michalova otázka z 24. 9. tím ale nemizí.
+- **Výtěžnost čtvrté dávky podle identifikátoru: 0 povýšení ze 6.** Bilance
+  pořadí podle identifikátoru je po čtyřech dávkách **1 povýšení z 23**
+  přečtených (4,3 %) proti 1 z 37 u měřených front (2,7 %). Rozdíl se dalším
+  čtením zmenšuje a je dál v mezích náhody — pořadí podle identifikátoru se
+  tedy **neukazuje jako lepší**, jen jako levnější na postavení.
+
+### KOŠ C3 — stav po čtvrté dávce šesté fronty
+
+Přečteno (či z fronty rozhodnuto) je **63 kandidátů** koše C3 ze 120
+(14. 9. – 4. 10. 2026), nepřečtených je **57** — poprvé je přečtená víc než
+polovina koše. Rozpad: **2 návrhy na povýšení** (`chata-viktorka`,
+`bouda-mama`), 1 klíč splněn a visí na klíči střediska
+(`wellness-hotel-liberecka-bouda`), 1 sporné (`chata-pod-lipami`),
+**8 držených bez verdiktu** (4 dřívější + dnešní `chata-jitka`,
+`chata-kabrtova-bouda`, `chata-karolinka`, `chata-medika`), 1 škrtnutá
+vedlejší budova, **3 škrtnuté rozhodnuté duplicity**, **41 návrhů na vyřazení**
+(39 + dnešní `chata-kubik` a `chata-protez`), **2 hraniční čekající na
+Michalovo rozhodnutí** a 4 bez verdiktu, protože nebylo co číst.
+Kontrolní součet: 2 + 1 + 1 + 8 + 1 + 3 + 41 + 2 + 4 = 63.
+
+Ve frontě ke čtení zbývá **33 kandidátů**. Následuje `chata-tereza`,
+`chata-varta`, `chata-votocka`, `iskierka`, `janova-bouda`, `jawa`.
+Kandidátů bez identifikátoru je dál 24 a stojí na konci fronty, ne mimo ni.

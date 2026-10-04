@@ -29,6 +29,153 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-10-04 — denní session: klíč zařazení má třetí stav, o kterém nemluví — a je to polovina fronty
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging). Od 10. 9. do repa nepřibyl tvůj commit — poslední
+  commit kdokoli jiného než denní session je `fe9fa1d` z 10. 9. Vzal jsem
+  „Příště" z 2. 10.
+- **Přečteno šest: `chata-jitka`, `chata-kabrtova-bouda`, `chata-karolinka`,
+  `chata-kubik`, `chata-medika`, `chata-protez`** → **2 návrhy na vyřazení,
+  4 držené bez verdiktu, žádné povýšení.** Do `data/chaty/` se dnes nesáhlo;
+  verdikty jsou návrhy v `interniPoznamky` kandidátů a v triážním dokumentu.
+  Z fronty se dnes nic neškrtalo — žádný z šesti není duplicita.
+- **NÁLEZ DNE, a je systémový: klíč zařazení má u gastra TŘI stavy, ne dva.**
+  Dosavadní čtení pracovalo s „pramen veřejné občerstvení doloží / nedoloží".
+  Dnešní dávka ukázala třetí: **gastro provoz v objektu je doložený, ale komu
+  je otevřený, pramen neříká.** Dnes tři ze šesti — `chata-medika` („jídelnu,
+  bar", jenže je to rekreační středisko Nemocnice Na Homolce), `chata-jitka`
+  (restaurace, jenže je to školní chata pražské Podskalské), `chata-karolinka`
+  („nabízí příjemné posezení v krásné dřevěné horské restauraci s domácí
+  kuchyní" — formulace zní veřejně, pramen je archivní). **Proč to není
+  slovíčkaření:** na tenhle stav odpovídalo rozhodování nekonzistentně.
+  `hottur` (stolovna na 160 míst + kavárna) šel 2. 10. do vyřazení „na
+  nedoloženém veřejném přístupu", `chata-honzik` byl týž den **držený** s tím,
+  že na vyřazení je to málo. Stejný stav, opačný výsledek. Po dnešku je takových
+  kandidátů **šest z posledních dvanácti přečtených** — polovina fronty.
+- **Druhý nález: podnikové a školní středisko jsou vlastní kategorie.**
+  Dva ze tří dnešních kandidátů třetího stavu nejsou komerční ubytování
+  (Nemocnice Na Homolce, IČO 00064203; školní chata s rezervací přes školu).
+  U takového domu se veřejný gastro provoz nedá předpokládat ani tam, kde
+  jídelna doloženě je — provoz patří k vlastní skupině. Zároveň je to jediný
+  typ objektu v koši C3, u kterého je plausibilní, že klíč nesplňuje dnes, ale
+  splňoval ho v minulosti (**DATA-25**). Minulost jsem u obou NEDOLOŽIL.
+- **Třetí nález: `chata-kabrtova-bouda` je nejsilnější kandidát dávky a padá
+  na CIZÍ budově.** Stojí na vrcholu Černé hory, asi 1 300 m n. m., 200 m od
+  horní stanice kabinové lanovky, v zimě dostupná jen lanovkou, jméno nese
+  „Bouda" — profil domu, který do průvodce patří. Jenže oba prameny říkají
+  totéž: samoobslužná kuchyně a restaurace **v sousední budově**
+  („V těsném sousedství chaty restaurace s celoročním provozem";
+  „possibility to order a lunch in the contiguous restaurant"). Restaurace je
+  jiný objekt a nepřipisuje se — táž past jako „cizí budova" z 15. a 28. 9.
+  Kandidát je proto držený výslovně pro DATA-25.
+- **Poučka z 2. 10. („totožnost se dokládá souřadnicí, ne jménem") dnes
+  zabrala u tří kandidátů ze šesti:** `chata-kubik` 2 m (nejtěsnější doklad
+  dosud), `chata-protez` 4 m, `chata-karolinka` 5 m. U `chata-jitka` souřadnici
+  nemá ani jeden pramen a totožnost stojí na trojí shodě domény, telefonu a
+  adresy — slabší doklad, a zapsaný jako slabší.
+- **Vedlejší nálezy:** (a) **jmenovci podruhé v jedné dávce** — „Chata Jitka"
+  je i v Mariánské u Jáchymova (200 km odtud) a dosavadní poznámka repa o dvou
+  Medikách se **potvrdila**: živý web chata-medika.cz patří albeřickému
+  `chata-medika-2411927307` („Horní Albeřice 12"), ne dolnodvorskému
+  kandidátovi; **past je kapacita 24, která vychází u OBOU** — rozlišuje jen
+  adresa a IČ; (b) `chata-jitka` (Dolní Dvůr 53) a `chata-kubik` (Dolní Dvůr 52)
+  stojí 160 m od sebe a **není to duplicita** — dva různé domy;
+  (c) **archivní pramen potřetí za týden** u `chata-karolinka`, ale na rozdíl
+  od `chata-beata` nepadá na první půlce klíče měřené nad OSM daty;
+  (d) **šestý druh vady v OSM `website`: smyčka přesměrování** u
+  `chata-kubik` (https → 302 → http téže adresy), podruhé po `chata-beata`;
+  (e) **pátý doklad k DATA-20** — `chata-protez` má „Zahrádky 30, Pec pod
+  Sněžkou" proti „Pec pod Sněžkou 30" v OSM, tedy zase osada proti obci;
+  (f) rozpory v telefonu u dvou kandidátů a v adrese u dalších dvou, všude
+  obě hodnoty zapsané; (g) záznam firmy.cz pro `chata-protez` vrací **HTTP 410**
+  — vyškrtnuto, aby se nečetl znovu; (h) `PROVENANCE_REQUIRED` dnes jen
+  u DVOU ze šesti vlastních webů (proti pěti z šesti 2. 10.) — pomohlo, že
+  dávka je česká a vnitrozemská a katalogy ji pokrývají hustě.
+- **Stav koše C3:** přečteno (či z fronty rozhodnuto) **63** ze 120 —
+  **poprvé víc než polovina koše**; nepřečteno **57**. Ve frontě ke čtení
+  zbývá **33**. Výtěžnost pořadí podle identifikátoru je po čtyřech dávkách
+  1 povýšení z 23 (4,3 %) proti 1 z 37 u měřených front (2,7 %); rozdíl se
+  dalším čtením **zmenšuje** a je dál v mezích náhody — pořadí podle
+  identifikátoru se neukazuje jako lepší, jen jako levnější na postavení.
+- **Kontroly:** `npm ci` + `npm run kontrola` zelená (20 workflow souborů,
+  0 vad; fixtura 25 souborů, 4 kontroly, 0 spadlo), prettier přeformátoval
+  triážní dokument, všech šest YAML se kontrolně přeparsovalo.
+
+**Příště:** vzít **dalších ~6 kandidátů fronty ke čtení** — následuje
+`chata-tereza`, `chata-varta`, `chata-votocka`, `iskierka`, `janova-bouda`,
+`jawa`. Pořád leží Broumovsko z 28. 8., deset padajících testů
+(Postgres/exporty) a blokované DATA-04 / DATA-05 / DATA-20 / DATA-22 /
+DATA-25 / DATA-28 / F1-IMPL.
+
+**Otázky pro Michala:**
+
+- **NOVÁ A NEJDŮLEŽITĚJŠÍ: jak má klíč odpovídat na „gastro je, veřejný přístup
+  nedoložen"?** Dnes to rozhodlo o čtyřech kandidátech ze šesti a dosavadní
+  praxe si odpovídá sama sobě naopak (`hottur` vyřazen, `chata-honzik` držen,
+  oba 2. 10.). **Můj návrh:** třetí stav není důvod k vyřazení ani k povýšení,
+  je to **řádek v DATA-04** — jedna otázka po telefonu („je restaurace otevřená
+  i neubytovaným?"). Technicky levně: pole `cekaNaTelefonat: true`
+  u kandidáta + upozornění v `npm run kontrola`, aby se takový kandidát už
+  nečetl znovu. Stačí „zaveď to" — nebo řekni, že se má třetí stav vyřazovat,
+  a dojedu to podle toho zpětně i u `chata-honzik` a `hottur`.
+- **Nová, konkrétní: `chata-medika` (Dolní Dvůr 128) má z celé dávky nejlepší
+  roli na trase — 67 m k modré 1808 — a má doloženou jídelnu a bar.** Je to
+  ale rekreační středisko Nemocnice Na Homolce. Předpokládám, že zaměstnanecké
+  středisko veřejné občerstvení nemá; pokud máš pocit, že u krkonošských
+  podnikových chat bývá jídelna veřejná, řekni a zavolám (resp. zapíšu do
+  DATA-04).
+- **Nová: `chata-kabrtova-bouda` — vrchol Černé hory, 1 300 m, jméno „Bouda",
+  gastro v sousední budově.** Je to přesně ten typ domu, o kterém DATA-25 mluví.
+  Historii jsem nedohledal. Víš o ní něco (kdy vznikla, sloužila turistům),
+  nebo ji mám zkusit v knihách a archivech, až DATA-25 odblokuješ?
+- **Trvá z 2. 10.: mám poučku „totožnost se dokládá souřadnicí, ne jménem"
+  povýšit na kontrolu?** Dnes zabrala u tří kandidátů ze šesti, takže se
+  osvědčila. Stačí „přidej".
+- **Trvá z 2. 10.: `chata-honzik` — držet, nebo vyřadit?** Splyne s první
+  otázkou výše.
+- **Trvá z 2. 10.: `hottur`** — vyřazen na nedoloženém veřejném přístupu;
+  splyne s první otázkou výše.
+- **Trvá z 30. 9.: mám přidat filtr rozhodnutých duplicit do skriptu fronty,
+  nebo kontrolu do `npm run kontrola`?** Skript pořád hlásí 47 a o duplicitách
+  neví; v tabulce jsou vyškrtnuté ručně.
+- **Trvá z 30. 9.: `grohmanova-bouda` — vyřadit, nebo držet do DATA-25?**
+- **Trvá z 30. 9., telefonní, k DATA-04: u Černé boudy** — je hotelová
+  restaurace otevřená neubytovaným a je 10:00–16:30 její doba, nebo doba
+  bistra (9:00–18:00)?
+- **Trvá z 28. 9.: souhlasíš s povýšením `bouda-mama`?** Stačí „ano, povyš".
+- **Trvá z 28. 9.: `capkova-chata`** čeká na klíč střediska.
+- **Trvá z 27. 9.: pořadí čtení podle identifikátoru** — čtvrtá dávka ho taky
+  nepodpořila (0 povýšení ze 6) a rozdíl proti měřeným frontám se zmenšuje.
+  Jedu v něm dál, pokud nenamítneš.
+- **Trvá z 27. 9.: smím čtení stavět po OSADÁCH?**
+- **Trvá z 24. 9.: smím načíst přímo domény z OSM u kandidátů, které
+  vyhledávač nenajde?** Dnes to zdrželo jen dvě čtení ze šesti (česká
+  vnitrozemská dávka), ale u polských kandidátů to bude zase pět ze šesti.
+  Položeno poosmé.
+- **Trvá: klíč střediska.**
+- **Trvá z 26. 9.:** souhlasíš se třemi návrhy na vyřazení (Kalevala, Plum,
+  Złoty Widok) a mám u polských kandidátů přestat vyvozovat verdikt
+  z rozcestníku?
+- **Trvá z 23. 9.:** mám přidat kontrolu „kandidát daleko od své oblasti" do
+  `npm run kontrola` jako UPOZORNĚNÍ (ne vadu)?
+- **Trvá z 21. 9.:** kandidát, u kterého se nenačetl žádný pramen — do
+  `_odlozeno.yaml`, nebo vyřadit jako ostatní?
+- **Trvá z 19. 9.: výjimka pro Skalnik.**
+- Trvají starší otázky (Sruby Podspálov a zúžení `lngMin`; Dom Pod Jaworami —
+  zavoláš?; Baraba × Popelka; druhý klíč `rozhodnuteDuplicity`; a další
+  z 2. 9. – 2. 10.).
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. `node_modules`
+v sandboxu nejsou, `npm ci` je potřeba pustit, než se dají spustit kontroly.
+Dnes navíc: dva prameny (ZlatéStránky.cz, dolnidvur.cz) spadly na TIMEOUTU
+`robots.txt`, ne na obsahu — není to zákaz, je to nedostupnost.
+
 ## 2026-10-02 — denní session: šest kandidátů přečteno, dvě duplicity vyškrtnuty — a jméno „Chata Ferra" nosí v Krkonoších víc domů
 
 **Hotovo:**

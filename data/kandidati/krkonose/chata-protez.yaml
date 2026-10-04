@@ -29,3 +29,39 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO 4. 10. 2026 (šestá fronta koše C3, čtvrtá dávka podle identifikátoru).
+  NÁVRH: VYŘADIT — veřejné občerstvení nedoloženo ANI JEDNÍM pramenem a role
+  na trase je nulová: 278 m k zelené (Pec pod Sněžkou), 0 značených tras
+  do 250 m, rozcestník 336 m. Objekt je ski-in/ski-out ubytování u vleku, ne
+  dům s rolí na turistické trase.
+
+  TOTOŽNOST OVĚŘENA SOUŘADNICÍ: vlastní web uvádí GPS 50.6759569 / 15.7236231 —
+  od bodu kandidáta (50.6759406 / 15.7235685) je to asi 4 m. Týž dům.
+
+  CO PRAMENY ŘÍKAJÍ: chata leží „ve výšce 1050 m nad mořem na Zahrádkách vedle
+  nočního vleku Zahrádky III", je „přímo na sjezdovce, která má provoz od 09.00
+  hod do 21,00 hod. s umělým osvětlením" a „z chaty na lyžích na všechny
+  sjezdovky a naopak ze všech sjezdovek na lyžích až na chatu". Dostupnost
+  pramen popisuje lyžemi, autobusem a autem — pěší trasu nejmenuje. O stravování
+  nemá vlastní web NIC: ani restauraci, ani polopenzi, ani vlastní kuchyni.
+  Suchá Noha (oddíl, který objekt používá) ho vede jako „ideální chalupa na
+  jarní prázdniny", tedy pronájem pro skupiny; o gastru taky nic.
+
+  SEZÓNNÍ PROVOZ, doslova: „OTEVŘENO: listopad-duben". Objekt je tedy v hlavní
+  turistické sezóně ZAVŘENÝ — pro roli na trase je to další argument proti.
+  Od 1. 10. 2022 má podle vlastního webu nového provozovatele.
+
+  ROZPOR V ADRESE, obě hodnoty zapsány (patří k DATA-20, pátý doklad v řadě):
+  OSM a fronta ke čtení vedou „Pec pod Sněžkou 30", vlastní web uvádí
+  „Zahrádky 30, 542 21 Pec pod Sněžkou". Zahrádky jsou osada Pece — není to
+  rozpor hodnot, je to opět rozdíl mezi SÍDLEM (osada, přesnější rozlišovač)
+  a OBCÍ (administrativní údaj). Pole `obec` tu drží „Pec pod Sněžkou" z OSM.
+
+  ROZPOR V KONTAKTU, oba zapsány: vlastní web tel. +420 602 300 991 a e-mail
+  chata-protez@email.cz; OSM telefon ani e-mail nenese.
+  Prameny: https://dominant-protez.cz/protez-kontakt/ ;
+  https://dominant-protez.cz/protez-okoli/ ;
+  https://www.suchanoha.cz/mista/chata-protez/
+  Záznam https://www.firmy.cz/detail/424806-chata-protez-pec-pod-snezkou.html
+  vrací HTTP 410 (pryč) — nečíst znovu.
