@@ -28,3 +28,53 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO 2026-10-05 (šestá fronta koše C3, pátá dávka podle identifikátoru) —
+  DRŽET BEZ VERDIKTU, rozhodne telefonát (DATA-04).
+
+  TOTOŽNOST DOLOŽENA SOUŘADNICÍ: hkregion.cz uvádí 50°38'14,23" N /
+  15°46'58,60" E, tj. 50,63729 / 15,78294 — od bodu kandidáta (50,6372405 /
+  15,7829173) necelých 10 m.
+
+  KLÍČ ZAŘAZENÍ, PRVNÍ PŮLKA — TŘETÍ STAV (gastro v objektu doloženo,
+  veřejný přístup pramen neříká): hkregion.cz „Součástí objektu je útulná
+  restaurace s krbem s TV-SAT" a zároveň „V ceně ubytování je snídaně –
+  možnost dokoupení polopenze za cenu 80 Kč"; janskelazne.cz (EN) „a homely
+  restaurant with a fire, TV – sat, accommodation included breakfast,
+  possible to buy half board". Ani jeden pramen neříká, zda je restaurace
+  otevřená neubytovaným. Je to týž třetí stav, který 2026-10-04 vyšel u tří
+  kandidátů ze šesti — proto DRŽET a jeden dotaz do DATA-04, ne vyřazení.
+
+  KLÍČ ZAŘAZENÍ, DRUHÁ PŮLKA (role na trase) SPLNĚNA: 9 m k modré č. 1817
+  [M] Janské Lázně – Pod Starou horou (měření 2026-09-06, scripts/triaz-
+  role-na-trase.ts).
+
+  ROZPOR V ADRESE, obě hodnoty zapsány: „Modrokamenná 140, Janské Lázně, 542
+  25" (hkregion.cz) × „Černohorská 265, 542 25 Janské Lázně"
+  (janskelazne.cz). Popis objektu je v obou pramenech týž (27 lůžek, 7
+  pokojů, restaurace s krbem), takže jde o rozpor v adrese u jednoho domu,
+  ne o dva domy.
+
+  ROZPOR V TELEFONU, obě hodnoty zapsány: +420 499 828 526 (hkregion.cz) ×
+  +420 733 645 729 a +420 603 416 095 (janskelazne.cz).
+
+  POZOR, PAST NA TOTOŽNOST: číslo +420 733 645 729 bylo 2026-10-04 zapsáno u
+  kandidáta `chata-kabrtova-bouda` jako „obecní rezervační kanál". Dnes je
+  totéž číslo vedeno u Chaty Terezy. Telefon z janskelazne.cz tedy objekt
+  NEIDENTIFIKUJE — je to společná rezervační linka Janských Lázní.
+
+  WEB: OSM nese `https://www.chatatereza.eu/`, katalogy uvádějí
+  „chatatereza.eu", vyhledávač ale vrací i živě vypadající `chatatereza.cz`
+  téhož jména. Ani jednu doménu se v téhle session nepodařilo načíst přímo
+  (PROVENANCE_REQUIRED), takže se tu NETVRDÍ, která je platná — k ověření
+  při povýšení.
+
+  KAPACITA: 27 lůžek v 7 pokojích (hkregion.cz) × „7 rooms", „28" míst i „27
+  beds" v témž odstavci (janskelazne.cz) — hodnota je nekonzistentní i
+  uvnitř jednoho pramene.
+
+  HISTORIE / TURISTICKÁ MINULOST (DATA-25): nedoložena ani jedním pramenem,
+  nedomýšlí se.
+
+  Prameny: https://www.hkregion.cz/dr-cs/103046-chata-tereza.html ·
+  https://www.janskelazne.cz/en/chalet-tereza-janske-lazne-70.html

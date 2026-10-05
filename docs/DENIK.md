@@ -29,6 +29,152 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-10-05 — denní session: tabulka, o které dokument tvrdí, že v ní verdikty žijí, se dvakrát nedopsala
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging). Od 10. 9. do repa nepřibyl tvůj commit — poslední
+  commit kohokoli jiného než denní session je dál `fe9fa1d` z 10. 9. Vzal jsem
+  „Příště" ze 4. 10.
+- **Přečteno šest: `chata-tereza`, `chata-varta`, `chata-votocka`, `iskierka`,
+  `janova-bouda`, `jawa`** → **5 návrhů na vyřazení, 1 držený bez verdiktu,
+  žádné povýšení.** Do `data/chaty/` se dnes nesáhlo; verdikty jsou návrhy
+  v `interniPoznamky` kandidátů a v triážním dokumentu.
+- **NÁLEZ DNE, a je procesní, ne datový: živá tabulka verdiktů se dvakrát
+  nedopsala a oba měřicí skripty počítaly nad špatným zbytkem.** Oddíl „ŽIVÁ
+  TABULKA VERDIKTŮ" o sobě říká, že je jediné místo, kde verdikty koše C3 žijí,
+  a čte z něj `prectene()` v `triaz-kos-c3-tagy.ts`
+  i `triaz-kos-c3-identifikatory.ts`. Naposledy se do něj dopsalo **30. 9.**;
+  dávky z **2. 10.** (šest + dvě duplicity) a ze **4. 10.** (šest) zapsaly
+  verdikty jen do vlastních oddílů. Před dnešní opravou proto skripty hlásily
+  **„přečteno 49 · zbývá 71"** a frontu o **47** kandidátech, zatímco rozpad
+  ze 4. 10. říká 63 a fronta měla 33. **Je to přesně ta tvoje otevřená věta
+  „skript pořád hlásí 47 a o duplicitách neví" — a není to vada skriptu ani
+  chybějící filtr duplicit, je to nedopsaná tabulka.** A je to **regrese téže
+  vady, kterou dokument už jednou opravoval 27. 9.**
+- **Opraveno v jednom kroku, všech dvacet chybějících položek i s dnešní
+  dávkou.** Živá tabulka má teď kontrolní součet **69** (63 ze 4. 10. + dnešních
+  6): držených 9, rozhodnutých duplicit 3, návrhů na vyřazení 46. Po opravě
+  hlásí oba skripty **69 · zbývá 51** a frontu o **27** kandidátech — souhlasí
+  to s rozpadem poprvé od 30. 9.
+- **Druhý nález: telefon z janskelazne.cz objekt neidentifikuje.** Číslo
+  **+420 733 645 729** jsem 4. 10. zapsal u `chata-kabrtova-bouda` jako „obecní
+  rezervační kanál"; dnes totéž číslo vede janskelazne.cz u **Chaty Terezy**.
+  Je to **rezervační linka Janských Lázní**, ne kontakt objektu. Vedle „jméno
+  není doklad" (2. 10.) a „web z OSM není doklad" (26. 9.) je to třetí
+  identifikátor, který neidentifikuje.
+- **Třetí nález: `jawa` je první kandidát koše, který padá na OBOU půlkách
+  klíče.** Gastro v objektu není vůbec („stravování je možné v obecní
+  restauraci na náměstí (2,0 km)") a k nejbližší značce je **1 044 m**, 0 značek
+  do 250 m. Dosud padlo 24 z 25 vyřazení na téže půlce (občerstvení jen pro
+  ubytované), jedinou výjimkou byla `osada-sniezka`. Potvrzuje to, co měření
+  z 6. 9. od zbytku koše čekalo.
+- **Třetí stav z 4. 10. vyšel znovu, dnes u jednoho ze šesti:** `chata-tereza`
+  má doloženou „útulnou restauraci s krbem" v objektu, ale ani jeden pramen
+  neříká, jestli je otevřená neubytovaným. Držím ji bez verdiktu a jako řádek
+  do DATA-04 — přesně podle návrhu, který ti leží od včera.
+- **Vedlejší nálezy:** (a) totožnost doložena **souřadnicí u tří ze šesti** —
+  `chata-votocka` 3 m (druhý nejtěsnější doklad dosud), `chata-varta` 7 m,
+  `chata-tereza` necelých 10 m; u `iskierka`, `janova-bouda` a `jawa` nemá
+  souřadnici ani jeden pramen a totožnost je zapsaná jako slabší;
+  (b) **rozpory v adrese** u Terezy („Modrokamenná 140" × „Černohorská 265",
+  týž popis objektu) a u Iskierky („Brzozowa 20" × „Brzozowa 33", čtyři prameny
+  proti jednomu); (c) **rozpory v kapacitě** u tří kandidátů, u Terezy „27
+  lůžek" i „28" **v témž odstavci** jednoho pramene; (d) **sedmý druh vady
+  v OSM `website`, zapsaný s výhradou** — OSM nese `chatatereza.eu`, vyhledávač
+  vrací i živě vypadající `chatatereza.cz`; **ani jednu se nepodařilo načíst**,
+  takže netvrdím, která platí; (e) u `janova-bouda` se **poprvé doložitelně
+  vyplatila poznámka napsaná v předstihu** — čtení z 26. 9. už vědělo, že
+  `skifamily.cz` z OSM je lyžařská škola, a dnešní čtení to jen doplnilo druhým
+  pramenem; (f) `janova-bouda` je návrh na vyřazení **pro dnešní stav**, ale
+  jméno nese „bouda" a objekt je „nově zrekonstruovaný" — poznámka pro DATA-25
+  zapsána, historii jsem NEDOLOŽIL; (g) `rokytnice.com` spadla na
+  **ConnectTimeout nad `robots.txt`** (potřetí za týden), `cs-chalupy.cz` vrací
+  **HTTP 403**; (h) `PROVENANCE_REQUIRED` dnes u obou vlastních webů, které
+  jsem zkoušel — tvoje otázka z 24. 9. položena podeváté.
+- **Výtěžnost pořadí podle identifikátoru po pěti dávkách: 1 povýšení z 29
+  (3,4 %) proti 1 z 37 u měřených front (2,7 %).** Po pěti dávkách to podle mě
+  **přestává být otevřená otázka** — rozdíl mezi 3,4 % a 2,7 % neunese žádné
+  rozhodnutí. Jedu v něm dál, protože je levnější na postavení, ne protože je
+  lepší.
+- **Kontroly:** `npm ci` + `npm run kontrola` zelená (20 workflow souborů,
+  0 vad; fixtura 25 souborů, 4 kontroly, 0 spadlo), prettier přeformátoval
+  triážní dokument a jeden YAML, všech šest YAML se kontrolně přeparsovalo,
+  oba triážní skripty přeběhly po opravě tabulky a shodují se s rozpadem.
+
+**Příště:** vzít **dalších ~6 kandidátů fronty** — následuje `lesna-chata`,
+`ludvikova-bouda`, `ministerska`, `mlodziezowe-schronisko-w-staniszowie`,
+`ostoja-karkonoska`, `pod-zielonym-dachem` (pět z šesti je polských, takže
+`PROVENANCE_REQUIRED` bude zdržovat víc než dnes). Pořád leží Broumovsko
+z 28. 8., deset padajících testů (Postgres/exporty) a blokované DATA-04 /
+DATA-05 / DATA-20 / DATA-22 / DATA-25 / DATA-28 / F1-IMPL.
+
+**Otázky pro Michala:**
+
+- **NOVÁ, a je to dvouřádková oprava s velkým dopadem: smím přidat do
+  `npm run kontrola` kontrolu „součet živé tabulky verdiktů = nejnovější
+  kontrolní součet v dokumentu"?** Dnešní nález je regrese po devíti dnech
+  a vrátí se znovu, protože dopsání tabulky je ruční krok, na který se dá
+  zapomenout. Kontrola porovná dvě čísla, která už v dokumentu jsou, a při
+  rozchodu to je **vada**, ne upozornění. Stačí „přidej". Tím se zároveň
+  zavírá tvoje otevřená otázka z 30. 9. o filtru duplicit ve skriptu — ten
+  filtr není potřeba, duplicity v tabulce být mají a dnes v ní jsou.
+- **Trvá ze 4. 10. a je dál nejdůležitější: jak má klíč odpovídat na „gastro
+  je, veřejný přístup nedoložen"?** Dnes to rozhodlo o `chata-tereza`. Můj
+  návrh je pořád týž: třetí stav není důvod k vyřazení ani k povýšení, je to
+  řádek v DATA-04 (jedna otázka po telefonu) + pole `cekaNaTelefonat: true`
+  a upozornění v kontrole, aby se takový kandidát nečetl znovu. Stačí „zaveď
+  to" — nebo řekni, že se má třetí stav vyřazovat, a dojedu to zpětně
+  u `chata-honzik`, `hottur`, `chata-jitka`, `chata-karolinka`, `chata-medika`
+  a `chata-tereza`.
+- **Nová, drobná: mám `jawa` doplnit `obec: Strážné`?** Prameny se shodují
+  („Strážné 180, 543 52 Strážné"), OSM pole nemá. U kandidáta, který jde
+  k vyřazení, to je práce nazmar — ale pokud chceš mít kandidáty úplné,
+  doplním.
+- **Trvá ze 4. 10.: mám poučku „totožnost se dokládá souřadnicí, ne jménem"
+  povýšit na kontrolu?** Dnes zabrala u tří kandidátů ze šesti, tedy stejně
+  jako včera. Stačí „přidej".
+- **Trvá ze 4. 10.: `chata-kabrtova-bouda`** — víš o ní něco (vrchol Černé
+  hory, 1 300 m, jméno „Bouda", gastro v sousední budově), nebo ji mám zkusit
+  v knihách, až DATA-25 odblokuješ?
+- **Trvá ze 4. 10.: `chata-medika` (Dolní Dvůr 128)** — předpokládám, že
+  jídelna zaměstnaneckého střediska Nemocnice Na Homolce veřejná není; pokud
+  máš pocit, že u krkonošských podnikových chat bývá, zavolám.
+- **Trvá z 2. 10.: `chata-honzik` a `hottur`** — splývá s otázkou o třetím
+  stavu výš.
+- **Trvá z 30. 9.: `grohmanova-bouda` — vyřadit, nebo držet do DATA-25?**
+- **Trvá z 30. 9., telefonní, k DATA-04: u Černé boudy** — je hotelová
+  restaurace otevřená neubytovaným a je 10:00–16:30 její doba, nebo doba
+  bistra (9:00–18:00)?
+- **Trvá z 28. 9.: souhlasíš s povýšením `bouda-mama`?** Stačí „ano, povyš".
+- **Trvá z 28. 9.: `capkova-chata`** čeká na klíč střediska.
+- **Trvá z 27. 9.: pořadí čtení podle identifikátoru** — pátá dávka ho taky
+  nepodpořila (0 povýšení ze 6) a po pěti dávkách to podle mě přestává být
+  měřitelná otázka. Jedu v něm dál, pokud nenamítneš.
+- **Trvá z 27. 9.: smím čtení stavět po OSADÁCH?**
+- **Trvá z 24. 9.: smím načíst přímo domény z OSM u kandidátů, které
+  vyhledávač nenajde?** Položeno podeváté a příští dávka je převážně polská,
+  takže to zdrží víc než dnes.
+- **Trvá: klíč střediska.**
+- **Trvá z 26. 9.:** souhlasíš se třemi návrhy na vyřazení (Kalevala, Plum,
+  Złoty Widok) a mám u polských kandidátů přestat vyvozovat verdikt
+  z rozcestníku?
+- **Trvá z 23. 9.:** mám přidat kontrolu „kandidát daleko od své oblasti" do
+  `npm run kontrola` jako UPOZORNĚNÍ (ne vadu)?
+- **Trvá z 21. 9.:** kandidát, u kterého se nenačetl žádný pramen — do
+  `_odlozeno.yaml`, nebo vyřadit jako ostatní?
+- **Trvá z 19. 9.: výjimka pro Skalnik.**
+- Trvají starší otázky (Sruby Podspálov a zúžení `lngMin`; Dom Pod Jaworami —
+  zavoláš?; Baraba × Popelka; druhý klíč `rozhodnuteDuplicity`; a další
+  z 2. 9. – 4. 10.).
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. `node_modules`
+v sandboxu nejsou, `npm ci` je potřeba pustit, než se dají spustit kontroly.
+
 ## 2026-10-04 — denní session: klíč zařazení má třetí stav, o kterém nemluví — a je to polovina fronty
 
 **Hotovo:**

@@ -28,3 +28,37 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO 2026-10-05 (šestá fronta koše C3, pátá dávka podle identifikátoru) —
+  NÁVRH VYŘADIT, a jako jediný kandidát dávky padá na OBOU půlkách klíče.
+
+  PRVNÍ PŮLKA NESPLNĚNA, A PRAMEN GASTRO ROVNOU VYLUČUJE: e-penziony.cz
+  „stravování je možné v obecní restauraci na náměstí (2,0 km)", v objektu
+  je „plně vybavená kuchyň" v obou částech a polopenze ani plná penze se
+  nenabízejí. turistika.cz uvádí „společnou kuchyň" a „jídelnu", tedy
+  skupinové samoobslužné ubytování (8–50 osob, 14 ložnic). Veřejné
+  občerstvení v objektu není a nejbližší je 2 km daleko v cizí budově.
+
+  DRUHÁ PŮLKA (role na trase) TAKY NESPLNĚNA: 1 044 m k nejbližší značce
+  (žlutá č. 7201 [Ž] Vrchlabí – U Hromovky), 0 značek do 250 m, rozcestník 1
+  079 m (měření 2026-09-06). Je to první kandidát od `osada-sniezka`, který
+  nepadá jen na občerstvení.
+
+  ADRESA: Strážné 180, 543 52 Strážné (e-penziony.cz); turistika.cz i cs-
+  chalupy.cz vedou objekt pod „Strážné", resp. „Strážné – Herlíkovice". Pole
+  `obec` kandidát z OSM nemá — doplnitelné na „Strážné" při případném dalším
+  zpracování, ne domýšlené.
+
+  ROZPOR V KAPACITĚ, všechny hodnoty zapsány: „8 až 50 osob", 14 ložnic
+  (turistika.cz) × 24 lůžek + 6 přistýlek v chatové části a 12 lůžek + 6
+  přistýlek v samostatném apartmánu, dohromady až 36 + 12 (e-penziony.cz).
+
+  TELEFON (prameny se shodují): +420 603 498 164, +420 702 089 276.
+
+  HISTORIE / TURISTICKÁ MINULOST (DATA-25): nedoložena, nedomýšlí se.
+
+  NEDOSTUPNÝ PRAMEN: cs-chalupy.cz vrací HTTP 403 (ne zákaz v obsahu, ale
+  odmítnutí načtení) — do příštích čtení jako nedostupný.
+
+  Prameny: https://e-penziony.cz/ubytovani-strazne/chata-jawa ·
+  https://www.turistika.cz/chaty-chalupy/detail/chata-jawa-strazne-11417

@@ -1783,24 +1783,28 @@ na stav provozu, ne na nedoložitelnost. Otázka pro Michala je v deníku.
 se nepřepisují, jen se sem přenášejí přesně tak, jak je zapsaly příslušné
 oddíly níž. **Kdo čte dál, dopisuje sem.**
 
-Koš C3 má **120 kandidátů** (měření 6. 9.). Přečteno (či z fronty rozhodnuto) je jich **49**, tedy
-40,8 %; nepřečtených je **71**. _(Dopsáno 28. 9. 2026 o šest kandidátů páté
+Koš C3 má **120 kandidátů** (měření 6. 9.). Přečteno (či z fronty rozhodnuto) je jich **69**, tedy
+57,5 %; nepřečtených je **51**. _(Dopsáno 28. 9. 2026 o šest kandidátů páté
 fronty — první fronty stavěné podle identifikátoru — a 30. 9. 2026 o pět
-kandidátů šesté fronty plus jednu rozhodnutou duplicitu, která se nečte.)_
+kandidátů šesté fronty plus jednu rozhodnutou duplicitu, která se nečte.
+**Dopsáno 5. 10. 2026 o dvacet kandidátů, kteří sem dva běhy nedoputovali:**
+šest z 2. 10., šest ze 4. 10., dvě rozhodnuté duplicity z 2. 10. a šest z dnešní
+dávky — viz oddíl „Nález dne, a je procesní: živá tabulka verdiktů se dvakrát
+nedopsala" ze 5. 10. 2026 níž.)_
 
-| verdikt                                                           | počet | kdo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| ----------------------------------------------------------------- | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| obě půlky klíče — k povýšení                                      | 2     | `chata-viktorka`, `bouda-mama`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| klíč splněn, visí na klíči střediska                              | 1     | `wellness-hotel-liberecka-bouda`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| sporné — doklad neunese ani jeden směr                            | 1     | `chata-pod-lipami`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| držet, rozhodne telefonát nebo chybí pramen                       | 3     | `hribeci-bouda`, `chata-jestrab`, `dom-pod-jaworami`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| škrtnuto z fronty jako vedlejší budova publikovaného profilu      | 1     | `hotel-spindlerova-bouda-depandance`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| škrtnuto z fronty jako ROZHODNUTÁ DUPLICITA publikovaného profilu | 1     | `hotel-cerna-bouda` (= `cerna-bouda`, 14 m, registr `_jmenovci.yaml` z 22. 8. 2026)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| návrh VYŘADIT                                                     | 34    | `chata-gracie`, `chata-medika-2411927307`, `mlynarka-ubytovani-v-krkonosich`, `felicity-grand-apartments`, `chata-kovarna`, `chalupa-marsovka`, `apartman-u-potoka`, `chata-tobisek`, `sliwkowa-chata-sliwkowa-chata`, `chata-baraba`, `chata-popelka`, `horska-chata-hanapetr`, `pension-chata-lovrana`, `sruby-podspalov`, `penzion-karlova-chata`, `chalupa-u-medveda`, `zielony-domek`, `lyzarsky-vlek-ubytovani`, `apartamenty-every-sky`, `chalupa-baba-jaga`, `domek-w-karkonoszach`, `osada-sniezka`, `wioska-finska-kalevala`, `szkolne-schronisko-mlodziezowe-plum`, `szkolne-schronisko-mlodziezowe-zloty-widok`, `baronova-bouda`, `chata-baronka`, `bergpoolhaus`, `browarowka`, `contemplace`, `czarodziejska-gora`, `grohmanova-bouda`, `hajenka-haida`, `holiday-park-resort` |
-| hraniční — čeká na klíč střediska / Michalovu výjimku             | 2     | `szkolne-schronisko-mlodziezowe-skalnik`, `capkova-chata`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| BEZ VERDIKTU — nebylo co číst                                     | 4     | `chata-u-kohouta`, `chalupa-u-rihu`, `apartmany-tri-boudy`, `chalupa-sport`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| verdikt                                                           | počet | kdo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ----------------------------------------------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| obě půlky klíče — k povýšení                                      | 2     | `chata-viktorka`, `bouda-mama`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| klíč splněn, visí na klíči střediska                              | 1     | `wellness-hotel-liberecka-bouda`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| sporné — doklad neunese ani jeden směr                            | 1     | `chata-pod-lipami`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| držet, rozhodne telefonát nebo chybí pramen                       | 9     | `hribeci-bouda`, `chata-jestrab`, `dom-pod-jaworami`, `chata-honzik`, `chata-jitka`, `chata-kabrtova-bouda`, `chata-karolinka`, `chata-medika`, `chata-tereza`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| škrtnuto z fronty jako vedlejší budova publikovaného profilu      | 1     | `hotel-spindlerova-bouda-depandance`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| škrtnuto z fronty jako ROZHODNUTÁ DUPLICITA publikovaného profilu | 3     | `hotel-cerna-bouda` (= `cerna-bouda`, 14 m, registr `_jmenovci.yaml` z 22. 8. 2026), `penzion-modrokamenna-bouda` (= ruční kandidát `modrokamenna-bouda`, 0 m, registr 31. 8. 2026), `schronisko-srebrny-potok` (= publikovaný profil `srebrny-potok`, 6 m, registr 22. 8. 2026)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| návrh VYŘADIT                                                     | 46    | `chata-gracie`, `chata-medika-2411927307`, `mlynarka-ubytovani-v-krkonosich`, `felicity-grand-apartments`, `chata-kovarna`, `chalupa-marsovka`, `apartman-u-potoka`, `chata-tobisek`, `sliwkowa-chata-sliwkowa-chata`, `chata-baraba`, `chata-popelka`, `horska-chata-hanapetr`, `pension-chata-lovrana`, `sruby-podspalov`, `penzion-karlova-chata`, `chalupa-u-medveda`, `zielony-domek`, `lyzarsky-vlek-ubytovani`, `apartamenty-every-sky`, `chalupa-baba-jaga`, `domek-w-karkonoszach`, `osada-sniezka`, `wioska-finska-kalevala`, `szkolne-schronisko-mlodziezowe-plum`, `szkolne-schronisko-mlodziezowe-zloty-widok`, `baronova-bouda`, `chata-baronka`, `bergpoolhaus`, `browarowka`, `contemplace`, `czarodziejska-gora`, `grohmanova-bouda`, `hajenka-haida`, `holiday-park-resort`, `hottur-osrodek-wczasowo-wypoczynkowy`, `chata-beata`, `chata-biegacza`, `chata-botas`, `chata-ferra`, `chata-kubik`, `chata-protez`, `chata-varta`, `chata-votocka`, `iskierka`, `janova-bouda`, `jawa` |
+| hraniční — čeká na klíč střediska / Michalovu výjimku             | 2     | `szkolne-schronisko-mlodziezowe-skalnik`, `capkova-chata`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| BEZ VERDIKTU — nebylo co číst                                     | 4     | `chata-u-kohouta`, `chalupa-u-rihu`, `apartmany-tri-boudy`, `chalupa-sport`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-Kontrolní součet: 2 + 1 + 1 + 3 + 1 + 1 + 34 + 2 + 4 = **49**.
+Kontrolní součet: 2 + 1 + 1 + 9 + 1 + 3 + 46 + 2 + 4 = **69**.
 _(Aktualizováno 30. 9. 2026: +5 návrhů na vyřazení z pěti čtených
 kandidátů šesté fronty, +1 nový řádek „rozhodnutá duplicita" pro
 `hotel-cerna-bouda`, který se nečte. `grohmanova-bouda` je počítána
@@ -2960,3 +2964,134 @@ Kontrolní součet: 2 + 1 + 1 + 8 + 1 + 3 + 41 + 2 + 4 = 63.
 Ve frontě ke čtení zbývá **33 kandidátů**. Následuje `chata-tereza`,
 `chata-varta`, `chata-votocka`, `iskierka`, `janova-bouda`, `jawa`.
 Kandidátů bez identifikátoru je dál 24 a stojí na konci fronty, ne mimo ni.
+
+## ŠESTÁ FRONTA KOŠE C3 — PÁTÁ DÁVKA PODLE IDENTIFIKÁTORU (5. 10. 2026) — a tabulka verdiktů, která se dvakrát nedopsala
+
+Vzato „Příště" ze 4. 10.: dalších šest kandidátů fronty. Do `data/chaty/` se
+dnes nesáhlo, nic se nevyřadilo ani nepovýšilo — verdikty jsou návrhy
+v `interniPoznamky` kandidátů a řádky v živé tabulce výš.
+
+**Přečteno šest: `chata-tereza`, `chata-varta`, `chata-votocka`, `iskierka`,
+`janova-bouda`, `jawa`** → **5 návrhů na vyřazení, 1 držený bez verdiktu,
+žádné povýšení.**
+
+| kandidát        | verdikt                | na čem padá                                                                                                                                 | role na trase (6. 9.)      |
+| --------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| `chata-tereza`  | **DRŽET bez verdiktu** | TŘETÍ STAV: „útulná restaurace s krbem" v objektu doložena, veřejný přístup pramen neříká → řádek do DATA-04                                | 9 m, modrá 1817 — SPLNĚNA  |
+| `chata-varta`   | návrh VYŘADIT          | strava pro ubytované: „Snídaně a večeře jsou podávány v jídelně, která se nachází v přízemí…"; penzion na okraji městečka, restaurace nikde | 134 m, zelená              |
+| `chata-votocka` | návrh VYŘADIT          | pramen gastro rovnou VYLUČUJE: „Vlastní nová kuchyň, případně několik restaurací v docházkové vzdálenosti"; „Objekt se pronajímá celý"      | 93 m, žlutá 7308           |
+| `iskierka`      | návrh VYŘADIT          | rekreační domek k samoobslužnému pronájmu, kuchyň k vlastnímu vaření; e-turysta.pl výslovně „nie zadeklarował możliwości zakupu wyżywienia" | 100 m, červená GSS         |
+| `janova-bouda`  | návrh VYŘADIT          | 10 apartmánů bez vlastního gastra; „skibar" je **200 m daleko v cizí budově** a nepřipisuje se (past z 15. 9., 28. 9. a 4. 10.)             | 61 m, žlutá — SPLNĚNA      |
+| `jawa`          | návrh VYŘADIT          | padá na OBOU půlkách: „stravování je možné v obecní restauraci na náměstí (2,0 km)" + 1 044 m k nejbližší značce                            | 1 044 m, 0 značek do 250 m |
+
+### Nález dne, a je procesní: živá tabulka verdiktů se dvakrát nedopsala — a oba měřicí skripty počítaly nad špatným zbytkem
+
+Oddíl „CELÝ KOŠ C3 — souhrn čtení (ŽIVÁ TABULKA VERDIKTŮ)" o sobě říká, že je
+**jediné místo, kde verdikty koše C3 žijí**, a že z něj čte `prectene()`
+v `scripts/triaz-kos-c3-tagy.ts` i `scripts/triaz-kos-c3-identifikatory.ts`.
+Naposledy se do něj dopsalo **30. 9. 2026**. Dávky z **2. 10.** (šest
+přečtených + dvě rozhodnuté duplicity) a ze **4. 10.** (šest přečtených) svoje
+verdikty zapsaly jen do vlastních oddílů níž, do živé tabulky ne.
+
+Důsledek měřitelný na jedno spuštění: před dnešní opravou hlásily oba skripty
+**„přečteno 49 · zbývá 71"** a frontu ke čtení o **47** kandidátech, zatímco
+rozpad ze 4. 10. říká 63 a skutečná fronta má 33. To je přesně ta
+otevřená věta z deníku 30. 9. a 4. 10. („skript pořád hlásí 47 a o duplicitách
+neví") — **není to vada skriptu ani chybějící filtr duplicit, je to
+nedopsaná tabulka.** A je to **regrese téže vady, kterou dokument už jednou
+opravoval 27. 9. 2026** (tehdy chybělo šestnáct kandidátů z 23.–26. 9.).
+
+Dopsáno dnes v jednom kroku, všech dvacet chybějících položek i s dnešní
+dávkou: držených je 9 (+`chata-honzik`, +`chata-jitka`, +`chata-kabrtova-bouda`, +`chata-karolinka`, +`chata-medika`, +`chata-tereza`),
+rozhodnutých duplicit 3 (+`penzion-modrokamenna-bouda`, +`schronisko-srebrny-potok`) a návrhů na vyřazení 46 (+12). Kontrolní součet
+živé tabulky je **69**, což je 63 ze 4. 10. plus dnešní šest. Po opravě hlásí
+oba skripty **69 · zbývá 51** a frontu o **27** kandidátech — čísla souhlasí
+s rozpadem.
+
+**Návrh, aby se to nestalo potřetí (k rozhodnutí Michalem):** `npm run kontrola`
+umí porovnat dvě čísla, která už v dokumentu jsou — součet živé tabulky
+a nejnovější „Kontrolní součet" v dokumentu. Rozejdou-li se, je to vada, ne
+upozornění. Stojí to jednu kontrolu a hlídá jediné místo, na kterém stojí
+měření celého koše.
+
+### Druhý nález: telefon z janskelazne.cz objekt neidentifikuje — je to společná rezervační linka
+
+Číslo **+420 733 645 729** bylo 4. 10. zapsáno u `chata-kabrtova-bouda` jako
+„obecní rezervační kanál". Dnes totéž číslo vede janskelazne.cz u **Chaty
+Terezy**. Dva různé domy, jedno číslo — je to **rezervační linka Janských
+Lázní**, ne kontakt objektu. Pro další čtení v Janských Lázních to znamená:
+telefon z obecního portálu se zapisuje jako kontakt pramene, ale **k dokládání
+totožnosti kandidáta se nesmí použít**. Vedle „jméno není doklad" (2. 10.)
+a „web z OSM není doklad" (26. 9.) je to třetí identifikátor, který neidentifikuje.
+
+### Třetí nález: `jawa` je první kandidát od `osada-sniezka`, který padá na obou půlkách klíče
+
+Statistika koše C3 dosud říkala, že **24 z 25 návrhů na vyřazení padlo na téže
+půlce klíče** (občerstvení jen pro ubytované) a jediná výjimka byla
+`osada-sniezka` (role na trase). `jawa` je druhá výjimka a zároveň první případ,
+kde neprojde **ani jedna** půlka: gastro v objektu není vůbec („stravování je
+možné v obecní restauraci na náměstí (2,0 km)") a k nejbližší značce je
+**1 044 m**, 0 značek do 250 m. Potvrzuje to, co měření z 6. 9. čekalo od
+zbytku koše — kandidáti nad 250 m od značky nepadají na gastru, ale na roli
+na trase.
+
+### Vedlejší nálezy
+
+- **Totožnost doložena souřadnicí u tří kandidátů ze šesti**, stejně jako 4. 10.:
+  `chata-votocka` 3 m (druhý nejtěsnější doklad dosud, po 2 m u `chata-kubik`),
+  `chata-varta` 7 m, `chata-tereza` necelých 10 m (hkregion.cz uvádí
+  souřadnici ve stupních a minutách, ne desetinně). U `iskierka`,
+  `janova-bouda` a `jawa` **nemá souřadnici ani jeden pramen** a totožnost
+  stojí na jménu, obci a adrese — zapsáno jako slabší doklad.
+- **Rozpory v adrese, obě hodnoty vždy zapsané:** `chata-tereza`
+  „Modrokamenná 140" (hkregion.cz) × „Černohorská 265" (janskelazne.cz) — popis
+  objektu je v obou pramenech týž, takže je to rozpor u jednoho domu;
+  `iskierka` „ul. Brzozowa 20" (e-nocleg.pl) × „ul. Brzozowa 33" (čtyři
+  prameny).
+- **Rozpory v kapacitě, všechny hodnoty zapsané:** `jawa` „8 až 50 osob" × 36
+  lůžek + 12 přistýlek; `iskierka` 4 × 8 osob; `chata-tereza` „27 lůžek"
+  i „28" **v témž odstavci** jednoho pramene.
+- **Sedmý druh vady v OSM `website`, zapsaný s výhradou:** OSM nese
+  `chatatereza.eu`, vyhledávač ale vrací i živě vypadající `chatatereza.cz`
+  téhož objektu. **Žádnou z obou domén se dnes nepodařilo načíst
+  (`PROVENANCE_REQUIRED`)**, takže se netvrdí, která je platná — jen že OSM
+  hodnota není jediná v oběhu. K ověření až při povýšení.
+- **Potvrzena práce ušetřená dopředu.** Čtení z 26. 9. předem zapsalo, že
+  `skifamily.cz` z OSM u `janova-bouda` je **lyžařská škola** a že vlastní web
+  `baronovyboudy.cz` o restauraci pro veřejnost nepíše. Dnes to stačilo
+  doplnit druhým pramenem (treking.cz) — dávka z toho ušetřila jedno celé
+  dohledávání. Je to první doložený případ, kdy poznámka v předstihu zkrátila
+  pozdější čtení.
+- **DATA-25:** `janova-bouda` je návrh na vyřazení **pro dnešní stav**, ale
+  jméno nese „bouda" a objekt je výslovně „nově zrekonstruovaný" — profil, po
+  kterém se DATA-25 ptá. Historii neuvádí žádný pramen a nedomýšlí se.
+- **Nedostupné prameny:** `rokytnice.com` spadla na **ConnectTimeout nad
+  `robots.txt`** (potřetí za týden táž vada — není to zákaz, je to
+  nedostupnost), `cs-chalupy.cz` vrací **HTTP 403**.
+- **`PROVENANCE_REQUIRED` dnes u obou vlastních webů, které jsme zkoušeli**
+  (`chatatereza.eu`, a nepřímo doména Terezy v .cz). Michalova otázka z 24. 9.
+  je tím položená podeváté.
+- **Výtěžnost páté dávky podle identifikátoru: 0 povýšení ze 6.** Bilance
+  pořadí podle identifikátoru je po pěti dávkách **1 povýšení z 29** (3,4 %)
+  proti 1 z 37 u měřených front (2,7 %). Rozdíl se dalším čtením dál zmenšuje
+  a je v mezích náhody — pořadí podle identifikátoru se neukazuje jako lepší,
+  jen jako levnější na postavení. Po pěti dávkách to **přestává být otevřená
+  otázka**: rozdíl mezi 3,4 % a 2,7 % neunese žádné rozhodnutí.
+
+### KOŠ C3 — stav po páté dávce šesté fronty
+
+Přečteno (či z fronty rozhodnuto) je **69 kandidátů** koše C3 ze 120
+(14. 9. – 5. 10. 2026), nepřečtených je **51**. Rozpad: **2 návrhy na povýšení**
+(`chata-viktorka`, `bouda-mama`), 1 klíč splněn a visí na klíči střediska
+(`wellness-hotel-liberecka-bouda`), 1 sporné (`chata-pod-lipami`),
+**9 držených bez verdiktu** (8 dřívějších + dnešní `chata-tereza`),
+1 škrtnutá vedlejší budova, **3 škrtnuté rozhodnuté duplicity**,
+**46 návrhů na vyřazení** (41 + dnešních pět), **2 hraniční čekající na
+Michalovo rozhodnutí** a 4 bez verdiktu, protože nebylo co číst.
+Kontrolní součet: 2 + 1 + 1 + 9 + 1 + 3 + 46 + 2 + 4 = 69. **Souhlasí s živou
+tabulkou i s oběma skripty** — poprvé od 30. 9.
+
+Ve frontě ke čtení zbývá **27 kandidátů**. Následuje `lesna-chata`,
+`ludvikova-bouda`, `ministerska`, `mlodziezowe-schronisko-w-staniszowie`,
+`ostoja-karkonoska`, `pod-zielonym-dachem`. Kandidátů bez identifikátoru je dál
+24 a stojí na konci fronty, ne mimo ni.

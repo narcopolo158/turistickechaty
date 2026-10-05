@@ -28,3 +28,37 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO 2026-10-05 (šestá fronta koše C3, pátá dávka podle identifikátoru) —
+  NÁVRH VYŘADIT: apartmánový dům bez veřejného občerstvení; gastro v DOSAHU
+  je cizí budova. Pro DATA-25 ponechat poznámku níž.
+
+  KLÍČ ZAŘAZENÍ, PRVNÍ PŮLKA NESPLNĚNA: treking.cz popisuje „10 kompletně
+  vybavených apartmánů s kapacitou 2 - 9 lůžek" v „nově zrekonstruovaném
+  objektu" a vlastní restauraci nezmiňuje; jediné gastro v okolí je „skibar"
+  ve skiareálu „pouhých 200 m" daleko — JINÁ BUDOVA, a ta se k objektu
+  nepřipisuje (týž druh pasti jako „cizí budova" z 15. 9., 28. 9. a 4. 10.
+  2026). Potvrzuje to i čtení z 2026-09-26: vlastní web `baronovyboudy.cz`
+  vede Janovu Boudu jako „Nově zrekonstruovaná horská chata s 10
+  nadstandardně vybavenými apartmány" a o restauraci pro veřejnost nepíše.
+
+  VADA V OSM `website`: `https://www.skifamily.cz/` je podle čtení z
+  2026-09-26 LYŽAŘSKÁ ŠKOLA téhož provozovatele, ne stránka objektu — třetí
+  druh vady v `website` (doména ukazuje na jinou živnost téhož
+  provozovatele). Správný vlastní pramen je `baronovyboudy.cz`.
+
+  ROLE NA TRASE: 61 m k žluté [Ž] Nad Dolním Dvorem – Klínovka, 2 značky do
+  250 m, rozcestník 62 m (měření 2026-09-06) — role na trase SPLNĚNA, padá
+  to na první půlce klíče.
+
+  ADRESA: Dolní Dvůr 5, 543 42. VÝŠKA dle pramene „asi 640 m n. m." TELEFON
+  (pramen): +420 604 239 328, +420 605 428 277.
+
+  DATA-25 (turistická minulost) — DŮVOD K POZDĚJŠÍMU NÁVRATU: jméno nese
+  „bouda" a objekt je výslovně „nově zrekonstruovaný", což je přesně profil
+  domu, po kterém se DATA-25 ptá. Historii ani rok vzniku žádný pramen
+  neuvádí a NEDOMÝŠLÍ SE — návrh na vyřazení platí pro dnešní stav, nikoli
+  pro minulost.
+
+  Prameny: https://www.treking.cz/chaty/janova-bouda.htm ·
+  https://baronovyboudy.cz/janova-bouda/ (čteno 2026-09-26)
