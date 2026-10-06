@@ -29,3 +29,46 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=guest_house (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO 2026-10-06 (šestá fronta koše C3, šestá dávka podle identifikátoru) —
+  NÁVRH VYŘADIT, a je to první vyřazení koše C3 opřené o VLASTNÍ PŘEDPIS
+  provozovatele, ne o nabídkový text.
+
+  TOTOŽNOST: doložena adresou „Staniszów 59" shodnou s OSM; pramen uvádí
+  „Staniszów 59, 58-500 Jelenia Góra", OSM a správa objektu obec Podgórzyn —
+  rozpor v poštovní obci zapsán, souřadnici neuvádí pramen žádnou, totožnost
+  je proto zapsána jako slabší doklad.
+
+  KLÍČ ZAŘAZENÍ, PRVNÍ PŮLKA NESPLNĚNA — a tentokrát to říká regulamin, který
+  objekt sám vydává (zřizovatel: Gmina Podgórzyn): k dispozici je „Sala
+  wielofunkcyjna z zapleczem kuchennym" a „Przygotowanie posiłków może się
+  odbywać jedynie w miejscu do tego wyznaczonym", tedy samoobslužná kuchyň
+  pro hosty. Žádné stravovací služby ani občerstvení pro veřejnost regulamin
+  nezmiňuje.
+
+  DRUHÉ, SILNĚJŠÍ NESPLNĚNÍ — objekt není otevřený kolemjdoucímu ANI NA NOCLEH:
+  regulamin vymezuje okruh hostů (školní a vysokoškolská mládež, učitelé,
+  členové příslušných sdružení, cizinci) a pro ostatní říká „Inne osoby
+  przyjmowane są na nocleg w przypadku wolnych miejsc." Příjem hostů jen
+  12:00–16:00. Je to týž typ objektu jako „školní a podnikové středisko"
+  z nálezu 2026-10-04 — vlastní kategorie, ne penzion a ne schronisko
+  turystyczne v tom smyslu, v jakém ho průvodce vede.
+
+  KAPACITA: 49 míst (regulamin).
+
+  KLÍČ ZAŘAZENÍ, DRUHÁ PŮLKA (role na trase) SPLNĚNA: 80 m k zelené
+  Cieplice Śląskie – Karpniki, 2 značky do 250 m, nejbližší rozcestník
+  10 864 m (měření 2026-09-06, scripts/triaz-role-na-trase.ts). Padá tedy na
+  gastru a na uzavřenosti okruhu hostů, ne na roli na trase.
+
+  POZOR NA JMÉNO: „Schronisko" v názvu neznamená horskou chatu — jde o szkolne
+  schronisko młodzieżowe, tedy ubytovnu mládeže. Je to druhý doklad pro
+  poučku, že jméno není doklad (2026-10-02).
+
+  VLASTNÍ WEB NENAČTEN: `https://www.schronisko.podgorzyn.pl/` skončil
+  na PROVENANCE_REQUIRED; regulamin je ale vydaný tímtéž zřizovatelem
+  a je silnějším pramenem než nabídkový text.
+
+  HISTORIE / TURISTICKÁ MINULOST (DATA-25): nedoložena, nedomýšlí se.
+
+  Prameny: https://podgorzyn.pl/media/attachments/2025/04/06/regulamin-schroniska.pdf

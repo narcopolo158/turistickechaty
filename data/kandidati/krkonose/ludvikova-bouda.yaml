@@ -28,3 +28,54 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO 2026-10-06 (šestá fronta koše C3, šestá dávka podle identifikátoru) —
+  NÁVRH POVÝŠIT do data/chaty/krkonose/. Oba klíče splněny, čeká na Michalovo
+  „ano, povyš".
+
+  TOTOŽNOST DOLOŽENA SOUŘADNICÍ, a nejtěsněji z dnešní dávky: hkregion.cz
+  uvádí 50°38'3,112" N / 15°46'0,153" E, tj. 50,634198 / 15,766709 — od bodu
+  kandidáta (50,6341981 / 15,7668096) 7,1 m. Druhý pramen (ceskehory.cz)
+  uvádí 50.63418N / 15.766578E, tj. 16,5 m.
+
+  KLÍČ ZAŘAZENÍ, PRVNÍ PŮLKA SPLNĚNA — a je to první kandidát koše C3, u kterého
+  se TŘETÍ STAV (gastro je, veřejný přístup nedoložen) podařilo UZAVŘÍT pramenem,
+  ne telefonátem: vlastní firemní zápis provozovatele na firmy.cz říká doslova
+  „Naše restaurace otevřená veřejnosti nabízí krajové speciality, hotová
+  i minutková jídla." a uvádí otvírací dobu po dnech — pondělí–středa a nedělě
+  11:00–20:00, čtvrtek–sobota 11:00–22:00. Ubytovací portály u téhož objektu
+  mluví jen o hostech („restaurace o kapacitě 50 míst, která nabízí ubytovaným
+  hostům kromě běžné nabídky také polopenzi nebo snídaně" — hkregion.cz;
+  ceskehory.cz totéž), takže samy by objekt nechaly ve třetím stavu.
+  POZNÁMKA KE KONVENCI B: „otevřená veřejnosti" je tvrzení PROVOZOVATELE
+  v katalogu, ne ověření Michalem — zapisuje se tedy jako `verified: false`
+  se `source`, a otvírací doba patří do DATA-04 k telefonickému potvrzení.
+
+  KLÍČ ZAŘAZENÍ, DRUHÁ PŮLKA (role na trase) SPLNĚNA: 101 m k modré č. 1816
+  [M] U Zrcadlových bud – Janské Lázně, 1 značka do 250 m, nejbližší rozcestník
+  324 m (měření 2026-09-06, scripts/triaz-role-na-trase.ts).
+
+  ROZPOR V KAPACITĚ, obě hodnoty zapsány: 71 lůžek (ceskehory.cz) × 76 lůžek
+  (hkregion.cz); oba prameny se shodují na „15 různě velkých apartmánech"
+  a na restauraci o 50 místech.
+
+  ROZPOR VE VÝŠCE, obě hodnoty zapsány: 800 m n. m. (ceskehory.cz) × 775 m n. m.
+  (hkregion.cz). K ověření při povýšení (výškopis, DATA-31/DATA-35).
+
+  OSMÝ DRUH VADY V OSM `website`: OSM nese `http://www.ludvikovabouda.com/`,
+  oba katalogy i firemní zápis uvádějí `www.ludvikovabouda.cz`. Doménu se
+  nepodařilo načíst (PROVENANCE_REQUIRED), takže se NETVRDÍ, která je platná —
+  k ověření při povýšení.
+
+  KONTAKTY z pramenů (k zapsání při povýšení, nikoli sem do OSM polí):
+  telefon +420 775 281 640, e-mail faltejskovakaterina@gmail.com (hkregion.cz
+  i firmy.cz shodně).
+
+  HISTORIE / TURISTICKÁ MINULOST (DATA-25): jméno nese „bouda" a oba katalogy
+  objekt popisují jako „nově zrekonstruovanou horskou boudu" — přesně profil,
+  po kterém se DATA-25 ptá. Rok vzniku ani historii NEUVÁDÍ žádný pramen
+  a nedomýšlí se.
+
+  Prameny: https://www.firmy.cz/detail/13901005-ludvikova-bouda-janske-lazne.html ·
+  https://www.hkregion.cz/dr-cs/1718-ludvikova-bouda.html ·
+  https://www.ceskehory.cz/ubytovani/ludvikova-bouda-janske-lazne.html

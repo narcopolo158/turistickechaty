@@ -30,3 +30,38 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO 2026-10-06 (šestá fronta koše C3, šestá dávka podle identifikátoru) —
+  NÁVRH VYŘADIT, padá na OBOU půlkách klíče (třetí takový případ koše C3 po
+  `osada-sniezka` a `jawa`).
+
+  TOTOŽNOST: doložena adresou „Jana Pawła II 33, 58-562 Podgórzyn" shodnou
+  s OSM u obou pramenů; souřadnici neuvádí ani jeden, totožnost je proto
+  zapsána jako slabší doklad.
+
+  KLÍČ ZAŘAZENÍ, PRVNÍ PŮLKA NESPLNĚNA — samoobslužné domky a apartmány:
+  e-nocleg.pl uvádí u objektu „ogólnodostępna kuchnia", tedy společnou
+  kuchyň pro hosty, a restauraci ani jídelnu nezmiňuje; nocowanie.pl u téhož
+  objektu vypisuje jen vybavení kuchyně („mikrofala, naczynia i sztućce,
+  espresso machine, kuchenka, lodówka"). Žádný pramen gastro pro veřejnost
+  netvrdí.
+
+  KLÍČ ZAŘAZENÍ, DRUHÁ PŮLKA TAKY NESPLNĚNA: 875 m k nejbližší značce (modrá
+  Podgórzyn Dolny – Czarna Przełęcz), 0 značek do 250 m, nejbližší rozcestník
+  7 618 m (měření 2026-09-06, scripts/triaz-role-na-trase.ts). Potvrzuje to,
+  co měření 2026-09-06 od kandidátů nad 250 m čekalo — nepadají na gastru,
+  padají na roli na trase, a tady padají na obojím.
+
+  ROZPOR V KAPACITĚ, obě hodnoty zapsány: e-nocleg.pl vypisuje domky pro 4
+  a pro 8 osob, dva apartmány pro 8–11, dva pro 6, jeden pro 4–5 a pokoje pro
+  2 a 3 osoby; nocowanie.pl uvádí jen čtyři jednotky (2× domek 70 m² pro
+  8 osob, domek 25 m² pro 4 osoby, dům pro 12 osob s možností pronájmu horní
+  nebo dolní části). Hodnota je nekonzistentní mezi prameny.
+
+  VLASTNÍ WEB NENAČTEN: `https://ostojakarkonoska.com.pl` skončil
+  na PROVENANCE_REQUIRED.
+
+  HISTORIE / TURISTICKÁ MINULOST (DATA-25): nedoložena, nedomýšlí se.
+
+  Prameny: https://e-nocleg.pl/nocleg,ostoja,karkonoska.html ·
+  https://www.nocowanie.pl/noclegi/karpacz/domki/199415/

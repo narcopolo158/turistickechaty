@@ -28,3 +28,39 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO 2026-10-06 (šestá fronta koše C3, šestá dávka podle identifikátoru) —
+  NÁVRH VYŘADIT, padá na OBOU půlkách klíče (čtvrtý takový případ koše C3).
+
+  TOTOŽNOST: doložena adresou „Rędziny 23A" shodnou s OSM; pramen ji doplňuje
+  poštovní obcí „58-400 Kamienna Góra". Souřadnici neuvádí, totožnost je proto
+  zapsána jako slabší doklad.
+
+  KLÍČ ZAŘAZENÍ, PRVNÍ PŮLKA NESPLNĚNA — a pramen to říká nejtvrději, jak
+  dosud který v koši C3: „Do wynajęcia tylko i wyłącznie cały dom." K jídlu
+  jen vlastní kuchyň — „w pełni wyposażona nowoczesna kuchnia" a „Możliwość
+  skorzystania z grilla"; restaurace ani jídelna v objektu žádná. Kapacita
+  „W domu bez ścisku mieści się 8-13 osób z dziećmi" (14 + 3 dětská lůžka,
+  120 m², 4 ložnice).
+
+  KLÍČ ZAŘAZENÍ, DRUHÁ PŮLKA TAKY NESPLNĚNA: 293 m k nejbližší značce (zelená
+  Szklarska Poręba – Wałbrzych), 0 značek do 250 m, nejbližší rozcestník
+  10 665 m (měření 2026-09-06, scripts/triaz-role-na-trase.ts).
+
+  VEDLEJŠÍ NÁLEZ K DATA-29 / DATA-41 (přesahové oblasti): bod kandidáta
+  (50,8072492 / 15,9416186) leží u východní hrany krkonošského okna
+  (`lngMax` 16,05 v scripts/oblasti.ts) a adresa „Rędziny" míří do podhůří
+  RUDAW JANOWICKICH, kde už repo jednu oblast rozpracovanou má
+  (`data/kandidati/rudawy-janowickie/`, dosud jediný objekt
+  `schronisko-pttk-szwajcarka` na 50,8632 / 15,8725). Kandidát je tedy
+  v krkonošském fondu pravděpodobně jen díky šířce okna. NETVRDÍ se tu, kam
+  patří — je to doklad pro Michalovu otevřenou otázku z 2026-09-23
+  (kontrola „kandidát daleko od své oblasti" jako UPOZORNĚNÍ) a vstup
+  do DATA-29. U kandidáta, který jde k vyřazení, to beztak nic nemění.
+
+  VLASTNÍ WEB NENAČTEN: `http://www.podzielonymdachem.i-noclegi.pl/` skončil
+  na PROVENANCE_REQUIRED.
+
+  HISTORIE / TURISTICKÁ MINULOST (DATA-25): nedoložena, nedomýšlí se.
+
+  Prameny: https://noclegi.pl/domek-pod-zielonym-dachem-redziny

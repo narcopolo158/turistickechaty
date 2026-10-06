@@ -30,3 +30,37 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=chalet (alpine_hut = obsluhovaná,
   wilderness_hut = útulna).
+
+  ČTENO (pokus) 2026-10-06 (šestá fronta koše C3, šestá dávka podle
+  identifikátoru) — BEZ VERDIKTU, NEBYLO CO ČÍST. Pátý takový případ koše C3
+  (po `apartmany-tri-boudy`, `chalupa-u-rihu`, `chalupa-sport`,
+  `chata-u-kohouta`) a PRVNÍ, který je v úrovni „vlastní pramen", tedy
+  v nejsilnějším koši identifikátorů.
+
+  PROČ: jediný identifikátor objektu je jeho vlastní doména
+  `https://ministerska.cz/`, a ta skončila na PROVENANCE_REQUIRED. Žádný
+  druhý pramen jméno „Ministerská" u Strážného nenese — prohledány
+  hkregion.cz, ceskehory.cz, krkonose.eu, kudyznudy.cz, turistika.cz,
+  e-chalupy.cz, krajinapodsnezkou.cz, firmy.cz. Ani historické jméno
+  („Ministerské boudy") nevrací žádný doklad.
+
+  POZOR, PAST „JEDEN PROVOZOVATEL, NĚKOLIK OBJEKTŮ" — popáté: OSM u kandidáta
+  nese e-mail `info@friesovyboudy.cz`, tedy adresu provozovatele Horského
+  hotelu Friesovy boudy, který restauraci (90 míst včetně baru a klubu,
+  11:30–22:00 celoročně) doloženě má. Hotel ale stojí na Strážné 95,
+  50,700017 / 15,651423 — od bodu kandidáta (50,698109 / 15,6465203)
+  **405 m**. Je to tedy CIZÍ BUDOVA a restaurace se kandidátovi NEPŘIPISUJE
+  (stejná past jako `janova-bouda` 2026-10-05, `chata-kabrtova-bouda`
+  2026-10-04 a dvě dřívější).
+
+  KLÍČ ZAŘAZENÍ, DRUHÁ PŮLKA (role na trase) SPLNĚNA: 53 m k modré č. 1808
+  [M] Špindlerův Mlýn – Dolní Dvůr, 1 značka do 250 m, nejbližší rozcestník
+  363 m (měření 2026-09-06, scripts/triaz-role-na-trase.ts). Je to nejtěsnější
+  role na trase z dnešní dávky — o gastru ale pramen neexistuje, takže se
+  verdikt NEDOMÝŠLÍ v žádném směru.
+
+  DALŠÍ ČTENÍ: má smysl teprve až bude možné načíst vlastní doménu (otázka pro
+  Michala z 2026-09-24), nebo po telefonátu na +420 499 434 135 (DATA-04).
+
+  Prameny k nedostupnosti: https://www.kudyznudy.cz/aktivity/horsky-hotel-friesovy-boudy-ve-straznem ·
+  https://www.ceskehory.cz/ubytovani/friesovy-boudy-strazne.html
