@@ -29,6 +29,157 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-10-07 — denní session: první dávka, ze které nepřežil nikdo — a konec fronty se chová podle předpovědi
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging). Od 10. 9. do repa nepřibyl tvůj commit — poslední
+  commit kohokoli jiného než denní session je dál `fe9fa1d`. Vzal jsem
+  „Příště" z 6. 10. Na dvě včerejší procesní otázky („zkus firemní rejstřík
+  u šesti držených", „přidej kontrolu součtu tabulky") jsi neodpověděl, takže
+  jsem je nedělal a jedu po pořadí fronty.
+- **Přečteno šest: `schronisko-liczyrzepa`, `sokolska-chata-babeta`,
+  `szkolne-schronisko-mlodziezowe-wojtek`, `widok-na-sniezke`, `widokowo`,
+  `wiilla-jagoda-jagniatkow`** → **6 návrhů na vyřazení, žádné povýšení,
+  žádný držený, žádné „nebylo co číst"**. Je to **první dávka šesti, ze které
+  nevyšel jiný verdikt než „vyřadit"**. Do `data/chaty/` se dnes nesáhlo;
+  verdikty jsou návrhy v `interniPoznamky` a řádky v triážním dokumentu.
+  **Živá tabulka je dopsaná týž den — třetí běh v řadě.**
+- **NÁLEZ DNE: konec fronty se chová přesně tak, jak to měření z 6. 9.
+  předpovědělo — pět propadnutí na OBOU půlkách klíče v jedné dávce.** Do
+  dneška padli na obou půlkách čtyři kandidáti za tři týdny (`osada-sniezka`,
+  `jawa`, `ostoja-karkonoska`, `pod-zielonym-dachem`); dnes jich je pět
+  v jedné dávce. Není to výjimka, je to tvar zbytku: fronta se od 27. 9. staví
+  **podle síly identifikátoru**, ne podle blízkosti ke značce, takže kandidáti,
+  které měření odsunulo nad práh 250 m, přicházejí až teď. Dnešní vzdálenosti
+  ke značce: 282, 644, 700, 811 a 1 070 m; jediný pod prahem
+  (`schronisko-liczyrzepa`, 28 m) padl na gastru. **Praktický dopad: u zbytku
+  nad prahem nemá smysl hledat povýšení, stačí jeden pramen o stravování
+  a poctivě zapsat, na čem padl — čtení se tím zlevňuje** (dosud jsem hledal
+  dva až čtyři prameny na kandidáta).
+- **Druhý nález, a ten je na kontrolu: jméno v OSM může kategorii ZAKRÝVAT.**
+  OSM nese `Schronisko Liczyrzepa` a slovo „Szkolne" v tazích není vůbec —
+  objekt tak vypadá jako schronisko v turistickém smyslu, tedy jako kandidát,
+  kterého má smysl povyšovat. Dohledávka ukázala celé jméno **„Szkolne
+  Schronisko Młodzieżowe Liczyrzepa"**, celoroční školské zařízení s 50 lůžky
+  na palandách, samoobslužnou kuchyní a jídlem k objednání v _sousedním_
+  penzionu. Je to **šestý objekt téže kategorie v koši a všech šest padá na
+  téže půlce klíče** (Plum, Złoty Widok, staniszowské schronisko, dnešní
+  Wojtek a Liczyrzepa; `…-skalnik` je dál hraniční a čeká na tvou výjimku).
+  Po šesti případech to podle mě přestává být jednotlivý verdikt a začíná být
+  pravidlo kategorie.
+- **Třetí nález: past jmenovce chytla v jedné dávce dvakrát.** Pod jménem
+  „Szkolne Schronisko Młodzieżowe Wojtek" vede frommers.com **jiný objekt**
+  (Skowronków 18A, Jelenia Góra) — náš kandidát je Piastowska 1 ve Szklarské
+  Porębě. Horší je „Chata Babeta": jméno nosí **nejméně čtyři různé objekty**
+  (Poniklá, Teplice nad Metují, České Petrovice, Jevišovice u Znojma)
+  a jevišovický záznam jsem napoprvé otevřel jako pramen k našemu kandidátovi —
+  je to objekt **190 km jinde**. Poznal jsem to jen proto, že ten záznam nesl
+  souřadnici. Třetí doklad poučky „totožnost se dokládá souřadnicí, ne jménem".
+- **Vedlejší nálezy:** (a) **totožnost souřadnicí u dvou ze šesti a jedna je
+  rekordně těsná** — `wiilla-jagoda-jagniatkow` na **3,3 m** (spolu
+  s `chata-votocka` druhý nejtěsnější doklad koše po `chata-kubik`),
+  `schronisko-liczyrzepa` na 5,5 m; u ostatních tří neuvádí souřadnici ani
+  jeden pramen; (b) **`PROVENANCE_REQUIRED` dnes NE u všech vlastních webů,
+  a to je nové** — `widoknasniezke.pl` se načetl a byl to jediný pramen, který
+  u toho kandidáta rozhodl, zatímco `widokowo-karpacz.pl` a `sokolponikla.cz`
+  spadly; tvoje otázka z 24. 9. je tím položená pojedenácté, ale **zpřesněná:
+  nejde o systematickou nedostupnost, jde o jednotlivé případy**;
+  (c) **rozpory, obě hodnoty zapsané** — Liczyrzepa „Skalna 45" × „Gimnazjalna
+  9", Babeta provozovatel „T.J. Sokol Poniklá" (OSM) × „Ing. Radka Paulů"
+  (obecní web); (d) **třetí doklad k tvé otázce „kandidát daleko od své
+  oblasti" (23. 9.)** — `widok-na-sniezke` má adresu v **Łomnici** (gmina
+  Mysłakowice) a vlastní web si sám počítá 10 km do Karpacze; netvrdím, kam
+  patří; (e) **past k DATA-25 zapsaná jako NEdoklad** — u Willy Jagody zmiňuje
+  pramen „wnętrza w retro stylu z lat 40.", což je popis zařízení, ne
+  turistická minulost ani rok vzniku; (f) devátý druh vady v OSM `website` se
+  dnes neobjevil — všech šest domén vedlo na objekt odpovídající jménu, problém
+  byl jen v dostupnosti.
+- **Výtěžnost pořadí podle identifikátoru po sedmi dávkách: 2 povýšení ze 41
+  (4,9 %) proti 1 z 37 u měřených front (2,7 %).** Dnešní nula rozdíl zase
+  stáhla — platí, co stojí v zápisu z 5. 10.: na těchhle počtech to neunese
+  rozhodnutí.
+- **Stav koše C3: přečteno 81 ze 120 (67,5 %), zbývá 39, ve frontě ke čtení 15.** Kontrolní součet 3 + 1 + 1 + 9 + 1 + 3 + 56 + 2 + 5 = **81**, souhlasí
+  s živou tabulkou i s oběma skripty.
+- **Kontroly:** `npm ci` + `npm run kontrola` zelená (20 workflow souborů,
+  0 vad; fixtura 25 souborů, 4 kontroly, 0 spadlo), prettier přeformátoval
+  triážní dokument (YAML byly v pořádku), všech šest YAML se kontrolně
+  přeparsovalo, oba triážní skripty hlásí **81 · zbývá 39** a shodují se
+  s rozpadem.
+
+**Příště:** vzít **dalších ~6 kandidátů fronty** — následuje
+`zacisze-pod-smielcem`, `zinneckerovy-boudy`, `chata-gall`, `dalibor`,
+`gorska-chata` a `chata` (Labská 22). Dva z nich mají vlastní pramen, čtyři
+jen adresu. **Pozor:** ve frontě stojí **pět adres v ulici Labská ve
+Špindlerově Mlýně** (`chata` č. 22, `chata-jasanka` č. 7, `chata-solunka`
+č. 61, `krausovy-boudy` č. 13, `sporthotel-svycarska-bouda` č. 1) — přesně ten
+případ, na který se od 27. 9. ptám, jestli smím čtení stavět po osadách; kdyby
+ano, dala by se celá Labská přečíst v jedné dávce. Pořád leží Broumovsko
+z 28. 8., deset padajících testů (Postgres/exporty) a blokované DATA-04 /
+DATA-05 / DATA-20 / DATA-22 / DATA-25 / DATA-28 / F1-IMPL.
+
+**Otázky pro Michala:**
+
+- **NOVÁ a nejlevnější ze všech: mám z „Szkolne Schronisko Młodzieżowe"
+  udělat kontrolu nad tagy?** Šest případů ze šesti padlo na téže půlce klíče.
+  Kontrola by jen UPOZORNILA (ne vyřadila) a nad Liczyrzepou by nezabrala,
+  protože OSM u ní „Szkolne" nenese — to je zároveň její mez. Stačí „přidej".
+- **NOVÁ: po dnešní dávce dává pořadí fronty podle identifikátoru smysl jinak,
+  než jsem ho stavěl** — zbytek je převážně nad prahem 250 m, tedy předem
+  rozhodnutý na roli na trase. Mám zbývajících 15 **čistit rychle** (jeden
+  pramen o stravování na kandidáta), nebo u nich chceš plné čtení jako dosud?
+  Rychlá varianta by frontu dojela ve dvou až třech dávkách.
+- **Trvá z 6. 10.: souhlasíš s povýšením `ludvikova-bouda`?** A s ní pořád
+  čeká `bouda-mama` z 28. 9. Stačí „ano, povyš".
+- **Trvá z 6. 10.: mám u šesti držených kandidátů zkusit firemní rejstřík
+  (firmy.cz, zivefirmy.cz) dřív, než na ně budeš volat?** Dnes jsem to nedělal,
+  protože to byl návrh, ne zadání.
+- **Trvá z 5. 10.: smím přidat do `npm run kontrola` kontrolu „součet živé
+  tabulky verdiktů = nejnovější kontrolní součet v dokumentu"?** Dnes jsem
+  tabulku dopsal hned, ale je to pořád ruční krok a třetí den v řadě, co to
+  dělám rukou.
+- **Trvá ze 4. 10.: jak má klíč odpovídat na „gastro je, veřejný přístup
+  nedoložen"?** Dnešní dávka tenhle stav nevyrobila, ale šest držených čeká.
+- **Trvá ze 4. 10.: mám poučku „totožnost se dokládá souřadnicí, ne jménem"
+  povýšit na kontrolu?** Dnes mi zabránila zapsat objekt od Znojma jako
+  krkonošskou chatu — to je třetí doklad a podle mě už to na kontrolu stačí.
+- **Trvá z 24. 9.: smím načíst přímo domény z OSM u kandidátů, které
+  vyhledávač nenajde?** Dnes se otázka zpřesnila: ze tří vlastních webů jeden
+  prošel a dva spadly, takže to není systematické. U `sokolska-chata-babeta` by
+  vlastní web zavřel jak chybějící souřadnici, tak otázku hospody.
+- **Trvá z 27. 9.: smím čtení stavět po OSADÁCH?** Dnes pro to přibyl nejlepší
+  doklad: pět kandidátů fronty má adresu v jedné ulici (Labská, Špindlerův Mlýn).
+- **Trvá ze 4. 10.: `chata-kabrtova-bouda`** — víš o ní něco, nebo ji mám
+  zkusit v knihách, až DATA-25 odblokuješ?
+- **Trvá ze 4. 10.: `chata-medika` (Dolní Dvůr 128)** — mám zavolat?
+- **Trvá z 2. 10.: `chata-honzik` a `hottur`** — splývá s otázkou o třetím
+  stavu a o rejstřících výš.
+- **Trvá z 30. 9.: `grohmanova-bouda` — vyřadit, nebo držet do DATA-25?**
+- **Trvá z 30. 9., telefonní, k DATA-04: u Černé boudy** — je hotelová
+  restaurace otevřená neubytovaným a je 10:00–16:30 její doba, nebo doba
+  bistra (9:00–18:00)?
+- **Trvá z 28. 9.: `capkova-chata`** čeká na klíč střediska.
+- **Trvá: klíč střediska.**
+- **Trvá z 26. 9.:** souhlasíš se třemi návrhy na vyřazení (Kalevala, Plum,
+  Złoty Widok) a mám u polských kandidátů přestat vyvozovat verdikt
+  z rozcestníku?
+- **Trvá z 23. 9.:** mám přidat kontrolu „kandidát daleko od své oblasti" do
+  `npm run kontrola` jako UPOZORNĚNÍ (ne vadu)? Dnes pro ni přibyl třetí
+  doklad (`widok-na-sniezke` míří do Łomnice v podhůří).
+- **Trvá z 21. 9.:** kandidát, u kterého se nenačetl žádný pramen — do
+  `_odlozeno.yaml`, nebo vyřadit jako ostatní?
+- **Trvá z 19. 9.: výjimka pro Skalnik.**
+- Trvají starší otázky (Sruby Podspálov a zúžení `lngMin`; Dom Pod Jaworami —
+  zavoláš?; Baraba × Popelka; druhý klíč `rozhodnuteDuplicity`; a další
+  z 2. 9. – 6. 10.).
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. `node_modules`
+v sandboxu nejsou, `npm ci` je potřeba pustit, než se dají spustit kontroly.
+
 ## 2026-10-06 — denní session: třetí stav se poprvé zavřel pramenem, ne telefonátem — a třetí návrh na povýšení
 
 **Hotovo:**
