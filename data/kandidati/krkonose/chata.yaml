@@ -21,3 +21,30 @@ interniPoznamky: >-
 
   Typ odvozen z OSM tagu tourism=hotel (alpine_hut = obsluhovaná, wilderness_hut
   = útulna).
+
+  ČTENO 11. 10. 2026 (šestá fronta koše C3, osmá dávka) — BEZ VERDIKTU,
+  nebylo co číst. Nevyřazuje se ani nepovyšuje.
+
+  Proč: OSM nese jméno doslova „Chata" (tourism=hotel), což objekt
+  neidentifikuje vůbec, a jediný identifikátor je adresa **Labská 22**
+  (Špindlerův Mlýn). Pod jménem „Chata Labská" vedou prameny ale **nejméně tři
+  různé objekty a ani jeden nestojí na čísle 22**:
+  — „Chata Labská", Špindlerův Mlýn-Labská **21**, GPS 50°43'0,299" N /
+    15°34'50,88" E, tj. **113,8 m** od našeho bodu 50,715728 / 15,580881;
+    společná kuchyň a jídelna, vhodná pro školní kurzy, e-mail
+    starostova@sprako.cz (https://itras.cz/chata-labska/);
+  — „Wellness chata Labská", Labská **48**, GPS 50,69044 / 15,57388, tj.
+    **2 855 m** od našeho bodu, pronajímá se celá
+    (https://www.e-chalupy.cz/wellness-chata-labska-spindleruv-mlyn-ubytovani-o9714);
+  — „Chata Labská Vyhlídka" jako třetí nositel jména (nečteno).
+  Žádný z nich není náš kandidát a žádný pramen k číslu 22 se nenašel.
+  **Verdikt proto nepadá — totožnost se dokládá souřadnicí, ne jménem**
+  (poučka ze 4. 10. 2026, tady počtvrté).
+
+  Role na trase pro informaci: 126 m k ose žluté č. 140007 [Ž] Labská přehrada
+  hráz. – Pod Černou skálou, 1 značená trasa do 250 m, rozcestník 122 m
+  (měření 6. 9. 2026) — tedy SPLNĚNA. Právě proto se tenhle kandidát nemá
+  odepsat naslepo: kdyby se našel pramen o občerstvení, klíč by mohl projít.
+
+  Patří k otázce pro Michala z 21. 9. 2026: kandidát, u kterého se nenačetl
+  žádný použitelný pramen — do `_odlozeno.yaml`, nebo vyřadit jako ostatní?
