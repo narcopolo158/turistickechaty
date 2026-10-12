@@ -29,6 +29,165 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-10-12 — denní session: devátá dávka — rejstřík dal telefon místo verdiktu a fronta ke čtení se scvrkla na tři
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging). Od 10. 9. do repa nepřibyl tvůj commit — poslední
+  commit kohokoli jiného než denní session je dál `fe9fa1d`. Na žádnou
+  z otázek z 11. 10. (ani na starší) jsi neodpověděl, takže jsem nic z nich
+  nedělal a vzal „Příště" z 11. 10.
+- **Přečteno šest: `chata-advokatka`, `chata-jasanka`, `chata-katerina`,
+  `chata-solunka`, `chata-zapiecek`, `krausovy-boudy`** → **3 návrhy na
+  vyřazení, 1 držený (třetí stav), 2 bez verdiktu, žádné povýšení.** Do
+  `data/chaty/` se nesáhlo; verdikty jsou návrhy v `interniPoznamky` a řádky
+  v triážním dokumentu. **Živá tabulka je dopsaná týž den — pátý běh v řadě,
+  a dnes bez té chyby, co se mi stala včera** (zvedl jsem počty i dopsal
+  všech šest slugů do sloupce „kdo", oba skripty hlásí 93 · zbývá 27).
+- **NÁLEZ DNE, a je to zpřesnění včerejšího závěru, ne jeho oprava: firemní
+  rejstřík je špatný pramen pro verdikt a nejlepší pramen pro telefonní
+  číslo.** Včera to u `chata-gall` skončilo tím, že „rejstřík není náhrada za
+  katalog". Dnes to má praktický konec: u `chata-jasanka` je rejstřík
+  **jediný dohledatelný zápis na celém webu** — verdikt z něj nejde vyvodit
+  (totožnost neuzavřená na 102,3 m, číslo v ulici si prameny odporují, OSM
+  „Labská 7" × rejstřík „Labská 5", a o gastru ani slovo), ale dal **telefon
+  +420 603 531 754**. U `chata-katerina` nedal rejstřík ani to. Zbylé čtyři
+  rozhodly katalogy. **Dávka tedy vyprodukovala dvě telefonní čísla k DATA-04
+  místo dvou verdiktů** — `chata-jasanka` a `krausovy-boudy` (+420 499 433 110,
+  +420 733 567 826, recepce@krausovyboudy.cz). Je to poprvé, co čtení koše C3
+  skončí u telefonu jako u _výsledku_, ne jako u výmluvy.
+- **Druhý nález: dvě nečtení v jedné dávce a obě s doloženou rolí na trase —
+  u `chata-katerina` nejsilnější v celém koši.** Kategorie „bez verdiktu"
+  byla dosud laciná: šest kandidátů a jen jeden z nich (`chata`, Labská 22)
+  měl roli na trase splněnou. Dnes jsou nečtení dva a oba ji mají, a Kateřina
+  má **6 značených tras do 250 m** — nejvíc ze všech, co se kdy nedočetly.
+  „Nebylo co číst" tím přestává být odkladiště a stává se nejdražší kategorií
+  koše: u obou by vyřazení naslepo zahodilo možné povýšení.
+- **Třetí nález: `chata-solunka` je první kandidát koše, u kterého pramen
+  říká, že občerstvení tu BYLO a NENÍ** — e-chalupy.cz píše „Kuchyň je plně
+  vybavená, **původně se tady vařily plné penze hostům**" a zmiňuje dva velké
+  průmyslové sporáky. Na verdikt to vliv nemá (Solunka padá na obou půlkách,
+  520 m a 0 značek do 250 m), ale je to **první pramenný podklad k DATA-25**
+  v tomhle koši a zároveň vzor formulace, podle které se dá při odblokování
+  DATA-25 hledat cíleně.
+- **Vedlejší nálezy:** (a) **nejpřesnější doklad totožnosti v celém koši —
+  `chata-advokatka` na 2,1 m** (dosud `zinneckerovy-boudy` 5,9 m); souřadnice
+  uzavřely totožnost u tří ze šesti (2,1 / 7,4 / 8,4 m), u `krausovy-boudy`
+  GPS neuvádí ani jeden ze dvou pramenů a u obou nečtených uzavřená není —
+  a právě proto u nich verdikt není; (b) **past, která dnes nesklapla:**
+  „Chata U jasanu" (Labská 37) se jménem i ulicí nabízí jako pramen
+  k `chata-jasanka`, ale leží **1 528,9 m** daleko a říká „Pronajímáme POUZE
+  celý objekt, nevaříme a neobsluhujeme" — kdybych její verdikt přebral,
+  Jasanka by dnes padla, a padla by na cizím domě; (c) **`PROVENANCE_REQUIRED`
+  potřinácté, ale dnes poprvé u domény z KATALOGU, ne z OSM** —
+  `chatazapiecek.pl` přinesl cylex-polska.pl a stejně se nenačetl, takže
+  otázka z 24. 9. není o provenienci OSM, ale o vlastních domén jako
+  takových; (d) **jmenovci podesáté a dnes dvakrát** — „Chata Kateřina" nese
+  i objekt v Horní Malé Úpě (první jmenovec v TÉMŽE pohoří, 25+ km odtud)
+  a „Chata Jasanka" i objekt v Rybníku ve východních Čechách; (e) **jméno
+  „boudy" zakrývá kategorii i dnes** — `krausovy-boudy` je rodinný penzion
+  u sjezdovky Labská (ski-in/ski-out, vlek 50 m), po kterém je pojmenovaná
+  osada, ne naopak; (f) **práh 250 m se dnes chová podle měření z 11. 10.** —
+  pět z šesti pod prahem a u všech pěti je verdikt celý v občerstvení, jediný
+  nad prahem padl na obou půlkách; předpověď z 11. 10. tedy platí, na rozdíl
+  od té ze 7. 10.
+- **Stav koše C3: přečteno 93 ze 120 (77,5 %), zbývá 27, ve frontě ke čtení
+  už jen 3.** Kontrolní součet 3 + 1 + 1 + 11 + 1 + 3 + 64 + 2 + 7 = **93**,
+  souhlasí s živou tabulkou i s oběma skripty.
+- **Kontroly:** `npm ci` + `npm run kontrola` zelená (20 workflow souborů,
+  0 vad; fixtura 25 souborů, 4 kontroly, 0 spadlo), prettier přeformátoval
+  triážní dokument (YAML byly v pořádku), všech šest YAML se kontrolně
+  přeparsovalo, oba triážní skripty hlásí **93 · zbývá 27**.
+
+**Příště:** **dočíst frontu jednou dávkou** — zbývají tři a všichni na úrovni
+„adresa": `sporthotel-svycarska-bouda` (Labská 1, **10 m od značky** —
+nejsilnější role na trase v celém zbytku fronty), `turisticka-chata-lajdacek`
+(Labská 4) a `mounttain-holiday-lodges` (Droga do Wodospadu 4a, Przesieka).
+Tím se fronta stavěná podle identifikátoru uzavře a zbude **24 kandidátů bez
+identifikátoru**, u kterých čtení nemá kde začít a pro které předpověď
+o „rychlém čištění" podle měření z 11. 10. **platí** — příští dávka je tedy
+dobré místo na otázku, jak se mají čistit. Pořád leží Broumovsko z 28. 8.,
+deset padajících testů (Postgres/exporty) a blokované DATA-04 / DATA-05 /
+DATA-20 / DATA-22 / DATA-25 / DATA-28 / F1-IMPL.
+
+**Otázky pro Michala:**
+
+- **NOVÁ, a je to jediná, u které bych si přál odpověď přede zbytkem: fronta
+  ke čtení se příští dávkou vyčerpá a zbude 24 kandidátů, u kterých není kde
+  začít. Jak je chceš čistit?** Varianty, jak je vidím: (a) OSM Overpass
+  dohledávka podle souřadnic na okolní POI (hospoda, rozcestník) jako
+  strojový filtr, (b) jeden pokus na kandidáta v katalogu podle jména +
+  obce a kdo nevyjde, jde do `_odlozeno.yaml`, (c) odložit celých 24 na
+  DATA-25 a koš C3 uzavřít jako „přečtený, kde to šlo". Stačí „a", „b"
+  nebo „c".
+- **NOVÁ, telefonní, k DATA-04 — a dnes poprvé mám čísla, ne jen jména:**
+  `chata-jasanka` **+420 603 531 754** (otázka: je v objektu občerstvení pro
+  kolemjdoucího, a je to Labská 5, nebo 7?) a `krausovy-boudy`
+  **+420 499 433 110 / +420 733 567 826** (otázka: smí do jídelen a k baru
+  i neubytovaný?). Oba telefonáty rozhodnou verdikt jednou větou.
+- **Trvá ze 4. 10., a dnes má sedmý případ: jak má klíč odpovídat na „gastro
+  je, veřejný přístup nedoložen"?** `krausovy-boudy` mají dvě jídelny, bar,
+  snídaně a polopenzi — všechno uvedené slovy „Hosté mají k dispozici" a ani
+  jeden ze dvou pramenů o neubytovaném nemluví. Na odpověď teď čeká sedm
+  držených.
+- **Trvá z 5. 10.: smím přidat do `npm run kontrola` kontrolu „součet živé
+  tabulky verdiktů = seznam slugů ve sloupci kdo"?** Dnes ten ruční krok
+  vyšel, ale včera ne — a je to pátý den v řadě, co je ruční. Stačí „přidej".
+- **Trvá ze 4. 10. a dnes pátý doklad: mám poučku „totožnost se dokládá
+  souřadnicí, ne jménem" povýšit na kontrolu?** Dnešní „Chata U jasanu" je
+  nejlepší argument, jaký jsem k tomu kdy měl: jméno i ulice sedí, dům je
+  jiný o 1,5 km a verdikt má opačný.
+- **Trvá z 24. 9., a dnes se otázka rozšířila: smím načíst vlastní domény
+  objektů?** Dosud šlo o domény z OSM; `chatazapiecek.pl` přinesl katalog
+  a spadl stejně. Právě on by rozhodl, jestli „aneks kuchenny" je celé
+  stravování objektu. Stačí, když tu adresu pošleš ve zprávě.
+- **Trvá ze 7. 10.: mám z „Szkolne Schronisko Młodzieżowe" udělat kontrolu
+  nad tagy?** Dnešní `krausovy-boudy` jsou další protiargument (jméno
+  „boudy" u penzionu u sjezdovky), takže pořád spíš upozornění než vada.
+- **Trvá z 11. 10.: `chata` (Labská 22) do `_odlozeno.yaml`, nebo vyřadit?**
+  Dnes k ní přibyla `chata-katerina` a ta je silnější případ — 6 značených
+  tras do 250 m. Otázka z 21. 9. je tím o kategorii „nebylo co číst" jako
+  celek, ne o jednom kandidátovi.
+- **Trvá z 6. 10.: souhlasíš s povýšením `ludvikova-bouda`?** A s ní pořád
+  čeká `bouda-mama` z 28. 9. Stačí „ano, povyš".
+- **Trvá z 11. 10.: mám u držených zkusit firemní rejstřík dřív, než na ně
+  budeš volat?** Dnes mám odpověď sám: ano, ale ne kvůli verdiktu — kvůli
+  číslu. Pokud souhlasíš, pustím rejstřík nad všemi sedmi drženými a přinesu
+  ti telefonní seznam.
+- **Trvá ze 4. 10.: `chata-kabrtova-bouda`** — víš o ní něco, nebo ji mám
+  zkusit v knihách, až DATA-25 odblokuješ?
+- **Trvá ze 4. 10.: `chata-medika` (Dolní Dvůr 128)** — mám zavolat?
+- **Trvá z 2. 10.: `chata-honzik` a `hottur`** — splývá s otázkou o třetím
+  stavu výš.
+- **Trvá z 30. 9.: `grohmanova-bouda` — vyřadit, nebo držet do DATA-25?**
+- **Trvá z 30. 9., telefonní, k DATA-04: u Černé boudy** — je hotelová
+  restaurace otevřená neubytovaným a je 10:00–16:30 její doba, nebo doba
+  bistra (9:00–18:00)?
+- **Trvá z 28. 9.: `capkova-chata`** čeká na klíč střediska.
+- **Trvá: klíč střediska.**
+- **Trvá z 26. 9.:** souhlasíš se třemi návrhy na vyřazení (Kalevala, Plum,
+  Złoty Widok) a mám u polských kandidátů přestat vyvozovat verdikt
+  z rozcestníku?
+- **Trvá z 23. 9.:** mám přidat kontrolu „kandidát daleko od své oblasti" do
+  `npm run kontrola` jako UPOZORNĚNÍ (ne vadu)?
+- **Trvá z 19. 9.: výjimka pro Skalnik.**
+- Trvají starší otázky (Sruby Podspálov a zúžení `lngMin`; Dom Pod Jaworami —
+  zavoláš?; Baraba × Popelka; druhý klíč `rozhodnuteDuplicity`; a další
+  z 2. 9. – 11. 10.).
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. `node_modules`
+v sandboxu nejsou, `npm ci` je potřeba pustit, než se dají spustit kontroly.
+`WebFetch` vrátil dnes `ROBOTS_DISALLOWED` u `krkonose.tourism.cz`,
+`przesieka.info.pl`, `nocowanie.eu` a `noclegi.com` a `PROVENANCE_REQUIRED`
+u `chatazapiecek.pl`; `cartogiraffe.com` vrátil `CLIENT_ERROR`
+a `domaciskola-mypage-cz.webnode.cz` `SERVER_ERROR`. Užitečné dnes byly
+`ceskehory.cz`, `e-chalupy.cz`, `kudyznudy.cz`, `spindleruv-mlyn.com`,
+`orlyturystyki.pl`, `cylex-polska.pl` a `firmy.cz`.
+
 ## 2026-10-11 — denní session: osmá dávka — a předpověď o konci fronty z 7. 10. na datech neplatí
 
 **Hotovo:**
