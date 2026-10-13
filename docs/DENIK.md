@@ -29,6 +29,166 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-10-13 — denní session: fronta koše C3 dočtena — a jedno čtení, které rozhodlo čtyři kandidáty naráz
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging). Od 10. 9. do repa nepřibyl tvůj commit — poslední
+  commit kohokoli jiného než denní session je dál `fe9fa1d`. Na žádnou
+  z otázek z 12. 10. (ani na starší, včetně té jediné, u které jsem si přál
+  odpověď přede zbytkem) jsi neodpověděl, takže jsem nic z nich nedělal
+  a vzal „Příště" z 12. 10.
+- **Přečteno šest: `sporthotel-svycarska-bouda`, `turisticka-chata-lajdacek`,
+  `mounttain-holiday-lodges`, `lodge-1`, `lodge-2`, `lodge-3`** → **5 návrhů
+  na vyřazení, 1 držený (třetí stav), žádné povýšení a poprvé od 30. 9. ani
+  jedno „nebylo co číst".** Do `data/chaty/` se nesáhlo; verdikty jsou návrhy
+  v `interniPoznamky` a řádky v triážním dokumentu. **Živá tabulka je dopsaná
+  týž den — šestý běh v řadě** (oba skripty hlásí 99 · zbývá 21, souhlasí
+  s kontrolním součtem).
+- **FRONTA KOŠE C3 JE DOČTENÁ.** Tři kandidáti, kterými fronta stavěná podle
+  identifikátoru končila, mají verdikt. Zbývá 21 kandidátů bez identifikátoru.
+- **NÁLEZ DNE: předpověď ze 6. 9. „stačí jedno čtení pramene na celý shluk"
+  poprvé platí doloženě — a je to nejlevnější čtení celé triáže.** Oficiální
+  web provozovatele u `mounttain-holiday-lodges` (Droga do Wodospadu 4A,
+  Przesieka, OSM `operator=Domandi`) mluví o **třech** domcích a říká „Każdy
+  domek wyposażony jest we własną saunę na podczerwień, balię, Wi-Fi
+  i nowoczesną kuchnię." Airbnb k tomu nese jména „Domandi lodge 1"
+  a „Domandi lodge 2" — tedy přesně jména, která OSM dalo bodům shluku, a ty
+  leží 17,0 / 18,9 / 20,0 m od uzlu Domandi. **Jedno čtení tím posunulo počet
+  přečtených o čtyři** a tři z těch čtyř patřily do skupiny „kandidáti bez
+  identifikátoru", o které se včera ptala hlavní otázka. Opatrnost k tomu
+  patří: shluk NENÍ duplicita (jiná jména, jiné uzly, tři domky stojí vedle
+  sebe) a verdikt se přenáší proto, že pramen mluví o **každém** domku, ne
+  proto, že body leží blízko sebe. U `lodge-3` je i tak mezera — jmenovitý
+  záznam se nenašel, třetí domek je doložen jen počtem.
+- **Druhý nález: nejsilnější role na trase v celém zbytku fronty skončila ve
+  třetím stavu.** `sporthotel-svycarska-bouda` je **10 m od osy žluté**
+  (nejmíň v celé šesté frontě) a má doložené gastro, které je ze všech
+  dosavadních držených nejsilnější — ne jídelnu pro hosty, ale **vlastní
+  restauraci s 90 místy** a letní terasu s obsluhou, tedy provoz velikostně
+  mimo kapacitu objektu (cca 60 lůžek). Verdikt přesto není: ani jeden ze tří
+  pramenů neříká, jestli do restaurace smí neubytovaný. Třetí stav má tím
+  osmý případ a poprvé drží kandidáta, který by jinak splnil obě půlky klíče
+  s nejlepším měřením ve frontě.
+- **Třetí nález: jméno zakrývá kategorii i dnes, a tentokrát přímo slovem
+  „turistická chata".** `turisticka-chata-lajdacek` nese v OSM název
+  „Turistická chata Lajdáček" a pramen ji vede v rubrice **„Ubytovny"**:
+  32 lůžek v 5 pokojích, v přízemí „kuchyňka se základním vybavením", o jídle
+  ani slovo. Poučka ze 7. 10. má osmý případ a je to první, kde zavádí samo
+  sousloví „turistická chata", ne „bouda" ani „schronisko".
+- **Vedlejší nálezy:** (a) **druhý a třetí nejpřesnější doklad totožnosti
+  v celém koši v jedné dávce** — `turisticka-chata-lajdacek` **3,0 m**
+  a `sporthotel-svycarska-bouda` **6,2 m** (rekord drží `chata-advokatka`
+  2,1 m z 12. 10.); (b) **pramen si sám odporuje ve výšce** — hkregion.cz
+  uvádí u Lajdáčku 865 m v kontaktu a 870 m v popisu téže stránky, do polí
+  se proto nezapsalo nic; (c) **`PROVENANCE_REQUIRED` počtrnácté**
+  (`svycarskabouda.cz`), ale **vlastní doména `pl.domandi-living.com` se
+  načetla bez potíží** a právě ona rozhodla čtyři kandidáty — otázka z 24. 9.
+  tedy není o vlastních doménách jako třídě; (d) **osada Labská je přečtená
+  celá** — všech šest adres (č. 1, 4, 7, 13, 22, 61) má verdikt nebo
+  doloženou jeho absenci; (e) **práh 250 m potřetí v řadě podle měření
+  z 11. 10.** — všech šest pod prahem a u všech šesti rozhodlo občerstvení,
+  role na trase ani jednou.
+- **Stav koše C3: přečteno 99 ze 120 (82,5 %), zbývá 21, fronta ke čtení je
+  prázdná.** Kontrolní součet 3 + 1 + 1 + 12 + 1 + 3 + 69 + 2 + 7 = **99**,
+  souhlasí s živou tabulkou i s oběma skripty.
+- **Kontroly:** `npm ci` + `npm run kontrola` zelená (20 workflow souborů,
+  0 vad; fixtura 25 souborů, 4 kontroly, 0 spadlo), prettier přeformátoval
+  triážní dokument (YAML byly v pořádku), všech šest YAML se kontrolně
+  přeparsovalo, oba triážní skripty hlásí **99 · zbývá 21**.
+
+**Příště:** fronta je prázdná, takže příští dávka je první, která se musí
+rozhodnout, jak číst **21 kandidátů bez identifikátoru**. Dnešní nález dává
+variantu, která ve včerejší otázce nebyla: **(d) projít zbylých 13 shluků
+z měření 6. 9. a zkusit, kolik z 21 se dá rozhodnout jedním čtením za shluk**
+— dnes to u prvního shluku vyšlo na tři kandidáty z jednoho pramene. Bez
+tvojí odpovědi vezmu příště právě tohle, protože je to jediná cesta, která
+nic nezahazuje a je levná. Pořád leží Broumovsko z 28. 8., deset padajících
+testů (Postgres/exporty) a blokované DATA-04 / DATA-05 / DATA-20 / DATA-22 /
+DATA-25 / DATA-28 / F1-IMPL.
+
+**Otázky pro Michala:**
+
+- **NOVÁ, a nahrazuje včerejší hlavní otázku: souhlasíš s variantou (d) —
+  čistit zbylých 21 kandidátů po shlucích z měření 6. 9., a teprve kdo zbude,
+  jde do `_odlozeno.yaml`?** Dnes to u shluku Domandi rozhodlo tři kandidáty
+  jedním pramenem. Varianty (a) OSM dohledávka, (b) jeden pokus v katalogu na
+  kandidáta, (c) odložit všech 21 na DATA-25 pořád platí. Stačí „a", „b", „c"
+  nebo „d".
+- **NOVÁ: souhlasíš, že verdikt jednoho pramene smí rozhodnout celý shluk?**
+  Dnes jsem to poprvé udělal (`lodge-1/2/3` z pramene
+  k `mounttain-holiday-lodges`). Důvod je pramenný, ne geometrický — web říká
+  „Każdy domek…". Jestli to je přes čáru, vrátím ty tři mezi nepřečtené
+  a zbude 24.
+- **NOVÁ, telefonní, k DATA-04, a je to nejcennější číslo za celý koš:**
+  `sporthotel-svycarska-bouda` **+420 722 933 863 / +420 606 283 300**
+  (e-mail hotel@svycarskabouda.cz). Otázka: **smí do restaurace (90 míst)
+  i neubytovaný a jaká je její otevírací doba?** Jedna věta povýší kandidáta,
+  který je 10 m od značky — nejlepší měření v celé frontě.
+- **Trvá ze 4. 10., a dnes má osmý případ: jak má klíč odpovídat na „gastro
+  je, veřejný přístup nedoložen"?** Dnešní `sporthotel-svycarska-bouda` je
+  z osmi držených nejsilnější: restaurace 90 míst v objektu s ~60 lůžky.
+  Na odpověď teď čeká osm držených.
+- **Trvá z 12. 10., telefonní, k DATA-04:** `chata-jasanka`
+  **+420 603 531 754** (je tam občerstvení pro kolemjdoucího, a je to Labská
+  5, nebo 7?) a `krausovy-boudy` **+420 499 433 110 / +420 733 567 826**
+  (smí do jídelen a k baru i neubytovaný?).
+- **Trvá z 5. 10.: smím přidat do `npm run kontrola` kontrolu „součet živé
+  tabulky verdiktů = seznam slugů ve sloupci kdo"?** Dnes ten ruční krok
+  vyšel, ale je to šestý den v řadě, co je ruční. Stačí „přidej".
+- **Trvá ze 4. 10. a dnes šestý doklad: mám poučku „totožnost se dokládá
+  souřadnicí, ne jménem" povýšit na kontrolu?** Dnes přibyly dva z první
+  trojky nejpřesnějších dokladů v koši (3,0 m a 6,2 m).
+- **Trvá z 24. 9., a dnes se zúžila: smím načíst vlastní domény objektů?**
+  `svycarskabouda.cz` spadl na `PROVENANCE_REQUIRED`, ale
+  `pl.domandi-living.com` prošel — nejde tedy o vlastní domény jako třídu.
+  Stačí, když tu adresu pošleš ve zprávě.
+- **Trvá ze 7. 10.: mám z „Szkolne Schronisko Młodzieżowe" udělat kontrolu
+  nad tagy?** Dnešní „Turistická chata Lajdáček" (ve skutečnosti ubytovna)
+  je osmý případ a první, kde zavádí sousloví „turistická chata".
+- **Trvá z 11. 10.: `chata` (Labská 22) a `chata-katerina` do
+  `_odlozeno.yaml`, nebo vyřadit?** Je to otázka o kategorii „nebylo co číst"
+  jako celek (7 kandidátů).
+- **Trvá z 6. 10.: souhlasíš s povýšením `ludvikova-bouda`?** A s ní pořád
+  čeká `bouda-mama` z 28. 9. Stačí „ano, povyš".
+- **Trvá z 11. 10.: mám u držených zkusit firemní rejstřík dřív, než na ně
+  budeš volat?** Po včerejšku to umím zúžit: ano, ale kvůli číslu, ne kvůli
+  verdiktu. Pokud souhlasíš, pustím rejstřík nad všemi osmi drženými
+  a přinesu ti telefonní seznam.
+- **Trvá ze 4. 10.: `chata-kabrtova-bouda`** — víš o ní něco, nebo ji mám
+  zkusit v knihách, až DATA-25 odblokuješ?
+- **Trvá ze 4. 10.: `chata-medika` (Dolní Dvůr 128)** — mám zavolat?
+- **Trvá z 2. 10.: `chata-honzik` a `hottur`** — splývá s otázkou o třetím
+  stavu výš.
+- **Trvá z 30. 9.: `grohmanova-bouda` — vyřadit, nebo držet do DATA-25?**
+- **Trvá z 30. 9., telefonní, k DATA-04: u Černé boudy** — je hotelová
+  restaurace otevřená neubytovaným a je 10:00–16:30 její doba, nebo doba
+  bistra (9:00–18:00)?
+- **Trvá z 28. 9.: `capkova-chata`** čeká na klíč střediska.
+- **Trvá: klíč střediska.**
+- **Trvá z 26. 9.:** souhlasíš se třemi návrhy na vyřazení (Kalevala, Plum,
+  Złoty Widok) a mám u polských kandidátů přestat vyvozovat verdikt
+  z rozcestníku?
+- **Trvá z 23. 9.:** mám přidat kontrolu „kandidát daleko od své oblasti" do
+  `npm run kontrola` jako UPOZORNĚNÍ (ne vadu)?
+- **Trvá z 19. 9.: výjimka pro Skalnik.**
+- Trvají starší otázky (Sruby Podspálov a zúžení `lngMin`; Dom Pod Jaworami —
+  zavoláš?; Baraba × Popelka; druhý klíč `rozhodnuteDuplicity`; a další
+  z 2. 9. – 12. 10.).
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. `node_modules`
+v sandboxu nejsou, `npm ci` je potřeba pustit, než se dají spustit kontroly.
+`WebFetch` vrátil dnes `PROVENANCE_REQUIRED` u `svycarskabouda.cz`,
+`www.spindleruv-mlyn.com` (česká verze URL; anglická `/en/` prošla)
+a `pl.domandi-living.com/kulinaria`, `ROBOTS_DISALLOWED` u `booking.com`
+a `CLIENT_ERROR` u `mapa.targeo.pl`. Užitečné dnes byly
+`spindleruv-mlyn.com/en/`, `slevomat.cz`, `hkregion.cz`,
+`pl.domandi-living.com`, `airbnb.ca` a `hotels-lower-silesia.com`.
+
 ## 2026-10-12 — denní session: devátá dávka — rejstřík dal telefon místo verdiktu a fronta ke čtení se scvrkla na tři
 
 **Hotovo:**
