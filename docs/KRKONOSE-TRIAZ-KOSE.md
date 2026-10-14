@@ -3850,3 +3850,77 @@ protože tři z nich (`lodge-1/2/3`) rozhodl dnešní shluk. Otázka z 12. 10.
 projít nejdřív zbylých 13 shluků z měření 6. 9. a zkusit, kolik z 21 se dá
 rozhodnout jedním čtením za shluk** — dnes to u prvního shluku vyšlo na tři
 kandidáty z jednoho pramene.
+
+## VARIANTA (d) ZMĚŘENA (14. 10. 2026) — shluk není klíč ke čtení, je to jen pořadí
+
+Varianta (d) z 13. 10. 2026 („projít zbylých 13 shluků z měření 6. 9.
+a zkusit, kolik z 21 se dá rozhodnout jedním čtením za shluk") stála na
+jediném doloženém případu — čtveřici Domandi, kde jeden pramen rozhodl
+čtyři kandidáty. Dnešní měření ten odhad nahrazuje číslem a **odhad
+neplatí**: rozsah varianty (d) je **3 z 21**, ne 21.
+
+Generováno `npx tsx scripts/triaz-kos-c3-shluky.ts --md` (práh 300 m,
+tranzitivní uzávěr — týž postup jako 6. 9. 2026, proto souhlasí počet
+čtrnácti shluků). Skript nic nezapisuje do `data/`, nic nevyřazuje
+a nic nepovyšuje.
+
+### Co měření říká
+
+| otázka                                                            | číslo                  |
+| ----------------------------------------------------------------- | ---------------------- |
+| shluků v koši C3 (práh 300 m)                                     | 14 · v nich 40 položek |
+| nepřečtených kandidátů                                            | 21                     |
+| z nich **ve shluku**                                              | 8                      |
+| z nich **samotářů mimo jakýkoli shluk**                           | 13                     |
+| nepřečtených ve shluku, kde aspoň jeden člen **identifikátor MÁ** | **3**                  |
+
+Dvě čísla to rozhodují. **Třináct z 21 nepřečtených neleží ve shluku
+vůbec** — u nich varianta (d) nemá na čem stát, protože není co číst
+společně. A z osmi, kteří ve shluku leží, jich **pět tvoří jeden shluk,
+kde identifikátor nemá ani jeden člen** — shluk je tam doložený (rozpětí
+54 m), ale ke čtení nevede, protože soused nemá kam poslat dotaz.
+
+### Shluky s nepřečteným členem (4)
+
+| shluk               | nepřečtených | přečtených | rozpětí | kde začít čtení                                                                               |
+| ------------------- | ------------ | ---------- | ------- | --------------------------------------------------------------------------------------------- |
+| `arnika` (5)        | 5            | 0          | 54 m    | — (ani jeden člen nemá identifikátor)                                                         |
+| `bouda-jirinka` (3) | 1            | 2          | 264 m   | `chata-tereza` → https://www.chatatereza.eu/; `pension-chata-lovrana` → http://www.lovrana.eu |
+| `dalibor` (2)       | 1            | 1          | 247 m   | `dalibor` → Špindlerův Mlýn 17                                                                |
+| `java` (2)          | 1            | 1          | 133 m   | `ministerska` → https://ministerska.cz/                                                       |
+
+U `java` je ten identifikátor navíc jen zdánlivý: soused `ministerska`
+web v OSM má, ale ze čtení vyšel jako **„nebylo co číst"** — jeho doména
+se nenačetla. Prakticky použitelní sousedé jsou tedy **dva**
+(`happy-house` přes adresu Daliboru, `bouda-jirinka` přes web Chaty
+Tereza), ne tři.
+
+### Hlavní nález: pětice u Ściegen je jedno místo a přesto se nedá přečíst
+
+Pět kandidátů `arnika`, `dziewiecsil`, `goryczka`, `lilia`, `rozeniec`
+leží v **54 m** a nese OSM way **1033422413–1033422417** — pět po sobě
+jdoucích identifikátorů, tedy jeden dávkový zápis jednoho mapéra.
+Tagy jsou u všech pěti totožné a prázdné: `building=yes`, `name`,
+`tourism=chalet`. Žádný web, telefon, e-mail, adresa ani `operator`.
+Nejbližší pojmenovaný soused je **472 m** daleko (`Apartamenty Every
+Sky`, ul. Kwiatowa, Ściegny).
+
+Že jde o jedno místo, je doložené. **Že se dá přečíst, doložené není** —
+tři hledání (jména dohromady, jména + Ściegny, jména + Miłków) nevrátila
+k těm pěti domkům žádný pramen. Shluk tedy odpovídá na otázku „čte se to
+jednou, nebo pětkrát", ale neodpovídá na otázku „je kde začít".
+
+### Vedlejší nález: jméno „Arnika" v Karpaczi nosí jiný dům
+
+Hledání podle jména vrátilo **Willa Arnika, Kamienna 5A, Karpacz**
+(50,771687 N, 15,729289 E) — objekt s restaurací, 28 pokoji a vlastní
+stránkou. Od našeho kandidáta `arnika` (50,794382 N, 15,770152 E) je
+**zhruba 4 km** a není to týž dům. Je to **sedmý doklad** poučky ze 4. 10. 2026: totožnost se dokládá souřadnicí, ne jménem — a tady by
+shoda jména vedla rovnou k cizímu objektu s doloženým gastrem, tedy
+k nejhoršímu druhu omylu, jaký klíč zařazení umí udělat.
+
+### Co z toho plyne pro frontu čtení
+
+Varianta (d) **nenahrazuje** varianty (a) OSM dohledávka, (b) jeden
+pokus v katalogu na kandidáta, (c) odložit na DATA-25 — pokrývá z 21
+kandidátů jen tři. Pro zbylých 18 pořád platí otázka z 12. 10. 2026.

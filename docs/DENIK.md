@@ -29,6 +29,143 @@ Formát zápisu (nejnovější nahoře):
 > blok proto odpracoval hlavní session sám). Plánované sessions (6:30)
 > mandát už NEpřebírají. Výsledek: blok 7 níže.
 
+## 2026-10-14 — denní session: varianta (d) změřena, a předpověď z včerejška na datech neplatí
+
+**Hotovo:**
+
+- **Kontrola na začátku:** **DATA-04**, **DATA-05**, **DATA-20**, **DATA-22**,
+  **DATA-25**, **DATA-28** i **F1-IMPL** jsou dál blokované ze stejných důvodů
+  (telefonáty, katalog vydavatele, sémantika `obec`, tři případy na tobě, klik
+  na workflow, staging). Od 10. 9. do repa nepřibyl tvůj commit — poslední
+  commit kohokoli jiného než denní session je dál `fe9fa1d`. Na žádnou
+  z otázek z 13. 10. (ani na starší) jsi neodpověděl, takže jsem nic z nich
+  nedělal a vzal „Příště" z 13. 10. — tedy variantu (d).
+
+- **NÁLEZ DNE, a je to oprava včerejší předpovědi, ne její potvrzení:
+  varianta (d) má rozsah 3 z 21, ne 21.** Včera jsem napsal, že zbylých
+  13 shluků z měření 6. 9. by se dalo projít „jedním čtením za shluk", a opřel
+  to o jediný případ (Domandi, čtyři kandidáti z jednoho pramene). Změřeno to
+  neplatí: ze 21 nepřečtených jich **13 neleží ve shluku vůbec** (samotáři)
+  a z osmi, kteří ve shluku leží, jich **pět tvoří jeden shluk, kde
+  identifikátor nemá ani jeden člen**. Nepřečtených ve shluku s použitelným
+  sousedem jsou **tři** — a z nich je jeden jen zdánlivý (`java` sousedí
+  s `ministerska`, jejíž web se ale při čtení nenačetl), takže prakticky
+  **dva**: `happy-house` přes adresu Daliboru a `bouda-jirinka` přes web Chaty
+  Tereza. Včerejší „Příště" tím padá jako plán na celý zbytek koše a zůstává
+  jako krok na dva kandidáty.
+
+- **Nový skript `scripts/triaz-kos-c3-shluky.ts`** (+ 8 testů v
+  `tests/int/triaz-kos-c3-shluky.int.spec.ts`, všechny zelené). Počítá shluky
+  koše C3 tranzitivním uzávěrem nad prahem 300 m — týž postup jako měření 6. 9., proto souhlasí kontrolní číslo **14 shluků / 40 položek** — a u každého
+  shluku říká, **jestli má čtení kde začít**, tedy jestli aspoň jeden člen
+  nese web, kontakt nebo adresu. Nic nezapisuje do `data/`, nic nevyřazuje,
+  nic nepovyšuje. `--prah <m>` umí citlivostní zkoušku, `--md` tabulky do
+  dokumentace.
+
+- **Druhý nález: pětice u Ściegen je doloženě jedno místo a přesto se nedá
+  přečíst.** `arnika`, `dziewiecsil`, `goryczka`, `lilia`, `rozeniec` leží
+  v **54 m** a nesou OSM way **1033422413–1033422417** — pět po sobě jdoucích
+  identifikátorů, tedy jeden dávkový zápis jednoho mapéra. Tagy jsou u všech
+  pěti totožné a prázdné: `building=yes`, `name`, `tourism=chalet`. Nejbližší
+  pojmenovaný soused je 472 m daleko (`Apartamenty Every Sky`, ul. Kwiatowa,
+  Ściegny). Tři hledání (jména dohromady; jména + Ściegny; jména + Miłków)
+  nevrátila k té pětici **žádný pramen**. Shluk tedy odpovídá na otázku
+  „čte se to jednou, nebo pětkrát", ale neodpovídá na otázku „je kde začít" —
+  a to je přesně ten rozdíl, který včerejší předpověď přehlédla.
+
+- **Třetí nález, a je to sedmý doklad poučky ze 4. 10.: jméno „Arnika"
+  v Karpaczi nosí jiný dům.** Hledání podle jména vrátilo **Willa Arnika,
+  Kamienna 5A, Karpacz** (50,771687 N, 15,729289 E) — penzion s restaurací
+  a 28 pokoji. Od našeho kandidáta je to **zhruba 4 km** a není to týž dům.
+  Kdyby se totožnost dokládala jménem, připsal by se našemu kandidátovi cizí
+  doklad o gastru — tedy nejhorší druh omylu, jaký klíč zařazení umí udělat.
+  Poznámka je zapsaná přímo v `arnika.yaml`, aby na to nenaletěl příští
+  čtenář.
+
+- **Do `data/chaty/` se nesáhlo.** Všech pět kandidátských souborů pětice
+  dostalo do `interniPoznamky` zápis o shluku (u `arnika` navíc varování před
+  jmenovcem) — **žádný verdikt, žádné vyřazení, žádné povýšení**. Živou
+  tabulku verdiktů jsem nechal beze změny, protože dnes nikdo nepřibyl:
+  oba skripty hlásí dál **99 · zbývá 21** a kontrolní součet
+  3 + 1 + 1 + 12 + 1 + 3 + 69 + 2 + 7 = 99 sedí.
+
+- **Zápis do dokumentace:** `docs/KRKONOSE-TRIAZ-KOSE.md` má nový oddíl
+  „VARIANTA (d) ZMĚŘENA (14. 10. 2026)" s tabulkou čísel, tabulkou čtyř
+  shluků s nepřečteným členem a oběma nálezy.
+
+- **Kontroly:** `npm ci` + `npm run kontrola` zelená (20 workflow souborů,
+  0 vad; fixtura 25 souborů, 4 kontroly, 0 spadlo), `tsc --noEmit` a `eslint`
+  nad novými soubory čisté, prettier proběhl, všech pět YAML se kontrolně
+  přeparsovalo, `triaz-kos-c.int.spec.ts` + nový test = **21 testů zelených**.
+
+**Příště:** vzít ty dva prakticky odemčené kandidáty (`happy-house` přes
+adresu Daliboru, `bouda-jirinka` přes web Chaty Tereza) — je to malá, ale
+celá dávka. Pro zbylých 18 nemám bez tvojí odpovědi co dělat: varianta (d)
+na ně neplatí a varianty (a) / (b) / (c) čekají na tebe od 12. 10. Pořád
+leží Broumovsko z 28. 8., deset padajících testů (Postgres/exporty)
+a blokované DATA-04 / DATA-05 / DATA-20 / DATA-22 / DATA-25 / DATA-28 /
+F1-IMPL.
+
+**Otázky pro Michala:**
+
+- **NOVÁ a nahrazuje včerejší hlavní otázku: varianta (d) pokryje jen 3 z 21,
+  takže otázka „jak čistit zbylých 18" je pořád otevřená — (a) OSM
+  dohledávka, (b) jeden pokus v katalogu na kandidáta, nebo (c) odložit
+  všech 18 na DATA-25?** Stačí „a", „b" nebo „c". Dva odemčené vezmu příště
+  tak jako tak.
+- **NOVÁ: pětice u Ściegen (`arnika`, `dziewiecsil`, `goryczka`, `lilia`,
+  `rozeniec`) — do `_odlozeno.yaml` jako celek?** Je doloženo, že je to jedno
+  místo (54 m, pět po sobě jdoucích OSM way), a doloženo, že k němu není
+  pramen. Pět kandidátů za jedno rozhodnutí.
+- **Trvá z 13. 10.: souhlasíš, že verdikt jednoho pramene smí rozhodnout celý
+  shluk?** Dnešní měření tu otázku zúžilo: týká se **jen** shluků, kde pramen
+  mluví o všech členech (Domandi). U pětice u Ściegen by nepomohla, protože
+  pramen není žádný.
+- **Trvá z 13. 10., telefonní, k DATA-04, a je to pořád nejcennější číslo
+  koše:** `sporthotel-svycarska-bouda` **+420 722 933 863 / +420 606 283 300**
+  — smí do restaurace (90 míst) i neubytovaný a jaká je její otevírací doba?
+- **Trvá ze 4. 10., a má osmý případ: jak má klíč odpovídat na „gastro je,
+  veřejný přístup nedoložen"?** Čeká na to osm držených.
+- **Trvá z 12. 10., telefonní, k DATA-04:** `chata-jasanka`
+  **+420 603 531 754** a `krausovy-boudy` **+420 499 433 110 /
+  +420 733 567 826**.
+- **Trvá z 5. 10.: smím přidat do `npm run kontrola` kontrolu „součet živé
+  tabulky verdiktů = seznam slugů ve sloupci kdo"?** Stačí „přidej".
+- **Trvá ze 4. 10. a dnes sedmý doklad: mám poučku „totožnost se dokládá
+  souřadnicí, ne jménem" povýšit na kontrolu?** Dnešní Willa Arnika je první
+  doklad, kde by shoda jména připsala kandidátovi **cizí gastro**, ne jen
+  cizí údaj.
+- **Trvá z 24. 9.: smím načíst vlastní domény objektů?** Dnes spadl na
+  `PROVENANCE_REQUIRED` i `chatatereza.eu` — a právě ten web je jeden ze dvou
+  prakticky odemčených vstupů do zbytku koše. Je to popatnácté.
+- **Trvá ze 7. 10.: mám z „Szkolne Schronisko Młodzieżowe" udělat kontrolu nad
+  tagy?**
+- **Trvá z 11. 10.: `chata` (Labská 22) a `chata-katerina` do `_odlozeno.yaml`,
+  nebo vyřadit?**
+- **Trvá z 6. 10.: souhlasíš s povýšením `ludvikova-bouda`?** A s ní pořád
+  čeká `bouda-mama` z 28. 9.
+- **Trvá z 11. 10.: mám u držených zkusit firemní rejstřík dřív, než na ně
+  budeš volat?**
+- **Trvá ze 4. 10.: `chata-kabrtova-bouda`, `chata-medika` (Dolní Dvůr 128).**
+- **Trvá z 2. 10.: `chata-honzik` a `hottur`.**
+- **Trvá z 30. 9.: `grohmanova-bouda`; a telefonní u Černé boudy.**
+- **Trvá z 28. 9.: `capkova-chata` a klíč střediska.**
+- **Trvá z 26. 9.:** tři návrhy na vyřazení (Kalevala, Plum, Złoty Widok)
+  a rozcestníky u polských kandidátů.
+- **Trvá z 23. 9.:** kontrola „kandidát daleko od své oblasti" jako
+  UPOZORNĚNÍ?
+- **Trvá z 19. 9.: výjimka pro Skalnik.**
+- Trvají starší otázky (Sruby Podspálov a zúžení `lngMin`; Dom Pod Jaworami;
+  Baraba × Popelka; druhý klíč `rozhodnuteDuplicity`; a další
+  z 2. 9. – 13. 10.).
+
+**Poznámka k prostředí:** `git push` přes sandboxovou proxy spadne na 403,
+prochází s `git -c http.proxy= -c https.proxy= push origin main`. `node_modules`
+v sandboxu nejsou, `npm ci` je potřeba pustit, než se dají spustit kontroly.
+`WebFetch` vrátil dnes `PROVENANCE_REQUIRED` u `chatatereza.eu`. Užitečné dnes
+byly `noclegi.pl` a `wanderlog.com`; tři hledání k pětici u Ściegen nevrátila
+nic použitelného.
+
 ## 2026-10-13 — denní session: fronta koše C3 dočtena — a jedno čtení, které rozhodlo čtyři kandidáty naráz
 
 **Hotovo:**
